@@ -1,0 +1,10 @@
+rule move:
+    input:
+        "Files/renamed_2.txt"
+    output:
+        "MovedFiles/test_2.txt"
+    shell:
+        """
+        mv {input} {output}
+        echo {input} {output}
+        """
