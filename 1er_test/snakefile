@@ -1,0 +1,7 @@
+rule rename_files:
+    input:
+        directory("Files")
+    output:
+        directory("Renamed_Files")
+    shell:
+        "python3 rename.py {input} {output}"
