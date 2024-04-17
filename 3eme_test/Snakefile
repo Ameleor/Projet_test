@@ -1,0 +1,21 @@
+rule name_txt:
+    output:
+        "samples.txt"
+    run:
+        with open(output[0], "w") as f:
+            f.write("GCA*")
+
+rule all:
+    input:
+        "samples.txt"
+
+rule echo:
+    input:
+        "{sample}/{sample}_protein_gff.tsv.gz",
+        "{sample}/{sample}_protein.faa.gz"
+    output:
+        touch("{sample}/done.txt")  # Créer un fichier de sortie factice
+    shell:
+        """
+        echo {wildcards.sample}
+        """
