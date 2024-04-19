@@ -1,0 +1,27 @@
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+#DATASET = config["data"]
+
+# Where my files are (here: DIR="data")
+#DIR= "data/"+config["dataset"]
+
+# Where my genomes are (here: genomes_dir="DIR/{genome}")
+#genomes_dir = {genome: os.path.basename(genome) for genome in glob(DIR+"GCA*")}
+
+GENOMES, = glob_wildcards("data/genomes/{genome}")
+
+# Rule to check if all the output exist
+rule all:
+    input:
+        expand("data/genomes_unzip/{genome}", genome=GENOMES)
+        
+# Rule to unzip the genomes
+rule unzip_genomes:
+    input:  "data/genomes/{genome}/{genome}_protein.faa.gz", genome=GENOMES
+    output: directory("data/genomes_unzip/{genome}")
+    shell:  "mkdir {output}_unzip ; gunzip {input} > {output}_unzip/"
+

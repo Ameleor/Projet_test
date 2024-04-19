@@ -1,0 +1,20 @@
+#Collaboration avec Kinnie
+
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GCA*")]
+
+# Rule to check if all the output exist
+rule all:
+    input:
+        expand("data/genomes_unzip/{genome}", genome=GENOMES)
+        
+# Rule to unzip the genomes
+rule unzip_genomes:
+    input:  "data/genomes/{genome}/{genome}_protein.faa.gz"
+    output: directory("data/genomes_unzip/{genome}")
+    shell:  "mkdir -p {output} && gunzip {input} > {output}/{wildcards.genome}_protein.faa"
