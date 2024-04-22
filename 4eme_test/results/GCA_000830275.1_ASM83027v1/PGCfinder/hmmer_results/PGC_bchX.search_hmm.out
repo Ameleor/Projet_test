@@ -1,0 +1,99 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+# output directed to file:         results/GCA_000830275.1_ASM83027v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.4e-07   27.0   0.4    0.00015   17.0   0.1    2.1  2  GCA_000830275.1_ASM83027v1_1302  AJF60817.1 MAG: septum site-dete
+    0.00057   15.1   0.4      0.078    8.1   0.0    2.1  2  GCA_000830275.1_ASM83027v1_428   AJF59943.1 MAG: ATPase-like, Par
+    0.00097   14.4   0.0     0.0018   13.4   0.0    1.4  1  GCA_000830275.1_ASM83027v1_1105  AJF60620.1 MAG: fused signal rec
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000830275.1_ASM83027v1_1302  AJF60817.1 MAG: septum site-determining protein MinD [archaeon GW2011_AR10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   3.3e-07   0.00015      24      77 ..       4      58 ..       2      69 .. 0.90
+   2 !    8.3   0.0   0.00015     0.068     184     284 ..     150     255 ..     107     276 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 3.3e-07
+             trimmed_msa_bchX_hmm 24 iia.iygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpti 77
+                                     +ia + gkgg+gk+   a+l   la++  kv li  d      sll+  +++p  
+  GCA_000830275.1_ASM83027v1_1302  4 VIAlVSGKGGVGKTTIAAELGIALAKRNLKVCLIDADVAMANLSLLLNMQSSPLT 58
+                                     455267*****************************************99999965 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.00015
+             trimmed_msa_bchX_hmm 184 vcsaveyfrklggnv.gvaglvinkddgtgeaqafaeavgipvlaaipadedirrksanyei....igkpesewgslf 256
+                                      v +a    ++lg  v gv    i  + g  + + + +  ++pv   ip d ++r+   + ++    + kp s  +   
+  GCA_000830275.1_ASM83027v1_1302 150 VLKAKITAQRLGTRViGVVVNFIRGEKGEINQDDIMKLLELPVYGMIPYDPEVRKSFMQEKVaplmVRKPTSPAAVAV 227
+                                      555555566777654255555556667777778899******************976665532222778888888888 PP
+
+             trimmed_msa_bchX_hmm 257 eelaenvaeappvrpkplsqdgllglfk 284
+                                      +  a+++a  p    +p  + g+l+ f 
+  GCA_000830275.1_ASM83027v1_1302 228 QRTAAKIAGIPVSFAEPARKRGFLANFF 255
+                                      8888888887777777777666665543 PP
+
+>> GCA_000830275.1_ASM83027v1_428  AJF59943.1 MAG: ATPase-like, ParA/MinD [archaeon GW2011_AR10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.5   0.1    0.0011      0.49      22      51 ..      28      57 ..      13      77 .. 0.79
+   2 !    8.1   0.0   0.00017     0.078     183     264 ..     175     257 ..     121     265 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.0011
+            trimmed_msa_bchX_hmm 22 tqiiaiygkggigksftlanlsymlaqqgk 51
+                                     +i  + gkgg+gk+    nl+ +l+++  
+  GCA_000830275.1_ASM83027v1_428 28 FKIAVMSGKGGTGKTTVAVNLAAVLSRKNS 57
+                                    5677889***************99988754 PP
+
+  == domain 2  score: 8.1 bits;  conditional E-value: 0.00017
+            trimmed_msa_bchX_hmm 183 nvcsaveyfrklggnvgvaglvinkdd...gtgeaqafaeavgipvlaaipadedirrksanyeiigkpes.ewgslfe 257
+                                     +  +a++  +k+  nv v glv n      g ge +++a++ g   l  i   ++ir+ + +  +i+ +es e  + f+
+  GCA_000830275.1_ASM83027v1_428 175 DASKAINMAKKF--NVKVLGLVENMSGeifGEGEVESLAKKLGETFLGGIELRKEIRQLAEK-GLIAVNESrEAEKEFK 250
+                                     345677777765..99999**99986434489************************987655.5555555405556788 PP
+
+            trimmed_msa_bchX_hmm 258 elaenva 264
+                                     ++a+ v 
+  GCA_000830275.1_ASM83027v1_428 251 AIAQIVL 257
+                                     8887765 PP
+
+>> GCA_000830275.1_ASM83027v1_1105  AJF60620.1 MAG: fused signal recognition particle receptor [archaeon GW2011_AR10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   4.1e-06    0.0018      12      59 ..     210     257 ..     199     265 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.1e-06
+             trimmed_msa_bchX_hmm  12 avatgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      ++ ++  +k+  i+   g  g gk+ ++a+l+y l ++gkkv+    d
+  GCA_000830275.1_ASM83027v1_1105 210 DIFKEMEKKKPFIVLFLGPNGAGKTTSIAKLTYALQKKGKKVVWAAAD 257
+                                      55566778888999999*************************987766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1339  (374442 residues searched)
+Passed MSV filter:                        47  (0.0351008); expected 26.8 (0.02)
+Passed bias filter:                       40  (0.029873); expected 26.8 (0.02)
+Passed Vit filter:                        10  (0.00746826); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00224048); expected 0.0 (1e-05)
+Initial search space (Z):               1339  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7545.38
+//
+[ok]

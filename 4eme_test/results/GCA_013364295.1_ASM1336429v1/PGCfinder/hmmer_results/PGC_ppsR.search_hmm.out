@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+# output directed to file:         results/GCA_013364295.1_ASM1336429v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    4.5e-05   18.6   0.0    0.00066   14.7   0.0    2.1  2  GCA_013364295.1_ASM1336429v1_98  QKW31626.1 PAS domain S-box prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013364295.1_ASM1336429v1_98  QKW31626.1 PAS domain S-box protein [Nocardiopsis flavescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   6.2e-07   0.00066     146     282 ..      14     151 ..      11     166 .. 0.81
+   2 !    1.4   0.0    0.0067       7.2     254     296 ..     290     332 ..     276     339 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 6.2e-07
+             trimmed_msa_ppsR_hmm 146 feasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgr 223
+                                      + +s++av+ +d  + r+   NpaA+rL+g +a+e++g  ++  + ae ++e  a+l++vra  +    + r++++g 
+  GCA_013364295.1_ASM1336429v1_98  14 LASSADAVVGLDS-ELRVFLWNPAAERLFGWRAREVLGGALP-IVPAELKAEHGAVLEQVRAGPSLTIHSRRVRNDGT 89 
+                                      6678888888886.579999******************9987.7899999999*********9999888888888887 PP
+
+             trimmed_msa_ppsR_hmm 224 evsv..saslfrqe..gesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegril 282
+                                      ++ v  s  ++ ++  g++  ++ l p++++a+ a++a+ + ++++++l d +v ++a+   +
+  GCA_013364295.1_ASM1336429v1_98  90 PIDVriSTAALPADdgGHAGWVLTLYPTDNEAQ-AHTAAMERARLVRRLTDVVVDINADLSLQ 151
+                                      655511555565551156667999999999888.888999999********999988887665 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.0067
+             trimmed_msa_ppsR_hmm 254 aeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlas 296
+                                       ++++ +  +v ++ +d++ v d  gr+ + N++ +el+  ++
+  GCA_013364295.1_ASM1336429v1_98 290 LNHQRVHEQAVADSSADGIAVLDFGGRVRKWNRSAVELTGYPA 332
+                                      556666778889999**********************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1072  (335683 residues searched)
+Passed MSV filter:                        31  (0.0289179); expected 21.4 (0.02)
+Passed bias filter:                       18  (0.016791); expected 21.4 (0.02)
+Passed Vit filter:                         4  (0.00373134); expected 1.1 (0.001)
+Passed Fwd filter:                         1  (0.000932836); expected 0.0 (1e-05)
+Initial search space (Z):               1072  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13713.73
+//
+[ok]

@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+# output directed to file:         results/GCA_013348845.1_ASM1334884v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.8e-10   34.6   0.5    1.5e-09   34.0   0.5    1.3  1  GCA_013348845.1_ASM1334884v1_1413  OOCJKK_07265 ParA family protein
+    0.00017   17.4   0.0     0.0014   14.4   0.0    2.0  2  GCA_013348845.1_ASM1334884v1_1821  OOCJKK_09320 Iron-sulfur cluster
+    0.00092   15.0   0.3      0.002   13.9   0.2    1.6  1  GCA_013348845.1_ASM1334884v1_577   OOCJKK_02945 Signal recognition 
+     0.0079   11.9   0.1      0.011   11.5   0.1    1.2  1  GCA_013348845.1_ASM1334884v1_424   OOCJKK_02160 AAA-31 domain-conta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013348845.1_ASM1334884v1_1413  OOCJKK_07265 ParA family protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   0.5     3e-12   1.5e-09      22      91 ..       2      74 ..       1      87 [. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 34.0 bits;  conditional E-value: 3e-12
+               trimmed_msa_bchX_hmm 22 tqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts.llfggka.cptiietsskkklageev 91
+                                       t+iiai   kgg+gk+ t  nls  +a  gkkvlli  dp++++t+ + +  k+   ti e++  +k+  e++
+  GCA_013348845.1_ASM1334884v1_1413  2 TKIIAIAnQKGGVGKTTTAVNLSTAIALAGKKVLLIDSDPQANATTgMGIEAKNdGNTIYEVTVLEKKLSEAI 74
+                                       89***96269*******************************98665154555542678888877766666665 PP
+
+>> GCA_013348845.1_ASM1334884v1_1821  OOCJKK_09320 Iron-sulfur cluster carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.0   2.9e-06    0.0014      19      72 ..      94     146 ..      79     170 .. 0.75
+   2 ?    0.6   0.0     0.044        22     210     270 ..     283     345 ..     272     360 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 2.9e-06
+               trimmed_msa_bchX_hmm  19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggk 72 
+                                         k+t  ia  gkgg+gks    n++  l q+g  v li  d    +  l++   
+  GCA_013348845.1_ASM1334884v1_1821  94 VKNTIAIA-SGKGGVGKSTVAVNIALALVQEGASVGLIDADIYGPSIPLMLNIY 146
+                                        44444443.6****************************9998776666666555 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.044
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksanye.ii.gkpesewgslfeelaenvaeappvr 270
+                                        g g  ++++e+  +  l  ip    ir k  +   i+ + p+se + +f ++++++     +r
+  GCA_013348845.1_ASM1334884v1_1821 283 GKGGGKQLCEEYKLNFLGEIPISTMIREKGDEGSpIVySLPDSEEARIFRNISKKIILDLNKR 345
+                                        56777888899999999999*9999*9998765424326799999999999999887655555 PP
+
+>> GCA_013348845.1_ASM1334884v1_577  OOCJKK_02945 Signal recognition particle receptor FtsY
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.2     4e-06     0.002      15      59 ..     104     148 ..      91     180 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 4e-06
+              trimmed_msa_bchX_hmm  15 tgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                       +++++k+  +i i g  g+gk+ ++ +l+y + + gk vl+   d
+  GCA_013348845.1_ASM1334884v1_577 104 DSDIKKQPYVIMIVGVNGVGKTTSIGKLAYNFKKVGKSVLIGSAD 148
+                                       56789999******************************9976666 PP
+
+>> GCA_013348845.1_ASM1334884v1_424  OOCJKK_02160 AAA-31 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.1   2.2e-05     0.011      24      63 ..       4      44 ..       1      64 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.2e-05
+              trimmed_msa_bchX_hmm 24 iiai.ygkggigksftlanlsymlaqqgkkvlligcdpksd 63
+                                      ii++   kgg+gk+    nl+  la   +k lli  dp   
+  GCA_013348845.1_ASM1334884v1_424  4 IISVcIPKGGVGKTTIAVNLAASLAVAERKTLLIDADPFGA 44
+                                      5554257*******************************654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2010  (736741 residues searched)
+Passed MSV filter:                        79  (0.0393035); expected 40.2 (0.02)
+Passed bias filter:                       66  (0.0328358); expected 40.2 (0.02)
+Passed Vit filter:                        13  (0.00646766); expected 2.0 (0.001)
+Passed Fwd filter:                         4  (0.00199005); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10066.98
+//
+[ok]

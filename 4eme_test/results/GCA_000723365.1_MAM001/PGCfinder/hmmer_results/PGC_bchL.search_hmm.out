@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+# output directed to file:         results/GCA_000723365.1_MAM001/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                   -----------
+    0.00057   14.6   0.0     0.0011   13.7   0.0    1.4  1  GCA_000723365.1_MAM001_443  CDN40571.1 unnamed protein produc
+     0.0035   12.0   0.4     0.0056   11.4   0.4    1.6  1  GCA_000723365.1_MAM001_242  CDN40370.1 unnamed protein produc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000723365.1_MAM001_443  CDN40571.1 unnamed protein product [Mycoplasma amphoriforme A39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0   3.1e-06    0.0011      10      58 ..     126     174 ..     121     196 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 3.1e-06
+        trimmed_msa_bchL_hmm  10 eldeelkietakvfavygkggigksttssnlsvafsklgkrvlqigcdp 58 
+                                 ++  + + + ++vf + g  g+gk+tt + l+  f +l k++l +  d 
+  GCA_000723365.1_MAM001_443 126 DTSLNYQENRTNVFLMIGVNGVGKTTTIAKLAHRFKTLNKKILFVAGDT 174
+                                 445556667889*******************************998775 PP
+
+>> GCA_000723365.1_MAM001_242  CDN40370.1 unnamed protein product [Mycoplasma amphoriforme A39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.4   1.6e-05    0.0056      25      79 ..       6      65 ..       2     180 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.6e-05
+        trimmed_msa_bchL_hmm 25 vygkggigksttssnlsvafsklg..krvlqigcdpkhd..stft.ltkklvptvidvle 79
+                                +  kgg+ k+t s+n++ a+sk+    + + i  d + +  +tf    +kl +t+id+l 
+  GCA_000723365.1_MAM001_242  6 INNKGGVLKTTLSTNIAGAISKIHptSKTVIIDLDGQGNvsATFGqYPEKLKDTLIDILY 65
+                                678*******************9533455566666665511666424689********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                        715  (274971 residues searched)
+Passed MSV filter:                        40  (0.0559441); expected 14.3 (0.02)
+Passed bias filter:                       26  (0.0363636); expected 14.3 (0.02)
+Passed Vit filter:                         5  (0.00699301); expected 0.7 (0.001)
+Passed Fwd filter:                         2  (0.0027972); expected 0.0 (1e-05)
+Initial search space (Z):                715  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7387.60
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+# output directed to file:         results/GCA_013348845.1_ASM1334884v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.4e-08   29.3   1.0    8.6e-08   28.9   1.0    1.2  1  GCA_013348845.1_ASM1334884v1_1345  OOCJKK_06915 1,4-dihydroxy-2-nap
+    8.2e-06   22.4   0.3    1.4e-05   21.6   0.3    1.4  1  GCA_013348845.1_ASM1334884v1_608   OOCJKK_03100 Decaprenyl-phosphat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013348845.1_ASM1334884v1_1345  OOCJKK_06915 1,4-dihydroxy-2-naphthoate octaprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   1.0   8.6e-11   8.6e-08      42     240 ..      49     259 ..      29     291 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 8.6e-11
+               trimmed_msa_bchG_hmm  42 vvaGvllaGPl.vcatsqavndWfdrhvdaineP.erpiPs.GripGrWGly.......ialiltllsllvaaal. 106
+                                        ++  + l G + v   + +vnd +d +     e  +  iP  G +    Gl        i++i  l+sl++++++ 
+  GCA_013348845.1_ASM1334884v1_1345  49 LLFFLTLIGAMcVHVGANIVNDIYDYKKGIDREDkKAGIPHgGSMVLSMGLVslkemklISVISFLISLILGIIIw 124
+                                        5555666666623345678899988765544444044588624677777774333333377777788888776433 PP
+
+               trimmed_msa_bchG_hmm 107 ...gtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysigah 179
+                                           g+lv+   ++gl ++  y+a Pl+lk +  lG  +v l + +   l +  v ++++ s+  ++l +  ++   
+  GCA_013348845.1_ASM1334884v1_1345 125 rmtGNLVLYLMIFGLFASVYYTASPLQLKYKA-LGDIMVFLGFGTGMTLGAYYVQVKEF-SWLPIILSIPLGFLID 198
+                                        3339999**********************986.7*********8766665555555555.5555556666677788 PP
+
+               trimmed_msa_bchG_hmm 180 GimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalv 240
+                                         i+  n+++ v+ d+  g+k++p+  G + +  +  ++++ + + +v ++++   ++ al 
+  GCA_013348845.1_ASM1334884v1_1345 199 AILHSNNMRDVKFDKSFGIKTIPILAGEKFSKYFYYFLIIGAYLSIVIFVATGLLPWPALF 259
+                                        8**************************9998888777777777766666666556666654 PP
+
+>> GCA_013348845.1_ASM1334884v1_608  OOCJKK_03100 Decaprenyl-phosphate phosphoribosyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.6   0.3   1.4e-08   1.4e-05       7     126 ..       5     125 ..       1     133 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 21.6 bits;  conditional E-value: 1.4e-08
+              trimmed_msa_bchG_hmm   7 avlellkPitwfpPmWafacGvvssgaslsekwllvvaGvllaGPlvcatsqav...ndWfdrhvdainePe..rpi 78 
+                                       ++lell+P  w   ++ fa    +       ++  ++   ++a    c+ts +v   nd +d++ d + + +  rpi
+  GCA_013348845.1_ASM1334884v1_608   5 KLLELLRPKQWIKNLFIFAPLLFAGELL---HFE-ILFKSIIAFFAFCGTSSIVyiiNDILDKEADKVHKEKkyRPI 77 
+                                       6899999999999999999876665543...233.3444556777889999753333**********97643339** PP
+
+              trimmed_msa_bchG_hmm  79 PsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysa 126
+                                        sG i+    l  a+ + ++++l++++   +  +  v+ +vl  +ys 
+  GCA_013348845.1_ASM1334884v1_608  78 ASGEISISEALIFAIGILVITILLSSTQNFYFWIVLVIYFVLNILYSL 125
+                                       ***************************999999999999999999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2010  (736741 residues searched)
+Passed MSV filter:                        58  (0.0288557); expected 40.2 (0.02)
+Passed bias filter:                       35  (0.0174129); expected 40.2 (0.02)
+Passed Vit filter:                         3  (0.00149254); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000995025); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10817.89
+//
+[ok]

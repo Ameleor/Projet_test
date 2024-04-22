@@ -1,0 +1,112 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa
+# output directed to file:         results/GCA_010918035.1_ASM1091803v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.3e-06   23.6   0.4    1.1e-05   21.9   0.2    1.7  2  GCA_010918035.1_ASM1091803v1_1500  QIC76350.1 DNA-binding transcrip
+    6.1e-05   19.4   0.0     0.0001   18.7   0.0    1.3  1  GCA_010918035.1_ASM1091803v1_1080  QIC75970.1 nitrogen regulation p
+     0.0001   18.7   0.1     0.0002   17.7   0.1    1.4  1  GCA_010918035.1_ASM1091803v1_41    QIC75077.1 sigma-54-dependent Fi
+    0.00067   16.0   0.0      0.013   11.7   0.0    2.2  2  GCA_010918035.1_ASM1091803v1_1283  QIC76146.1 EAL domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_010918035.1_ASM1091803v1_1500  QIC76350.1 DNA-binding transcriptional regulator Fis [Acinetobacter indicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.089        58       9      33 ..       7      31 ..       2      48 .. 0.72
+   2 !   21.9   0.2   1.6e-08   1.1e-05     417     449 ..      55      87 ..      47      88 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.089
+               trimmed_msa_ppsR_hmm  9 lvaaaaDialvldaegviedvavgs 33
+                                       + +a +D+al +  ++ +++  ++ 
+  GCA_010918035.1_ASM1091803v1_1500  7 IFTAQSDVALRIHVDRAVRHYFAQL 31
+                                       6778899999999888888766554 PP
+
+  == domain 2  score: 21.9 bits;  conditional E-value: 1.6e-08
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         Le+T+ N   AAe+LGL R  L  KL+ +gl 
+  GCA_010918035.1_ASM1091803v1_1500  55 VLEYTRGNQTRAAEILGLNRGTLRKKLKAHGLM 87 
+                                        59*****************************96 PP
+
+>> GCA_010918035.1_ASM1091803v1_1080  QIC75970.1 nitrogen regulation protein NR(I) [Acinetobacter indicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   1.5e-07    0.0001     402     448 ..     432     478 ..     417     480 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 1.5e-07
+               trimmed_msa_ppsR_hmm 402 VrettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +  +t + E+  I+aAL++T+     AAe+LG  R  L  KL+  g+
+  GCA_010918035.1_ASM1091803v1_1080 432 LDIATPMFERTLINAALQQTRGRKRHAAELLGWGRNTLTRKLKELGM 478
+                                        55578899**********************************98887 PP
+
+>> GCA_010918035.1_ASM1091803v1_41  QIC75077.1 sigma-54-dependent Fis family transcriptional regulator [Acinetobacter in
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.1   3.1e-07    0.0002     409     449 ..     426     466 ..     423     467 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 3.1e-07
+             trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                      iEk     AL+lT+ NR  AA  LG+S  SL  +L+++gl 
+  GCA_010918035.1_ASM1091803v1_41 426 IEKEILLNALNLTHWNRTLAAKKLGMSFRSLRYRLKKFGLD 466
+                                      78888889*******************************95 PP
+
+>> GCA_010918035.1_ASM1091803v1_1283  QIC76146.1 EAL domain-containing protein [Acinetobacter indicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0065       4.2     167     286 ..      52     178 ..      49     184 .. 0.77
+   2 !   11.7   0.0     2e-05     0.013       8     121 ..     155     273 ..     149     351 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0065
+               trimmed_msa_ppsR_hmm 167 NpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsaslfrqege....s 238
+                                        N++ ++ l +++++l+ +s  ++++ e++e+l  l +++++sg+  e e r+++++++++    + r++++     
+  GCA_010918035.1_ASM1091803v1_1283  52 NSNFKQYLASDEQSLTAQSWLNAIHPEDAEHLCFLWESAQKSGQSFEKECRIRDRQQRYHWFLLIARNSQQlegcD 127
+                                        77778889999********************************************999987777776655422225 PP
+
+               trimmed_msa_ppsR_hmm 239 llLvrlspaeaaaa...aaeeaeakllevleklpdalvvtdaegrilsaNe 286
+                                          +++ ++ +++a    +++++ ++ +++l+  +d++ +++++g   + N+
+  GCA_010918035.1_ASM1091803v1_1283 128 QWMISCTNIHDSAVkyrETKDTLRAHTHMLDVSVDCIKIVKPDGSLSHMNR 178
+                                        667777766666653434444446667777788888888888888777776 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 2e-05
+               trimmed_msa_ppsR_hmm   8 klvaaaaDialvldaegviedvavg.sedlakeeleewvgkrwsdtvtvesrpKveallaeaaeekat..rwrqvn 80 
+                                        +++ +++D   ++  +g  +++  +  ++l  +e e+  g +w d++ +e+r+K ++ ++ea + k +    + +n
+  GCA_010918035.1_ASM1091803v1_1283 155 HMLDVSVDCIKIVKPDGSLSHMNRSgCQALLGKEREKNFGMKWLDLLPPEAREKGQQAIREAIKGKNShfPGMSIN 230
+                                        67778888888888888888886541455666799999************************96666622678999 PP
+
+               trimmed_msa_ppsR_hmm  81 haaeagadlpvrysavrlgkegrvlalGrd..lralaalQqrL 121
+                                        +   + +d  +   + + g++ ++l ++rd  l+++a+   rL
+  GCA_010918035.1_ASM1091803v1_1283 231 QDEVKYWDNMLTPVLNEHGETTSILCVSRDvtLQKIAEDKLRL 273
+                                        999999************************5557888877777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2604  (782862 residues searched)
+Passed MSV filter:                       147  (0.0564516); expected 52.1 (0.02)
+Passed bias filter:                       65  (0.0249616); expected 52.1 (0.02)
+Passed Vit filter:                         8  (0.0030722); expected 2.6 (0.001)
+Passed Fwd filter:                         4  (0.0015361); expected 0.0 (1e-05)
+Initial search space (Z):               2604  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8998.65
+//
+[ok]

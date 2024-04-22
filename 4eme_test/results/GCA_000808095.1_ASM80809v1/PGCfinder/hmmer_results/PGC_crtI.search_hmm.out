@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa
+# output directed to file:         results/GCA_000808095.1_ASM80809v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    9.9e-06   20.0   0.0    1.7e-05   19.3   0.0    1.3  1  GCA_000808095.1_ASM80809v1_201  AJA90041.1 cell surface protein 
+     0.0012   13.2   0.3     0.0023   12.2   0.3    1.5  1  GCA_000808095.1_ASM80809v1_233  AJA90073.1 glycerol-3-phosphate 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000808095.1_ASM80809v1_201  AJA90041.1 cell surface protein [Borreliella chilensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   3.7e-08   1.7e-05     121     259 ..     682     827 ..     658     861 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 3.7e-08
+            trimmed_msa_crtI_hmm 121 yerfl.kesekvyevgfeklgdkpfe..sladllkalpelvklkayrs..vyslvakavkdeklrealsfhpLliGGnP 194
+                                     y +f+ ++++k  e++  +l+   fe  +l + l+++++ ++l+  +s  +y  ++ ++k+++ ++a+s+ +L+i  nP
+  GCA_000808095.1_ASM80809v1_201 682 YLSFFnENAKKHNEIAIYNLSIAKFEnnKLEESLETINKAINLNPEKSeyLYLKASINLKNKNYQNAMSLYSLVIEKNP 760
+                                     5454414566666777777776666522567788888888888887773367788999********************* PP
+
+            trimmed_msa_crtI_hmm 195 lkvtsiyaLiakLerkfGvhyamGGtgalvkglvkl.ieeqGgelrlnaev.eeievedgratgvrl 259
+                                      +++++  L ++ e++     a+   +++++   kl +++ G   + +++  + ie+ ++++t+  +
+  GCA_000808095.1_ASM80809v1_201 761 ENISAYINLAKAYEKTGNKTLAISTLEKIINKNNKLaLNNLGILYKKEKNYqKAIEIFEKAITNSDI 827
+                                     ****************************999887762456666666555541456666666665555 PP
+
+>> GCA_000808095.1_ASM80809v1_233  AJA90073.1 glycerol-3-phosphate dehydrogenase [Borreliella chilensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.3   5.2e-06    0.0023       5      41 ..      20      56 ..      16      70 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 5.2e-06
+            trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGGray 41
+                                    ++iG G  Gl  a+   ++Gy+v ++ek d   G ++
+  GCA_000808095.1_ASM80809v1_233 20 IIIGGGATGLGIAVDAITRGYKVILIEKFDYAKGTSS 56
+                                    89****************************9887654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        898  (300810 residues searched)
+Passed MSV filter:                        27  (0.0300668); expected 18.0 (0.02)
+Passed bias filter:                       23  (0.0256125); expected 18.0 (0.02)
+Passed Vit filter:                        11  (0.0122494); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00222717); expected 0.0 (1e-05)
+Initial search space (Z):                898  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11002.91
+//
+[ok]

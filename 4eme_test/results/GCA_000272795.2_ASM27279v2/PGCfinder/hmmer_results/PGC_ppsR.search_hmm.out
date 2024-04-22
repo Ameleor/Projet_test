@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+# output directed to file:         results/GCA_000272795.2_ASM27279v2/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.7e-05   20.6   0.8     0.0047   13.3   0.3    2.2  2  GCA_000272795.2_ASM27279v2_148   AIT49137.1 regulatory protein [S
+    0.00067   16.1   0.7     0.0011   15.4   0.7    1.6  1  GCA_000272795.2_ASM27279v2_2335  AIT51321.1 Fis family transcript
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000272795.2_ASM27279v2_148  AIT49137.1 regulatory protein [Salmonella enterica subsp. enterica serovar Newport st
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.7   0.0   0.00068      0.94      31     133 ..      40     145 ..      25     151 .. 0.62
+   2 !   13.3   0.3   3.4e-06    0.0047     410     448 ..     430     468 ..     428     469 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.00068
+            trimmed_msa_ppsR_hmm  31 vgsedlakeeleewvgkrwsdtvtvesrpKveallaeaa.eekatrwrqvnhaaeagadlpvrysavrl......gkeg 102
+                                      +s+dl+ +++e+ +gk++ d+     ++  + +l+  +   +    +q+ ++a+++   +v y+ +++      g+  
+  GCA_000272795.2_ASM27279v2_148  40 QESADLDGYSIERAMGKHMLDVYP-GMKETQSTMLSSLKkGVEYIGHYQIYYNARGQ---AVDYQHTTAplyasdGGMV 114
+                                     455666666777777777777543.33344444454444144556777888877777...4555444433353223334 PP
+
+            trimmed_msa_ppsR_hmm 103 rvlalGrdlralaalQqrLveaQqslErdYe 133
+                                      v+ +Gr+++ + +lQ++ ve  q l  d  
+  GCA_000272795.2_ASM27279v2_148 115 GVIEIGRNMSGVRRLQEQVVELNQLLYADRH 145
+                                     5789*****************9998877755 PP
+
+  == domain 2  score: 13.3 bits;  conditional E-value: 3.4e-06
+            trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                     E+  Ie+AL+  + N a+AA  L +SR  L  K ++y +
+  GCA_000272795.2_ASM27279v2_148 430 ERHLIETALDTHQGNIAAAARSLNVSRTTLQYKVQKYAI 468
+                                     6777*********************************87 PP
+
+>> GCA_000272795.2_ASM27279v2_2335  AIT51321.1 Fis family transcriptional regulator [Salmonella enterica subsp. enterica
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.7   7.8e-07    0.0011     417     448 ..      66      97 ..      11      98 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 7.8e-07
+             trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_000272795.2_ASM27279v2_2335  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                      579****************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2783  (749128 residues searched)
+Passed MSV filter:                       125  (0.0449156); expected 55.7 (0.02)
+Passed bias filter:                       81  (0.0291053); expected 55.7 (0.02)
+Passed Vit filter:                         6  (0.00215595); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000718649); expected 0.0 (1e-05)
+Initial search space (Z):               2783  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 20210.99
+//
+[ok]

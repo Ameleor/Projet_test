@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa
+# output directed to file:         results/GCA_013414705.1_ASM1341470v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00026   17.6   0.0      0.011   12.2   0.0    2.3  1  GCA_013414705.1_ASM1341470v1_3006  QLH40004.1 MAG: nitrogenase moly
+     0.0033   14.0   0.0      0.021   11.3   0.0    2.3  2  GCA_013414705.1_ASM1341470v1_3007  QLH40005.1 MAG: bifunctional nit
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013414705.1_ASM1341470v1_3006  QLH40004.1 MAG: nitrogenase molybdenum-iron protein subunit beta [Defluviicoccus s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   6.3e-06     0.011     322     396 ..     422     494 ..     265     506 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 6.3e-06
+               trimmed_msa_bchZ_hmm 322 dneevrelvkekkplvlfGsynerlylaeagaraayipasfpgaiirrhtGtpfmGyaGatylvqevcnalfdal 396
+                                        d  ++r+l+++++  +l+Gs   +    e++     +  sfp      h   p++Gy Ga +++ ++ + lfd +
+  GCA_013414705.1_ASM1341470v1_3006 422 DLWAMRSLLHTEPCDLLIGSSYGKYL--EQDCGIPLVRLSFPIFDRHHHHRFPIFGYQGAIWMMTQILDKLFDEM 494
+                                        44567888888888888888777644..44455678999***9888889999********************976 PP
+
+>> GCA_013414705.1_ASM1341470v1_3007  QLH40005.1 MAG: bifunctional nitrogenase iron-molybdenum cofactor biosynthesis pro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   1.2e-05     0.021     163     250 ..     199     291 ..     186     446 .. 0.82
+   2 ?   -1.6   0.0     0.095   1.7e+02      14      54 ..     492     533 ..     490     583 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_bchZ_hmm 163 vyGtfnmpsdlaeirrlveGiGaevnlvfplgshladvrkladadvnvclyre....fGrllcealerpylqap.i 233
+                                        v G +n++ +l +i  l++ +G  v   +   ++ ++v++   a vn+++  +      r++ e  + py++    
+  GCA_013414705.1_ASM1341470v1_3007 199 VLGEYNVAGELWQITPLLDRLGIRVLSPITGDARYHQVASAHRARVNMVVCSQalvsLARQMQERWDIPYFEGSfY 274
+                                        5699*********************9999999***************987654222279999*********97626 PP
+
+               trimmed_msa_bchZ_hmm 234 GlesttkflrklGellg 250
+                                        G++ t++ lr+l ++l 
+  GCA_013414705.1_ASM1341470v1_3007 275 GISDTSQSLRTLAQMLV 291
+                                        ************99873 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.095
+               trimmed_msa_bchZ_hmm  14 GavyaftaikGlqvvidGpvGcenlp.vtsvlhytdalpphe 54 
+                                        G   af  ikG   +  G  Gc  +  v  v h+ +a+p + 
+  GCA_013414705.1_ASM1341470v1_3007 492 GGALAFLGIKGSLPLFHGSQGCTAFAlVLMVRHFREAIPLQT 533
+                                        5667999***************9987367899****998654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       3601  (1090637 residues searched)
+Passed MSV filter:                        85  (0.0236046); expected 72.0 (0.02)
+Passed bias filter:                       71  (0.0197167); expected 72.0 (0.02)
+Passed Vit filter:                         6  (0.0016662); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000555401); expected 0.0 (1e-05)
+Initial search space (Z):               3601  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12029.70
+//
+[ok]

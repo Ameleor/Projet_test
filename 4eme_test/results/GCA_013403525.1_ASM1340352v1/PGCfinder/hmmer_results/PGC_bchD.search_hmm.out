@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+# output directed to file:         results/GCA_013403525.1_ASM1340352v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.5e-09   31.6   0.8    6.4e-09   30.8   0.8    1.3  1  GCA_013403525.1_ASM1340352v1_1007  HCPCHH_05140 VWFA domain-contain
+  ------ inclusion threshold ------
+      0.033    8.6   5.9      0.037    8.5   5.9    1.2  1  GCA_013403525.1_ASM1340352v1_315   HCPCHH_01610 Protein TonB
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013403525.1_ASM1340352v1_1007  HCPCHH_05140 VWFA domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.8   0.8   1.2e-11   6.4e-09     382     511 ..     174     301 ..     154     324 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 30.8 bits;  conditional E-value: 1.2e-11
+               trimmed_msa_bchD_hmm 382 ievrkdDlrikryeersetttifvVDASGSaA.leRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptr 456
+                                        i ++ +D      ++ + + ++f+VD SGS    e L   K  + lL  +     d+V+lv + G+ + ++L+pt 
+  GCA_013403525.1_ASM1340352v1_1007 174 IGIKASDR---AVAQLAPANLVFLVDVSGSMDrREGLPMVKSTLKLLVDQ-LRDQDRVSLVVYAGE-SRVVLEPTS 244
+                                        55555553...3345567789*********862567*******9877766.6789********997.5899***97 PP
+
+               trimmed_msa_bchD_hmm 457 SLvrak..raLagLpGGGgTPLAagleaalelaeaarrrGrtpllvlLtDGraNial 511
+                                           +ak   a+ +L  GG+T  A+g+e a+++a++a        ++l tDG  N+  
+  GCA_013403525.1_ASM1340352v1_1007 245 GREKAKirTAIEQLTAGGSTAGASGIELAYQMAQQAFIPKGINRILLATDGDFNVGV 301
+                                        766665226899**********************99866666788899****99975 PP
+
+>> GCA_013403525.1_ASM1340352v1_315  HCPCHH_01610 Protein TonB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   5.9   7.1e-05     0.037     243     332 ..      92     182 ..      40     220 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 7.1e-05
+              trimmed_msa_bchD_hmm 243 lapratrlpeeeeeeaeeepeqepapppeeeeaeeee.eeeeeeeeeeealedvvleaakaalpadllaklaakaar 318
+                                         p+    p+++++ +++ p+  +++p ee++a+++  +  +e++++ ++       aaka+    lla+la+ ++ 
+  GCA_013403525.1_ASM1340352v1_315  92 QKPKPKPKPKPPKPVEKKLPDPPKEKPSEEKPADTQPtQAPTEKSAQPAPGPSPAQMAAKASWQGTLLAHLAKYKKY 168
+                                       22222233333333334444444445555555555542333444444455556677899**************9998 PP
+
+              trimmed_msa_bchD_hmm 319 rakaassgkaGakr 332
+                                        a+a++ gk+G +r
+  GCA_013403525.1_ASM1340352v1_315 169 PASAQARGKEGLNR 182
+                                       88899999998665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1051  (353261 residues searched)
+Passed MSV filter:                        56  (0.0532826); expected 21.0 (0.02)
+Passed bias filter:                       22  (0.0209324); expected 21.0 (0.02)
+Passed Vit filter:                         2  (0.00190295); expected 1.1 (0.001)
+Passed Fwd filter:                         2  (0.00190295); expected 0.0 (1e-05)
+Initial search space (Z):               1051  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13557.83
+//
+[ok]

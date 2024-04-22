@@ -1,0 +1,106 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa
+# output directed to file:         results/GCA_000714635.1_ASM71463v1/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    2.2e-12   44.6   0.0      2e-07   28.2   0.0    3.1  3  GCA_000714635.1_ASM71463v1_394  AID99399.1 nitrogenase molybdenu
+    8.1e-11   39.4   0.0    1.1e-10   39.0   0.0    1.1  1  GCA_000714635.1_ASM71463v1_397  AID99402.1 nitrogenase iron-moly
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000714635.1_ASM71463v1_394  AID99399.1 nitrogenase molybdenum-iron protein subunit beta [Klebsiella variicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.9   0.0   2.9e-05     0.071      74     107 ..     131     164 ..      71     224 .. 0.83
+   2 !    3.2   0.0    0.0032       7.8     369     393 ..     240     264 ..     228     274 .. 0.79
+   3 !   28.2   0.0   8.1e-11     2e-07     198     431 ..     272     516 ..     267     518 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 2.9e-05
+            trimmed_msa_bchB_hmm  74 keavrdayerfkpeallvgasctaeliqddpggl 107
+                                     +  +++a + +kpe++ v+++c ae+i dd +++
+  GCA_000714635.1_ASM71463v1_394 131 NLGLQNASALYKPEIIAVSTTCMAEVIGDDLQAF 164
+                                     45678999*********************97764 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.0032
+            trimmed_msa_bchB_hmm 369 iakrlgipcavisapvhvqdfpary 393
+                                     +  ++++pc+++s p  v d pa  
+  GCA_000714635.1_ASM71463v1_394 240 MMAQMDVPCSLLSDPSEVLDTPADG 264
+                                     445789****************965 PP
+
+  == domain 3  score: 28.2 bits;  conditional E-value: 8.1e-11
+            trimmed_msa_bchB_hmm 198 gatpadlarlgeadfnvvlypeiaesaarwlerefgqplvkt.vpiGvgatrdfiaevaalagvdaeaaleeeesrlpw 275
+                                     g++ ++++  ++a   ++l p    ++ + ++ +++qp++++ vp+G+ at +++  v++l+g   ++al+ e+ rl  
+  GCA_000714635.1_ASM71463v1_394 272 GTSQQEIKTAPDAIDTLLLQPWQLVKSKKVVQEMWNQPATEVaVPLGLAATDALLMTVSQLTGKPIADALTLERGRL-- 348
+                                     5678899999999999***********************98549*********************999887777766.. PP
+
+            trimmed_msa_bchB_hmm 276 ysrsvds.tyltgkrvfifgdathavaaarvaaeelGfevvGlGty..srefarevrea..akeygv..ealitddyle 347
+                                         +ds t+l gk+  ++gd   ++  +r    elG e   + ++  ++ + + ++++  a  yg   e +i  d  +
+  GCA_000714635.1_ASM71463v1_394 349 VDMMLDShTWLHGKKFGLYGDPDFVMGLTRFL-LELGCEPTVILSHnaNKRWQKAMKKMldASPYGQesEVFINCDLWH 426
+                                     567788868*********************86.5899975544443115667777776533677876115699****** PP
+
+            trimmed_msa_bchB_hmm 348 veeaiaalapelvlGtqmerhi.......akrlgipcavisapvhvqdfparyspqmGfeGanvlfdtwvhplvmGlee 419
+                                       + + + +p++++G    + i       +k +++p   +  p+  + +  r     G+eGa  +  t+v+ ++  l+ 
+  GCA_000714635.1_ASM71463v1_394 427 FRSLMFTRQPDFMIGNSYGKFIqrdtlakGKAFEVPLIRLGFPLFDRHHLHR-QTTWGYEGAMNIVTTLVNAVLEKLDH 504
+                                     **************99887776222232224455666666666655555444.4578***************9999999 PP
+
+            trimmed_msa_bchB_hmm 420 hlltmfredfef 431
+                                        ++ + d+ f
+  GCA_000714635.1_ASM71463v1_394 505 DTSQLGKTDYSF 516
+                                     998888888887 PP
+
+>> GCA_000714635.1_ASM71463v1_397  AID99402.1 nitrogenase iron-molybdenum cofactor biosynthesis protein NifE [Klebsiella
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   0.0   4.3e-14   1.1e-10      72     321 ..     102     357 ..      84     398 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 4.3e-14
+            trimmed_msa_bchB_hmm  72 lfkeavrdayerfkpeallvgasctaeliqddpgglaeale..lpvpviplelpsyqrkenwGaaetfyqlvralakkk 148
+                                     lf +avr+ ++r++p a+ + ++c   +  dd +++++a +    vpvi+++ + +   +n G   +   ++r+++ ++
+  GCA_000714635.1_ASM71463v1_397 102 LF-HAVRHIVDRYHPAAVFIYNTCVPAMEGDDLEAVCQAAQtaTGVPVIAIDAAGFYGSKNLGNRMAGDVMLRQVIGQR 179
+                                     55.589***************************999888762267**********************9999***99999 PP
+
+            trimmed_msa_bchB_hmm 149 ak......kakaegarpscnllGptalGfrhrddvaeitrlleelGievnvvaplgatpadlarlgeadfnvvlypeia 221
+                                     ++      +  a ++r+ + l+G     f    +  +++ ll+elGi+v      +   a+++ l+ a+ n+++     
+  GCA_000714635.1_ASM71463v1_397 180 EPapwpdnTPFAPAQRHDIGLIGE----FNIAGEFWQVQPLLDELGIRVLGSLSGDGRFAEIQTLHRAQANMLVCSRAL 254
+                                     887775433334556666666665....888899***************9999999*********************** PP
+
+            trimmed_msa_bchB_hmm 222 esaarwlerefgqplvktvpiGvgatrdfiaevaalagvdae....aaleeeesrlpwysrsvdstyltgkrvfifgda 296
+                                      + ar le ++g p  +    G++at d ++++a+l g d      +al ++e++++  + +     l g++v++++ +
+  GCA_000714635.1_ASM71463v1_397 255 INVARGLELRYGTPWFEGSFYGIRATSDALRQLATLLGDDDLcrrtEALIAREEQAAEQALAPWREQLRGRKVLLYTGG 333
+                                     ************************************99875411114444555566666666677899********999 PP
+
+            trimmed_msa_bchB_hmm 297 thavaaarvaaeelGfevvGlGtys 321
+                                      ++ ++   a ++lG++vv  Gt +
+  GCA_000714635.1_ASM71463v1_397 334 VKSWSVVS-ALQDLGMTVVATGTRK 357
+                                     99988765.7899******999964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                       4918  (1536879 residues searched)
+Passed MSV filter:                       148  (0.0300935); expected 98.4 (0.02)
+Passed bias filter:                      114  (0.0231802); expected 98.4 (0.02)
+Passed Vit filter:                         6  (0.00122001); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000406669); expected 0.0 (1e-05)
+Initial search space (Z):               4918  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 21154.62
+//
+[ok]

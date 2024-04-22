@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+# output directed to file:         results/GCA_012933685.1_ASM1293368v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00066   16.9   8.0     0.0009   16.5   8.0    1.1  1  GCA_012933685.1_ASM1293368v1_3099  QJF56746.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_012933685.1_ASM1293368v1_3099  QJF56746.1 1,4-dihydroxy-2-naphthoate polyprenyltransferase [Aeromonas salmonicida
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   8.0   2.6e-07    0.0009      46     232 ..      45     244 ..      20     257 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 2.6e-07
+               trimmed_msa_bchG_hmm  46 vllaGPlvcatsqavndWfdrhvdaine....PerpiPsGripGr.....WGly.ialiltllsllvaaalgtlvf 111
+                                         ll+  l+   s  +nd+ d    a n     P+r++ sG i+ +      Gl  +a +++ lsll +a+  ++  
+  GCA_012933685.1_ASM1293368v1_3099  45 SLLTAILLQILSNLANDYGDAVSGADNGerigPQRAVVSGLITQKqmcvaMGLTaLAAVVSGLSLLGCAFGDQWLQ 120
+                                        467777888899999**9999998888444559*******887652222256643678888888877777777876 PP
+
+               trimmed_msa_bchG_hmm 112 vaavl.....glvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysigahGim 182
+                                        + + +     ++v+a +y++    +   G+ G   v l + gl  + g+  l +++ +++ ll a+  ++ a  ++
+  GCA_012933685.1_ASM1293368v1_3099 121 ILTFVvlggaAIVAAITYTVGKTPYGYRGF-GDISVFL-FFGLLGVLGSYYLFTKTLAWDLLLPATACGLLATAVL 194
+                                        665541222246777777777766666664.6666666.557888889999999999******************* PP
+
+               trimmed_msa_bchG_hmm 183 tlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllaw 232
+                                         +n+ + +e d   g  +l+v+lG +ra  +  l++ ++ v  +a+ll+ 
+  GCA_012933685.1_ASM1293368v1_3099 195 NINNVRDIETDAVSGKITLAVRLGRNRAIAYHWLLLGAALVSTIAFLLTQ 244
+                                        ******************************99999999999999988764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3460  (1006609 residues searched)
+Passed MSV filter:                       136  (0.0393064); expected 69.2 (0.02)
+Passed bias filter:                       50  (0.0144509); expected 69.2 (0.02)
+Passed Vit filter:                         5  (0.00144509); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000289017); expected 0.0 (1e-05)
+Initial search space (Z):               3460  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 26288.50
+//
+[ok]

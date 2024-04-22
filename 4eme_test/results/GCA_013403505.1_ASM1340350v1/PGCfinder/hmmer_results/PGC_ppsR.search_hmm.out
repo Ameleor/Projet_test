@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+# output directed to file:         results/GCA_013403505.1_ASM1340350v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.4e-06   23.6   0.4    1.4e-05   21.9   0.2    1.7  2  GCA_013403505.1_ASM1340350v1_3334  QLG81887.1 DNA-binding transcrip
+    2.1e-05   21.4   0.1      0.024   11.3   0.0    2.2  2  GCA_013403505.1_ASM1340350v1_2926  QLG81541.1 diguanylate cyclase [
+    8.8e-05   19.3   0.0    0.00015   18.5   0.0    1.3  1  GCA_013403505.1_ASM1340350v1_3531  QLG82038.1 nitrogen regulation p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013403505.1_ASM1340350v1_3334  QLG81887.1 DNA-binding transcriptional regulator Fis [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.067        77       9      33 ..       7      31 ..       2      48 .. 0.72
+   2 !   21.9   0.2   1.2e-08   1.4e-05     417     449 ..      55      87 ..      47      88 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.067
+               trimmed_msa_ppsR_hmm  9 lvaaaaDialvldaegviedvavgs 33
+                                       + +a +D+al +  ++ +++  ++ 
+  GCA_013403505.1_ASM1340350v1_3334  7 IFTAQSDVALRIHVDRAVRHYFAQL 31
+                                       6778899999999888888766554 PP
+
+  == domain 2  score: 21.9 bits;  conditional E-value: 1.2e-08
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         Le+T+ N   AAe+LGL R  L  KL+ +gl 
+  GCA_013403505.1_ASM1340350v1_3334  55 VLEYTRGNQTRAAEILGLNRGTLRKKLKAHGLM 87 
+                                        59*****************************96 PP
+
+>> GCA_013403505.1_ASM1340350v1_2926  QLG81541.1 diguanylate cyclase [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.1   0.0   0.00019      0.22     259     365 ..      37     143 ..      25     169 .. 0.75
+   2 !   11.3   0.0   2.1e-05     0.024     163     309 ..     219     376 ..     199     407 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00019
+               trimmed_msa_ppsR_hmm 259 akllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvllanlreegsvrlfat 334
+                                        ++l e+l +  + +v + ++ +i+++N++ l+l +++++e++  + L+  + ++  + ++   ++  +g++   +t
+  GCA_013403505.1_ASM1340350v1_2926  37 ENLYEFLSQNENLVVECAHKIKIIKVNQKVLDLFEAKNQEELCAN-LNLIFKKEMFEAHIHELEALWNGKTHFSST 111
+                                        66788899999999999*********************9998864.999999999999998888888899988888 PP
+
+               trimmed_msa_ppsR_hmm 335 klrgel.gteeeVevsAvsvadgeqpclgfvi 365
+                                        +++  l g++ +V++  + ++ +e+++  ++i
+  GCA_013403505.1_ASM1340350v1_2926 112 TINYTLsGKRIDVQLRGAILPGSETTFDRILI 143
+                                        88866515556788888888776665544444 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 2.1e-05
+               trimmed_msa_ppsR_hmm 163 iveaNpaAarLlgeeakelvgksfaelfeaesreelqallaav...rasgeaeeievrlarkgrevsvsaslfrqe 235
+                                        i+++N++  +L+++++k+ + k+ ++ f++e  e++ ++l ++   +  +++e+++  l  + r+v ++ ++f   
+  GCA_013403505.1_ASM1340350v1_2926 219 ILDVNQSTLDLFKAPDKTTLLKNTHKIFAEEMVETFREQLIELwqgNIHHKREAVNYALDGQIRNVLLQFTVFPGY 294
+                                        99**********************************999988722244567888899999999************* PP
+
+               trimmed_msa_ppsR_hmm 236 gesllLvrlspaeaaaaaaeeae...akllevleklpdalvvtda.....egrilsaNeaflelaqlaseeqvrgr 303
+                                        +e+  Lv+++ ++ +a++++e+        +vl+kl +   +t++     +  i  + + fl++  l++ ++  g+
+  GCA_013403505.1_ASM1340350v1_2926 295 EETWGLVQVALTDITARKKAENYleyLGQHDVLTKLYNRAFFTEElnrlnRSIIRPVSSIFLDMNGLKETNDQLGH 370
+                                        ******9999888777744433311123345666666666666541111123355677778888888888877777 PP
+
+               trimmed_msa_ppsR_hmm 304 sLerwL 309
+                                         +++ L
+  GCA_013403505.1_ASM1340350v1_2926 371 DIGDGL 376
+                                        776655 PP
+
+>> GCA_013403505.1_ASM1340350v1_3531  QLG82038.1 nitrogen regulation protein NR(I) [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.0   1.3e-07   0.00015     403     448 ..     434     479 ..     427     481 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.3e-07
+               trimmed_msa_ppsR_hmm 403 rettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                          +t + E+  I+aAL++T+     AAe+LG  R  L  KL+  g+
+  GCA_013403505.1_ASM1340350v1_3531 434 DIATPMFERTLINAALQQTRGRKRHAAELLGWGRNTLTRKLKELGM 479
+                                        5578899**********************************98887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3481  (1071311 residues searched)
+Passed MSV filter:                       177  (0.0508475); expected 69.6 (0.02)
+Passed bias filter:                       97  (0.0278656); expected 69.6 (0.02)
+Passed Vit filter:                        11  (0.00316001); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000861821); expected 0.0 (1e-05)
+Initial search space (Z):               3481  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 20298.18
+//
+[ok]

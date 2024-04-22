@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa
+# output directed to file:         results/GCA_013341335.1_ASM1334133v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.6e-63  211.0   3.1    4.1e-63  210.8   3.1    1.0  1  GCA_013341335.1_ASM1334133v1_699  QKP91160.1 (2E,6E)-farnesyl diph
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013341335.1_ASM1334133v1_699  QKP91160.1 (2E,6E)-farnesyl diphosphate synthase [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  210.8   3.1   1.1e-66   4.1e-63       6     276 ..      17     295 ..      12     299 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 210.8 bits;  conditional E-value: 1.1e-66
+              trimmed_msa_crtE_hmm   6 aleaalasaeaeeapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfD 82 
+                                       al++ +a    +++p  + ++++y+ + gG+R+RP l+ a  + +G ++++  da aaa+e++h +sL+hDDlP++D
+  GCA_013341335.1_ASM1334133v1_699  17 ALSRFIAPLPFQNTP--VVETMQYGALLGGKRLRPFLVYATGHMFGVSTNT-LDAPAAAVECIHAYSLIHDDLPAMD 90 
+                                       555555555555544..6799*************************98765.68899******************** PP
+
+              trimmed_msa_crtE_hmm  83 dadlRRgkpsvhkafgeplavLaGDalivlafetlareaak..sparlakllktlaravGapaGivaGqawesea.. 155
+                                       d+dlRRg p+ h +fge+ a+LaGDal +laf +l+++ +   s +  ++++++la+a+G+ aG+++Gqa++ +a  
+  GCA_013341335.1_ASM1334133v1_699  91 DDDLRRGLPTCHVKFGEANAILAGDALQTLAFSILSDADMPevSDRDRISMISELASASGI-AGMCGGQALDLDAeg 166
+                                       ***********************************9988762245567899*********9.9********998855 PP
+
+              trimmed_msa_crtE_hmm 156 .ev...dlsayqraktgaLfaaatvaGaiaagadaee....wralgealGeayqvaDDlrDaladaeelGkpagqDa 224
+                                        +v   +l++ +r ktgaL+ aa+  Ga++ag + ++    + +++e +G a+qv DD+ D+++d+++lGk  g D+
+  GCA_013341335.1_ASM1334133v1_699 167 kRVpldALERIHRHKTGALIRAAVRLGALSAGDKGRRalpvLDKYAESIGLAFQVQDDILDVVGDTATLGKRQGADQ 243
+                                       545222467789*******************98765422237899******************************** PP
+
+              trimmed_msa_crtE_hmm 225 algrpsavaelGlegavarlkelvaeaiasipsckgaaalralvraeaerlv 276
+                                       +lg+ ++ a lGle a ++ ++l+++a +s+ + + ++  ++ ++a a+ ++
+  GCA_013341335.1_ASM1334133v1_699 244 QLGKSTYPALLGLEQARKKARDLIDDARQSLKQLAEQSLDTSALEALADYII 295
+                                       *******************************999887766666776666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       3823  (1093358 residues searched)
+Passed MSV filter:                       124  (0.0324353); expected 76.5 (0.02)
+Passed bias filter:                       75  (0.0196181); expected 76.5 (0.02)
+Passed Vit filter:                         5  (0.00130787); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000261575); expected 0.0 (1e-05)
+Initial search space (Z):               3823  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13059.52
+//
+[ok]

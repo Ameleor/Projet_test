@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+# output directed to file:         results/GCA_000830275.1_ASM83027v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+      2e-05   20.2   0.1     0.0055   12.2   0.0    2.5  2  GCA_000830275.1_ASM83027v1_1233  AJF60748.1 MAG: Lon-like protein
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000830275.1_ASM83027v1_1233  AJF60748.1 MAG: Lon-like protein ATP-dependent protease [archaeon GW2011_AR10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.3   0.0    0.0005      0.67      29      60 ..      48      79 ..      29     114 .. 0.69
+   2 !   12.2   0.0   4.1e-06    0.0055     124     214 ..     653     753 ..     649     852 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.0005
+             trimmed_msa_bchI_hmm 29 gGvlvlGdrGtGkstavralaallPkikavkg 60
+                                       vl++G  GtGks  ++a++++lP  +  + 
+  GCA_000830275.1_ASM83027v1_1233 48 RNVLLVGPPGTGKSMLAQAMSEILPLSELKDI 79
+                                     4699********************96544333 PP
+
+  == domain 2  score: 12.2 bits;  conditional E-value: 4.1e-06
+             trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevnlledhlvdllldvaasGenvv.eregls....vrh...parfvlvGsGnPee.GelrP 192
+                                       epG++ r n G l++dev  l  +    ll v +  +  +  +  +s     r    p  fvlv +Gn e+  ++ P
+  GCA_000830275.1_ASM83027v1_1233 653 VEPGMIHRVNGGVLFLDEVATLSPKAQQELLTVMQEKKYPItGQSEMSsgamTRTepvPCDFVLVAAGNYEDiQKIHP 730
+                                      69******************************99876654413333331211343333689*********9945699* PP
+
+             trimmed_msa_bchI_hmm 193 qlldrf.Glsvevrtpkdleerv 214
+                                       l  r  G   ev   +d+ +  
+  GCA_000830275.1_ASM83027v1_1233 731 ALRSRIrGYGYEVYINQDMVDNA 753
+                                      **999667777777776664333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1339  (374442 residues searched)
+Passed MSV filter:                        64  (0.0477969); expected 26.8 (0.02)
+Passed bias filter:                       47  (0.0351008); expected 26.8 (0.02)
+Passed Vit filter:                         7  (0.00522778); expected 1.3 (0.001)
+Passed Fwd filter:                         1  (0.000746826); expected 0.0 (1e-05)
+Initial search space (Z):               1339  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11290.50
+//
+[ok]

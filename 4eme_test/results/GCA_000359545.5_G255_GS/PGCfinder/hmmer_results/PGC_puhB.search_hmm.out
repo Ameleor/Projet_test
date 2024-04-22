@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+# output directed to file:         results/GCA_000359545.5_G255_GS/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    1.3e-06   25.1   0.0    1.5e-06   25.0   0.0    1.3  1  GCA_000359545.5_G255_GS_2155  DCFIBL_11075 Uncharacterized mem
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000359545.5_G255_GS_2155  DCFIBL_11075 Uncharacterized membrane YdbT, contains bPH2 (bacterial pleckstrin-like pr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0     6e-10   1.5e-06      79     135 ..      69     126 ..       9     147 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 6e-10
+          trimmed_msa_puhB_hmm  79 aval.allallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdg 135
+                                   a+al a  +l+a+++ rt+ Y +T++Rv+++ G +    l + ++++e +d++++  g
+  GCA_000359545.5_G255_GS_2155  69 AFALgAFWLLTAYVTYRTSEYGVTDKRVIMKKGWIRRNSLEIFLRRLEGVDVNQTVTG 126
+                                   344404455789**************************************99987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       2445  (584346 residues searched)
+Passed MSV filter:                       112  (0.0458078); expected 48.9 (0.02)
+Passed bias filter:                       79  (0.0323108); expected 48.9 (0.02)
+Passed Vit filter:                        10  (0.00408998); expected 2.4 (0.001)
+Passed Fwd filter:                         5  (0.00204499); expected 0.0 (1e-05)
+Initial search space (Z):               2445  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 12074.88
+//
+[ok]

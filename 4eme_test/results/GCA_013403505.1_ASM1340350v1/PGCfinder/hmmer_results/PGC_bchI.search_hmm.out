@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+# output directed to file:         results/GCA_013403505.1_ASM1340350v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.2e-05   19.4   0.0       0.01   12.7   0.0    2.1  2  GCA_013403505.1_ASM1340350v1_1751  QLG80505.1 ATP-binding protein [
+  ------ inclusion threshold ------
+      0.019   11.7   0.0      0.035   10.9   0.0    1.4  1  GCA_013403505.1_ASM1340350v1_3480  QLG81996.1 DNA polymerase III su
+      0.033   11.0   0.0      0.064   10.0   0.0    1.4  1  GCA_013403505.1_ASM1340350v1_3259  QLG81827.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013403505.1_ASM1340350v1_1751  QLG80505.1 ATP-binding protein [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   8.7e-06      0.01     125     185 ..      16      76 ..       6      81 .. 0.93
+   2 !    4.8   0.1    0.0022       2.5     241     306 ..     154     218 ..     101     226 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 8.7e-06
+               trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        +pG ++ ++ G l++de+  ++ +++++l    +s e ++ r +  + +pa f l+ + nP
+  GCA_013403505.1_ASM1340350v1_1751  16 KPGEITLSHLGVLFLDELPEFDRKVLEVLRQPLESKEIIISRAARQITYPANFQLIAAMNP 76 
+                                        7999999***************************************************999 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.0022
+               trimmed_msa_bchI_hmm 241 vrkkilaarkrlekvevpdavlekaaklclalgtdGlrgeltllraaralaalegakevtkehlkk 306
+                                          ++ + + k+le+ +v d++ +++ +++++      r+   +lr ar++a l +++ +++ hl++
+  GCA_013403505.1_ASM1340350v1_1751 154 CLNQ-ALSPKQLEQHAVLDSTSQRMIEMAQQRLNLSARAYHRVLRVARTIADLAQSEVIQSPHLTE 218
+                                        3333.234567888888888888888888887778889999*******************999976 PP
+
+>> GCA_013403505.1_ASM1340350v1_3480  QLG81996.1 DNA polymerase III subunit gamma/tau [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0     3e-05     0.035       6      63 ..      14      72 ..       9     120 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 3e-05
+               trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsig.GvlvlGdrGtGkstavralaallPkikavkgcry 63
+                                       f  +vgq+++ +al  a    ++    l  G rG Gk+t +r la+ l   + v++++ 
+  GCA_013403505.1_ASM1340350v1_3480 14 FNELVGQNHVSRALSSALERGRLHhAYLFTGTRGVGKTTIARILAKCLNCETGVTSTPC 72
+                                       8899*********98776666675156778***************99976666555443 PP
+
+>> GCA_013403505.1_ASM1340350v1_3259  QLG81827.1 ATP-binding protein [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   5.5e-05     0.064      30      49 ..      85     104 ..      74     119 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 5.5e-05
+               trimmed_msa_bchI_hmm  30 GvlvlGdrGtGkstavrala 49 
+                                         vl+ G rGtGks+ +ral 
+  GCA_013403505.1_ASM1340350v1_3259  85 DVLLTGSRGTGKSSIIRALL 104
+                                        5999**************84 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3481  (1071311 residues searched)
+Passed MSV filter:                       152  (0.0436656); expected 69.6 (0.02)
+Passed bias filter:                      122  (0.0350474); expected 69.6 (0.02)
+Passed Vit filter:                        21  (0.00603275); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000861821); expected 0.0 (1e-05)
+Initial search space (Z):               3481  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11587.19
+//
+[ok]

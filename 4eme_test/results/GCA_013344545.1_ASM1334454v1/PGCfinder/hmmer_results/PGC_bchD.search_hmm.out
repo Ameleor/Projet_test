@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa
+# output directed to file:         results/GCA_013344545.1_ASM1334454v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.065    9.8   0.0      0.094    9.3   0.0    1.1  1  GCA_013344545.1_ASM1334454v1_3952  BBN79137.1 regulatory protein Lu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013344545.1_ASM1334454v1_3952  BBN79137.1 regulatory protein LuxO [Salmonella enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   0.0     2e-05     0.094      74     196 ..     181     303 ..     173     322 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 2e-05
+               trimmed_msa_bchD_hmm  74 pvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedealpeaLl 149
+                                        +  + GLL+eadgg+l+l    Rl+++   ++   +d+g+  l  ++  +r+ ++  l++    +e++ +l ++ l
+  GCA_013344545.1_ASM1334454v1_3952 181 TRDKFGLLSEADGGMLFLDEVHRLPPEGQEMIFYFMDTGTYGLLGET--QRSRKAQILLICATTEEPNSTLLSTFL 254
+                                        55677**********************************87666554..555555555556677788999999999 PP
+
+               trimmed_msa_bchD_hmm 150 dRlalrldldeialrdleelaa...eaedieaararlpkvtleeealeal 196
+                                         R+ +++++ ++a r+  ++        +ie ar+    +t++++ ++a+
+  GCA_013344545.1_ASM1334454v1_3952 255 RRIPIKINIPNLAERSPGDQVDllkYLLEIE-ARKINCAITIDTDSAKAI 303
+                                        9999999998888875544443121222222.333334466666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4668  (1450548 residues searched)
+Passed MSV filter:                       236  (0.050557); expected 93.4 (0.02)
+Passed bias filter:                      111  (0.0237789); expected 93.4 (0.02)
+Passed Vit filter:                        12  (0.00257069); expected 4.7 (0.001)
+Passed Fwd filter:                         1  (0.000214225); expected 0.0 (1e-05)
+Initial search space (Z):               4668  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 23358.03
+//
+[ok]

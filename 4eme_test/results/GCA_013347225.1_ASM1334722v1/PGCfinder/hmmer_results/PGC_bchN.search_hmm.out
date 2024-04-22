@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa
+# output directed to file:         results/GCA_013347225.1_ASM1334722v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00021   18.3   0.1    0.00063   16.7   0.0    1.7  2  GCA_013347225.1_ASM1334722v1_1316  QKS28634.1 MAG: tryptophan synth
+    0.00065   16.7   0.0    0.00081   16.3   0.0    1.2  1  GCA_013347225.1_ASM1334722v1_1819  QKS29075.1 MAG: nitrogenase moly
+  ------ inclusion threshold ------
+      0.015   12.2   0.0      0.021   11.7   0.0    1.1  1  GCA_013347225.1_ASM1334722v1_3285  QKS30405.1 MAG: nitrogenase iron
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013347225.1_ASM1334722v1_1316  QKS28634.1 MAG: tryptophan synthase subunit alpha [Candidatus Accumulibacter simil
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.0   4.4e-07   0.00063     291     374 ..      28     112 ..       3     123 .. 0.83
+   2 ?   -1.3   0.1      0.13   1.8e+02      31      47 ..     230     246 ..     220     267 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 4.4e-07
+               trimmed_msa_bchN_hmm 291 pdsqleiplarflarelgmelvevgtpylhrellaeelallpedvrlseGqdvdkql...drvraarpdlvvcGlG 363
+                                        pd  l +pl r l r  g++++e+g p+ +  +    ++   ++ +l++G ++ + l      ra++p   +  +G
+  GCA_013347225.1_ASM1334722v1_1316  28 PDPALTVPLLRTLVR-AGADVIELGVPFSDPMADGPTIQRA-SERALAKGVSLRQVLslvATFRAEDPKTPLVLMG 101
+                                        999**********98.69**********9999888888775.56789999887776611156799*********** PP
+
+               trimmed_msa_bchN_hmm 364 lanpleaegla 374
+                                         anp+ea g+ 
+  GCA_013347225.1_ASM1334722v1_1316 102 YANPIEAMGVE 112
+                                        *******9986 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.13
+               trimmed_msa_bchN_hmm  31 lvvGsrtcahllqsaaG 47 
+                                        +vvGsr    + qsaa 
+  GCA_013347225.1_ASM1334722v1_1316 230 VVVGSRLIEEIEQSAAT 246
+                                        46666666666666654 PP
+
+>> GCA_013347225.1_ASM1334722v1_1819  QKS29075.1 MAG: nitrogenase molybdenum-iron protein alpha chain [Candidatus Accumu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   5.7e-07   0.00081     180     362 ..     240     424 ..     153     462 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 5.7e-07
+               trimmed_msa_bchN_hmm 180 lfeelgieevkvlpareaeelpavgpntrfllaqpf..lgetaraleer.GakrlaapfplGaeGttawlkaaaea 252
+                                        l+ee+g++ v+   +  + + ++++p+ ++ l   +  ++  +r++ee+ G   l+  f +G    ++ l+a+a++
+  GCA_013347225.1_ASM1334722v1_1819 240 LLEEMGLRVVSQWAGDGTLAEIEMTPKVKLNLLHCYrsMNYISRHMEEKyGIPWLEYNF-FGPTKIAESLRAIAAH 314
+                                        78999999999999999999999999999988888832445678887663677777766.9*99************ PP
+
+               trimmed_msa_bchN_hmm 253 fgvd.eakfeavvaakrerakkalakareklegkrifflpdsqleiplarflarelgmelvevgtpylhrellaee 327
+                                        f+ + ++  e+v+a  +   +  +a+++ +l+gk+++++    l         ++lgm+++  g  + h++  ++ 
+  GCA_013347225.1_ASM1334722v1_1819 315 FDDHiKEGAERVIARYQPTMEAVIAHYKPRLQGKTVMLYVG-GLRPRHVIGAYEDLGMQVIGTGYEFAHNDDYDRT 389
+                                        *8652566899999999999999*************99875.5777666777899********************* PP
+
+               trimmed_msa_bchN_hmm 328 lallpedvrlse...GqdvdkqldrvraarpdlvvcGl 362
+                                        ++ + + + l +   G ++++ + r    +pdlv  G+
+  GCA_013347225.1_ASM1334722v1_1819 390 IKEMGNATLLYDdatGFELEEFIKR---MKPDLVGSGI 424
+                                        ******9999762236667766666...5799987776 PP
+
+>> GCA_013347225.1_ASM1334722v1_3285  QKS30405.1 MAG: nitrogenase iron-molybdenum cofactor biosynthesis protein NifE [Ca
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   1.5e-05     0.021     180     361 ..     216     400 ..     210     410 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_bchN_hmm 180 lfeelgieevkvlparea.eelpav.gpntrfllaqpflgetarale.erGakrlaapfplGaeGttawlkaaaea 252
+                                        lf+elg++ + +l +     e++++   +++++++   l + ar+le + G   ++  f +G   t++ ++  a+ 
+  GCA_013347225.1_ASM1334722v1_3285 216 LFDELGLRILCTLSGDARfYEVQTMhRAEASMVVCAKALLNVARKLEsDFGVPFFEGSF-YGISDTSQAFRDFARV 290
+                                        67777777777776543212222221233444444444555566665156777777777.8999999999999999 PP
+
+               trimmed_msa_bchN_hmm 253 fgvde..akfeavvaakrerakkalakareklegkrifflpdsqleiplarflarelgmelvevgtpylhrellae 326
+                                        +g  +  a+ ea++a +++ a+ al+  +++l+gkr+ ++       ++   l ++lgm++v  gt    +e  a+
+  GCA_013347225.1_ASM1334722v1_3285 291 LGDGDltARTEAMIAREERSARAALEPWQARLAGKRVLLYTGGVKSWSVVSAL-QDLGMTVVATGTNKSTEEDKAR 365
+                                        98765226788999999999********************9998888888877.5899999999998888777777 PP
+
+               trimmed_msa_bchN_hmm 327 elallpedvrlseGqdvdkqldrvraarpdlvvcG 361
+                                          +++ e +++    + +  l+  ++++ d+ + G
+  GCA_013347225.1_ASM1334722v1_3285 366 IREIMGEATQMITDGSPKALLQAYKDHQADILIAG 400
+                                        77777777766555556666777777777766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4289  (1464558 residues searched)
+Passed MSV filter:                       144  (0.0335743); expected 85.8 (0.02)
+Passed bias filter:                       97  (0.022616); expected 85.8 (0.02)
+Passed Vit filter:                         8  (0.00186524); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.000699464); expected 0.0 (1e-05)
+Initial search space (Z):               4289  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 15470.19
+//
+[ok]

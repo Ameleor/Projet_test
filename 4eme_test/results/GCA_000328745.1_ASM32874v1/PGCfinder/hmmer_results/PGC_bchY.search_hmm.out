@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+# output directed to file:         results/GCA_000328745.1_ASM32874v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.5e-09   35.7   0.0    2.2e-09   35.2   0.0    1.1  1  GCA_000328745.1_ASM32874v1_4456  BAM53387.1 light-independent pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000328745.1_ASM32874v1_4456  BAM53387.1 light-independent protochlorophyllide reductasesubunit N [Synechocystis s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   0.0     3e-13   2.2e-09     201     391 ..     204     402 ..     186     418 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 3e-13
+             trimmed_msa_bchY_hmm 201 llGelfpadpvvigal..leplGlaagpvvptrewrelyaaldcaavaaihpfytasvrefea.aGrkvvgs.apvGa 274
+                                      l+G l   dpvv      l+  G++++  +p++ + el    ++  va + pf + +   +      k++g+  p+G 
+  GCA_000328745.1_ASM32874v1_4456 204 LFGSL--PDPVVTNLTleLKKQGVKVSGWLPAKRYTELPVIDEGYYVAGVNPFLSRTATTLMRrRKCKLIGApFPIGP 279
+                                      55554..378876554116689*******************9***********9887776654144567776269*** PP
+
+             trimmed_msa_bchY_hmm 275 dGtaawleaigeaaevaqdkvdaaknkllpaikaalaaapikgr.itlsGyeGsellvarllvesGadvryvgtacpr 351
+                                      dGt aw+e+i + +++  + +++ ++++ +++++ ++   i+g+ +   G +  e+ +ar+l+ +G + + +g     
+  GCA_000328745.1_ASM32874v1_4456 280 DGTRAWIEKICSVLGIEPQGLEEREAQIWASLEDYIQL--IRGKsVFFMGDNLLEVSLARFLIRCGMTCPEIGIPYMD 355
+                                      *********************************99875..66652667899999**********************99 PP
+
+             trimmed_msa_bchY_hmm 352 tkwseedrewleak....Gv...kvqyrasleqdlaaleelkpdlai 391
+                                       ++++++ + le      Gv   ++  +    + ++ +++l+pdl+i
+  GCA_000328745.1_ASM32874v1_4456 356 KRYQAAELALLEKTcsdmGVplpNIVEKPDNYNQIQRIKALQPDLVI 402
+                                      ****9999999875121144111122233334456667777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       7270  (2197226 residues searched)
+Passed MSV filter:                       248  (0.0341128); expected 145.4 (0.02)
+Passed bias filter:                      209  (0.0287483); expected 145.4 (0.02)
+Passed Vit filter:                        16  (0.00220083); expected 7.3 (0.001)
+Passed Fwd filter:                         1  (0.000137552); expected 0.1 (1e-05)
+Initial search space (Z):               7270  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 20774.09
+//
+[ok]

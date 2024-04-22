@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa
+# output directed to file:         results/GCA_000816945.1_ASM81694v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.6e-07   28.3   0.0    2.1e-07   27.9   0.0    1.2  1  GCA_000816945.1_ASM81694v1_1026  AJD28084.1 nitrogenase component
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000816945.1_ASM81694v1_1026  AJD28084.1 nitrogenase component 1 type Oxidoreductase family protein [Clostridium b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.9   0.0   5.8e-11   2.1e-07      61     252 ..      60     255 ..      12     290 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 27.9 bits;  conditional E-value: 5.8e-11
+             trimmed_msa_bchN_hmm  61 leerdlaGladandeldrvverllerrpdikllflvgscpsevikldlsraaerlskklapkvrvlsysgsGiettft 138
+                                      ++e+d++ l d++  l++ +++++e+  + k++fl+ s    vi  dl    e l+ ++ p+v +l +   G +    
+  GCA_000816945.1_ASM81694v1_1026  60 IDETDIS-LGDTR-RLNNAIAQIIEKD-KPKIVFLLPSSVPTVIGTDLMAICEELQPEY-PNVTLLPFGYGGFDIDGH 133
+                                      6777764.77765.6999999999975.45788888888889*************9876.77**************** PP
+
+             trimmed_msa_bchN_hmm 139 qGedaclaalvpelpkae.edaarellvvGaladvv.....edqfarlfe.elgieevkvlparea.eelpavgpntr 208
+                                      +G  ++l  l ++lpk   +++++++ ++G+ ad+       + + r+++ ++g+e++ v+ + ++ e++ ++g    
+  GCA_000816945.1_ASM81694v1_1026 134 RGVQEALLLLTKTLPKDIeKTEEPTFNIIGSCADLFrfhadAEEIIRIMKgAFGMEKLCVMTSDTSvEQIENMGGAHI 211
+                                      ***************976266788999*******9733333244555554389*****99988765156667776555 PP
+
+             trimmed_msa_bchN_hmm 209 fllaqpflgetaraleerGakrlaapfplGaeGttawlkaaaea 252
+                                       l+ +     +a++l++r  +      p+G eGt +w+  +a+ 
+  GCA_000816945.1_ASM81694v1_1026 212 NLVIRQEGKPAAKQLKKRFGTPYLLARPYGIEGTLEWIDKIAKI 255
+                                      555555556677888888666666667***********999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       3608  (1054633 residues searched)
+Passed MSV filter:                        70  (0.0194013); expected 72.2 (0.02)
+Passed bias filter:                       61  (0.0169069); expected 72.2 (0.02)
+Passed Vit filter:                         8  (0.00221729); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000277162); expected 0.0 (1e-05)
+Initial search space (Z):               3608  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 24994.17
+//
+[ok]

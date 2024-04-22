@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+# output directed to file:         results/GCA_000492175.2_ASM49217v2/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.3e-12   43.9   0.6    0.00023   18.1   0.0    3.1  3  GCA_000492175.2_ASM49217v2_596   USF25692.1 Competence protein Co
+  ------ inclusion threshold ------
+      0.015   12.1   0.0      0.024   11.4   0.0    1.3  1  GCA_000492175.2_ASM49217v2_2529  USF27625.1 hypothetical protein 
+       0.02   11.7   0.0        1.2    5.9   0.0    2.1  2  GCA_000492175.2_ASM49217v2_3245  USF28341.1 Arginine utilization 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000492175.2_ASM49217v2_596  USF25692.1 Competence protein ComM [Firmicutes bacterium ASF500]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.1   0.0   1.9e-07   0.00023       8      61 ..     192     243 ..     185     265 .. 0.83
+   2 !   17.4   0.0   3.2e-07   0.00037     122     185 ..     284     347 ..     276     352 .. 0.92
+   3 !    4.9   0.3    0.0019       2.3     193     306 ..     377     493 ..     372     505 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 1.9e-07
+            trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgc 61 
+                                      + gqd++k+al +aa   +   vl+ G  GtGks  +r l  +lP+++  ++ 
+  GCA_000492175.2_ASM49217v2_596 192 EVKGQDQVKRALEIAAAGGH--SVLMSGPPGTGKSMLARRLPGILPDMTRQEAL 243
+                                     5779***********98664..79************************876653 PP
+
+  == domain 2  score: 17.4 bits;  conditional E-value: 3.2e-07
+            trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                      +  pG ++ a+ G l++de+  +   ++++l    + Ge  + r + sv +parf+lv + nP
+  GCA_000492175.2_ASM49217v2_596 284 SNPRPGEISLAHNGVLFLDELPEFPKEVLEVLRQPLEDGEVNISRAAGSVTYPARFMLVCAMNP 347
+                                     5567999********************************************************9 PP
+
+  == domain 3  score: 4.9 bits;  conditional E-value: 0.0019
+            trimmed_msa_bchI_hmm 193 qlldrfGlsvevrtp..kdleervevvrrrdafer.dpeafvakwkkedakvrkkilaarkrlekvevpdavlekaakl 268
+                                      lldr+ l vev     ++l++r       +  er d++  +++ +++d+    + + +r+ l++  + d++ ++  k 
+  GCA_000492175.2_ASM49217v2_596 377 PLLDRLDLFVEVAPLefDELAQRDRAETSAQVKERvDAARALQTARQKDTGAAGNAQLTREGLDRFCALDEACQRLMKG 455
+                                     599********98542268888776666666666535666677788889999999999999999999999999888887 PP
+
+            trimmed_msa_bchI_hmm 269 clalgtdGlrgeltllraaralaalegakevtkehlkk 306
+                                     ++       r+   +lr ar++a l+g  +++ +hl++
+  GCA_000492175.2_ASM49217v2_596 456 AFDRMGLTARSYDRILRVARTIADLDGGGDIQPAHLAE 493
+                                     76655556688999********************9986 PP
+
+>> GCA_000492175.2_ASM49217v2_2529  USF27625.1 hypothetical protein N510_002581 [Firmicutes bacterium ASF500]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.1e-05     0.024      27      58 ..     206     236 ..     192     260 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.1e-05
+             trimmed_msa_bchI_hmm  27 sigGvlvlGdrGtGkstavralaallPkikav 58 
+                                      +   vl++Gd GtGks++v+++   lP ++  
+  GCA_000492175.2_ASM49217v2_2529 206 QANNVLLFGDGGTGKSATVKSML-YLPGMEDL 236
+                                      45689***************986.46777655 PP
+
+>> GCA_000492175.2_ASM49217v2_3245  USF28341.1 Arginine utilization regulatory protein RocR [Firmicutes bacterium ASF500
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.9   0.0   0.00099       1.2       3      47 ..     152     198 ..     150     222 .. 0.83
+   2 ?    3.7   0.0    0.0048       5.6     126     149 ..     241     264 ..     230     277 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 5.9 bits;  conditional E-value: 0.00099
+             trimmed_msa_bchI_hmm   3 afpfsaivgqdemklall..laavdpsigGvlvlGdrGtGkstavra 47 
+                                      +f fs +vg     +al+    +v p  + +l+ G+ GtGk   +++
+  GCA_000492175.2_ASM49217v2_3245 152 HFTFSDMVGSSPAMKALVreAQTVAPLNTPILITGETGTGKEVLAQS 198
+                                      799*******99999998333569999**************876665 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.0048
+             trimmed_msa_bchI_hmm 126 pGllaranrGflyidevnlledhl 149
+                                       Gll +a+ G l++de+n +   +
+  GCA_000492175.2_ASM49217v2_3245 241 VGLLREAEDGTLFLDEINSISTAM 264
+                                      69****************887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3530  (1060020 residues searched)
+Passed MSV filter:                       187  (0.0529745); expected 70.6 (0.02)
+Passed bias filter:                      128  (0.0362606); expected 70.6 (0.02)
+Passed Vit filter:                        15  (0.00424929); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000849858); expected 0.0 (1e-05)
+Initial search space (Z):               3530  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17985.81
+//
+[ok]

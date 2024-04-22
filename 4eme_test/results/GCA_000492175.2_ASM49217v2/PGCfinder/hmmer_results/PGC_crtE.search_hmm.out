@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+# output directed to file:         results/GCA_000492175.2_ASM49217v2/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+      3e-66  221.0   6.8    3.5e-66  220.8   6.8    1.0  1  GCA_000492175.2_ASM49217v2_324  USF25420.1 Farnesyl diphosphate 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000492175.2_ASM49217v2_324  USF25420.1 Farnesyl diphosphate synthase [Firmicutes bacterium ASF500]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  220.8   6.8   9.9e-70   3.5e-66      18     260 ..      28     276 ..       8     290 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 220.8 bits;  conditional E-value: 9.9e-70
+            trimmed_msa_crtE_hmm  18 eapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhka 96 
+                                        + l++a++y++++gG+R+RP l l+    cG d  ++    a a+e++h +sL+hDDlP++Dd++lRRg+p+ h  
+  GCA_000492175.2_ASM49217v2_324  28 PRYADLQEAMEYSLLAGGKRVRPVLALETCRLCGGDPMTA-LPFACAVEMVHTYSLIHDDLPAMDDDELRRGRPTNHVV 105
+                                     344689****************************986555.55899********************************* PP
+
+            trimmed_msa_crtE_hmm  97 fgeplavLaGDalivlafetlareaaksparlakllktlaravGapaGivaGqawesea......evdlsayqraktga 169
+                                     +ge++a+LaGDal+++af +l+r++ ++  ++a+ +++la+a+G+ aG+v+Gqa+++        + +l+ +q  ktga
+  GCA_000492175.2_ASM49217v2_324 106 YGEATAILAGDALLTAAFCHLTRAQLTAG-QVAAAVACLAQAAGS-AGMVGGQALDMAGegraldREELELLQSLKTGA 182
+                                     ***********************999665.56667899******9.9*********976566666778999******** PP
+
+            trimmed_msa_crtE_hmm 170 LfaaatvaGaiaag...adaeewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsavaelGlegavarlk 245
+                                     L+ aa+  G iaag   ++ ++ r +++alG a+qv DD+ D+++++++lGkp+g D+ +++ + v++lGl+g  + ++
+  GCA_000492175.2_ASM49217v2_324 183 LICAAAELGCIAAGgsgEQRKQVRIYAQALGRAFQVRDDMLDVTSSEAALGKPVGSDQINEKSTFVTALGLDGCAKLVD 261
+                                     ***********987222456677889***************************************************** PP
+
+            trimmed_msa_crtE_hmm 246 elvaeaiasipsckg 260
+                                     +l+++ ++++ s++ 
+  GCA_000492175.2_ASM49217v2_324 262 RLTQQGVEALESFQE 276
+                                     *********998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       3530  (1060020 residues searched)
+Passed MSV filter:                       109  (0.0308782); expected 70.6 (0.02)
+Passed bias filter:                       66  (0.0186969); expected 70.6 (0.02)
+Passed Vit filter:                         4  (0.00113314); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000283286); expected 0.0 (1e-05)
+Initial search space (Z):               3530  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 19768.85
+//
+[ok]

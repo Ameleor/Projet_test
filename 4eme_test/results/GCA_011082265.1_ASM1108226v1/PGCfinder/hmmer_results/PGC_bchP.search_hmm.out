@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa
+# output directed to file:         results/GCA_011082265.1_ASM1108226v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.8e-07   26.8   1.1    1.8e-05   20.2   0.1    2.8  3  GCA_011082265.1_ASM1108226v1_247  APBIIM_01270 FAD-dependent pyrid
+    0.00015   17.2   0.0    0.00034   16.0   0.0    1.6  2  GCA_011082265.1_ASM1108226v1_956  APBIIM_04885 hypothetical protei
+     0.0027   13.0   0.0     0.0042   12.4   0.0    1.2  1  GCA_011082265.1_ASM1108226v1_778  APBIIM_03995 hypothetical protei
+     0.0043   12.4   0.0     0.0051   12.1   0.0    1.1  1  GCA_011082265.1_ASM1108226v1_387  APBIIM_01990 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_011082265.1_ASM1108226v1_247  APBIIM_01270 FAD-dependent pyridine nucleotide-disulfide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2   0.1     5e-08   1.8e-05       2      34 ..       8      40 ..       7      45 .. 0.94
+   2 !    4.1   0.0    0.0037       1.4       4      50 ..     149     194 ..     146     212 .. 0.83
+   3 ?   -1.2   0.0      0.16        59     290     334 ..     282     327 ..     276     338 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 5e-08
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra 34
+                                       +d+v+vGGGP+G  aa  lar+  +vl+++++
+  GCA_011082265.1_ASM1108226v1_247  8 LYDAVIVGGGPSGLSAAIYLARACYRVLIVEKK 40
+                                      69****************************986 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0037
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrikPcGGaiPprlik 50 
+                                       +v vvGGG a a  +  l++   +v ll r++    c  a+  ++ +
+  GCA_011082265.1_ASM1108226v1_247 149 EVFVVGGGFAAAEESGFLTKYASHVTLLIREDDF-TCAKAVADKARS 194
+                                       699*************************999876.577777766554 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 0.16
+              trimmed_msa_bchP_hmm 290 ggrlaaeaveell.atgdakalkkarkrfmkehgkvflvlgimqkf 334
+                                       +g ++ ++ ++++ at+d ++ +++ ++++ + + v+ vl  mqk 
+  GCA_011082265.1_ASM1108226v1_247 282 SGDICVKSLRQIVtATSDGAVAATSMEKYLAKRRAVLNVLPKMQKK 327
+                                       5666666666655156677777888899999999999999999975 PP
+
+>> GCA_011082265.1_ASM1108226v1_956  APBIIM_04885 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   9.1e-07   0.00034       2      34 ..       1      33 [.       1      37 [. 0.95
+   2 ?   -3.3   0.0      0.68   2.5e+02       7      35 ..     139     168 ..     136     171 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 9.1e-07
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      ++d +++G GP+G  +a  l  kG ++lll+++
+  GCA_011082265.1_ASM1108226v1_956  1 MYDTIIIGAGPSGVSTALYLKSKGDNILLLEKR 33
+                                      69****************************986 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.68
+              trimmed_msa_bchP_hmm   7 vvGGGPaGa.taaedlarkGkkvllldrag 35 
+                                       +v GG  Ga   a  l+   k+v ++++++
+  GCA_011082265.1_ASM1108226v1_956 139 IVCGGSDGAcKEAIYLSDLCKEVHIVEKRD 168
+                                       555555555156888999999999888865 PP
+
+>> GCA_011082265.1_ASM1108226v1_778  APBIIM_03995 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   1.1e-05    0.0042       2      33 ..       3      34 ..       2      40 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldr 33
+                                      +fd+ +vG G +G  +a+ l+++G +vlll+ 
+  GCA_011082265.1_ASM1108226v1_778  3 IFDICIVGAGASGMLSARYLSKRGFNVLLLEG 34
+                                      79***************************985 PP
+
+>> GCA_011082265.1_ASM1108226v1_387  APBIIM_01990 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.0   1.4e-05    0.0051     108     184 ..      21      94 ..       9     108 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_bchP_hmm 108 rrtgtferierdedgtavvvyrekeegeeekvrarlvigadGarsevarqevpgaekvklvfayheivkapeeeeae 184
+                                       ++ +++e+i++++++ + + ++++   +++    +++ig dGa+     + +++++  ++ +ay  iv+a e+  +e
+  GCA_011082265.1_ASM1108226v1_387  21 KIRAKIESINKNNQN-TSISFETNY--RNMLTFVKYLIGEDGAKEIFECTDFNDMDLNDIAVAYFSIVSAYEKPIQE 94 
+                                       456777888887765.556787744..455566799********************************999885554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1490  (485230 residues searched)
+Passed MSV filter:                        56  (0.0375839); expected 29.8 (0.02)
+Passed bias filter:                       43  (0.0288591); expected 29.8 (0.02)
+Passed Vit filter:                        13  (0.00872483); expected 1.5 (0.001)
+Passed Fwd filter:                         4  (0.00268456); expected 0.0 (1e-05)
+Initial search space (Z):               1490  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9861.34
+//
+[ok]

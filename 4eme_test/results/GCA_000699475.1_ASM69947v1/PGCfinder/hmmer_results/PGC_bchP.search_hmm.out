@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa
+# output directed to file:         results/GCA_000699475.1_ASM69947v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0025   10.0   1.4       0.03    6.5   0.0    2.6  3  GCA_000699475.1_ASM69947v1_164  AIC63915.1 Thioredoxin reductase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000699475.1_ASM69947v1_164  AIC63915.1 Thioredoxin reductase [Candidatus Hodgkinia cicadicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.5   0.6    0.0058      0.98       5      26 ..       7      28 ..       3      87 .. 0.82
+   2 ?   -1.6   0.0     0.051       8.7      84     121 ..      54      91 ..      37     114 .. 0.71
+   3 !    6.5   0.0   0.00018      0.03       4      48 ..     147     190 ..     144     212 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.0058
+            trimmed_msa_bchP_hmm  5 vvvvGGGPaGataaedlarkGk 26
+                                     ++vG GPaG ta    ar+  
+  GCA_000699475.1_ASM69947v1_164  7 LIIVGAGPAGLTAGIYAARSML 28
+                                    6899********9887777655 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.051
+            trimmed_msa_bchP_hmm  84 fvGmvdreefdeflreraaeagaerrtgtferierded 121
+                                     f   ++  e  e +r++aa+ ga+ ++ + e+i+ +e 
+  GCA_000699475.1_ASM69947v1_164  54 FANKMQGYELMEKIRAQAAKLGARIVADSVEEIDTSEL 91 
+                                     44444555566778888999999888888888877665 PP
+
+  == domain 3  score: 6.5 bits;  conditional E-value: 0.00018
+            trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrikPcGGaiPprl 48 
+                                     +v +vGGG +  t a  la+  k+v ++ r +++  c   +  +l
+  GCA_000699475.1_ASM69947v1_164 147 NVAIVGGGNTAVTDALYLAKIAKRVTIVCRGNKL-TCEKVLEEKL 190
+                                     6899************************998876.3655555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        170  (44929 residues searched)
+Passed MSV filter:                         3  (0.0176471); expected 3.4 (0.02)
+Passed bias filter:                        2  (0.0117647); expected 3.4 (0.02)
+Passed Vit filter:                         2  (0.0117647); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00588235); expected 0.0 (1e-05)
+Initial search space (Z):                170  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 2575.13
+//
+[ok]

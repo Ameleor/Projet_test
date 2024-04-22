@@ -1,0 +1,107 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+PGCfinder       10
+all              1
+total           11
+
+Select jobs to execute...
+
+[Fri Apr 19 14:31:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    output: data/results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+    jobid: 11
+    reason: Code has changed since last execution
+    wildcards: genome=GCA_000328745.1_ASM32874v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:31:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    output: data/results/GCA_000474035.1_ASM47403v1/PGCfinder/macsyfinder*/*
+    jobid: 5
+    reason: Code has changed since last execution
+    wildcards: genome=GCA_000474035.1_ASM47403v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:31:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    output: data/results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+    jobid: 7
+    reason: Code has changed since last execution
+    wildcards: genome=GCA_000307975.2_ASM30797v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:31:57 2024]
+
+Error in rule PGCfinder:
+    jobid: 11
+    input: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    output: data/results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p data/results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000328745.1_ASM32874v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 19 14:31:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    output: data/results/GCA_000277105.1_ASM27710v1/PGCfinder/macsyfinder*/*
+    jobid: 9
+    reason: Code has changed since last execution
+    wildcards: genome=GCA_000277105.1_ASM27710v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:31:57 2024]
+Error in rule PGCfinder:
+    jobid: 5
+    input: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    output: data/results/GCA_000474035.1_ASM47403v1/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p data/results/GCA_000474035.1_ASM47403v1/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000474035.1_ASM47403v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 19 14:31:57 2024]
+Error in rule PGCfinder:
+    jobid: 7
+    input: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    output: data/results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p data/results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000307975.2_ASM30797v2/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Apr 19 14:31:57 2024]
+Error in rule PGCfinder:
+    jobid: 9
+    input: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    output: data/results/GCA_000277105.1_ASM27710v1/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p data/results/GCA_000277105.1_ASM27710v1/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000277105.1_ASM27710v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-19T143157.489804.snakemake.log

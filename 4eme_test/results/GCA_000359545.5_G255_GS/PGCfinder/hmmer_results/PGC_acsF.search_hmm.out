@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+# output directed to file:         results/GCA_000359545.5_G255_GS/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+     0.0088   12.2   0.0      0.019   11.1   0.0    1.5  2  GCA_000359545.5_G255_GS_2161  DCFIBL_11105 2-polyprenyl-3-meth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000359545.5_G255_GS_2161  DCFIBL_11105 2-polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone monooxygenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   7.7e-06     0.019      78     142 ..      45     109 ..      29     116 .. 0.87
+   2 ?   -2.9   0.0      0.14   3.4e+02     116     130 ..     167     181 ..     153     184 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 7.7e-06
+          trimmed_msa_acsF_hmm  78 lepelrkefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagfindalkdag 142
+                                   l  + +k+ + f+    + e     ly+     +kn+ +++lf+  a++e+ h ++  + l + g
+  GCA_000359545.5_G255_GS_2161  45 LTSAEKKQSIGFMRVNHSGEVCAQALYHGQMATAKNPAVRALFTTAAKEETDHLAWCQERLEELG 109
+                                   5556677778888888889999999********************************99999876 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.14
+          trimmed_msa_acsF_hmm 116 ikelfkllardesrh 130
+                                    +++++++ +de +h
+  GCA_000359545.5_G255_GS_2161 167 SRKIVEYMQQDEIQH 181
+                                   357889999999888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       2445  (584346 residues searched)
+Passed MSV filter:                        65  (0.0265849); expected 48.9 (0.02)
+Passed bias filter:                       47  (0.0192229); expected 48.9 (0.02)
+Passed Vit filter:                         4  (0.00163599); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.000408998); expected 0.0 (1e-05)
+Initial search space (Z):               2445  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14430.80
+//
+[ok]

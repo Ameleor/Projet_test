@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa
+# output directed to file:         results/GCA_013341355.1_ASM1334135v1/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.012   12.6   2.8       0.33    7.9   0.2    2.1  2  GCA_013341355.1_ASM1334135v1_3231  QKP96830.1 protein lysA [Escheri
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013341355.1_ASM1334135v1_3231  QKP96830.1 protein lysA [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.2   8.7e-05      0.33     264     292 ..      32      60 ..      18      64 .. 0.87
+   2 ?    5.3   0.2   0.00053         2      85     137 ..      79     131 ..      70     136 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 8.7e-05
+               trimmed_msa_pufM_hmm 264 sihrwawwfavlttltggiGilltGtvvd 292
+                                         +  wa+  +v+++++gg+G+  t  v++
+  GCA_013341355.1_ASM1334135v1_3231  32 FVAAWAILATVICVVAGGVGVYATEYVLE 60 
+                                        5778*****************99988876 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00053
+               trimmed_msa_pufM_hmm  85 qfvrqlfwlaleppspeyGlklpplkeGGwwllagffltvsvllwwvrtyrra 137
+                                         f+++++w    +    +  ++ +l   Gw + a ++l++sv+  ++rt  r 
+  GCA_013341355.1_ASM1334135v1_3231  79 LFLQSVPWRRRAAALVVMVATFISLVAAGWIFTALIYLVASVFFRLIRTACRQ 131
+                                        577777777777777777778999999***************99999987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       3779  (1089971 residues searched)
+Passed MSV filter:                       152  (0.0402223); expected 75.6 (0.02)
+Passed bias filter:                       53  (0.0140249); expected 75.6 (0.02)
+Passed Vit filter:                         4  (0.00105848); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.00026462); expected 0.0 (1e-05)
+Initial search space (Z):               3779  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 21681.69
+//
+[ok]

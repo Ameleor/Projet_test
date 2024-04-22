@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa
+# output directed to file:         results/GCA_000831405.1_ASM83140v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+  ------ inclusion threshold ------
+      0.011    7.5   5.4      0.012    7.3   5.4    1.1  1  GCA_000831405.1_ASM83140v1_86  AHL30936.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000831405.1_ASM83140v1_86  AHL30936.1 MAG: hypothetical protein HCTETUND1_125 [Candidatus Hodgkinia cicadicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   5.4    0.0001     0.012      68     123 ..      22      77 ..      18      86 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.0001
+           trimmed_msa_bchX_hmm  68 lfggkacptiietsskkklageevkigdvcfkrdgvfamelggpevgrgcggrgii 123
+                                    lf g +    i  ++ + l g  +    vcf    v  + lg   vgr cg  g+ 
+  GCA_000831405.1_ASM83140v1_86  22 LFCGCCRFCAIAIAAARLLLGCLLLRCGVCFVCVCVLGLFLGKLSVGRCCGACGVC 77 
+                                    6777666677788888888888888889************************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        121  (31730 residues searched)
+Passed MSV filter:                         7  (0.0578512); expected 2.4 (0.02)
+Passed bias filter:                        5  (0.0413223); expected 2.4 (0.02)
+Passed Vit filter:                         1  (0.00826446); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00826446); expected 0.0 (1e-05)
+Initial search space (Z):                121  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4559.89
+//
+[ok]

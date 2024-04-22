@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa
+# output directed to file:         results/GCA_013374835.1_ASM1337483v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00054   14.2   0.2      0.021    9.0   0.0    2.2  2  GCA_013374835.1_ASM1337483v1_187  FIKOMP_01030 Thioredoxin reducta
+     0.0054   10.9   0.0      0.011    9.9   0.0    1.4  1  GCA_013374835.1_ASM1337483v1_641  FIKOMP_03325 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013374835.1_ASM1337483v1_187  FIKOMP_01030 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.0   0.0   4.5e-05     0.021       4      40 ..      18      53 ..      16      62 .. 0.81
+   2 !    3.0   0.0    0.0029       1.3       2      34 ..     156     188 ..     155     205 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 4.5e-05
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaapGGKlr 40
+                                       +iG+G +GL+aa+ l+ +G + t+l + ++ GG+l 
+  GCA_013374835.1_ASM1337483v1_187 18 AIIGSGPAGLTAAIYLT-RGAASTILFAGDQWGGQLM 53
+                                      69**************7.6888888889999999864 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.0029
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                       +v viG G + +  al l++   +vt++ ++++
+  GCA_013374835.1_ASM1337483v1_187 156 KVAVIGGGDSAMEEALVLTKYASEVTIIHRREE 188
+                                       899*************************99875 PP
+
+>> GCA_013374835.1_ASM1337483v1_641  FIKOMP_03325 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.9   0.0   2.3e-05     0.011       2      30 ..      26      54 ..      25      59 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 2.3e-05
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvle 30
+                                      +v + G G +GL++a +la++G++v+++ 
+  GCA_013374835.1_ASM1337483v1_641 26 QVAIFGDGPSGLSSACELAQNGHEVHLIA 54
+                                      6899*********************9985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        916  (277575 residues searched)
+Passed MSV filter:                        25  (0.0272926); expected 18.3 (0.02)
+Passed bias filter:                       24  (0.0262009); expected 18.3 (0.02)
+Passed Vit filter:                         3  (0.00327511); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00218341); expected 0.0 (1e-05)
+Initial search space (Z):                916  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 18910.57
+//
+[ok]

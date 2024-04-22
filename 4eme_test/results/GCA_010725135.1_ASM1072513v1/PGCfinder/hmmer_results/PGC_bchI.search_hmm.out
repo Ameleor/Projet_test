@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa
+# output directed to file:         results/GCA_010725135.1_ASM1072513v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0011   17.3   0.1      0.025   12.7   0.0    2.0  2  GCA_010725135.1_ASM1072513v1_2756  BBU81356.1 hypothetical protein 
+     0.0024   16.1   0.5      0.085   11.0   0.1    2.1  2  GCA_010725135.1_ASM1072513v1_5508  BBU84108.1 phage shock protein o
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_010725135.1_ASM1072513v1_2756  BBU81356.1 hypothetical protein EIMP300_27560 [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   5.6e-06     0.025      19      51 ..      64      96 ..      49     116 .. 0.85
+   2 !    2.7   0.0    0.0062        28     124     144 ..     136     156 ..     124     158 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 5.6e-06
+               trimmed_msa_bchI_hmm 19 lllaavdpsigGvlvlGdrGtGkstavralaal 51
+                                        l++ + ps + v+v+G+ GtGk   +ra+ +l
+  GCA_010725135.1_ASM1072513v1_2756 64 RLISRIAPSPSSVMVVGESGTGKEVVARAIHKL 96
+                                       48999************************9877 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.0062
+               trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevnl 144
+                                         ++Gl+  an G l++de  l
+  GCA_010725135.1_ASM1072513v1_2756 136 GKTGLIQAANTGTLFLDETRL 156
+                                        578***************876 PP
+
+>> GCA_010725135.1_ASM1072513v1_5508  BBU84108.1 phage shock protein operon transcriptional activator [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.3   0.0    0.0041        18      30      43 ..      36      49 ..      25      59 .. 0.81
+   2 !   11.0   0.1   1.9e-05     0.085     119     202 ..      91     178 ..      59     199 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.3 bits;  conditional E-value: 0.0041
+               trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkst 43
+                                        vl++G+rGtGk  
+  GCA_010725135.1_ASM1072513v1_5508 36 PVLIIGERGTGKEL 49
+                                       59**********75 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 1.9e-05
+               trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP......eeG 188
+                                        +G ++ +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n       +eG
+  GCA_010725135.1_ASM1072513v1_5508  91 TGAQKRHPGRFERADGGTLFLDELATAPMMVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNAdlpamvNEG 164
+                                        6888899*********************9999**********9..89999998877777788777752224446** PP
+
+               trimmed_msa_bchI_hmm 189 elrPqlldrfGlsv 202
+                                         +r  lldr+ + v
+  GCA_010725135.1_ASM1072513v1_5508 165 TFRADLLDRLAFDV 178
+                                        *********87765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       9094  (1461850 residues searched)
+Passed MSV filter:                       359  (0.0394766); expected 181.9 (0.02)
+Passed bias filter:                      271  (0.0297999); expected 181.9 (0.02)
+Passed Vit filter:                        47  (0.00516824); expected 9.1 (0.001)
+Passed Fwd filter:                         2  (0.000219925); expected 0.1 (1e-05)
+Initial search space (Z):               9094  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 19111.19
+//
+[ok]

@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+# output directed to file:         results/GCA_000359545.5_G255_GS/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                    -----------
+    5.6e-06   22.7   0.2      6e-06   22.6   0.2    1.0  1  GCA_000359545.5_G255_GS_374  DCFIBL_01955 Putative Fis-like D
+    0.00029   17.1   0.0     0.0054   12.9   0.0    2.2  1  GCA_000359545.5_G255_GS_709  DCFIBL_03660 PAS domain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000359545.5_G255_GS_374  DCFIBL_01955 Putative Fis-like DNA-binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.2   4.9e-09     6e-06     418     449 ..      15      46 ..      11      47 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 4.9e-09
+         trimmed_msa_ppsR_hmm 418 LelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                  +++T++N  +AA +LGLSR  L  KL  y + 
+  GCA_000359545.5_G255_GS_374  15 MRYTKNNQSKAAKILGLSRGTLRKKLAIYQID 46 
+                                  689***********************999885 PP
+
+>> GCA_000359545.5_G255_GS_709  DCFIBL_03660 PAS domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   4.4e-06    0.0054       4      76 ..      20      92 ..      12     257 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 4.4e-06
+         trimmed_msa_ppsR_hmm  4 eaaaklvaaaaDialvldaegviedvavgsedlakeeleewvgkrwsdtvtvesrpKveallaeaaeekatrw 76
+                                 +++++l+  a D++++++ +  i d+  + e++ + + e+++g+++ ++  +e  +  ++ll++ ++ k   w
+  GCA_000359545.5_G255_GS_709 20 AQFEHLIDRADDLVVIVNPDYSIIDLNNAAEQFYQCKREAVIGRNLFEIAVEEEWQLPASLLTHRRSIKRISW 92
+                                 3344555555555555555555555555555555555555555555555555555555555555444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2445  (584346 residues searched)
+Passed MSV filter:                        77  (0.0314928); expected 48.9 (0.02)
+Passed bias filter:                       49  (0.0200409); expected 48.9 (0.02)
+Passed Vit filter:                         7  (0.00286299); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000817996); expected 0.0 (1e-05)
+Initial search space (Z):               2445  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17203.17
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+# output directed to file:         results/GCA_000328745.1_ASM32874v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    5.9e-44  149.3  30.2    3.9e-26   90.6  12.9    2.0  2  GCA_000328745.1_ASM32874v1_2706  BAM51637.1 bacteriochlorophyll s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000328745.1_ASM32874v1_2706  BAM51637.1 bacteriochlorophyll synthase subunit [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.9   9.4   3.4e-22   2.5e-18      35     191 ..       3     163 ..       1     168 [. 0.88
+   2 !   90.6  12.9   5.4e-30   3.9e-26     212     418 ..     210     416 ..     188     433 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 64.9 bits;  conditional E-value: 3.4e-22
+             trimmed_msa_lhaA_hmm  35 vGmaavllvGtLnrvmivelgvpallvalmvalPllvaPlraliGfrsdthrsvlGwrrvPyiwlG....tllqfgGl 108
+                                      +G+   l +G Lnrv+i el v  ++ a+ +a+   v+P+++  G  sd+ r + G++r  y+wlG    t+l f  l
+  GCA_000328745.1_ASM32874v1_2706   3 LGIMSLLTLGVLNRVLIDELAVLPWVAATAIAMYQFVSPFKVWCGQLSDSQR-LWGYHRTGYVWLGalgfTILSFIAL 79 
+                                      68999999*****************************************987.78***********333334667777 PP
+
+             trimmed_msa_lhaA_hmm 109 aimPfaLlllsgdtt.gpallgevaaalafllvGaGlhttqtaGlaLatdlaeeekrprvvallyvmllvGmlvsalv 185
+                                       ++    l l+++   + +++ ++  +  f   G+ l ++ t   aL  d+++e++r + v +++ ml+vG++v+a+v
+  GCA_000328745.1_ASM32874v1_2706  80 QVVWQLGLSLQNNGWgALTIFWSIVLGAVFAAYGVTLSLSSTPFAALLVDVSDEDNRSKLVGIVWSMLMVGIVVGAIV 157
+                                      76665556677777645567778888899************************************************* PP
+
+             trimmed_msa_lhaA_hmm 186 lgllLa 191
+                                       + lL+
+  GCA_000328745.1_ASM32874v1_2706 158 SSRLLN 163
+                                      **9997 PP
+
+  == domain 2  score: 90.6 bits;  conditional E-value: 5.4e-30
+             trimmed_msa_lhaA_hmm 212 lnlialWkqeareakrtakeeekpsfkeawrefvkegkaarllvavglGtaafsmqdillePyGgeiLglsvgattlL 289
+                                      l ++ + k+ +r   r+  +e++ ++ +a++ +++++++a ++  + l t+++ mqd +lePyGge+++l +++tt+L
+  GCA_000328745.1_ASM32874v1_2706 210 LATVGVEKKYSRFGDRSGGREDEITLGQALKVLTASRQTAIFFGFLLLLTLSLFMQDAVLEPYGGEVFNLCISETTQL 287
+                                      5666666777777777788888999999************************************************** PP
+
+             trimmed_msa_lhaA_hmm 290 tallalGalvgfalaarslargadalrlaalGlliGilafslvifaaplesallfrlgavliGlggGlfavgtltaam 367
+                                       a++ +G+l+g++ ++  +     + r ++lG+ +  l fsl+i+a   ++++l++ g +  Gl++G+ ++g     +
+  GCA_000328745.1_ASM32874v1_2706 288 NAFFGMGTLLGIGSTGFFVVPRLGKQRTTSLGCALAALCFSLLILAGFQQNVTLLKSGLLFFGLASGMITAGATSLML 365
+                                      ****************************************************************************** PP
+
+             trimmed_msa_lhaA_hmm 368 alaeeeesGlalGaWGavqataaGlaialgGalrdvvselaasgalgeala 418
+                                      +l++ e++G  +GaWG +q+ + Gla ++gG++ ++ ++l a+ +l+ +l 
+  GCA_000328745.1_ASM32874v1_2706 366 DLTAVETAGTFIGAWGLAQSISRGLATVAGGTVLNIGKALFANAVLAYGLV 416
+                                      ************************************999999988877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       7270  (2197226 residues searched)
+Passed MSV filter:                       388  (0.05337); expected 145.4 (0.02)
+Passed bias filter:                      105  (0.0144429); expected 145.4 (0.02)
+Passed Vit filter:                         6  (0.000825309); expected 7.3 (0.001)
+Passed Fwd filter:                         1  (0.000137552); expected 0.1 (1e-05)
+Initial search space (Z):               7270  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 22045.78
+//
+[ok]

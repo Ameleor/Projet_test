@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa
+# output directed to file:         results/GCA_012534935.1_ASM1253493v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0051   13.6   0.1       0.22    8.2   0.0    2.0  2  GCA_012534935.1_ASM1253493v1_1063  QJC15492.1 rubrerythrin family p
+  ------ inclusion threshold ------
+      0.017   11.9   0.2       0.23    8.1   0.1    2.1  2  GCA_012534935.1_ASM1253493v1_4190  QJC18049.1 manganese-dependent i
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_012534935.1_ASM1253493v1_1063  QJC15492.1 rubrerythrin family protein [Bacillus subtilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.2   0.0   0.00012      0.22      92     131 ..      24      63 ..      15      69 .. 0.91
+   2 !    3.7   0.0    0.0027       5.1     103     133 ..     107     137 ..      76     144 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.00012
+               trimmed_msa_acsF_hmm  92 ssltaefsGcvlyaeikkrvknkdikelfkllardesrha 131
+                                         ++  efs    y+ ++  ++ +++++ ++ + rde rh 
+  GCA_012534935.1_ASM1253493v1_1063  24 KAINGEFSAIQCYRKLAELAHSDEVRKQIEEIRRDEIRHL 63 
+                                        67889**********************************5 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.0027
+               trimmed_msa_acsF_hmm 103 lyaeikkrvknkdikelfkllardesrhagf 133
+                                        +y   + +++n + k +f+  arde  ha +
+  GCA_012534935.1_ASM1253493v1_1063 107 FYLRAAEETSNLKAKGVFTRAARDEQNHAVW 137
+                                        6777788999999***************975 PP
+
+>> GCA_012534935.1_ASM1253493v1_4190  QJC18049.1 manganese-dependent inorganic pyrophosphatase [Bacillus subtilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   0.0     0.012        23      90     133 ..      60     103 ..      45     132 .. 0.89
+   2 ?    8.1   0.1   0.00013      0.23     254     330 ..     168     244 ..     161     266 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.012
+               trimmed_msa_acsF_hmm  90 lvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagf 133
+                                        lv + + e  G +l +  +++ + kdi+e+  l   d  r a+f
+  GCA_012534935.1_ASM1253493v1_4190  60 LVETAANEVNGVILVDHNERQQSIKDIEEVQVLEVIDHHRIANF 103
+                                        7888899**********************999999999999998 PP
+
+  == domain 2  score: 8.1 bits;  conditional E-value: 0.00013
+               trimmed_msa_acsF_hmm 254 afhkalgvdpteydlkvfritseiskqvfPvtldlddprfraglerlrkisekiaaakakggvlgklkraalaaka 329
+                                        ++ +  gvd++ey l++++  +++sk++    + ld  +f+ g ++++ ++ +  + ++ ++  ++l+ ++ ++ a
+  GCA_012534935.1_ASM1253493v1_4190 168 ELAEIAGVDAEEYGLNMLKAGADLSKKTVEELISLDAKEFTLGSKKVEIAQVNTVDIEDVKKRQAELEAVISKVVA 243
+                                        567778************************9999999999999888877665544444433334444433333333 PP
+
+               trimmed_msa_acsF_hmm 330 a 330
+                                         
+  GCA_012534935.1_ASM1253493v1_4190 244 E 244
+                                        3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       3737  (1029428 residues searched)
+Passed MSV filter:                       142  (0.0379984); expected 74.7 (0.02)
+Passed bias filter:                       84  (0.0224779); expected 74.7 (0.02)
+Passed Vit filter:                         8  (0.00214075); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000535189); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 15627.50
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+# output directed to file:         results/GCA_000468575.2_ASM46857v2/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    7.6e-06   22.7   0.1    1.1e-05   22.2   0.1    1.3  1  GCA_000468575.2_ASM46857v2_1481  WFO17506.1 AAA family ATPase [Ce
+    0.00019   18.1   0.1    0.00037   17.2   0.0    1.4  2  GCA_000468575.2_ASM46857v2_3128  WFO15288.1 CpsD/CapB family tyro
+     0.0011   15.6   0.7     0.0038   13.8   0.1    2.0  2  GCA_000468575.2_ASM46857v2_1857  WFO17802.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000468575.2_ASM46857v2_1481  WFO17506.1 AAA family ATPase [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   0.1   8.7e-09   1.1e-05      23      68 ..       3      49 ..       1      77 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 8.7e-09
+             trimmed_msa_bchX_hmm 23 qiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                     +iiai   kgg+gk+ +  nl+  l    kkvlli  dp++++ts l
+  GCA_000468575.2_ASM46857v2_1481  3 KIIAIAnQKGGVGKTTSTVNLAAALGVLEKKVLLIDADPQANATSGL 49
+                                     689996269*********************************99965 PP
+
+>> GCA_000468575.2_ASM46857v2_3128  WFO15288.1 CpsD/CapB family tyrosine-protein kinase [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.0     3e-07   0.00037      16      61 ..      20      65 ..       8      72 .. 0.77
+   2 ?   -2.9   0.0      0.38   4.7e+02     136     145 ..     135     144 ..     102     155 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 3e-07
+             trimmed_msa_bchX_hmm 16 gevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpk 61
+                                     +++++   i       g gk+f   nl+  la  gkkvll+g d +
+  GCA_000468575.2_ASM46857v2_3128 20 ASSNNGKTIFVTSTTKGEGKTFVAVNLAITLALSGKKVLLVGGDLR 65
+                                     444444445555666789************************9965 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.38
+             trimmed_msa_bchX_hmm 136 dwdfdyvlld 145
+                                      + +fdy+++d
+  GCA_000468575.2_ASM46857v2_3128 135 EQEFDYIVVD 144
+                                      4467777666 PP
+
+>> GCA_000468575.2_ASM46857v2_1857  WFO17802.1 signal recognition particle-docking protein FtsY [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   3.1e-06    0.0038       8      59 ..     102     153 ..      95     160 .. 0.83
+   2 ?   -0.8   0.0      0.09   1.1e+02     163     213 ..     226     276 ..     165     296 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.1e-06
+             trimmed_msa_bchX_hmm   8 eepdavatgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      +  d   t +  k+  +i + g  g+gk+ t+ +l+y + +qg kv+l   d
+  GCA_000468575.2_ASM46857v2_1857 102 SGEDVEFTIPKDKKPYVIMVVGVNGVGKTTTIGKLAYQFKKQGYKVVLGAGD 153
+                                      5555556677889999******************************986555 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.09
+             trimmed_msa_bchX_hmm 163 lcqkvivvgsndlqslyvannvcsaveyfrklggnvgvaglvinkddgtge 213
+                                      + qkv+  + nd+  +       +a e  +++     v+ l + k dgt +
+  GCA_000468575.2_ASM46857v2_1857 226 VMQKVVPDTPNDVLLVLDGSTGQNAFEQAKQFTKATNVTSLAVTKLDGTAK 276
+                                      457777777777766666666677777777777778888888888888754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3643  (1062385 residues searched)
+Passed MSV filter:                       102  (0.0279989); expected 72.9 (0.02)
+Passed bias filter:                       79  (0.0216854); expected 72.9 (0.02)
+Passed Vit filter:                        13  (0.00356849); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000823497); expected 0.0 (1e-05)
+Initial search space (Z):               3643  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13311.10
+//
+[ok]

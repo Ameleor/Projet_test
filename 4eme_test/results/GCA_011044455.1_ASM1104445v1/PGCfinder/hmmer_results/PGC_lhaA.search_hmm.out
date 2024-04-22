@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa
+# output directed to file:         results/GCA_011044455.1_ASM1104445v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00016   18.4   9.8    0.00016   18.4   9.8    2.6  3  GCA_011044455.1_ASM1104445v1_1078  QIE92597.1 MFS transporter [Myco
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_011044455.1_ASM1104445v1_1078  QIE92597.1 MFS transporter [Mycobacterium tuberculosis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   9.8   4.1e-08   0.00016     322     404 ..      87     170 ..      22     173 .. 0.82
+   2 ?   -6.0   7.1         1   3.8e+03     273     388 ..     295     410 ..     271     431 .. 0.60
+   3 ?   -2.1   0.7      0.07   2.7e+02     323     362 ..     448     487 ..     406     495 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 4.1e-08
+               trimmed_msa_lhaA_hmm 322 lliGilafslvifaaplesal.lfrlgavliGlggGlfavgtltaamalaeeeesGlalGaWGavqataaGlaial 396
+                                         liG+  f++  +   l+s + ++ ++ v+ G+g+Gl++  tl +  ++  +++ G+alGaWG+v + a+ ++ ++
+  GCA_011044455.1_ASM1104445v1_1078  87 YLIGLGVFTVASLGCGLSSGAgMLIAARVVQGVGAGLLTPQTLSTITRIFPAHRRGVALGAWGTVASVASLVGPLA 162
+                                        5899999*99999999998763677777888********************************************* PP
+
+               trimmed_msa_lhaA_hmm 397 gGalrdvv 404
+                                        gGal d +
+  GCA_011044455.1_ASM1104445v1_1078 163 GGALVDSM 170
+                                        ***99876 PP
+
+  == domain 2  score: -6.0 bits;  conditional E-value: 1
+               trimmed_msa_lhaA_hmm 273 PyGgeiLglsvgattlLtallalGalvgfalaarslargadalrlaalGlliGilafslvifaaplesallfrlga 348
+                                         y   + gls ++t++L a +a+ + v   + +  ++r +++l + ++G  +  +a++ ++ ++    + ++rl  
+  GCA_011044455.1_ASM1104445v1_1078 295 FYAQAVCGLSPTHTAVLFAPTAIVGGVLAPFVGMIIDR-SHPLCVLGFGFSVLAIAMTWLL-CEMAPGTPIWRLVL 368
+                                        47788889999999998887776333333344555554.4555566666665555555544.44444555666666 PP
+
+               trimmed_msa_lhaA_hmm 349 vliGlg.gGlfavgtltaamala.eeeesGlalGaWGavqat 388
+                                          i lg +G f  + lt++ + + + + +G   G++ av+  
+  GCA_011044455.1_ASM1104445v1_1078 369 PFIALGvAGAFVWSPLTVTATRNlRPHLAGASSGVFNAVRQL 410
+                                        566665347777777766554441456678888888887653 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 0.07
+               trimmed_msa_lhaA_hmm 323 liGilafslvifaaplesallfrlgavliGlggGlfavgt 362
+                                        ++ +  f+   faa++++++l+ + ++l G+ + lf v  
+  GCA_011044455.1_ASM1104445v1_1078 448 VLQLPEFVREPFAAAMSQSMLLPAFVALFGIVAALFLVDF 487
+                                        4455566666789999999999999999999999997754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       3805  (1219204 residues searched)
+Passed MSV filter:                       276  (0.0725361); expected 76.1 (0.02)
+Passed bias filter:                       80  (0.021025); expected 76.1 (0.02)
+Passed Vit filter:                        10  (0.00262812); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000262812); expected 0.0 (1e-05)
+Initial search space (Z):               3805  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 16312.53
+//
+[ok]

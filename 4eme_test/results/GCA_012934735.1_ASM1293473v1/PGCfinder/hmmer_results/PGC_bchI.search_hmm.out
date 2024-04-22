@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa
+# output directed to file:         results/GCA_012934735.1_ASM1293473v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.1e-10   36.6   0.0    0.00014   19.0   0.0    3.2  2  GCA_012934735.1_ASM1293473v1_4024  QJG59967.1 YifB family Mg chelat
+     0.0017   15.4   0.0     0.0026   14.9   0.0    1.2  1  GCA_012934735.1_ASM1293473v1_3141  QJG59206.1 sulfate/molybdate ABC
+     0.0065   13.5   0.1      0.089    9.8   0.0    2.2  2  GCA_012934735.1_ASM1293473v1_3073  QJG59151.1 sigma-54-dependent tr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_012934735.1_ASM1293473v1_4024  QJG59967.1 YifB family Mg chelatase-like AAA ATPase [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.0     1e-07   0.00014     116     186 ..     277     347 ..     185     354 .. 0.77
+   2 !    5.2   0.0    0.0016       2.2     194     309 ..     375     490 ..     368     500 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 1e-07
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        a++ G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf lv + nP 
+  GCA_012934735.1_ASM1293473v1_4024 277 AMVGGGAIPGPGEISLAHNGVLFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLVAAMNPS 347
+                                        4455555667999********************************************************95 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.0016
+               trimmed_msa_bchI_hmm 194 lldrfGlsvevrtpk.dleervevvrrrdaferdpeaf..vakwkkedakvrkkilaarkrlekvevpdavlekaa 266
+                                        +ldrf ls+e+  p   + ++  vv    +   +++ +   ++  k+++k+++ +  + +  +  + + +  +   
+  GCA_012934735.1_ASM1293473v1_4024 375 FLDRFDLSLEIPLPPpGILSKT-VVPGESSTTVKQRVMaaRERQFKRQNKLNAWLD-SPEIRQFCKLESEDAQWLE 448
+                                        5777777777765541344433.333333333322222002233333444444333.3333333444444444555 PP
+
+               trimmed_msa_bchI_hmm 267 klclalgtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                        +  ++lg   +r+   ll+ ar++a +++++ +t++hl++  +
+  GCA_012934735.1_ASM1293473v1_4024 449 ETLIHLGL-SIRAWQRLLKVARTIADIDQSDIITRQHLQEAVS 490
+                                        55666776.5899999**********************98654 PP
+
+>> GCA_012934735.1_ASM1293473v1_3141  QJG59206.1 sulfate/molybdate ABC transporter ATP-binding protein [Escherichia coli
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.9e-06    0.0026      33      68 ..      34      69 ..      23     100 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.9e-06
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikavkgcryncdpe 68
+                                       + Gd G+Gkst +r +a llP+   +   + ++ ++
+  GCA_012934735.1_ASM1293473v1_3141 34 LTGDNGAGKSTLLRVMAGLLPPTAGTVMLQQQAMKN 69
+                                       469******************987655554444433 PP
+
+>> GCA_012934735.1_ASM1293473v1_3073  QJG59151.1 sigma-54-dependent transcriptional regulator [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.0   6.5e-05     0.089      19      51 ..     284     316 ..     270     331 .. 0.86
+   2 ?    1.0   0.0     0.031        43     124     143 ..     356     375 ..     345     389 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 6.5e-05
+               trimmed_msa_bchI_hmm  19 lllaavdpsigGvlvlGdrGtGkstavralaal 51 
+                                         l++ + ps + v+v+G+ GtGk   +ra+ +l
+  GCA_012934735.1_ASM1293473v1_3073 284 RLISRIAPSPSSVMVVGESGTGKEVVARAIHKL 316
+                                        489999***********************9877 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.031
+               trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevn 143
+                                         ++Gl+  an G l++de+ 
+  GCA_012934735.1_ASM1293473v1_3073 356 GKTGLIQAANTGTLFLDEIG 375
+                                        478***************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4086  (1243553 residues searched)
+Passed MSV filter:                       209  (0.0511503); expected 81.7 (0.02)
+Passed bias filter:                      147  (0.0359765); expected 81.7 (0.02)
+Passed Vit filter:                        26  (0.00636319); expected 4.1 (0.001)
+Passed Fwd filter:                         3  (0.000734214); expected 0.0 (1e-05)
+Initial search space (Z):               4086  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10396.68
+//
+[ok]

@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+# output directed to file:         results/GCA_013374135.1_ASM1337413v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.9e-06   21.7   0.0    1.2e-05   20.9   0.0    1.3  1  GCA_013374135.1_ASM1337413v1_693   HHFNEH_03605 Iron only hydrogena
+    0.00057   15.4   0.1    0.00094   14.6   0.1    1.2  1  GCA_013374135.1_ASM1337413v1_1286  HHFNEH_06675 Sigma-54-dependent 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013374135.1_ASM1337413v1_693  HHFNEH_03605 Iron only hydrogenase large subunit, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.0   1.6e-08   1.2e-05     257     300 ..     405     448 ..     386     477 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 1.6e-08
+              trimmed_msa_ppsR_hmm 257 aeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqv 300
+                                       a++k++++++++p a+v+ d++ +il+aNeaf++l  + +e+q 
+  GCA_013374135.1_ASM1337413v1_693 405 ATRKTAAMFKSMPSAMVMLDRNLHILEANEAFIRLFVTGNETQT 448
+                                       567899*****************************988877654 PP
+
+>> GCA_013374135.1_ASM1337413v1_1286  HHFNEH_06675 Sigma-54-dependent Fis family transcriptional regulator
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.1   1.3e-06   0.00094     410     438 ..     515     543 ..     507     548 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.3e-06
+               trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQS 438
+                                        E+  I  AL  T+ N   AA +LGLSR S
+  GCA_013374135.1_ASM1337413v1_1286 515 ERHFIREALAATNGNKTEAAGLLGLSRRS 543
+                                        6778999********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1449  (423101 residues searched)
+Passed MSV filter:                        42  (0.0289855); expected 29.0 (0.02)
+Passed bias filter:                       33  (0.0227743); expected 29.0 (0.02)
+Passed Vit filter:                         8  (0.00552105); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00138026); expected 0.0 (1e-05)
+Initial search space (Z):               1449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10816.97
+//
+[ok]

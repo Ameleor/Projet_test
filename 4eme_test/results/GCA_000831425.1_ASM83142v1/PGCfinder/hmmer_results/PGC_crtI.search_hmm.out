@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+# output directed to file:         results/GCA_000831425.1_ASM83142v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    8.8e-07   20.8   0.3    0.00059   11.5   0.1    2.2  2  GCA_000831425.1_ASM83142v1_129  AHL31100.1 MAG: Electron transfe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000831425.1_ASM83142v1_129  AHL31100.1 MAG: Electron transfer flavoprotein-ubiquinone oxidoreductase [Candidatus 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.1   4.2e-06   0.00059       4      39 ..       7      44 ..       4      56 .. 0.88
+   2 !    7.3   0.0   8.2e-05     0.011     221     284 ..     106     170 ..     100     182 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 4.2e-06
+            trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlga..kGyrvtvlekldapGGr 39
+                                    +v++GaG  Glaa+i+l++    ++v v+ek +++GG 
+  GCA_000831425.1_ASM83142v1_129  7 VVIVGAGPAGLAASIKLKSldSELKVGVFEKANQVGGH 44
+                                    799**************9833568999*********96 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 8.2e-05
+            trimmed_msa_crtI_hmm 221 galvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeiead.vvvsnadaaltykkll 284
+                                     ++l + ++   ++ G++++++++++++ v+++++tgv+   G +i a+  + +++  +++ +kl+
+  GCA_000831425.1_ASM83142v1_129 106 NELCTKMCLRAKQLGVNIHVGSSITDLIVNNNTITGVTSCGGAKILAKhTILAEGAFGTAASKLI 170
+                                     778889999999******************************99877515666666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        140  (36847 residues searched)
+Passed MSV filter:                         2  (0.0142857); expected 2.8 (0.02)
+Passed bias filter:                        2  (0.0142857); expected 2.8 (0.02)
+Passed Vit filter:                         1  (0.00714286); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00714286); expected 0.0 (1e-05)
+Initial search space (Z):                140  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6267.56
+//
+[ok]

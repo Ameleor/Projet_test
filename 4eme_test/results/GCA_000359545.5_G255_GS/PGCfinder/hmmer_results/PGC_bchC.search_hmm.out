@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+# output directed to file:         results/GCA_000359545.5_G255_GS/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                    -----------
+      6e-10   35.9   0.3    1.1e-08   31.8   0.3    2.3  1  GCA_000359545.5_G255_GS_122  DCFIBL_00635 L-threonine 3-dehyd
+     0.0025   14.1   0.1     0.0025   14.1   0.1    1.0  1  GCA_000359545.5_G255_GS_82   DCFIBL_00420 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000359545.5_G255_GS_122  DCFIBL_00635 L-threonine 3-dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.8   0.3   8.7e-12   1.1e-08      60     310 .]      17     300 ..      12     300 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 31.8 bits;  conditional E-value: 8.7e-12
+         trimmed_msa_bchC_hmm  60 PlvPGyesvGrvveagee.sklkvgervfvPG.......akcfedvrglf...........Ggaasrlvvpaarvvkvdeel 122
+                                  P+  G+e vG++ve+ge+ s+l vg+rv   G        +c ++ r l            G+ a+ lv+pa+ ++k+++++
+  GCA_000359545.5_G255_GS_122  17 PMHVGHEFVGEIVEVGEAaSALAVGDRVSGEGhitcgdcRNCRAGKRHLCrytvgvgvnrpGAFAEYLVIPAKNAYKIPAKI 98 
+                                  55567777777777765413456677665444111112123333333332222222223338889****************9 PP
+
+         trimmed_msa_bchC_hmm 123 gee..gvllalaatarhalagkekkapdlivGhGvlGrllarltvaagaeapvvWetnaaraegaegyevidpeeder.... 198
+                                  +++  ++l  +  +a+ al+     +  li G G +G + a ++  +ga++ v+ + n  r + ae   v+++ + ++    
+  GCA_000359545.5_G255_GS_122  99 SDDiaAILDPFGNAAHSALEFDLVGEDVLITGAGPVGLMSAAIARHVGARHVVITDVNDYRLALAEKVGVTAAVNSTKtplt 180
+                                  986435666777777778888888888899*******************************999988777665443331111 PP
+
+         trimmed_msa_bchC_hmm 199 ...rd......ykaivdasGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlr.vaaewkkedlaavkalve 270
+                                     ++      +++ +++sG+ae + ++++ +++gg+i + G   ep++  + +   +   ++ +      e   ++++l+ 
+  GCA_000359545.5_G255_GS_122 181 etmKNlgmtegFDVGLEMSGNAEAFRSMLTVMNNGGKIAFLGIPPEPFAIDWNQVVFKSLLIKgIYGRRMFETWYKMTNLLL 262
+                                  111321211125666788*************************************999999975667777788899999999 PP
+
+         trimmed_msa_bchC_hmm 271 sGrlsldglithrasaeeaeeayrtafedpaClkmvldWr 310
+                                  sG l+++ +ith+ + ++ ++a+++ ++ ++  k++l+W+
+  GCA_000359545.5_G255_GS_122 263 SG-LDISPIITHEFPMKDFQQAFDVMLSGKT-GKVILNWE 300
+                                  99.9********************9998765.69****95 PP
+
+>> GCA_000359545.5_G255_GS_82  DCFIBL_00420 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.1   2.1e-06    0.0025     143     174 ..       6      37 ..       1      45 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2.1e-06
+        trimmed_msa_bchC_hmm 143 ekkapdlivGhGvlGrllarltvaagaeapvv 174
+                                  kk+p  ivG G++G llarl   a  ++ +v
+  GCA_000359545.5_G255_GS_82   6 LKKKPIAIVGAGMVGLLLARLLAKAKINTVIV 37 
+                                 5678899**************98888766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2445  (584346 residues searched)
+Passed MSV filter:                        58  (0.0237219); expected 48.9 (0.02)
+Passed bias filter:                       51  (0.0208589); expected 48.9 (0.02)
+Passed Vit filter:                         5  (0.00204499); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000817996); expected 0.0 (1e-05)
+Initial search space (Z):               2445  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14653.05
+//
+[ok]

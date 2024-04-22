@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+# output directed to file:         results/GCA_000359545.5_G255_GS/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    3.8e-08   29.7   0.2    1.8e-05   20.9   0.1    2.2  2  GCA_000359545.5_G255_GS_1946  DCFIBL_10020 Fe-S cluster carrie
+     0.0018   14.3   0.1     0.0025   13.9   0.1    1.2  1  GCA_000359545.5_G255_GS_2213  DCFIBL_11380 ParA-like ATPase in
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000359545.5_G255_GS_1946  DCFIBL_10020 Fe-S cluster carrier ATPase, Mrp/ApbC/NBP35 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.1   1.5e-08   1.8e-05      14      76 ..      35      97 ..      20     116 .. 0.79
+   2 !    6.9   0.0   0.00026      0.32     210     271 ..     227     290 ..     137     296 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 1.5e-08
+          trimmed_msa_bchX_hmm 14 atgevtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpt 76
+                                  ++g ++ + +iia+  gkgg+gks t  nl+  la+ g  v l+  d +     l++g +  p 
+  GCA_000359545.5_G255_GS_1946 35 QKGMPAIK-NIIAVaSGKGGVGKSTTAVNLALALAEAGAEVGLLDADIHGPNQPLMLGVQKKPE 97
+                                  34444433.5666527*******************************99999999999888775 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.00026
+          trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksanye..iigkpesewgslfeelaenvaeappvrp 271
+                                   g+g  +++a+a ++p+l  +p +  ir+++ +    ++++pes  +s + ++a ++ e   ++p
+  GCA_000359545.5_G255_GS_1946 227 GSGGGESMAAADNVPLLGRLPLHIAIRKNADAGTplVMAEPESALASHYRTIAFALVEQLTLQP 290
+                                   6677788899999**************9875433227899999999999999999888877777 PP
+
+>> GCA_000359545.5_G255_GS_2213  DCFIBL_11380 ParA-like ATPase involved in chromosome/plasmid partitioning or cellulose 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.1     2e-06    0.0025      22      65 ..       2      46 ..       1      73 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 2e-06
+          trimmed_msa_bchX_hmm 22 tqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                  t +iai   kgg+gk+ +  nl+  l    ++ lli  dp+  +t
+  GCA_000359545.5_G255_GS_2213  2 TTVIAIAnQKGGVGKTTSAVNLAASLGAAKRRSLLIDLDPQGSAT 46
+                                  6788886269******************************98766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2445  (584346 residues searched)
+Passed MSV filter:                        49  (0.0200409); expected 48.9 (0.02)
+Passed bias filter:                       46  (0.0188139); expected 48.9 (0.02)
+Passed Vit filter:                         5  (0.00204499); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000817996); expected 0.0 (1e-05)
+Initial search space (Z):               2445  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 18515.01
+//
+[ok]

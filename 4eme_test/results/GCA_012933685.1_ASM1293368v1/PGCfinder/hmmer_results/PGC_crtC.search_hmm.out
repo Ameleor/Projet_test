@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+# output directed to file:         results/GCA_012933685.1_ASM1293368v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0018   15.3   0.2     0.0029   14.6   0.2    1.2  1  GCA_012933685.1_ASM1293368v1_1799  QJF55758.1 carotenoid 1,2-hydrat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_012933685.1_ASM1293368v1_1799  QJF55758.1 carotenoid 1,2-hydratase [Aeromonas salmonicida subsp. salmonicida]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   8.5e-07    0.0029      83     156 ..     208     285 ..     202     300 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 8.5e-07
+               trimmed_msa_crtC_hmm  83 eldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgs...elalalrfdadGeveeve 154
+                                        +ld ++ + +G+g+fD+ + +  l +  s WdW   +l+dg  ++l+  ++++g+   e++ ++ +++dG+ + ++
+  GCA_012933685.1_ASM1293368v1_1799 208 TLDGEARQVTGQGWFDHEWSSSVLADWQSGWDWFSLQLSDGrELMLFRLRTKEGRpepENRYGILIEQDGSSRVLS 283
+                                        677888999********************************89999999998876222567888888888876655 PP
+
+               trimmed_msa_crtC_hmm 155 ap 156
+                                        + 
+  GCA_012933685.1_ASM1293368v1_1799 284 PD 285
+                                        44 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3460  (1006609 residues searched)
+Passed MSV filter:                        72  (0.0208092); expected 69.2 (0.02)
+Passed bias filter:                       58  (0.016763); expected 69.2 (0.02)
+Passed Vit filter:                         4  (0.00115607); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000289017); expected 0.0 (1e-05)
+Initial search space (Z):               3460  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 23931.23
+//
+[ok]

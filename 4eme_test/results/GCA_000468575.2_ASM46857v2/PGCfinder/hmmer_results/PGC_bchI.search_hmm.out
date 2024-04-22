@@ -1,0 +1,121 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+# output directed to file:         results/GCA_000468575.2_ASM46857v2/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.5e-08   30.7   1.0     0.0027   14.6   0.0    3.1  3  GCA_000468575.2_ASM46857v2_657   WFO16832.1 YifB family Mg chelat
+    3.4e-07   27.4   0.0    5.7e-07   26.7   0.0    1.3  1  GCA_000468575.2_ASM46857v2_1458  WFO17486.1 MoxR family ATPase [C
+    6.3e-07   26.5   0.5    9.5e-07   26.0   0.0    1.5  2  GCA_000468575.2_ASM46857v2_1847  WFO17793.1 MoxR family ATPase [C
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000468575.2_ASM46857v2_657  WFO16832.1 YifB family Mg chelatase-like AAA ATPase [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   2.2e-06    0.0027       3      60 ..     191     246 ..     189     267 .. 0.88
+   2 !    9.2   0.0    0.0001      0.12     116     188 ..     281     353 ..     277     357 .. 0.93
+   3 !    3.5   0.6    0.0053       6.4     213     306 ..     408     497 ..     376     506 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2.2e-06
+            trimmed_msa_bchI_hmm   3 afpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                     +f fs + gq+ +k+++ +aa   +   ++++G  G+Gk+  ++ l ++lP+++  ++
+  GCA_000468575.2_ASM46857v2_657 191 EFDFSDVKGQESIKRCMEIAAAGGH--NIILIGPPGAGKTMLAKRLPSILPPMTLHEA 246
+                                     699*****************98654..68999*********************87665 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 0.0001
+            trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeG 188
+                                     al+ G    +pG ++ ++ G l++de+  ++  +++++    +  e ++ r  ++v +p+ f+lv s nP  G
+  GCA_000468575.2_ASM46857v2_657 281 ALVGGGAYPQPGEISLSHNGVLFLDELPEFKRGVLEVMRQPLEDREVTISRARFTVTYPSSFMLVASMNPSPG 353
+                                     6777777779************************************************************877 PP
+
+  == domain 3  score: 3.5 bits;  conditional E-value: 0.0053
+            trimmed_msa_bchI_hmm 213 rvevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklclalgtdGlrgeltllraarala 291
+                                      ve+ +r  a  + +++  +++++ + + + + ++ rk  +  ++++++l++a     +l+    r+   +l+ ar++a
+  GCA_000468575.2_ASM46857v2_657 408 SVEIRKRVTAARELQTQRFEEMENVHYNAQMNTKHIRKYCKMDDASKELLKNAM---ERLN-LSARAYDRILKVARTIA 482
+                                     355555554443333333333444444444444444444433333333333332...2333.345888899******** PP
+
+            trimmed_msa_bchI_hmm 292 alegakevtkehlkk 306
+                                      l++a++vt +h+++
+  GCA_000468575.2_ASM46857v2_657 483 DLDAAEAVTGTHIAE 497
+                                     *********999976 PP
+
+>> GCA_000468575.2_ASM46857v2_1458  WFO17486.1 MoxR family ATPase [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.0   4.7e-10   5.7e-07     165     321 ..     147     309 ..     120     328 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 4.7e-10
+             trimmed_msa_bchI_hmm 165 ereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrr.rdaferdpeafvakwkke 237
+                                        +g + + +  f+++ + nP e e    l    ldrf + ++v+ p+ lee +++++   d   ++p+++++++ + 
+  GCA_000468575.2_ASM46857v2_1458 147 TMDGTTYKIAEPFMVLATQNPIEQEgtyaLPEAQLDRFLFKIKVEYPT-LEEEIKIIQThHDRKGSKPQGLINAVISP 223
+                                      55666666677799999999976653333445679**********996.9999****861566778889999888766 PP
+
+             trimmed_msa_bchI_hmm 238 dakvrkkilaarkrlekvevpdavlekaaklclalgtd......G.lrgeltllraaralaalegakevtkehlkkva 308
+                                      +     k+++ +++++++ v++++++ +a++  +          G  r+ ++ l aa+a+aa++g++ v  +++k+  
+  GCA_000468575.2_ASM46857v2_1458 224 E-----KLIDYKQKIQEIVVEEKIIKYIAEVISKTRNHphlylgGsPRASIATLNAAKAFAAIDGRDFVIPNDIKRAL 296
+                                      5.....5566778888888888888888887765433211111132599***************************** PP
+
+             trimmed_msa_bchI_hmm 309 plalrhrlrrdpl 321
+                                      + +l+hr+   p 
+  GCA_000468575.2_ASM46857v2_1458 297 VPVLNHRVILTPE 309
+                                      *******866554 PP
+
+>> GCA_000468575.2_ASM46857v2_1847  WFO17793.1 MoxR family ATPase [Cellulophaga baltica 4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.2       0.5     6e+02       8      50 ..      24      64 ..      22      67 .. 0.69
+   2 !   26.0   0.0   7.9e-10   9.5e-07     172     324 ..     141     304 ..     108     314 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 0.5
+             trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                      ivgq e+ + +ll+      g  l++G  G  k+  v ++a+
+  GCA_000468575.2_ASM46857v2_1847 24 VIVGQTEVVEQILLSVYT--GGHSLLIGVPGLAKTLMVNTIAQ 64
+                                     589999999888887643..24467777777777777777665 PP
+
+  == domain 2  score: 26.0 bits;  conditional E-value: 7.9e-10
+             trimmed_msa_bchI_hmm 172 rhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrda..ferdpeafvakwkkedakvrk 243
+                                      + pa + ++ + nP e e    l    ldrf +++e++ p+ ++e v +v+ + +   ++ ++ f a+   + +++ +
+  GCA_000468575.2_ASM46857v2_1847 141 KLPAPYFVLATQNPIEQEgtypLPEAQLDRFMFAIELKYPS-ISEEVAIVKATTSdlRNQINALFNAEEIIAVQQLVR 217
+                                      5678888888999976663333445679**********996.8999****9865410444455677777777888888 PP
+
+             trimmed_msa_bchI_hmm 244 kilaark....rlekvevpdavlekaaklclalg..tdGlrgeltllraaralaalegakevtkehlkkvaplalrhr 315
+                                      +i    +    +++ v+ + a l++a++ + +      G r+   l+  a+a aa++g+ + + e++k+va   lrhr
+  GCA_000468575.2_ASM46857v2_1847 218 RIPVPDNvvdyAVRLVNSTRANLDTASEYVKQYIdwGAGPRASQNLILGAKAHAAIKGKFSPDIEDVKAVALGILRHR 295
+                                      8876655111145667888889999998876653113589************************************** PP
+
+             trimmed_msa_bchI_hmm 316 lrrdpldea 324
+                                      + ++   ea
+  GCA_000468575.2_ASM46857v2_1847 296 IIKNYKAEA 304
+                                      999876665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3643  (1062385 residues searched)
+Passed MSV filter:                       113  (0.0310184); expected 72.9 (0.02)
+Passed bias filter:                       88  (0.0241559); expected 72.9 (0.02)
+Passed Vit filter:                        12  (0.00329399); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000823497); expected 0.0 (1e-05)
+Initial search space (Z):               3643  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 17677.33
+//
+[ok]

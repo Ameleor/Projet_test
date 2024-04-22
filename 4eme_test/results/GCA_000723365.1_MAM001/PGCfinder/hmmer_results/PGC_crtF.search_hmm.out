@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+# output directed to file:         results/GCA_000723365.1_MAM001/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                   -----------
+     0.0018   12.6   0.0     0.0027   12.0   0.0    1.2  1  GCA_000723365.1_MAM001_368  CDN40496.1 unnamed protein produc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000723365.1_MAM001_368  CDN40496.1 unnamed protein product [Mycoplasma amphoriforme A39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   3.8e-06    0.0027     166     245 ..      12      88 ..       4      99 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 3.8e-06
+        trimmed_msa_crtF_hmm 166 daeevaaYsaLmaasqalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklk.lklfDlpaVaerararleaagls 245
+                                 + ++ + +++L ++sqa++ +        k++   l++G G+G Fl + a + p+++ l l   p V+++a +++e+++++
+  GCA_000723365.1_MAM001_368  12 KCKKSNYFTDLKTDSQAVIEQLFS----NKNKLFHLEIGSGKGIFLWKKALENPTINfLGLEKYPTVVKKALTKYEKSEIK 88 
+                                 556677789999999987755333....344445699*******************94578899*******9999887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                        715  (274971 residues searched)
+Passed MSV filter:                        24  (0.0335664); expected 14.3 (0.02)
+Passed bias filter:                       22  (0.0307692); expected 14.3 (0.02)
+Passed Vit filter:                         7  (0.00979021); expected 0.7 (0.001)
+Passed Fwd filter:                         1  (0.0013986); expected 0.0 (1e-05)
+Initial search space (Z):                715  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9949.15
+//
+[ok]

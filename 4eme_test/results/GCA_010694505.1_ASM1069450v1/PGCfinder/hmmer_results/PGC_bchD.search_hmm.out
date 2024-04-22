@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa
+# output directed to file:         results/GCA_010694505.1_ASM1069450v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.1e-14   49.3   2.6    4.7e-13   46.3   2.1    1.9  2  GCA_010694505.1_ASM1069450v1_4494  QIB88243.1 VWA domain-containing
+    9.4e-07   25.5   0.1    9.4e-07   25.5   0.1    1.6  2  GCA_010694505.1_ASM1069450v1_4428  QIB88205.1 AAA domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_010694505.1_ASM1069450v1_4494  QIB88243.1 VWA domain-containing protein [Pseudomonas aeruginosa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.3   2.1   2.4e-16   4.7e-13     388     506 ..      44     165 ..      34     166 .. 0.84
+   2 ?    1.2   0.0     0.011        21     535     565 ..     176     208 ..     171     212 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 46.3 bits;  conditional E-value: 2.4e-16
+               trimmed_msa_bchD_hmm 388 DlrikryeersetttifvVDASGSaA.leRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvrak 462
+                                        Dl  +   +r   + +++VDAS S+     La aKG + +L  eaY +R + a++   G++A+ l +  ++    +
+  GCA_010694505.1_ASM1069450v1_4494  44 DLLRQPRSRRPGELWLVIVDASASTRrYGALAQAKGVLATLFEEAYRQRIRLAVLHATGQQAQWLWQGQKASRELQ 119
+                                        44444456677788999*******962568**************************************99999999 PP
+
+               trimmed_msa_bchD_hmm 463 raLagLpGGGgTPLAagleaale.laeaarrr.GrtpllvlLtDGr 506
+                                          L +L  GGgTPL  +l++a+  la++ r++  +   l++LtDGr
+  GCA_010694505.1_ASM1069450v1_4494 120 DWLRQLGAGGGTPLLDALHQAAGwLARRQRQKpAEHQRLLVLTDGR 165
+                                        999***************98775266666655257789*******9 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.011
+               trimmed_msa_bchD_hmm 535 glaalviDtsprpep..eakeLAeamgarylaL 565
+                                         +++l++D    p +  +a++LA+++ga+y ++
+  GCA_010694505.1_ASM1069450v1_4494 176 ACPSLLVDLESGPLRlgKAERLARELGAEYRHI 208
+                                        566788887777754336788888888888766 PP
+
+>> GCA_010694505.1_ASM1069450v1_4428  QIB88205.1 AAA domain-containing protein [Pseudomonas aeruginosa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.2     0.088   1.7e+02     457     484 ..      30      57 ..      18      63 .. 0.76
+   2 !   25.5   0.1   4.8e-10   9.4e-07      94     250 ..     105     283 ..      89     289 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.088
+               trimmed_msa_bchD_hmm 457 SLvrakraLagLpGGGgTPLAagleaal 484
+                                         L+r    + +LpG G T L+ +l   l
+  GCA_010694505.1_ASM1069450v1_4428  30 LLARGHLLIEDLPGMGKTTLSHALARVL 57 
+                                        57888888999*********99997655 PP
+
+  == domain 2  score: 25.5 bits;  conditional E-value: 4.8e-10
+               trimmed_msa_bchD_hmm  94 AERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldldeialrdle 167
+                                          R +++  + l +a++eg+  +  +g+++ l+  f ++a  + + ++   +lpe+ ldR  +rl l   + +  +
+  GCA_010694505.1_ASM1069450v1_4428 105 INRATPKSQSALLEAMEEGQ--VTIEGATRPLPEPFFVIATQNPASQGGtfSLPESQLDRFLMRLSLGYPGRAAER 178
+                                        569999999**********6..6667999************9988776522689***********99887766444 PP
+
+               trimmed_msa_bchD_hmm 168 elaa...............eaedieaararlpkvtleeealealvataaalGid.......slRapllalraaral 221
+                                        +l                 + ++++a +a++pkv+++++ ++ +  + +a+  +       s R +l  l+aara 
+  GCA_010694505.1_ASM1069450v1_4428 179 SLLLgearrdllprlepllDHAALAAFQAEVPKVRASDALVDYVLRLVEATRTQpafalglSPRGSLALLAAARAW 254
+                                        4444778888999999999999**************999888765544443332222222289************* PP
+
+               trimmed_msa_bchD_hmm 222 AalegrteveeedlalAarlvlapratrl 250
+                                        A l+gr+ v  ed+++ +  v ++r    
+  GCA_010694505.1_ASM1069450v1_4428 255 ALLAGRDYVIPEDVQAVLPAVAGHRLRDQ 283
+                                        ***********************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3903  (1094357 residues searched)
+Passed MSV filter:                       266  (0.0681527); expected 78.1 (0.02)
+Passed bias filter:                       78  (0.0199846); expected 78.1 (0.02)
+Passed Vit filter:                         9  (0.00230592); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000512426); expected 0.0 (1e-05)
+Initial search space (Z):               3903  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 16045.35
+//
+[ok]

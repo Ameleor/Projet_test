@@ -1,0 +1,163 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+# output directed to file:         results/GCA_000307975.2_ASM30797v2/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.5e-05   21.0   0.0    4.1e-05   20.3   0.0    1.2  1  GCA_000307975.2_ASM30797v2_918   AHX64585.1 cobalamin biosynthesi
+    2.9e-05   20.8   0.4    5.4e-05   19.9   0.3    1.5  2  GCA_000307975.2_ASM30797v2_697   AHX64364.1 cobalamin biosynthesi
+    0.00023   17.8   0.0    0.00056   16.6   0.0    1.6  1  GCA_000307975.2_ASM30797v2_988   AHX64655.1 tyrosine protein kina
+    0.00027   17.6   0.1     0.0057   13.3   0.0    2.2  2  GCA_000307975.2_ASM30797v2_1418  AHX65085.1 ATP-binding protein [
+    0.00054   16.6   0.1      0.046   10.3   0.0    2.2  2  GCA_000307975.2_ASM30797v2_1147  AHX64814.1 cell division protein
+     0.0072   12.9   0.2      0.013   12.1   0.2    1.5  1  GCA_000307975.2_ASM30797v2_1778  AHX65445.1 chromosome partitioni
+  ------ inclusion threshold ------
+       0.03   10.9   0.0      0.085    9.4   0.1    1.8  3  GCA_000307975.2_ASM30797v2_2412  AHX66078.1 cell division inhibit
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000307975.2_ASM30797v2_918  AHX64585.1 cobalamin biosynthesis protein CobQ [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   0.0   7.8e-08   4.1e-05      28      74 ..       8      54 ..       3      62 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 7.8e-08
+            trimmed_msa_bchX_hmm 28 ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74
+                                      kgg+gks    nl+ + a++g + l+i  dp+++++  l+g  a+
+  GCA_000307975.2_ASM30797v2_918  8 NQKGGVGKSSITVNLAAISAKHGLRTLVIDLDPQANSSQYLLGEEAT 54
+                                    579***************************************99886 PP
+
+>> GCA_000307975.2_ASM30797v2_697  AHX64364.1 cobalamin biosynthesis protein CobQ [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.3     1e-07   5.4e-05      22      65 ..       2      46 ..       1      54 [. 0.91
+   2 ?   -2.9   0.0      0.93   4.8e+02     226     249 ..      65      88 ..      58     110 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 1e-07
+            trimmed_msa_bchX_hmm 22 tqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                    +qiiai   kgg+gk+ t  nl+  la   k+vll+  d + ++t
+  GCA_000307975.2_ASM30797v2_697  2 AQIIAIAnQKGGVGKTTTAVNLAASLAVLKKRVLLVDIDSQGNAT 46
+                                    69***96369*****************************988776 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.93
+            trimmed_msa_bchX_hmm 226 laaipadedirrksanyeiigkpe 249
+                                     l  +p +  i++    y+++g++ 
+  GCA_000307975.2_ASM30797v2_697  65 LGEVPIETAIQKAEVGYKVLGSNR 88 
+                                     566777888888888888877654 PP
+
+>> GCA_000307975.2_ASM30797v2_988  AHX64655.1 tyrosine protein kinase [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0   1.1e-06   0.00056      14      62 ..     525     574 ..     514     598 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 1.1e-06
+            trimmed_msa_bchX_hmm  14 atgevtketqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpks 62 
+                                     + + ++ + +ii i g    +gksf  +nl+ ++aq  k+vlli  d + 
+  GCA_000307975.2_ASM30797v2_988 525 HFALANAKNNIIMIAGPSpEVGKSFISTNLATIFAQGNKRVLLIDADMRR 574
+                                     555667788999999975379***********************999765 PP
+
+>> GCA_000307975.2_ASM30797v2_1418  AHX65085.1 ATP-binding protein [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   1.1e-05    0.0057      21      63 ..     151     193 ..     134     212 .. 0.74
+   2 ?    2.1   0.0     0.028        15     210     269 ..     338     397 ..     300     408 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 1.1e-05
+             trimmed_msa_bchX_hmm  21 etqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksd 63 
+                                      +  i+   gkgg+gks t  nl+  l ++g kv ++  d    
+  GCA_000307975.2_ASM30797v2_1418 151 KNVILVSSGKGGVGKSTTTVNLALALQKMGLKVGVLDADIYGP 193
+                                      34566778*************************9988886554 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.028
+             trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksanyeiigkpesewgslfeelaenvaeappv 269
+                                      g g  + ++e+  ip+l  +p + +ir ++ + +    + ++ ++ + ++a++v +   +
+  GCA_000307975.2_ASM30797v2_1418 338 GIGGGDKLSEQYHIPLLGRLPLNAQIREHADQGKPSVVAMDDAADSYIDIAKAVWQQIKK 397
+                                      5677788899999**************987665433333333455555666666555544 PP
+
+>> GCA_000307975.2_ASM30797v2_1147  AHX64814.1 cell division protein FtsY [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   8.8e-05     0.046      18      60 ..     160     202 ..     147     227 .. 0.84
+   2 !    4.3   0.0    0.0059       3.1     181     225 ..     292     339 ..     268     366 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 8.8e-05
+             trimmed_msa_bchX_hmm  18 vtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                      ++k+  +i + g  g+gk+ t+ +l+  l  +gkkv+l   d 
+  GCA_000307975.2_ASM30797v2_1147 160 PNKSPYVILMVGVNGVGKTTTIGKLAKRLQGEGKKVMLAAGDT 202
+                                      567788999*****************************98875 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.0059
+             trimmed_msa_bchX_hmm 181 annvcsaveyfrklggnvgvaglvinkddgtgeaq...afaeavgipv 225
+                                      a    +a++  +++   vg++g+ i k dgt +      +a+   +p+
+  GCA_000307975.2_ASM30797v2_1147 292 AGTGQNAINQVQEFDQAVGLTGITITKLDGTAKGGvlfNIASRTHVPI 339
+                                      5555678999999999**************977541113455556665 PP
+
+>> GCA_000307975.2_ASM30797v2_1778  AHX65445.1 chromosome partitioning protein ParA [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.2   2.4e-05     0.013      25      62 ..       5      42 ..       1      70 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2.4e-05
+             trimmed_msa_bchX_hmm 25 iaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                     +    kgg gk++t   l+  laq+g kv l   d + 
+  GCA_000307975.2_ASM30797v2_1778  5 LIANQKGGCGKTMTAITLATALAQKGYKVALADSDNQK 42
+                                     44467**************************9988654 PP
+
+>> GCA_000307975.2_ASM30797v2_2412  AHX66078.1 cell division inhibitor MinD [Acinetobacter baumannii AC30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.1   0.00016     0.085      24      68 ..       5      49 ..       1      64 [. 0.84
+   2 ?   -3.1   0.0         1   5.4e+02     253     287 ..     103     137 ..      96     154 .. 0.72
+   3 ?   -3.4   0.0       1.3   6.7e+02     223     261 ..     205     244 ..     201     265 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 0.00016
+             trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                     ++   gkgg+gk+ t a ++  la +g+k ++i  d       l+
+  GCA_000307975.2_ASM30797v2_2412  5 VVVTSGKGGVGKTTTSASFATGLALRGHKTVVIDFDVGLRNLDLI 49
+                                     45568***************************9988765555555 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 1
+             trimmed_msa_bchX_hmm 253 gslfeelaenvaeappvrpkplsqdgllglfkaee 287
+                                      + +++el+++        p  +++ ++l++++a+e
+  GCA_000307975.2_ASM30797v2_2412 103 ARVIDELSQEFDYIICDSPAGIERGAILAMYHADE 137
+                                      55667777777777777777777777777777776 PP
+
+  == domain 3  score: -3.4 bits;  conditional E-value: 1.3
+             trimmed_msa_bchX_hmm 223 ipvlaaipadedirrksanye.iigkpesewgslfeelae 261
+                                      +p l  ip+   + + s + + +i  +e++ g+ +++l +
+  GCA_000307975.2_ASM30797v2_2412 205 VPTLGVIPECPSVLQASNEGKpVILYSETKAGQAYDDLVA 244
+                                      6777777777777766665432666777777777777643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3660  (1137479 residues searched)
+Passed MSV filter:                       118  (0.0322404); expected 73.2 (0.02)
+Passed bias filter:                       94  (0.0256831); expected 73.2 (0.02)
+Passed Vit filter:                        13  (0.00355191); expected 3.7 (0.001)
+Passed Fwd filter:                         7  (0.00191257); expected 0.0 (1e-05)
+Initial search space (Z):               3660  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18466.43
+//
+[ok]

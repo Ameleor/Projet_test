@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+# output directed to file:         results/GCA_000831425.1_ASM83142v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    4.8e-05   15.4   2.4    0.00058   11.8   0.0    2.7  3  GCA_000831425.1_ASM83142v1_91   AHL31062.1 MAG: Thioredoxin redu
+     0.0012   10.8   0.1     0.0054    8.7   0.1    1.9  2  GCA_000831425.1_ASM83142v1_129  AHL31100.1 MAG: Electron transfe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000831425.1_ASM83142v1_91  AHL31062.1 MAG: Thioredoxin reductase [Candidatus Hodgkinia cicadicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.2   0.8    0.0072       0.5       5      29 ..       7      31 ..       3      89 .. 0.77
+   2 ?   -0.9   0.0     0.061       4.3      83     120 ..      53      90 ..      32     117 .. 0.76
+   3 !   11.8   0.0   8.3e-06   0.00058       4      52 ..     147     194 ..     144     235 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.0072
+           trimmed_msa_bchP_hmm  5 vvvvGGGPaGataaedlarkGkkvl 29
+                                    v+vG GPaG ta    ar+  + l
+  GCA_000831425.1_ASM83142v1_91  7 LVIVGAGPAGLTAGIYAARSMLQPL 31
+                                   6899*******99887777665555 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.061
+           trimmed_msa_bchP_hmm  83 GfvGmvdreefdeflreraaeagaerrtgtferierde 120
+                                    Gf   v+  e  + +r++aa+ ga+ ++ + ++i+ +e
+  GCA_000831425.1_ASM83142v1_91  53 GFASKVQGYELMDKMRAQAAKLGARIVADSVKEIDTSE 90 
+                                    77777777777778899999999998888888887665 PP
+
+  == domain 3  score: 11.8 bits;  conditional E-value: 8.3e-06
+           trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrikPcGGaiPprlikdf 52 
+                                    +v +vGGG + at a  la+  k+v+++ r +++k c   +  rl+   
+  GCA_000831425.1_ASM83142v1_91 147 NVAIVGGGSTAATDALYLAKIVKSVVIVCRGNKLK-CEKVLEERLLDHE 194
+                                    6899****************************999.7777777777654 PP
+
+>> GCA_000831425.1_ASM83142v1_129  AHL31100.1 MAG: Electron transfer flavoprotein-ubiquinone oxidoreductase [Candidatus 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.7   0.1   7.7e-05    0.0054       2      25 ..       4      27 ..       3      57 .. 0.77
+   2 ?   -0.9   0.0     0.061       4.2     268     298 ..     293     323 ..     291     352 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 7.7e-05
+            trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkG 25
+                                    ++dvv+vG GPaG +a+ +l    
+  GCA_000831425.1_ASM83142v1_129  4 VYDVVIVGAGPAGLAASIKLKSLD 27
+                                    7************99999887543 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.061
+            trimmed_msa_bchP_hmm 268 laGdaaGvvaPasGeGiyyamlggrlaaeav 298
+                                     + G aaG+v      G++ a+++g+ +ae  
+  GCA_000831425.1_ASM83142v1_129 293 IIGCAAGLVNMLKLKGVHNALQSGENVAEKF 323
+                                     5678888888888888888888887776642 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        140  (36847 residues searched)
+Passed MSV filter:                         4  (0.0285714); expected 2.8 (0.02)
+Passed bias filter:                        4  (0.0285714); expected 2.8 (0.02)
+Passed Vit filter:                         2  (0.0142857); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0142857); expected 0.0 (1e-05)
+Initial search space (Z):                140  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2905.80
+//
+[ok]

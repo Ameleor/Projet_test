@@ -1,0 +1,34 @@
+# Collaboration avec Kinnie
+
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GCA*")]
+
+TIMEOUT=["timeout"]
+
+# Règle pour vérifier si tous les fichiers de sortie existent
+rule all:
+    input:
+        expand("results/{genome}/PGCfinder", genome=GENOMES)
+        #expand("data/genomes_unzip/{genome}/{genome}_protein.faa", genome=GENOMES) -> Test pour ma première règle (unzip_genomes)
+
+# Règle pour décompresser les génomes
+rule unzip_genomes:
+    input:  "data/genomes/{genome}/{genome}_protein.faa.gz"
+    output: "data/genomes_unzip/{genome}/{genome}_protein.faa"
+    shell:  "cp {input} {output}.gz && gunzip {output}.gz"
+
+rule PGCfinder:
+    input:
+        "data/genomes_unzip/{genome}/{genome}_protein.faa"
+    output:
+        directory("results/{genome}/PGCfinder")
+    shell:
+        """
+        mkdir -p {output}
+        macsyfinder --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/{wildcards.genome}/PGCfinder/
+        """

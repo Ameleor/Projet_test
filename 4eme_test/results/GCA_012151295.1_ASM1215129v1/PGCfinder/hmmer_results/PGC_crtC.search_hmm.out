@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa
+# output directed to file:         results/GCA_012151295.1_ASM1215129v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0018   15.7   1.4     0.0021   15.5   0.2    1.7  2  GCA_012151295.1_ASM1215129v1_4545  BCB50018.1 carotenoid 1,2-hydrat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_012151295.1_ASM1215129v1_4545  BCB50018.1 carotenoid 1,2-hydratase [Vibrio alginolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.1      0.24   1.1e+03     158     179 ..     106     127 ..      98     138 .. 0.65
+   2 !   15.5   0.2   4.6e-07    0.0021      81     151 ..     225     298 ..     216     320 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.24
+               trimmed_msa_crtC_hmm 158 raklprtlWrveretradagka 179
+                                        + ++++t W+ ++   a+++ +
+  GCA_012151295.1_ASM1215129v1_4545 106 EDDVKKTEWQTQQIYMAHSAVT 127
+                                        5567788888877776666655 PP
+
+  == domain 2  score: 15.5 bits;  conditional E-value: 4.6e-07
+               trimmed_msa_crtC_hmm  81 eveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrd.gselalalr.fdadGeve 151
+                                        +v++d + ++ +G+g++D  + ++ l ++ + WdW   +l+d+ ++v+++ + ++ g+++  + r +++dG+  
+  GCA_012151295.1_ASM1215129v1_4545 225 DVTIDGETHQVSGKGWIDREWSSQFLLDSQQGWDWFALRLSDEtSLVVFQLRDSKtGQASYSSARlMQQDGSGI 298
+                                        4788889999*******************************997889999876551444444444145555543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4601  (1482976 residues searched)
+Passed MSV filter:                       130  (0.0282547); expected 92.0 (0.02)
+Passed bias filter:                      107  (0.0232558); expected 92.0 (0.02)
+Passed Vit filter:                         5  (0.00108672); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000217344); expected 0.0 (1e-05)
+Initial search space (Z):               4601  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 23453.95
+//
+[ok]

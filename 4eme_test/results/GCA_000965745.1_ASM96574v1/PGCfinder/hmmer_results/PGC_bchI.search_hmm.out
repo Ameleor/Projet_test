@@ -1,0 +1,97 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa
+# output directed to file:         results/GCA_000965745.1_ASM96574v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.9e-08   30.6   0.4     0.0019   14.2   0.3    2.8  2  GCA_000965745.1_ASM96574v1_1903  AKA49632.1 ATP-dependent proteas
+    0.00028   16.9   0.0    0.00043   16.3   0.0    1.2  1  GCA_000965745.1_ASM96574v1_1177  AKA48908.1 magnesium chelatase [
+    0.00045   16.3   0.0    0.00078   15.5   0.0    1.3  1  GCA_000965745.1_ASM96574v1_926   AKA48657.1 ATPase [uncultured ar
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000965745.1_ASM96574v1_1903  AKA49632.1 ATP-dependent protease Lon [uncultured archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   5.6e-06    0.0036       6      57 ..      26      75 ..      22     110 .. 0.83
+   2 !   14.2   0.3   2.9e-06    0.0019     124     204 ..     221     311 ..     215     426 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 5.6e-06
+             trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57
+                                     f  ++gqde  + +  aa++++   vl++Gd GtGks  ++++ ++lPk + 
+  GCA_000965745.1_ASM96574v1_1903 26 FDQVIGQDEAGQVVKKAALQKR--HVLLIGDPGTGKSMLAQSMVDFLPKEEL 75
+                                     7889**************9987..79**********************9554 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 2.9e-06
+             trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevnlledhlvdllldvaasGenvv....ere.glsvrh...parfvlvGsGnPeeGe.lrP 192
+                                       e+G + +a+rG l++de+nll       ll + +  +  +    er  g  v+    p  fvlv +Gn +  + + P
+  GCA_000965745.1_ASM96574v1_1903 221 VEAGNIHKAHRGVLFVDEMNLLRPESQQALLTAMQEKKFPIsgqsERSaGAMVQTepvPCDFVLVAAGNLDAVQgIHP 298
+                                      68999*****************99888888887765443222222564233343223367888988888775432777 PP
+
+             trimmed_msa_bchI_hmm 193 qlldrf.Glsvev 204
+                                       l  r  G   ev
+  GCA_000965745.1_ASM96574v1_1903 299 ALRSRIrGYGYEV 311
+                                      7777743333333 PP
+
+>> GCA_000965745.1_ASM96574v1_1177  AKA48908.1 magnesium chelatase [uncultured archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   6.6e-07   0.00043     140     320 ..     103     282 ..      96     307 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 6.6e-07
+             trimmed_msa_bchI_hmm 140 devnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleer 213
+                                      de+n    ++   ll++    e  v   g s + p  f+++ + nP e e    l   l+drf +   + t  + +e 
+  GCA_000965745.1_ASM96574v1_1177 103 DEINRTPPKVHSALLEAM--EEKQVSVGGNSQKVPEPFLVIATQNPIEQEgtfpLAEALMDRFLFRY-ILTYPTRQEE 177
+                                      666666666666666644..35566777888899999*********776544667889*****7766.5555666889 PP
+
+             trimmed_msa_bchI_hmm 214 vevvrrrdaferdpeafva.kwkkedakvrkkilaarkrlekvevpdavlekaakl.clalgtdGlrgeltllraara 289
+                                      +e++r + ++ + p + +  +   + ++  +++ a+ + ++ +    ++ +k+ +   + +g+   r+   +l+aa+a
+  GCA_000965745.1_ASM96574v1_1177 178 MEILRSTSTYSEPPGSILGpELVMRLREEVSEVYASEEIMNYI---VDITRKTREHdMVYIGA-SPRTTAKFLKAAKA 251
+                                      **********999988765133333334444455555555544...33444444430445555.569999******** PP
+
+             trimmed_msa_bchI_hmm 290 laalegakevtkehlkkvaplalrhrlrrdp 320
+                                       a ++g++ v  e++  + +  l+hr+  +p
+  GCA_000965745.1_ASM96574v1_1177 252 NALINGRNYVIPEDVIYICTEILNHRIIMKP 282
+                                      **************************86554 PP
+
+>> GCA_000965745.1_ASM96574v1_926  AKA48657.1 ATPase [uncultured archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   1.2e-06   0.00078      20      54 ..     248     282 ..     239     315 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 1.2e-06
+            trimmed_msa_bchI_hmm  20 llaavdpsigGvlvlGdrGtGkstavralaallPk 54 
+                                     l+a ++++  G+lv G  G+Gkst v+ala++   
+  GCA_000965745.1_ASM96574v1_926 248 LIARLESQANGILVAGSPGAGKSTFVQALAEFYSS 282
+                                     7999**************************98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1947  (565590 residues searched)
+Passed MSV filter:                        85  (0.0436569); expected 38.9 (0.02)
+Passed bias filter:                       78  (0.0400616); expected 38.9 (0.02)
+Passed Vit filter:                        16  (0.00821777); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00154083); expected 0.0 (1e-05)
+Initial search space (Z):               1947  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7281.03
+//
+[ok]

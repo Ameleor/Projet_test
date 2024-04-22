@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+# output directed to file:         results/GCA_013372025.1_ASM1337202v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.6e-09   31.4   0.5    2.8e-07   25.2   0.2    2.3  2  GCA_013372025.1_ASM1337202v1_612  QKX95633.1 MAG: dihydrolipoamide
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013372025.1_ASM1337202v1_612  QKX95633.1 MAG: dihydrolipoamide dehydrogenase [Rapeseed phyllody phytoplasma]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   0.2   3.7e-10   2.8e-07       2      48 ..       3      51 ..       2      60 .. 0.83
+   2 !    4.0   0.0   0.00099      0.75       5      37 ..     175     207 ..     171     211 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 3.7e-10
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra..grikPcGGaiPprl 48
+                                      ++dv+v+GGGP G +aa + a++G kv+l++++  g i    G iP+++
+  GCA_013372025.1_ASM1337202v1_612  3 NYDVLVIGGGPGGYVAAIKAAQMGAKVALVEKHklGGICLNYGCIPTKA 51
+                                      7*****************************9872244555568888775 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.00099
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldragri 37 
+                                       v +vGGG  G   a+ +   G +v +l+r++ i
+  GCA_013372025.1_ASM1337202v1_612 175 VTIVGGGVIGVEFATIFNSFGSEVTILERQDTI 207
+                                       789**************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        753  (205048 residues searched)
+Passed MSV filter:                        17  (0.0225764); expected 15.1 (0.02)
+Passed bias filter:                       16  (0.0212483); expected 15.1 (0.02)
+Passed Vit filter:                         5  (0.00664011); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.00132802); expected 0.0 (1e-05)
+Initial search space (Z):                753  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 7170.04
+//
+[ok]

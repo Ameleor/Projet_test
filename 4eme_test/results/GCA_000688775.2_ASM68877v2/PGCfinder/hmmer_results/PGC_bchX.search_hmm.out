@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa
+# output directed to file:         results/GCA_000688775.2_ASM68877v2/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    7.8e-05   18.5   0.0    0.00012   17.8   0.0    1.2  1  GCA_000688775.2_ASM68877v2_1538  AHZ48379.1 tyrosine protein kina
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000688775.2_ASM68877v2_1538  AHZ48379.1 tyrosine protein kinase [Streptococcus sp. VT 162]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.8   0.0   6.2e-08   0.00012      17      73 ..      30      87 ..      14      99 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 6.2e-08
+             trimmed_msa_bchX_hmm 17 evtketqiiaiyg.kggigksftlanlsymlaqqgkkvlligcdpksdttsllfggka 73
+                                      + ++ q+i+i   k g gks t +n+++ +a+ g k lli  d +    s +f  + 
+  GCA_000688775.2_ASM68877v2_1538 30 LSGNNLQVISITSvKPGEGKSTTSTNIAWAFARAGYKTLLIDADIRNSVMSGVFKSRE 87
+                                     4567889999975499*****************************9999999987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1922  (580945 residues searched)
+Passed MSV filter:                        81  (0.0421436); expected 38.4 (0.02)
+Passed bias filter:                       67  (0.0348595); expected 38.4 (0.02)
+Passed Vit filter:                        10  (0.00520291); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000520291); expected 0.0 (1e-05)
+Initial search space (Z):               1922  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9138.14
+//
+[ok]

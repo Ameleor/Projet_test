@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+# output directed to file:         results/GCA_013403525.1_ASM1340352v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00013   16.9   0.1    0.00019   16.3   0.1    1.2  1  GCA_013403525.1_ASM1340352v1_737  HCPCHH_03750 ParA-like ATPase in
+    0.00017   16.5   0.1    0.00026   15.9   0.1    1.2  1  GCA_013403525.1_ASM1340352v1_132  HCPCHH_00685 Uncharacterized pro
+     0.0062   11.4   0.2      0.035    8.9   0.0    2.0  2  GCA_013403525.1_ASM1340352v1_527  HCPCHH_02685 signal recognition 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013403525.1_ASM1340352v1_737  HCPCHH_03750 ParA-like ATPase involved in chromosome/plasmid partitioning or cellul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.1   5.4e-07   0.00019      28      70 ..       7      49 ..       2      70 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 5.4e-07
+              trimmed_msa_bchX_hmm 28 ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfg 70
+                                        kgg+gks   +nl+ + a +g + ll+  d ++++t  l g
+  GCA_013403525.1_ASM1340352v1_737  7 NQKGGVGKSSIACNLAAVSASEGYRTLLVDLDAQANSTQYLTG 49
+                                      579***********************************99977 PP
+
+>> GCA_013403525.1_ASM1340352v1_132  HCPCHH_00685 Uncharacterized protein PP_0002
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1   7.5e-07   0.00026      24      65 ..       4      46 ..       1      51 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 7.5e-07
+              trimmed_msa_bchX_hmm 24 iiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                      + ai   kgg+gk+ t  nl+  l    ++vlli  dp+ ++t
+  GCA_013403525.1_ASM1340352v1_132  4 VFAIaNQKGGVGKTTTCINLAASLVATKRRVLLIDLDPQGNAT 46
+                                      55552369******************************99876 PP
+
+>> GCA_013403525.1_ASM1340352v1_527  HCPCHH_02685 signal recognition particle-docking protein FtsY
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.0    0.0001     0.035      17      60 ..     300     343 ..     282     374 .. 0.81
+   2 ?   -0.2   0.0     0.058        20     186     225 ..     438     480 ..     428     497 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.0001
+              trimmed_msa_bchX_hmm  17 evtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       +++++  +i + g  g gk+ t+ +l+  l  +gkkv+l   d 
+  GCA_013403525.1_ASM1340352v1_527 300 ASQNKPFVILVVGVNGAGKTTTIGKLAKKLQLEGKKVMLAAGDT 343
+                                       4566778999*****************************98775 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.058
+              trimmed_msa_bchX_hmm 186 saveyfrklggnvgvaglvinkddgt...geaqafaeavgipv 225
+                                       +a++  +++   v ++gl + k dgt   g   a+a++ g+p+
+  GCA_013403525.1_ASM1340352v1_527 438 NAINQAKQFNQTVELTGLALTKLDGTakgGVIFALAKQFGLPI 480
+                                       57778888889999***********933334568889999997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1051  (353261 residues searched)
+Passed MSV filter:                        28  (0.0266413); expected 21.0 (0.02)
+Passed bias filter:                       24  (0.0228354); expected 21.0 (0.02)
+Passed Vit filter:                         4  (0.0038059); expected 1.1 (0.001)
+Passed Fwd filter:                         3  (0.00285442); expected 0.0 (1e-05)
+Initial search space (Z):               1051  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17088.61
+//
+[ok]

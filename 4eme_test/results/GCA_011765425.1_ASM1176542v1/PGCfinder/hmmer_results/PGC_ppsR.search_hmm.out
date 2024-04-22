@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa
+# output directed to file:         results/GCA_011765425.1_ASM1176542v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00038   17.2   0.2    0.00067   16.3   0.2    1.4  1  GCA_011765425.1_ASM1176542v1_3857  QIQ83827.1 sigma-54-dependent re
+    0.00081   16.1   0.7     0.0013   15.4   0.7    1.6  1  GCA_011765425.1_ASM1176542v1_4597  QIQ84237.1 DNA-binding transcrip
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_011765425.1_ASM1176542v1_3857  QIQ83827.1 sigma-54-dependent response regulator transcription factor ZraR [Klebsi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.2     4e-07   0.00067     409     445 ..     407     443 .]     405     443 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4e-07
+               trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                        +Ek  I aALe T+ N   AA  LG+ R  L +KL r
+  GCA_011765425.1_ASM1176542v1_3857 407 VEKEVILAALEKTGGNKTEAARQLGITRKTLLAKLSR 443
+                                        79999******************************87 PP
+
+>> GCA_011765425.1_ASM1176542v1_4597  QIQ84237.1 DNA-binding transcriptional regulator Fis [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.7   7.8e-07    0.0013     417     448 ..      66      97 ..      11      98 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 7.8e-07
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                         +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_011765425.1_ASM1176542v1_4597  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                        579****************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3353  (780305 residues searched)
+Passed MSV filter:                       136  (0.0405607); expected 67.1 (0.02)
+Passed bias filter:                       89  (0.0265434); expected 67.1 (0.02)
+Passed Vit filter:                        11  (0.00328064); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000596481); expected 0.0 (1e-05)
+Initial search space (Z):               3353  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12928.03
+//
+[ok]

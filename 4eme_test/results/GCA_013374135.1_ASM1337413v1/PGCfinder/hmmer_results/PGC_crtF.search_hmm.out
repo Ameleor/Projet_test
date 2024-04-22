@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+# output directed to file:         results/GCA_013374135.1_ASM1337413v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.8e-06   23.5   0.1    4.8e-06   22.1   0.0    1.6  2  GCA_013374135.1_ASM1337413v1_1093  HHFNEH_05695 hypothetical protei
+     0.0012   14.2   0.0     0.0056   12.0   0.0    1.9  1  GCA_013374135.1_ASM1337413v1_714   HHFNEH_03710 Ubiquinone/menaquin
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013374135.1_ASM1337413v1_1093  HHFNEH_05695 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   0.0   6.6e-09   4.8e-06     191     256 ..     116     182 ..     102     188 .. 0.86
+   2 ?   -2.4   0.0      0.17   1.3e+02     282     300 ..     232     250 ..     230     252 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 6.6e-09
+               trimmed_msa_crtF_hmm 191 aydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsfl 256
+                                        ++ l++  rl D+G G+Ga + a+a+++p+ kl+  D+  + ++ a+++ +a +l+drv++++G++l
+  GCA_013374135.1_ASM1337413v1_1093 116 TLWLNQSLRLADIGCGSGAIALALAQNIPAAKLEAVDISvEALALAEENASALSLADRVNFYSGDLL 182
+                                        45689999*****************************974678999******************986 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.17
+               trimmed_msa_crtF_hmm 282 lkllrkvraaLppggrLli 300
+                                        ++l+++v + L+pggrLl+
+  GCA_013374135.1_ASM1337413v1_1093 232 NRLIQNVPTYLEPGGRLLM 250
+                                        6899*************96 PP
+
+>> GCA_013374135.1_ASM1337413v1_714  HHFNEH_03710 Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   7.7e-06    0.0056     198     305 ..      60     166 ..      52     190 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 7.7e-06
+              trimmed_msa_crtF_hmm 198 rrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflkdplPegaDlisLvRvl 273
+                                        rllD++ G+G  + a+++ +p+l ++ +Dl pa +e a+ ++++    +   ++   +      + +D +s+   l
+  GCA_013374135.1_ASM1337413v1_714  60 GRLLDLATGTGDQIIAAKKIWPTLAVTGLDLtPAMLELAAPKFKNIPPPAPEMIVDNILALSFDDQTFDSVSISFAL 136
+                                       68****************************989999****9999876543333322222222222344555544444 PP
+
+              trimmed_msa_crtF_hmm 274 hDHdDeavlkllrkvraaLppggrLliaEpma 305
+                                             + +kl ++v++ L+pggr+l+ E + 
+  GCA_013374135.1_ASM1337413v1_714 137 RNI--TQRRKLYQEVWRVLKPGGRFLVLEMFH 166
+                                       333..344567777777777777777777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1449  (423101 residues searched)
+Passed MSV filter:                        52  (0.0358868); expected 29.0 (0.02)
+Passed bias filter:                       45  (0.0310559); expected 29.0 (0.02)
+Passed Vit filter:                         5  (0.00345066); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00138026); expected 0.0 (1e-05)
+Initial search space (Z):               1449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10334.29
+//
+[ok]

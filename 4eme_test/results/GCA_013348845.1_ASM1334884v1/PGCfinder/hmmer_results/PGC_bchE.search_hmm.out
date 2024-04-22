@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+# output directed to file:         results/GCA_013348845.1_ASM1334884v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00075   15.3   0.0     0.0012   14.6   0.0    1.2  1  GCA_013348845.1_ASM1334884v1_318  OOCJKK_01620 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013348845.1_ASM1334884v1_318  OOCJKK_01620 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   5.9e-07    0.0012     191     352 ..      72     230 ..      68     240 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 5.9e-07
+                      trimmed_bchE 191 aydlkrhrrllDvGGGeG..aFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPeg.a 264
+                                         +l++ + +lD+G G G   Fl+a +       + +   p+ +e+ar++ +++g + +ve   G+  + p+ ++ +
+  GCA_013348845.1_ASM1334884v1_318  72 LASLREGEIVLDLGSGAGidCFLSAQKVGKNGRVIGIDMTPEMVEKARENAKKSGYT-NVEYRLGEIENLPVADNfC 147
+                                       56899999**********5558877666555555555556*********98888876.89******99888877635 PP
+
+                      trimmed_bchE 265 DlisLvRvlhDHdDeavlkllrkvraaLppggrLliaEpmagtagae...avgdaYFgfYllamgsGrpRsaeeira 338
+                                       D+i    v+   +D+  +k+++++++ L+pggrL+i++ +   + ++   +  +aY g    a+       ++e+ +
+  GCA_013348845.1_ASM1334884v1_318 148 DIIISNCVINLSPDK--EKVFKEAYRVLKPGGRLMISDLVLLRELPDfikNSVEAYIGCLSGAI------LKDEYIE 216
+                                       777777788777777..5899****************976655444311133455555444333......4578889 PP
+
+                      trimmed_bchE 339 llaeaGFakvkllr 352
+                                       +++eaGF++v+ + 
+  GCA_013348845.1_ASM1334884v1_318 217 IIKEAGFEDVEIID 230
+                                       99999999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2010  (736741 residues searched)
+Passed MSV filter:                        48  (0.0238806); expected 40.2 (0.02)
+Passed bias filter:                       45  (0.0223881); expected 40.2 (0.02)
+Passed Vit filter:                        11  (0.00547264); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000497512); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10160.82
+//
+[ok]

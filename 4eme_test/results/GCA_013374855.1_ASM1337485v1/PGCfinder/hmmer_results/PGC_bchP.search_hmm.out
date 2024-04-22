@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa
+# output directed to file:         results/GCA_013374855.1_ASM1337485v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00016   16.2   0.1    0.00016   16.1   0.1    1.0  1  GCA_013374855.1_ASM1337485v1_632  NABLDG_03335 hypothetical protei
+     0.0022   12.4   1.6      0.046    8.1   0.1    2.5  3  GCA_013374855.1_ASM1337485v1_120  NABLDG_00670 Thioredoxin reducta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013374855.1_ASM1337485v1_632  NABLDG_03335 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.1   4.1e-07   0.00016       4      35 ..       5      36 ..       2      39 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 4.1e-07
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldrag 35
+                                       v+vvG G +G ++a  la+ G +v +l++++
+  GCA_013374855.1_ASM1337485v1_632  5 KVIVVGAGISGLATAALLAKDGYNVTVLEKNS 36
+                                      69**************************9975 PP
+
+>> GCA_013374855.1_ASM1337485v1_120  NABLDG_00670 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.1   0.1   0.00012     0.046       2      30 ..       5      33 ..       4      38 .. 0.80
+   2 ?   -2.7   0.0      0.22        85     123     152 ..      89     116 ..      69     118 .. 0.55
+   3 !    3.0   0.0    0.0041       1.6       5      36 ..     148     179 ..     144     192 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00012
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvll 30
+                                      ++dv+++G GPaG taa   +r   + l+
+  GCA_013374855.1_ASM1337485v1_120  5 VWDVLIIGSGPAGLTAAIYTSRGAASTLV 33
+                                      69***************877776655555 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.22
+              trimmed_msa_bchP_hmm 123 tavvvyrekeegeeekvrarlvigadGars 152
+                                        a v ++  +++++++ +++ +i a Ga +
+  GCA_013374855.1_ASM1337485v1_120  89 LAGVYFE--TRTDQASYKSKSIIVATGAAT 116
+                                       2334333..345566778888888888865 PP
+
+  == domain 3  score: 3.0 bits;  conditional E-value: 0.0041
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldragr 36 
+                                       v vvGGG +    a  l++   +v+++ r++ 
+  GCA_013374855.1_ASM1337485v1_120 148 VAVVGGGDSAMEEALVLTKFASEVVIIHRRDE 179
+                                       89*************************99865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        789  (242474 residues searched)
+Passed MSV filter:                        24  (0.0304183); expected 15.8 (0.02)
+Passed bias filter:                       19  (0.0240811); expected 15.8 (0.02)
+Passed Vit filter:                         3  (0.00380228); expected 0.8 (0.001)
+Passed Fwd filter:                         2  (0.00253485); expected 0.0 (1e-05)
+Initial search space (Z):                789  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14906.46
+//
+[ok]

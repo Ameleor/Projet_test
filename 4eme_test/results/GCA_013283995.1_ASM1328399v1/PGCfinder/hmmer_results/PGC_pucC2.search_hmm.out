@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa
+# output directed to file:         results/GCA_013283995.1_ASM1328399v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.3e-06   22.9  16.5    8.3e-06   22.9  16.5    1.4  1  GCA_013283995.1_ASM1328399v1_2120  QKJ54025.1 MFS transporter [Kleb
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013283995.1_ASM1328399v1_2120  QKJ54025.1 MFS transporter [Klebsiella michiganensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.9  16.5   1.7e-09   8.3e-06     103     415 ..     115     429 ..      72     449 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 22.9 bits;  conditional E-value: 1.7e-09
+              trimmed_msa_pucC2_hmm 103 lalavlaflliGlGvgaaGtslLaLlakrvape.rraaaativWlmmiaGiavtagvagklldPfsaerlvavaaa 177
+                                        +  a++++++  l  +a  t   aL  + +++e  r++ +   +++ i+G  + +++a +l+ Pfs ++l  v a 
+  GCA_013283995.1_ASM1328399v1_2120 115 FYFALISYTIYCLAYTAVNTPYSALTNRLTQHEaSRSSLSVYRFVLAIVGYLIVSTTADRLISPFSDKQLGYVFA- 189
+                                        5679999999999999****999999988876526778888899**************************98875. PP
+
+              trimmed_msa_pucC2_hmm 178 vslvallltl..lavlglerreaaaaeekeeekasfrealrevlaepearrftifvfvsmlaysaqdLilePfagl 251
+                                        vs  all t+  la +g+ ++++ ++ e+e++++++re+l+ v  ++   ++++f     +ay++   i   f   
+  GCA_013283995.1_ASM1328399v1_2120 190 VSCFALLATFlfLACFGMTKERVGEE-EEETPAPTLREMLKAVAGNAPLINLSMFTVFFYIAYTVWMAIAIYFIKY 264
+                                        67777777651157777766655554.568999**********************99999******999999*999 PP
+
+              trimmed_msa_pucC2_hmm 252 vfgltpgestklsglqhgGvllGmllvailgsalakkrlgslrawvvaGClgsalalaalalaalvgpalplkaav 327
+                                        + g   g ++++  +q +  ++G ++   + + + kk+++ +        +g a +l++  +a+   + + + + v
+  GCA_013283995.1_ASM1328399v1_2120 265 IIGS-EGFTSTFFMIQSAAYIVGTVISEKIIALIGKKKMTLVALL-----IGIAGVLMQYFIAGD--NIWLIMTGV 332
+                                        9996.577777889*********9999888877765555544433.....333444444444443..456666666 PP
+
+              trimmed_msa_pucC2_hmm 328 fvlGlanGvfav...aaigsmmalagegre.sreGvRmGlwGaaqaiafglGglvGavavDlarallee.daaaya 398
+                                         +  ++ G+  v   + i+  ++ a   +  + eG   G +     ia+++Gg +   ++D  ++  ++ +a+a +
+  GCA_013283995.1_ASM1328399v1_2120 333 CLYSITLGMGFVsmwSMIADTVEYAEWHHGvRTEGAIYGFFNFITKIAMAIGGGCAGWMLDYYHYDAGNiTASAIN 408
+                                        6666666664440113455555555443331446666788888999999999988888888887655442344443 PP
+
+              trimmed_msa_pucC2_hmm 399 ....lvFaieallFlvaavla 415
+                                            l+ ++ +++F ++a++ 
+  GCA_013283995.1_ASM1328399v1_2120 409 ginvLMTLFPGAMFALSALFV 429
+                                        111122345667777777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       4804  (1485632 residues searched)
+Passed MSV filter:                       353  (0.0734804); expected 96.1 (0.02)
+Passed bias filter:                       83  (0.0172773); expected 96.1 (0.02)
+Passed Vit filter:                         8  (0.00166528); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.00020816); expected 0.0 (1e-05)
+Initial search space (Z):               4804  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12057.09
+//
+[ok]

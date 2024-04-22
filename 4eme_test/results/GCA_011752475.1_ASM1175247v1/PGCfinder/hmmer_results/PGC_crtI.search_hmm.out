@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa
+# output directed to file:         results/GCA_011752475.1_ASM1175247v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    9.3e-05   16.2   0.2      0.002   11.7   0.1    2.1  2  GCA_011752475.1_ASM1175247v1_194  QIQ41803.1 MAG: dihydrolipoyl de
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_011752475.1_ASM1175247v1_194  QIQ41803.1 MAG: dihydrolipoyl dehydrogenase [Buchnera aphidicola (Microlophium carn
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   3.6e-06     0.002       3      39 ..       8      44 ..       6      48 .. 0.94
+   2 !    2.4   0.0    0.0025       1.4       4      34 ..     178     208 ..     175     210 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 3.6e-06
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      ++v+iG+G  G +aa r +  G+ + ++e+ +++GG 
+  GCA_011752475.1_ASM1175247v1_194  8 QVVIIGSGPSGYSAAFRCADLGLDTVLIERYNKLGGV 44
+                                      789********************************95 PP
+
+  == domain 2  score: 2.4 bits;  conditional E-value: 0.0025
+              trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvlekld 34 
+                                        ++iG G+ Gl +a   +a G  v v+++ +
+  GCA_011752475.1_ASM1175247v1_194 178 FLIIGGGIIGLEMATIYSALGSTVDVIDRFN 208
+                                       689*************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        563  (181543 residues searched)
+Passed MSV filter:                        23  (0.0408526); expected 11.3 (0.02)
+Passed bias filter:                       20  (0.035524); expected 11.3 (0.02)
+Passed Vit filter:                         2  (0.0035524); expected 0.6 (0.001)
+Passed Fwd filter:                         1  (0.0017762); expected 0.0 (1e-05)
+Initial search space (Z):                563  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10511.85
+//
+[ok]

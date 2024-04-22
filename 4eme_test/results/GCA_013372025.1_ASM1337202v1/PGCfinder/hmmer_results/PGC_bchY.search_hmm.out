@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+# output directed to file:         results/GCA_013372025.1_ASM1337202v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0059   10.7   0.0     0.0074   10.4   0.0    1.1  1  GCA_013372025.1_ASM1337202v1_393  QKX95414.1 MAG: HU family DNA-bi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013372025.1_ASM1337202v1_393  QKX95414.1 MAG: HU family DNA-binding protein [Rapeseed phyllody phytoplasma]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.4   0.0   9.8e-06    0.0074     279     328 ..       5      54 ..       2      60 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 9.8e-06
+              trimmed_msa_bchY_hmm 279 awleaigeaaevaqdkvdaaknkllpaikaalaaapikgritlsGyeGse 328
+                                       ++l++++e+ +v+q++ d+  n+++  i+++l++ + + ++tl+G+   e
+  GCA_013372025.1_ASM1337202v1_393   5 EFLRKLAEKNGVSQKEADKFLNNFIEVISQSLQEFKEDEKVTLTGFGTFE 54 
+                                       68999****************************************97655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                        753  (205048 residues searched)
+Passed MSV filter:                        12  (0.0159363); expected 15.1 (0.02)
+Passed bias filter:                       12  (0.0159363); expected 15.1 (0.02)
+Passed Vit filter:                         1  (0.00132802); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.00132802); expected 0.0 (1e-05)
+Initial search space (Z):                753  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13969.73
+//
+[ok]

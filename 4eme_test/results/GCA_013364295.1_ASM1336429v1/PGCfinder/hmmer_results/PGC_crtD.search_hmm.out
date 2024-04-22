@@ -1,0 +1,123 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+# output directed to file:         results/GCA_013364295.1_ASM1336429v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.9e-09   32.4   8.8    9.1e-07   23.6   2.1    2.9  3  GCA_013364295.1_ASM1336429v1_635  QKW32084.1 NAD(P)/FAD-dependent 
+    8.5e-07   23.7   0.4    4.4e-06   21.3   0.5    1.9  2  GCA_013364295.1_ASM1336429v1_922  QKW32436.1 FAD-dependent oxidore
+     0.0001   16.8   9.2    0.00083   13.8   0.4    2.9  3  GCA_013364295.1_ASM1336429v1_246  QKW31752.1 dihydrolipoyl dehydro
+     0.0011   13.4   0.1     0.0016   12.9   0.1    1.2  1  GCA_013364295.1_ASM1336429v1_701  QKW32141.1 FAD-dependent monooxy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013364295.1_ASM1336429v1_635  QKW32084.1 NAD(P)/FAD-dependent oxidoreductase [Nocardiopsis flavescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   2.1   3.4e-09   9.1e-07       4      43 ..       7      46 ..       5      59 .. 0.91
+   2 ?    0.8   0.0     0.028       7.5     207     258 ..     199     250 ..     119     260 .. 0.75
+   3 !   10.6   0.2   2.9e-05    0.0077     424     490 ..     400     469 ..     378     474 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 3.4e-09
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaapGGKlreve 43
+                                       v+G+G  GLaaa++la+aGl+v+v e+a++ GG lr  +
+  GCA_013364295.1_ASM1336429v1_635  7 AVVGSGPNGLAAAVTLARAGLRVVVYEAAEQLGGGLRGAD 46
+                                      69********************************999766 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.028
+              trimmed_msa_crtD_hmm 207 mLiahvEqegvwlv.egGmsklaealaklaeakgaefrygeeveeilveegrv 258
+                                        L+a+  +   w + egG +++ +ala+  +a+g ++ +geev+ +   +g v
+  GCA_013364295.1_ASM1336429v1_635 199 LLLAQLAHGPGWPLpEGGGRSIVTALADDIRAHGGTLVTGEEVTDLRRLGG-V 250
+                                       4556655555565438999************************99875443.4 PP
+
+  == domain 3  score: 10.6 bits;  conditional E-value: 2.9e-05
+              trimmed_msa_crtD_hmm 424 aefeklfpatgGalYGrashGlaasfqRpga.....rtklpgLylaGGsvHPgaGvPmAalSgrlaaealla 490
+                                       a++++  p+  G   G     l++s+ Rp       rt+l+g+yl+  ++ Pg+Gv    +Sg laa++ l+
+  GCA_013364295.1_ASM1336429v1_635 400 ADYARYNPNYVGGDIGTGLISLRQSLLRPVPrwdpyRTPLRGVYLCSAATPPGPGVH--GMSGFLAARSALR 469
+                                       56666666666666666666666777776542222279*****************95..799**99998876 PP
+
+>> GCA_013364295.1_ASM1336429v1_922  QKW32436.1 FAD-dependent oxidoreductase (plasmid) [Nocardiopsis flavescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3   0.5   1.6e-08   4.4e-06       6      45 ..       2      41 ..       1      46 [. 0.92
+   2 ?   -0.4   0.0     0.066        18     219     266 ..     212     256 ..     199     299 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 1.6e-08
+              trimmed_msa_crtD_hmm  6 iGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevg 45
+                                      +GaGi+GL+aa +l + G++v++le+ ++ GG++++ + g
+  GCA_013364295.1_ASM1336429v1_922  2 LGAGIAGLVAAYELERLGYAVEILEAGSRLGGRIHTHRFG 41
+                                      7*********************************987655 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.066
+              trimmed_msa_crtD_hmm 219 lvegGmsklaealaklaeakgaefrygeeveeilveegrvs.gvrladg 266
+                                        +egGm ++ +   +la++    +++g+ev  i+ +e+++  +vr ++g
+  GCA_013364295.1_ASM1336429v1_922 212 RLEGGMDQMVH---RLANRIRGPIKFGQEVIDIDLREDHALlHVR-EGG 256
+                                       57899998765...5667777899******999998877541343.444 PP
+
+>> GCA_013364295.1_ASM1336429v1_246  QKW31752.1 dihydrolipoyl dehydrogenase [Nocardiopsis flavescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.4   3.1e-06   0.00083       3      34 ..       8      39 ..       6      48 .. 0.89
+   2 !    7.6   0.6   0.00024     0.063       2      30 ..     177     205 ..     176     210 .. 0.93
+   3 ?   -1.2   0.1      0.11        29     226     273 ..     217     267 ..     216     275 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.1e-06
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaaa 34
+                                       vv+GaG gG +aa++ a+ Gl+  v+e++  
+  GCA_013364295.1_ASM1336429v1_246  8 LVVLGAGPGGYVAAIRAAQLGLNTAVIEEKYW 39
+                                      69**************************8765 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00024
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvle 30 
+                                       ++++ GaG  G+  a  la+ G+dvt++e
+  GCA_013364295.1_ASM1336429v1_246 177 SIIIAGAGAIGVEFAYVLANYGVDVTIVE 205
+                                       5899************************9 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 0.11
+              trimmed_msa_crtD_hmm 226 klaealaklaeakgaefrygeeveeilveegrvs.gvrladg..erieada 273
+                                       ++++ l++  ++ g+++ ++++ve ++ ++++v+  v++++g  + +ead+
+  GCA_013364295.1_ASM1336429v1_246 217 EVSKELSRAYKKLGVKVLTSTRVEGVEDTGSNVKvTVTTTGGdqQVLEADK 267
+                                       578889999999999999999999999887765415555544114566665 PP
+
+>> GCA_013364295.1_ASM1336429v1_701  QKW32141.1 FAD-dependent monooxygenase [Nocardiopsis flavescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.1     6e-06    0.0016       2      45 ..       7      50 ..       6      60 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 6e-06
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevg 45
+                                       v+v+GaG++G a a   a++G++ tv++++ +   +l ++e+g
+  GCA_013364295.1_ASM1336429v1_701  7 TVLVVGAGVAGSAFAHWAARHGFAPTVVDREPRLSSRLSRLEIG 50
+                                      699***************************99988887777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1072  (335683 residues searched)
+Passed MSV filter:                        49  (0.045709); expected 21.4 (0.02)
+Passed bias filter:                       32  (0.0298507); expected 21.4 (0.02)
+Passed Vit filter:                        11  (0.0102612); expected 1.1 (0.001)
+Passed Fwd filter:                         4  (0.00373134); expected 0.0 (1e-05)
+Initial search space (Z):               1072  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6518.67
+//
+[ok]
