@@ -1,0 +1,113 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_019856455.1_ASM1985645v1/GCA_019856455.1_ASM1985645v1_protein.faa
+# output directed to file:         results/GCA_019856455.1_ASM1985645v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.9e-13   47.3   0.1    2.5e-08   30.4   0.1    2.0  2  GCA_019856455.1_ASM1985645v1_400   QZT29738.1 alpha/beta hydrolase 
+    3.2e-06   23.5   0.0    5.9e-05   19.4   0.0    2.1  2  GCA_019856455.1_ASM1985645v1_407   QZT29744.1 lysophospholipase [St
+     0.0051   13.0   0.0      0.055    9.6   0.0    2.3  3  GCA_019856455.1_ASM1985645v1_1242  QZT28350.1 acetylxylan esterase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019856455.1_ASM1985645v1_400  QZT29738.1 alpha/beta hydrolase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.1   3.4e-11   2.5e-08      34     131 ..      30     126 ..      11     155 .. 0.82
+   2 !   15.0   0.0   1.7e-06    0.0013     220     265 ..     213     258 ..     199     271 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 3.4e-11
+              trimmed_msa_bchO_hmm  34 gPvlLLlHGtGasthswr.dllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGHS 109
+                                        P ++L+H   a+   w  +ll lLa++++vi++DLPg g ++ +     ++pg a++  ++++alg e+  ++G S
+  GCA_019856455.1_ASM1985645v1_400  30 IPLVMLVHL-AATLDNWDpKLLDLLAEKHHVIVLDLPGVGASQGK--VAPTIPGRAQQAVSIIKALGHEKINLLGLS 103
+                                       699999995.5888999658********************98875..56799************************* PP
+
+              trimmed_msa_bchO_hmm 110 AGaaialrla.ldgkiapkkvvg 131
+                                        G+ ia +++ ld+++ ++ +++
+  GCA_019856455.1_ASM1985645v1_400 104 MGGFIAQEIVrLDSQLVNRLILA 126
+                                       ******99762555666666655 PP
+
+  == domain 2  score: 15.0 bits;  conditional E-value: 1.7e-06
+              trimmed_msa_bchO_hmm 220 rdlpklktplllivgekDravppkearevaallpkarlveleglGH 265
+                                       +d+  +++p+l++ g+kD  vp++++  +++++++++l+  ++ GH
+  GCA_019856455.1_ASM1985645v1_400 213 DDMTFITQPTLIVNGDKDMQVPTENSYTMHEKIKNSQLIIYPNAGH 258
+                                       5778899*************************************** PP
+
+>> GCA_019856455.1_ASM1985645v1_407  QZT29744.1 lysophospholipase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.0   7.8e-08   5.9e-05      36     147 ..      91     206 ..      63     222 .. 0.77
+   2 ?    1.9   0.0     0.016        12     226     265 ..     244     287 ..     235     292 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 7.8e-08
+              trimmed_msa_bchO_hmm  36 vlLLlHGtGast.hswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaeala.aLlaa...lgvepavvvG 107
+                                        + L HG Ga   + +++++   ++ +rv a D    g +e +++  ls + +  ++  + +++   l+  p+v++G
+  GCA_019856455.1_ASM1985645v1_407  91 LVVLSHGSGAYHeFYMKEIVWFVQHGYRVFAADYTASGHSEGEQTGGLSKTPIDLDIIlTYIEQddsLNKLPKVLIG 167
+                                       57899****9751456899999999*******************999998888777541333331115556****** PP
+
+              trimmed_msa_bchO_hmm 108 HSAGa.aialrlaldgkiapkkvvglngallpleglagllf 147
+                                       HS Ga  + + l  d+ i  k+vv+l +  +p + la+ l 
+  GCA_019856455.1_ASM1985645v1_407 168 HSWGAyGVTAVLNYDHDI--KAVVSLASYNEPAKQLADILG 206
+                                       ****94466666666665..569999888888888776654 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.016
+              trimmed_msa_bchO_hmm 226 ktplllivgekDravppke.a.revaall..pkarlveleglGH 265
+                                        +p+++++g+ D+++p +  a +  ++++  p+ + v l + GH
+  GCA_019856455.1_ASM1985645v1_407 244 GVPVMIVHGTGDQMIPYDGdAlTAYRDKItnPNVEWVILTEEGH 287
+                                       57899999999999998741202233333335566666677777 PP
+
+>> GCA_019856455.1_ASM1985645v1_1242  QZT28350.1 acetylxylan esterase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.6   0.0   7.3e-05     0.055      34      73 ..      80     119 ..      74     130 .. 0.90
+   2 ?   -2.1   0.0      0.28   2.1e+02     106     139 ..     177     209 ..     162     216 .. 0.62
+   3 ?   -0.0   0.0     0.064        49     221     252 ..     254     285 ..     233     293 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 7.3e-05
+               trimmed_msa_bchO_hmm  34 gPvlLLlHGtGasthswrdllplLaarfrviapDLPghgf 73 
+                                         Pv+   HG  + +  w++ll   a  + via+D  g++ 
+  GCA_019856455.1_ASM1985645v1_1242  80 IPVIFHFHGYQGQSREWSELLKFVAVGYGVIAMDVRGQAG 119
+                                        699999*******************************975 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.28
+               trimmed_msa_bchO_hmm 106 vGHSAGaaialrlaldgkiapkkvvglngallpl 139
+                                         G S G+a+al  a+ + +  +kv+++ + l+ +
+  GCA_019856455.1_ASM1985645v1_1242 177 YGASQGGALALVAAALNPKI-SKVMTVYPFLSDF 209
+                                        56677777776555444332.3466665555555 PP
+
+  == domain 3  score: -0.0 bits;  conditional E-value: 0.064
+               trimmed_msa_bchO_hmm 221 dlpklktplllivgekDravppkearevaall 252
+                                          ++++ p+ +++g +D++ pp++   + ++l
+  GCA_019856455.1_ASM1985645v1_1242 254 LAHRISCPVGFVTGLEDEVCPPSTQFAIFNRL 285
+                                        4568999***************9998887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2264  (718636 residues searched)
+Passed MSV filter:                        97  (0.0428445); expected 45.3 (0.02)
+Passed bias filter:                       86  (0.0379859); expected 45.3 (0.02)
+Passed Vit filter:                        10  (0.00441696); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00132509); expected 0.0 (1e-05)
+Initial search space (Z):               2264  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 15118.32
+//
+[ok]

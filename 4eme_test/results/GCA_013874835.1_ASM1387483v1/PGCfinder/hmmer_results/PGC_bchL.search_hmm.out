@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_013874835.1_ASM1387483v1/GCA_013874835.1_ASM1387483v1_protein.faa
+# output directed to file:         results/GCA_013874835.1_ASM1387483v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.7e-08   30.1   0.0    2.7e-08   30.1   0.0    1.2  1  GCA_013874835.1_ASM1387483v1_1370  QMI85469.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013874835.1_ASM1387483v1_1370  QMI85469.1 ParA family protein [Carnobacteriaceae bacterium zg-84]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.1   0.0   1.6e-11   2.7e-08      21     143 ..       3     127 ..       1     252 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 30.1 bits;  conditional E-value: 1.6e-11
+               trimmed_msa_bchL_hmm  21 kvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkklvptvidvleevdfhseelrpedfvv 95 
+                                        kv+av   kgg+gk+tt+ nl ++++ lgk+vl i  d + ++t  l  + +   ++  +      ++l++++ ++
+  GCA_013874835.1_ASM1387483v1_1370   3 KVIAVSnQKGGVGKTTTAINLGASLAYLGKKVLLIDSDAQGNATSGLGINKA--DVEHKDIYSVLVDDLNIKEAIF 76 
+                                        788885269*********************************9999875443..3444444556678888888888 PP
+
+               trimmed_msa_bchL_hmm  96 egy.ngvmcveaggppagtgcggyvvgqtvkllke..hhlledtdvvifdv 143
+                                        e   +++  v a    ag+    y v +  +llk+    ++++ d +++d 
+  GCA_013874835.1_ASM1387483v1_1370  77 ESSrENLWVVPATINLAGAELELYAVERREQLLKRaiQPIIDEYDYILIDC 127
+                                        765267788889999999999999999999999973345888888888885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1695  (545929 residues searched)
+Passed MSV filter:                        96  (0.0566372); expected 33.9 (0.02)
+Passed bias filter:                       70  (0.0412979); expected 33.9 (0.02)
+Passed Vit filter:                        10  (0.00589971); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000589971); expected 0.0 (1e-05)
+Initial search space (Z):               1695  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10532.03
+//
+[ok]

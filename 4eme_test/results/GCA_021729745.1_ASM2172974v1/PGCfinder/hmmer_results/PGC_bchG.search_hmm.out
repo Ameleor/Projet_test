@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729745.1_ASM2172974v1/GCA_021729745.1_ASM2172974v1_protein.faa
+# output directed to file:         results/GCA_021729745.1_ASM2172974v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.8e-07   27.8   0.8    2.1e-07   27.5   0.8    1.1  1  GCA_021729745.1_ASM2172974v1_522  MLJPCO_02695 4-hydroxybenzoate p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729745.1_ASM2172974v1_522  MLJPCO_02695 4-hydroxybenzoate polyprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.8   1.1e-10   2.1e-07      60     275 ..      38     254 ..       3     262 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 1.1e-10
+              trimmed_msa_bchG_hmm  60 vndWfdrhvdaineP..erpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkkn 134
+                                        n  +dr++d  n    +rp   Gri+ +  +  + + +ll ++v++++ +l+f  ++  l++   ys     +k+ 
+  GCA_021729745.1_ASM2172974v1_522  38 FNRLVDRDIDKDNPRtkNRPSVDGRISVKGMVVFSALNALLFVVVSYFINPLAFKLSLPFLIILGGYSY----FKRF 110
+                                       58889****99996511566667*****9999999999*****************************96....8999 PP
+
+              trimmed_msa_bchG_hmm 135 GwlGnaavglsyeglaWltgaavlagalPsaevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraa 211
+                                         l   +vgl+  gla ++g+  ++g +P ++v l      +   G   l  ++ +e d++ g+ s+p +lG +   
+  GCA_021729745.1_ASM2172974v1_522 111 SSLAHFIVGLAL-GLAPIAGSVAVLGDIPLWNVFLALG-VMLWVAGFDLLYSLQDMEFDKERGLFSIPSQLGEKWCL 185
+                                       99********97.9*****************9875443.33444566677778889*****************9888 PP
+
+              trimmed_msa_bchG_hmm 212 rvaclvmavpqvvvvalllawgkalha...lvva..vllvvqlvlmarllkdPkekalwynavgvtlyv 275
+                                       +++ l   v+ ++ ++++  ++  l a   l v+  +ll  q+++ + + + Pk+  +    +gv++++
+  GCA_021729745.1_ASM2172974v1_522 186 NLSRLSHLVALICWLCFVKCYHGGLFAylgLGVSalILLYEQILVARDYKNIPKAFFVSNGYLGVVFFI 254
+                                       877777777777666666655544444111334311344556666666666666655555556666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       1893  (496568 residues searched)
+Passed MSV filter:                        61  (0.032224); expected 37.9 (0.02)
+Passed bias filter:                       26  (0.0137348); expected 37.9 (0.02)
+Passed Vit filter:                         1  (0.000528262); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000528262); expected 0.0 (1e-05)
+Initial search space (Z):               1893  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 15004.55
+//
+[ok]

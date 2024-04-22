@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699125.1_ASM1669912v1/GCA_016699125.1_ASM1669912v1_protein.faa
+# output directed to file:         results/GCA_016699125.1_ASM1669912v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00032   15.5   0.2     0.0005   14.8   0.2    1.2  1  GCA_016699125.1_ASM1669912v1_984  QQR53799.1 tRNA uridine-5-carbox
+     0.0066   11.2   0.2      0.046    8.4   0.1    2.0  2  GCA_016699125.1_ASM1669912v1_290  QQR54090.1 thioredoxin-disulfide
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699125.1_ASM1669912v1_984  QQR53799.1 tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG [bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.2     1e-06    0.0005       3      43 ..      10      53 ..       8      58 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1e-06
+              trimmed_msa_bchP_hmm  3 fdvvvvGGGPaGataaedlarkGkkvllldragr.i..kPcGGa 43
+                                      fdv+vvGGG aG  aa   +++G + lll  +++ i   Pc  a
+  GCA_016699125.1_ASM1669912v1_984 10 FDVIVVGGGHAGIEAAYASSKMGSRTLLLTINSKkIgtMPCNPA 53
+                                      9************************9999754431222577666 PP
+
+>> GCA_016699125.1_ASM1669912v1_290  QQR54090.1 thioredoxin-disulfide reductase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.1   9.3e-05     0.046       2      31 ..       5      34 ..       4      43 .. 0.85
+   2 ?    0.2   0.0     0.029        14       4      31 ..     147     174 ..     145     196 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 9.3e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvlll 31
+                                      ++d +++G GPaG taa   ar+  + +++
+  GCA_016699125.1_ASM1669912v1_290  5 VHDLIIIGSGPAGLTAAVYAARANLHPIII 34
+                                      68***************9999987766655 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.029
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvlll 31 
+                                        vvv+GGG +    a+ l +  +++ ++
+  GCA_016699125.1_ASM1669912v1_290 147 KVVVIGGGDTAMEDASFLKKFTNQITIV 174
+                                       599*****99999998888877776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        983  (320978 residues searched)
+Passed MSV filter:                        38  (0.0386572); expected 19.7 (0.02)
+Passed bias filter:                       31  (0.0315361); expected 19.7 (0.02)
+Passed Vit filter:                         5  (0.00508647); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00203459); expected 0.0 (1e-05)
+Initial search space (Z):                983  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10910.77
+//
+[ok]

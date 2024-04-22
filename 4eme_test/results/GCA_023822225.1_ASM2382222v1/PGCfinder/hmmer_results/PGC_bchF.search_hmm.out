@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_023822225.1_ASM2382222v1/GCA_023822225.1_ASM2382222v1_protein.faa
+# output directed to file:         results/GCA_023822225.1_ASM2382222v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00011   19.4   0.3    0.00012   19.2   0.3    1.1  1  GCA_023822225.1_ASM2382222v1_2090  USI85871.1 DUF2061 domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023822225.1_ASM2382222v1_2090  USI85871.1 DUF2061 domain-containing protein [Acinetobacter johnsonii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.2   0.3   4.7e-08   0.00012      27      76 ..      19      68 ..       7      72 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 19.2 bits;  conditional E-value: 4.7e-08
+               trimmed_msa_bchF_hmm 27 lqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekv 76
+                                       l + ++ +++a+++ y++tG+  +a+tls++  t+  ++      iwek+
+  GCA_023822225.1_ASM2382222v1_2090 19 LSYYIMHITVAMIVAYFVTGNLWMAVTLSLLEPTVQAFAFFFHERIWEKK 68
+                                       678999******************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       2644  (692301 residues searched)
+Passed MSV filter:                        97  (0.0366868); expected 52.9 (0.02)
+Passed bias filter:                       45  (0.0170197); expected 52.9 (0.02)
+Passed Vit filter:                         5  (0.00189107); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000378215); expected 0.0 (1e-05)
+Initial search space (Z):               2644  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13541.87
+//
+[ok]

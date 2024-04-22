@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_023639195.1_ASM2363919v1/GCA_023639195.1_ASM2363919v1_protein.faa
+# output directed to file:         results/GCA_023639195.1_ASM2363919v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.011   13.7   1.1      0.018   13.0   0.2    1.8  2  GCA_023639195.1_ASM2363919v1_2230  URN91443.1 MAG: ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023639195.1_ASM2363919v1_2230  URN91443.1 MAG: ABC transporter permease [Pseudomonas protegens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0      0.31   1.9e+03     236     247 ..     149     160 ..     148     163 .. 0.87
+   2 ?   13.0   0.2   2.9e-06     0.018      60     140 ..     222     303 ..     208     322 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.31
+               trimmed_msa_crtB_hmm 236 liYaeigrevar 247
+                                         iYa ig++va+
+  GCA_023639195.1_ASM2363919v1_2230 149 EIYAVIGHQVAQ 160
+                                        69********87 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 2.9e-06
+               trimmed_msa_crtB_hmm  60 rerldriyagrpada...padralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmma 132
+                                         + ++r+  g+++++   ++ +al+++++  ++  ++p+++++G+    +   y      l     V g VGvm  
+  GCA_023639195.1_ASM2363919v1_2230 222 DNVVTRVAGGQNMEQvaaAMTQALKKILRGREVEVQVPQQIIDGMTRQSRTFGYL--LMALGGISLVGGGVGVMNV 295
+                                        5556666666666541116689**********************99877777664..334555668********** PP
+
+               trimmed_msa_crtB_hmm 133 lvmgvrda 140
+                                        ++m+v+++
+  GCA_023639195.1_ASM2363919v1_2230 296 MLMNVSER 303
+                                        ****9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       6185  (2060116 residues searched)
+Passed MSV filter:                       269  (0.0434923); expected 123.7 (0.02)
+Passed bias filter:                      133  (0.0215036); expected 123.7 (0.02)
+Passed Vit filter:                        10  (0.00161681); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000161681); expected 0.1 (1e-05)
+Initial search space (Z):               6185  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 23776.17
+//
+[ok]

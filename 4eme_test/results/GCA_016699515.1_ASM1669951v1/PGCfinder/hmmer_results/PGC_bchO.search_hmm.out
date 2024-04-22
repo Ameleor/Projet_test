@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699515.1_ASM1669951v1/GCA_016699515.1_ASM1669951v1_protein.faa
+# output directed to file:         results/GCA_016699515.1_ASM1669951v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.9e-05   19.7   0.0      0.046    9.2   0.0    2.2  2  GCA_016699515.1_ASM1669951v1_427  QQR83985.1 dienelactone hydrolas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699515.1_ASM1669951v1_427  QQR83985.1 dienelactone hydrolase family protein [Candidatus Peregrinibacteria bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.2   0.0   3.3e-05     0.046      32      82 ..      25      76 ..      21     135 .. 0.70
+   2 !    8.7   0.0   4.8e-05     0.066     219     266 ..     143     194 ..     130     205 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 3.3e-05
+              trimmed_msa_bchO_hmm 32 gegPvlLLlHGtGasthswrdllplLaar.frviapDLPghgftesaaeerl 82
+                                      g+ P + ++H   +     r+++ lLa++ ++v+a+DL g   t+s +  +l
+  GCA_016699515.1_ASM1669951v1_427 25 GQYPGIVMIHEWWGLNENIRNMAKLLANQgYNVLAVDLYGDVATTSDRAGEL 76
+                                      7789999999999999999*******9755***********99988766554 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 4.8e-05
+              trimmed_msa_bchO_hmm 219 lrdlpklktplllivgekDravppkearevaallp....karlveleglGHL 266
+                                       +++l++l+ p+l i ge+D+ +++++ +   a l+    k ++   +g+GH 
+  GCA_016699515.1_ASM1669951v1_427 143 QEKLKQLSGPVLGIFGENDSSISTESVHAFEAALNevgiKNQINIYPGVGHA 194
+                                       7899********************9998887777511115667778889985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1384  (369615 residues searched)
+Passed MSV filter:                        39  (0.0281792); expected 27.7 (0.02)
+Passed bias filter:                       34  (0.0245665); expected 27.7 (0.02)
+Passed Vit filter:                         2  (0.00144509); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000722543); expected 0.0 (1e-05)
+Initial search space (Z):               1384  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 10197.45
+//
+[ok]

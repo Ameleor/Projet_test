@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693955.1_ASM1369395v1/GCA_013693955.1_ASM1369395v1_protein.faa
+# output directed to file:         results/GCA_013693955.1_ASM1369395v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00073   16.8   2.6     0.0011   16.2   2.6    1.2  1  GCA_013693955.1_ASM1369395v1_259  QLQ30478.1 MAG: carotenoid 1,2-h
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693955.1_ASM1369395v1_259  QLQ30478.1 MAG: carotenoid 1,2-hydratase [Candidatus Thiothrix singaporensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   2.6   2.7e-07    0.0011      89     173 ..     223     310 ..     196     325 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 2.7e-07
+              trimmed_msa_crtC_hmm  89 lswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgsel..alalrfdadGeveeveappraklp 162
+                                       ++ +Ge+++D  + + +l +d   WdW   +l+dg  +++Y  +r++g++   +++  +++dG++e+++a   a  p
+  GCA_013693955.1_ASM1369395v1_259 223 FTVTGESWLDREWSTSALGADQAGWDWFSLQLQDGnDLMFYRLRRKSGEADpySAGKWVSPDGTAETLAADGVALRP 299
+                                       4568*******************************899********9987511556678999999999887777667 PP
+
+              trimmed_msa_crtC_hmm 163 rtlWrveretr 173
+                                          Wr +  +r
+  GCA_013693955.1_ASM1369395v1_259 300 LRYWRAASGAR 310
+                                       77788777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4098  (1214388 residues searched)
+Passed MSV filter:                        92  (0.02245); expected 82.0 (0.02)
+Passed bias filter:                       74  (0.0180576); expected 82.0 (0.02)
+Passed Vit filter:                         7  (0.00170815); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000244021); expected 0.0 (1e-05)
+Initial search space (Z):               4098  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17047.66
+//
+[ok]

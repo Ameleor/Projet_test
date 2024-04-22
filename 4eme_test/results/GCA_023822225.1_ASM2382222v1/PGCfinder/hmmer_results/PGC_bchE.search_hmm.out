@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_023822225.1_ASM2382222v1/GCA_023822225.1_ASM2382222v1_protein.faa
+# output directed to file:         results/GCA_023822225.1_ASM2382222v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.001   15.3   0.1     0.0037   13.4   0.0    1.9  2  GCA_023822225.1_ASM2382222v1_2183  USI85927.1 bifunctional demethyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023822225.1_ASM2382222v1_2183  USI85927.1 bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-polypren
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   1.4e-06    0.0037     189     302 ..     119     233 ..      85     258 .. 0.81
+   2 ?   -1.2   0.0     0.039     1e+02     334     351 ..     282     299 ..     267     307 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 1.4e-06
+                       trimmed_bchE 189 ldaydlkrhrrllDvGGGeGaFlaavaara.pklklklfDlpa.VaerararleaaglsdrvevagGsflkdplP. 261
+                                        +++  ++r +r+lD++GG+G  ++   +++ p+ +++l D+ +  ++  r+rl +ag+++   v +   + dp   
+  GCA_023822225.1_ASM2382222v1_2183 119 INMSGVRRGQRVLDIAGGTGDLAKVFSREVgPTGHVVLSDINEsMLNVGRDRLIDAGCTNVDFVLANAETLDPFEd 194
+                                        667778999**************999887648999******8725688999*****99987666666666677751 PP
+
+                       trimmed_bchE 262 egaDlisLvRvlhDHdDeavlkllrkvraaLppggrLliaE 302
+                                        + +Dl+++   l    D++++  l+++++ L+pggrLl+ E
+  GCA_023822225.1_ASM2382222v1_2183 195 NSFDLLTISFGLRNVTDKDAA--LAAMYRVLKPGGRLLVLE 233
+                                        568999997777777777664..9999***********987 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.039
+                       trimmed_bchE 334 eeirallaeaGFakvkll 351
+                                        + ++ ++++aGF+++  +
+  GCA_023822225.1_ASM2382222v1_2183 282 RTLKGMMENAGFQNCDYH 299
+                                        56889*******998766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2644  (692301 residues searched)
+Passed MSV filter:                       102  (0.0385779); expected 52.9 (0.02)
+Passed bias filter:                       68  (0.0257186); expected 52.9 (0.02)
+Passed Vit filter:                         9  (0.00340393); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000378215); expected 0.0 (1e-05)
+Initial search space (Z):               2644  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10761.66
+//
+[ok]

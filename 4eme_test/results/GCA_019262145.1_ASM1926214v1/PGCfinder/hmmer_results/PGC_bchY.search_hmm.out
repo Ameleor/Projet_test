@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_019262145.1_ASM1926214v1/GCA_019262145.1_ASM1926214v1_protein.faa
+# output directed to file:         results/GCA_019262145.1_ASM1926214v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.8e-05   20.0   0.0    3.4e-05   19.1   0.0    1.4  1  GCA_019262145.1_ASM1926214v1_442   UAL08100.1 nitrogenase molybdenu
+  ------ inclusion threshold ------
+      0.013   10.5   0.0      0.019   10.0   0.0    1.1  1  GCA_019262145.1_ASM1926214v1_1216  UAL07423.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019262145.1_ASM1926214v1_442  UAL08100.1 nitrogenase molybdenum-iron protein subunit beta [Candidatus Methanogran
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   4.5e-08   3.4e-05     271     432 ..     263     434 ..     256     450 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 4.5e-08
+              trimmed_msa_bchY_hmm 271 pvGadGtaawleaigeaaevaqdkv..daaknkllpaikaalaaapikgritlsGyeGsellvarllvesGadvryv 345
+                                       p+G++ t++++ +  +  ++ +  v  ++ + +l+ ++ ++  ++  + ++++ G   + l v  +++e G + +yv
+  GCA_019262145.1_ASM1926214v1_442 263 PIGVENTDEFVMQTVKLSGIGNVPVclENERGQLIDMMIDS-HQHYSQKKVAIYGDPDTVLGVMSFVLELGMTPKYV 338
+                                       99999999999999999999887652255566666655554.4555678999************************* PP
+
+              trimmed_msa_bchY_hmm 346 gtacprtkwseedrewleakGv...kvqyrasleqdlaaleelkpdlaiGttpvvqkakeaaipalyft......nl 413
+                                        t +   ++ +e +  le  Gv   kv+  a l +  + +++ + dl iGtt   q ak ++ip +          +
+  GCA_019262145.1_ASM1926214v1_442 339 ITGTFGERFDHEAARILEVYGVkdcKVKSNADLFELHQWIKNESVDLLIGTTYGKQIAKAENIPLVRVGfpvldrYV 415
+                                       *****************99886333799999999999***************************7653211111134 PP
+
+              trimmed_msa_bchY_hmm 414 isarpllGvaGagslaqvi 432
+                                        s  p++G  G   l ++i
+  GCA_019262145.1_ASM1926214v1_442 416 HSYMPIVGYRGCIRLLEMI 434
+                                       5667777777777666555 PP
+
+>> GCA_019262145.1_ASM1926214v1_1216  UAL07423.1 hypothetical protein KRP56_06250 [Candidatus Methanogranum sp. U3.2.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   2.5e-05     0.019     247     316 ..     222     300 ..     185     311 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 2.5e-05
+               trimmed_msa_bchY_hmm 247 aihpfytasvref..eaaGrkvvgs...apvGadGtaawleaigeaae....vaqdkvdaaknkllpaikaalaaa 313
+                                        ++ p y + v  f  +  G + + s   apvG d t+ w ++i+e++e    + +++v++ +++    i+++l ++
+  GCA_019262145.1_ASM1926214v1_1216 222 CVSPEYCSRVASFydKEYGIPTIFSemgAPVGFDATEGWANNIAEKMEadtsIMTKHVHKYRERAFKRINGSLYSQ 297
+                                        55666666666663333455555444449***************98752223677889999999999999999877 PP
+
+               trimmed_msa_bchY_hmm 314 pik 316
+                                        + k
+  GCA_019262145.1_ASM1926214v1_1216 298 STK 300
+                                        765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       1513  (454166 residues searched)
+Passed MSV filter:                        43  (0.0284204); expected 30.3 (0.02)
+Passed bias filter:                       36  (0.0237938); expected 30.3 (0.02)
+Passed Vit filter:                         3  (0.00198282); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00132188); expected 0.0 (1e-05)
+Initial search space (Z):               1513  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12859.57
+//
+[ok]

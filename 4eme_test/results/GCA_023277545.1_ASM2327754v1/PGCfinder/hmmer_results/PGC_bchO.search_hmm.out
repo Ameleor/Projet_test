@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023277545.1_ASM2327754v1/GCA_023277545.1_ASM2327754v1_protein.faa
+# output directed to file:         results/GCA_023277545.1_ASM2327754v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00033   15.8   0.1       0.17    6.9   0.4    2.8  2  GCA_023277545.1_ASM2327754v1_661  UQA78255.1 esterase [Gardnerella
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023277545.1_ASM2327754v1_661  UQA78255.1 esterase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.9   0.4   0.00017      0.17      33      64 ..      73     104 ..      65     193 .. 0.63
+   2 !    5.0   0.0   0.00064      0.66     220     271 ..     201     255 ..     192     262 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00017
+              trimmed_msa_bchO_hmm  33 egPvlLLlHGtGasthswrdllplLaarfrvi 64 
+                                       + P lLLlHG G+      dll + a   + i
+  GCA_023277545.1_ASM2327754v1_661  73 TRPLLLLLHGWGSNEDDLLDLLRVVAPYNDAI 104
+                                       579**********9988888888777665555 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.00064
+              trimmed_msa_bchO_hmm 220 rdlpklktplllivgekDravppkearevaallpkarlve...leglGHLahEea 271
+                                       + l++l+tp+++  g +D+++pp e + +aa+l++ +  e    +gl H +h e+
+  GCA_023277545.1_ASM2327754v1_661 201 DVLADLNTPVFFGYGLDDAVIPPYEFSAAAAWLEEHTWLEekrYRGLDHAVHMEE 255
+                                       55899**************************996655433112566677777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1035  (362936 residues searched)
+Passed MSV filter:                        33  (0.0318841); expected 20.7 (0.02)
+Passed bias filter:                       22  (0.021256); expected 20.7 (0.02)
+Passed Vit filter:                         3  (0.00289855); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000966184); expected 0.0 (1e-05)
+Initial search space (Z):               1035  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6364.62
+//
+[ok]

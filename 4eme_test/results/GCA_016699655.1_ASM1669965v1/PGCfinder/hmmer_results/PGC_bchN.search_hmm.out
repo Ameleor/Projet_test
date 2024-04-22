@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699655.1_ASM1669965v1/GCA_016699655.1_ASM1669965v1_protein.faa
+# output directed to file:         results/GCA_016699655.1_ASM1669965v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0016   15.5   0.0      0.015   12.3   0.0    2.0  1  GCA_016699655.1_ASM1669965v1_4176  QQS04752.1 MAG: nitrogenase moly
+  ------ inclusion threshold ------
+      0.025   11.6   0.0      0.061   10.3   0.0    1.5  2  GCA_016699655.1_ASM1669965v1_4493  QQS05058.1 MAG: response regulat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699655.1_ASM1669965v1_4176  QQS04752.1 MAG: nitrogenase molybdenum-iron protein subunit beta [Fibrobacterota b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   6.4e-06     0.015     234     317 ..     268     347 ..      89     389 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 6.4e-06
+               trimmed_msa_bchN_hmm 234 pfplGaeGttawlkaaaeafgvdeakfeavvaakrerakkalakareklegkrifflpdsqleiplarflarelgm 309
+                                         +p+G   t +++++  +++g++   +++ ++ +r +    l+ +++ l gk+++++ d    ipl+ fl++ +gm
+  GCA_016699655.1_ASM1669965v1_4176 268 DLPIGLAATDRMIESLIKTYGLT---VAESINDERGKLVDLLSDMEQYLWGKKVAIFGDPDQLIPLTEFLKT-MGM 339
+                                        47899999999999999999975...6678999999999*********************999******975.666 PP
+
+               trimmed_msa_bchN_hmm 310 elvevgtp 317
+                                        ++  + t 
+  GCA_016699655.1_ASM1669965v1_4176 340 DVRHIVTG 347
+                                        65555443 PP
+
+>> GCA_016699655.1_ASM1669965v1_4493  QQS05058.1 MAG: response regulator [Fibrobacterota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   2.6e-05     0.061     276     338 ..       2      66 ..       1      71 [. 0.77
+   2 ?   -1.5   0.0     0.097   2.3e+02      82     109 ..      76     103 ..      71     118 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.6e-05
+               trimmed_msa_bchN_hmm 276 akareklegkrifflpdsqleiplarflarelgmelvevgtpylhrell..aeelallpedvrls 338
+                                        +k++  l+gk+i+++ d  + ipl +++ +e+g++++    p    ell  ++ l++l +d++l 
+  GCA_016699655.1_ASM1669965v1_4493   2 TKNQPPLAGKTIMLVEDDGMLIPLLQMVLEEVGAKVLATQNPTDALELLenKAPLDVLVTDIVLP 66 
+                                        567788******************************99988864444441045577777776665 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.097
+               trimmed_msa_bchN_hmm  82 rllerrpdikllflvgscpsevikldls 109
+                                        ++ er p +++lf+ g    e+   dl+
+  GCA_016699655.1_ASM1669965v1_4493  76 DIAERYPGVRVLFISGFGDPEIGARDLH 103
+                                        5678999999999999887777766666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4731  (1733272 residues searched)
+Passed MSV filter:                       110  (0.0232509); expected 94.6 (0.02)
+Passed bias filter:                       92  (0.0194462); expected 94.6 (0.02)
+Passed Vit filter:                         8  (0.00169097); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000422744); expected 0.0 (1e-05)
+Initial search space (Z):               4731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 15731.66
+//
+[ok]

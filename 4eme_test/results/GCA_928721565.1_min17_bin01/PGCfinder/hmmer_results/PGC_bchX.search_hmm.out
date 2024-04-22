@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721565.1_min17_bin01/GCA_928721565.1_min17_bin01_protein.faa
+# output directed to file:         results/GCA_928721565.1_min17_bin01/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.7e-09   33.4   0.2    2.9e-09   32.6   0.2    1.3  1  GCA_928721565.1_min17_bin01_436   EJGMIM_02295 ATPase ParA family
+    1.3e-06   23.9   0.1    1.5e-05   20.4   0.1    2.1  2  GCA_928721565.1_min17_bin01_602   EJGMIM_03170 septum site-determi
+      6e-05   18.5   0.1    0.00087   14.7   0.0    2.1  2  GCA_928721565.1_min17_bin01_263   EJGMIM_01390 signal recognition 
+     0.0035   12.7   0.1       0.02   10.2   0.0    2.0  2  GCA_928721565.1_min17_bin01_1363  EJGMIM_07040 non-specific protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721565.1_min17_bin01_436  EJGMIM_02295 ATPase ParA family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.2   7.9e-12   2.9e-09      28      68 ..       9      49 ..       2      60 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 32.6 bits;  conditional E-value: 7.9e-12
+             trimmed_msa_bchX_hmm 28 ygkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                       kgg+gk+ t  nls +la++gkkvlli  dp+ ++ts l
+  GCA_928721565.1_min17_bin01_436  9 NQKGGVGKTTTTVNLSTLLAKKGKKVLLIDTDPQGNATSGL 49
+                                     469*********************************99965 PP
+
+>> GCA_928721565.1_min17_bin01_602  EJGMIM_03170 septum site-determining protein MinD
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.4   0.1   4.1e-08   1.5e-05      24      60 ..       5      41 ..       2      82 .. 0.81
+   2 ?    1.6   0.0     0.022       8.3     138     188 ..     112     159 ..     100     252 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 20.4 bits;  conditional E-value: 4.1e-08
+             trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdp 60
+                                     i+   gkgg+gk+ t anl   la +gkkv li  d 
+  GCA_928721565.1_min17_bin01_602  5 IVITSGKGGVGKTTTTANLGSSLALEGKKVALIDTDI 41
+                                     45567****************************9986 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.022
+             trimmed_msa_bchX_hmm 138 dfdyvlldflgdvvcggfglpiardlcqkvivvgsndlqslyvannvcsav 188
+                                      +fdy+l+d    +   gf   ia   +++ ivv++ ++ s+  a+ +   +
+  GCA_928721565.1_min17_bin01_602 112 EFDYILVDCPAGI-EQGFKNAIAG--ADRAIVVTTAEISSIRDADRIIGLL 159
+                                      7999999987654.5678888875..6888999999988888777766554 PP
+
+>> GCA_928721565.1_min17_bin01_263  EJGMIM_01390 signal recognition particle protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   2.3e-06   0.00087      23      60 ..     102     139 ..      89     167 .. 0.90
+   2 ?    1.5   0.0     0.024       8.8     186     224 ..     228     269 ..     195     282 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.3e-06
+             trimmed_msa_bchX_hmm  23 qiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       +i + g  g+gk+ t  +l+ +l +qgkk ll+ cd 
+  GCA_928721565.1_min17_bin01_263 102 TVIMLVGLQGSGKTTTAGKLANLLRKQGKKPLLVACDV 139
+                                      578999******************************95 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.024
+             trimmed_msa_bchX_hmm 186 saveyfrklggnvgvaglvinkddgt...geaqafaeavgip 224
+                                      +av+  + +   vg+ g+v+ k dg    g a +  +  g p
+  GCA_928721565.1_min17_bin01_263 228 DAVNIAQTFNETVGIDGVVLTKLDGDtrgGAALSVKKVTGKP 269
+                                      578888889999********9988852213334444444555 PP
+
+>> GCA_928721565.1_min17_bin01_1363  EJGMIM_07040 non-specific protein-tyrosine kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0   5.5e-05      0.02      31      76 ..      45      90 ..      21      99 .. 0.83
+   2 ?    0.0   0.0     0.066        24     181     209 ..     189     215 ..     149     243 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 5.5e-05
+              trimmed_msa_bchX_hmm 31 ggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpt 76
+                                       g gk++  +nl+  +aq  k+v+li  d +      +f    cp 
+  GCA_928721565.1_min17_bin01_1363 45 PGEGKTWISSNLAIAFAQADKRVVLIDADMRKCCLHNIFRVAPCPG 90
+                                      689**************************99888888888877776 PP
+
+  == domain 2  score: 0.0 bits;  conditional E-value: 0.066
+              trimmed_msa_bchX_hmm 181 annvcsaveyfrklggnvgvaglvinkdd 209
+                                        +++ + v  ++++ggn+  ag+v nk  
+  GCA_928721565.1_min17_bin01_1363 189 KDDLAKIVRDIKNVGGNI--AGVVYNKKP 215
+                                       456677888899999995..899999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1478  (459253 residues searched)
+Passed MSV filter:                        52  (0.0351827); expected 29.6 (0.02)
+Passed bias filter:                       38  (0.0257104); expected 29.6 (0.02)
+Passed Vit filter:                         9  (0.00608931); expected 1.5 (0.001)
+Passed Fwd filter:                         4  (0.00270636); expected 0.0 (1e-05)
+Initial search space (Z):               1478  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13170.50
+//
+[ok]

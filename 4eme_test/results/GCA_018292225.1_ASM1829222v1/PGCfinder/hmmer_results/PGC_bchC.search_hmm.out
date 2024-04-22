@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_018292225.1_ASM1829222v1/GCA_018292225.1_ASM1829222v1_protein.faa
+# output directed to file:         results/GCA_018292225.1_ASM1829222v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00028   17.7   0.1    0.00065   16.6   0.1    1.8  2  GCA_018292225.1_ASM1829222v1_2463  DFMPNP_13045 NADPH:quinone reduc
+     0.0019   15.0   0.0     0.0042   13.9   0.0    1.5  1  GCA_018292225.1_ASM1829222v1_3135  DFMPNP_16480 Ribulose-5-phosphat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018292225.1_ASM1829222v1_2463  DFMPNP_13045 NADPH:quinone reductase or related Zn-dependent oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.1   3.8e-07   0.00065      16     140 ..      22     141 ..       6     252 .. 0.82
+   2 ?   -2.3   0.0      0.22   3.7e+02     252     284 ..     288     322 ..     271     325 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 3.8e-07
+               trimmed_msa_bchC_hmm  16 lkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveageesklkvgervfvPGa 91 
+                                         k+l+ t+  ++dv++++++sgi    + l    +  +    +yP++PG +  G++ve++ + ++++ge+v v   
+  GCA_018292225.1_ASM1829222v1_2463  22 FKQLSTTDLPKGDVLIKVHYSGINYK-DALAT--QNHNAVVKSYPMIPGIDLAGTIVESE-APGFEKGEQVIVT-- 91 
+                                        57888999999************863.44443..444555679**************986.578999****995.. PP
+
+               trimmed_msa_bchC_hmm  92 kcfedvrglfGgaasrlvvpaarvvkvdeelgeegvllalaa..tarhala 140
+                                         +++   + +Gg ++   v+++ +vk++++l+ e  ++  +a  ta  a++
+  GCA_018292225.1_ASM1829222v1_2463  92 -SYDLGVSHYGGFSEYARVKSEWIVKLPDTLTLEESMIYGTAgyTAGLAIE 141
+                                        .79999999999999999999999999998874444333222125555554 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.22
+               trimmed_msa_bchC_hmm 252 rvaaewkkedlaavkalvesGrl..sldglithra 284
+                                        r+a + k+e+l ++k++++  +l  +l+ +i h++
+  GCA_018292225.1_ASM1829222v1_2463 288 RLAKDLKPENLHEIKQVITFDELpeQLNKVIKHEN 322
+                                        789999999*****999998887555777777765 PP
+
+>> GCA_018292225.1_ASM1829222v1_3135  DFMPNP_16480 Ribulose-5-phosphate reductase 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   2.5e-06    0.0042      91     241 ..     104     266 ..      57     304 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 2.5e-06
+               trimmed_msa_bchC_hmm  91 akcfedvrglfGgaasrlvvpaarvvkvdeelgeegvl.lalaatarhalagkekkapdl.....ivGhGvlGrll 160
+                                        a+++    g  G     +v++++r+v+++++++ +++    l + ++ha+++ e+k+  l     i G G lG + 
+  GCA_018292225.1_ASM1829222v1_3135 104 ASSYFRSSGYDGFMQDYVVMAHDRIVPLPNDIDLSTISyTELVSVSYHAIQRFERKSIPLktsfgIWGDGNLGYIT 179
+                                        56677778888888999****************999861579*********9998875443333488999999999 PP
+
+               trimmed_msa_bchC_hmm 161 arltvaa.gaeapvvWetnaaraeg....aegyevidpeederrdyka.ivdasGdaevldkliarlakggeivla 230
+                                        a l   +  +++  v+ +   + +      + ++v +  +d + d++   v   G++  l++++++++++g i l 
+  GCA_018292225.1_ASM1829222v1_3135 180 AILLRKLyPEAKIYVFGKTDYKLSHfsfvDDIFTVNQIPDDLKIDHAFeCVGGKGSQVALQQIVEHISPEGSIALL 255
+                                        98765541445556776665554431111456889888899988887525677899999***************** PP
+
+               trimmed_msa_bchC_hmm 231 Gfyeeplsfaf 241
+                                        G  e p++ + 
+  GCA_018292225.1_ASM1829222v1_3135 256 GVSELPVEVNT 266
+                                        *9988887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       3411  (775582 residues searched)
+Passed MSV filter:                        87  (0.0255057); expected 68.2 (0.02)
+Passed bias filter:                       73  (0.0214013); expected 68.2 (0.02)
+Passed Vit filter:                         8  (0.00234535); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000586338); expected 0.0 (1e-05)
+Initial search space (Z):               3411  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10401.86
+//
+[ok]

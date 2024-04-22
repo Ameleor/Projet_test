@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_015999545.1_ASM1599954v1/GCA_015999545.1_ASM1599954v1_protein.faa
+# output directed to file:         results/GCA_015999545.1_ASM1599954v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.1e-10   38.7   3.1    1.7e-08   32.4   0.6    2.1  2  GCA_015999545.1_ASM1599954v1_1026  QPQ36316.1 squalene/phytoene syn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015999545.1_ASM1599954v1_1026  QPQ36316.1 squalene/phytoene synthase family protein [Lysinibacillus sp. JNUCC-52]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.0   0.1    0.0002      0.89       4      72 ..       9      77 ..       6     100 .. 0.81
+   2 !   32.4   0.6   3.8e-12   1.7e-08      90     184 ..     114     212 ..     109     260 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.0002
+               trimmed_msa_crtB_hmm  4 aacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekkaaalarlrerldriyagrpa 72
+                                       +++ ++++e S++F++    l ++++ ++ a Y   R+ D + D++e +++    l + + ++++ + +
+  GCA_015999545.1_ASM1599954v1_1026  9 KEAMQVLKETSRTFYIPITFLKNDLKMSVAAAYLAMRAIDEIEDHEELSNDVKFDLLSATSELLKNDFD 77
+                                       678999**************************************9999877766666666666655443 PP
+
+  == domain 2  score: 32.4 bits;  conditional E-value: 3.8e-12
+               trimmed_msa_crtB_hmm  90 pralpealleGfa.wDaegrryetledllaYaarVAgaVGvmmalvmgvrdaevlaR..AcdLGvAmQLtNiaRDv 162
+                                         +a  +++  G+a w  ++++ +t edl +Y++ VAg VG m++ +     +   +R  A   G  +Q  Ni R  
+  GCA_015999545.1_ASM1599954v1_1026 114 VKASTSEMAFGMAkWAKANWQVHTREDLDDYTYYVAGLVGTMLSELWAWGADVQTDRdlAIGYGRGLQAVNILRNQ 189
+                                        556666666677548999****************************99977666777447778889********** PP
+
+               trimmed_msa_crtB_hmm 163 geD.aragRlYLPleWleeagld 184
+                                         eD +++g  ++P+ W +e+  +
+  GCA_015999545.1_ASM1599954v1_1026 190 HEDlDERGVSFVPDGWTREDLFA 212
+                                        ***6677889******9997554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       4421  (1282256 residues searched)
+Passed MSV filter:                       164  (0.0370957); expected 88.4 (0.02)
+Passed bias filter:                      115  (0.0260122); expected 88.4 (0.02)
+Passed Vit filter:                         7  (0.00158335); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000226193); expected 0.0 (1e-05)
+Initial search space (Z):               4421  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11077.32
+//
+[ok]

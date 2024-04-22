@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014896945.1_ASM1489694v1/GCA_014896945.1_ASM1489694v1_protein.faa
+# output directed to file:         results/GCA_014896945.1_ASM1489694v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00011   17.0   3.9     0.0032   12.2   0.8    2.9  3  GCA_014896945.1_ASM1489694v1_870   QOL20123.1 Dihydrolipoyl dehydro
+     0.0002   16.1   0.0    0.00035   15.4   0.0    1.5  1  GCA_014896945.1_ASM1489694v1_599   QOL19852.1 Ferredoxin--NADP redu
+    0.00081   14.1   6.0    0.00085   14.1   0.2    2.8  3  GCA_014896945.1_ASM1489694v1_1026  QOL20279.1 Dihydrolipoyl dehydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014896945.1_ASM1489694v1_870  QOL20123.1 Dihydrolipoyl dehydrogenase 3 [Candidatus Paracaedibacteraceae bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.8     8e-06    0.0032       4      39 ..       7      42 ..       4      47 .. 0.93
+   2 !    4.3   0.0     0.002      0.81       2      35 ..     175     208 ..     174     211 .. 0.93
+   3 ?   -1.2   0.0     0.093        37     223     268 ..     217     263 ..     214     271 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 8e-06
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      +vviGaG  G  aai+ ++ G+ v+ +++ d++GG 
+  GCA_014896945.1_ASM1489694v1_870  7 VVVIGAGPAGYVAAIKCAQLGMSVACVDAGDTLGGT 42
+                                      79********************************96 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.002
+              trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                       k+ vv+G G+ Gl +a   +  G +v+v+e  d+
+  GCA_014896945.1_ASM1489694v1_870 175 KHMVVMGGGYIGLEMASIWQRLGAKVSVIEFADR 208
+                                       689***************************8886 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 0.093
+              trimmed_msa_crtI_hmm 223 lvkglvklieeqGgelrlnaeveeievedgrat.gvrlasGeeiead 268
+                                       + ++l k++e+qG ++ l+++v + e +++++t +++  +G++ + d
+  GCA_014896945.1_ASM1489694v1_870 217 VSSALQKILEDQGIAFFLKHKVLNAESSQDSVTvTIESPDGKSSTLD 263
+                                       668999****************9998876655416667777765443 PP
+
+>> GCA_014896945.1_ASM1489694v1_599  QOL19852.1 Ferredoxin--NADP reductase [Candidatus Paracaedibacteraceae bacterium 'L
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   8.6e-07   0.00035       3      51 ..       5      53 ..       3     111 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 8.6e-07
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfD 51
+                                       +v+iGaG  Gl +  + g  G+++ v+++ld +GG+ ++   +   +D
+  GCA_014896945.1_ASM1489694v1_599  5 DVVIIGAGPAGLFSIFQCGMMGLKTHVVDALDFIGGQCTALYPEKPIYD 53
+                                      579*********************************9887655554444 PP
+
+>> GCA_014896945.1_ASM1489694v1_1026  QOL20279.1 Dihydrolipoyl dehydrogenase [Candidatus Paracaedibacteraceae bacterium 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.2   2.1e-06   0.00085       5      38 ..       7      39 ..       4      44 .. 0.88
+   2 ?   -0.8   0.0     0.066        27       3      35 ..     174     206 ..     172     208 .. 0.91
+   3 ?    1.4   0.4     0.015       5.9     228     301 ..     220     295 ..     212     299 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2.1e-06
+               trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                       +viGaG GG  aair ++ G++++v+ek + +GG
+  GCA_014896945.1_ASM1489694v1_1026  7 IVIGAGPGGYVAAIRAAQLGLKTAVVEKEH-LGG 39
+                                       8*************************9854.555 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.066
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                        k +v+G+G  G   a   +a G  vt++e +d+
+  GCA_014896945.1_ASM1489694v1_1026 174 KLLVVGSGAIGSEFASFYNAFGSDVTIVEVMDQ 206
+                                        678**************************9987 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.015
+               trimmed_msa_crtI_hmm 228 vklieeqGgelrlnaeveeievedgratgvrlasG..eeieadvvvsnadaaltykklleeekrkrwtdkklerkr 301
+                                         k +e +G ++ ++++v++++v ++++ +v  +    ++ ++d v++ + ++   +++  e+++ + +++++ +++
+  GCA_014896945.1_ASM1489694v1_1026 220 KKAFEAKGIKILTKTTVQSLKVINDNVDAVLKTATveHTESFDRVITAVGVVGNIENIGLESTKIKTENTRILTNE 295
+                                        57899********************999996554411445678888888877777777666666666666665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1214  (391532 residues searched)
+Passed MSV filter:                        44  (0.0362438); expected 24.3 (0.02)
+Passed bias filter:                       32  (0.0263591); expected 24.3 (0.02)
+Passed Vit filter:                         7  (0.00576606); expected 1.2 (0.001)
+Passed Fwd filter:                         3  (0.00247117); expected 0.0 (1e-05)
+Initial search space (Z):               1214  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9771.09
+//
+[ok]

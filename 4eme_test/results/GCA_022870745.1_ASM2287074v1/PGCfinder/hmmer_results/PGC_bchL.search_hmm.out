@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_022870745.1_ASM2287074v1/GCA_022870745.1_ASM2287074v1_protein.faa
+# output directed to file:         results/GCA_022870745.1_ASM2287074v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.8e-08   32.0   0.0    2.8e-08   31.4   0.0    1.2  1  GCA_022870745.1_ASM2287074v1_1623  DPFNMC_08225 Sporulation initiat
+    2.9e-05   21.5   0.0    4.6e-05   20.8   0.0    1.3  1  GCA_022870745.1_ASM2287074v1_2179  DPFNMC_11095 Iron-sulfur cluster
+  ------ inclusion threshold ------
+      0.011   13.0   0.0      0.016   12.4   0.0    1.3  1  GCA_022870745.1_ASM2287074v1_1476  DPFNMC_07485 AAA-31 domain-conta
+      0.025   11.8   0.0      0.061   10.5   0.0    1.6  2  GCA_022870745.1_ASM2287074v1_2083  DPFNMC_10600 Signal recognition 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022870745.1_ASM2287074v1_1623  DPFNMC_08225 Sporulation initiation inhibitor protein Soj
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.4   0.0   2.5e-11   2.8e-08      22      63 ..       4      46 ..       1      50 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 31.4 bits;  conditional E-value: 2.5e-11
+               trimmed_msa_bchL_hmm 22 vfa.vygkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                       v+a v  kgg+gk+tt+ nls+a++  g r l i cdp+ +st
+  GCA_022870745.1_ASM2287074v1_1623  4 VVAiVNQKGGVGKTTTAINLSAALALEGLRTLLIDCDPQANST 46
+                                       5551568*********************************998 PP
+
+>> GCA_022870745.1_ASM2287074v1_2179  DPFNMC_11095 Iron-sulfur cluster carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   4.3e-08   4.6e-05      18      57 ..      15      55 ..       4      65 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 4.3e-08
+               trimmed_msa_bchL_hmm 18 etakvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                       + a+v+a+  gkgg+gk+t ++n++va+++lg rv  i  d
+  GCA_022870745.1_ASM2287074v1_2179 15 GVANVVAIgSGKGGVGKTTLTANIAVALAQLGFRVGLIDAD 55
+                                       56889998569***********************9887766 PP
+
+>> GCA_022870745.1_ASM2287074v1_1476  DPFNMC_07485 AAA-31 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   1.5e-05     0.016      21      63 ..       3      46 ..       1      62 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_bchL_hmm 21 kvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                       k+++++  kgg+ k+tt+ nl  +++  gk+v+    dp+ + t
+  GCA_022870745.1_ASM2287074v1_1476  3 KIICLFnHKGGVSKTTTAFNLGWTMALKGKKVILADFDPQCNLT 46
+                                       555555259**************************999987655 PP
+
+>> GCA_022870745.1_ASM2287074v1_2083  DPFNMC_10600 Signal recognition particle receptor FtsY
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   5.6e-05     0.061      21      57 ..     120     156 ..     105     164 .. 0.86
+   2 ?   -3.3   0.0      0.92     1e+03     181     213 ..     195     228 ..     190     231 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 5.6e-05
+               trimmed_msa_bchL_hmm  21 kvfavygkggigksttssnlsvafsklgkrvlqigcd 57 
+                                        +v+ + g  g gk+tts  l++ f + gk v+    d
+  GCA_022870745.1_ASM2287074v1_2083 120 EVIMMVGVNGTGKTTTSGKLCAHFREQGKSVMLCAAD 156
+                                        688899*************************987776 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.92
+               trimmed_msa_bchL_hmm 181 aaikaksknyk.vrlggvianrsketdeidrfne 213
+                                        +a ka+ ++y  v  +g +  +s   de+d++  
+  GCA_022870745.1_ASM2287074v1_2083 195 QASKARGRDYLiVDTAGRLHTKSGLMDELDKMRR 228
+                                        6777888888536788999999999999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       4339  (1616677 residues searched)
+Passed MSV filter:                       145  (0.0334178); expected 86.8 (0.02)
+Passed bias filter:                      129  (0.0297304); expected 86.8 (0.02)
+Passed Vit filter:                        13  (0.00299608); expected 4.3 (0.001)
+Passed Fwd filter:                         4  (0.000921871); expected 0.0 (1e-05)
+Initial search space (Z):               4339  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 13455.97
+//
+[ok]

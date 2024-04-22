@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_016403125.1_ASM1640312v1/GCA_016403125.1_ASM1640312v1_protein.faa
+# output directed to file:         results/GCA_016403125.1_ASM1640312v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.016   11.1   0.3      0.023   10.6   0.3    1.2  1  GCA_016403125.1_ASM1640312v1_1686  QQE69260.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016403125.1_ASM1640312v1_1686  QQE69260.1 hypothetical protein HCQ89_08710 (plasmid) [Campylobacter jejuni subsp.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.3   1.5e-05     0.023      42      92 ..      38      88 ..      30      95 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_puhB_hmm 42 valYfavlllwrvlaaladgeslsealasaalllalaavalallallawls 92
+                                         +Yf+v+ + r+l   +++++  e+l+++a ++++ + ++ ll+l+a+++
+  GCA_016403125.1_ASM1640312v1_1686 38 ALIYFGVINIKRILNDSNENKTELETLFATANIIFVSISSIFLLMLIAFFT 88
+                                       579*********************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       1567  (478735 residues searched)
+Passed MSV filter:                        62  (0.039566); expected 31.3 (0.02)
+Passed bias filter:                       54  (0.0344608); expected 31.3 (0.02)
+Passed Vit filter:                         5  (0.00319081); expected 1.6 (0.001)
+Passed Fwd filter:                         1  (0.000638162); expected 0.0 (1e-05)
+Initial search space (Z):               1567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12047.30
+//
+[ok]

@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019356535.1_ASM1935653v1/GCA_019356535.1_ASM1935653v1_protein.faa
+# output directed to file:         results/GCA_019356535.1_ASM1935653v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.3e-11   38.6   0.2    6.4e-07   26.0   0.0    2.4  2  GCA_019356535.1_ASM1935653v1_2276  CPBHIL_11610 YifB family Mg chel
+    0.00093   15.6   0.2     0.0037   13.7   0.0    1.8  2  GCA_019356535.1_ASM1935653v1_2573  CPBHIL_13110 MoxR-like ATPase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019356535.1_ASM1935653v1_2276  CPBHIL_11610 YifB family Mg chelatase-like AAA ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0   3.3e-05     0.043       9      61 ..     196     246 ..     190     262 .. 0.85
+   2 !   26.0   0.0     5e-10   6.4e-07     116     306 ..     280     492 ..     278     501 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.3e-05
+               trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgc 61 
+                                        + gq + ++al +aa       +l++G  GtGks  +  l  +lP+++  ++ 
+  GCA_019356535.1_ASM1935653v1_2276 196 VRGQAQARRALEVAAAAG--HNLLMMGPPGTGKSMLAARLPGILPPMNEQEAL 246
+                                        67999999***9999765..4799***********************987765 PP
+
+  == domain 2  score: 26.0 bits;  conditional E-value: 5e-10
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP...... 185
+                                        al+ G     pG ++ a+ G l++de+  +++ ++++l +  ++G+ v+ r + s   parf lv + nP      
+  GCA_019356535.1_ASM1935653v1_2276 280 ALVGGSSIPRPGEISLAHNGVLFLDELPEFDNRVLEVLREPLETGRIVISRAARSAEFPARFQLVAAMNPcpcghv 355
+                                        6778888889********************************************************9999544444 PP
+
+               trimmed_msa_bchI_hmm 186 eeGelr.....PqlldrfG..lsvevrtpkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlek 254
+                                        +e + r     Pql+ r+   +s  +r   d++  v  +  rd   + p +  a+++++  + r++  + r+  ++
+  GCA_019356535.1_ASM1935653v1_2276 356 NEPDQRcdrctPQLVARYQgrISSPLRDRIDIQIEVPALPTRDLLGAPPGEPSATVRARVIAARERQ-QRRQGCTN 430
+                                        4555545555599999996235666666667776677788899887766665555555544444442.33444444 PP
+
+               trimmed_msa_bchI_hmm 255 vevpdavlekaaklc........lalgtdGl..rgeltllraaralaalegakevtkehlkk 306
+                                         e ++a+le+ ++l+        +a+   Gl  rg   +lr ar++a l++++++  +h+ +
+  GCA_019356535.1_ASM1935653v1_2276 431 AELQHAALERHCALTtevrrlleTAIERLGLsaRGYHRILRLARTIADLDESNTIGPRHMSE 492
+                                        45555555554444411111001344555666689999999999999999999999998875 PP
+
+>> GCA_019356535.1_ASM1935653v1_2573  CPBHIL_13110 MoxR-like ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0     0.068        87      29      52 ..      40      63 ..      19      75 .. 0.70
+   2 !   13.7   0.0   2.9e-06    0.0037     278     317 ..     248     287 ..     212     298 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.068
+               trimmed_msa_bchI_hmm 29 gGvlvlGdrGtGkstavralaall 52
+                                       g +l+    G Gk+t + a+a ll
+  GCA_019356535.1_ASM1935653v1_2573 40 GHLLIEDVPGVGKTTLAHAMARLL 63
+                                       33444444699*********9998 PP
+
+  == domain 2  score: 13.7 bits;  conditional E-value: 2.9e-06
+               trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                        r+ l ll a+ra a l+g+++v  +h+++v  +++ hrl 
+  GCA_019356535.1_ASM1935653v1_2573 248 RAGLGLLAASRAWALLHGETRVLPDHVQAVLGAVVDHRLG 287
+                                        7889**********************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2580  (827404 residues searched)
+Passed MSV filter:                       163  (0.0631783); expected 51.6 (0.02)
+Passed bias filter:                      109  (0.0422481); expected 51.6 (0.02)
+Passed Vit filter:                        28  (0.0108527); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000775194); expected 0.0 (1e-05)
+Initial search space (Z):               2580  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9106.74
+//
+[ok]

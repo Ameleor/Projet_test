@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_017094585.1_ASM1709458v1/GCA_017094585.1_ASM1709458v1_protein.faa
+# output directed to file:         results/GCA_017094585.1_ASM1709458v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.8e-07   26.3   0.0     0.0011   15.4   0.0    2.3  2  GCA_017094585.1_ASM1709458v1_2236  QSG25060.1 iron-sulfur cluster c
+    3.6e-06   23.5   0.0    9.4e-06   22.1   0.0    1.6  1  GCA_017094585.1_ASM1709458v1_2198  QSG25038.1 tyrosine-protein kina
+     0.0015   14.9   0.1      0.038   10.3   0.0    2.4  2  GCA_017094585.1_ASM1709458v1_4015  QSG23349.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017094585.1_ASM1709458v1_2236  QSG25060.1 iron-sulfur cluster carrier protein ApbC [Salmonella enterica subsp. en
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   1.1e-06    0.0011      22      59 ..     107     145 ..      90     163 .. 0.82
+   2 !    8.5   0.0   0.00013      0.13     210     266 ..     294     352 ..     290     360 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.1e-06
+               trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                         +iia+  gkgg+gks t  nl+  la +g kv ++  d
+  GCA_017094585.1_ASM1709458v1_2236 107 KNIIAVsSGKGGVGKSSTAVNLALALAAEGAKVGVLDAD 145
+                                        468888469************************888777 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.00013
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                        gtg aq +ae+    +l  +p +  +r      +  ++++pese+++++ ela +va+ 
+  GCA_017094585.1_ASM1709458v1_2236 294 GTGGAQKLAEKYHTQLLGQMPLHISLREDldRGTPTVVSRPESEFTAIYRELADRVAAQ 352
+                                        89********************99999862245678*******************9975 PP
+
+>> GCA_017094585.1_ASM1709458v1_2198  QSG25038.1 tyrosine-protein kinase Wzc [Salmonella enterica subsp. enterica serova
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   0.0   9.5e-09   9.4e-06      21      74 ..     524     578 ..     506     593 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 9.5e-09
+               trimmed_msa_bchX_hmm  21 etqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74 
+                                        + +++ + g    igk+f  anl+ +++q  k+vlli cd +   t  l+g +++
+  GCA_017094585.1_ASM1709458v1_2198 524 QNNVLMLTGVSpSIGKTFVCANLAAVISQTHKRVLLIDCDMRKGYTHELLGTNNV 578
+                                        55566666643279***************************99999999888766 PP
+
+>> GCA_017094585.1_ASM1709458v1_4015  QSG23349.1 signal recognition particle-docking protein FtsY [Salmonella enterica s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   3.8e-05     0.038      20      60 ..     285     325 ..     266     355 .. 0.82
+   2 ?    2.0   0.0     0.013        13     187     225 ..     421     462 ..     413     481 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 3.8e-05
+               trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        k+  +i + g  g+gk+ t+ +l+  + qqgk v+l   d 
+  GCA_017094585.1_ASM1709458v1_4015 285 KTPFVILMVGVNGVGKTTTIGKLARQFEQQGKSVMLAAGDT 325
+                                        555689999***************************98875 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.013
+               trimmed_msa_bchX_hmm 187 aveyfrklggnvgvaglvinkddgtgea...qafaeavgipv 225
+                                        av   + +   vg++g+ + k dgt +     + a++ gip+
+  GCA_017094585.1_ASM1709458v1_4015 421 AVSQAKLFHEAVGLTGITLTKLDGTAKGgviFSVADQFGIPI 462
+                                        55666666778*************966511156799999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2950  (757428 residues searched)
+Passed MSV filter:                        95  (0.0322034); expected 59.0 (0.02)
+Passed bias filter:                       83  (0.0281356); expected 59.0 (0.02)
+Passed Vit filter:                        15  (0.00508475); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.00101695); expected 0.0 (1e-05)
+Initial search space (Z):               2950  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11762.05
+//
+[ok]

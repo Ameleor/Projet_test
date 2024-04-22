@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023302925.1_ASM2330292v1/GCA_023302925.1_ASM2330292v1_protein.faa
+# output directed to file:         results/GCA_023302925.1_ASM2330292v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0034   12.6   4.8     0.0046   12.2   1.1    2.2  2  GCA_023302925.1_ASM2330292v1_928   UQF78939.1 MAG: dihydrolipoyl de
+  ------ inclusion threshold ------
+      0.014   10.5   6.2     0.0051   12.0   0.3    2.4  3  GCA_023302925.1_ASM2330292v1_143   UQF79844.1 MAG: FAD-dependent ox
+      0.019   10.1   4.0     0.0049   12.1   0.5    1.6  2  GCA_023302925.1_ASM2330292v1_1433  UQF79411.1 MAG: fumarate reducta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023302925.1_ASM2330292v1_928  UQF78939.1 MAG: dihydrolipoyl dehydrogenase [Actinomyces graevenitzii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   1.1     8e-06    0.0046       5      39 ..       9      42 ..       6      48 .. 0.89
+   2 ?    1.3   0.1     0.016       9.3       3      33 ..     169     199 ..     167     203 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 8e-06
+              trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      v++GaG GG aaa+r ++ G++v+++e+ d++GG 
+  GCA_023302925.1_ASM2330292v1_928  9 VILGAGSGGYAAALRGAQLGLKVALIEA-DKVGGT 42
+                                      899***********************96.788885 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.016
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekl 33 
+                                       +a+++G G+ G+  a   ++ G +vt++e l
+  GCA_023302925.1_ASM2330292v1_928 169 SAIILGGGVIGVEFASAWTSLGSQVTIIEGL 199
+                                       69**************************976 PP
+
+>> GCA_023302925.1_ASM2330292v1_143  UQF79844.1 MAG: FAD-dependent oxidoreductase [Actinomyces graevenitzii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.3   8.9e-06    0.0051       3      38 ..      30      65 ..      28      71 .. 0.94
+   2 ?    1.2   0.2     0.017       9.6     216     275 ..     253     311 ..     236     318 .. 0.84
+   3 ?   -3.2   0.0      0.36   2.1e+02     452     481 ..     561     589 ..     524     593 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 8.9e-06
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                       a+viG G+ Gl+aa +l++ G++  ++e++  +GG
+  GCA_023302925.1_ASM2330292v1_143 30 DALVIGGGIAGLSAAWQLSQDGLKPLLVEARGYLGG 65
+                                      699****************************99999 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.017
+              trimmed_msa_crtI_hmm 216 amGGtgalvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnad 275
+                                        +GG+ +l ++l + i++ Gg++ +    +++ ++ ++a +  +asG ++     +sna 
+  GCA_023302925.1_ASM2330292v1_143 253 VRGGMFQLTAALSQAITTAGGTVLTRVGAQQL-IAPDAAGNADIASGATTCGASGASNAA 311
+                                       579********************998888776.556677788899998887777777776 PP
+
+  == domain 3  score: -3.2 bits;  conditional E-value: 0.36
+              trimmed_msa_crtI_hmm 452 rseevenlylvGagthPGaGlPgvvssakv 481
+                                       + e++e+l ++Ga    G G+ +vv+ a+ 
+  GCA_023302925.1_ASM2330292v1_143 561 QVENIEGLAVTGAWV-GGTGVNAVVAHART 589
+                                       468889999999865.69999999999885 PP
+
+>> GCA_023302925.1_ASM2330292v1_1433  UQF79411.1 MAG: fumarate reductase/succinate dehydrogenase flavoprotein subunit [A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.5   8.5e-06    0.0049       4      35 ..      50      81 ..      47      95 .. 0.83
+   2 ?   -2.4   0.2      0.21   1.2e+02     214     264 ..     170     225 ..     168     242 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 8.5e-06
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvleklda 35
+                                       ++v+G+G+ G aaa  lg +Gy+v+v+  +d+
+  GCA_023302925.1_ASM2330292v1_1433 50 VIVVGSGLAGGAAAASLGEQGYNVKVFFYQDS 81
+                                       79************************977665 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.21
+               trimmed_msa_crtI_hmm 214 hyamGGtga.lvkglvklieeq...G..gelrlnaeveeievedgratgvrlasGee 264
+                                        +ya+G tg+ l+ g  + +e+q   G  +e+r + e+ e+ v dg+a+g+ +++  +
+  GCA_023302925.1_ASM2330292v1_1433 170 FYARGQTGQqLLIGAYQALERQvraGtvKEFRRH-EMVELIVVDGKARGIVTRDMIS 225
+                                        6888877543555555555544221211234444.5555666778899998765333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1722  (606720 residues searched)
+Passed MSV filter:                        64  (0.0371661); expected 34.4 (0.02)
+Passed bias filter:                       55  (0.0319396); expected 34.4 (0.02)
+Passed Vit filter:                        10  (0.0058072); expected 1.7 (0.001)
+Passed Fwd filter:                         3  (0.00174216); expected 0.0 (1e-05)
+Initial search space (Z):               1722  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9347.29
+//
+[ok]

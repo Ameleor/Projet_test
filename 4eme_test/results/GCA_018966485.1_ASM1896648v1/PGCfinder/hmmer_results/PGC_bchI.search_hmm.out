@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018966485.1_ASM1896648v1/GCA_018966485.1_ASM1896648v1_protein.faa
+# output directed to file:         results/GCA_018966485.1_ASM1896648v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.7e-08   30.5   0.0     0.0024   14.2   0.0    3.1  3  GCA_018966485.1_ASM1896648v1_413   QWU07003.1 YifB family Mg chelat
+     0.0038   13.6   0.1        0.3    7.3   0.0    2.6  3  GCA_018966485.1_ASM1896648v1_1810  QWU05826.1 ATP-dependent proteas
+     0.0054   13.1   0.0      0.011   12.0   0.0    1.4  1  GCA_018966485.1_ASM1896648v1_74    QWU06736.1 DNA polymerase III su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018966485.1_ASM1896648v1_413  QWU07003.1 YifB family Mg chelatase-like AAA ATPase [Heyndrickxia coagulans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   2.7e-05     0.022       5      60 ..     192     245 ..     188     259 .. 0.89
+   2 !   14.2   0.0   2.9e-06    0.0024     120     183 ..     282     345 ..     276     349 .. 0.91
+   3 ?    1.0   0.0     0.031        25     277     319 ..     461     503 ..     377     512 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.7e-05
+              trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                        fs i+g  + k+ l +aa  ++   vl++G  G+Gks  + a+ ++lP+++ +++
+  GCA_018966485.1_ASM1896648v1_413 192 DFSMILGHRHAKKVLEIAAAGSH--NVLMYGPPGSGKSMLAEAFPSILPPLSETSS 245
+                                       59****************98775..8************************987665 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 2.9e-06
+              trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsG 183
+                                       G    +pG ++ a+ G l++de+  +    +d+l    + G+ ++ r + +v +parf+++ + 
+  GCA_018966485.1_ASM1896648v1_413 282 GGSRPHPGEISLAHHGVLFLDEMAEFPKRTLDMLRQPLENGKVTISRAASTVTYPARFIMLAAM 345
+                                       5555689****************************************************98765 PP
+
+  == domain 3  score: 1.0 bits;  conditional E-value: 0.031
+              trimmed_msa_bchI_hmm 277 lrgeltllraaralaalegakevtkehlkkvaplalrhrlrrd 319
+                                        r+++ +lr ar+++ l+g++e++++ l +   +  +h + + 
+  GCA_018966485.1_ASM1896648v1_413 461 SRAQMKILRLARTISDLQGSRELSEDALWQALQMKRNHLFGKR 503
+                                       4889999999999999999999999999888877777766555 PP
+
+>> GCA_018966485.1_ASM1896648v1_1810  QWU05826.1 ATP-dependent protease LonB [Heyndrickxia coagulans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.0   0.00036       0.3       5      47 ..      67     109 ..      63     137 .. 0.91
+   2 !    3.2   0.0    0.0064       5.3     122     156 ..     168     202 ..     148     212 .. 0.83
+   3 ?   -2.1   0.0      0.27   2.2e+02     278     310 ..     303     335 ..     264     346 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00036
+               trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavra 47 
+                                         f+ ivgq++  +al  a   p+    +++G  G Gk++a+r 
+  GCA_018966485.1_ASM1896648v1_1810  67 AFADIVGQEDGIKALRAALCGPNPQHCIIYGPPGVGKTAAARL 109
+                                        699*************************************995 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.0064
+               trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldv 156
+                                         + + G ++ a+ G l+ide+  l    ++ ll v
+  GCA_018966485.1_ASM1896648v1_1810 168 PQPKQGAVTSAHGGVLFIDEIGELHPVQMNKLLKV 202
+                                        555779999************98887777777766 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 0.27
+               trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkkvapl 310
+                                        r  + +++ a  la  eg++ +++e+l+ va++
+  GCA_018966485.1_ASM1896648v1_1810 303 REAVNMVQIAAGLAIQEGQDFIREEDLEWVATA 335
+                                        556667777777888888888888888887764 PP
+
+>> GCA_018966485.1_ASM1896648v1_74  QWU06736.1 DNA polymerase III subunit gamma/tau [Heyndrickxia coagulans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   1.4e-05     0.011       6      51 ..      15      61 ..      11      87 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.4e-05
+             trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsigG.vlvlGdrGtGkstavralaal 51
+                                     f+ +vgq++++++l  a ++++ +   l  G rGtGk++a++ la+ 
+  GCA_018966485.1_ASM1896648v1_74 15 FADVVGQEHVTKTLQHALLQQKTTHaYLFSGPRGTGKTSAAKILAKA 61
+                                     999***************9988765156679***********99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2472  (689995 residues searched)
+Passed MSV filter:                       167  (0.0675566); expected 49.4 (0.02)
+Passed bias filter:                      125  (0.0505663); expected 49.4 (0.02)
+Passed Vit filter:                        24  (0.00970874); expected 2.5 (0.001)
+Passed Fwd filter:                         3  (0.00121359); expected 0.0 (1e-05)
+Initial search space (Z):               2472  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8342.27
+//
+[ok]

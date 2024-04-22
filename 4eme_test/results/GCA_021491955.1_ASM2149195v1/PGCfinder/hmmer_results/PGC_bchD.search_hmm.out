@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021491955.1_ASM2149195v1/GCA_021491955.1_ASM2149195v1_protein.faa
+# output directed to file:         results/GCA_021491955.1_ASM2149195v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-09   35.5   0.0    1.5e-09   35.0   0.0    1.1  1  GCA_021491955.1_ASM2149195v1_3978  EFDNME_20480 MoxR-like ATPase
+  ------ inclusion threshold ------
+      0.027   11.1   0.0        0.1    9.2   0.0    1.7  2  GCA_021491955.1_ASM2149195v1_2799  EFDNME_14240 vWFA (von Willebran
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021491955.1_ASM2149195v1_3978  EFDNME_20480 MoxR-like ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.0   0.0   6.3e-13   1.5e-09      88     260 ..     105     299 ..     100     314 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 35.0 bits;  conditional E-value: 6.3e-13
+               trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldei 161
+                                        ++++    R+++++ + l +a++eg  ++  dg+++ l+++f ++a  + +e + +  lpea ldR  ++l++   
+  GCA_021491955.1_ASM2149195v1_3978 105 IILADEINRTSPKTQSALLEAMEEG--SVTVDGVTMPLSKSFFVMATQNPVEYEGTypLPEAQLDRFLFKLRMGYP 178
+                                        56666678*****************..5899******************99776542279***********99887 PP
+
+               trimmed_msa_bchD_hmm 162 alrdleelaa...............eaedieaararlpkvtleeealealvataaalGidsl.......Rapllal 215
+                                        ++r+  ++                 e+e+++a +++ +kv ++++  e +v++a+++  +s+       R ++  +
+  GCA_021491955.1_ASM2149195v1_3978 179 TVREELQVLDlqenrspieevepviEKEELAAFQKEAEKVYVDAAIKEYIVEIAQKTRSHSAvylgvspRGSIALM 254
+                                        777433333346666688888889999***************************999887644444444******* PP
+
+               trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrlpeeeeeeaee 260
+                                        +aa+a A l +r+ v  +d++  a ++la+r +  +e++ e +++
+  GCA_021491955.1_ASM2149195v1_3978 255 KAAQAFAFLYNRDYVIPDDIQYLAPFTLAHRMILRSEAKFEGKRP 299
+                                        *******************************99988887776544 PP
+
+>> GCA_021491955.1_ASM2149195v1_2799  EFDNME_14240 vWFA (von Willebrand factor type A) domain of Mg and Co chelatases
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0     0.043     1e+02     402     413 ..      40      50 ..      22      78 .. 0.72
+   2 ?    9.2   0.0   4.2e-05       0.1     464     506 ..     118     159 ..     114     165 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.043
+               trimmed_msa_bchD_hmm 402 tifvVDASGSaA 413
+                                        + +++DASGS A
+  GCA_021491955.1_ASM2149195v1_2799  40 A-IMLDASGSMA 50 
+                                        3.3567888777 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 4.2e-05
+               trimmed_msa_bchD_hmm 464 aLagLpGGGgTPLAagleaalelaeaarrrGrtpllvlLtDGr 506
+                                        +L g+   G TP+A++l+ a +  ++++ +G+  ++ lLtDG 
+  GCA_021491955.1_ASM2149195v1_2799 118 SLNGIGPTGWTPIANALQDAKNALDQLNNNGKN-VVYLLTDGE 159
+                                        6777777899*********************86.7899***95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4757  (1274109 residues searched)
+Passed MSV filter:                       188  (0.0395207); expected 95.1 (0.02)
+Passed bias filter:                      128  (0.0269077); expected 95.1 (0.02)
+Passed Vit filter:                        15  (0.00315325); expected 4.8 (0.001)
+Passed Fwd filter:                         5  (0.00105108); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 14047.96
+//
+[ok]

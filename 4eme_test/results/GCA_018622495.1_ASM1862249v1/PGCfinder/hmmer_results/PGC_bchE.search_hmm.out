@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_018622495.1_ASM1862249v1/GCA_018622495.1_ASM1862249v1_protein.faa
+# output directed to file:         results/GCA_018622495.1_ASM1862249v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+     0.0082   11.5   0.0      0.012   10.9   0.0    1.2  1  GCA_018622495.1_ASM1862249v1_99  QWB95984.1 methyltransferase [My
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018622495.1_ASM1862249v1_99  QWB95984.1 methyltransferase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   8.1e-06     0.012     196     258 ..      37      99 ..      20     107 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 8.1e-06
+                     trimmed_bchE 196 rhrrllDvGGGeGaFlaavaarapklklklfDlpaV.aerararleaaglsdrvevagGsflkd 258
+                                      + + +lDvG G+Ga l  +  +  k kl+  ++ ++  + a ++++ + l+dr e++ G++l++
+  GCA_018622495.1_ASM1862249v1_99  37 KIKNVLDVGTGNGALLIYAS-ELTKAKLMGIEFQDIrYNLAISNMKLNHLEDRSEIVLGDYLTQ 99 
+                                      5689**********998765.45566666666666624667788899999*******9999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1537  (444735 residues searched)
+Passed MSV filter:                        61  (0.0396877); expected 30.7 (0.02)
+Passed bias filter:                       56  (0.0364346); expected 30.7 (0.02)
+Passed Vit filter:                         6  (0.00390371); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000650618); expected 0.0 (1e-05)
+Initial search space (Z):               1537  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 17126.57
+//
+[ok]

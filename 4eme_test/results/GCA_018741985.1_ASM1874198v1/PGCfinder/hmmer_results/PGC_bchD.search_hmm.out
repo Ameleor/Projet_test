@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018741985.1_ASM1874198v1/GCA_018741985.1_ASM1874198v1_protein.faa
+# output directed to file:         results/GCA_018741985.1_ASM1874198v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-06   24.8   0.0    3.1e-06   24.2   0.0    1.2  1  GCA_018741985.1_ASM1874198v1_3779  QWI74275.1 MoxR family ATPase [B
+    5.3e-06   23.4   0.0    2.5e-05   21.2   0.0    1.8  2  GCA_018741985.1_ASM1874198v1_4649  QWI74931.1 MoxR family ATPase [B
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018741985.1_ASM1874198v1_3779  QWI74275.1 MoxR family ATPase [Bacillus mycoides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.0   1.2e-09   3.1e-06      88     249 ..      96     279 ..      89     299 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 1.2e-09
+               trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldei 161
+                                        +l++    R  + + + l +a++e++v+le+++  + l++ f ++a  + +e + +  lp+a ldR  +++ +   
+  GCA_018741985.1_ASM1874198v1_3779  96 ILLADEINRAMPRTQSSLLEAMEERQVTLEKQS--TPLPKPFFVIATQNPIESQGTfpLPDAQLDRFLMTISIGYP 169
+                                        666666789999*************99998876..788999**********8887622689**********99987 PP
+
+               trimmed_msa_bchD_hmm 162 alrdleelaa...............eaedieaararlpkvtleeealealvataaalGid.......slRapllal 215
+                                        + +d  ++                 + edi +a+++++++ ++e   + ++++a+a+  +       s Ra l  +
+  GCA_018741985.1_ASM1874198v1_3779 170 SPEDELKMMRrfrnnaplesvtsviSLEDILEAQKQVKEIFVSEPLEHYIIKLAHATRNHdyiangvSPRATLALV 245
+                                        7775555544588899999999999*******************9999999999988654333444499******* PP
+
+               trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratr 249
+                                        ra +alA l+gr+  + ed+++ +  v  +r + 
+  GCA_018741985.1_ASM1874198v1_3779 246 RAVQALAFLRGREYCTPEDIQFLVPSVWNHRIVL 279
+                                        *********************9999999988765 PP
+
+>> GCA_018741985.1_ASM1874198v1_4649  QWI74931.1 MoxR family ATPase [Bacillus mycoides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.032        83     445     483 ..      24      62 ..      22      68 .. 0.90
+   2 !   21.2   0.0   9.7e-09   2.5e-05      86     249 ..     103     288 ..     100     301 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.032
+               trimmed_msa_bchD_hmm 445 GkgAellLpptrSLvrakraLagLpGGGgTPLAagleaa 483
+                                        Gk+ e +L+ t  L+     L ++pG G T L  +l+++
+  GCA_018741985.1_ASM1874198v1_4649  24 GKRKETILALTALLAEGHVLLEDVPGVGKTMLVRALSKS 62 
+                                        888999*************************99999876 PP
+
+  == domain 2  score: 21.2 bits;  conditional E-value: 9.7e-09
+               trimmed_msa_bchD_hmm  86 ggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldld 159
+                                        g+++++    R+++++ + l + ++eg  ++  dg++++l++ f ++a  + +e + +  lpea ldR  l+l++ 
+  GCA_018741985.1_ASM1874198v1_4649 103 GNFVLADEINRTSPKTQSALLESMEEG--TITIDGITRSLPKPFFVMATQNPVEYEGTypLPEAQLDRFLLKLRMG 176
+                                        5666777778*****************..5899******************99776542279**********9998 PP
+
+               trimmed_msa_bchD_hmm 160 eialrdleelaa...............eaedieaararlpkvtleeealealvataaalGi.......dslRapll 213
+                                          + ++  e+                 + +++   ++++++v+++++  + +v++ +++         +s R ++ 
+  GCA_018741985.1_ASM1874198v1_4649 177 YPTPEEEFEILNrmektnplshlqaitTIKELLYLQQSVREVSMDKAIKHYIVKLVSQTRSyssiqlgASPRGSIA 252
+                                        87777433333345556667777777778888888999999999888777777665554431111222578***** PP
+
+               trimmed_msa_bchD_hmm 214 alraaralAalegrteveeedlalAarlvlapratr 249
+                                         ++a +a A ++gr+ v  +d+++ a  vla+r + 
+  GCA_018741985.1_ASM1874198v1_4649 253 LMKASQAYAFIHGRNYVIPDDVKFLAPYVLAHRLIL 288
+                                        *********************************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5196  (1358335 residues searched)
+Passed MSV filter:                       163  (0.0313703); expected 103.9 (0.02)
+Passed bias filter:                      116  (0.0223249); expected 103.9 (0.02)
+Passed Vit filter:                        20  (0.00384911); expected 5.2 (0.001)
+Passed Fwd filter:                         5  (0.000962279); expected 0.1 (1e-05)
+Initial search space (Z):               5196  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11943.17
+//
+[ok]

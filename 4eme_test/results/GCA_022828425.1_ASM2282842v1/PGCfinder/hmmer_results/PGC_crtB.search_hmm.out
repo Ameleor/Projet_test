@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_022828425.1_ASM2282842v1/GCA_022828425.1_ASM2282842v1_protein.faa
+# output directed to file:         results/GCA_022828425.1_ASM2282842v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.1e-68  228.0   0.3    5.4e-68  227.6   0.3    1.0  1  GCA_022828425.1_ASM2282842v1_681  UOG92786.1 MAG: phytoene/squalen
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022828425.1_ASM2282842v1_681  UOG92786.1 MAG: phytoene/squalene synthase family protein [Candidatus Thiothrix sul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  227.6   0.3   1.5e-71   5.4e-68       8     288 ..      10     287 ..       7     299 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 227.6 bits;  conditional E-value: 1.5e-71
+              trimmed_msa_crtB_hmm   8 eliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekkaaalarlrerldriyagrpadapadralaavv 84 
+                                       +++r++ k+F++As+ll ++   +   LYafCR  DD++De+ +k  a ++l +  ++i + +++d  a + + a +
+  GCA_022828425.1_ASM2282842v1_681  10 QVLRKHGKTFYFASHLLGKTEALRCARLYAFCRYIDDIADESPDKVWADQQLADIYQQIEQRQARDVYAID-FLALA 85 
+                                       57999****************************************99999999999998777777666666.55688 PP
+
+              trimmed_msa_crtB_hmm  85 eefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgvrdaevlaRAcdLGvAmQLtNiaRD 161
+                                       +e++ + + + +l++G + D ++++ +++++l++Y++rVAg+VG+m++ v+g+rd+++l  A dLG+AmQLtNiaRD
+  GCA_022828425.1_ASM2282842v1_681  86 AECEFSPQPALELIKGVRGDLQHQQLRDEQELMHYCYRVAGTVGLMICGVLGMRDPTALPFAIDLGIAMQLTNIARD 162
+                                       99*************************************************************************** PP
+
+              trimmed_msa_crtB_hmm 162 vgeDaragRlYLPleWleeagldpeafladpefspa.larvvkrLlaeadrlyaraeaGiarLplrcrpailaArli 237
+                                       + eDa+a+R+YLP + + +  ++p+a+ +   f +a l+  ++  l++a+++y++ae+G+  Lp+r+r ail A+++
+  GCA_022828425.1_ASM2282842v1_681 163 IKEDAAAERVYLPVQLIGA--VQPQAISEPDAFMQAyLKIGIACVLDKAEEYYESAEHGLGFLPWRSRLAILVASRL 237
+                                       ***************8864..89999776666655516666899********************************* PP
+
+              trimmed_msa_crtB_hmm 238 YaeigrevarrgldsvsrRavvskarKlallakalleavaaaaelkakale 288
+                                       Y++ig ++ r++l  ++ R+vv+ ++Kl + a+a+ e v+++   +++ ++
+  GCA_022828425.1_ASM2282842v1_681 238 YRAIGLRLCRQQLAFWQGRTVVPVSEKLLHAATACGEFVTRPV-YHQRSHP 287
+                                       **********************************999988876.3333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       3591  (1122673 residues searched)
+Passed MSV filter:                       156  (0.0434419); expected 71.8 (0.02)
+Passed bias filter:                       88  (0.0245057); expected 71.8 (0.02)
+Passed Vit filter:                         6  (0.00167084); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000278474); expected 0.0 (1e-05)
+Initial search space (Z):               3591  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14626.49
+//
+[ok]

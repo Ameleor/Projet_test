@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898405.1_ASM2389840v1/GCA_023898405.1_ASM2389840v1_protein.faa
+# output directed to file:         results/GCA_023898405.1_ASM2389840v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.5e-08   29.3   0.4    0.00036   16.8   0.0    3.2  3  GCA_023898405.1_ASM2389840v1_255   USN51910.1 MAG: YifB family Mg c
+    1.9e-05   21.0   1.7    0.00019   17.7   0.2    2.3  2  GCA_023898405.1_ASM2389840v1_391   USN51201.1 MAG: AAA family ATPas
+  ------ inclusion threshold ------
+      0.021   11.0   0.0      0.029   10.5   0.0    1.2  1  GCA_023898405.1_ASM2389840v1_1847  USN50468.1 MAG: ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898405.1_ASM2389840v1_255  USN51910.1 MAG: YifB family Mg chelatase-like AAA ATPase [Myxococcales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   4.9e-07   0.00036       6      58 ..     194     244 ..     190     252 .. 0.88
+   2 !    6.5   0.0   0.00066      0.49     120     185 ..     286     351 ..     277     359 .. 0.92
+   3 ?    2.2   0.1     0.013       9.8     278     306 ..     466     494 ..     404     499 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 4.9e-07
+              trimmed_msa_bchI_hmm   6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikav 58 
+                                       +s +vgq+e ++all+aa  ++   ++ +G  G+Gks  +  l ++lP+++  
+  GCA_023898405.1_ASM2389840v1_255 194 MSDVVGQEEARQALLIAAAGNH--NLVYIGGAGSGKSMMASRLPTILPPLSYE 244
+                                       6899*************98775..67889********************9765 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.00066
+              trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                       G     pG ++ an G l++de+  +   ++++l    + Ge ++ r   ++ +pa + lv + nP
+  GCA_023898405.1_ASM2389840v1_255 286 GSSYIRPGEISLANFGVLFLDELLEFPRAVLEILRQPLENGEVTLSRARHTITYPAEISLVAALNP 351
+                                       556679****************999999**********************************9999 PP
+
+  == domain 3  score: 2.2 bits;  conditional E-value: 0.013
+              trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkk 306
+                                       r+   ++r ar++a le++++++k+h+++
+  GCA_023898405.1_ASM2389840v1_255 466 RSYDRIIRVARTIADLEEENNIHKHHIAQ 494
+                                       5556799*******************976 PP
+
+>> GCA_023898405.1_ASM2389840v1_391  USN51201.1 MAG: AAA family ATPase [Myxococcales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.1     0.016        12       8      52 ..      17      59 ..      15      66 .. 0.89
+   2 !   17.7   0.2   2.5e-07   0.00019     159     317 ..     122     295 ..      99     315 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.016
+              trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaall 52
+                                      +i+gq+++   llla +    g +lv G  G  k+ a++al+ l+
+  GCA_023898405.1_ASM2389840v1_391 17 SILGQKKLIDRLLLALLAD--GHLLVEGAPGLAKTKAIKALSVLI 59
+                                      5889999999999998865..889*****************9886 PP
+
+  == domain 2  score: 17.7 bits;  conditional E-value: 2.5e-07
+              trimmed_msa_bchI_hmm 159 sGenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpk.dleervevvrrrdaferdpeaf 230
+                                        Ge  v     + + p  f+++ + nP e e    l    ldrf + v++  p+ + e+++  + r +   ++++  
+  GCA_023898405.1_ASM2389840v1_391 122 MGERQVSVGNKTYQLPELFLVMATQNPIEQEgtfsLPEAQLDRFMMHVKIDFPDkETEKKILALNREEVLTSKKSHE 198
+                                       45555555556666677899999999976552233445679**********99625677777777766655444333 PP
+
+              trimmed_msa_bchI_hmm 231 vak.wkked.akvrkkilaar......krlekvevpdavlekaaklclalgtdGl..rgeltllraaralaalegak 297
+                                        ++  +++d  ++rk+i + +      + l ++ ++ +  ek++     +   G   r+ + + r+ara+a l++++
+  GCA_023898405.1_ASM2389840v1_391 199 QQEvLSQHDiFSIRKDIYDVHmdpaveEYLVQIIMATRFPEKISDTLAGMIDFGAspRASIYMDRTARAVAWLKNKD 275
+                                       2220333331356666654321111114455555555555554433222222221238899999************* PP
+
+              trimmed_msa_bchI_hmm 298 evtkehlkkvaplalrhrlr 317
+                                        v  +++++v    lrhr+ 
+  GCA_023898405.1_ASM2389840v1_391 276 FVAPSDIHEVVHEILRHRIG 295
+                                       ******************85 PP
+
+>> GCA_023898405.1_ASM2389840v1_1847  USN50468.1 MAG: ABC transporter ATP-binding protein [Myxococcales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0     4e-05     0.029      31      54 ..      33      56 ..      13      78 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 4e-05
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPk 54
+                                       v ++G+ G+Gkst + +la llP 
+  GCA_023898405.1_ASM2389840v1_1847 33 VALVGNNGSGKSTFLHTLAGLLPV 56
+                                       5568*******************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2223  (723765 residues searched)
+Passed MSV filter:                       124  (0.0557805); expected 44.5 (0.02)
+Passed bias filter:                       95  (0.042735); expected 44.5 (0.02)
+Passed Vit filter:                        15  (0.00674764); expected 2.2 (0.001)
+Passed Fwd filter:                         3  (0.00134953); expected 0.0 (1e-05)
+Initial search space (Z):               2223  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10336.19
+//
+[ok]

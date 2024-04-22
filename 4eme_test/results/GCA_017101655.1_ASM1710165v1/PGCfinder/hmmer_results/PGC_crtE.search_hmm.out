@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_017101655.1_ASM1710165v1/GCA_017101655.1_ASM1710165v1_protein.faa
+# output directed to file:         results/GCA_017101655.1_ASM1710165v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.9e-58  194.4   0.0    3.5e-58  194.2   0.0    1.0  1  GCA_017101655.1_ASM1710165v1_1393  QPW56802.1 polyprenyl synthetase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017101655.1_ASM1710165v1_1393  QPW56802.1 polyprenyl synthetase family protein [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.2   0.0   1.3e-61   3.5e-58      15     261 ..      20     273 ..       6     288 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 194.2 bits;  conditional E-value: 1.3e-61
+               trimmed_msa_crtE_hmm  15 eaeeapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgk 90 
+                                        ++++  + l ++++y++  gG+RiRP l+l+    + d+ +++    a aie++h +sL+hDDlP +D++dlRRgk
+  GCA_017101655.1_ASM1710165v1_1393  20 NKGSYNKLLYDSMKYSIEVGGKRIRPILMLSTYSIYKDNYKDIMP-MACAIEMIHTYSLIHDDLPGMDNDDLRRGK 94 
+                                        3456678999********************999888777777766.899*************************** PP
+
+               trimmed_msa_crtE_hmm  91 psvhkafgeplavLaGDalivlafetlareaaksparlakllktlaravGapaGivaGqawesea...evd...ls 160
+                                        p+ hk fge++a+LaGD+l+  a++++ + + ++ + +    k++++a+Ga +G+++Gq  +  +   +++   l+
+  GCA_017101655.1_ASM1710165v1_1393  95 PTNHKIFGEAIAILAGDGLLNEAMNIMFNYSLDHDKIALMASKVISEAAGA-EGMIGGQVVDIISegqKISidkLK 169
+                                        ********************************9999888889999999999.9********987655655511245 PP
+
+               trimmed_msa_crtE_hmm 161 ayqraktgaLfaaatvaGai...aagadaeewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsava 233
+                                          ++ ktg L+ ++ +aGai   a +++ e + ++g++lG a+q+ DD+ D+++d++ lGk +++D+++++ + ++
+  GCA_017101655.1_ASM1710165v1_1393 170 YMHKNKTGQLIKSSIIAGAIlggACKEEIEILDEFGSKLGLAFQIKDDILDVIGDSKVLGKEVHKDDENNKTTFIS 245
+                                        569*****************77777888999999****************************************** PP
+
+               trimmed_msa_crtE_hmm 234 elGlegavarlkelvaeaiasipsckga 261
+                                         +Gle   +   el+++ i+ ++s+ ++
+  GCA_017101655.1_ASM1710165v1_1393 246 CFGLEKCKELCVELTDQCIKLLSSIGKD 273
+                                        **********9******99999887544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       2722  (781570 residues searched)
+Passed MSV filter:                        46  (0.0168993); expected 54.4 (0.02)
+Passed bias filter:                       43  (0.0157972); expected 54.4 (0.02)
+Passed Vit filter:                         2  (0.000734754); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000367377); expected 0.0 (1e-05)
+Initial search space (Z):               2722  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17552.57
+//
+[ok]

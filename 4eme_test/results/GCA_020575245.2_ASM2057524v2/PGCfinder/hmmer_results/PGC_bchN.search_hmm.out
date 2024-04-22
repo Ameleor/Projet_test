@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_020575245.2_ASM2057524v2/GCA_020575245.2_ASM2057524v2_protein.faa
+# output directed to file:         results/GCA_020575245.2_ASM2057524v2/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.059   10.5   0.1      0.078   10.1   0.1    1.1  1  GCA_020575245.2_ASM2057524v2_5049  WBG07460.1 YgjV family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020575245.2_ASM2057524v2_5049  WBG07460.1 YgjV family protein [Citrobacter freundii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.1   1.5e-05     0.078      43      62 ..      51      70 ..      29      73 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_bchN_hmm 43 qsaaGvmifaeprfataile 62
+                                        +aaG+mi a  r+atai+ 
+  GCA_020575245.2_ASM2057524v2_5049 51 HAAAGLMIIAACRYATAIIT 70
+                                       4799**************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       5291  (1633522 residues searched)
+Passed MSV filter:                       149  (0.028161); expected 105.8 (0.02)
+Passed bias filter:                      113  (0.021357); expected 105.8 (0.02)
+Passed Vit filter:                         9  (0.001701); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189); expected 0.1 (1e-05)
+Initial search space (Z):               5291  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 15601.88
+//
+[ok]

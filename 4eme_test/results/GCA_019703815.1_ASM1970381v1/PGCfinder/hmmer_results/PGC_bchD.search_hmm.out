@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_019703815.1_ASM1970381v1/GCA_019703815.1_ASM1970381v1_protein.faa
+# output directed to file:         results/GCA_019703815.1_ASM1970381v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.7e-07   28.1   0.0    2.9e-07   27.2   0.0    1.3  1  GCA_019703815.1_ASM1970381v1_4016  JJHINF_20960 VWA domain-containi
+    0.00068   16.1   1.2    0.00092   15.7   1.2    1.3  1  GCA_019703815.1_ASM1970381v1_3937  JJHINF_20535 MoxR family ATPase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019703815.1_ASM1970381v1_4016  JJHINF_20960 VWA domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.0   1.4e-10   2.9e-07     394     510 ..     194     311 ..     171     320 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 1.4e-10
+               trimmed_msa_bchD_hmm 394 yeersetttifvVDASGSaA.leRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvr.a.kraLa 466
+                                        +eer+ + ++f+VD SGS    +RL      + ++La+   + d+V++v++ G+ ++++Lp+t+     +   aL+
+  GCA_019703815.1_ASM1970381v1_4016 194 LEERQPSNLVFLVDVSGSMSdPNRLPLLVQSL-QMLAKNLNENDSVSIVTYAGS-SQVVLPATKGDQTeTiLAALQ 267
+                                        589999************65279**9988777.689****************97.69******9843202135788 PP
+
+               trimmed_msa_bchD_hmm 467 gLpGGGgTPLAagleaalelaeaarrrGrtpllvlLtDGraNia 510
+                                        +L  GG+T    g+++a++ a++    G t  ++l tDG  N+ 
+  GCA_019703815.1_ASM1970381v1_4016 268 QLTSGGSTNGQGGIKMAYQQAKTHFIDGGTNRVLLATDGDFNVG 311
+                                        899**************************************996 PP
+
+>> GCA_019703815.1_ASM1970381v1_3937  JJHINF_20535 MoxR family ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   1.2   4.5e-07   0.00092      95     256 ..     111     304 ..      41     311 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 4.5e-07
+               trimmed_msa_bchD_hmm  95 ERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldeialr.... 164
+                                         R ++++ + + +a+ e+++      ++ +l+  f ++a  + +e++ +  lpea ldR  l+l++d   ++    
+  GCA_019703815.1_ASM1970381v1_3937 111 NRAPAKVQSAMLEAMAEKQI--TVGKTTYTLPDLFLVMATQNPIEQEGTypLPEAQLDRFLLQLKVDYPDANsele 184
+                                        57777777777788877754..444455777888888888888876654226788888877777777655552233 PP
+
+               trimmed_msa_bchD_hmm 165 .dleelaa.................eaedieaararlpkvtl................eeealealvataaalGid 206
+                                                                 +++di aar+++ ++++                + e  +   a   ++G+ 
+  GCA_019703815.1_ASM1970381v1_3937 185 iL-----RlnrgealgvqseeparlTENDIFAARKQVLEMHMseeveqyiirlvmatrQPERYDPSLASWLQMGV- 254
+                                        30.....23445555555555566655566666665555555555555555555555466666666666777887. PP
+
+               trimmed_msa_bchD_hmm 207 slRapllalraaralAalegrteveeedlalAarlvlapratrlpeeeee 256
+                                        s Ra l   r ara A l+gr+ v+ +d+ + a+ vl +r  r  e+++e
+  GCA_019703815.1_ASM1970381v1_3937 255 SPRATLALDRCARAYAWLDGRDFVTPADVMAMAHPVLRHRLLRSYEAQAE 304
+                                        89**************************************9998777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4058  (1254345 residues searched)
+Passed MSV filter:                       194  (0.0478068); expected 81.2 (0.02)
+Passed bias filter:                       86  (0.0211927); expected 81.2 (0.02)
+Passed Vit filter:                        11  (0.00271069); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000492854); expected 0.0 (1e-05)
+Initial search space (Z):               4058  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 10734.26
+//
+[ok]

@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203745.1_ASM1920374v1/GCA_019203745.1_ASM1920374v1_protein.faa
+# output directed to file:         results/GCA_019203745.1_ASM1920374v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.7e-05   22.3   0.1    2.7e-05   22.3   0.1    1.0  1  GCA_019203745.1_ASM1920374v1_2898  JGHLMO_14815 hypothetical protei
+    0.00097   17.2   0.1     0.0023   16.0   0.1    1.7  1  GCA_019203745.1_ASM1920374v1_6244  JGHLMO_31760 AAA family ATPase
+      0.007   14.4   0.0     0.0084   14.1   0.0    1.1  1  GCA_019203745.1_ASM1920374v1_3665  JGHLMO_18670 Competence protein 
+     0.0074   14.3   0.0      0.026   12.5   0.0    1.8  2  GCA_019203745.1_ASM1920374v1_579   JGHLMO_02905 DNA polymerase III 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203745.1_ASM1920374v1_2898  JGHLMO_14815 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.3   0.1   1.3e-08   2.7e-05     278     320 ..      24      66 ..       5      84 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 22.3 bits;  conditional E-value: 1.3e-08
+               trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkkvaplalrhrlrrdp 320
+                                        r+ l+ll a++a+aal+g++ vt e++k+ + ++lrhr+   p
+  GCA_019203745.1_ASM1920374v1_2898  24 RASLALLTASKAFAALRGRDFVTPEDIKEASYAVLRHRVIVSP 66 
+                                        899***********************************86655 PP
+
+>> GCA_019203745.1_ASM1920374v1_6244  JGHLMO_31760 AAA family ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.1   1.2e-06    0.0023     273     336 ..     146     211 ..       1     213 [. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.2e-06
+               trimmed_msa_bchI_hmm 273 gtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlrrd...pldeagstarveravee 336
+                                        g+   r+ + l  a+ra+a l+g+  v  e++k++a  +lrhr+        +e +s + ++r++++
+  GCA_019203745.1_ASM1920374v1_6244 146 GA-SPRASINLAIASRAYAFLKGRAFVIPEDVKALAKDVLRHRMGLTfeaEAEEISSEEIINRILAK 211
+                                        33.348999999*******************************864311134555666666777665 PP
+
+>> GCA_019203745.1_ASM1920374v1_3665  JGHLMO_18670 Competence protein ComM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.0   4.2e-06    0.0084       3      61 ..      39      95 ..      37     130 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 4.2e-06
+               trimmed_msa_bchI_hmm  3 afpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgc 61
+                                       +f fs + gq+  k+a+ +aa   +   ++++G  G+Gk+  ++ +  +lP+++  ++ 
+  GCA_019203745.1_ASM1920374v1_3665 39 PFDFSEVKGQETAKRAMEVAAAGGH--NIILIGPPGSGKTMLAKRVPGILPPLTLKEAL 95
+                                       6899****************98654..68999********************9876654 PP
+
+>> GCA_019203745.1_ASM1920374v1_579  JGHLMO_02905 DNA polymerase III subunit gamma/tau
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   1.3e-05     0.026       5      51 ..      15      62 ..      11     104 .. 0.87
+   2 ?   -1.1   0.1      0.18   3.7e+02     207     274 ..     169     235 ..     145     256 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.3e-05
+              trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigGvlvl.GdrGtGkstavralaal 51
+                                       f ++vgq +++ +l  a  +++++  l++ G rG Gk+t++r la  
+  GCA_019203745.1_ASM1920374v1_579 15 EFDTVVGQSHITDTLEHAIEESQLAQALLFcGPRGVGKTTCARILARK 62
+                                      5899***********999999999987766599************975 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.18
+              trimmed_msa_bchI_hmm 207 pkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklclalgt 274
+                                       ++d+++ +  + ++++ + + +a+    +k+d ++r+ ++   +rl++ + ++ +l kaa++   l  
+  GCA_019203745.1_ASM1920374v1_579 169 IEDIQSHLRNIAQKENIQYEDDALYLIAQKADGALRDALSI-FDRLSTFSQKNITLAKAAEVLNILDY 235
+                                       56777777777777777777777777777777777776654.46677777777777777776655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       7982  (1294827 residues searched)
+Passed MSV filter:                       178  (0.0223002); expected 159.6 (0.02)
+Passed bias filter:                      155  (0.0194187); expected 159.6 (0.02)
+Passed Vit filter:                        19  (0.00238036); expected 8.0 (0.001)
+Passed Fwd filter:                         4  (0.000501128); expected 0.1 (1e-05)
+Initial search space (Z):               7982  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10221.23
+//
+[ok]

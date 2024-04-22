@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCA_015709715.1_ASM1570971v1/GCA_015709715.1_ASM1570971v1_protein.faa
+# output directed to file:         results/GCA_015709715.1_ASM1570971v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+       0.01   12.5   2.0      0.088    9.4   0.0    2.8  3  GCA_015709715.1_ASM1570971v1_1803  QOJ35103.1 MAG: PCP reductase fa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015709715.1_ASM1570971v1_1803  QOJ35103.1 MAG: PCP reductase family protein [Nitrospira sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.0     0.015        57     410     442 ..      66      98 ..      55     118 .. 0.67
+   2 ?    9.4   0.0   2.3e-05     0.088     406     472 ..     118     187 ..     110     188 .. 0.83
+   3 ?    0.9   0.1    0.0088        34     415     471 ..     191     239 ..     184     241 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.015
+               trimmed_msa_bchZ_hmm 410 eatparlerelawdedakaaldalveaqpvlvr 442
+                                        +a+   ++ +l+w+++ak++l+a+ e    ++r
+  GCA_015709715.1_ASM1570971v1_1803  66 AAADQMAKGQLPWTAAAKERLEAVPEFMRGMIR 98 
+                                        45556677899*******999987654444443 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 2.3e-05
+               trimmed_msa_bchZ_hmm 406 ldkveatparlere...lawdedakaaldalveaqpvlvrisaakrlrdaaekaarkageervtlervek 472
+                                        +d+vea    +er+   l w+e a a l++ ++a p +    +   ++  +e+aar++g +r+ + +v++
+  GCA_015709715.1_ASM1570971v1_1803 118 FDRVEAMGEVRERQlpsLEWTEGALALLQEKIKASPPIAMEFVGDMIKCDTEEAAREQGLSRIDEVTVQQ 187
+                                        4777776555444423389*****************9999999*******************99988876 PP
+
+  == domain 3  score: 0.9 bits;  conditional E-value: 0.0088
+               trimmed_msa_bchZ_hmm 415 rlerelawdedakaaldalveaqpvlvrisaakrlrdaaekaarkageervtlerve 471
+                                          ++ ++w+++a ++l+    + p +vr      +r+aae++ark g ++v +e+++
+  GCA_015709715.1_ASM1570971v1_1803 191 APQERIPWSDEAWKRLQ----TSPDFVRS----GIRKAAERRARKLGLAEVDSEHLT 239
+                                        55667888888877664....56777774....479999*****9999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       3862  (1233756 residues searched)
+Passed MSV filter:                       104  (0.0269291); expected 77.2 (0.02)
+Passed bias filter:                       91  (0.0235629); expected 77.2 (0.02)
+Passed Vit filter:                         9  (0.0023304); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000258933); expected 0.0 (1e-05)
+Initial search space (Z):               3862  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 15463.71
+//
+[ok]

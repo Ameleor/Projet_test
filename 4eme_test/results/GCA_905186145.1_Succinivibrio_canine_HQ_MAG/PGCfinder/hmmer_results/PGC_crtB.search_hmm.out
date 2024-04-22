@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/GCA_905186145.1_Succinivibrio_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                         -----------
+    2.1e-14   50.4   0.0    5.2e-14   49.1   0.0    1.6  1  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517  EOCKBE_08055 Phytoene/squalene s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517  EOCKBE_08055 Phytoene/squalene synthetase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.1   0.0   3.1e-17   5.2e-14      12     176 ..       6     205 ..       1     216 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 49.1 bits;  conditional E-value: 3.1e-17
+                              trimmed_msa_crtB_hmm  12 egSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekk.................... 52 
+                                                         S+sFa+   +lp+ + + +   Y  CR+aD + D+ ++                     
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517   6 GVSRSFALTIPMLPEILEDYVANAYLLCRIADTVEDDPKSLpkekinwlnsfaqfalanfa 66 
+                                                       569******************************999998878999***************8 PP
+
+                              trimmed_msa_crtB_hmm  53 .aaalarlrerldriyagr.p.adapadralaavveefaipralpealle.......Gfaw 103
+                                                        + +l +l+++   +++g+ p +++   + ++ v ++++ p ++ + l +       G+a 
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517  67 dELNLLTLHHQALSLCEGAvPkEKELLCDMIGVVERTVSFPPKIRQILGKgvsilafGMAK 127
+                                                       8888999999999999997331344556778888888999999877554311111137788 PP
+
+                              trimmed_msa_crtB_hmm 104 DaegrryetledllaYaarVAgaVGvmmalvmgv.....rdaevlaRAcdLGvAmQLtNia 159
+                                                         +g + ++ +d+ +Y++ VAg+VG ++a++        + ++++a A   G  +QLtNi 
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517 128 SLDGFSIKNRDDVDKYCYFVAGVVGELLAALFSEhnheiDREKLMALAVSFGEGLQLTNIL 188
+                                                       89999**************************9874444344567999************** PP
+
+                              trimmed_msa_crtB_hmm 160 RDvgeDaragRlYLPle 176
+                                                       +D ++Da++   +LP++
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1517 189 KDRAQDAKRHISFLPQN 205
+                                                       ***************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       1683  (583205 residues searched)
+Passed MSV filter:                        52  (0.0308972); expected 33.7 (0.02)
+Passed bias filter:                       40  (0.0237671); expected 33.7 (0.02)
+Passed Vit filter:                         1  (0.000594177); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000594177); expected 0.0 (1e-05)
+Initial search space (Z):               1683  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10889.35
+//
+[ok]

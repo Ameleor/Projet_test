@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898345.1_ASM2389834v1/GCA_023898345.1_ASM2389834v1_protein.faa
+# output directed to file:         results/GCA_023898345.1_ASM2389834v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      1e-05   21.0   0.6    2.4e-05   19.7   0.6    1.7  1  GCA_023898345.1_ASM2389834v1_1273  USN44023.1 MAG: ParA family prot
+    4.4e-05   18.9   0.1    0.00045   15.6   0.0    2.0  2  GCA_023898345.1_ASM2389834v1_1188  USN43938.1 MAG: P-loop NTPase [C
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898345.1_ASM2389834v1_1273  USN44023.1 MAG: ParA family protein [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.6   3.3e-08   2.4e-05      27      64 ..       8      45 ..       1     135 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 3.3e-08
+               trimmed_msa_bchX_hmm 27 iygkggigksftlanlsymlaqqgkkvlligcdpksdt 64
+                                          kgg+gk+   +nl  mla++g +vlli  d +++ 
+  GCA_023898345.1_ASM2389834v1_1273  8 KISKGGVGKTTLSSNLGAMLAKKGFRVLLIDLDSQANL 45
+                                       358****************************9998764 PP
+
+>> GCA_023898345.1_ASM2389834v1_1188  USN43938.1 MAG: P-loop NTPase [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   6.2e-07   0.00045      24      76 ..       5      57 ..       2      81 .. 0.82
+   2 ?    1.4   0.0     0.012         9     191     266 ..     157     235 ..     108     249 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 6.2e-07
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpt 76
+                                       i+   gkgg+gk+ t  nl+  la+q ++v+l+  +  +    l +g    p 
+  GCA_023898345.1_ASM2389834v1_1188  5 IVISSGKGGVGKTTTSVNLASALAKQERNVVLVDANLTTPNVGLHLGLTKFPV 57
+                                       44557****************************98887777777777666665 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.012
+               trimmed_msa_bchX_hmm 191 frklggnvgvaglvink...ddgtgeaqafaeavgipvlaaipadedirrksanye.ii.gkpesewgslfeelae 261
+                                         +++g  + v g+v+n+   ++     +a+ +  + p+ + i  d+++r+     + ii  +p+s+ ++ ++ la 
+  GCA_023898345.1_ASM2389834v1_1188 157 AKEIG--IPVKGVVLNRvrrNNYDLGLRAIESLLETPITSVIEDDKNMRQAVYRKKpIIhIRPNSHTAQQYHLLAD 230
+                                        44444..456778877621133344567888889999999999999999876544334424688888888888888 PP
+
+               trimmed_msa_bchX_hmm 262 nvaea 266
+                                        +v + 
+  GCA_023898345.1_ASM2389834v1_1188 231 RVHKG 235
+                                        88765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1467  (462166 residues searched)
+Passed MSV filter:                        51  (0.0347648); expected 29.3 (0.02)
+Passed bias filter:                       43  (0.0293115); expected 29.3 (0.02)
+Passed Vit filter:                         5  (0.00340832); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00136333); expected 0.0 (1e-05)
+Initial search space (Z):               1467  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10174.68
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCA_022453685.1_ASM2245368v1/GCA_022453685.1_ASM2245368v1_protein.faa
+# output directed to file:         results/GCA_022453685.1_ASM2245368v1/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00013   19.1   0.9    0.00024   18.2   0.9    1.5  1  GCA_022453685.1_ASM2245368v1_1550  UML66885.1 phosphatidate cytidyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022453685.1_ASM2245368v1_1550  UML66885.1 phosphatidate cytidylyltransferase [Agathobacter rectalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.9   7.5e-08   0.00024       5      94 ..      77     164 ..      73     212 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 7.5e-08
+               trimmed_msa_puhE_hmm   5 valfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelafltGv 80 
+                                        + lf+ ++   + +++ + p+   k+ +++   ++ +++++ +v + ++  +g ylaf+  l+ Wg    a+ +Gv
+  GCA_022453685.1_ASM2245368v1_1550  77 MMLFMGFLIVLMFVYVLSYPKYDAKQLMAAFFGMFYVGTMLSYVYQIRTLNNGLYLAFLVFLCSWGCDTCAYCVGV 152
+                                        55666666666677777888889999999999999999999999999***************************** PP
+
+               trimmed_msa_puhE_hmm  81 vtGprreacpegas 94 
+                                        + G ++   ++++s
+  GCA_022453685.1_ASM2245368v1_1550 153 LIGKHKM--APKLS 164
+                                        ***8764..44444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       3205  (997001 residues searched)
+Passed MSV filter:                       153  (0.0477379); expected 64.1 (0.02)
+Passed bias filter:                       57  (0.0177847); expected 64.1 (0.02)
+Passed Vit filter:                         3  (0.000936037); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000312012); expected 0.0 (1e-05)
+Initial search space (Z):               3205  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11966.09
+//
+[ok]

@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186155.1_Blautia_sp._canine_HQ_MAG/GCA_905186155.1_Blautia_sp._canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186155.1_Blautia_sp._canine_HQ_MAG/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                       -----------
+  ------ inclusion threshold ------
+      0.022   10.6   0.0      0.031   10.2   0.0    1.1  1  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_21    PIBPOK_00105 tRNA1(Val) (Adenine
+      0.023   10.6   0.0      0.036   10.0   0.0    1.2  1  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_2309  PIBPOK_11955 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186155.1_Blautia_sp._canine_HQ_MAG_21  PIBPOK_00105 tRNA1(Val) (Adenine(37)-N6)-methyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   2.7e-05     0.031     192     256 ..      43     108 ..      34     113 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.7e-05
+                          trimmed_msa_crtF_hmm 192 ydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsf 255
+                                                    ++k+ +++lD+G G+G     + a++    ++++++  + ae+a+++++ ++l+drv+++ G+ 
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_21  43 AKVKKGEHVLDMGTGTGIIPVLLSAKTEGECFTVLEIQnECAEMAQRSVAMNQLEDRVNIVQGDI 107
+                                                   56788899**********999999999988899999852799*********************98 PP
+
+                          trimmed_msa_crtF_hmm 256 l 256
+                                                   +
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_21 108 K 108
+                                                   6 PP
+
+>> GCA_905186155.1_Blautia_sp._canine_HQ_MAG_2309  PIBPOK_11955 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   3.1e-05     0.036     147     245 ..     460     557 ..     452     573 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 3.1e-05
+                            trimmed_msa_crtF_hmm 147 etelakyWpYaaeakaaeldaeevaaYsaLmaasqalvaeevldaydlkrhrrllDvGGGeGa 209
+                                                     ++++ k+++Y  e+++  ++   ++++ +++ +   l +   ++a+dl+++++++D+G G G 
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_2309 460 KEQFIKFYEYLVEKNK-VMNLTGITEFQEVLVKH-FLDSLACVKAVDLTKVKKVMDIGTGAGF 520
+                                                     5566666666666643.56666666666655442.223345789******************9 PP
+
+                            trimmed_msa_crtF_hmm 210 FlaavaarapklklklfD.lpaVaerararleaagls 245
+                                                         ++ + p+l+  l+D l + ++  +++++  g++
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_2309 521 PGVPLKIAFPHLEECLLDsLKKRVTFLEETFNLLGFD 557
+                                                     9999999999999999995555555556666655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2315  (721190 residues searched)
+Passed MSV filter:                        84  (0.0362851); expected 46.3 (0.02)
+Passed bias filter:                       73  (0.0315335); expected 46.3 (0.02)
+Passed Vit filter:                         6  (0.00259179); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000863931); expected 0.0 (1e-05)
+Initial search space (Z):               2315  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14097.93
+//
+[ok]

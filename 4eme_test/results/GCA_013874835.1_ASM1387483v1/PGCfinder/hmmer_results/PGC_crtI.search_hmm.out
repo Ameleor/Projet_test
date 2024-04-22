@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_013874835.1_ASM1387483v1/GCA_013874835.1_ASM1387483v1_protein.faa
+# output directed to file:         results/GCA_013874835.1_ASM1387483v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.3e-07   27.2   1.9      4e-05   19.0   0.1    2.2  2  GCA_013874835.1_ASM1387483v1_1558  QMI85644.1 NAD(P)/FAD-dependent 
+    7.9e-05   18.0   4.7    0.00011   17.5   1.0    2.4  2  GCA_013874835.1_ASM1387483v1_1263  QMI85367.1 dihydrolipoyl dehydro
+     0.0008   14.6   0.3      0.057    8.5   0.0    2.3  2  GCA_013874835.1_ASM1387483v1_1340  QMI85440.1 thioredoxin-disulfide
+     0.0051   12.0   4.8     0.0033   12.6   1.0    2.3  2  GCA_013874835.1_ASM1387483v1_308   QMI86110.1 glutathione-disulfide
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013874835.1_ASM1387483v1_1558  QMI85644.1 NAD(P)/FAD-dependent oxidoreductase [Carnobacteriaceae bacterium zg-84]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.4   0.4    0.0003      0.13       4      38 ..       4      38 ..       1      44 [. 0.92
+   2 !   19.0   0.1   9.3e-08     4e-05     219     271 ..     107     159 ..      91     166 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.0003
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                       ++viG G  Gl a +  ++ G +v +lek  ++G 
+  GCA_013874835.1_ASM1387483v1_1558  4 VIVIGGGSSGLMACVSAAKTGAKVLLLEKNASLGQ 38
+                                       79***************************999885 PP
+
+  == domain 2  score: 19.0 bits;  conditional E-value: 9.3e-08
+               trimmed_msa_crtI_hmm 219 GtgalvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvv 271
+                                           ++++++++li+++G +++++++v++++ ++++++gv+l++G++i+a+ v+
+  GCA_013874835.1_ASM1387483v1_1558 107 KARTILDTFISLIKQHGIHVQTKNTVSNLLFDENKVCGVHLEDGTTIHAKSVI 159
+                                        45678999*****************************************9887 PP
+
+>> GCA_013874835.1_ASM1387483v1_1263  QMI85367.1 dihydrolipoyl dehydrogenase [Carnobacteriaceae bacterium zg-84]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   1.0   2.6e-07   0.00011       4      35 ..      12      43 ..       9      50 .. 0.89
+   2 ?    1.2   0.1     0.023       9.8     214     267 ..     227     279 ..     218     311 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 2.6e-07
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvleklda 35
+                                       +vviGaG GG  aair ++ G +vtv+ek + 
+  GCA_013874835.1_ASM1387483v1_1263 12 TVVIGAGPGGYVAAIRAAQMGQKVTVIEKGNL 43
+                                       79**************************9764 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.023
+               trimmed_msa_crtI_hmm 214 hyamGGtgalvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeiea 267
+                                         +a+ G++ + k+++k   ++G ++ ++ ev+  + e+ +a  v++  G++ ++
+  GCA_013874835.1_ASM1387483v1_1263 227 SFAKKGVKVVTKAMAKEAIDNGDSVTVKYEVDG-KQEEVTADYVMVCVGRRPNT 279
+                                        58999************************9987.44666777777777766554 PP
+
+>> GCA_013874835.1_ASM1387483v1_1340  QMI85440.1 thioredoxin-disulfide reductase [Carnobacteriaceae bacterium zg-84]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.5   0.0   0.00013     0.057       4      39 ..       7      41 ..       5      70 .. 0.84
+   2 !    4.2   0.0    0.0029       1.2     234     287 ..     192     243 ..     144     250 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00013
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                       +++iGaG GG++aa+  + + + v +le+   pGG 
+  GCA_013874835.1_ASM1387483v1_1340  7 VIIIGAGPGGMTAALYASRANLSVLMLER-GVPGGE 41
+                                       69*********************999986.567775 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0029
+               trimmed_msa_crtI_hmm 234 qGgelrlnaeveeievedgratgvrlasGeeieadvvvsnadaaltykklleee 287
+                                           ++  ++ veei+ ed++++gvrl++ ++ e+  v   a  ++ y  ll+++
+  GCA_013874835.1_ASM1387483v1_1340 192 DKITFIWDSVVEEILGEDNAVSGVRLKNVKTNEVSTVS--AAGVFIYVGLLPNT 243
+                                        5556778899*****************99988877664..44567777777776 PP
+
+>> GCA_013874835.1_ASM1387483v1_308  QMI86110.1 glutathione-disulfide reductase [Carnobacteriaceae bacterium zg-84]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   1.0   7.7e-06    0.0033       5      38 ..       7      39 ..       3      44 .. 0.87
+   2 ?   -0.1   0.1     0.056        24       3      36 ..     167     200 ..     165     201 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7.7e-06
+              trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                      +viG G GG+a+a r +  G +v v+e+ + +GG
+  GCA_013874835.1_ASM1387483v1_308  7 IVIGGGSGGIASANRAAMYGAKVVVIEQSH-LGG 39
+                                      9**************************875.444 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.056
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldap 36 
+                                       ++ v+GaG+  + +a  l++ G++v +l + d+p
+  GCA_013874835.1_ASM1387483v1_308 167 SVAVVGAGYIAVELAGVLNSLGVKVDLLVRGDKP 200
+                                       5679**********************99998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1695  (545929 residues searched)
+Passed MSV filter:                        65  (0.0383481); expected 33.9 (0.02)
+Passed bias filter:                       42  (0.0247788); expected 33.9 (0.02)
+Passed Vit filter:                         8  (0.00471976); expected 1.7 (0.001)
+Passed Fwd filter:                         4  (0.00235988); expected 0.0 (1e-05)
+Initial search space (Z):               1695  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10026.70
+//
+[ok]

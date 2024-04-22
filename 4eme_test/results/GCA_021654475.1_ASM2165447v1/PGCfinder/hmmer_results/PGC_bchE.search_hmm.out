@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_021654475.1_ASM2165447v1/GCA_021654475.1_ASM2165447v1_protein.faa
+# output directed to file:         results/GCA_021654475.1_ASM2165447v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0017   14.3   0.1     0.0022   13.8   0.1    1.2  1  GCA_021654475.1_ASM2165447v1_76    BCP60888.1 ribosomal protein L11
+     0.0083   11.9   0.1      0.014   11.2   0.1    1.3  1  GCA_021654475.1_ASM2165447v1_924   BCP61736.1 pyrimidine-nucleoside
+  ------ inclusion threshold ------
+      0.016   11.0   0.0      0.025   10.4   0.0    1.2  1  GCA_021654475.1_ASM2165447v1_1056  BCP61868.1 N5-glutamine S-adenos
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021654475.1_ASM2165447v1_76  BCP60888.1 ribosomal protein L11 methyltransferase [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   3.1e-06    0.0022     194     266 ..     169     236 ..     158     299 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.1e-06
+                     trimmed_bchE 194 lkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaer.ararleaaglsdrvevagGsflkdplPegaDl 266
+                                      l++ ++++DvG G+G  l+ + +   + ++  +Dl +Va r a+++++ ++ +++++va+G++l+     g+D+
+  GCA_021654475.1_ASM2165447v1_76 169 LRGGETVIDVGTGSGV-LSIASSLLGAKEIYAYDLDEVAVRvAQENIDLNANTSNIHVAAGDLLR-----GIDI 236
+                                      667789*********6.78889999999**********864389999*9************9885.....4444 PP
+
+>> GCA_021654475.1_ASM2165447v1_924  BCP61736.1 pyrimidine-nucleoside phosphorylase [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.1     2e-05     0.014     182     229 ..     178     225 ..     173     246 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2e-05
+                      trimmed_bchE 182 alvaeevlda.ydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp 229
+                                       +l+a++v++  ++    + llDv  GeGaF+++v+++   l  ++ Dl 
+  GCA_021654475.1_ASM2165447v1_924 178 PLIASSVMSKkIAAGADAILLDVTVGEGAFMKTVEDARV-LAQTMVDLG 225
+                                       5788888865155667889**************987654.555556665 PP
+
+>> GCA_021654475.1_ASM2165447v1_1056  BCP61868.1 N5-glutamine S-adenosyl-L-methionine-dependent methyltransferase [Strep
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   3.5e-05     0.025     199     232 ..     112     145 ..      98     178 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 3.5e-05
+                       trimmed_bchE 199 rllDvGGGeGaFlaavaarapklklklfDlpaVa 232
+                                        r+lD+G G+Ga +  +a++ p+ +++  D+ + a
+  GCA_021654475.1_ASM2165447v1_1056 112 RILDIGTGSGAIAISLAKARPDWEVVAVDISKDA 145
+                                        79************************99997532 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2130  (609519 residues searched)
+Passed MSV filter:                        87  (0.0408451); expected 42.6 (0.02)
+Passed bias filter:                       73  (0.0342723); expected 42.6 (0.02)
+Passed Vit filter:                        13  (0.00610329); expected 2.1 (0.001)
+Passed Fwd filter:                         3  (0.00140845); expected 0.0 (1e-05)
+Initial search space (Z):               2130  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11370.23
+//
+[ok]

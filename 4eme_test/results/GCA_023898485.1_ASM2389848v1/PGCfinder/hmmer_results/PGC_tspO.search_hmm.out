@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898485.1_ASM2389848v1/GCA_023898485.1_ASM2389848v1_protein.faa
+# output directed to file:         results/GCA_023898485.1_ASM2389848v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.9e-05   20.1   5.4    3.9e-05   20.1   5.4    2.1  2  GCA_023898485.1_ASM2389848v1_11  USN56916.1 MAG: tryptophan-rich 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898485.1_ASM2389848v1_11  USN56916.1 MAG: tryptophan-rich sensory protein [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.1   5.4   2.6e-08   3.9e-05       8     124 ..      16     137 ..       9     160 .. 0.67
+   2 ?   -0.1   4.9     0.043        64      39     140 ..     109     211 ..     106     216 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 20.1 bits;  conditional E-value: 2.6e-08
+             trimmed_msa_tspO_hmm   8 aavlvavlggaltelgewyesLkk..P.swkPPdwaFgvvWtviyaliavaavlawraa....edaaaaelllalfal 78 
+                                      ++++v  lg+a+  lg+   +L+   P ++ PP w+Fg+   +i++l+av  ++ w++     e ++  ++ + l  +
+  GCA_023898485.1_ASM2389848v1_11  16 VMYYVNYLGSATDVLGTNMGQLSTvfPfAYMPPGWMFGLSRGLIFVLLAVWYIMGWKRDlstpEAEQSYRREMQLALV 93 
+                                      555555555555555555555554223379********************999999764111122333456799999* PP
+
+             trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvskla 124
+                                      ++vlni+W ++  +     +  ++v++L l vl +++   + ++++
+  GCA_023898485.1_ASM2389848v1_11  94 TIVLNIAWLVIMGQ--EWYLPAAVVIVLLLIVLGMLVRQSQPKTIS 137
+                                      ********988654..444444556667777888777766666555 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.043
+             trimmed_msa_tspO_hmm  39 waFgvvWtviyaliavaavlawraaedaaaaelllalfalnav..lnilWsllfFrlrrldwalvevvlLWlsvlali 114
+                                      w+ + +  ++++li + ++l+ ++++++    +  + +   ++  + +  s++ + l+ +    + ++  W+ ++  +
+  GCA_023898485.1_ASM2389848v1_11 109 WYLPAAVVIVLLLIVL-GMLVRQSQPKTISCVTRGIYYGRGTIatVILTSSIVLYVLQGMSPDSFALTSTWMWIVRGV 185
+                                      5566555555554444.4555544444444433333333322200233457889999999999999999999999999 PP
+
+             trimmed_msa_tspO_hmm 115 lvlwrvsklaallllPYlvWvsiAaa 140
+                                        ++ +++ +    lP l+W  +A++
+  GCA_023898485.1_ASM2389848v1_11 186 GLIAVLRSYYRYRNLPALIWSLTAMT 211
+                                      9999999999999*******988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       1495  (191101 residues searched)
+Passed MSV filter:                        51  (0.0341137); expected 29.9 (0.02)
+Passed bias filter:                       22  (0.0147157); expected 29.9 (0.02)
+Passed Vit filter:                         4  (0.00267559); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000668896); expected 0.0 (1e-05)
+Initial search space (Z):               1495  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4205.00
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203745.1_ASM1920374v1/GCA_019203745.1_ASM1920374v1_protein.faa
+# output directed to file:         results/GCA_019203745.1_ASM1920374v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.5e-06   24.2   0.2    7.1e-06   24.1   0.2    1.0  1  GCA_019203745.1_ASM1920374v1_780   JGHLMO_03930 hypothetical protei
+    0.00011   20.1   0.4    0.00017   19.6   0.4    1.2  1  GCA_019203745.1_ASM1920374v1_1856  JGHLMO_09390 Nitrogen assimilati
+    0.00071   17.5   0.1    0.00086   17.2   0.1    1.1  1  GCA_019203745.1_ASM1920374v1_4199  JGHLMO_21410 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203745.1_ASM1920374v1_780  JGHLMO_03930 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   0.2   2.7e-09   7.1e-06     402     448 ..      13      59 .]      10      59 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 2.7e-09
+              trimmed_msa_ppsR_hmm 402 VrettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       V    + +E + I  AL+  + N   AAe LGLSR  LY +++++gl
+  GCA_019203745.1_ASM1920374v1_780  13 VNLNIEEMEEVLIRKALRKHKGNISLAAEDLGLSRAALYRRMEKFGL 59 
+                                       555666678999**********************************8 PP
+
+>> GCA_019203745.1_ASM1920374v1_1856  JGHLMO_09390 Nitrogen assimilation regulatory protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.4   6.3e-08   0.00017     409     448 ..     156     195 ..     151     196 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 6.3e-08
+               trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                         Ek+ I+  L++T+ N a AA +L +    LY KL+ ygl
+  GCA_019203745.1_ASM1920374v1_1856 156 LEKIHIQKVLQYTKGNKAEAARLLEIGIATLYRKLEEYGL 195
+                                        69*************************************9 PP
+
+>> GCA_019203745.1_ASM1920374v1_4199  JGHLMO_21410 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.1   3.2e-07   0.00086     414     450 .]      52      88 .]      46      88 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 3.2e-07
+               trimmed_msa_ppsR_hmm 414 IeaALelTsdNRasAAemLGLSRQSLYvKLrryglgd 450
+                                        I  ALe  +  R  AA+ LG+S   LY K+++y+l+d
+  GCA_019203745.1_ASM1920374v1_4199  52 IIKALEKHKGRRNRAADELGISQRTLYRKIKQYNLED 88 
+                                        556999999*************************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       7982  (1294827 residues searched)
+Passed MSV filter:                       184  (0.0230519); expected 159.6 (0.02)
+Passed bias filter:                      123  (0.0154097); expected 159.6 (0.02)
+Passed Vit filter:                        14  (0.00175395); expected 8.0 (0.001)
+Passed Fwd filter:                         3  (0.000375846); expected 0.1 (1e-05)
+Initial search space (Z):               7982  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 14945.20
+//
+[ok]

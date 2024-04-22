@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022670655.1_ASM2267065v1/GCA_022670655.1_ASM2267065v1_protein.faa
+# output directed to file:         results/GCA_022670655.1_ASM2267065v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.9e-07   25.8   0.3    9.4e-07   25.4   0.3    1.2  1  GCA_022670655.1_ASM2267065v1_3646  UNN88485.1 MoxR family ATPase [V
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022670655.1_ASM2267065v1_3646  UNN88485.1 MoxR family ATPase [Vibrio cholerae O1 biovar El Tor]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   0.3   2.6e-10   9.4e-07      70     255 ..      85     299 ..      27     306 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 2.6e-10
+               trimmed_msa_bchD_hmm  70 aagrpvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea.. 143
+                                        ++g+ v ++G + +a   ++++    R ++++ a + +a+ e++  +    ++ rl+  f ++a  + +e++ +  
+  GCA_022670655.1_ASM2267065v1_3646  85 ETGEFVFQSGPIFNA---LVLADEINRAPAKVQAAMLEAMAEKQ--ISAGRKTYRLPELFLVMATQNPIEQEGTyp 155
+                                        566666666665444...7777888999************9996..566666799**************8886523 PP
+
+               trimmed_msa_bchD_hmm 144 lpeaLldRlalrldldeialrdleelaa.................eaedieaararlpkvtl.............. 188
+                                        lpea ldR  l+l+++  +++d  ++                   +++++ +ar+++ +v++              
+  GCA_022670655.1_ASM2267065v1_3646 156 LPEAQLDRFLLHLEVNYPNAEDELAILRlnrgeakgqqainkpllTQQQVFSARQEVLNVHMaeaienylvrlvma 231
+                                        78*************9988885444444566666777777777776667777777777777766777777777766 PP
+
+               trimmed_msa_bchD_hmm 189 eeealealvataaalGi.dslRapllalraaralAalegrteveeedlalAarlvlapratrlpeeee 255
+                                        + + ++  +++a+ l +  s Ra +   r ara+A l+gr+ v+ +d+++ a  vl +r     ++++
+  GCA_022670655.1_ASM2267065v1_3646 232 TRHPANYDAKLAQWLTMgVSPRATIALDRCARAHAWLQGRDFVTPDDVQVMAFSVLRHRLLLSYQAQA 299
+                                        555555556666655542499*************************************9987666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3592  (1183867 residues searched)
+Passed MSV filter:                       191  (0.0531737); expected 71.8 (0.02)
+Passed bias filter:                       76  (0.0211581); expected 71.8 (0.02)
+Passed Vit filter:                         9  (0.00250557); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000278396); expected 0.0 (1e-05)
+Initial search space (Z):               3592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13067.13
+//
+[ok]

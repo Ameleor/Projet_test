@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_017094545.1_ASM1709454v1/GCA_017094545.1_ASM1709454v1_protein.faa
+# output directed to file:         results/GCA_017094545.1_ASM1709454v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-09   35.4   0.2    0.00017   18.3   0.0    3.2  3  GCA_017094545.1_ASM1709454v1_3690  QSG17336.1 YifB family Mg chelat
+  ------ inclusion threshold ------
+      0.017   11.6   0.2      0.028   11.0   0.2    1.2  1  GCA_017094545.1_ASM1709454v1_649   QSG18258.1 LPS O-antigen length 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017094545.1_ASM1709454v1_3690  QSG17336.1 YifB family Mg chelatase-like AAA ATPase [Salmonella enterica subsp. en
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.2   0.0   0.00026      0.38       9      60 ..     193     242 ..     187     268 .. 0.86
+   2 !   18.3   0.0   1.1e-07   0.00017     120     186 ..     281     347 ..     274     352 .. 0.91
+   3 !    5.9   0.1   0.00066      0.98     194     309 ..     375     490 ..     368     500 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.00026
+               trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                        ++gq++ k+ l ++a   +   +l++G  GtGk+  +  l+ +lP+++  ++
+  GCA_017094545.1_ASM1709454v1_3690 193 VIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRLSGILPPLSNEEA 242
+                                        899********99997654..699**********************987655 PP
+
+  == domain 2  score: 18.3 bits;  conditional E-value: 1.1e-07
+               trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_017094545.1_ASM1709454v1_3690 281 GGAIPAPGEISLAHNGILFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLIAAMNPS 347
+                                        555567999********************************************************95 PP
+
+  == domain 3  score: 5.9 bits;  conditional E-value: 0.00066
+               trimmed_msa_bchI_hmm 194 lldrfGlsvevrtp..kdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaak 267
+                                        +ldrf ls+e+  p    l++  +     +++++   a +++  ++++k+++++ ++r+  +     ++  +    
+  GCA_017094545.1_ASM1709454v1_3690 375 FLDRFDLSLEIPLPppGILSQHASKGESSATVKKRVIAAHERQYRRQKKLNARL-EGREIQKYCVLHHDDARWLED 449
+                                        578888887776541133444444444444455544455555555556666655.455555554444444555556 PP
+
+               trimmed_msa_bchI_hmm 268 lclalgtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                          ++lg   +r+   ll+ ar++a +e a++++++hl++  +
+  GCA_017094545.1_ASM1709454v1_3690 450 TLVHLGL-SIRAWQRLLKVARTIADIELADQISRQHLQEAVS 490
+                                        6677776.5899999*********************997654 PP
+
+>> GCA_017094545.1_ASM1709454v1_649  QSG18258.1 LPS O-antigen length regulator [Salmonella enterica subsp. enterica sero
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.2   1.9e-05     0.028     206     312 ..     202     312 ..     195     316 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.9e-05
+              trimmed_msa_bchI_hmm 206 tpkdleervevvrrrda..ferdpeafvakwkkedakvrk..kilaarkrlekvevpdavlekaaklclalgtdGlr 278
+                                       t +++++++e+  r ++     d+  + ++ +++ ++++   +i++a    + v  + +++++   ++++lg+dG+ 
+  GCA_017094545.1_ASM1709454v1_649 202 TLENIRNQLEIKTRYEQekLAMDRVRLKNQLDANIQRLHYslEIANAAGIKRPVYSNGQAVKDDPDFSISLGADGIS 278
+                                       667777777765554331134455555555555544444322677777888899999******************** PP
+
+              trimmed_msa_bchI_hmm 279 geltllraaralaalegakevtkehlkkvaplal 312
+                                         l + +    +a ++g+ + ++ h++++a++ +
+  GCA_017094545.1_ASM1709454v1_649 279 RKLEIEKGVTDVAEIDGDLRNRQYHVEQLAAMNV 312
+                                       ******************************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2937  (750890 residues searched)
+Passed MSV filter:                       129  (0.0439224); expected 58.7 (0.02)
+Passed bias filter:                       89  (0.030303); expected 58.7 (0.02)
+Passed Vit filter:                        19  (0.00646919); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000680967); expected 0.0 (1e-05)
+Initial search space (Z):               2937  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8982.21
+//
+[ok]

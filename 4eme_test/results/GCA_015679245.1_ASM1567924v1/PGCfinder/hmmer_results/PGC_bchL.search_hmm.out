@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_015679245.1_ASM1567924v1/GCA_015679245.1_ASM1567924v1_protein.faa
+# output directed to file:         results/GCA_015679245.1_ASM1567924v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.5e-08   30.8   0.0    2.4e-08   30.2   0.0    1.3  1  GCA_015679245.1_ASM1567924v1_1589  FJILMI_08240 AAA-31 domain-conta
+    4.8e-07   25.9   0.0    7.3e-07   25.3   0.0    1.2  1  GCA_015679245.1_ASM1567924v1_638   FJILMI_03320 Sporulation initiat
+      0.002   14.0   0.1     0.0033   13.3   0.1    1.3  1  GCA_015679245.1_ASM1567924v1_1073  FJILMI_05565 Iron-sulfur cluster
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015679245.1_ASM1567924v1_1589  FJILMI_08240 AAA-31 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.0   4.5e-11   2.4e-08      18      69 ..      49     101 ..      34     129 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 4.5e-11
+               trimmed_msa_bchL_hmm  18 etakvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkk 69 
+                                         +++++av   kgg+gk+tt+ nl++a+++ g rvl i  dp+ ++t +l  +
+  GCA_015679245.1_ASM1567924v1_1589  49 SQTRILAVAnQKGGVGKTTTAVNLAAALAQGGLRVLVIDADPQGNATTALGVE 101
+                                        678899986269**********************************9988644 PP
+
+>> GCA_015679245.1_ASM1567924v1_638  FJILMI_03320 Sporulation initiation inhibitor protein Soj
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.0   1.4e-09   7.3e-07      19      63 ..      10      55 ..       4      73 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 1.4e-09
+              trimmed_msa_bchL_hmm 19 takvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                       a+++a+   kgg+gk+tt+ nl++a++  g+rvl +  dp+  ++
+  GCA_015679245.1_ASM1567924v1_638 10 PARIIAMSnQKGGVGKTTTTINLAAALAGYGRRVLIVDFDPQAAAS 55
+                                      57888875269******************************97655 PP
+
+>> GCA_015679245.1_ASM1567924v1_1073  FJILMI_05565 Iron-sulfur cluster carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.1   6.2e-06    0.0033      20      52 ..     111     144 ..      94     153 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 6.2e-06
+               trimmed_msa_bchL_hmm  20 akvfav.ygkggigksttssnlsvafsklgkrvl 52 
+                                        ++v+++  gkgg+gks+ s nl+++++  g +v 
+  GCA_015679245.1_ASM1567924v1_1073 111 TRVYSItSGKGGVGKSSLSVNLAASLAAKGLKVG 144
+                                        578888359*****************99998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1596  (547036 residues searched)
+Passed MSV filter:                        71  (0.0444862); expected 31.9 (0.02)
+Passed bias filter:                       61  (0.0382206); expected 31.9 (0.02)
+Passed Vit filter:                         7  (0.00438596); expected 1.6 (0.001)
+Passed Fwd filter:                         3  (0.0018797); expected 0.0 (1e-05)
+Initial search space (Z):               1596  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8914.54
+//
+[ok]

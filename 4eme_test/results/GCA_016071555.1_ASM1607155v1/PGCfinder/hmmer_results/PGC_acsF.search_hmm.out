@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016071555.1_ASM1607155v1/GCA_016071555.1_ASM1607155v1_protein.faa
+# output directed to file:         results/GCA_016071555.1_ASM1607155v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+     0.0006   15.8   0.0       0.27    7.1   0.0    2.0  2  GCA_016071555.1_ASM1607155v1_57  QPW55566.1 NADH peroxidase [Clos
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016071555.1_ASM1607155v1_57  QPW55566.1 NADH peroxidase [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.1   0.0   0.00013      0.27      70     140 ..      42     116 ..      23     136 .. 0.77
+   2 !    7.1   0.0   0.00013      0.27     194     218 ..     152     176 ..     138     180 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.00013
+             trimmed_msa_acsF_hmm  70 efdk.eleelepelrkefldflvssltaefsGcvlyaeikkrvkn...kdikelfkllardesrhagfindalkd 140
+                                      e+++ +   + +++  e+++ l +  t e +   +y  + ++++    +++ e +k +a +e+ ha+   + l +
+  GCA_016071555.1_ASM1607155v1_57  42 EWADeHRVGIAKDIDPEVIEALRANFTGECTEVGMYLAMSRQADRegyPEVAEAYKRIAWEEAEHAAKFAELLGE 116
+                                      34331344788999999999999999*9999999*****99887523379****************987777655 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.00013
+             trimmed_msa_acsF_hmm 194 fhPifkwfeewcndefrhGeafall 218
+                                      +  i +  +e c+de rhG af  l
+  GCA_016071555.1_ASM1607155v1_57 152 YDAIHDTVHEMCKDEARHGSAFRGL 176
+                                      5567777889999999999999654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       2061  (606405 residues searched)
+Passed MSV filter:                       115  (0.0557982); expected 41.2 (0.02)
+Passed bias filter:                       47  (0.0228045); expected 41.2 (0.02)
+Passed Vit filter:                         2  (0.000970403); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000485201); expected 0.0 (1e-05)
+Initial search space (Z):               2061  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14753.77
+//
+[ok]

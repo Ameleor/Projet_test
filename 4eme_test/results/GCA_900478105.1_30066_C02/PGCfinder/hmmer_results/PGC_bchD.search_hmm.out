@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_900478105.1_30066_C02/GCA_900478105.1_30066_C02_protein.faa
+# output directed to file:         results/GCA_900478105.1_30066_C02/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+  ------ inclusion threshold ------
+      0.042   10.6   0.0      0.046   10.5   0.0    1.0  1  GCA_900478105.1_30066_C02_1426  SQI22281.1 anaerobic sulfite red
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900478105.1_30066_C02_1426  SQI22281.1 anaerobic sulfite reductase subunit B [Salmonella enterica subsp. arizonae
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   8.4e-06     0.046     112     164 ..      23      74 ..      12      99 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 8.4e-06
+            trimmed_msa_bchD_hmm 112 gavalerdglalrlearfglvaLDegleedealpeaLldRlalrldldeialr 164
+                                     + ++l r+++a+   ++  ++ LDeg+ +d      ++dRla +l l++i + 
+  GCA_900478105.1_30066_C02_1426  23 RDCVLYREEMATWRGKHNLVLTLDEGEADDRYQIGRVTDRLA-ELALSDIDTM 74 
+                                     4578899999999999999**********************9.4556666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5452  (1271846 residues searched)
+Passed MSV filter:                       247  (0.0453045); expected 109.0 (0.02)
+Passed bias filter:                      116  (0.0212766); expected 109.0 (0.02)
+Passed Vit filter:                        16  (0.0029347); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000183419); expected 0.1 (1e-05)
+Initial search space (Z):               5452  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 17755.60
+//
+[ok]

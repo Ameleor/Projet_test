@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_014303495.1_ASM1430349v1/GCA_014303495.1_ASM1430349v1_protein.faa
+# output directed to file:         results/GCA_014303495.1_ASM1430349v1/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+       0.02   11.6   0.0      0.024   11.3   0.0    1.0  1  GCA_014303495.1_ASM1430349v1_713  QNK79072.1 hypothetical protein 
+       0.02   11.6   0.0      0.024   11.3   0.0    1.0  1  GCA_014303495.1_ASM1430349v1_857  QNK79076.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014303495.1_ASM1430349v1_713  QNK79072.1 hypothetical protein H7F37_03625 [Winogradskyella sp. PAMC22761]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.6e-05     0.024     124     244 ..       2     123 ..       1     127 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_pufM_hmm 124 vsvllwwvrtyrrakalglgthvawafaaaiwlylvlGlirpvlmGswseavpfGifphldwtaafsiry.Gnlfyn 199
+                                        s++lw++  ++  k + +   +       i++ + + +i   l G++s+ v   i p ld   +  i+   nlf  
+  GCA_014303495.1_ASM1430349v1_713   2 YSLILWLFDYFSEEKLYSINSLLFQGVFFGIFFGIGFPYINEKLAGKFSNKVGIKIKPELDAEEKIKIEGpANLFRG 78 
+                                       5899*****************99999999***************************************974688877 PP
+
+              trimmed_msa_pufM_hmm 200 pfhalsivflyGsallfamhgatilavsryGgereieqivdrGta 244
+                                          +   +fl    l+f  h   i         ++i++i+ r ta
+  GCA_014303495.1_ASM1430349v1_713  79 MEGVGGKIFLTDKKLIFKSHKINIQKGQTNIEYKNIKEIIRRKTA 123
+                                       7777788999999*****999999988888888999999999888 PP
+
+>> GCA_014303495.1_ASM1430349v1_857  QNK79076.1 hypothetical protein H7F37_04345 [Winogradskyella sp. PAMC22761]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.6e-05     0.024     124     244 ..       2     123 ..       1     127 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_pufM_hmm 124 vsvllwwvrtyrrakalglgthvawafaaaiwlylvlGlirpvlmGswseavpfGifphldwtaafsiry.Gnlfyn 199
+                                        s++lw++  ++  k + +   +       i++ + + +i   l G++s+ v   i p ld   +  i+   nlf  
+  GCA_014303495.1_ASM1430349v1_857   2 YSLILWLFDYFSEEKLYSINSLLFQGVFFGIFFGIGFPYINEKLAGKFSNKVGIKIKPELDAEEKIKIEGpANLFRG 78 
+                                       5899*****************99999999***************************************974688877 PP
+
+              trimmed_msa_pufM_hmm 200 pfhalsivflyGsallfamhgatilavsryGgereieqivdrGta 244
+                                          +   +fl    l+f  h   i         ++i++i+ r ta
+  GCA_014303495.1_ASM1430349v1_857  79 MEGVGGKIFLTDKKLIFKSHKINIQKGQTNIEYKNIKEIIRRKTA 123
+                                       7777788999999*****999999988888888999999999888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       3060  (1031519 residues searched)
+Passed MSV filter:                       102  (0.0333333); expected 61.2 (0.02)
+Passed bias filter:                       33  (0.0107843); expected 61.2 (0.02)
+Passed Vit filter:                         5  (0.00163399); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000653595); expected 0.0 (1e-05)
+Initial search space (Z):               3060  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13347.11
+//
+[ok]

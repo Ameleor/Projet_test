@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_904863175.1_KSB1_7G/GCA_904863175.1_KSB1_7G_protein.faa
+# output directed to file:         results/GCA_904863175.1_KSB1_7G/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+     0.0051   14.3   1.6     0.0074   13.8   0.1    1.8  2  GCA_904863175.1_KSB1_7G_4966  PGCDBD_25790 ABC transporter per
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_904863175.1_KSB1_7G_4966  PGCDBD_25790 ABC transporter permease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   1.4e-06    0.0074     178     218 ..      47      88 ..      39      94 .. 0.86
+   2 ?   -0.6   0.1     0.033   1.7e+02     130     157 ..     186     213 ..      91     225 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.4e-06
+          trimmed_msa_pufM_hmm 178 GifphldwtaafsiryGnlfynpfhalsivfl.yGsallfam 218
+                                   G+++h  w++ f i yG +f +    l+i ++ yGs l   m
+  GCA_904863175.1_KSB1_7G_4966  47 GMLSHKKWVQRFCIAYGTIFRALPELLTIFIIyYGSQLAIKM 88 
+                                   99*******************999999997652799998777 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.033
+          trimmed_msa_pufM_hmm 130 wvrtyrrakalglgthvawafaaaiwly 157
+                                   ++r    a +        +a+a+a++l+
+  GCA_904863175.1_KSB1_7G_4966 186 LMRQTYIAVNSTKEPFFFYALACAVYLV 213
+                                   3333334444444455556666666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       5247  (1630981 residues searched)
+Passed MSV filter:                       254  (0.0484086); expected 104.9 (0.02)
+Passed bias filter:                       83  (0.0158186); expected 104.9 (0.02)
+Passed Vit filter:                         6  (0.00114351); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000190585); expected 0.1 (1e-05)
+Initial search space (Z):               5247  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 17476.13
+//
+[ok]

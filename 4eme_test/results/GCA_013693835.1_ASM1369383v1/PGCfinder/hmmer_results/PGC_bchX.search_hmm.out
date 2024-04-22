@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693835.1_ASM1369383v1/GCA_013693835.1_ASM1369383v1_protein.faa
+# output directed to file:         results/GCA_013693835.1_ASM1369383v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.9e-07   26.0   0.0    0.00069   15.7   0.0    2.2  2  GCA_013693835.1_ASM1369383v1_1836  QLQ13438.1 MAG: P-loop NTPase [B
+    3.3e-05   20.0   0.0    6.2e-05   19.1   0.0    1.5  1  GCA_013693835.1_ASM1369383v1_888   QLQ12696.1 MAG: 16S rRNA (guanin
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693835.1_ASM1369383v1_1836  QLQ13438.1 MAG: P-loop NTPase [Brevundimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   0.0   5.8e-07   0.00069      16      61 ..     111     157 ..      95     181 .. 0.79
+   2 !    8.2   0.0    0.0001      0.12     197     266 ..     280     354 ..     247     358 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 5.8e-07
+               trimmed_msa_bchX_hmm  16 gevtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdpk 61 
+                                        +++++  ++ia+  gkgg+gks    nl+  la+qg  v l+  d  
+  GCA_013693835.1_ASM1369383v1_1836 111 DRPAHVKRVIAVgSGKGGVGKSTVAVNLAAALARQGLSVGLLDADVY 157
+                                        455556678888469************************99988865 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.0001
+               trimmed_msa_bchX_hmm 197 nvgvaglvinkddg...tgeaqafaeavgipvlaaipadedirrks.anyei.igkpesewgslfeelaenvaea 266
+                                        +v v glv n   g    g  +a a+  gip+la ip    +r    a   + + +p +  ++ f++la  v++a
+  GCA_013693835.1_ASM1369383v1_1836 280 DVPVLGLVENMAGGvfgRGGGAAEAARLGIPLLAEIPLTAAVREAGdAGVPLrVEHPADASSEAFSALAVLVSRA 354
+                                        577788888877652226888899999***************987513333336777788888888888888776 PP
+
+>> GCA_013693835.1_ASM1369383v1_888  QLQ12696.1 MAG: 16S rRNA (guanine(527)-N(7))-methyltransferase RsmG [Brevundimonas 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   5.2e-08   6.2e-05      17      67 ..     192     243 ..     180     286 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 5.2e-08
+              trimmed_msa_bchX_hmm  17 evtketqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdttsl 67 
+                                       +++++ +++a+   kgg+gk+ t  nl   la  g+kvl++  dp+ ++++ 
+  GCA_013693835.1_ASM1369383v1_888 192 NSAQSMRVLAVSnQKGGVGKTTTAINLGTALAAIGQKVLIVDMDPQGNASTG 243
+                                       556667788875269******************************9987654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2390  (723329 residues searched)
+Passed MSV filter:                        56  (0.023431); expected 47.8 (0.02)
+Passed bias filter:                       49  (0.0205021); expected 47.8 (0.02)
+Passed Vit filter:                         6  (0.00251046); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.00083682); expected 0.0 (1e-05)
+Initial search space (Z):               2390  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14210.37
+//
+[ok]

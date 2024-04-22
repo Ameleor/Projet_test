@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_018141285.1_ASM1814128v1/GCA_018141285.1_ASM1814128v1_protein.faa
+# output directed to file:         results/GCA_018141285.1_ASM1814128v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.3e-06   23.5   0.1    2.1e-06   22.7   0.1    1.3  1  GCA_018141285.1_ASM1814128v1_974  QUG72347.1 ParA family protein [
+    4.7e-05   18.3   0.1      0.017    9.9   0.0    2.3  2  GCA_018141285.1_ASM1814128v1_978  QUG72351.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018141285.1_ASM1814128v1_974  QUG72347.1 ParA family protein [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.7   0.1   4.1e-09   2.1e-06      20      66 ..       2      49 ..       1      61 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 22.7 bits;  conditional E-value: 4.1e-09
+              trimmed_msa_bchX_hmm 20 ketqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                      +et+iiai   kgg+gk+ t  nl+  la  g +vl++  dp+ ++++
+  GCA_018141285.1_ASM1814128v1_974  2 SETRIIAIAnQKGGVGKTTTAINLATALAAIGENVLIMDIDPQGNAST 49
+                                      689*****6369******************************988765 PP
+
+>> GCA_018141285.1_ASM1814128v1_978  QUG72351.1 signal recognition particle-docking protein FtsY [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.9   0.0   3.4e-05     0.017      19      60 ..     200     241 ..     183     250 .. 0.89
+   2 !    6.2   0.0   0.00044      0.23     182     226 ..     335     379 ..     323     399 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 3.4e-05
+              trimmed_msa_bchX_hmm  19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       +++  +i + g  g+gk+ t+ +l+  l++ g kv+l  cd 
+  GCA_018141285.1_ASM1814128v1_978 200 NHKPHVILLVGVNGTGKTTTIGKLAAKLTKGGLKVMLAACDM 241
+                                       56778999********************************95 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.00044
+              trimmed_msa_bchX_hmm 182 nnvcsaveyfrklggnvgvaglvinkddgt...geaqafaeavgipvl 226
+                                       +n  + ve fr++    gv glv+ k dgt   g   a+a++  +pv 
+  GCA_018141285.1_ASM1814128v1_978 335 QNALNQVEIFRDIA---GVNGLVMTKLDGTargGILVAIAAKYKLPVY 379
+                                       6888999****996...69**********9333345677888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1031  (314900 residues searched)
+Passed MSV filter:                        44  (0.042677); expected 20.6 (0.02)
+Passed bias filter:                       35  (0.0339476); expected 20.6 (0.02)
+Passed Vit filter:                         3  (0.0029098); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00193986); expected 0.0 (1e-05)
+Initial search space (Z):               1031  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17007.68
+//
+[ok]

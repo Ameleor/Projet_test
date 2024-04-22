@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_023168365.1_ASM2316836v1/GCA_023168365.1_ASM2316836v1_protein.faa
+# output directed to file:         results/GCA_023168365.1_ASM2316836v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00021   17.9   0.1    0.00038   17.0   0.1    1.4  1  GCA_023168365.1_ASM2316836v1_2051  BDH65866.1 quinone oxidoreductas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023168365.1_ASM2316836v1_2051  BDH65866.1 quinone oxidoreductase [Enterococcus sp. PLM3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   1.4e-07   0.00038      17     129 ..      21     126 ..      11     173 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 1.4e-07
+               trimmed_msa_bchC_hmm  17 krleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveageesklkvgervfvPGak 92 
+                                        ++++l++ +e+ vv++ ++s++    + l  +          yP++PG +  G+vv++ e+ + k g++v v G  
+  GCA_023168365.1_ASM2316836v1_2051  21 ETITLDDLSEGTVVIKAAYSSVNFK-DSLASKKD--GGVIRNYPMIPGIDVSGTVVTS-EDPRYKEGDKVIVTG-- 90 
+                                        5566666666666666666665432.22222211..112247*************975.7899*********98.. PP
+
+               trimmed_msa_bchC_hmm  93 cfedvrglfGgaasrlvvpaarvvkvdeelgeegvll 129
+                                         ++   +  Gg ++ + vp++ vv+++e+++ + +++
+  GCA_023168365.1_ASM2316836v1_2051  91 -YQLGVSHTGGYSEYVRVPGDWVVPLPEKMSLKEAMI 126
+                                        .677778899*****************9998554443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2736  (857908 residues searched)
+Passed MSV filter:                        66  (0.0241228); expected 54.7 (0.02)
+Passed bias filter:                       57  (0.0208333); expected 54.7 (0.02)
+Passed Vit filter:                         6  (0.00219298); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000365497); expected 0.0 (1e-05)
+Initial search space (Z):               2736  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10797.75
+//
+[ok]

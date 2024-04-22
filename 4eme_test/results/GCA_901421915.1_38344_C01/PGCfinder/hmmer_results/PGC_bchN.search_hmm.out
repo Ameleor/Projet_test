@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_901421915.1_38344_C01/GCA_901421915.1_38344_C01_protein.faa
+# output directed to file:         results/GCA_901421915.1_38344_C01/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0029   15.1   0.0     0.0042   14.6   0.0    1.1  1  GCA_901421915.1_38344_C01_6010  VTO24738.1 nitrogenase FeMo-cofa
+     0.0044   14.5   0.0      0.006   14.0   0.0    1.2  1  GCA_901421915.1_38344_C01_6005  VTO24733.1 nitrogenase (molybden
+  ------ inclusion threshold ------
+      0.038   11.4   0.0      0.059   10.8   0.0    1.2  1  GCA_901421915.1_38344_C01_752   VTO13005.1 2-octaprenyl-3-methyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_901421915.1_38344_C01_6010  VTO24738.1 nitrogenase FeMo-cofactor scaffold and assembly protein NifE [Klebsiella v
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0     2e-06    0.0042     259     361 ..      16     117 ..       9     123 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2e-06
+            trimmed_msa_bchN_hmm 259 kfeavvaakrerakkalakareklegkrifflpdsqleiplarflarelgmelvevgtpylhrellaeelallpedvrl 337
+                                     + ea++a +++ a++ala  re+l+g+++ ++       ++   l ++lgm++v  gt    +e  ++  +l+ +++++
+  GCA_901421915.1_38344_C01_6010  16 RTEALIAREEQAAEQALAPWREQLRGRKVLLYTGGVKSWSVVSAL-QDLGMTVVATGTRKSTEEDKQRIRELMGDEAVM 93 
+                                     567899999************************999999999887.58**********999888888888888888877 PP
+
+            trimmed_msa_bchN_hmm 338 seGqdvdkqldrvraarpdlvvcG 361
+                                      e  +  + ld v   + dl++ G
+  GCA_901421915.1_38344_C01_6010  94 LEEGNARTLLDVVYRYQADLMIAG 117
+                                     777788999****99999*99987 PP
+
+>> GCA_901421915.1_38344_C01_6005  VTO24733.1 nitrogenase (molybdenum-iron) subunit alpha [Klebsiella variicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   2.9e-06     0.006     220     362 ..     282     424 ..     231     461 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.9e-06
+            trimmed_msa_bchN_hmm 220 araleerGakrlaapfplGaeGttawlkaaaeafg.vdeakfeavvaakrerakkalakareklegkrifflpdsqlei 297
+                                     ar++ee+          +G    ++ l+ +a++f+   +a+ eav+a+ + + +  +ak+r +leg+++ ++    l  
+  GCA_901421915.1_38344_C01_6005 282 ARHMEEKHQIPWMEYNFFGPTKIAESLRKIADQFDdTIRANAEAVIAKYEGQMAAIIAKYRPRLEGRKVLLYMG-GLRP 359
+                                     555555555544445557888888999*******7355788999999999999999*************98865.5777 PP
+
+            trimmed_msa_bchN_hmm 298 plarflarelgmelvevgtpylhrellaeelallpedvrlseGqdvdkqldrvraarpdlvvcGl 362
+                                            ++lgme++  g  + h++  ++ l  l+e++ l +  +  +    v+a +pdl+  G+
+  GCA_901421915.1_38344_C01_6005 360 RHVIGAYEDLGMEIIAAGYEFAHNDDYDRTLPDLKEGTLLFDDASSYELEAFVKALKPDLIGSGI 424
+                                     666677899*******************************9988777766789999***998776 PP
+
+>> GCA_901421915.1_38344_C01_752  VTO13005.1 2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase [Klebsiella var
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   2.8e-05     0.059     198     291 ..     122     216 ..      96     224 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.8e-05
+           trimmed_msa_bchN_hmm 198 eelpavgpntrfllaqpflgetaraleerGakrlaapfplGaeGttawlkaaaeafgvdeakfeavvaakrerakkalak 277
+                                    ++   v+  +   l q   ge  + l+ +G   l+a + +Ga+G+++wl+  a+      +  ++++ a+ + a+   a 
+  GCA_901421915.1_38344_C01_752 122 QRCADVTLLAPAELQQVAWGENEAFLSLQGGSMLTARLVVGADGANSWLRNKADIPLTFWDYHHHALVATIRTAEPHQAV 201
+                                    5555555555566788889999*****************************99975444444444444444455555566 PP
+
+           trimmed_msa_bchN_hmm 278 areklegkri.fflp 291
+                                    ar++++g  i +flp
+  GCA_901421915.1_38344_C01_752 202 ARQAFHGEGIlAFLP 216
+                                    666666665524555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       6339  (1575667 residues searched)
+Passed MSV filter:                       205  (0.0323395); expected 126.8 (0.02)
+Passed bias filter:                      150  (0.023663); expected 126.8 (0.02)
+Passed Vit filter:                        10  (0.00157754); expected 6.3 (0.001)
+Passed Fwd filter:                         3  (0.000473261); expected 0.1 (1e-05)
+Initial search space (Z):               6339  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 16496.27
+//
+[ok]

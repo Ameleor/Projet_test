@@ -1,0 +1,124 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_015767535.1_ASM1576753v1/GCA_015767535.1_ASM1576753v1_protein.faa
+# output directed to file:         results/GCA_015767535.1_ASM1576753v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0015   13.9   0.0     0.0026   13.2   0.0    1.4  1  GCA_015767535.1_ASM1576753v1_1137  QTR95950.1 Ferredoxin--NADP redu
+     0.0027   13.1   7.3     0.0077   11.6   0.1    2.8  3  GCA_015767535.1_ASM1576753v1_904   QTR95717.1 Glutathione reductase
+  ------ inclusion threshold ------
+      0.023   10.1   1.5      0.038    9.3   0.1    1.9  2  GCA_015767535.1_ASM1576753v1_1956  QTR96769.1 tRNA uridine 5-carbox
+      0.028    9.8   1.4       0.25    6.7   0.3    2.5  3  GCA_015767535.1_ASM1576753v1_1054  QTR95867.1 putative NADH oxidase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015767535.1_ASM1576753v1_1137  QTR95950.1 Ferredoxin--NADP reductase 2 [Streptococcus equi subsp. zooepidemicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   5.3e-06    0.0026       5      52 ..       9      56 ..       5     109 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 5.3e-06
+               trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfDa 52
+                                        +iG G  Gl aa   g +G+ v+++e+l ++GG+  v   +   +D 
+  GCA_015767535.1_ASM1576753v1_1137  9 TIIGGGPVGLFAAFYAGLRGMTVKIIESLSELGGQPAVLYPEKVIYDI 56
+                                       69*********************************9998888877775 PP
+
+>> GCA_015767535.1_ASM1576753v1_904  QTR95717.1 Glutathione reductase [Streptococcus equi subsp. zooepidemicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.3   1.0    0.0025       1.3       5      38 ..       8      40 ..       4      45 .. 0.84
+   2 ?   -2.3   0.1      0.26   1.3e+02       3      36 ..     169     202 ..     168     202 .. 0.88
+   3 !   11.6   0.1   1.6e-05    0.0077     222     271 ..     209     258 ..     206     263 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0025
+              trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                      +viG G  G+a+a r +  G +v + e + a+GG
+  GCA_015767535.1_ASM1576753v1_904  8 IVIGGGSAGIASANRAAMYGAKVLLAEGK-AIGG 40
+                                      9*********************9887765.4555 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.26
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldap 36 
+                                       ++ v+GaG+  +  a  l+a G ++ +l + d+p
+  GCA_015767535.1_ASM1576753v1_904 169 RTAVVGAGYIAVEIAGVLNALGSQTDLLVRYDRP 202
+                                       56799*******************9999888875 PP
+
+  == domain 3  score: 11.6 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvv 271
+                                        +++ lv+ ++ +G +l++na+v++++ +++ +  v+l++G+++e+d v+
+  GCA_015767535.1_ASM1576753v1_904 209 DIIQVLVDEMKVSGPRLHTNADVTKVTKANDGSLQVHLSDGRRLEVDQVI 258
+                                       799********************************************997 PP
+
+>> GCA_015767535.1_ASM1576753v1_1956  QTR96769.1 tRNA uridine 5-carboxymethylaminomethyl modification enzyme MnmG [Strep
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.1      0.14        69       4      28 ..      11      35 ..       9      43 .. 0.80
+   2 ?    9.3   0.1   7.7e-05     0.038     225     276 ..     108     159 ..      98     184 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.14
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvt 28
+                                       ++v+GaG  G+ a++  +  G ++ 
+  GCA_015767535.1_ASM1576753v1_1956 11 VIVVGAGHAGVEASLAASRMGCKTL 35
+                                       79*********99888777777654 PP
+
+  == domain 2  score: 9.3 bits;  conditional E-value: 7.7e-05
+               trimmed_msa_crtI_hmm 225 kglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnada 276
+                                        + + +++e+q +    ++ +++i+ve+g++ gv +a+G++ +a++v+  + +
+  GCA_015767535.1_ASM1576753v1_1956 108 REMKHTVEKQENLTLRQSMIDDILVENGKVVGVLTATGQKYAAQAVIITTGT 159
+                                        5688889999888888999*************************99976655 PP
+
+>> GCA_015767535.1_ASM1576753v1_1054  QTR95867.1 putative NADH oxidase [Streptococcus equi subsp. zooepidemicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0      0.22   1.1e+02     229     258 ..      66      95 ..      56     110 .. 0.80
+   2 ?    6.7   0.3    0.0005      0.25       2      35 ..     161     194 ..     160     200 .. 0.92
+   3 ?    0.7   0.1     0.033        16     223     257 ..     204     238 ..     201     254 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.22
+               trimmed_msa_crtI_hmm 229 klieeqGgelrlnaeveeievedgratgvr 258
+                                        + +e+ G+++ ++++v++i  + +++t++ 
+  GCA_015767535.1_ASM1576753v1_1054  66 EELESLGAKVYMESPVQSIDYDAKTVTALV 95 
+                                        568899*************99998887654 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.0005
+               trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                        k++vv+GaG+ G+ +a  ++ kG +v +++  d+
+  GCA_015767535.1_ASM1576753v1_1054 161 KRVVVVGAGYIGVELAEAFQRKGKEVILIDVADT 194
+                                        689**************************98875 PP
+
+  == domain 3  score: 0.7 bits;  conditional E-value: 0.033
+               trimmed_msa_crtI_hmm 223 lvkglvklieeqGgelrlnaeveeievedgratgv 257
+                                        l + + k +ee+G +l ++++v+e+  +++  + +
+  GCA_015767535.1_ASM1576753v1_1054 204 LTDVMSKNLEEHGIQLAFGETVKEVAGDGKVEKLI 238
+                                        77899*******************98665544433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1985  (597539 residues searched)
+Passed MSV filter:                        77  (0.0387909); expected 39.7 (0.02)
+Passed bias filter:                       55  (0.0277078); expected 39.7 (0.02)
+Passed Vit filter:                        11  (0.00554156); expected 2.0 (0.001)
+Passed Fwd filter:                         5  (0.00251889); expected 0.0 (1e-05)
+Initial search space (Z):               1985  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7256.33
+//
+[ok]

@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_019703935.1_ASM1970393v1/GCA_019703935.1_ASM1970393v1_protein.faa
+# output directed to file:         results/GCA_019703935.1_ASM1970393v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.015   12.4   1.3      0.024   11.7   0.2    1.7  2  GCA_019703935.1_ASM1970393v1_3654  BCN50353.1 siderophore-interacti
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019703935.1_ASM1970393v1_3654  BCN50353.1 siderophore-interacting protein [Prescottella equi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.1     0.052   2.6e+02     139     180 ..     187     229 ..     181     275 .. 0.65
+   2 ?   11.7   0.2     5e-06     0.024     410     446 ..     507     543 ..     504     546 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.052
+               trimmed_msa_ppsR_hmm 139 etrYRllfeas.seavlivdaesrriveaNpaAarLlgeeake 180
+                                        + r    f+ + ++  l v a  + i+  N+aA ++l  ++++
+  GCA_019703935.1_ASM1970393v1_3654 187 DRRVVDAFQRAaRQRGLAVAAMGQDIMLTNKAAVEMLAPSDHA 229
+                                        5555555554314556777777788888888888887654433 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 5e-06
+               trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLYvKLrry 446
+                                        E+ +I  AL+  + N + AA  LG+SR  LY+++r  
+  GCA_019703935.1_ASM1970393v1_3654 507 ERDAIVEALSESGGNKVHAAARLGISRTTLYSRIRAL 543
+                                        66678889*************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       4911  (1583834 residues searched)
+Passed MSV filter:                       143  (0.0291183); expected 98.2 (0.02)
+Passed bias filter:                      106  (0.0215842); expected 98.2 (0.02)
+Passed Vit filter:                         8  (0.001629); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203625); expected 0.0 (1e-05)
+Initial search space (Z):               4911  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 17897.41
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_022811625.1_ASM2281162v1/GCA_022811625.1_ASM2281162v1_protein.faa
+# output directed to file:         results/GCA_022811625.1_ASM2281162v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.7e-07   25.8   0.0    0.00095   15.8   0.0    2.3  2  GCA_022811625.1_ASM2281162v1_1647  UOE31119.1 iron-sulfur cluster c
+     0.0011   15.6   0.2     0.0022   14.6   0.2    1.5  1  GCA_022811625.1_ASM2281162v1_2554  UOE28298.1 septum site-determini
+     0.0021   14.7   0.1      0.055   10.0   0.0    2.3  2  GCA_022811625.1_ASM2281162v1_260   UOE30046.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022811625.1_ASM2281162v1_1647  UOE31119.1 iron-sulfur cluster carrier protein ApbC [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.0   7.6e-07   0.00095      22      60 ..     107     146 ..      88     167 .. 0.81
+   2 !    7.5   0.0   0.00026      0.32     210     266 ..     294     352 ..     288     360 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 7.6e-07
+               trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                         +iia+  gkgg+gks t  nl+  la +g kv ++  d 
+  GCA_022811625.1_ASM2281162v1_1647 107 KNIIAVsSGKGGVGKSSTAVNLALALAAEGAKVGILDADI 146
+                                        568888469************************9988875 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00026
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                        gtg a+ +ae+    +l  +p +  +r      +  +i++pese+++++ +la +va+ 
+  GCA_022811625.1_ASM2281162v1_1647 294 GTGGAEKLAEKYHTQLLGQMPLHISLREDldKGTPTVISRPESEFTAIYRQLADRVAAQ 352
+                                        89*********************9999862245678*******************9975 PP
+
+>> GCA_022811625.1_ASM2281162v1_2554  UOE28298.1 septum site-determining protein MinD [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   1.8e-06    0.0022      24      62 ..       5      43 ..       1      57 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.8e-06
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCA_022811625.1_ASM2281162v1_2554  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                       55668***************************9988655 PP
+
+>> GCA_022811625.1_ASM2281162v1_260  UOE30046.1 signal recognition particle-docking protein FtsY [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.0   4.4e-05     0.055      20      60 ..     291     331 ..     272     361 .. 0.82
+   2 ?    2.1   0.0     0.012        15     187     225 ..     427     468 ..     410     487 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 4.4e-05
+              trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       k   +i + g  g+gk+ t+ +l+  + qqgk v+l   d 
+  GCA_022811625.1_ASM2281162v1_260 291 KAPFVILMVGVNGVGKTTTIGKLARQFEQQGKSVMLAAGDT 331
+                                       556789999***************************98875 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.012
+              trimmed_msa_bchX_hmm 187 aveyfrklggnvgvaglvinkddgtgea...qafaeavgipv 225
+                                       av   + +   vg++g+ + k dgt +     + a++ gip+
+  GCA_022811625.1_ASM2281162v1_260 427 AVSQAKLFHEAVGLTGITLTKLDGTAKGgviFSVADQFGIPI 468
+                                       66666666778*************966511156799999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3721  (1099569 residues searched)
+Passed MSV filter:                       119  (0.0319807); expected 74.4 (0.02)
+Passed bias filter:                      101  (0.0271432); expected 74.4 (0.02)
+Passed Vit filter:                        16  (0.00429992); expected 3.7 (0.001)
+Passed Fwd filter:                         3  (0.000806235); expected 0.0 (1e-05)
+Initial search space (Z):               3721  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 20629.23
+//
+[ok]

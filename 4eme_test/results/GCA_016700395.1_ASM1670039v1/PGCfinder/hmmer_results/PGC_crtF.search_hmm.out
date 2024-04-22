@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700395.1_ASM1670039v1/GCA_016700395.1_ASM1670039v1_protein.faa
+# output directed to file:         results/GCA_016700395.1_ASM1670039v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0046   11.6   0.0     0.0066   11.1   0.0    1.1  1  GCA_016700395.1_ASM1670039v1_730  QQS70442.1 rRNA adenine N(6)-met
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700395.1_ASM1670039v1_730  QQS70442.1 rRNA adenine N(6)-methyltransferase family protein [Candidatus Saccharib
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   6.8e-06    0.0066     187     262 ..      21      92 ..      12      95 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 6.8e-06
+              trimmed_msa_crtF_hmm 187 evldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPe 262
+                                       e++   +++ + +++D+G+G+Ga  a +a+ra +  ++    pa a++ r+++++    ++vev+  +flk +lP+
+  GCA_016700395.1_ASM1670039v1_730  21 ELIGHSTIRPRDTVVDIGAGSGAITAVLARRA-HQVIAYENEPAAAKKLRSNMRQ---FKNVEVVEEDFLKSSLPT 92 
+                                       5666777888999**********776666655.5556667788888888876654...567899999999999996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                        962  (276424 residues searched)
+Passed MSV filter:                        42  (0.043659); expected 19.2 (0.02)
+Passed bias filter:                       35  (0.0363825); expected 19.2 (0.02)
+Passed Vit filter:                         5  (0.00519751); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.0010395); expected 0.0 (1e-05)
+Initial search space (Z):                962  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 9765.06
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_022870745.1_ASM2287074v1/GCA_022870745.1_ASM2287074v1_protein.faa
+# output directed to file:         results/GCA_022870745.1_ASM2287074v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.017   12.0   0.0      0.032   11.1   0.0    1.4  1  GCA_022870745.1_ASM2287074v1_2114  DPFNMC_10760 2-isopropylmalate s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022870745.1_ASM2287074v1_2114  DPFNMC_10760 2-isopropylmalate synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   7.4e-06     0.032     211     294 ..      24     105 ..      15     129 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 7.4e-06
+               trimmed_msa_bchN_hmm 211 laqpflgetaraleerGakrlaapfplGaeGttawlkaaaeafgv.deakfeavvaakrerakkalakareklegk 285
+                                        ++qp     a+ l + G   l+a f +  eG  a ++ +ae+ +  + a+++++ ++  era +al+ka++k   +
+  GCA_022870745.1_ASM2287074v1_2114  24 MTQPEKLAMAHSLADLGVDILEAGFAIASEGDFASIQKIAEEVSGpTIASLARAREEDIERAIQALDKAKKK---R 96 
+                                        789999999******************************998754145667777778888888888776653...3 PP
+
+               trimmed_msa_bchN_hmm 286 rifflpdsq 294
+                                          +fl  s 
+  GCA_022870745.1_ASM2287074v1_2114  97 LHVFLASSD 105
+                                        334444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4339  (1616677 residues searched)
+Passed MSV filter:                       104  (0.0239687); expected 86.8 (0.02)
+Passed bias filter:                       81  (0.0186679); expected 86.8 (0.02)
+Passed Vit filter:                         9  (0.00207421); expected 4.3 (0.001)
+Passed Fwd filter:                         1  (0.000230468); expected 0.0 (1e-05)
+Initial search space (Z):               4339  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 19443.13
+//
+[ok]

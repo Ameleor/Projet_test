@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635865.1_35605_F01/GCA_900635865.1_35605_F01_protein.faa
+# output directed to file:         results/GCA_900635865.1_35605_F01/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    0.00083   17.3   0.1     0.0015   16.5   0.1    1.4  1  GCA_900635865.1_35605_F01_1197  VEB51528.1 transcriptional regul
+     0.0019   16.1   0.7     0.0031   15.4   0.7    1.6  1  GCA_900635865.1_35605_F01_2588  VEB53292.1 Fis DNA-binding prote
+     0.0034   15.3   0.0     0.0037   15.1   0.0    1.0  1  GCA_900635865.1_35605_F01_1501  VEB51832.1 Two-component system 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635865.1_35605_F01_1197  VEB51528.1 transcriptional regulator [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.1   5.5e-07    0.0015     409     445 ..     405     441 .]     403     441 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 5.5e-07
+            trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                     +Ek  I aALe T+ N   AA  LG+ R  L +KL r
+  GCA_900635865.1_35605_F01_1197 405 VEKEVILAALEKTGGNKTEAARQLGITRKTLLAKLSR 441
+                                     79999******************************87 PP
+
+>> GCA_900635865.1_35605_F01_2588  VEB53292.1 Fis DNA-binding protein [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.7   1.2e-06    0.0031     417     448 ..      66      97 ..      11      98 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.2e-06
+            trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                      +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_900635865.1_35605_F01_2588  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                     579****************************8 PP
+
+>> GCA_900635865.1_35605_F01_1501  VEB51832.1 Two-component system sensory histidine kinase [Salmonella enterica subsp. 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   1.4e-06    0.0037     147     186 ..      14      52 ..      11      53 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.4e-06
+            trimmed_msa_ppsR_hmm 147 easseavlivdaesrriveaNpaAarLlgeeakelvgksf 186
+                                     ++  ++vl+vd +  +i  aNpaA++Ll +++++l g+++
+  GCA_900635865.1_35605_F01_1501  14 NSLINSVLVVD-DALAIHYANPAAQQLLAQSSRKLFGTPL 52 
+                                     55567899998.5789*********************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       8023  (1236122 residues searched)
+Passed MSV filter:                       237  (0.0295401); expected 160.5 (0.02)
+Passed bias filter:                      162  (0.0201919); expected 160.5 (0.02)
+Passed Vit filter:                        21  (0.00261747); expected 8.0 (0.001)
+Passed Fwd filter:                         3  (0.000373925); expected 0.1 (1e-05)
+Initial search space (Z):               8023  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 15954.94
+//
+[ok]

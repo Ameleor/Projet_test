@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_902498835.1_assembly/GCA_902498835.1_assembly_protein.faa
+# output directed to file:         results/GCA_902498835.1_assembly/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    9.6e-05   16.8   0.0    0.00015   16.2   0.0    1.2  1  GCA_902498835.1_assembly_610  VVT43103.1 Protoporphyrinogen ox
+     0.0011   13.3   3.9     0.0024   12.2   0.3    2.5  3  GCA_902498835.1_assembly_662  VVT43155.1 Dihydrolipoyl dehydro
+     0.0015   12.9   0.4     0.0022   12.3   0.4    1.2  1  GCA_902498835.1_assembly_698  VVT43191.1 Fumarate reductase fl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_902498835.1_assembly_610  VVT43103.1 Protoporphyrinogen oxidase [Chlamydia avium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.0   4.8e-07   0.00015       3      54 ..       3      56 ..       1      63 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 4.8e-07
+          trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgak..GyrvtvlekldapGGrayvhrkdgftfDaGP 54
+                                  k ++iGaG+ Gl++a  l++k    +  +lek  +pGG  ++  +d f  D+GP
+  GCA_902498835.1_assembly_610  3 KILIIGAGISGLSTAWWLKQKfpNTECLILEKSPQPGGLLHTEYHDDFALDLGP 56
+                                  679***************99933466789************************9 PP
+
+>> GCA_902498835.1_assembly_662  VVT43155.1 Dihydrolipoyl dehydrogenase [Chlamydia avium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.3   7.8e-06    0.0024       4      37 ..       7      40 ..       4      46 .. 0.90
+   2 ?    1.3   0.2     0.015       4.6       3      35 ..     172     204 ..     170     208 .. 0.92
+   3 ?   -2.0   0.0      0.16        48     222     269 ..     212     259 ..     207     265 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 7.8e-06
+          trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapG 37
+                                   vviGaG GG  aai  +++G++++++e+++a G
+  GCA_902498835.1_assembly_662  7 CVVIGAGPGGYVAAITAAQQGLNTALIEEQQAGG 40
+                                  69**************************987654 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.015
+          trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                   k v+iG G+ G   a  +++ G+++t++e  d+
+  GCA_902498835.1_assembly_662 172 KLVIIGGGVIGCEFASLFHTLGVEITIIEIADH 204
+                                   679**************************8876 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 0.16
+          trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadv 269
+                                    + k++ + +++qG ++ ++a+++++e  ++r++ +  ++ ee ++ +
+  GCA_902498835.1_assembly_662 212 DISKTMQDKFSRQGIRVLTKASLQHLEDLGDRVKIIVNEQTEEYDFAL 259
+                                   567889999999999999999999999888888888877777766655 PP
+
+>> GCA_902498835.1_assembly_698  VVT43191.1 Fumarate reductase flavoprotein subunit [Chlamydia avium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.4   7.3e-06    0.0022       2      31 ..       4      33 ..       3      48 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 7.3e-06
+          trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvle 31
+                                  ++++v+G G+ Gl+aa++l+ +G+ v ++ 
+  GCA_902498835.1_assembly_698  4 SNVIVVGGGLAGLSAAMKLADHGICVHLVS 33
+                                  5789*********************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        904  (314424 residues searched)
+Passed MSV filter:                        40  (0.0442478); expected 18.1 (0.02)
+Passed bias filter:                       36  (0.039823); expected 18.1 (0.02)
+Passed Vit filter:                         7  (0.00774336); expected 0.9 (0.001)
+Passed Fwd filter:                         3  (0.00331858); expected 0.0 (1e-05)
+Initial search space (Z):                904  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7139.14
+//
+[ok]

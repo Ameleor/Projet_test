@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898705.1_ASM2389870v1/GCA_023898705.1_ASM2389870v1_protein.faa
+# output directed to file:         results/GCA_023898705.1_ASM2389870v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.6e-06   22.2   0.1    2.4e-06   21.5   0.1    1.2  1  GCA_023898705.1_ASM2389870v1_465  USO00663.1 MAG: ParA family prot
+     0.0011   12.8   0.3     0.0023   11.7   0.0    1.6  2  GCA_023898705.1_ASM2389870v1_138  USO00844.1 MAG: AAA family ATPas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898705.1_ASM2389870v1_465  USO00663.1 MAG: ParA family protein [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.1   9.4e-09   2.4e-06      23      71 ..       6      55 ..       2      61 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 9.4e-09
+              trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfgg 71
+                                      +i+a+   kgg+gk+ t  nl+  l+  gkkvlli  d + ++t+ l   
+  GCA_023898705.1_ASM2389870v1_465  6 KIVAVaNQKGGVGKTTTAVNLAASLSILGKKVLLIDMDAQGNATTALNIN 55
+                                      566762469*******************************9998877655 PP
+
+>> GCA_023898705.1_ASM2389870v1_138  USO00844.1 MAG: AAA family ATPase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.0     9e-06    0.0023      29      59 ..       9      39 ..       1      53 [. 0.87
+   2 ?   -2.2   0.0      0.15        40     134     149 ..      78      93 ..      64     107 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 9e-06
+              trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcd 59
+                                       kgg+gks   anl+  l+  gkkv+++  d
+  GCA_023898705.1_ASM2389870v1_138  9 IKGGTGKSTITANLAVSLSSFGKKVVVLDID 39
+                                      49***********************999877 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.15
+              trimmed_msa_bchX_hmm 134 fhdwdfdyvlldflgd 149
+                                       + + ++dy ++df g 
+  GCA_023898705.1_ASM2389870v1_138  78 YRKQEYDYCIVDFPGK 93 
+                                       3455677777777664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        513  (162130 residues searched)
+Passed MSV filter:                        24  (0.0467836); expected 10.3 (0.02)
+Passed bias filter:                       20  (0.0389864); expected 10.3 (0.02)
+Passed Vit filter:                         4  (0.00779727); expected 0.5 (0.001)
+Passed Fwd filter:                         2  (0.00389864); expected 0.0 (1e-05)
+Initial search space (Z):                513  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8660.06
+//
+[ok]

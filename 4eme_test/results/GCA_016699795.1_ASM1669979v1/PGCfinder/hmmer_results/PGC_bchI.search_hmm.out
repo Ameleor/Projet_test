@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699795.1_ASM1669979v1/GCA_016699795.1_ASM1669979v1_protein.faa
+# output directed to file:         results/GCA_016699795.1_ASM1669979v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.9e-11   39.7   0.1    0.00017   16.8   0.0    3.1  3  GCA_016699795.1_ASM1669979v1_460  QQS61755.1 YifB family Mg chelat
+      0.001   14.2   0.0     0.0018   13.4   0.0    1.3  1  GCA_016699795.1_ASM1669979v1_781  QQS61042.1 DNA polymerase III su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699795.1_ASM1669979v1_460  QQS61755.1 YifB family Mg chelatase-like AAA ATPase [Candidatus Moranbacteria bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.0   2.4e-05     0.013       6      60 ..     198     250 ..     195     271 .. 0.88
+   2 !   16.8   0.0   3.3e-07   0.00017     122     185 ..     292     355 ..     283     367 .. 0.92
+   3 !    8.5   0.1   0.00011     0.055     192     307 ..     384     505 ..     377     513 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.4e-05
+              trimmed_msa_bchI_hmm   6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                       f  i gq+  k+al +aa   +   vl+ G  G+Gk+  +ra+ ++lP+++  ++
+  GCA_016699795.1_ASM1669979v1_460 198 FRFIRGQEYAKRALEIAAAGGH--NVLLSGPPGSGKTLLARAVPTILPELNREES 250
+                                       66799************98664..79***********************987665 PP
+
+  == domain 2  score: 16.8 bits;  conditional E-value: 3.3e-07
+              trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        +  pG ++ a+rG l++de   +   +++ l    + G  vv r   ++  p+rfvlv + nP
+  GCA_016699795.1_ASM1669979v1_460 292 SNPRPGEITLAHRGVLFLDEFPEFPRSVLENLRQPLEEGFVVVSRAKQTIEFPSRFVLVAAMNP 355
+                                       5567999*******************************************************99 PP
+
+  == domain 3  score: 8.5 bits;  conditional E-value: 0.00011
+              trimmed_msa_bchI_hmm 192 PqlldrfGlsvevrt..pkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpd.avleka 265
+                                         lldr  l vev     ++l++ v+      +++   +   a+  ++++  ++ki    + l++ +v +   l+  
+  GCA_016699795.1_ASM1669979v1_460 384 GPLLDRIDLQVEVPRldVEKLQSEVSFSEAESSYDIRCRVVNARLVQKNRFEKEKIDLNSQ-LSTRAVGEyCSLDAE 459
+                                       5699********9752267899999999999999999888888888888888888765443.333333331334333 PP
+
+              trimmed_msa_bchI_hmm 266 aklclalgtdGl....rgeltllraaralaalegakevtkehlkkv 307
+                                       +k  l+ ++  l    rg   l+++ar++a le+++e+  +h+++ 
+  GCA_016699795.1_ASM1669979v1_460 460 CKTLLKEAISALklspRGYYRLIKTARTIADLEQNNEIGVAHIAEA 505
+                                       333333333322224499**********************999764 PP
+
+>> GCA_016699795.1_ASM1669979v1_781  QQS61042.1 DNA polymerase III subunit gamma/tau [Candidatus Moranbacteria bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   3.4e-06    0.0018       5      54 ..      12      62 ..       8      97 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 3.4e-06
+              trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigGv.lvlGdrGtGkstavralaallPk 54
+                                       fs + gq ++ +al la   ++ig   l  G rGtGk++ +r +a++l  
+  GCA_016699795.1_ASM1669979v1_781 12 SFSEVKGQVHIVKALSLAVQKNRIGHAyLFTGPRGTGKTSLARIFAKILNC 62
+                                      6999*********************8625669********99999999853 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1044  (344593 residues searched)
+Passed MSV filter:                        59  (0.0565134); expected 20.9 (0.02)
+Passed bias filter:                       48  (0.045977); expected 20.9 (0.02)
+Passed Vit filter:                         3  (0.00287356); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00191571); expected 0.0 (1e-05)
+Initial search space (Z):               1044  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8798.03
+//
+[ok]

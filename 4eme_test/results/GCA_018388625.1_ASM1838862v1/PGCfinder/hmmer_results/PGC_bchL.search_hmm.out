@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_018388625.1_ASM1838862v1/GCA_018388625.1_ASM1838862v1_protein.faa
+# output directed to file:         results/GCA_018388625.1_ASM1838862v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.3e-07   27.1   0.0    6.4e-07   26.6   0.0    1.2  1  GCA_018388625.1_ASM1838862v1_5377  QVJ01570.1 ParA family protein [
+     0.0001   19.3   0.1    0.00023   18.2   0.0    1.5  2  GCA_018388625.1_ASM1838862v1_791   QVJ02048.1 Mrp/NBP35 family ATP-
+     0.0057   13.6   0.0      0.011   12.7   0.0    1.4  1  GCA_018388625.1_ASM1838862v1_4901  QVJ01314.1 ArsA family ATPase [N
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018388625.1_ASM1838862v1_5377  QVJ01570.1 ParA family protein [Nocardiopsis eucommiae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   5.5e-10   6.4e-07      17      66 ..      13      63 ..       4      85 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 5.5e-10
+               trimmed_msa_bchL_hmm 17 ietakvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftl 66
+                                        ++ ++++v   kgg+gk+tt+ n+++a+++ g+rvl +  dp+ +++ +l
+  GCA_018388625.1_ASM1838862v1_5377 13 PKACRIISVAnQKGGVGKTTTTVNIAAALAMNGQRVLVVDLDPQGNASTAL 63
+                                       5667888885269******************************98776555 PP
+
+>> GCA_018388625.1_ASM1838862v1_791  QVJ02048.1 Mrp/NBP35 family ATP-binding protein [Nocardiopsis eucommiae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.0     2e-07   0.00023      20      57 ..     114     152 ..     103     173 .. 0.87
+   2 ?   -3.1   0.0      0.61   7.1e+02     185     202 ..     267     284 ..     222     287 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 2e-07
+              trimmed_msa_bchL_hmm  20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57 
+                                       +kv+av  gkgg+gks+ + nl++a++  g++v  +  d
+  GCA_018388625.1_ASM1838862v1_791 114 TKVYAVaSGKGGVGKSSVTVNLAAALAAQGHKVGVVDAD 152
+                                       699999459***********************9777666 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.61
+              trimmed_msa_bchL_hmm 185 aksknykvrlggvianrs 202
+                                       a + + + r++gvi n s
+  GCA_018388625.1_ASM1838862v1_791 267 AITAQTHQRIAGVIENMS 284
+                                       333344568888888876 PP
+
+>> GCA_018388625.1_ASM1838862v1_4901  QVJ01314.1 ArsA family ATPase [Nocardiopsis eucommiae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   9.1e-06     0.011      23      61 ..      26      64 ..      19      80 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 9.1e-06
+               trimmed_msa_bchL_hmm 23 favygkggigksttssnlsvafsklgkrvlqigcdpkhd 61
+                                       +   gkgg+gk+t ++  +  ++  g r l +  dp h 
+  GCA_018388625.1_ASM1838862v1_4901 26 VFFGGKGGVGKTTMAAAHALGLADAGLRTLLVSTDPAHS 64
+                                       55669********************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3486  (906845 residues searched)
+Passed MSV filter:                       119  (0.0341365); expected 69.7 (0.02)
+Passed bias filter:                      111  (0.0318417); expected 69.7 (0.02)
+Passed Vit filter:                        14  (0.00401606); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000860585); expected 0.0 (1e-05)
+Initial search space (Z):               3486  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13139.22
+//
+[ok]

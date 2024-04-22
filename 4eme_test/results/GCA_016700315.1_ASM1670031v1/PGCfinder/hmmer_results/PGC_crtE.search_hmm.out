@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700315.1_ASM1670031v1/GCA_016700315.1_ASM1670031v1_protein.faa
+# output directed to file:         results/GCA_016700315.1_ASM1670031v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      2e-13   45.9   0.1    6.7e-09   31.1   0.0    2.2  2  GCA_016700315.1_ASM1670031v1_297  QQS65223.1 polyprenyl synthetase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700315.1_ASM1670031v1_297  QQS65223.1 polyprenyl synthetase family protein [Candidatus Saccharibacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.1   0.0   6.7e-12   6.7e-09      33      96 ..      49     110 ..      35     117 .. 0.94
+   2 !   12.9   0.0   2.3e-06    0.0023     171     214 ..     206     253 ..     125     265 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 31.1 bits;  conditional E-value: 6.7e-12
+              trimmed_msa_crtE_hmm  33 pgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhka 96 
+                                        gG+R+R  l+l +   cG +d++la+  a  +e++h + L+ DD+  +D++ +RR  p+ h+ 
+  GCA_016700315.1_ASM1670031v1_297  49 RGGKRLRGLLTLVAYDMCGGRDKQLANKLALVVEMIHTYVLIMDDI--VDESLTRRDGPTAHRV 110
+                                       69*******************************************7..8*************86 PP
+
+  == domain 2  score: 12.9 bits;  conditional E-value: 2.3e-06
+              trimmed_msa_crtE_hmm 171 faaatvaGaiaag....adaeewralgealGeayqvaDDlrDaladae 214
+                                       f      Gai ag    ++ + +r+++   G ayqv DDl D+ +d++
+  GCA_016700315.1_ASM1670031v1_297 206 FLMPLRLGAIMAGvveeEKLHMLREFSLFAGTAYQVEDDLIDLFSDSD 253
+                                       555666777777731113344556667789************999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                        995  (286408 residues searched)
+Passed MSV filter:                        28  (0.0281407); expected 19.9 (0.02)
+Passed bias filter:                       22  (0.0221106); expected 19.9 (0.02)
+Passed Vit filter:                         2  (0.00201005); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.00100503); expected 0.0 (1e-05)
+Initial search space (Z):                995  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12377.57
+//
+[ok]

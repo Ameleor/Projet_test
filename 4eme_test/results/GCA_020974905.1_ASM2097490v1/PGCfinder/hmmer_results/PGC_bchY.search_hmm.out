@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_020974905.1_ASM2097490v1/GCA_020974905.1_ASM2097490v1_protein.faa
+# output directed to file:         results/GCA_020974905.1_ASM2097490v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.008   13.2   0.1      0.012   12.7   0.1    1.2  1  GCA_020974905.1_ASM2097490v1_1527  GAPELB_07720 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020974905.1_ASM2097490v1_1527  GAPELB_07720 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.1     2e-06     0.012     148     234 ..     113     202 ..     105     221 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 2e-06
+               trimmed_msa_bchY_hmm 148 riiGid.vpGfGvpthaea..kdvlagamlkyarkeaeaGpvaaprggrsdkptvtllGelfpadpvvigallepl 220
+                                         iiGi  + Gf v    e   ++++ +a  +  ++e  + p a+p ++++ +p vtl  ++  a   +  a+ +++
+  GCA_020974905.1_ASM2097490v1_1527 113 IIIGIQaLMGFPVDRSIEKsrQEMMNAAKDTQNQTEGFQLPEAQPTETEDGNPEVTLTPQMQQAQEEMGNAMAQSM 188
+                                        5889873579999887774226889999999999999*****************************9999****** PP
+
+               trimmed_msa_bchY_hmm 221 Glaagpvvptrewr 234
+                                        G a+g+++p+   r
+  GCA_020974905.1_ASM2097490v1_1527 189 GQAMGAMMPIVSVR 202
+                                        *********87766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       5958  (2161895 residues searched)
+Passed MSV filter:                       165  (0.0276939); expected 119.2 (0.02)
+Passed bias filter:                      124  (0.0208124); expected 119.2 (0.02)
+Passed Vit filter:                        11  (0.00184626); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000167842); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 23777.85
+//
+[ok]

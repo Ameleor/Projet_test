@@ -1,0 +1,118 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898725.1_ASM2389872v1/GCA_023898725.1_ASM2389872v1_protein.faa
+# output directed to file:         results/GCA_023898725.1_ASM2389872v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.3e-06   21.5   0.6    8.3e-06   20.9   0.4    1.3  1  GCA_023898725.1_ASM2389872v1_259  USO01679.1 MAG: hypothetical pro
+    0.00082   14.3   0.2      0.012   10.5   0.0    2.2  3  GCA_023898725.1_ASM2389872v1_349  USO01763.1 MAG: response regulat
+     0.0011   13.8   0.1     0.0084   11.0   0.0    2.3  3  GCA_023898725.1_ASM2389872v1_429  USO01839.1 MAG: PAS-domain conta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898725.1_ASM2389872v1_259  USO01679.1 MAG: hypothetical protein H6849_01355 [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.4   2.5e-08   8.3e-06     409     448 ..      43      82 ..      40      84 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 2.5e-08
+              trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       +Ek  +   +++T dN  +AA +LG+SR  L  KLr ++l
+  GCA_023898725.1_ASM2389872v1_259  43 VEKTLVRQVMRYTLDNQLQAAKVLGISRNTLARKLREHNL 82 
+                                       6788888889****************************98 PP
+
+>> GCA_023898725.1_ASM2389872v1_349  USO01763.1 MAG: response regulator [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.5   0.0   3.5e-05     0.012     155     293 ..      46     181 ..      29     194 .. 0.82
+   2 !   10.1   0.0   4.6e-05     0.015     143     252 ..     150     267 ..     135     287 .. 0.78
+   3 ?   -1.5   0.0      0.15        50      74     124 ..     305     357 ..     290     362 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.5e-05
+              trimmed_msa_ppsR_hmm 155 ivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsasl 231
+                                       +v+ ++++i+ +N+a ++L+ e a + + k++ e++++ +re++ a+l+++ ++ ++   + +   +++ v++ ++ 
+  GCA_023898725.1_ASM2389872v1_349  46 LVN-SQGEIITINKAFEALFPEGAPR-TMKDIGEELNSLERERFYAFLKTAYSE-KVTIEDFSKDPDDAWVRLRIQP 119
+                                       554.5688999*********986665.56899****************998765.4555566667788899999999 PP
+
+              trimmed_msa_ppsR_hmm 232 frqegesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaq 293
+                                           g+ + +   +++ +++++++ +++ +  +++++  a++++d++g++ + N +f +la 
+  GCA_023898725.1_ASM2389872v1_349 120 ITGYGSLYAMTYEERSLNSNQRTPAEQEVIKLLFDRALTAILIMDSQGNVKTWNPSFESLAG 181
+                                       999999999998888888888999999999999************************99875 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 4.6e-05
+              trimmed_msa_ppsR_hmm 143 RllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaav.rasgeaeeievrl 218
+                                       +llf+ + +a+li+d  ++++   Np+ ++L ge  +   + sfa+l+++e+++e++++l+   ++s +++ei++  
+  GCA_023898725.1_ASM2389872v1_349 150 KLLFDRALTAILIMDS-QGNVKTWNPSFESLAGEGLA--RNVSFASLLAEEETSEFESTLNGFwQKSYDRKEIDILF 223
+                                       799**********996.589************99766..5679***************9987626788999999999 PP
+
+              trimmed_msa_ppsR_hmm 219 arkg..........revsvsaslfrqegesllLvrlspaeaaaa 252
+                                       a+++           + ++s ++f q+++++l +rl ++++ +a
+  GCA_023898725.1_ASM2389872v1_349 224 ANRAspvsgyiqrlPTDNISLHIFDQSEQKNLQLRLLQSQKLHA 267
+                                       99996666666555445678888888888888888887776655 PP
+
+  == domain 3  score: -1.5 bits;  conditional E-value: 0.15
+              trimmed_msa_ppsR_hmm  74 trwrqvnhaaeagadlpvrysavrl..gkegrvlalGrdlralaalQqrLvea 124
+                                       t  +q+++++++ a+l  +  a++   + + +v+ lG  l++l al qrL+ +
+  GCA_023898725.1_ASM2389872v1_349 305 TDIMQIKQNTDRAANLVRQLLAFSRqqTLQPKVIDLGETLSELTALLQRLIGT 357
+                                       55666666666666665555555441134789999999****99999999976 PP
+
+>> GCA_023898725.1_ASM2389872v1_429  USO01839.1 MAG: PAS-domain containing protein [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0   2.5e-05    0.0084     177     297 ..      87     214 ..      78     227 .. 0.85
+   2 ?   -1.1   0.0      0.12        39     238     295 ..     271     328 ..     232     345 .. 0.77
+   3 ?   -2.0   0.1      0.21        69     259     306 ..     421     468 ..     407     475 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.5e-05
+              trimmed_msa_ppsR_hmm 177 eakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsaslfrqegesllLvrlspaeaaaa. 252
+                                       ++++l  ++   lf +esr++l++l+a+ ras++  + +v  ++kgr++++s + +   ++ + +  ++++  ++a 
+  GCA_023898725.1_ASM2389872v1_429  87 SEEALSMSEAVLLFGEESRDTLTELFAQFRASQRSYNERVDSSSKGRKFELSLRPLDGVTAVIWVTDITSEIIDQAn 163
+                                       5667777888889***********************************************99999999876555553 PP
+
+              trimmed_msa_ppsR_hmm 253 ......aaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlase 297
+                                             +  e+++++ ++l++lp ++   +a+g+    N+a+ e+ ++++ 
+  GCA_023898725.1_ASM2389872v1_429 164 ankriaSLLEERQRYRAILDALPYPIWYRTADGNLTFHNAAYGEMDDMSHV 214
+                                       344566667888999999************************999998874 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.12
+              trimmed_msa_ppsR_hmm 238 sllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqla 295
+                                         +  +l++ e+ +++  +++++  +vle+l+ ++ +  +++r +  N+a+ ++ +  
+  GCA_023898725.1_ASM2389872v1_429 271 VGFATELTQLEEGKKELIRHRQAHRQVLENLSIGITIYGPDKRLVFFNHAYSRMFEFD 328
+                                       4456789999999999999999999***********************9999998765 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 0.21
+              trimmed_msa_ppsR_hmm 259 akllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLe 306
+                                       a   e l++l +++ v   +++ +  Ne+fl++  +  e    g +L+
+  GCA_023898725.1_ASM2389872v1_429 421 AVQKETLNALHEGVAVFGCDHKLQIINEEFLSINSIDDEYLKSGMTLS 468
+                                       55667889999999999999999999*****99999988888887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                        985  (330416 residues searched)
+Passed MSV filter:                        35  (0.035533); expected 19.7 (0.02)
+Passed bias filter:                       22  (0.022335); expected 19.7 (0.02)
+Passed Vit filter:                         3  (0.00304569); expected 1.0 (0.001)
+Passed Fwd filter:                         3  (0.00304569); expected 0.0 (1e-05)
+Initial search space (Z):                985  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7931.70
+//
+[ok]

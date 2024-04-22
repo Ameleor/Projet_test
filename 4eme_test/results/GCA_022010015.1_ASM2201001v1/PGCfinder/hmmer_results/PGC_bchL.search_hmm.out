@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_022010015.1_ASM2201001v1/GCA_022010015.1_ASM2201001v1_protein.faa
+# output directed to file:         results/GCA_022010015.1_ASM2201001v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0073   12.8   0.2      0.011   12.2   0.2    1.2  1  GCA_022010015.1_ASM2201001v1_2927  UKI49855.1 MAG: Mrp/NBP35 family
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022010015.1_ASM2201001v1_2927  UKI49855.1 MAG: Mrp/NBP35 family ATP-binding protein [Clostridium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.2   4.4e-06     0.011      19      52 ..      31      65 ..      17      83 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 4.4e-06
+               trimmed_msa_bchL_hmm 19 takvfav.ygkggigksttssnlsvafsklgkrvl 52
+                                         k++av  gkgg+gks  +s l+v++ k g +v 
+  GCA_022010015.1_ASM2201001v1_2927 31 IKKIIAVtSGKGGVGKSMVTSLLAVSMMKKGYKVG 65
+                                       3578887359******************9999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       2581  (287850 residues searched)
+Passed MSV filter:                        97  (0.0375823); expected 51.6 (0.02)
+Passed bias filter:                       70  (0.0271213); expected 51.6 (0.02)
+Passed Vit filter:                        14  (0.00542425); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000387447); expected 0.0 (1e-05)
+Initial search space (Z):               2581  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12857.56
+//
+[ok]

@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699205.1_ASM1669920v1/GCA_016699205.1_ASM1669920v1_protein.faa
+# output directed to file:         results/GCA_016699205.1_ASM1669920v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0097   10.9   0.0      0.012   10.6   0.0    1.2  1  GCA_016699205.1_ASM1669920v1_1055  QQR60833.1 magnesium transporter
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699205.1_ASM1669920v1_1055  QQR60833.1 magnesium transporter [Candidatus Uhrbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.0   1.1e-05     0.012     121     160 ..      38      82 ..      21     100 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.1e-05
+               trimmed_msa_acsF_hmm 121 kllard.esrhagfindalkdagigvdlgf....ltktkkytyfk 160
+                                        ++++rd  sr a f n  lk+ag+g+ lg     l+   +y +f+
+  GCA_016699205.1_ASM1669920v1_1055  38 SIFSRDlRSRKAKFKNYLLKEAGVGIILGSisgiLSGIAAYIWFQ 82 
+                                        567899679*****************9986111144556666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       1058  (324388 residues searched)
+Passed MSV filter:                        31  (0.0293006); expected 21.2 (0.02)
+Passed bias filter:                       28  (0.026465); expected 21.2 (0.02)
+Passed Vit filter:                         4  (0.00378072); expected 1.1 (0.001)
+Passed Fwd filter:                         1  (0.00094518); expected 0.0 (1e-05)
+Initial search space (Z):               1058  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 9003.96
+//
+[ok]

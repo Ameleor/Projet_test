@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_014189555.1_ASM1418955v1/GCA_014189555.1_ASM1418955v1_protein.faa
+# output directed to file:         results/GCA_014189555.1_ASM1418955v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.5e-07   26.0   0.0    1.4e-06   25.1   0.0    1.4  1  GCA_014189555.1_ASM1418955v1_4845  QND43176.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014189555.1_ASM1418955v1_4845  QND43176.1 ParA family protein [Rhizobium leguminosarum bv. viciae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   0.0   5.1e-10   1.4e-06      26      63 ..      13      50 ..       3      57 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 5.1e-10
+               trimmed_msa_bchL_hmm 26 ygkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                         kgg+gk+tt+ nl++a++ +g+rvl +  dp+ +++
+  GCA_014189555.1_ASM1418955v1_4845 13 NQKGGVGKTTTAINLATALAAIGERVLIVDLDPQGNAS 50
+                                       469******************************97654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       2647  (528484 residues searched)
+Passed MSV filter:                        85  (0.0321118); expected 52.9 (0.02)
+Passed bias filter:                       77  (0.0290895); expected 52.9 (0.02)
+Passed Vit filter:                         7  (0.0026445); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000377786); expected 0.0 (1e-05)
+Initial search space (Z):               2647  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9207.75
+//
+[ok]

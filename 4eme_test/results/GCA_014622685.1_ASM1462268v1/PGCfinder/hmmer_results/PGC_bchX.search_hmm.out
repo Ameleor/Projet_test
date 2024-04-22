@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_014622685.1_ASM1462268v1/GCA_014622685.1_ASM1462268v1_protein.faa
+# output directed to file:         results/GCA_014622685.1_ASM1462268v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.2e-05   18.3   0.3    0.00038   14.3   0.3    2.2  2  GCA_014622685.1_ASM1462268v1_172  QNS02010.1 MAG: septum site-dete
+     0.0021   11.8   0.2      0.033    7.9   0.1    2.3  2  GCA_014622685.1_ASM1462268v1_231  QNS02062.1 MAG: signal recogniti
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014622685.1_ASM1462268v1_172  QNS02010.1 MAG: septum site-determining protein MinD [Buchnera aphidicola (Pentalon
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.3   1.5e-06   0.00038      23      62 ..       3      43 ..       1      57 [. 0.80
+   2 !    1.7   0.0    0.0099       2.5     219     253 ..     201     236 ..     186     254 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 1.5e-06
+              trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                      +ii +  gkgg+gk+ + a ++  la++gkk ++i  d   
+  GCA_014622685.1_ASM1462268v1_172  3 RIIVVtSGKGGVGKTTSSAAIATGLAKKGKKTIVIDFDIGL 43
+                                      5554427****************************988655 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.0099
+              trimmed_msa_bchX_hmm 219 eavgipvlaaipadedirrksanye.iigkpesewg 253
+                                       e   ip++  ip+d  + r s + e ii  ++s+ g
+  GCA_014622685.1_ASM1462268v1_172 201 EILRIPIIGVIPEDSAVLRSSNQGEsIILDNNSNAG 236
+                                       55689***********99998876525555555555 PP
+
+>> GCA_014622685.1_ASM1462268v1_231  QNS02062.1 MAG: signal recognition particle protein [Buchnera aphidicola (Pentaloni
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.9   0.1   0.00013     0.033      21      58 ..      99     137 ..      83     144 .. 0.78
+   2 ?    1.3   0.0     0.014       3.5      65      96 ..     382     414 ..     341     424 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.00013
+              trimmed_msa_bchX_hmm  21 etqiiaiygkggigksftlanlsymlaqqgkk.vlligc 58 
+                                       +  ii   g  g+gk+ +la+l++ + ++ kk +l++  
+  GCA_014622685.1_ASM1462268v1_231  99 SLTIILFVGLQGVGKTTSLAKLAHWIKKKHKKkILIVST 137
+                                       55789999****************999887661555554 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.014
+              trimmed_msa_bchX_hmm  65 tsllfggkacptiietsskkkl.ageevkigdv 96 
+                                        s+ +  k  p ii++s k+++ ag   +i+dv
+  GCA_014622685.1_ASM1462268v1_231 382 HSMTYKEKIQPIIIKSSRKRRIaAGSGTTIQDV 414
+                                       4777888999*****999988626889999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        499  (161511 residues searched)
+Passed MSV filter:                        14  (0.0280561); expected 10.0 (0.02)
+Passed bias filter:                        9  (0.0180361); expected 10.0 (0.02)
+Passed Vit filter:                         3  (0.00601202); expected 0.5 (0.001)
+Passed Fwd filter:                         2  (0.00400802); expected 0.0 (1e-05)
+Initial search space (Z):                499  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8996.02
+//
+[ok]

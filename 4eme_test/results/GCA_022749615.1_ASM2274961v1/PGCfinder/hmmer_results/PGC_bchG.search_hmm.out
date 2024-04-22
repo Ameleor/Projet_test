@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_022749615.1_ASM2274961v1/GCA_022749615.1_ASM2274961v1_protein.faa
+# output directed to file:         results/GCA_022749615.1_ASM2274961v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.6e-05   20.0   7.0    0.00013   18.8   7.2    1.6  1  GCA_022749615.1_ASM2274961v1_2211  UNW06240.1 4-hydroxybenzoate oct
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022749615.1_ASM2274961v1_2211  UNW06240.1 4-hydroxybenzoate octaprenyltransferase [Acinetobacter variabilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   7.2   5.1e-08   0.00013      16     125 ..      31     136 ..      18     260 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 5.1e-08
+               trimmed_msa_bchG_hmm  16 twfpPmWafacGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdaineP..erpiPsGripGrWGl 89 
+                                         ++p mWa    v + g++  +  +l+++Gv++      a+  a+nd+ dr+vda  e   +rp+ +G i+ +  +
+  GCA_022749615.1_ASM2274961v1_2211  31 VFWPTMWALW--VAAKGIPDLSILVLMILGVIFM----RAAGCAINDFADRKVDAHVERtkTRPLATGIISAKEAV 100
+                                        57899**987..5689999999999999999975....5667789**********987522699************ PP
+
+               trimmed_msa_bchG_hmm  90 yialiltllsllvaaalgtlvfvaavlglvlaWays 125
+                                        ++ l+l + s ++ ++l   +f  +  +l la++y 
+  GCA_022749615.1_ASM2274961v1_2211 101 MVFLVLVAASACLLFFLPIETFYWSFGALFLAFIYP 136
+                                        *99999999999999999888888888888888884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2509  (641482 residues searched)
+Passed MSV filter:                        99  (0.039458); expected 50.2 (0.02)
+Passed bias filter:                       41  (0.0163412); expected 50.2 (0.02)
+Passed Vit filter:                         3  (0.0011957); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000398565); expected 0.0 (1e-05)
+Initial search space (Z):               2509  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 18710.99
+//
+[ok]

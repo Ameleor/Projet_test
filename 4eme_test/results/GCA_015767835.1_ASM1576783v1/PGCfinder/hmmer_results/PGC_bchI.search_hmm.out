@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_015767835.1_ASM1576783v1/GCA_015767835.1_ASM1576783v1_protein.faa
+# output directed to file:         results/GCA_015767835.1_ASM1576783v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-08   32.8   3.2    3.9e-07   27.9   0.0    3.3  4  GCA_015767835.1_ASM1576783v1_1224  QPL92844.1 ATP-binding protein [
+    2.6e-05   21.8   0.7    4.9e-05   21.0   0.7    1.4  1  GCA_015767835.1_ASM1576783v1_4293  QPL95449.1 MoxR family ATPase [S
+    0.00092   16.8   0.3      0.003   15.1   0.1    1.8  2  GCA_015767835.1_ASM1576783v1_1828  QPL93349.1 CpaF family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015767835.1_ASM1576783v1_1224  QPL92844.1 ATP-binding protein [Streptomyces clavuligerus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.5   0.0     0.011        20       8      62 ..     216     268 ..     213     277 .. 0.85
+   2 ?   -1.0   0.0      0.13   2.4e+02      42      73 ..     269     300 ..     262     306 .. 0.86
+   3 !   27.9   0.0   2.1e-10   3.9e-07     125     185 ..     312     372 ..     302     376 .. 0.94
+   4 ?    0.3   0.2     0.051        96     278     317 ..     427     466 ..     420     485 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.011
+               trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcr 62 
+                                         + gq   ++al +aa  +    +l+ G  G+Gk+  +  l  +lP+++  ++ +
+  GCA_015767835.1_ASM1576783v1_1224 216 DVAGQRTARRALEIAAAGA--HHLLLHGPPGAGKTLLAERLPGVLPPLTRQEALE 268
+                                        57899999******99766..579***********************99877655 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.13
+               trimmed_msa_bchI_hmm  42 stavralaallPkikavkgcryncdpeeeael 73 
+                                         tav ++a +lP+ +   +++  c+p+++a++
+  GCA_015767835.1_ASM1576783v1_1224 269 VTAVHSVAGILPPGQPLVNTPPYCAPHHSATM 300
+                                        69************999999999999988765 PP
+
+  == domain 3  score: 27.9 bits;  conditional E-value: 2.1e-10
+               trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                         pG ++ a+rG l++de   +  +++d l    +sG+ vv r g  vr parf+lv + nP
+  GCA_015767835.1_ASM1576783v1_1224 312 RPGAVSLAHRGVLFLDETPEFATKVLDALRQPLESGHVVVARSGGVVRLPARFLLVLAANP 372
+                                        6999******************************************************999 PP
+
+  == domain 4  score: 0.3 bits;  conditional E-value: 0.051
+               trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                        rge t + aar  aa e a e  ++   +v + +  h lr
+  GCA_015767835.1_ASM1576783v1_1224 427 RGESTTVVAARVRAARERAAERLRDTPWTVNSEVPGHELR 466
+                                        99*************9999998888888888888888887 PP
+
+>> GCA_015767835.1_ASM1576783v1_4293  QPL95449.1 MoxR family ATPase [Streptomyces clavuligerus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.7   2.6e-08   4.9e-05     277     316 ..     253     292 ..     206     309 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 2.6e-08
+               trimmed_msa_bchI_hmm 277 lrgeltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                         r+ l llraa+a+aal+g++ +  ++++++a+ +l hrl
+  GCA_015767835.1_ASM1576783v1_4293 253 PRATLHLLRAAKATAALSGREYALPDDVRSLAVPVLAHRL 292
+                                        4899***********************************9 PP
+
+>> GCA_015767835.1_ASM1576783v1_1828  QPL93349.1 CpaF family protein [Streptomyces clavuligerus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.1   1.6e-06     0.003      10     107 ..     192     289 ..     183     320 .. 0.71
+   2 ?   -1.0   0.0      0.12   2.3e+02      89     118 ..     331     360 ..     298     367 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.6e-06
+               trimmed_msa_bchI_hmm  10 vgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeckekaeaek 85 
+                                        vg  + +l+llla + ++   v+v G  GtGk+t + al+ l+P+ + + + + +++ + +++   + +++  + +
+  GCA_015767835.1_ASM1576783v1_1828 192 VGSLDEQLTLLLAGLVRAKFNVIVSGATGTGKTTLLNALSGLIPEEERIVTIEDSAELRLQQSHVITLESRPPNVE 267
+                                        666677889999999999999***********************99988887777776666555555544444444 PP
+
+               trimmed_msa_bchI_hmm  86 lkvkkvpvpvvdlPlGatedrv 107
+                                         k + +   +v   l    drv
+  GCA_015767835.1_ASM1576783v1_1828 268 GKGHVTIRDLVRNSLRMRPDRV 289
+                                        4444444455555555666665 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.12
+               trimmed_msa_bchI_hmm  89 kkvpvpvvdlPlGatedrvvGaldleralt 118
+                                        +  +++ v++P+ a  d++  a+d+   lt
+  GCA_015767835.1_ASM1576783v1_1828 331 TLASMSEVEIPFAAIKDQINSAVDVIVQLT 360
+                                        334567799999999999999999876666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5624  (1891434 residues searched)
+Passed MSV filter:                       351  (0.0624111); expected 112.5 (0.02)
+Passed bias filter:                      191  (0.0339616); expected 112.5 (0.02)
+Passed Vit filter:                        33  (0.00586771); expected 5.6 (0.001)
+Passed Fwd filter:                         3  (0.000533428); expected 0.1 (1e-05)
+Initial search space (Z):               5624  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 13306.89
+//
+[ok]

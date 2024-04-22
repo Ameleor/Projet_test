@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_015999485.1_ASM1599948v1/GCA_015999485.1_ASM1599948v1_protein.faa
+# output directed to file:         results/GCA_015999485.1_ASM1599948v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.3e-06   24.2   7.2    9.3e-06   23.9   7.2    1.1  1  GCA_015999485.1_ASM1599948v1_5541  KKFHAD_28410 4-hydroxybenzoate o
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015999485.1_ASM1599948v1_5541  KKFHAD_28410 4-hydroxybenzoate octaprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   7.2   1.5e-09   9.3e-06      10     214 ..      24     222 ..      14     263 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 1.5e-09
+               trimmed_msa_bchG_hmm  10 ellkPitwfpPmWafacGvvssga..slsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsG 81 
+                                        ++ +Pi  +  +W  +  v  +g+  ++ +++l++ +Gv+l    + a+   +nd+ dr+vd       +rp+ sG
+  GCA_015999485.1_ASM1599948v1_5541  24 RMDRPIGIYLLLWPTLSAVWIAGHgsPTLANVLIFGLGVVL----MRAAGCCINDFADRKVDGHvkRTADRPLASG 95 
+                                        55678888888998877775555400555555566666665....56777789*********75124689****** PP
+
+               trimmed_msa_bchG_hmm  82 ripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsye.glaWltgaa 156
+                                        r++ r  l +  il  +s+l+ +   + ++  +  +++la+ y   P+ +k+  ++ + + g +y  g++   +aa
+  GCA_015999485.1_ASM1599948v1_5541  96 RVTSREALALFAILVGVSFLLVLCTNSRTVWLSFGAVALAFCY---PF-MKRYTYYPQVVLGAAYSwGIPMAFTAA 167
+                                        *********************999999999999999*****99...44.8999**********9964555433333 PP
+
+               trimmed_msa_bchG_hmm 157 vlagalPsaevll.l.allysigahGimtlndfkaveGdrklgvkslpvklGveraarva 214
+                                           g+lP++  ll +  ll+++g     ++ d    + d k+gvks ++ +G +  a + 
+  GCA_015999485.1_ASM1599948v1_5541 168 --GGELPASAWLLyIaNLLWTVGYDTYYAMVDR---DDDLKIGVKSTAILFGEADRAIIL 222
+                                        ..4788877654314157888888777777764...78999******9999987766554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       6358  (1919803 residues searched)
+Passed MSV filter:                       323  (0.0508021); expected 127.2 (0.02)
+Passed bias filter:                      122  (0.0191884); expected 127.2 (0.02)
+Passed Vit filter:                        10  (0.00157282); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000157282); expected 0.1 (1e-05)
+Initial search space (Z):               6358  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 17416.30
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410785.1_ASM2041078v1/GCA_020410785.1_ASM2041078v1_protein.faa
+# output directed to file:         results/GCA_020410785.1_ASM2041078v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.1e-10   35.4   0.3    4.6e-09   32.3   0.2    1.9  2  GCA_020410785.1_ASM2041078v1_925   UCM85307.1 MAG: AAA family ATPas
+     0.0037   12.9   0.1     0.0082   11.7   0.0    1.6  2  GCA_020410785.1_ASM2041078v1_1441  UCM86447.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410785.1_ASM2041078v1_925  UCM85307.1 MAG: AAA family ATPase [Rickettsia endosymbiont of Culicoides impunctatu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.3   0.2   6.7e-12   4.6e-09      21      64 ..       3      47 ..       1      79 [. 0.82
+   2 ?    1.4   0.0     0.018        12     156     208 ..     138     192 ..     103     216 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 32.3 bits;  conditional E-value: 6.7e-12
+              trimmed_msa_bchL_hmm 21 kvfa.vygkggigksttssnlsvafsklgkrvlqigcdpkhdstf 64
+                                      k++a v  kgg+ kstt+ nls+a+s +gk++l i  dp+ +s+ 
+  GCA_020410785.1_ASM2041078v1_925  3 KIVAvVNQKGGVAKSTTTVNLSTALSVMGKKILVIDLDPQGNSST 47
+                                      55551568*******************************998753 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.018
+              trimmed_msa_bchL_hmm 156 lqhadralivaandfdsifamnrivaaikaksk..nykvrlggvianrsketdei 208
+                                       l  +d  li    df s+  +  ++++++   k  n k++++g++    ++ +++
+  GCA_020410785.1_ASM2041078v1_925 138 LVACDYVLIPMQCDFYSLEGLSHLLKTVEIVEKnlNPKIKIAGILFTMYDKRNRL 192
+                                       5667888888999999999999999998875551156799999986544443333 PP
+
+>> GCA_020410785.1_ASM2041078v1_1441  UCM86447.1 MAG: ParA family protein (plasmid) [Rickettsia endosymbiont of Culicoid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.0   1.2e-05    0.0082      19      63 ..       5      50 ..       1      60 [. 0.87
+   2 ?   -2.3   0.0      0.24   1.6e+02      25      54 ..     166     198 ..     152     217 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_bchL_hmm 19 takvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                       ++k+++v   kgg gk+t + +ls ++s+   +vl +  dp+  +t
+  GCA_020410785.1_ASM2041078v1_1441  5 DTKIISVAnQKGGCGKTTITMQLSGTLSRDKYKVLVVDADPQGTAT 50
+                                       56888885269******************************97665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.24
+               trimmed_msa_bchL_hmm  25 vygkggigksttssnlsvaf...sklgkrvlqi 54 
+                                        +    gi  s t   l +a+   + lg+ v +i
+  GCA_020410785.1_ASM2041078v1_1441 166 ILNNFGIEVSNTHLCLRTAYrqsAVLGQTVYDI 198
+                                        444445555555555555442222344444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1364  (432778 residues searched)
+Passed MSV filter:                        63  (0.0461877); expected 27.3 (0.02)
+Passed bias filter:                       47  (0.0344575); expected 27.3 (0.02)
+Passed Vit filter:                         8  (0.0058651); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00146628); expected 0.0 (1e-05)
+Initial search space (Z):               1364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9682.05
+//
+[ok]

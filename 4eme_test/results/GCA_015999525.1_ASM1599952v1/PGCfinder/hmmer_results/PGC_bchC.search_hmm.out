@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_015999525.1_ASM1599952v1/GCA_015999525.1_ASM1599952v1_protein.faa
+# output directed to file:         results/GCA_015999525.1_ASM1599952v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.8e-13   46.0   0.0    1.4e-05   22.5   0.0    3.0  3  GCA_015999525.1_ASM1599952v1_4616  QPQ30778.1 glutathione-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015999525.1_ASM1599952v1_4616  QPQ30778.1 glutathione-dependent formaldehyde dehydrogenase [Lysinibacillus sp. JN
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   7.8e-06     0.036       4      90 ..       2      86 ..       1      95 [. 0.82
+   2 !    8.7   0.0   4.7e-05      0.22      94     188 ..     119     222 ..     113     261 .. 0.66
+   3 !   22.5   0.0     3e-09   1.4e-05     208     307 ..     275     376 ..     269     377 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 7.8e-06
+               trimmed_msa_bchC_hmm  4 lavvlekPeelalkrleltap.eeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee.sk 79
+                                       +av ++  +++++k+++  ++ +++d++v ++ ++i  G +  l +G +P+   +g   v G+e +G v e+g+  +k
+  GCA_015999525.1_ASM1599952v1_4616  2 KAVTFQGIKNVEVKEVKDPKIkKADDIIVRLTTTAIC-GSDLHLIHGMIPN---IGQDYVIGHEPMGIVEEVGKGvTK 75
+                                       5899999999999999987761567899999999996.7788888898876...6777799***********996378 PP
+
+               trimmed_msa_bchC_hmm 80 lkvgervfvPG 90
+                                       +k+g+r+ +P 
+  GCA_015999525.1_ASM1599952v1_4616 76 VKKGDRIVIPF 86
+                                       9*******995 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 4.7e-05
+               trimmed_msa_bchC_hmm  94 fedvrglf.Ggaasrlvvpaarvvk..vdeel...geegvllalaa.tarhalagkekkapd..livGhGvlGrll 160
+                                        ++d++g f Gg a+ + vp    ++  ++e+    +e+ vlla aa ta  ++ +++ k+ d  +i+G G +G l 
+  GCA_015999525.1_ASM1599952v1_4616 119 YSDTTGGFpGGQAEYMRVPYGNFIPfkIPEKSevpDESLVLLADAAsTAFWSVDNAGVKKGDtvVILGCGPVGLLA 194
+                                        6666655548888888888877765114443311156779999766489999987776665522778********* PP
+
+               trimmed_msa_bchC_hmm 161 arltvaagaeapvvWetnaaraegaegy 188
+                                         +++ ++gae+ +  +    r + a+  
+  GCA_015999525.1_ASM1599952v1_4616 195 QKFAWLKGAERVIAVDYIGYRLKHAKKT 222
+                                        ********99998888777776665533 PP
+
+  == domain 3  score: 22.5 bits;  conditional E-value: 3e-09
+               trimmed_msa_bchC_hmm 208 sGdaevldkliarlakggeivlaGfyeepl.sfafppafmrearlrvaaewkkedlaavkalvesGrlsldglith 282
+                                        sG+   + +  + ++kgg i ++G y  +  +f     f+r++ +r       + +  v +l+++G+++   +ith
+  GCA_015999525.1_ASM1599952v1_4616 275 SGAMGAIVTASQAVRKGGTIQITGVYGGRYnAFPLGDIFQRNVAIRTGQAPVVHIMPHVYNLIADGKVNAGDIITH 350
+                                        78888888888999************987625888899*********99999999********************* PP
+
+               trimmed_msa_bchC_hmm 283 rasaeeaeeayrta.fedpaClkmvl 307
+                                          + e+a++ y+    ++++C+k+vl
+  GCA_015999525.1_ASM1599952v1_4616 351 VLPLEKAKHGYEIFdTKQEDCIKVVL 376
+                                        ***********974156789****98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       4621  (1315337 residues searched)
+Passed MSV filter:                       128  (0.0276996); expected 92.4 (0.02)
+Passed bias filter:                      101  (0.0218567); expected 92.4 (0.02)
+Passed Vit filter:                        10  (0.00216403); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000216403); expected 0.0 (1e-05)
+Initial search space (Z):               4621  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 21432.01
+//
+[ok]

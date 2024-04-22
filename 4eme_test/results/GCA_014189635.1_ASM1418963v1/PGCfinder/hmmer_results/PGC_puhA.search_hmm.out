@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCA_014189635.1_ASM1418963v1/GCA_014189635.1_ASM1418963v1_protein.faa
+# output directed to file:         results/GCA_014189635.1_ASM1418963v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.053   11.4   0.0       0.06   11.2   0.0    1.1  1  GCA_014189635.1_ASM1418963v1_3766  QND15744.1 PRC-barrel domain con
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014189635.1_ASM1418963v1_3766  QND15744.1 PRC-barrel domain containing protein [Rhizobium leguminosarum bv. trifo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   9.4e-06      0.06     135     238 ..      19     124 ..       3     126 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 9.4e-06
+               trimmed_msa_puhA_hmm 135 efsvaeedpdprGlkvvgaDgkvaGtvsdlWvDrsealiRYlevele....aggrkvllPmtlakikkkkkkvkve 206
+                                        +  +a++     G++v+gaDgk +G ++ l + + +  + Y  ++       g+++  lP +  + +++ +  +++
+  GCA_014189635.1_ASM1418963v1_3766  19 HSLIASD--RVEGTRVYGADGKHIGSIERLIIGKLDGRVAYAVLSFGgflgIGHDHYPLPWEKLNYDTQLDGYRID 92 
+                                        4445544..578*****************************99998777556666777777777777777777775 PP
+
+               trimmed_msa_puhA_hmm 207 ailaeqfaevPklkspdqvTllEE.dkivaYyg 238
+                                         ++ eq++ +P+ +++d     +   ++  Yyg
+  GCA_014189635.1_ASM1418963v1_3766  93 -LTKEQIEGAPSYSDDDDTWYNDNgRRVYDYYG 124
+                                        .78899999999887776444333146777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       6418  (1950436 residues searched)
+Passed MSV filter:                       112  (0.0174509); expected 128.4 (0.02)
+Passed bias filter:                      102  (0.0158928); expected 128.4 (0.02)
+Passed Vit filter:                         6  (0.000934871); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155812); expected 0.1 (1e-05)
+Initial search space (Z):               6418  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 20207.71
+//
+[ok]

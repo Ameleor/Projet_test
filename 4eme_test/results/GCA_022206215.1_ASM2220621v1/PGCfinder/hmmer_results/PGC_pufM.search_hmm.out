@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_022206215.1_ASM2220621v1/GCA_022206215.1_ASM2220621v1_protein.faa
+# output directed to file:         results/GCA_022206215.1_ASM2220621v1/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.6e-12   43.5   9.6    7.3e-12   42.5   9.6    1.6  1  GCA_022206215.1_ASM2220621v1_1214  WAS06461.1 photosystem II q(b) p
+    1.5e-07   28.4  19.9    4.1e-07   26.9  19.8    1.7  2  GCA_022206215.1_ASM2220621v1_998   WAS06259.1 photosystem II D2 pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022206215.1_ASM2220621v1_1214  WAS06461.1 photosystem II q(b) protein [Gloeomargaritales cyanobacterium VI4D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   9.6   5.1e-15   7.3e-12     109     224 ..     106     220 ..       5     236 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 5.1e-15
+               trimmed_msa_pufM_hmm 109 lkeGGwwllagffltvsvllwwvrtyrrakalglgthvawafaaaiwlylvlGlirpvlmGswseavpfGifphld 184
+                                        l +GG ++l  + + + v+ ++ r ++ + +lg+   ++ a++a +     + li p+  Gs+s+ +p Gi   ++
+  GCA_022206215.1_ASM2220621v1_1214 106 LYNGGPYQLVVLHFLIGVFCYMGREWELSYRLGMRPWICVAYSAPVAAATAVFLIYPIGQGSFSDGMPLGISGTFN 181
+                                        678************************************************************************* PP
+
+               trimmed_msa_pufM_hmm 185 wtaafsiryGnlfynpfhalsivflyGsallfamhgatil 224
+                                        +   f  ++ n+   pfh+l ++ ++G +l+ amhg+ + 
+  GCA_022206215.1_ASM2220621v1_1214 182 FMLVFQAEH-NILMHPFHMLGVAGVFGGSLFSAMHGSLVT 220
+                                        *****9998.78889*********************9775 PP
+
+>> GCA_022206215.1_ASM2220621v1_998  WAS06259.1 photosystem II D2 protein (photosystem q(a) protein) [Gloeomargaritales 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.2      0.12   1.8e+02     282     300 ..      44      63 ..      30      69 .. 0.73
+   2 !   26.9  19.8   2.8e-10   4.1e-07      97     280 ..      93     277 ..      44     290 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.12
+              trimmed_msa_pufM_hmm 282 iGilltG.tvvdnwylwavk 300
+                                       +G  ltG t+v +wy+ +  
+  GCA_022206215.1_ASM2220621v1_998  44 LGGWLTGtTFVTSWYTHGLA 63 
+                                       5666777358999*998765 PP
+
+  == domain 2  score: 26.9 bits;  conditional E-value: 2.8e-10
+              trimmed_msa_pufM_hmm  97 ppspeyGlklpplkeGGwwllagffltvsvllwwvrtyrrakalglgthvawafaaaiwlylvlGlirpvlmGswse 173
+                                        p++++ ++    + GG w + ++  +  ++ +++r  + a+ +g+  + a af+  i +++ + l+ p+   sw  
+  GCA_022206215.1_ASM2220621v1_998  93 GPEANWDFT-RWCQIGGLWTFVALHGAFGLIGFCLRQLEIARLVGVRPYNAIAFTGPIAVFVSVFLLYPLGQSSWFF 168
+                                       555555554.234679************************************************************* PP
+
+              trimmed_msa_pufM_hmm 174 avpfGifphldwtaafsiryGnlfynpfhalsivflyGsallfamhgatilavsryGge.....reieqivdrGt.a 244
+                                       a  fG+   + ++  f   + n   npfh++ ++ + G all a+hgat+  +    ++     r  +      t +
+  GCA_022206215.1_ASM2220621v1_998 169 APSFGVAGIFRFILFF-QGFHNWTLNPFHMMGVAGILGGALLCAIHGATVENTLYQDTDtpntfRGFQPTQSEETyS 244
+                                       *****99988887655.5899****************************9876555554222223444444333313 PP
+
+              trimmed_msa_pufM_hmm 245 seraalfwrwtmGfnatmesihrwawwfavlttltg 280
+                                       +  a  fw   +G      s +rw ++f +++++tg
+  GCA_022206215.1_ASM2220621v1_998 245 MVTANRFWSQIFGIAF---SNKRWLHFFMLFVPVTG 277
+                                       3456678887777654...56789999988888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       2890  (877730 residues searched)
+Passed MSV filter:                       103  (0.0356401); expected 57.8 (0.02)
+Passed bias filter:                       49  (0.016955); expected 57.8 (0.02)
+Passed Vit filter:                         6  (0.00207612); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000692042); expected 0.0 (1e-05)
+Initial search space (Z):               2890  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17186.24
+//
+[ok]

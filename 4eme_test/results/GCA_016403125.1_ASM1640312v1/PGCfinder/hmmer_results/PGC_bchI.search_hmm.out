@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016403125.1_ASM1640312v1/GCA_016403125.1_ASM1640312v1_protein.faa
+# output directed to file:         results/GCA_016403125.1_ASM1640312v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-07   27.8   0.0     0.0033   13.1   0.0    2.3  2  GCA_016403125.1_ASM1640312v1_181  QQE67909.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016403125.1_ASM1640312v1_181  QQE67909.1 YifB family Mg chelatase-like AAA ATPase [Campylobacter jejuni subsp. je
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0   2.1e-06    0.0033       5      77 ..     198     268 ..     194     286 .. 0.79
+   2 !   12.5   0.0   3.2e-06     0.005     120     305 ..     289     492 ..     282     500 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 2.1e-06
+              trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceec 77 
+                                        f  i gq++ k+a ++aa+   +  +l  G  G+Gks +++ l  ++P+ +  +    n+  + +++ ce +
+  GCA_016403125.1_ASM1640312v1_181 198 DFKDIKGQEKAKRACMIAALG--MHNILFEGSPGSGKSMCAKRLVYIMPPQSLSEILMQNAYMSLDSKDCEFT 268
+                                       68999**************96..679***********************988777766666666666666655 PP
+
+  == domain 2  score: 12.5 bits;  conditional E-value: 3.2e-06
+              trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe.eGelrPqll 195
+                                       G k+   G +a an G l+ de   ++  +++ l +  +  +  + r    + ++++f ++ + nP   G+l  + l
+  GCA_016403125.1_ASM1640312v1_181 289 GTKNARIGEVALANGGVLFFDEFPHFNKQIIESLREPLEDHKIHISRVNSKITYETKFSFIAAQNPCpCGNLFSKNL 365
+                                       88999999**********************************************************636******** PP
+
+              trimmed_msa_bchI_hmm 196 drfGlsvevrtpkd.....leervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekv..evpda..... 260
+                                              e++  k+     + +r+++    d+  +d ++ +++ + +++ +++ i + ++  ++   + +d+     
+  GCA_016403125.1_ASM1640312v1_181 366 SCVCSENEIKKYKNhisapIMDRIDLYVAMDEISKDDKTSISSKEMSEKILQAFIFSKKRGQKEFngKLKDEdlsrf 442
+                                       ****999999876544444789*******************999999999999887665544433112233311222 PP
+
+              trimmed_msa_bchI_hmm 261 .vlekaaklclalgtd....Glrgeltllraaralaalegakevtkehlk 305
+                                        vlek ak +l l++      lr+   +l+ +r++a le++ +++k+h+ 
+  GCA_016403125.1_ASM1640312v1_181 443 cVLEKDAKDTLDLAISrynlSLRSLNKILKVSRSIADLEQSLNISKTHIL 492
+                                       35666665455444432222688888899999999999999999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1567  (478735 residues searched)
+Passed MSV filter:                        77  (0.0491385); expected 31.3 (0.02)
+Passed bias filter:                       68  (0.043395); expected 31.3 (0.02)
+Passed Vit filter:                        12  (0.00765795); expected 1.6 (0.001)
+Passed Fwd filter:                         1  (0.000638162); expected 0.0 (1e-05)
+Initial search space (Z):               1567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7408.95
+//
+[ok]

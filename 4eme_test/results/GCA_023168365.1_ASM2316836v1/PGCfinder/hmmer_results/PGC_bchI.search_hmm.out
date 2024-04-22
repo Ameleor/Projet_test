@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023168365.1_ASM2316836v1/GCA_023168365.1_ASM2316836v1_protein.faa
+# output directed to file:         results/GCA_023168365.1_ASM2316836v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00092   15.7   0.0     0.0019   14.7   0.0    1.5  1  GCA_023168365.1_ASM2316836v1_2576  BDH66391.1 hypothetical protein 
+  ------ inclusion threshold ------
+      0.011   12.2   0.0      0.022   11.2   0.0    1.5  2  GCA_023168365.1_ASM2316836v1_1     BDH63816.1 chromosomal replicati
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023168365.1_ASM2316836v1_2576  BDH66391.1 hypothetical protein MTP05_25760 [Enterococcus sp. PLM3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   1.4e-06    0.0019     120     234 ..     163     277 ..     157     293 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.4e-06
+               trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGe.nvvereglsvrhparfvlvGsGnPeeGelrPql 194
+                                        G  + + Glla+an   l++dev  l +   + l+    +G+   +  eg  v  + r+++  + nP    l P +
+  GCA_023168365.1_ASM2316836v1_2576 163 GAESEKQGLLAQANNSVLFLDEVHRLSNENQEKLFQFMDTGTfRPIGEEGKMVHSKVRLLFATTENPKKV-LLPTF 237
+                                        6667789*****************************999998357999*******************975.88*** PP
+
+               trimmed_msa_bchI_hmm 195 ldrfGlsvevrtpkd..leervevvrrrdaferdpeafvakw 234
+                                          r  + v +   k+  ++er+ ++++   f+r+++ +++++
+  GCA_023168365.1_ASM2316836v1_2576 238 YRRISVIVSLPNFKErpIRERIAILKN--LFHREAKRMTKDI 277
+                                        ***999888877665337888888875..4566655555554 PP
+
+>> GCA_023168365.1_ASM2316836v1_1  BDH63816.1 chromosomal replication initiator protein DnaA [Enterococcus sp. PLM3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.0      0.53   7.3e+02      18      78 ..     132     194 ..     116     213 .. 0.55
+   2 ?   11.2   0.0   1.6e-05     0.022     190     284 ..     257     357 ..     239     402 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.53
+            trimmed_msa_bchI_hmm  18 alllaavdp.si.gGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeck 78 
+                                     a l++a dp si   ++ +G  G Gk+  + a+   +   +  ++ +y ++++ ++e+ ++++
+  GCA_023168365.1_ASM2316836v1_1 132 AALVVAEDPgSIyNPLFFYGGVGLGKTHLMHAIGHQMLVNQPDAKVKYVSSETFTNEFINSIQ 194
+                                     445555555234134455677788887777777665544445555555555555555555544 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 1.6e-05
+            trimmed_msa_bchI_hmm 190 lrPqlldrf..Glsvevrtpkdleervevvrrrdafer.....dpeafvakwkkedakvrkkilaarkrlekvevpdav 261
+                                     l  +l+ rf  Glsv++ tp dle+r+ ++r++++ er     d+ +++a   +++ +  +  l   +++++++ +d +
+  GCA_023168365.1_ASM2316836v1_1 257 LPERLVSRFawGLSVDI-TPPDLETRIAILRKKADAERleipdDTLSYIAGQIDSNIRELEGALVRVQAFATINGEDIT 334
+                                     45568888866999998.7889**********99888633222333444433333322222233333445555555555 PP
+
+            trimmed_msa_bchI_hmm 262 lekaaklclalgtdGlrgeltll 284
+                                      + aa    +l + G + +l++l
+  GCA_023168365.1_ASM2316836v1_1 335 TSLAADALKSLKSVGSKNQLSIL 357
+                                     55555555555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2736  (857908 residues searched)
+Passed MSV filter:                       166  (0.0606725); expected 54.7 (0.02)
+Passed bias filter:                      119  (0.0434942); expected 54.7 (0.02)
+Passed Vit filter:                        20  (0.00730994); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000730994); expected 0.0 (1e-05)
+Initial search space (Z):               2736  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10861.32
+//
+[ok]

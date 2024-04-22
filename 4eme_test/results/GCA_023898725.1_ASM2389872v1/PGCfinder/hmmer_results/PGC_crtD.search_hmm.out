@@ -1,0 +1,123 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898725.1_ASM2389872v1/GCA_023898725.1_ASM2389872v1_protein.faa
+# output directed to file:         results/GCA_023898725.1_ASM2389872v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.6e-07   25.3   1.0    1.4e-05   19.5   0.2    2.2  2  GCA_023898725.1_ASM2389872v1_213  USO01637.1 MAG: dihydrolipoyl de
+    1.3e-05   19.7   1.7    8.8e-05   16.9   0.7    2.3  2  GCA_023898725.1_ASM2389872v1_470  USO01878.1 MAG: dihydrolipoyl de
+    3.6e-05   18.2   0.2     0.0035   11.6   0.1    2.2  2  GCA_023898725.1_ASM2389872v1_731  USO01199.1 MAG: NAD(P)/FAD-depen
+    0.00023   15.6   0.8      0.011   10.0   0.0    2.4  3  GCA_023898725.1_ASM2389872v1_314  USO01729.1 MAG: thioredoxin-disu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898725.1_ASM2389872v1_213  USO01637.1 MAG: dihydrolipoyl dehydrogenase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.2   5.7e-08   1.4e-05       3      39 ..       7      43 ..       5      53 .. 0.92
+   2 !    4.4   0.0    0.0023      0.56       3      41 ..     172     210 ..     170     245 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 5.7e-08
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaaapGGKl 39
+                                      + +iG G gG  aa++ a+ G++v++++k++a GG  
+  GCA_023898725.1_ASM2389872v1_213  7 IAIIGGGPGGYCAAIRAAQLGFRVVLIDKQQALGGTC 43
+                                      78*********************************75 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.0023
+              trimmed_msa_crtD_hmm   3 vvviGaGigGLaaalklaaaGldvtvlekaaapGGKlre 41 
+                                         +iG G  GL      a+ G +vt++e ++a+G  l +
+  GCA_023898725.1_ASM2389872v1_213 172 LAIIGGGYIGLELGSVWARLGSTVTIVEYSDAIGTTLDA 210
+                                       579******************************988754 PP
+
+>> GCA_023898725.1_ASM2389872v1_470  USO01878.1 MAG: dihydrolipoyl dehydrogenase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.7   3.6e-07   8.8e-05       2      35 ..       8      41 ..       7      47 .. 0.90
+   2 ?    1.0   0.0     0.024       5.9       3      33 ..     181     211 ..     179     214 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 3.6e-07
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaap 35
+                                      +v++iGaG gG + a++ a+ Gl+v ++e+++  
+  GCA_023898725.1_ASM2389872v1_470  8 DVIIIGAGPGGYVGAIRAAQLGLRVALIEAEELG 41
+                                      59***************************87644 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.024
+              trimmed_msa_crtD_hmm   3 vvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                        +viG+G  G+  a    + G++vtv+e ++
+  GCA_023898725.1_ASM2389872v1_470 181 LLVIGSGAIGIEFASFYNTFGTKVTVIEIQD 211
+                                       68*************************9776 PP
+
+>> GCA_023898725.1_ASM2389872v1_731  USO01199.1 MAG: NAD(P)/FAD-dependent oxidoreductase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.1   1.4e-05    0.0035       2      45 ..       5      48 ..       4      62 .. 0.89
+   2 !    4.7   0.0    0.0018      0.45     230     283 ..      68     120 ..      59     125 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevg 45
+                                      +vv+iG+G  GL a ++    G++ + +e+ + +GG+ r++  +
+  GCA_023898725.1_ASM2389872v1_731  5 DVVIIGTGPVGLFAIFECGMMGFQCHAVEALDGIGGQCRALYPE 48
+                                      79************************************998654 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.0018
+              trimmed_msa_crtD_hmm 230 alaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngDvaal 283
+                                        l+++a+     ++++++v+e+   e++   v++++g++i+a+av++++ v a+
+  GCA_023898725.1_ASM2389872v1_731  68 NLESQAAPFRPVYHLNQRVDELRNVEDE-WYVKTSKGTEIKAKAVIVAAGVGAF 120
+                                       5666666666778999999999877765.569****************999886 PP
+
+>> GCA_023898725.1_ASM2389872v1_314  USO01729.1 MAG: thioredoxin-disulfide reductase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.0   4.4e-05     0.011       2      40 ..       7      44 ..       6      72 .. 0.84
+   2 !    3.8   0.0    0.0035      0.85       2      34 ..     148     180 ..     147     189 .. 0.92
+   3 ?   -4.0   0.0      0.81     2e+02      51      68 ..     273     290 ..     268     297 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 4.4e-05
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlr 40
+                                      +v++iG+G +G +aa+  a+a ld  +++   +pGG+l 
+  GCA_023898725.1_ASM2389872v1_314  7 KVLIIGSGPAGYTAAIYAARAALDPILVQ-GMEPGGQLT 44
+                                      89**********************88775.678999875 PP
+
+  == domain 2  score: 3.8 bits;  conditional E-value: 0.0035
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                       +v viG G + +  al l+++  +vt++ ++++
+  GCA_023898725.1_ASM2389872v1_314 148 HVAVIGGGNTAVEEALYLTNHAAKVTLIHRRDT 180
+                                       799*************************99875 PP
+
+  == domain 3  score: -4.0 bits;  conditional E-value: 0.81
+              trimmed_msa_crtD_hmm  51 aGPtvltmrwvfeelfae 68 
+                                       a P v++  +v +++f++
+  GCA_023898725.1_ASM2389872v1_314 273 AIPGVFAAGDVQDKVFRQ 290
+                                       335555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        985  (330416 residues searched)
+Passed MSV filter:                        41  (0.0416244); expected 19.7 (0.02)
+Passed bias filter:                       30  (0.0304569); expected 19.7 (0.02)
+Passed Vit filter:                        12  (0.0121827); expected 1.0 (0.001)
+Passed Fwd filter:                         4  (0.00406091); expected 0.0 (1e-05)
+Initial search space (Z):                985  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8329.31
+//
+[ok]

@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186155.1_Blautia_sp._canine_HQ_MAG/GCA_905186155.1_Blautia_sp._canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186155.1_Blautia_sp._canine_HQ_MAG/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                       -----------
+    0.00056   16.2   0.0       0.39    6.9   0.0    3.3  2  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1561  PIBPOK_08050 Competence protein 
+     0.0035   13.6   0.0       0.44    6.7   0.0    2.3  2  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1878  PIBPOK_09715 Energy-coupling fac
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1561  PIBPOK_08050 Competence protein ComM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.3   0.0     0.002       2.3       6      61 ..     191     244 ..     186     251 .. 0.87
+   2 !    6.9   0.0   0.00034      0.39     115     192 ..     278     355 ..     277     501 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.002
+                            trimmed_msa_bchI_hmm   6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgc 61 
+                                                     f  i gq+  k+   +aa       +l++G  G+Gk+  +r + +++P+++  +g 
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1561 191 FKEIQGQEGAKRVAEIAAA--GFHNILLIGPPGAGKTMLARRIPTIMPDLTEEEGM 244
+                                                     7889999999999999985..6789************************9887765 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.00034
+                            trimmed_msa_bchI_hmm 115 raltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparf 177
+                                                     +alt G ++  pG ++ ++rG l++de   +    ++ l    +  e v+ r + +   p+ f
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1561 278 QALTGGGRNPGPGEITLSHRGILFLDEFPEFSRVALETLRQPLEDREIVLSRASGTXSFPTNF 340
+                                                     69999999999****************999999999999999999999999999999999999 PP
+
+                            trimmed_msa_bchI_hmm 178 vlvGsGnPeeGelrP 192
+                                                     +lv + nP      P
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1561 341 MLVATMNPCPCGYYP 355
+                                                     999999996655555 PP
+
+>> GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1878  PIBPOK_09715 Energy-coupling factor transporter ATP-binding protein E
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.7   0.0   0.00038      0.44      31      54 ..      42      65 ..      23      93 .. 0.84
+   2 !    4.4   0.0     0.002       2.3      33      54 ..     317     338 ..     303     356 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.00038
+                            trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPk 54
+                                                    v vlG  G+Gkst ++ l all +
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1878 42 VAVLGHNGSGKSTLAKHLNALLLP 65
+                                                    789***************998744 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.002
+                            trimmed_msa_bchI_hmm  33 vlGdrGtGkstavralaallPk 54 
+                                                     v+G  G+Gkst ++ l al+ +
+  GCA_905186155.1_Blautia_sp._canine_HQ_MAG_1878 317 VIGHTGSGKSTLIQHLNALIQP 338
+                                                     79****************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2315  (721190 residues searched)
+Passed MSV filter:                       139  (0.0600432); expected 46.3 (0.02)
+Passed bias filter:                      103  (0.0444924); expected 46.3 (0.02)
+Passed Vit filter:                        13  (0.00561555); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000863931); expected 0.0 (1e-05)
+Initial search space (Z):               2315  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8662.16
+//
+[ok]

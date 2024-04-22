@@ -1,0 +1,117 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_020892835.1_ASM2089283v1/GCA_020892835.1_ASM2089283v1_protein.faa
+# output directed to file:         results/GCA_020892835.1_ASM2089283v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0025   13.9   0.6       0.55    6.2   0.1    2.2  2  GCA_020892835.1_ASM2089283v1_957   AGGLEA_04895 NADH dehydrogenase,
+     0.0072   12.4   1.9     0.0076   12.3   1.0    1.4  2  GCA_020892835.1_ASM2089283v1_283   AGGLEA_01460 NADPH-dependent glu
+  ------ inclusion threshold ------
+      0.011   11.8   0.3      0.086    8.8   0.0    2.1  2  GCA_020892835.1_ASM2089283v1_43    AGGLEA_00215 tRNA uridine 5-carb
+      0.054    9.5   1.8      0.048    9.7   0.2    1.6  2  GCA_020892835.1_ASM2089283v1_1669  AGGLEA_08595 dihydrolipoyl dehyd
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020892835.1_ASM2089283v1_957  AGGLEA_04895 NADH dehydrogenase, FAD-containing subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.1   0.1   0.00074      0.58       2      53 ..       3      57 ..       2      84 .. 0.77
+   2 !    6.2   0.1   0.00071      0.55     223     275 ..     237     284 ..     234     312 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.00074
+              trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgak...GyrvtvlekldapGGrayvhrkdgftfDaG 53
+                                      k+ v++G G GGl +a  lg k     +vt++++  +   +   h+  + t D G
+  GCA_020892835.1_ASM2089283v1_957  3 KNIVIVGGGAGGLELATSLGNKlgkQAKVTLIDRNATHLWKPLLHEVATGTLDVG 57
+                                      6789***************986422568999999877666665555555555555 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.00071
+              trimmed_msa_crtI_hmm 223 lvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnad 275
+                                       + +++ + +e+ G++++ln+ +      +++a+g+ ++sGe+i+ad++v  a 
+  GCA_020892835.1_ASM2089283v1_957 237 VSNAVYEELEQLGVKIKLNTMI-----VEATAQGLVTKSGEVIAADLMVWAAG 284
+                                       5567778888999999988765.....46789***************997765 PP
+
+>> GCA_020892835.1_ASM2089283v1_283  AGGLEA_01460 NADPH-dependent glutamate synthase beta chain or related oxidoreductas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   1.0   9.7e-06    0.0076       2      38 ..     148     184 ..     147     190 .. 0.94
+   2 ?   -3.4   0.0      0.54   4.2e+02       4      55 ..     288     347 ..     286     354 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 9.7e-06
+              trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGG 38 
+                                       k++ v+G+G  Gl  a  l  +G+ vtv e+++++GG
+  GCA_020892835.1_ASM2089283v1_283 148 KRVAVVGSGTAGLGCADLLIRNGVDVTVYERQQEIGG 184
+                                       5788********************************9 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.54
+              trimmed_msa_crtI_hmm   4 avviGaG...fGGlaaairlgakGyr.vtvlekldapGGrayvhr.kd...gftfDaGPt 55 
+                                       +vv+G G   +  + +a+r +a+ +  v   ++ ++pG r  + + k+   +f+f+a P 
+  GCA_020892835.1_ASM2089283v1_283 288 VVVLGGGdtaMDCVRTAVRQNANAVTcVYRRDAANMPGSRKEYTNaKEegaAFQFNAQPV 347
+                                       677777622233445677776665441233456667888875543122333577777775 PP
+
+>> GCA_020892835.1_ASM2089283v1_43  AGGLEA_00215 tRNA uridine 5-carboxymethylaminomethyl modification protein MnmG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.1     0.024        19       4      32 ..       9      37 ..       6      48 .. 0.82
+   2 ?    8.8   0.0   0.00011     0.086     239     274 ..     120     155 ..      65     164 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.024
+             trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlek 32
+                                     ++viG G  G  aa+  +  G+++ +l +
+  GCA_020892835.1_ASM2089283v1_43  9 VIVIGGGHAGTEAALAPARMGLKTLLLTH 37
+                                     79********************9988764 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.00011
+             trimmed_msa_crtI_hmm 239 rlnaeveeievedgratgvrlasGeeieadvvvsna 274
+                                       +++ev++i++e++r+tgv+++ G +++a+ v+  a
+  GCA_020892835.1_ASM2089283v1_43 120 IFQQEVTDILLEQDRVTGVETKMGLKFRAKSVILTA 155
+                                      5689*************************9998766 PP
+
+>> GCA_020892835.1_ASM2089283v1_1669  AGGLEA_08595 dihydrolipoyl dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.2   6.1e-05     0.048       2      39 ..       7      44 ..       6      48 .. 0.93
+   2 ?   -2.1   0.1      0.22   1.7e+02       4      35 ..     178     209 ..     176     214 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 6.1e-05
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                       +++vv+GaG  G +aa r +  G+ + ++e+  ++GG 
+  GCA_020892835.1_ASM2089283v1_1669  7 TQVVVLGAGPAGYSAAFRCADLGLDMVIVERYSTLGGV 44
+                                       5789********************************95 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.22
+               trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                         +++G G+ Gl +    +a G ++ v+e  d+
+  GCA_020892835.1_ASM2089283v1_1669 178 LLIMGGGIIGLEMGTVYHALGSNIDVVEMFDQ 209
+                                        5799************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       3134  (800785 residues searched)
+Passed MSV filter:                       137  (0.0437141); expected 62.7 (0.02)
+Passed bias filter:                      126  (0.0402042); expected 62.7 (0.02)
+Passed Vit filter:                        18  (0.00574346); expected 3.1 (0.001)
+Passed Fwd filter:                         4  (0.00127632); expected 0.0 (1e-05)
+Initial search space (Z):               3134  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 14601.79
+//
+[ok]

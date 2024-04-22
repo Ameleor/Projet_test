@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019134715.1_ASM1913471v1/GCA_019134715.1_ASM1913471v1_protein.faa
+# output directed to file:         results/GCA_019134715.1_ASM1913471v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.7e-09   32.3   0.0      1e-05   21.3   0.0    2.2  2  GCA_019134715.1_ASM1913471v1_301  QXF37237.1 MoxR family ATPase [F
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019134715.1_ASM1913471v1_301  QXF37237.1 MoxR family ATPase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.0   4.2e-05     0.061       7      50 ..      16      57 ..      11      66 .. 0.87
+   2 !   21.3   0.0   6.8e-09     1e-05     177     316 ..     140     291 ..     100     313 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 4.2e-05
+              trimmed_msa_bchI_hmm  7 saivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                        +vgq+++++ ll+a +    g +lv G  G  k+ta+++l++
+  GCA_019134715.1_ASM1913471v1_301 16 NRVVGQENLNKRLLIALLAG--GHLLVEGAPGLAKTTAIKTLSE 57
+                                      569************99854..678999*************986 PP
+
+  == domain 2  score: 21.3 bits;  conditional E-value: 6.8e-09
+              trimmed_msa_bchI_hmm 177 fvlvGsGnPeeGe....lrPqlldrfGlsvevrtpk.dleervevvrrrdaferdpea...fvak.wkkedakvrkk 244
+                                       f+++ + nP e e    l    ldrf l v+++ p+ + e ++  + r +a  ++ +    + ++ +k++++ ++ +
+  GCA_019134715.1_ASM1913471v1_301 140 FMVMATQNPIEQEgtypLPEAQLDRFMLFVKIEYPDpKTEAKILAISRGEALGHKLKHtniHQETiFKAQKEVLNIQ 216
+                                       77777888866553233444579**********99845788999999999987654431112233134445555667 PP
+
+              trimmed_msa_bchI_hmm 245 ilaarkr..lekvev.pd.avlekaaklclalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                       +++a ++  +e + +  d +  ++  k  +a g+   rg ++l raara a l+g++ v+ +++++v   +lrhr+
+  GCA_019134715.1_ASM1913471v1_301 217 VSQALEQyiIELILAtRDpTKYNQNIKKWIAFGSS-PRGTIALDRAARAHAWLSGNDYVSPSDVHAVIYEVLRHRI 291
+                                       77765432133333302313455556667777775.6**************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1472  (430841 residues searched)
+Passed MSV filter:                        58  (0.0394022); expected 29.4 (0.02)
+Passed bias filter:                       47  (0.0319293); expected 29.4 (0.02)
+Passed Vit filter:                         7  (0.00475543); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000679348); expected 0.0 (1e-05)
+Initial search space (Z):               1472  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14426.92
+//
+[ok]

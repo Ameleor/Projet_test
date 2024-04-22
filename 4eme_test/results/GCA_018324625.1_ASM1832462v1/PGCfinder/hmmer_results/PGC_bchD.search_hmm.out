@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018324625.1_ASM1832462v1/GCA_018324625.1_ASM1832462v1_protein.faa
+# output directed to file:         results/GCA_018324625.1_ASM1832462v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      3e-09   34.0   0.0    4.2e-09   33.5   0.0    1.1  1  GCA_018324625.1_ASM1832462v1_622   BCE13267.1 hypothetical protein 
+  ------ inclusion threshold ------
+      0.028   11.0   0.0       0.11    9.1   0.0    1.7  2  GCA_018324625.1_ASM1832462v1_4091  BCE16736.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018324625.1_ASM1832462v1_622  BCE13267.1 hypothetical protein RSC3_00623 [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.5   0.0   1.8e-12   4.2e-09      88     260 ..     105     299 ..     100     314 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 33.5 bits;  conditional E-value: 1.8e-12
+              trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldeia 162
+                                       ++++    R+++++ + l +a++eg  ++  dg+++ l++ f ++a  + +e + +  lpea ldR  ++l++   +
+  GCA_018324625.1_ASM1832462v1_622 105 IILADEINRTSPKTQSALLEAMEEG--SVTVDGVTMPLSKPFFVMATQNPVEYEGTypLPEAQLDRFLFKLRMGYPT 179
+                                       56666678*****************..5899******************99776542279***********998877 PP
+
+              trimmed_msa_bchD_hmm 163 lrdleelaa...............eaedieaararlpkvtleeealealvataaalGidsl.......Rapllalra 217
+                                       +r+  ++                 e+e+++a +++ +kv ++++  e +v++a+++  +s+       R ++  ++a
+  GCA_018324625.1_ASM1832462v1_622 180 VREELQVLDlqenrspieevepviEKEELAAFQKEAEKVYVDAAIKEYIVEIAQKTRSHSAvylgvspRGSIALMKA 256
+                                       77433333346666688888889999***************************999887644444444********* PP
+
+              trimmed_msa_bchD_hmm 218 aralAalegrteveeedlalAarlvlapratrlpeeeeeeaee 260
+                                       a+a A l +r+ v  +d++  a ++la+r +  +e++ e +++
+  GCA_018324625.1_ASM1832462v1_622 257 AQAFAFLYNRDYVIPDDIQYLAPFTLAHRMILRSEAKFEGKRP 299
+                                       *****************************99988887776544 PP
+
+>> GCA_018324625.1_ASM1832462v1_4091  BCE16736.1 hypothetical protein RSC3_04092 [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   0.0     0.043     1e+02     402     413 ..      40      50 ..      22      78 .. 0.72
+   2 ?    9.1   0.0   4.5e-05      0.11     464     506 ..     118     159 ..     114     165 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.043
+               trimmed_msa_bchD_hmm 402 tifvVDASGSaA 413
+                                        + +++DASGS A
+  GCA_018324625.1_ASM1832462v1_4091  40 A-IMLDASGSMA 50 
+                                        3.3567888777 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 4.5e-05
+               trimmed_msa_bchD_hmm 464 aLagLpGGGgTPLAagleaalelaeaarrrGrtpllvlLtDGr 506
+                                        +L g+   G TP+A++l+ a +  ++ + +G+  ++ lLtDG 
+  GCA_018324625.1_ASM1832462v1_4091 118 SLNGIGPTGWTPIANALQDAKNALDQQNNNGKN-VVYLLTDGE 159
+                                        6777777899************99999999986.7899***95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4674  (1252447 residues searched)
+Passed MSV filter:                       187  (0.0400086); expected 93.5 (0.02)
+Passed bias filter:                      126  (0.0269576); expected 93.5 (0.02)
+Passed Vit filter:                        17  (0.00363714); expected 4.7 (0.001)
+Passed Fwd filter:                         4  (0.000855798); expected 0.0 (1e-05)
+Initial search space (Z):               4674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 9765.28
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_016600905.1_ASM1660090v1/GCA_016600905.1_ASM1660090v1_protein.faa
+# output directed to file:         results/GCA_016600905.1_ASM1660090v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00013   18.9   0.2    0.00013   18.8   0.2    1.0  1  GCA_016600905.1_ASM1660090v1_3517  JBPAHO_17820 hypothetical protei
+    0.00089   16.1   0.1     0.0013   15.6   0.1    1.2  1  GCA_016600905.1_ASM1660090v1_1285  JBPAHO_06530 hypothetical protei
+  ------ inclusion threshold ------
+      0.021   11.6   0.1      0.021   11.6   0.1    1.0  1  GCA_016600905.1_ASM1660090v1_1898  JBPAHO_09600 Thioredoxin reducta
+      0.037   10.8   0.0      0.042   10.6   0.0    1.1  1  GCA_016600905.1_ASM1660090v1_1310  JBPAHO_06655 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016600905.1_ASM1660090v1_3517  JBPAHO_17820 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.2   1.3e-07   0.00013       2      28 ..       1      27 [.       1      31 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.3e-07
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkv 28
+                                       +fdv+v+GGG aG  a+   ar+Gk++
+  GCA_016600905.1_ASM1660090v1_3517  1 MFDVIVIGGGHAGVEASAAAARMGKNL 27
+                                       69**********************986 PP
+
+>> GCA_016600905.1_ASM1660090v1_1285  JBPAHO_06530 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.1   1.2e-06    0.0013       4      32 ..      72     100 ..      69     112 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 1.2e-06
+               trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllld 32 
+                                        d++v+GGG aG  aa ++a++G++v ll 
+  GCA_016600905.1_ASM1660090v1_1285  72 DALVIGGGLAGLRAAIEVAKSGQSVTLLS 100
+                                        99************************995 PP
+
+>> GCA_016600905.1_ASM1660090v1_1898  JBPAHO_09600 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1     2e-05     0.021       3      33 ..       2      33 ..       1      50 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2e-05
+               trimmed_msa_bchP_hmm  3 fdvvvvGGGPaGataaedlarkG.kkvllldr 33
+                                        dv ++GGGPaG  a    +r G k+v+++++
+  GCA_016600905.1_ASM1660090v1_1898  2 LDVAIIGGGPAGLSAGLYATRGGlKNVVMFEK 33
+                                       69***********9999999999345666655 PP
+
+>> GCA_016600905.1_ASM1660090v1_1310  JBPAHO_06655 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0     4e-05     0.042       2      34 ..       5      39 ..       4      44 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 4e-05
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkG..kkvllldra 34
+                                        fdv+v+G G +Ga+   +lar    k+++l+++ 
+  GCA_016600905.1_ASM1660090v1_1310  5 EFDVLVIGAGISGAALFYELARYTniKNIALIEKY 39
+                                       79*******************96522678888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       4247  (300098 residues searched)
+Passed MSV filter:                        75  (0.0176595); expected 84.9 (0.02)
+Passed bias filter:                       71  (0.0167177); expected 84.9 (0.02)
+Passed Vit filter:                         8  (0.00188368); expected 4.2 (0.001)
+Passed Fwd filter:                         4  (0.000941841); expected 0.0 (1e-05)
+Initial search space (Z):               4247  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9805.65
+//
+[ok]

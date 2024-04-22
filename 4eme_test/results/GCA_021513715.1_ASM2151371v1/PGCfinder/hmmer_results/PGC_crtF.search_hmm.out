@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_021513715.1_ASM2151371v1/GCA_021513715.1_ASM2151371v1_protein.faa
+# output directed to file:         results/GCA_021513715.1_ASM2151371v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.023   10.9   0.1       0.12    8.6   0.1    2.0  2  GCA_021513715.1_ASM2151371v1_1656  UJG42407.1 MAG: class I SAM-depe
+      0.031   10.5   0.0       0.12    8.6   0.0    1.9  1  GCA_021513715.1_ASM2151371v1_345   UJG43915.1 MAG: class I SAM-depe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021513715.1_ASM2151371v1_1656  UJG42407.1 MAG: class I SAM-dependent methyltransferase [Candidatus Heimdallarchae
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.1   8.3e-05      0.12     187     300 ..      39     148 ..      36     152 .. 0.64
+   2 ?   -1.1   0.0      0.07     1e+02     332     348 ..     205     221 ..     202     224 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 8.3e-05
+               trimmed_msa_crtF_hmm 187 evldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplP. 261
+                                        ++ + +dl+r + + D+GGG+G  l   ++   k ++ l Dl        + le++ ls + + +  ++   +lP 
+  GCA_021513715.1_ASM2151371v1_1656  39 KIFNLIDLSRIQLICDIGGGNGRNLILFQE--FKKQFILCDLSF------KLLEKSVLSPNSANHLVNLEMTSLPf 106
+                                        678899****************98866554..455677778753......23334444444444444444445553 PP
+
+               trimmed_msa_crtF_hmm 262 ..egaDlisLvRvlhDHdDeav..lkllrkvraaLppggrLli 300
+                                          + +Dl+ L+  +h H D++v   + ++++++ L+++g L++
+  GCA_021513715.1_ASM2151371v1_1656 107 reKSYDLVLLIAAVH-HLDNRVdvISTFTEIKKILDENGFLIL 148
+                                        334678888887777.555554114557788888888888877 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.07
+               trimmed_msa_crtF_hmm 332 saeeirallaeaGFakv 348
+                                        s +e+ +l+++aGF+ v
+  GCA_021513715.1_ASM2151371v1_1656 205 SRRELIKLIKKAGFKIV 221
+                                        56899*********976 PP
+
+>> GCA_021513715.1_ASM2151371v1_345  UJG43915.1 MAG: class I SAM-dependent methyltransferase [Candidatus Heimdallarchaeu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0   8.2e-05      0.12     193     220 ..      34      61 ..      26     189 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 8.2e-05
+              trimmed_msa_crtF_hmm 193 dlkrhrrllDvGGGeGaFlaavaarapk 220
+                                       dl ++  llD+GGG+G   + +++++ +
+  GCA_021513715.1_ASM2151371v1_345  34 DLYKEDILLDIGGGTGRASKVLEKEVNQ 61 
+                                       788999**********977777666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2842  (974208 residues searched)
+Passed MSV filter:                        81  (0.0285011); expected 56.8 (0.02)
+Passed bias filter:                       78  (0.0274455); expected 56.8 (0.02)
+Passed Vit filter:                        14  (0.00492611); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.00070373); expected 0.0 (1e-05)
+Initial search space (Z):               2842  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11533.08
+//
+[ok]

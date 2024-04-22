@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700015.1_ASM1670001v1/GCA_016700015.1_ASM1670001v1_protein.faa
+# output directed to file:         results/GCA_016700015.1_ASM1670001v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.6e-21   71.9   0.4    8.2e-13   44.1   0.0    2.1  2  GCA_016700015.1_ASM1670001v1_538  QQS21441.1 alpha/beta hydrolase 
+    0.00089   14.4   0.0      0.094    7.8   0.0    2.4  2  GCA_016700015.1_ASM1670001v1_74   QQS22005.1 alpha/beta hydrolase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700015.1_ASM1670001v1_538  QQS21441.1 alpha/beta hydrolase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.0   1.6e-15   8.2e-13      27     122 ..      15     110 ..       3     128 .. 0.88
+   2 !   26.1   0.0   4.5e-10   2.4e-07     227     279 .]     223     275 ..     215     275 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 44.1 bits;  conditional E-value: 1.6e-15
+              trimmed_msa_bchO_hmm  27 hvqelgegPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgve.p 102
+                                       ++ +  +  ++ ++HG  +    ++ ++plL  +fr+i++DLPg g ++ + +e+ +++++a+  ++ +++l+++ p
+  GCA_016700015.1_ASM1670001v1_538  15 WIHHPAATKTIVMIHGFTGNHKGFQYIVPLLP-DFRCIVLDLPGFGESSLPDRENWTIDAIARLANDFVHSLDLKeP 90 
+                                       555555667899*****99**********996.79***************************************98* PP
+
+              trimmed_msa_bchO_hmm 103 avvvGHSAGaaialrlaldg 122
+                                         + GHS G+ ++ ++  + 
+  GCA_016700015.1_ASM1670001v1_538  91 PYIFGHSMGGLVVSSMLHQA 110
+                                       **********9999997665 PP
+
+  == domain 2  score: 26.1 bits;  conditional E-value: 4.5e-10
+              trimmed_msa_bchO_hmm 227 tplllivgekDravppkearevaallpkarlveleglGHLahEeapeevaeli 279
+                                        +lll++g++D++ p+ke ++ +a ++   ++ ++g+GHLah e+p++va+ i
+  GCA_016700015.1_ASM1670001v1_538 223 RELLLVLGADDNVAPLKEQEKFIAAIKPLVVEIIPGVGHLAHYEQPARVAHAI 275
+                                       5799**********************************************987 PP
+
+>> GCA_016700015.1_ASM1670001v1_74  QQS22005.1 alpha/beta hydrolase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.0   0.00018     0.094      99     126 ..      61      88 ..       5     106 .. 0.84
+   2 !    4.4   0.0    0.0019      0.96     223     267 ..     129     172 ..     117     184 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00018
+             trimmed_msa_bchO_hmm  99 gvepavvvGHSAGaaialrlaldgkiap 126
+                                      +++ ++v+ HS Ga+ al+l  ++ +++
+  GCA_016700015.1_ASM1670001v1_74  61 DFADNIVISHSSGATTALHLLQQDWFPH 88 
+                                      456789*************998875544 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.0019
+             trimmed_msa_bchO_hmm 223 pklktplllivgekDravppkearevaallpkarlveleglGHLa 267
+                                      +  +t  ++++g++D      ea +++++l   ++++l+g GH+ 
+  GCA_016700015.1_ASM1670001v1_74 129 KARSTSFYFVHGDDDPYCDYGEAGQLCKRL-GGEFITLHGAGHIG 172
+                                      445678899*******************97.689*********85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1041  (301958 residues searched)
+Passed MSV filter:                        36  (0.0345821); expected 20.8 (0.02)
+Passed bias filter:                       24  (0.0230548); expected 20.8 (0.02)
+Passed Vit filter:                         4  (0.00384246); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00192123); expected 0.0 (1e-05)
+Initial search space (Z):               1041  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 8372.64
+//
+[ok]

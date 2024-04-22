@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023612615.1_ASM2361261v1/GCA_023612615.1_ASM2361261v1_protein.faa
+# output directed to file:         results/GCA_023612615.1_ASM2361261v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.1e-14   52.0   0.8    4.7e-09   33.5   0.5    3.1  2  GCA_023612615.1_ASM2361261v1_59  URM14272.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023612615.1_ASM2361261v1_59  URM14272.1 YifB family Mg chelatase-like AAA ATPase [Vibrio splendidus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.0   6.5e-07    0.0022       8      72 ..     193     255 ..     188     280 .. 0.79
+   2 !   33.5   0.5   1.4e-12   4.7e-09     116     308 ..     278     490 ..     274     504 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 6.5e-07
+             trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeae 72 
+                                       i+gq++ k+al +aa  ++   +l lG  GtGk+  +  l +llP+++  ++ ++ +  + +++
+  GCA_023612615.1_ASM2361261v1_59 193 DIIGQQQGKRALEIAAAGNH--NLLFLGPPGTGKTMLASRLRDLLPEMSDDEAMETASVASLTQQ 255
+                                      69*************98775..79************************98777666655544443 PP
+
+  == domain 2  score: 33.5 bits;  conditional E-value: 1.4e-12
+             trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe.....eG 188
+                                      al+ G     pG ++ a+ G l++de+  +e +++d l +  +sGe ++ r +   r parf lvG+ nP      eG
+  GCA_023612615.1_ASM2361261v1_59 278 ALVGGGSIPRPGEISLAHNGLLFLDEMPEFERKVLDSLREPLESGEIIISRVAGKTRFPARFQLVGALNPSptgyyEG 355
+                                      6677777778***********************************************************964444466 PP
+
+             trimmed_msa_bchI_hmm 189 e...lrPqlldrf..Glsvevrtpkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdav 261
+                                      +     Pq++ r+   ls  +    d++  + ++ +    e   ++ ++++ k+  k  ++++ +r++ ++     + 
+  GCA_023612615.1_ASM2361261v1_59 356 NqarANPQIILRYlnRLSGPLLDRFDMSLEIPLLPKGMLAEGGDRGETTQVVKQRVKQARQLMLSRNHKSNALLGSRE 433
+                                      522246999999844578888888888888888888877777777777777666666666666666665555444444 PP
+
+             trimmed_msa_bchI_hmm 262 lek........aaklclalgtdGl..rgeltllraaralaalegakevtkehlkkva 308
+                                      +ek        a  l +al   Gl  r+   +++ ar++a leg+++++k+hl +  
+  GCA_023612615.1_ASM2361261v1_59 434 IEKycplrredAEFLETALHRLGLsiRAYHRIIKVARTIADLEGNEQIEKKHLSEAL 490
+                                      4330000001144456677777754499999*********************98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3448  (1002590 residues searched)
+Passed MSV filter:                       180  (0.0522042); expected 69.0 (0.02)
+Passed bias filter:                      138  (0.0400232); expected 69.0 (0.02)
+Passed Vit filter:                        34  (0.00986079); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000290023); expected 0.0 (1e-05)
+Initial search space (Z):               3448  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6435.93
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_021582295.1_ASM2158229v1/GCA_021582295.1_ASM2158229v1_protein.faa
+# output directed to file:         results/GCA_021582295.1_ASM2158229v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.6e-05   20.6   3.1    3.5e-05   20.2   3.1    1.2  1  GCA_021582295.1_ASM2158229v1_1534  ILIDBA_07840 4-hydroxybenzoate o
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021582295.1_ASM2158229v1_1534  ILIDBA_07840 4-hydroxybenzoate octaprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2   3.1   1.9e-08   3.5e-05      47     247 ..      48     244 ..      13     278 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 1.9e-08
+               trimmed_msa_bchG_hmm  47 llaGPlvcatsqavndWfdrhvdaineP..erpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvl 120
+                                        ++aG      + a n  +d + d+ n    +rp   Gr++       +++   + +++a  +  l+f+ a+  l++
+  GCA_021582295.1_ASM2158229v1_1534  48 IVAGISARNFAMAFNRLVDIDHDSKNARtlNRPSVDGRLSKLQISIFTFLNGFIFIIIAKYINDLAFILAIPMLIV 123
+                                        34666666666777888888888877642267777788886655556677788999****************9999 PP
+
+               trimmed_msa_bchG_hmm 121 aWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlll.allysigahGimtlndfkaveGdrk 195
+                                           ys     +k+  ++   + g+s  ++a ++g   + +++P +++ll   +++ ++  G   l  ++ +e d+k
+  GCA_021582295.1_ASM2158229v1_1534 124 IASYSY----FKRFSYFAHIVLGISL-SFAPIAGVVAIENMIPFWTILLSfGVMFWVA--GFDLLYSLQDLEFDKK 192
+                                        999995....9*************97.577799999999******9987514555554..55567788889***** PP
+
+               trimmed_msa_bchG_hmm 196 lgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavllvv 247
+                                         g++s+p+k+G++r+ ++++++  ++ ++  a +++ +  l a ++ ++ ++
+  GCA_021582295.1_ASM2158229v1_1534 193 CGLHSIPAKFGKNRTLKISAVFHLLTIIFWTASIFYANLGLIAKTIPIISAL 244
+                                        *******************999999888888888888877777776655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       1807  (510108 residues searched)
+Passed MSV filter:                        22  (0.0121749); expected 36.1 (0.02)
+Passed bias filter:                       10  (0.00553403); expected 36.1 (0.02)
+Passed Vit filter:                         1  (0.000553403); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000553403); expected 0.0 (1e-05)
+Initial search space (Z):               1807  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16494.74
+//
+[ok]

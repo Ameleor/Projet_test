@@ -1,0 +1,130 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635605.1_31354_C01/GCA_900635605.1_31354_C01_protein.faa
+# output directed to file:         results/GCA_900635605.1_31354_C01/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.2e-06   26.0   0.0     0.0023   15.2   0.0    2.4  2  GCA_900635605.1_31354_C01_2118  VEA35736.1 Scaffold protein for 
+    1.9e-06   25.3   0.1      5e-06   23.9   0.0    1.7  2  GCA_900635605.1_31354_C01_2163  VEA35871.1 tyrosine kinase [Salm
+     0.0017   15.6   0.3     0.0033   14.6   0.2    1.5  2  GCA_900635605.1_31354_C01_3254  VEA39031.1 septum site determini
+     0.0038   14.4   0.3       0.07   10.3   0.0    2.4  2  GCA_900635605.1_31354_C01_355   VEA30536.1 cell division protein
+  ------ inclusion threshold ------
+       0.07   10.3   0.0       0.11    9.7   0.0    1.3  1  GCA_900635605.1_31354_C01_5377  VEA43946.1 rhamnulokinase [Salmo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635605.1_31354_C01_2118  VEA35736.1 Scaffold protein for [4Fe-4S] cluster assembly ApbC MRP-like protein [Salm
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.0     2e-06    0.0023      23      59 ..       3      40 ..       1      59 [. 0.84
+   2 !    8.3   0.0   0.00025      0.29     210     266 ..     189     247 ..     185     255 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 2e-06
+            trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59
+                                    +iia+  gkgg+gks t  nl+  la +g kv ++  d
+  GCA_900635605.1_31354_C01_2118  3 NIIAVsSGKGGVGKSSTAVNLALALAAEGAKVGVLDAD 40
+                                    57887359************************988777 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.00025
+            trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                     gtg aq +ae+    +l  +p +  +r      +  ++++pese+++++ ela +va+ 
+  GCA_900635605.1_31354_C01_2118 189 GTGGAQKLAEKYYTQLLGQMPLHISLREDldRGTPTVVSRPESEFTAIYRELADRVAAQ 247
+                                     89********************99999862245678*******************9975 PP
+
+>> GCA_900635605.1_31354_C01_2163  VEA35871.1 tyrosine kinase [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0      0.61   6.9e+02     219     244 ..      96     121 ..      81     134 .. 0.71
+   2 !   23.9   0.0   4.5e-09     5e-06      19      74 ..     159     215 ..     141     231 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.61
+            trimmed_msa_bchX_hmm 219 eavgipvlaaipadedirrksanyei 244
+                                     e+ gi v a+ip  e  + + +   i
+  GCA_900635605.1_31354_C01_2163  96 EEHGISVYASIPLSEWQKARDSVKTI 121
+                                     67799999999988866555555455 PP
+
+  == domain 2  score: 23.9 bits;  conditional E-value: 4.5e-09
+            trimmed_msa_bchX_hmm  19 tketqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74 
+                                     + + +++ + g    igk+f  anl+ +++q  k+vlli cd +   t  l+g +++
+  GCA_900635605.1_31354_C01_2163 159 QAQNNVLMLTGVSpSIGKTFVCANLAAVISQTHKRVLLIDCDMRKGYTHELLGTNNV 215
+                                     5555666666643279***************************99999999998766 PP
+
+>> GCA_900635605.1_31354_C01_3254  VEA39031.1 septum site determining protein [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   2.9e-06    0.0033      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?   -3.5   0.0         1   1.1e+03     223     243 ..     205     225 ..     196     254 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2.9e-06
+            trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                    i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCA_900635605.1_31354_C01_3254  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                    55668***************************9988655 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 1
+            trimmed_msa_bchX_hmm 223 ipvlaaipadedirrksanye 243
+                                     i ++  ip+d+ + r s + e
+  GCA_900635605.1_31354_C01_3254 205 IKLVGVIPEDQSVLRASNQGE 225
+                                     566667777777766665543 PP
+
+>> GCA_900635605.1_31354_C01_355  VEA30536.1 cell division protein FtsY [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   6.2e-05      0.07      20      60 ..     270     310 ..     251     340 .. 0.82
+   2 ?    1.5   0.1     0.029        32     187     225 ..     406     447 ..     398     456 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 6.2e-05
+           trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                    k+  +i + g  g+gk+ t+ +l+  + qqgk v+l   d 
+  GCA_900635605.1_31354_C01_355 270 KTPFVILMVGVNGVGKTTTIGKLARQFEQQGKSVMLAAGDT 310
+                                    555689999***************************98875 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.029
+           trimmed_msa_bchX_hmm 187 aveyfrklggnvgvaglvinkddgtgea...qafaeavgipv 225
+                                    av   + +   vg++g+ + k dgt +     + a++ gip+
+  GCA_900635605.1_31354_C01_355 406 AVSQAKLFHEAVGLTGITLTKLDGTAKGgviFSVADQFGIPI 447
+                                    55666666778*************966511156789999998 PP
+
+>> GCA_900635605.1_31354_C01_5377  VEA43946.1 rhamnulokinase [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   9.4e-05      0.11     127     151 ..      72      96 ..      26     114 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 9.4e-05
+            trimmed_msa_bchX_hmm 127 elleklgfhdwdfdyvlldflgdvv 151
+                                      l++ +g+  w+ dyvlld  g+ v
+  GCA_900635605.1_31354_C01_5377  72 ILIDSIGIDTWGVDYVLLDKQGQRV 96 
+                                     57899**************999866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       5635  (1254468 residues searched)
+Passed MSV filter:                       179  (0.0317657); expected 112.7 (0.02)
+Passed bias filter:                      151  (0.0267968); expected 112.7 (0.02)
+Passed Vit filter:                        21  (0.00372671); expected 5.6 (0.001)
+Passed Fwd filter:                         5  (0.000887311); expected 0.1 (1e-05)
+Initial search space (Z):               5635  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11689.13
+//
+[ok]

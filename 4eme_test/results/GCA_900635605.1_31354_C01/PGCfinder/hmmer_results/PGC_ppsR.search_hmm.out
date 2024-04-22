@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635605.1_31354_C01/GCA_900635605.1_31354_C01_protein.faa
+# output directed to file:         results/GCA_900635605.1_31354_C01/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    0.00037   17.9   0.1    0.00057   17.3   0.1    1.2  1  GCA_900635605.1_31354_C01_5431  VEA44055.1 Two-component system 
+     0.0014   16.1   0.7     0.0022   15.4   0.7    1.6  1  GCA_900635605.1_31354_C01_586   VEA31232.1 Fis DNA-binding prote
+      0.002   15.5   0.3     0.0033   14.8   0.3    1.2  1  GCA_900635605.1_31354_C01_1874  VEA35008.1 regulatory protein [S
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635605.1_31354_C01_5431  VEA44055.1 Two-component system sensory histidine kinase [Salmonella enterica subsp. 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   0.1     3e-07   0.00057     149     259 ..      16     123 ..      11     137 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 3e-07
+            trimmed_msa_ppsR_hmm 149 sseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsv 227
+                                       ++vl+vd +  +i  aNpaA++Ll +++++l g++++el++  s + +  + ++++a +   + ev+l  ++r+  +
+  GCA_900635605.1_31354_C01_5431  16 LINSVLVVD-DALAIHYANPAAQQLLAQSSRKLFGTPLPELLSYFSLN-IDLMRESLAAGQGFTDNEVTLVIDSRSHIL 92 
+                                     557888888.5789****************************988765.344444445555566667777777777777 PP
+
+            trimmed_msa_ppsR_hmm 228 saslfrqegesllLvrlspaeaaaaaaeeaea 259
+                                     s ++ r   + ++L++++p +++++  +e+ +
+  GCA_900635605.1_31354_C01_5431  93 SLTAQRLP-DDFILLEMAPMDNQRRLSQEQLQ 123
+                                     77776654.45778888888888873333333 PP
+
+>> GCA_900635605.1_31354_C01_586  VEA31232.1 Fis DNA-binding protein [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.7   1.2e-06    0.0022     417     448 ..      66      97 ..      11      98 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.2e-06
+           trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                     +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_900635605.1_31354_C01_586  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                    579****************************8 PP
+
+>> GCA_900635605.1_31354_C01_1874  VEA35008.1 regulatory protein [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.3   1.7e-06    0.0033     410     448 ..     173     211 ..     171     212 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1.7e-06
+            trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                     E+  Ie+AL+  + N a+AA  L +SR  L  K ++y +
+  GCA_900635605.1_31354_C01_1874 173 ERHLIETALDTHQGNIAAAARSLNVSRTTLQYKVQKYAI 211
+                                     6777*********************************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       5635  (1254468 residues searched)
+Passed MSV filter:                       205  (0.0363798); expected 112.7 (0.02)
+Passed bias filter:                      136  (0.0241349); expected 112.7 (0.02)
+Passed Vit filter:                        13  (0.00230701); expected 5.6 (0.001)
+Passed Fwd filter:                         3  (0.000532387); expected 0.1 (1e-05)
+Initial search space (Z):               5635  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 19508.77
+//
+[ok]

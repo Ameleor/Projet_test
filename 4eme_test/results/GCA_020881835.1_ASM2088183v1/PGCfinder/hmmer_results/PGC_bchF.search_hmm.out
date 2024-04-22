@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_020881835.1_ASM2088183v1/GCA_020881835.1_ASM2088183v1_protein.faa
+# output directed to file:         results/GCA_020881835.1_ASM2088183v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.3e-05   21.6   6.3    4.8e-05   20.6   6.3    1.5  1  GCA_020881835.1_ASM2088183v1_1335  UER55781.1 cytochrome c biogenes
+    0.00022   18.5   1.7    0.00022   18.5   1.7    2.4  2  GCA_020881835.1_ASM2088183v1_361   UER53502.1 c-type cytochrome bio
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020881835.1_ASM2088183v1_1335  UER55781.1 cytochrome c biogenesis protein CcsA [Kineosporiaceae bacterium SCSIO 5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   6.3   3.4e-08   4.8e-05      14     132 ..     132     251 ..     118     259 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 3.4e-08
+               trimmed_msa_bchF_hmm  14 atkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlv...lyti.mitGaiwekvvfgkylfae 85 
+                                        ++ w ++  i a +   +f v       yl+  + aa+ +  v v  l+   l+t  +i+Gaiw  + +g+y   +
+  GCA_020881835.1_ASM2088183v1_1335 132 DSYWLVIHVIAAIVSGGIFTVGALAAALYLLRRRSAATLERVVHVTHLFafpLWTFaIIAGAIWAENAWGRYWGWD 207
+                                        678999999999999999999766666666655544444443333332212244433789***********97544 PP
+
+               trimmed_msa_bchF_hmm  86 affwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvin 132
+                                        +   ++v s++   l++ayl a +t  +  ++  ++ala y+a+v n
+  GCA_020881835.1_ASM2088183v1_1335 208 P---KEVWSFVTWVLYAAYLHAQATAGWRGRRATWFALAGYVAFVFN 251
+                                        4...7999*************************************98 PP
+
+>> GCA_020881835.1_ASM2088183v1_361  UER53502.1 c-type cytochrome biogenesis protein CcsB [Kineosporiaceae bacterium SCS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   2.4     0.085   1.2e+02      42     123 ..     112     193 ..      93     223 .. 0.58
+   2 !   18.5   1.7   1.5e-07   0.00022      66     133 ..     262     326 ..     236     331 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.085
+              trimmed_msa_bchF_hmm  42 ylatGegaaaatlsvvvktlvlytimitGaiwekvvfgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeq 118
+                                       +la G  ++ a +s +    +  + ++tG       +    +  +f    v+  l la+ t+y  a +   + ++e 
+  GCA_020881835.1_ASM2088183v1_361 112 VLARGLSVQRAPWSNMYEFSISGAAVVTGVFLVALAWRDLRYLGTFVIGPVLLTLGLAVTTMYTQASALAPALQSEW 188
+                                       45666666666666666666666777777777777777777777777777777777778887777655544444433 PP
+
+              trimmed_msa_bchF_hmm 119 lllal 123
+                                       l++ +
+  GCA_020881835.1_ASM2088183v1_361 189 LIVHV 193
+                                       33322 PP
+
+  == domain 2  score: 18.5 bits;  conditional E-value: 1.5e-07
+              trimmed_msa_bchF_hmm  66 imitGaiwekvvfgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvina 133
+                                        +++Gaiw  v +g+y   ++   ++v ++++  +++ayl a +t  ++ ++  +la+a yaa ++n 
+  GCA_020881835.1_ASM2088183v1_361 262 TLVAGAIWAEVAWGRYWGWDP---KEVWTFVIWVVYAAYLHARATRGWDGRRAAYLAMAGYAAVLVNF 326
+                                       589************975443...68999999999*******************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       2816  (925451 residues searched)
+Passed MSV filter:                        90  (0.0319602); expected 56.3 (0.02)
+Passed bias filter:                       44  (0.015625); expected 56.3 (0.02)
+Passed Vit filter:                         5  (0.00177557); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000710227); expected 0.0 (1e-05)
+Initial search space (Z):               2816  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10028.19
+//
+[ok]

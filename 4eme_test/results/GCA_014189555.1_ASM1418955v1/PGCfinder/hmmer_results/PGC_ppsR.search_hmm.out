@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_014189555.1_ASM1418955v1/GCA_014189555.1_ASM1418955v1_protein.faa
+# output directed to file:         results/GCA_014189555.1_ASM1418955v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.7e-07   26.7   0.0    8.1e-07   25.6   0.0    1.6  1  GCA_014189555.1_ASM1418955v1_6299  QND43431.1 PAS domain S-box prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014189555.1_ASM1418955v1_6299  QND43431.1 PAS domain S-box protein (plasmid) [Rhizobium leguminosarum bv. viciae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   0.0   3.1e-10   8.1e-07     145     372 ..      14     251 ..       6     273 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 3.1e-10
+               trimmed_msa_ppsR_hmm 145 lfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlar 220
+                                        ++++ + + liv +  + i    +  ++L g +a+e vgk +++l++++  +++++l ++vr++g+      + ++
+  GCA_014189555.1_ASM1418955v1_6299  14 IVRMFDGSNLIVHGFDGVIQRWTSGCEQLYGWSASEAVGKVVHDLLDTRFPADVEELRTEVRNNGSWTGQVGHRRK 89 
+                                        5677778889999999999999999***************************************998777777777 PP
+
+               trimmed_msa_ppsR_hmm 221 kgrevsvsa..slfrqegesllLvrlspaeaaaa....aaeeaeakllevleklpdalvvtdaegrilsaNeafle 290
+                                        +g+++ +    +++   +   l+v+ +++ +  +    +  e++a+l ++l+++pda++v+d++g i s  +a  +
+  GCA_014189555.1_ASM1418955v1_6299  90 DGARLAIVTrwTVLELGDPDTLIVQSNNDVTLMQqvedELRERQAHLQSILATVPDAMIVIDDKGCIASFSTAAEQ 165
+                                        77666654411567777777888876665444333445788999**************************999999 PP
+
+               trimmed_msa_ppsR_hmm 291 laqlaseeqvrgrsLerwLgragvDlk.vllanlreegsvr..lfatklrg..elgteeeVevsAvsvadgeqpcl 361
+                                        l   ++ ++++g++ +  +  ++ + +   l++  ++g+ r   +  ++ g  + gt+ + e+s     +g ++++
+  GCA_014189555.1_ASM1418955v1_6299 166 LFGYSA-HEAIGQNVSMLMPSPDREAHdGYLDSYIRTGRRRiiGYGRVVVGlrKNGTTFPMELSVGEAVAGGRRTF 240
+                                        988765.556777777766655544431333444444443311233344332145555566666555555555555 PP
+
+               trimmed_msa_ppsR_hmm 362 gfvirdvsrre 372
+                                          ++rd ++r+
+  GCA_014189555.1_ASM1418955v1_6299 241 TGFVRDLTSRH 251
+                                        55555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2647  (528484 residues searched)
+Passed MSV filter:                        74  (0.0279562); expected 52.9 (0.02)
+Passed bias filter:                       46  (0.0173782); expected 52.9 (0.02)
+Passed Vit filter:                         4  (0.00151114); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000377786); expected 0.0 (1e-05)
+Initial search space (Z):               2647  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8734.10
+//
+[ok]

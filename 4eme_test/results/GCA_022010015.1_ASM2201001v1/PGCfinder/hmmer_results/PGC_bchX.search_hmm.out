@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_022010015.1_ASM2201001v1/GCA_022010015.1_ASM2201001v1_protein.faa
+# output directed to file:         results/GCA_022010015.1_ASM2201001v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00094   15.3   0.9     0.0044   13.1   0.2    2.0  2  GCA_022010015.1_ASM2201001v1_2119  UKI49225.1 MAG: signal recogniti
+     0.0011   15.2   0.2     0.0019   14.3   0.2    1.4  1  GCA_022010015.1_ASM2201001v1_2927  UKI49855.1 MAG: Mrp/NBP35 family
+  ------ inclusion threshold ------
+      0.016   11.3   0.0      0.017   11.2   0.0    1.0  1  GCA_022010015.1_ASM2201001v1_2352  UKI49400.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022010015.1_ASM2201001v1_2119  UKI49225.1 MAG: signal recognition particle-docking protein FtsY [Clostridium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.2   5.1e-06    0.0044      29      59 ..       4      34 ..       1      44 [. 0.90
+   2 ?    0.6   0.0     0.033        29     198     225 ..     142     172 ..     128     179 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 5.1e-06
+               trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcd 59
+                                       g  g+gk+ ++a+++y l +qgkkvll   d
+  GCA_022010015.1_ASM2201001v1_2119  4 GVNGVGKTTSIAKIAYSLKKQGKKVLLAAGD 34
+                                       778************************8777 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.033
+               trimmed_msa_bchX_hmm 198 vgvaglvinkddgt...geaqafaeavgipv 225
+                                          v+g+++ k dgt   g   a+ +++gip+
+  GCA_022010015.1_ASM2201001v1_2119 142 TEVSGIILTKLDGTskgGIVLAIRNEMGIPI 172
+                                        5699********9933334567788889987 PP
+
+>> GCA_022010015.1_ASM2201001v1_2927  UKI49855.1 MAG: Mrp/NBP35 family ATP-binding protein [Clostridium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.2   2.2e-06    0.0019      17      60 ..      27      71 ..      13      85 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 2.2e-06
+               trimmed_msa_bchX_hmm 17 evtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60
+                                       + ++  +iia+  gkgg+gks+  + l+  + ++g kv ++  d 
+  GCA_022010015.1_ASM2201001v1_2927 27 KYSNIKKIIAVtSGKGGVGKSMVTSLLAVSMMKKGYKVGILDADI 71
+                                       44455678987369************************9988875 PP
+
+>> GCA_022010015.1_ASM2201001v1_2352  UKI49400.1 MAG: hypothetical protein L6U99_12005 [Clostridium sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.9e-05     0.017     250     316 ..       8      74 ..       3      77 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.9e-05
+               trimmed_msa_bchX_hmm 250 sewgslfeelaenvaeappvrpkplsqdgllglfkaeevgrdvvlepateedmrgkeavkkpslevv 316
+                                        ++w  +f + a +++     + +p s++++ +l++ ++  ++++l   + e ++ k+++kk s+ v+
+  GCA_022010015.1_ASM2201001v1_2352   8 KKWQLIFLKYALEINYNNCRNITPSSENEINKLYEYDDLVKKLKLMSINVEIIVVKKMLKKMSFFVI 74 
+                                        68***********************************************************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2581  (287850 residues searched)
+Passed MSV filter:                        68  (0.0263464); expected 51.6 (0.02)
+Passed bias filter:                       52  (0.0201472); expected 51.6 (0.02)
+Passed Vit filter:                        11  (0.00426191); expected 2.6 (0.001)
+Passed Fwd filter:                         3  (0.00116234); expected 0.0 (1e-05)
+Initial search space (Z):               2581  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15233.13
+//
+[ok]

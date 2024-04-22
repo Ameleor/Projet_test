@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_023822165.1_ASM2382216v1/GCA_023822165.1_ASM2382216v1_protein.faa
+# output directed to file:         results/GCA_023822165.1_ASM2382216v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00022   17.5   0.1    0.00036   16.8   0.1    1.4  1  GCA_023822165.1_ASM2382216v1_295  USI65975.1 PAS domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023822165.1_ASM2382216v1_295  USI65975.1 PAS domain-containing protein [Lactococcus petauri]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.1   1.4e-07   0.00036     244     305 ..     102     161 ..      61     238 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 1.4e-07
+              trimmed_msa_ppsR_hmm 244 lspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsL 305
+                                        + ++ ++++ e+++++l ++l+ l+d+++ td++g+i  aN+a l l + ++ e ++g+ L
+  GCA_023822165.1_ASM2382216v1_295 102 HEIED-RQEHLENQRNQLESILTYLADGVITTDRHGKINLANHAALTLLDQSN-ELIIGKDL 161
+                                       33333.33357777778888888888888888888888888888888777544.34444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2568  (780867 residues searched)
+Passed MSV filter:                       113  (0.0440031); expected 51.4 (0.02)
+Passed bias filter:                       60  (0.0233645); expected 51.4 (0.02)
+Passed Vit filter:                        11  (0.00428349); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000389408); expected 0.0 (1e-05)
+Initial search space (Z):               2568  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 22558.16
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_018741985.1_ASM1874198v1/GCA_018741985.1_ASM1874198v1_protein.faa
+# output directed to file:         results/GCA_018741985.1_ASM1874198v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      3e-05   21.9  10.7    4.9e-05   21.2  10.7    1.4  1  GCA_018741985.1_ASM1874198v1_1924  QWI77042.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018741985.1_ASM1874198v1_1924  QWI77042.1 1,4-dihydroxy-2-naphthoate polyprenyltransferase [Bacillus mycoides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2  10.7   9.5e-09   4.9e-05      42     245 ..      61     270 ..      24     309 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 9.5e-09
+               trimmed_msa_bchG_hmm  42 vvaGvllaGPlvcatsqavndWfdrhvdainePerpiP....sGripGrWGlyial....iltllsllvaaalgtl 109
+                                        +   +lla  l+ a++ + n++fd +     e +  i        i  +  l +a+    i tll + +++  + +
+  GCA_018741985.1_ASM1874198v1_1924  61 LFFMMLLACLLIQAATNMFNEYFDYKRGLDHEGSVGIGgaivRDGIKPKTVLNLAFgflgIATLLGVYICMNSSWW 136
+                                        4455777888888888888888885554444544443300003335556666666622224577777777777788 PP
+
+               trimmed_msa_bchG_hmm 110 vfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysigahGimtln 185
+                                          +  ++ +++a++y+  P+ +     +G+ ++gl + g+  +  +  +++ + ++ev+ll +  si    i+  n
+  GCA_018741985.1_ASM1874198v1_1924 137 LAAIGLVCMAVAYLYTGGPIPIAYT-PFGELTAGL-FMGVIIIGISFFIQTGAVTSEVILLSIPSSILIGAILLSN 210
+                                        888899***************9876.579999999.557777777777778888999999*******9999***** PP
+
+               trimmed_msa_bchG_hmm 186 dfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavll 245
+                                        + + ++Gd++ g k+l++ +G era  v + + +v+ +  +al+++   +   l+v + +
+  GCA_018741985.1_ASM1874198v1_1924 211 NIRDLDGDKENGRKTLAILVGRERAVGVLASMFIVAYIWTIALIIVNIVSPWMLIVFLSV 270
+                                        ******************************9******99999988655544445554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       5196  (1358335 residues searched)
+Passed MSV filter:                       218  (0.0419554); expected 103.9 (0.02)
+Passed bias filter:                       63  (0.0121247); expected 103.9 (0.02)
+Passed Vit filter:                         5  (0.000962279); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000192456); expected 0.1 (1e-05)
+Initial search space (Z):               5196  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 12927.70
+//
+[ok]

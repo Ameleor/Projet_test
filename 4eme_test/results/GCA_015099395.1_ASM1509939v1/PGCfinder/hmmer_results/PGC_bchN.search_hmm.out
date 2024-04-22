@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_015099395.1_ASM1509939v1/GCA_015099395.1_ASM1509939v1_protein.faa
+# output directed to file:         results/GCA_015099395.1_ASM1509939v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.028   12.0   0.6      0.045   11.4   0.6    1.2  1  GCA_015099395.1_ASM1509939v1_818  BCL78353.1 hydrogenase expressio
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015099395.1_ASM1509939v1_818  BCL78353.1 hydrogenase expression protein [Ktedonobacteria bacterium brp13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.6   6.2e-06     0.045     100     209 ..     749     858 ..     720     900 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 6.2e-06
+              trimmed_msa_bchN_hmm 100 psevikldlsraa.erlskklapkvrvlsysgsGiettftqGedaclaalvpelpkaeedaarellvvGaladvved 175
+                                       p   i +d  raa + l++++ ++   l ysg+ + t   +G+ + +   v  +p+++ ++ +++l+ G+   v   
+  GCA_015099395.1_ASM1509939v1_818 749 PEIDINVDPVRAAaHGLTAAQVAQNVRLIYSGTTVTTITLNGNQQNVDLYVG-TPQTTVAQIKNMLIPGTTGTVTLS 824
+                                       55557888777651568887777766688******99999999999876665.677777999*************** PP
+
+              trimmed_msa_bchN_hmm 176 qfarlfeelgieevkvlpareaeelpavgpntrf 209
+                                        +a++++++g ++++ + +++++++    + t++
+  GCA_015099395.1_ASM1509939v1_818 825 DVASVVQAIGPTQITHVQDKQTATISGTVTATNV 858
+                                       **************99999998887766555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       7205  (2376233 residues searched)
+Passed MSV filter:                       178  (0.0247051); expected 144.1 (0.02)
+Passed bias filter:                      124  (0.0172103); expected 144.1 (0.02)
+Passed Vit filter:                         9  (0.00124913); expected 7.2 (0.001)
+Passed Fwd filter:                         1  (0.000138793); expected 0.1 (1e-05)
+Initial search space (Z):               7205  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
+# Mc/sec: 16728.96
+//
+[ok]

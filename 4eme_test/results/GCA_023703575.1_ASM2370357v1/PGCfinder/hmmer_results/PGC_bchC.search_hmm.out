@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703575.1_ASM2370357v1/GCA_023703575.1_ASM2370357v1_protein.faa
+# output directed to file:         results/GCA_023703575.1_ASM2370357v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00011   18.0   0.0    0.00015   17.5   0.0    1.3  1  GCA_023703575.1_ASM2370357v1_857  URQ65899.1 YhdH/YhfP family quin
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703575.1_ASM2370357v1_857  URQ65899.1 YhdH/YhfP family quinone oxidoreductase [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0   9.7e-08   0.00015      12     127 ..      17     125 ..       8     213 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 9.7e-08
+              trimmed_msa_bchC_hmm  12 eelalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGm..gyPlvPGyesvGrvveageesklkvgerv 86 
+                                       ++l++ + ++++  ++++++++++s++    + l  sG     PG+   yP  PG ++vG++ e++ + +++ g++v
+  GCA_023703575.1_ASM2370357v1_857  17 NQLSIIERSIDDLPQGELLIKVNYSSLNY-KDALSASGA----PGVtrNYPHTPGIDAVGTIEESS-NQNFREGDSV 87 
+                                       56666666666666677777777776653.344444443....555227************98876.5689****** PP
+
+              trimmed_msa_bchC_hmm  87 fvPGakcfedvrglfGgaasrlvvpaarvvkvdeelgeegv 127
+                                        v G     ++ g fG   + + vp+a vv++++ l+e+  
+  GCA_023703575.1_ASM2370357v1_857  88 IVTGYDLGMNTSGGFG---EYIRVPSAWVVNLPSGLSEKDS 125
+                                       ****888777777776...6788999999999999887654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       1586  (503330 residues searched)
+Passed MSV filter:                        31  (0.019546); expected 31.7 (0.02)
+Passed bias filter:                       28  (0.0176545); expected 31.7 (0.02)
+Passed Vit filter:                         2  (0.00126103); expected 1.6 (0.001)
+Passed Fwd filter:                         1  (0.000630517); expected 0.0 (1e-05)
+Initial search space (Z):               1586  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10561.82
+//
+[ok]

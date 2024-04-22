@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_019704295.1_ASM1970429v1/GCA_019704295.1_ASM1970429v1_protein.faa
+# output directed to file:         results/GCA_019704295.1_ASM1970429v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.006   12.4   0.0      0.007   12.2   0.0    1.1  1  GCA_019704295.1_ASM1970429v1_865   BCU67428.1 50S ribosomal protein
+  ------ inclusion threshold ------
+      0.016   11.0   0.1      0.018   10.8   0.1    1.1  1  GCA_019704295.1_ASM1970429v1_2129  BCU68692.1 hypothetical protein 
+      0.022   10.6   0.0      0.031   10.1   0.0    1.2  1  GCA_019704295.1_ASM1970429v1_672   BCU67235.1 spermidine synthase [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019704295.1_ASM1970429v1_865  BCU67428.1 50S ribosomal protein L11 methyltransferase [Sulfolobales archaeon HS-7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   9.8e-06     0.007     184     262 ..      16      95 ..      12     134 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 9.8e-06
+              trimmed_msa_crtF_hmm 184 vaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflkdp 259
+                                       v + +l+  ++ +   + D+G G+G  + ++ ++  + + +  ++  + ++++++++e++gl  rvev   +f++  
+  GCA_019704295.1_ASM1970429v1_865  16 VVKIMLEKAKVGEGDIVYDLGCGDGRIVITAVKEFNAKRAVCIEINdERINETKKNIEKNGLVGRVEVKKANFFDAD 92 
+                                       566788999999999************9999999999998888885267899999*******************988 PP
+
+              trimmed_msa_crtF_hmm 260 lPe 262
+                                       l e
+  GCA_019704295.1_ASM1970429v1_865  93 LSE 95 
+                                       854 PP
+
+>> GCA_019704295.1_ASM1970429v1_2129  BCU68692.1 hypothetical protein HS7_21290 [Sulfolobales archaeon HS-7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.1   2.6e-05     0.018      56     110 ..      17      73 ..      12      86 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.6e-05
+               trimmed_msa_crtF_hmm  56 eldllellaegplsleelaerlklpedalerLlraaaalkLl..errsedryaLgkl 110
+                                        + ++++ll++ p+++++lae+lkl+  +++  l+  + l+++  ++r++  y+L+k+
+  GCA_019704295.1_ASM1970429v1_2129  17 RKKIIALLSQRPMTTKQLAEQLKLNYTTVRYHLEILEKLNIVcsDKRRGSVYHLTKN 73 
+                                        678999*****************************9999998334566778888776 PP
+
+>> GCA_019704295.1_ASM1970429v1_672  BCU67235.1 spermidine synthase [Sulfolobales archaeon HS-7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   4.4e-05     0.031     192     240 ..      74     123 ..      58     135 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4.4e-05
+              trimmed_msa_crtF_hmm 192 ydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVa.erararle 240
+                                       ++l++ +r l +GGGeGa l++v +  +  ++++ D+ +V+ e a++ ++
+  GCA_019704295.1_ASM1970429v1_672  74 LSLRDPERALIIGGGEGATLREVLRYNSFKEVVMVDIDDVViEFAKKYMA 123
+                                       56778888899**************************9986155555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2140  (570658 residues searched)
+Passed MSV filter:                        66  (0.0308411); expected 42.8 (0.02)
+Passed bias filter:                       64  (0.0299065); expected 42.8 (0.02)
+Passed Vit filter:                        13  (0.00607477); expected 2.1 (0.001)
+Passed Fwd filter:                         3  (0.00140187); expected 0.0 (1e-05)
+Initial search space (Z):               2140  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 15770.43
+//
+[ok]

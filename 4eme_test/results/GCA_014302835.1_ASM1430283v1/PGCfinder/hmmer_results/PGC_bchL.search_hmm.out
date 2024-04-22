@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_014302835.1_ASM1430283v1/GCA_014302835.1_ASM1430283v1_protein.faa
+# output directed to file:         results/GCA_014302835.1_ASM1430283v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00011   19.5   0.1     0.0002   18.6   0.1    1.4  1  GCA_014302835.1_ASM1430283v1_3935  QNK62773.1 Mrp/NBP35 family ATP-
+     0.0057   13.8   0.5      0.012   12.7   0.0    1.8  2  GCA_014302835.1_ASM1430283v1_207   QNK63146.1 lipopolysaccharide bi
+  ------ inclusion threshold ------
+      0.013   12.7   0.7      0.022   11.9   0.1    1.6  2  GCA_014302835.1_ASM1430283v1_2738  QNK61635.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014302835.1_ASM1430283v1_3935  QNK62773.1 Mrp/NBP35 family ATP-binding protein [Pedobacter sp. PAMC26386]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.1   1.5e-07    0.0002      22      57 ..      99     134 ..      80     148 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 1.5e-07
+               trimmed_msa_bchL_hmm  22 vfavygkggigksttssnlsvafsklgkrvlqigcd 57 
+                                        ++   gkgg+gkst +snl+v+++  g +v  i  d
+  GCA_014302835.1_ASM1430283v1_3935  99 ILVSSGKGGVGKSTVASNLAVTLAADGAKVGLIDAD 134
+                                        44557**********************999888777 PP
+
+>> GCA_014302835.1_ASM1430283v1_207  QNK63146.1 lipopolysaccharide biosynthesis protein [Pedobacter sp. PAMC26386]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.4      0.46   6.3e+02     173     215 ..     273     315 ..     266     390 .. 0.66
+   2 !   12.7   0.0   9.1e-06     0.012       6      59 ..     531     585 ..     528     615 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.46
+              trimmed_msa_bchL_hmm 173 ifamnrivaaikaksknykvrlggvianrsketdeidrfneav 215
+                                       i a +  ++ai++k +  +  +gg +    +e  +i++  +  
+  GCA_014302835.1_ASM1430283v1_207 273 IQANQGAISAIESKLRGKDAYIGGNVGSENREIVDIKNQLNVA 315
+                                       6677777889999999999999999888887777766544433 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 9.1e-06
+              trimmed_msa_bchL_hmm   6 svqveldeelkietakvfavygkg.gigksttssnlsvafsklgkrvlqigcdpk 59 
+                                       s+++el + ++ ++++++ +   g g gks  +s l+ af++ g++vl ig + +
+  GCA_014302835.1_ASM1430283v1_207 531 SLRLELTNFMDADESRILGITSLGaGEGKSFIASSLAHAFAMTGRKVLLIGGETQ 585
+                                       567777888889999999999877589************************8765 PP
+
+>> GCA_014302835.1_ASM1430283v1_2738  QNK61635.1 ParA family protein [Pedobacter sp. PAMC26386]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   1.6e-05     0.022      22      66 ..       3      48 ..       1      66 [. 0.81
+   2 ?   -1.8   0.0      0.24   3.2e+02     175     200 ..     151     178 ..     130     229 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_bchL_hmm 22 vfav.ygkggigksttssnlsvafsklgkrvlqigcdpkhdstftl 66
+                                       ++a+   kgg gk+t++ n+ + +++  k+ l +  dp+ + t  l
+  GCA_014302835.1_ASM1430283v1_2738  3 IIAIiNHKGGTGKTTSTLNIGAGLARAKKKTLLVDIDPQSNLTEGL 48
+                                       55541579******************************98877655 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.24
+               trimmed_msa_bchL_hmm 175 amnrivaaikaksknyk..vrlggvian 200
+                                         ++r+v+ i+   k+y+  + +ggv   
+  GCA_014302835.1_ASM1430283v1_2738 151 GIDRLVSIISDVRKHYNenLTIGGVFLT 178
+                                        5677777777766666411556676543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       4063  (1410836 residues searched)
+Passed MSV filter:                       153  (0.0376569); expected 81.3 (0.02)
+Passed bias filter:                      123  (0.0302732); expected 81.3 (0.02)
+Passed Vit filter:                         9  (0.00221511); expected 4.1 (0.001)
+Passed Fwd filter:                         3  (0.000738371); expected 0.0 (1e-05)
+Initial search space (Z):               4063  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11458.62
+//
+[ok]

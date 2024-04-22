@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_014701265.1_ASM1470126v1/GCA_014701265.1_ASM1470126v1_protein.faa
+# output directed to file:         results/GCA_014701265.1_ASM1470126v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.013   13.4   0.2        0.8    7.5   0.0    2.8  3  GCA_014701265.1_ASM1470126v1_7003  BCI91797.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014701265.1_ASM1470126v1_7003  BCI91797.1 hypothetical protein NIIDMKKI_70030 [Mycobacterium kansasii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.1      0.01        85     197     224 ..      93     118 ..      82     137 .. 0.76
+   2 ?    0.6   0.0     0.012        98     206     231 ..     137     162 ..     126     167 .. 0.84
+   3 ?    7.5   0.0   9.8e-05       0.8     116     141 ..     209     234 ..     199     242 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.01
+               trimmed_msa_acsF_hmm 197 ifkwfeewcndefrhGeafalllradpk 224
+                                        + + f+ w   +f hGe  a++  a  k
+  GCA_014701265.1_ASM1470126v1_7003  93 MRQHFQAWQFSQFLHGEQGAMVCAA--K 118
+                                        5578**************9998765..3 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.012
+               trimmed_msa_acsF_hmm 206 ndefrhGeafalllradpkllsgvnk 231
+                                         de rh eaf+ +l+ +  l+  +nk
+  GCA_014701265.1_ASM1470126v1_7003 137 MDEARHVEAFSRFLQDKVDLVYPINK 162
+                                        69999999999999999999888887 PP
+
+  == domain 3  score: 7.5 bits;  conditional E-value: 9.8e-05
+               trimmed_msa_acsF_hmm 116 ikelfkllardesrhagfindalkda 141
+                                         k+l+ ++ +de+rh +f   +lkd+
+  GCA_014701265.1_ASM1470126v1_7003 209 AKQLLAYVMQDEARHVAFGRISLKDY 234
+                                        589*********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       8110  (1846359 residues searched)
+Passed MSV filter:                       111  (0.0136868); expected 162.2 (0.02)
+Passed bias filter:                      106  (0.0130703); expected 162.2 (0.02)
+Passed Vit filter:                         8  (0.000986436); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000123305); expected 0.1 (1e-05)
+Initial search space (Z):               8110  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 20891.04
+//
+[ok]

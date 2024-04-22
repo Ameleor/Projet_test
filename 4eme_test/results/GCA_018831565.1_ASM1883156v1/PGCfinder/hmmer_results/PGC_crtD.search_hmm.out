@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018831565.1_ASM1883156v1/GCA_018831565.1_ASM1883156v1_protein.faa
+# output directed to file:         results/GCA_018831565.1_ASM1883156v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0013   13.5   0.0     0.0043   11.8   0.0    1.7  2  GCA_018831565.1_ASM1883156v1_514  JGFPJJ_02675 thioredoxin-disulfi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018831565.1_ASM1883156v1_514  JGFPJJ_02675 thioredoxin-disulfide reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   3.2e-06    0.0043       2      41 ..      27      65 ..      26      72 .. 0.89
+   2 ?   -1.1   0.0     0.026        35       1      32 [.     167     198 ..     167     201 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3.2e-06
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlre 41
+                                      +v+++G+G +GL+a +    + ++vt+le   +pGG+l +
+  GCA_018831565.1_ASM1883156v1_514 27 DVIILGSGPAGLTAGIYSVMSNYKVTILEG-PEPGGQLTT 65
+                                      79**************************96.689999876 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.026
+              trimmed_msa_crtD_hmm   1 ervvviGaGigGLaaalklaaaGldvtvleka 32 
+                                       +rv viG G + L+ ++ l++   +v ++ ++
+  GCA_018831565.1_ASM1883156v1_514 167 KRVAVIGGGNTALSESIYLSKLVDKVYIIVRK 198
+                                       589****************9988888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1346  (368545 residues searched)
+Passed MSV filter:                        31  (0.0230312); expected 26.9 (0.02)
+Passed bias filter:                       30  (0.0222883); expected 26.9 (0.02)
+Passed Vit filter:                         6  (0.00445765); expected 1.3 (0.001)
+Passed Fwd filter:                         1  (0.000742942); expected 0.0 (1e-05)
+Initial search space (Z):               1346  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 15184.36
+//
+[ok]

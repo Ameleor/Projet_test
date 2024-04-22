@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898365.1_ASM2389836v1/GCA_023898365.1_ASM2389836v1_protein.faa
+# output directed to file:         results/GCA_023898365.1_ASM2389836v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00012   16.6   3.8     0.0029   12.1   0.2    2.6  3  GCA_023898365.1_ASM2389836v1_224  USN45727.1 MAG: dihydrolipoyl de
+     0.0018   12.8   0.4      0.013    9.9   0.1    2.1  2  GCA_023898365.1_ASM2389836v1_635  USN45061.1 MAG: thioredoxin-disu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898365.1_ASM2389836v1_224  USN45727.1 MAG: dihydrolipoyl dehydrogenase [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.2   5.3e-06    0.0029       3      33 ..       8      38 ..       6      47 .. 0.89
+   2 !    4.8   0.2   0.00086      0.47       2      33 ..     169     200 ..     168     202 .. 0.92
+   3 ?   -1.8   0.0     0.084        46     227     276 ..     210     253 ..     208     302 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 5.3e-06
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaa 33
+                                       +++GaG +G+a+a+++a++G +  v+e++ 
+  GCA_023898365.1_ASM2389836v1_224  8 AIILGAGPSGVACAVRIAQQGGKPLVIERSF 38
+                                      69**************************974 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.00086
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                       r v+iG G+ G+  a    + G +vt++e a+
+  GCA_023898365.1_ASM2389836v1_224 169 RLVIIGGGVIGVEFASIFNQLGSKVTIIELAD 200
+                                       89**************************9765 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.084
+              trimmed_msa_crtD_hmm 227 laealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvf 276
+                                       + +ala   +++g+++ ++++v++++ ++  v       g+ri  d++++
+  GCA_023898365.1_ASM2389836v1_224 210 IGDALAVSFRKQGIQILLNKQVTKLTETSVVVD------GKRIPYDKLLV 253
+                                       667888888999999999999999986655444......44444444444 PP
+
+>> GCA_023898365.1_ASM2389836v1_635  USN45061.1 MAG: thioredoxin-disulfide reductase [Candidatus Woesearchaeota archaeon
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.9   0.1   2.3e-05     0.013       2      42 ..       3      42 ..       2      49 .. 0.82
+   2 ?    0.5   0.0     0.017       9.1     227     282 ..      60     112 ..      54     125 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 2.3e-05
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrev 42
+                                      +v+++G+G++G +aa+  a+a l+  v+  ++  GG++ + 
+  GCA_023898365.1_ASM2389836v1_635  3 NVIILGSGVAGNTAAVYAARAHLNPLVITGKE-DGGQIATT 42
+                                      79*********************999997654.57776654 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.017
+              trimmed_msa_crtD_hmm 227 laealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngDvaa 282
+                                       l + ++++ae+ ga+f +g  +e i  ++g + +v+lad  ++e++++++++ ++a
+  GCA_023898365.1_ASM2389836v1_635  60 LVANIKAQAEKFGARFVFGY-CEGIS-QQGSTISVKLADK-TLETKSLIIATGASA 112
+                                       7788999*********9985.78887.5677788999875.678887777776666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1090  (349477 residues searched)
+Passed MSV filter:                        34  (0.0311927); expected 21.8 (0.02)
+Passed bias filter:                       25  (0.0229358); expected 21.8 (0.02)
+Passed Vit filter:                         3  (0.00275229); expected 1.1 (0.001)
+Passed Fwd filter:                         2  (0.00183486); expected 0.0 (1e-05)
+Initial search space (Z):               1090  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 15578.97
+//
+[ok]

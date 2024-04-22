@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_017346875.1_ASM1734687v1/GCA_017346875.1_ASM1734687v1_protein.faa
+# output directed to file:         results/GCA_017346875.1_ASM1734687v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.3e-10   37.4   0.0    4.7e-10   36.9   0.0    1.1  1  GCA_017346875.1_ASM1734687v1_2796  QSV71664.1 MAG: ferredoxin:proto
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017346875.1_ASM1734687v1_2796  QSV71664.1 MAG: ferredoxin:protochlorophyllide reductase (ATP-dependent) subunit N
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.9   0.0   8.9e-14   4.7e-10     201     367 ..     204     371 ..     183     416 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 36.9 bits;  conditional E-value: 8.9e-14
+               trimmed_msa_bchY_hmm 201 llGelfpadpvvigal..leplGlaagpvvptrewrelyaaldcaavaaihpfytasvrefea.aGrkvvgs.apv 272
+                                        l+G l   dpvv      l+  G++++  +p++ + el    ++  va + pf + +   +      k++g+  p+
+  GCA_017346875.1_ASM1734687v1_2796 204 LFGSL--PDPVVTQLTleLKKQGIKVSGWLPAKRFTELPVIEEGYYVAGVNPFLSRTATTLMRrRKCKLIGApFPI 277
+                                        55554..377765544116789*******************************9887776654144567776269* PP
+
+               trimmed_msa_bchY_hmm 273 GadGtaawleaigeaaevaqdkvdaaknkllpaikaalaaapikgr.itlsGyeGsellvarllvesGadvryvgt 347
+                                        G dGt aw+e+i + ++++ + +d+ ++++  ++++ ++   i+g+ +   G +  e+ +ar+lv +G +v+ +g 
+  GCA_017346875.1_ASM1734687v1_2796 278 GPDGTRAWIEKICSVLGITPQGLDEREAQIWENLEEYVQL--IRGKsVFFMGDNLLEISLARFLVRCGMTVQEIGI 351
+                                        **********************************998865..66652667899999******************** PP
+
+               trimmed_msa_bchY_hmm 348 acprtkwseedrewleakGv 367
+                                             ++++++ + le    
+  GCA_017346875.1_ASM1734687v1_2796 352 PYMDKRYQAAELALLEKTCQ 371
+                                        99999999999999986544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       5233  (1476027 residues searched)
+Passed MSV filter:                       139  (0.0265622); expected 104.7 (0.02)
+Passed bias filter:                      124  (0.0236958); expected 104.7 (0.02)
+Passed Vit filter:                        12  (0.00229314); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000191095); expected 0.1 (1e-05)
+Initial search space (Z):               5233  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 16097.44
+//
+[ok]

@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_022749615.1_ASM2274961v1/GCA_022749615.1_ASM2274961v1_protein.faa
+# output directed to file:         results/GCA_022749615.1_ASM2274961v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.2e-06   23.6   0.4      1e-05   21.9   0.2    1.7  2  GCA_022749615.1_ASM2274961v1_1942  UNW06060.1 DNA-binding transcrip
+    6.2e-05   19.3   0.0    9.7e-05   18.7   0.0    1.3  1  GCA_022749615.1_ASM2274961v1_1933  UNW06053.1 nitrogen regulation p
+     0.0077   12.4   0.0      0.011   12.0   0.0    1.2  1  GCA_022749615.1_ASM2274961v1_1932  UNW06052.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022749615.1_ASM2274961v1_1942  UNW06060.1 DNA-binding transcriptional regulator Fis [Acinetobacter variabilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.067        56       9      33 ..       7      31 ..       2      48 .. 0.72
+   2 !   21.9   0.2   1.2e-08     1e-05     417     449 ..      55      87 ..      47      88 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.067
+               trimmed_msa_ppsR_hmm  9 lvaaaaDialvldaegviedvavgs 33
+                                       + +a +D+al +  ++ +++  ++ 
+  GCA_022749615.1_ASM2274961v1_1942  7 IFTAQSDVALRIHVDRAVRHYFAQL 31
+                                       6778899999999888888766554 PP
+
+  == domain 2  score: 21.9 bits;  conditional E-value: 1.2e-08
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         Le+T+ N   AAe+LGL R  L  KL+ +gl 
+  GCA_022749615.1_ASM2274961v1_1942  55 VLEYTRGNQTRAAEILGLNRGTLRKKLKAHGLM 87 
+                                        59*****************************96 PP
+
+>> GCA_022749615.1_ASM2274961v1_1933  UNW06053.1 nitrogen regulation protein NR(I) [Acinetobacter variabilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   1.2e-07   9.7e-05     403     448 ..     433     478 ..     414     480 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 1.2e-07
+               trimmed_msa_ppsR_hmm 403 rettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                          +t + E+  I+aAL++T+     AAe+LG  R  L  KL+  g+
+  GCA_022749615.1_ASM2274961v1_1933 433 DVATPMFERTLINAALQQTRGRKRHAAELLGWGRNTLTRKLKELGM 478
+                                        5578899**********************************98887 PP
+
+>> GCA_022749615.1_ASM2274961v1_1932  UNW06052.1 ATP-binding protein [Acinetobacter variabilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   1.3e-05     0.011     141     252 ..       8     124 ..       3     146 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.3e-05
+               trimmed_msa_ppsR_hmm 141 rYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfea.esreelqallaavrasgea.... 211
+                                         YRll+++ ++a+++vd  + +i  +N a +++++ +  +  g+++ + ++a +++ + ++ l +  ++g+     
+  GCA_022749615.1_ASM2274961v1_1932   8 DYRLLVDNLTTAIMLVDS-HLNIYYLNTACEAMFDVSLLRASGTPVLNILQApTDEFNTEESLYNTLHTGQPytrr 82 
+                                        6****************6.578**************************9987244456666666666665431110 PP
+
+               trimmed_msa_ppsR_hmm 212 .eeievrlarkgrevsvsaslfrqegesllLvrlspaeaaaa 252
+                                         ++i v+ ++ + +++vs     + ++ llL++l+++++  +
+  GCA_022749615.1_ASM2274961v1_1932  83 eATIIVNFKDIHVDYTVSLLNAGKPNHPLLLIELNQRDRMLK 124
+                                        034444555555555555555556677788888888777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2509  (641482 residues searched)
+Passed MSV filter:                       125  (0.0498206); expected 50.2 (0.02)
+Passed bias filter:                       65  (0.0259067); expected 50.2 (0.02)
+Passed Vit filter:                         5  (0.00199283); expected 2.5 (0.001)
+Passed Fwd filter:                         3  (0.0011957); expected 0.0 (1e-05)
+Initial search space (Z):               2509  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11570.96
+//
+[ok]

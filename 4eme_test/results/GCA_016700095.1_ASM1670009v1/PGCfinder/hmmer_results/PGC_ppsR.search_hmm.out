@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700095.1_ASM1670009v1/GCA_016700095.1_ASM1670009v1_protein.faa
+# output directed to file:         results/GCA_016700095.1_ASM1670009v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0035   12.5   0.3      0.019   10.1   0.0    2.0  2  GCA_016700095.1_ASM1670009v1_482  QQS39465.1 PAS domain S-box prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700095.1_ASM1670009v1_482  QQS39465.1 PAS domain S-box protein [Candidatus Woesebacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.0   1.6e-05     0.019     117     194 ..     143     219 ..     129     225 .. 0.88
+   2 ?   -0.6   0.1     0.028        35     183     239 ..     359     417 ..     325     429 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_ppsR_hmm 117 lQqrLveaQqslErdYerlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeae 193
+                                         +rL++ Q +l    ++l e+++r + ++e+  + v  ++ ++++i+ +Np+ ++L g ++++lvgk++ +++e e
+  GCA_016700095.1_ASM1670009v1_482 143 DAKRLIDIQRQLFLSNRQLAETDARRKAILESIGDGVSSIN-DKGEIIYVNPSLENLTGWSSNDLVGKQLVRAIEFE 218
+                                       4589*********************************9997.678999**********************9987755 PP
+
+              trimmed_msa_ppsR_hmm 194 s 194
+                                       +
+  GCA_016700095.1_ASM1670009v1_482 219 K 219
+                                       5 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.028
+              trimmed_msa_ppsR_hmm 183 gksfaelfeaesreelqallaavra..sgeaeeievrlarkgrevsvsaslfrqegesl 239
+                                       gk + e ++++ +e +++++++++a  ++++ +i++++ ++  +++++++l rq+ ++l
+  GCA_016700095.1_ASM1670009v1_482 359 GKLVVEPVSTDIEELVKDIIKELTAvsEERKVKINLSTVNDLPNITIDPKLVRQAYSNL 417
+                                       44444445555555555555554440034444455555566677888888888776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1238  (371342 residues searched)
+Passed MSV filter:                        36  (0.0290792); expected 24.8 (0.02)
+Passed bias filter:                       19  (0.0153473); expected 24.8 (0.02)
+Passed Vit filter:                         2  (0.00161551); expected 1.2 (0.001)
+Passed Fwd filter:                         1  (0.000807754); expected 0.0 (1e-05)
+Initial search space (Z):               1238  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8197.07
+//
+[ok]

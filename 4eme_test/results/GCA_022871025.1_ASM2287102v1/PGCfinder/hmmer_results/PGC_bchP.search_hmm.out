@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_022871025.1_ASM2287102v1/GCA_022871025.1_ASM2287102v1_protein.faa
+# output directed to file:         results/GCA_022871025.1_ASM2287102v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0014   14.2   0.7      0.002   13.7   0.1    1.6  2  GCA_022871025.1_ASM2287102v1_397   UOP05094.1 dihydrolipoyl dehydro
+     0.0041   12.6   0.1     0.0059   12.1   0.1    1.2  1  GCA_022871025.1_ASM2287102v1_320   UOP05038.1 FAD-dependent oxidore
+  ------ inclusion threshold ------
+      0.015   10.8   0.2      0.021   10.3   0.2    1.2  1  GCA_022871025.1_ASM2287102v1_1885  UOP04539.1 D-amino acid dehydrog
+      0.016   10.7   1.7      0.032    9.7   1.7    1.4  1  GCA_022871025.1_ASM2287102v1_106   UOP04894.1 FAD-dependent 5-carbo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022871025.1_ASM2287102v1_397  UOP05094.1 dihydrolipoyl dehydrogenase [Conchiformibius kuhniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.1   4.7e-06     0.002       2      49 ..     116     166 ..     115     268 .. 0.83
+   2 ?   -3.0   0.0      0.52   2.3e+02     143     157 ..     403     417 ..     332     456 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 4.7e-06
+              trimmed_msa_bchP_hmm   2 tfdvvvvGGGPaGataaedlarkGkkvllldragrikP.c..GGaiPprli 49 
+                                        +dvvv+GGG  G  aa   a +G k +++++   +   c   G iP++++
+  GCA_022871025.1_ASM2287102v1_397 116 EYDVVVLGGGSGGYSAAFAAADAGLKTAIVEQYATLGGvClnVGCIPSKAL 166
+                                       6*****************************997665431322689998865 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.52
+              trimmed_msa_bchP_hmm 143 lvigadGarsevarq 157
+                                        + gad a  +v+++
+  GCA_022871025.1_ASM2287102v1_397 403 KLCGADKAGVAVSER 417
+                                       344555555555443 PP
+
+>> GCA_022871025.1_ASM2287102v1_320  UOP05038.1 FAD-dependent oxidoreductase [Conchiformibius kuhniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.1   1.4e-05    0.0059       2      35 ..      15      48 ..      14      55 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldrag 35
+                                      ++d++++GGG +G   a d a +G + lll+ ++
+  GCA_022871025.1_ASM2287102v1_320 15 VWDIIIIGGGATGLGIALDAATRGYRTLLLEARD 48
+                                      69****************************9766 PP
+
+>> GCA_022871025.1_ASM2287102v1_1885  UOP04539.1 D-amino acid dehydrogenase [Conchiformibius kuhniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.2     5e-05     0.021       4      35 ..       2      33 ..       1      37 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 5e-05
+               trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldrag 35
+                                       ++v++G G aG  +a  l+ +G++v +ldra+
+  GCA_022871025.1_ASM2287102v1_1885  2 NIVILGAGIAGVSTAYYLSGQGHQVTVLDRAQ 33
+                                       689***************************86 PP
+
+>> GCA_022871025.1_ASM2287102v1_106  UOP04894.1 FAD-dependent 5-carboxymethylaminomethyl-2-thiouridine(34) oxidoreductas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   1.7   7.4e-05     0.032       5      35 ..     128     158 ..     125     166 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 7.4e-05
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldrag 35 
+                                       v vvG G aGa++a +lar+G  v +l+ a+
+  GCA_022871025.1_ASM2287102v1_106 128 VAVVGAGIAGAATAYELARHGVAVTVLEAAN 158
+                                       78************************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1726  (394862 residues searched)
+Passed MSV filter:                        59  (0.0341831); expected 34.5 (0.02)
+Passed bias filter:                       46  (0.0266512); expected 34.5 (0.02)
+Passed Vit filter:                        11  (0.00637312); expected 1.7 (0.001)
+Passed Fwd filter:                         4  (0.0023175); expected 0.0 (1e-05)
+Initial search space (Z):               1726  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13331.98
+//
+[ok]

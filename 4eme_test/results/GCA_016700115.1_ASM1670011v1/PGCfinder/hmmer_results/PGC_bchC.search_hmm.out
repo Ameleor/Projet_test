@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700115.1_ASM1670011v1/GCA_016700115.1_ASM1670011v1_protein.faa
+# output directed to file:         results/GCA_016700115.1_ASM1670011v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.2e-05   21.7   0.1    3.1e-05   21.2   0.1    1.3  1  GCA_016700115.1_ASM1670011v1_2997  QQS28200.1 MAG: zinc-binding deh
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700115.1_ASM1670011v1_2997  QQS28200.1 MAG: zinc-binding dehydrogenase [Sphingobacteriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.1   7.5e-09   3.1e-05      25     146 ..      28     140 ..       2     218 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 7.5e-09
+               trimmed_msa_bchC_hmm  25 eeedvvvdiewsgistG..tekllwsGrmPefPGmgyPlvPGyesvGrvveageesk.lkvgervfvPGakcfedv 97 
+                                        ++++v ++++  g+     t +l   G+ P+ P +  P v Gye vG+v+e+g+e k lk g+rv+         +
+  GCA_016700115.1_ASM1670011v1_2997  28 RSNEVKIEVKAFGLNFAdvTARL---GKYPDCPPL--PAVIGYEVVGHVIETGSEVKdLKPGQRVL---------A 89 
+                                        55666666666665432114443...888888865..99*************99875256666665.........4 PP
+
+               trimmed_msa_bchC_hmm  98 rglfGgaasrlvvpaarvvkvdeel..geegvllalaatarhalagkekka 146
+                                         + fGg +++++++a+ vv++++++  +e ++l +   ta++a + + + +
+  GCA_016700115.1_ASM1670011v1_2997  90 FTRFGGYSTQVIAQANGVVAIPDNIshAEAAALATQYCTAYYAACIAINLQ 140
+                                        567******************998622567778888899999876544333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       4177  (1680068 residues searched)
+Passed MSV filter:                        78  (0.0186737); expected 83.5 (0.02)
+Passed bias filter:                       70  (0.0167584); expected 83.5 (0.02)
+Passed Vit filter:                        10  (0.00239406); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000239406); expected 0.0 (1e-05)
+Initial search space (Z):               4177  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 14120.22
+//
+[ok]

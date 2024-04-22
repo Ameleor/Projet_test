@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_017346795.1_ASM1734679v1/GCA_017346795.1_ASM1734679v1_protein.faa
+# output directed to file:         results/GCA_017346795.1_ASM1734679v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.8e-06   25.2   0.0    3.8e-05   20.8   0.0    2.2  1  GCA_017346795.1_ASM1734679v1_3017  QSV55029.1 MAG: PAS domain-conta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017346795.1_ASM1734679v1_3017  QSV55029.1 MAG: PAS domain-containing protein [Dolichospermum sp. UKL201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   8.6e-09   3.8e-05     252     372 ..     391     512 ..     384     534 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 8.6e-09
+               trimmed_msa_ppsR_hmm 252 aaaeeaeakllevleklpdal.vvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvllanlree 326
+                                        +a +e+e+k  ++++++pd++ + t aeg+ l++Ne+f +    + e+ +  +s +  L ++   l+ + ++l +e
+  GCA_017346795.1_ASM1734679v1_3017 391 KAFQESETKFSTIFHTTPDPVwIATLAEGKFLNVNESFCQFWGDTPENILGKTSVQLGLWKNIESLHHFKERLINE 466
+                                        35789999999********963778899*************9988888888888888888888899********** PP
+
+               trimmed_msa_ppsR_hmm 327 gsvrlfatklrgelgteeeVevsAvsvadgeqpclgfvirdvsrre 372
+                                        gs+ +f+ ++ +++ ++++V +sA     geq cl+ +irdvs   
+  GCA_017346795.1_ASM1734679v1_3017 467 GSILNFKLVICTHSQQTKTVLISAKVQYLGEQDCLIGIIRDVSDLY 512
+                                        *************************9999************98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       4465  (1335311 residues searched)
+Passed MSV filter:                       171  (0.0382979); expected 89.3 (0.02)
+Passed bias filter:                       84  (0.018813); expected 89.3 (0.02)
+Passed Vit filter:                         8  (0.00179171); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000223964); expected 0.0 (1e-05)
+Initial search space (Z):               4465  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10849.81
+//
+[ok]

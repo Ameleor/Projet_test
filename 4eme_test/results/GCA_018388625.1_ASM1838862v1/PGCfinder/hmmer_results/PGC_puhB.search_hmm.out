@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_018388625.1_ASM1838862v1/GCA_018388625.1_ASM1838862v1_protein.faa
+# output directed to file:         results/GCA_018388625.1_ASM1838862v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.3e-10   37.0   0.5    5.2e-10   36.7   0.5    1.1  1  GCA_018388625.1_ASM1838862v1_751   QVJ02023.1 PH domain-containing 
+     0.0028   14.7   1.9     0.0033   14.5   1.9    1.1  1  GCA_018388625.1_ASM1838862v1_5350  QVJ01558.1 PH domain-containing 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018388625.1_ASM1838862v1_751  QVJ02023.1 PH domain-containing protein [Nocardiopsis eucommiae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.7   0.5     3e-13   5.2e-10      38     130 ..      21     116 ..       8     141 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 36.7 bits;  conditional E-value: 3e-13
+              trimmed_msa_puhB_hmm  38 hvrlvalYfavlllwrvlaal.adgeslse..alasaalllalaavalallallawlsarttvYtiTnrRvvlriGi 111
+                                       h  l+a+ f++l+l+  ++++     ++se  +l++a +++a+++va   ++++ +l   ttvY++TnrR+++r Gi
+  GCA_018388625.1_ASM1838862v1_751  21 HWTLLAGEFVALFLIIGVVGTaLFFIPWSEdwSLIAAGVVVAVGVVAALAFWFVPMLKWATTVYILTNRRLMMRDGI 97 
+                                       445555555555444433332022333333115677778888888888899999999******************** PP
+
+              trimmed_msa_puhB_hmm 112 aLsvtlnlPfkqiesadlk 130
+                                       + +    +P++++++++++
+  GCA_018388625.1_ASM1838862v1_751  98 ISKQGRDMPLTRVNDVSFN 116
+                                       **************99875 PP
+
+>> GCA_018388625.1_ASM1838862v1_5350  QVJ01558.1 PH domain-containing protein [Nocardiopsis eucommiae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   1.9   1.9e-06    0.0033      53     132 ..      47     124 ..      24     155 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.9e-06
+               trimmed_msa_puhB_hmm  53 rvlaaladgeslsealasaalllalaavalallallawlsarttv..YtiTnrRvvlriGiaLsvtlnlPfkqies 126
+                                         ++a l++    +  + saa+l+++  + l +l+++ w +a  +v  ++iT+ R++l  G +      +P+ ++++
+  GCA_018388625.1_ASM1838862v1_5350  47 VFAAILSQ----TIGANSAATLALVWWLWLLVLVWFVWRVAEWSVdyFVITSARLLLTTGLITRQVNMMPLGKVTD 118
+                                        22222222....2223445555555566666666666766665544389************99999999******9 PP
+
+               trimmed_msa_puhB_hmm 127 adlklr 132
+                                        ++++++
+  GCA_018388625.1_ASM1838862v1_5350 119 MRFERT 124
+                                        998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       3486  (906845 residues searched)
+Passed MSV filter:                       285  (0.0817556); expected 69.7 (0.02)
+Passed bias filter:                      170  (0.0487665); expected 69.7 (0.02)
+Passed Vit filter:                        26  (0.00745841); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000860585); expected 0.0 (1e-05)
+Initial search space (Z):               3486  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10425.27
+//
+[ok]

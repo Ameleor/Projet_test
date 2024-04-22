@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022009815.1_ASM2200981v1/GCA_022009815.1_ASM2200981v1_protein.faa
+# output directed to file:         results/GCA_022009815.1_ASM2200981v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0049   12.4   1.1      0.012   11.1   0.3    1.8  2  GCA_022009815.1_ASM2200981v1_960  UKI25886.1 MAG: YifB family Mg c
+     0.0093   11.5   0.0      0.021   10.3   0.0    1.4  1  GCA_022009815.1_ASM2200981v1_150  UKI25225.1 MAG: MoxR family ATPa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022009815.1_ASM2200981v1_960  UKI25886.1 MAG: YifB family Mg chelatase-like AAA ATPase [Bacteroidales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0     0.052        56     115     161 ..      71     117 ..      62     152 .. 0.76
+   2 !   11.1   0.3   1.1e-05     0.012     144     239 ..     378     500 ..     371     503 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.052
+              trimmed_msa_bchD_hmm 115 alerdglalrlearfglvaLDegleedealpeaLldRlalrldldei 161
+                                        ++++g a +l+ +++++a De +++d      L+  l+l   l+ i
+  GCA_022009815.1_ASM2200981v1_960  71 DVKKEGSAYDLPLAIAVLAADEKVTADRLERFMLMGELSLDGSLQPI 117
+                                       57889999999999999999999988888888888777777666655 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchD_hmm 144 lpeaLldRlalrldldeialrdleelaa..eaedieaararlpkvtl..........................eeea 192
+                                       ++  LldR+ l++++  ++ +d++++a+  + ++i++   r +++++                          +++ 
+  GCA_022009815.1_ASM2200981v1_960 378 ISGPLLDRIDLQVEVAPVEFDDISSTAPaeSSAAIRERVIRAREIQTrryegikgvhcnaqmttalmhqyaqpDAAG 454
+                                       66778999999999999999998887765533333444444444444555556666667777777777777756667 PP
+
+              trimmed_msa_bchD_hmm 193 lealvataaalGidslRapllalraaralAalegrteveeedlalAa 239
+                                       le+l  + +++  +s+Ra    lr+ar++A leg ++v   +++ A+
+  GCA_022009815.1_ASM2200981v1_960 455 LEKLKDAMTRF-NMSARAYDRILRVARTIADLEGSDRVLTYHIQEAI 500
+                                       77776666665.579***********************999999986 PP
+
+>> GCA_022009815.1_ASM2200981v1_150  UKI25225.1 MAG: MoxR family ATPase [Bacteroidales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0     2e-05     0.021      93     256 ..     120     313 ..     105     320 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2e-05
+              trimmed_msa_bchD_hmm  93 mAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldeialr.dl 166
+                                          R ++++ + l +a+ e++v++  ++   +l+  f ++a  + +e++ +  lpea +dR  l++ ++  + + ++
+  GCA_022009815.1_ASM2200981v1_150 120 EINRAPAKVQSALLEAMQERQVTIGSET--FKLDDPFLVMATQNPIEQEGTypLPEAQVDRFLLKVVVTYPTKEeEM 194
+                                       557999999***********87777666..677888*********98876523789******999988765554133 PP
+
+              trimmed_msa_bchD_hmm 167 eelaa..............eaedieaararlpkvtl..................eeealealvataaalGidslRap 211
+                                       + +                ++edi +a++ ++++ +                   +  l++l+ + a +G  s Ra+
+  GCA_022009815.1_ASM2200981v1_150 195 QIV-SqnirpqqselrpllKPEDIVDAQNVVSQIYIddkisqyivdivnatrkpADCGLNDLAGLIA-FG-GSPRAS 268
+                                       333.247888899999999*****************6666666666665554443334444444332.22.488999 PP
+
+              trimmed_msa_bchD_hmm 212 llalraaralAalegrteveeedlalAarlvlapratrlpeeeee 256
+                                       +  + a r  A l+gr  v  ed+++  + vl +r   + e+e++
+  GCA_022009815.1_ASM2200981v1_150 269 IGLALASRSYAFLKGRGYVLPEDVRAVCHDVLRHRIGLTYEAEAN 313
+                                       999999999999999999999999999999999998766655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2158  (636167 residues searched)
+Passed MSV filter:                        95  (0.0440222); expected 43.2 (0.02)
+Passed bias filter:                       57  (0.0264133); expected 43.2 (0.02)
+Passed Vit filter:                         8  (0.00370714); expected 2.2 (0.001)
+Passed Fwd filter:                         4  (0.00185357); expected 0.0 (1e-05)
+Initial search space (Z):               2158  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7683.39
+//
+[ok]

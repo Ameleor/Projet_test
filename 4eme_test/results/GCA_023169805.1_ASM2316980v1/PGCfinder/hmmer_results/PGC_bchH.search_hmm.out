@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchH.hmm
+# target sequence database:        data/genomes_unzip/GCA_023169805.1_ASM2316980v1/GCA_023169805.1_ASM2316980v1_protein.faa
+# output directed to file:         results/GCA_023169805.1_ASM2316980v1/PGCfinder/hmmer_results/PGC_bchH.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchH_hmm  [M=1219]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0059   12.8   0.1     0.0066   12.6   0.1    1.0  1  GCA_023169805.1_ASM2316980v1_1878  BCM90051.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023169805.1_ASM2316980v1_1878  BCM90051.1 hypothetical protein IAD21_01902 [Abditibacteriota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.1     1e-06    0.0066     655     743 ..       4      91 ..       1      96 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1e-06
+               trimmed_msa_bchH_hmm 655 plaeaGlykGladlkaslerwralepeaaeereelaaliqaqaaaldlaaaepaweeeeakvealveklleleetl 730
+                                        p++++ l  Gl+d+ +  ++     ++ +e+ eel +li++q+++ld  +a     e e++  +l + +l le+ l
+  GCA_023169805.1_ASM2316980v1_1878   4 PVSSSKLLSGLIDFAKGTKKNADDIKKLNERLEELLKLIREQSSRLDKLEARVDSME-ERHKLELENLILRLENIL 78 
+                                        89999**********999999888888888899*************98888855554.55666899999******* PP
+
+               trimmed_msa_bchH_hmm 731 ipeGlhvvGeals 743
+                                        +  G+ v  ++++
+  GCA_023169805.1_ASM2316980v1_1878  79 LRAGVNVPPQSPT 91 
+                                        ****999776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1219 nodes)
+Target sequences:                       6384  (2209070 residues searched)
+Passed MSV filter:                       166  (0.0260025); expected 127.7 (0.02)
+Passed bias filter:                      138  (0.0216165); expected 127.7 (0.02)
+Passed Vit filter:                         9  (0.00140977); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000156642); expected 0.1 (1e-05)
+Initial search space (Z):               6384  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.09
+# Mc/sec: 27779.74
+//
+[ok]

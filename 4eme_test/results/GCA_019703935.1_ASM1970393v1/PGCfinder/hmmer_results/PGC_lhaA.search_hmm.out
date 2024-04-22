@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_019703935.1_ASM1970393v1/GCA_019703935.1_ASM1970393v1_protein.faa
+# output directed to file:         results/GCA_019703935.1_ASM1970393v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+  ------ inclusion threshold ------
+      0.091    9.7  30.5     0.0052   13.8  10.9    2.3  2  GCA_019703935.1_ASM1970393v1_92  BCN46791.1 MFS transporter [Pres
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019703935.1_ASM1970393v1_92  BCN46791.1 MFS transporter [Prescottella equi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8  10.9   1.1e-06    0.0052     289     400 ..      52     165 ..      21     170 .. 0.89
+   2 ?    1.5  11.6    0.0057        28     287     416 ..     332     457 ..     302     467 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.1e-06
+             trimmed_msa_lhaA_hmm 289 LtallalGalvgfalaarslargadalrlaalG.lliGilafsl.vifaaplesallfrlgavliGlggGlfavgtlt 364
+                                      Lt +  + ++ ++++aa  l+ g    rl  +   ++G++ f+   ++aa+ es++ + ++ v+ G+gg l   +tl 
+  GCA_019703935.1_ASM1970393v1_92  52 LTDAQWINSIYSVVFAALLLTAGRLGDRLGRRMlFVAGVVVFIGgSLMAAASESSTALIVARVVQGVGGALVLPCTLS 129
+                                      5666667788999999999****9999*997651688**99985378899999999999999**************** PP
+
+             trimmed_msa_lhaA_hmm 365 aamalaeeeesGlalGaWGavqataaGlaialgGal 400
+                                      +  a+ + ++  +a+G+WGav +  a ++ +lgG l
+  GCA_019703935.1_ASM1970393v1_92 130 TVNATFRGRDRAIAFGVWGAVISGMAAVGPLLGGWL 165
+                                      **9999********************9999999987 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.0057
+             trimmed_msa_lhaA_hmm 287 tlLtallalGalvgfalaarslargadalrlaalGl...liGilafslvifaaplesallfrlgavliGlggGlfavg 361
+                                        + a++alGa ++ + aar+++    a r   lGl   ++G+laf+l  +  p ++a l++l  ++ Glg Gl + +
+  GCA_019703935.1_ASM1970393v1_92 332 GYVLAVMALGAFAS-GAAARHVTARFGAPRTVMLGLaleVVGVLAFAL--YLRPSSAAWLLALLLAIYGLGLGLAS-A 405
+                                      55678999999866.779999999999999999997334678888875..668999999****99********976.5 PP
+
+             trimmed_msa_lhaA_hmm 362 tltaamalaee.eesGlalGaWGavqataaGlaialgGalrdvvselaasgalgea 416
+                                       lt ++ ++   +es    G   a q+t   l+ alg a+  +v +l  + al + 
+  GCA_019703935.1_ASM1970393v1_92 406 QLTGTVLVDIPtSES----GQGSATQSTVRQLGAALGTAILGTVLSLGLAHALTDR 457
+                                      566665555441444....4455666776666666666666666666655555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       4911  (1583834 residues searched)
+Passed MSV filter:                       381  (0.0775809); expected 98.2 (0.02)
+Passed bias filter:                       80  (0.01629); expected 98.2 (0.02)
+Passed Vit filter:                        12  (0.00244349); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203625); expected 0.0 (1e-05)
+Initial search space (Z):               4911  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 20416.35
+//
+[ok]

@@ -1,0 +1,122 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_018622495.1_ASM1862249v1/GCA_018622495.1_ASM1862249v1_protein.faa
+# output directed to file:         results/GCA_018622495.1_ASM1862249v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.3e-08   28.9   0.7    2.5e-06   23.1   0.2    2.3  2  GCA_018622495.1_ASM1862249v1_76    QWB95967.1 dihydrolipoyl dehydro
+      9e-06   21.2   0.0    2.7e-05   19.7   0.0    1.8  2  GCA_018622495.1_ASM1862249v1_542   QWB96382.1 NAD(P)/FAD-dependent 
+    1.8e-05   20.3   0.0    3.7e-05   19.2   0.0    1.5  1  GCA_018622495.1_ASM1862249v1_384   QWB96240.1 aminoacetone oxidase 
+    0.00032   16.1   0.2      0.039    9.3   0.0    2.4  2  GCA_018622495.1_ASM1862249v1_316   QWB96180.1 FAD-dependent oxidore
+     0.0039   12.6   0.1     0.0054   12.1   0.1    1.4  1  GCA_018622495.1_ASM1862249v1_1254  QWB95583.1 NAD-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018622495.1_ASM1862249v1_76  QWB95967.1 dihydrolipoyl dehydrogenase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.1   0.2   8.1e-09   2.5e-06       2      62 ..       3      66 ..       2      70 .. 0.84
+   2 !    3.8   0.0    0.0059       1.8       4      39 ..     173     208 ..     171     211 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 23.1 bits;  conditional E-value: 8.1e-09
+             trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra..grikPcGGaiPprl.ikdfaipdellvak 62
+                                     ++dvv++GGGP G +aa +  ++G k +l++++  g i    G iP+++ +k  ++ +++l ak
+  GCA_018622495.1_ASM1862249v1_76  3 NYDVVIIGGGPGGYVAAIKAGQSGLKTALIEKEvvGGICLNHGCIPTKAlLKSAKVYKQMLHAK 66
+                                     6******************************98445677779****996257778888888776 PP
+
+  == domain 2  score: 3.8 bits;  conditional E-value: 0.0059
+             trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrikP 39 
+                                      d v++GGG  G   a+ +   G +v ++++ + i P
+  GCA_018622495.1_ASM1862249v1_76 173 DLVIIGGGVIGIEFATIFNALGSNVTIIEKLDGILP 208
+                                      89***************************9887766 PP
+
+>> GCA_018622495.1_ASM1862249v1_542  QWB96382.1 NAD(P)/FAD-dependent oxidoreductase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.0   8.7e-08   2.7e-05       2      36 ..       3      37 ..       2      88 .. 0.91
+   2 ?   -1.9   0.0      0.31        94       4      29 ..     157     182 ..     156     211 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 8.7e-08
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldragr 36
+                                      tfdv ++GGG aG +aa+++  +G kvll++r+++
+  GCA_018622495.1_ASM1862249v1_542  3 TFDVTIIGGGAAGLAAATSFKDSGLKVLLVERSDQ 37
+                                      8******************************9876 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.31
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvl 29 
+                                       dv ++G G  G + a++++ +G kv 
+  GCA_018622495.1_ASM1862249v1_542 157 DVFILGSGDIGLIMARRMTLEGAKVH 182
+                                       89999**************9999986 PP
+
+>> GCA_018622495.1_ASM1862249v1_384  QWB96240.1 aminoacetone oxidase family FAD-binding enzyme [Mycoplasmatota bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.2   0.0   1.2e-07   3.7e-05       2      36 ..       2      36 ..       1      42 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 19.2 bits;  conditional E-value: 1.2e-07
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldragr 36
+                                      ++d+++vGGGPaG +aa+++ ++  + lll+++++
+  GCA_018622495.1_ASM1862249v1_384  2 IYDAIIVGGGPAGLMAANQFEKENINYLLLEKNEK 36
+                                      7******************************9876 PP
+
+>> GCA_018622495.1_ASM1862249v1_316  QWB96180.1 FAD-dependent oxidoreductase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.0   0.00013     0.039       2      34 ..       1      33 [.       1      39 [. 0.92
+   2 !    4.6   0.0    0.0032         1       4      33 ..     142     171 ..     139     204 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 0.00013
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      ++d++++G GPaG ta     r+  kv++++++
+  GCA_018622495.1_ASM1862249v1_316  1 MYDILIIGTGPAGITAGIYAKRANLKVAMFEKD 33
+                                      69***************9999999999999876 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0032
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldr 33 
+                                        vvv+GGG +    a  la    +v ++++
+  GCA_018622495.1_ASM1862249v1_316 142 KVVVIGGGNSAVEEAAYLATLATHVTVVQN 171
+                                       589999999999999999999999988765 PP
+
+>> GCA_018622495.1_ASM1862249v1_1254  QWB95583.1 NAD-binding protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.1   1.7e-05    0.0054       4      34 ..       5      35 ..       2      83 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.7e-05
+               trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldra 34
+                                         vv+G G  G+  a+++++kG++v+++d +
+  GCA_018622495.1_ASM1862249v1_1254  5 KFVVIGSGRLGSNIATKMSEKGEDVIIIDAT 35
+                                       579*************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1537  (444735 residues searched)
+Passed MSV filter:                        49  (0.0318803); expected 30.7 (0.02)
+Passed bias filter:                       40  (0.0260247); expected 30.7 (0.02)
+Passed Vit filter:                        14  (0.00910865); expected 1.5 (0.001)
+Passed Fwd filter:                         5  (0.00325309); expected 0.0 (1e-05)
+Initial search space (Z):               1537  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11842.15
+//
+[ok]

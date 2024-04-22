@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016026755.1_ASM1602675v1/GCA_016026755.1_ASM1602675v1_protein.faa
+# output directed to file:         results/GCA_016026755.1_ASM1602675v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00018   19.2  10.7    0.00024   18.8  10.7    1.2  1  GCA_016026755.1_ASM1602675v1_291  QPR68389.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016026755.1_ASM1602675v1_291  QPR68389.1 1,4-dihydroxy-2-naphthoate polyprenyltransferase [Lysinibacillus macroid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8  10.7   5.3e-08   0.00024      28     256 ..      35     269 ..      12     298 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 5.3e-08
+              trimmed_msa_bchG_hmm  28 vvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePerpiPsGri....pGrWGlyialiltllsl 100
+                                       +++ +++ +     +   +l+a  l+ a++ + n+++d ++   ne +  i    +      +  + ial + ++++
+  GCA_016026755.1_ASM1602675v1_291  35 AIALAIEKETIDFGLFFAMLIASMLIQAATNMFNEYYDYKLGLDNEHSVGIGGTIVrhgvQPKTIMLIALSFYAIAV 111
+                                       555555555555667788999**********************9*99988764432111144566789988888887 PP
+
+              trimmed_msa_bchG_hmm 101 lvaaal....gtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllall 173
+                                       l+++ +    + +  +  ++ +++ ++y+  P  +  + + G+ + g    g+  +  a  +++ + + + +ll + 
+  GCA_016026755.1_ASM1602675v1_291 112 LLGIYIcastSWWLAAVGLVCMLIGFLYTGGPYPIAYSPF-GEIVSGA-VMGMGIVLIAFYIQTLTVTLDAVLLSVP 186
+                                       777665221144555667889999*******999988764.6555543.3455555555555544444444444444 PP
+
+              trimmed_msa_bchG_hmm 174 ysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavllvvqlv 250
+                                         i    im  n+ + + Gd++ g k+l++ +G  +a  v + + +v+ + v+al+++ g ++ al++ v +   l 
+  GCA_016026755.1_ASM1602675v1_291 187 SMILVGAIMLSNNIRDIVGDTEGGRKTLAILVGRGHAISVLSGFFIVSYLWVIALVAIDGITFWALIIFVSVPKPLR 263
+                                       44444459**********************************************************99998877666 PP
+
+              trimmed_msa_bchG_hmm 251 lmarll 256
+                                       +++ + 
+  GCA_016026755.1_ASM1602675v1_291 264 AIQIFR 269
+                                       665554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4485  (1331161 residues searched)
+Passed MSV filter:                       191  (0.0425864); expected 89.7 (0.02)
+Passed bias filter:                       59  (0.013155); expected 89.7 (0.02)
+Passed Vit filter:                         4  (0.000891862); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000222965); expected 0.0 (1e-05)
+Initial search space (Z):               4485  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 17335.45
+//
+[ok]

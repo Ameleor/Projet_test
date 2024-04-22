@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203785.1_ASM1920378v1/GCA_019203785.1_ASM1920378v1_protein.faa
+# output directed to file:         results/GCA_019203785.1_ASM1920378v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00081   17.0   0.0     0.0013   16.3   0.0    1.2  1  GCA_019203785.1_ASM1920378v1_598   AAEPAK_03035 Polysaccharide bios
+     0.0011   16.5   0.1     0.0016   16.0   0.1    1.2  1  GCA_019203785.1_ASM1920378v1_1206  AAEPAK_06080 Iron-sulfur cluster
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203785.1_ASM1920378v1_598  AAEPAK_03035 Polysaccharide biosynthesis tyrosine autokinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   4.9e-07    0.0013      22      57 ..     265     301 ..     255     306 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4.9e-07
+              trimmed_msa_bchL_hmm  22 vfavygkg.gigksttssnlsvafsklgkrvlqigcd 57 
+                                       vf +   g g gkstt++nl+ af+  g+rv  i  d
+  GCA_019203785.1_ASM1920378v1_598 265 VFVITSSGpGEGKSTTAANLALAFADAGHRVALIDAD 301
+                                       77777776689********************999887 PP
+
+>> GCA_019203785.1_ASM1920378v1_1206  AAEPAK_06080 Iron-sulfur cluster carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.1   6.1e-07    0.0016      24      54 ..     114     144 ..     107     171 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 6.1e-07
+               trimmed_msa_bchL_hmm  24 avygkggigksttssnlsvafsklgkrvlqi 54 
+                                           gkgg+gkst ++nl+va++  g  v  +
+  GCA_019203785.1_ASM1920378v1_1206 114 VSSGKGGVGKSTVTANLAVALADQGLAVGLV 144
+                                        4469*****************9998777555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       5209  (928213 residues searched)
+Passed MSV filter:                       109  (0.0209253); expected 104.2 (0.02)
+Passed bias filter:                       95  (0.0182377); expected 104.2 (0.02)
+Passed Vit filter:                        15  (0.00287963); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000383951); expected 0.1 (1e-05)
+Initial search space (Z):               5209  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12724.93
+//
+[ok]

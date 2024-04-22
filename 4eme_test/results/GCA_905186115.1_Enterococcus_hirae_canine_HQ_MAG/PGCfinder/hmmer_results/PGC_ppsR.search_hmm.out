@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                             -----------
+    1.3e-05   21.6   0.9    2.4e-05   20.7   0.9    1.5  1  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_439  NPFBPI_02275 cell wall metabolis
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_439  NPFBPI_02275 cell wall metabolism sensor histidine kinase WalK
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.7   0.9   9.6e-09   2.4e-05     246     377 ..     247     377 ..     166     398 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 20.7 bits;  conditional E-value: 9.6e-09
+                                  trimmed_msa_ppsR_hmm 246 paeaaaa.aaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvr 301
+                                                           ++ ++a+ ++e ++++l +vl ++ d+++ td++g++++ N+  ++l ++++e+ ++
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_439 247 ERIEEAQdTMEAERNRLDSVLSHMTDGVIATDRRGKVITINDMAVSLLDVKNED-AI 302
+                                                           333333337788899***********************************9875.56 PP
+
+                                  trimmed_msa_ppsR_hmm 302 grsLerwLg.ragvDlkvllanlreegsvrlfatklrgelgteeeVevsAvsvadge 357
+                                                           g+s+ + L   ++  l+ ll+  +e   v + +t l +++ +   V+ s  + ++g 
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_439 303 GQSILTLLDiEEEYTLRKLLEDPNE--MVLDRSTGLMESDQMILRVDFSMIRRESGF 357
+                                                           7777665531334444444444333..344556666666666666666666666666 PP
+
+                                  trimmed_msa_ppsR_hmm 358 qpclgfvirdvsrreakeka 377
+                                                            + l+ v++dv+++e++e++
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_439 358 ISGLVAVLHDVTEQEKTERE 377
+                                                           66666666666666555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2514  (771648 residues searched)
+Passed MSV filter:                       119  (0.0473349); expected 50.3 (0.02)
+Passed bias filter:                       60  (0.0238663); expected 50.3 (0.02)
+Passed Vit filter:                         5  (0.00198886); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000397772); expected 0.0 (1e-05)
+Initial search space (Z):               2514  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 15203.82
+//
+[ok]

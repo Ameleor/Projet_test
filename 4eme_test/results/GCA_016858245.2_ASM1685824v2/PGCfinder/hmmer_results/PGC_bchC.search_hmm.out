@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016858245.2_ASM1685824v2/GCA_016858245.2_ASM1685824v2_protein.faa
+# output directed to file:         results/GCA_016858245.2_ASM1685824v2/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.3e-06   24.6   0.1    2.5e-05   21.7   0.1    2.0  1  GCA_016858245.2_ASM1685824v2_707  UGA38827.1 L-threonine 3-dehydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016858245.2_ASM1685824v2_707  UGA38827.1 L-threonine 3-dehydrogenase [Chromobacterium haemolyticum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   0.1   5.1e-09   2.5e-05      14     295 ..      13     327 ..       3     336 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 5.1e-09
+              trimmed_msa_bchC_hmm  14 lalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagees.klkvgervfvP 89 
+                                       l +++++  +++++d+++ i+ ++i  Gt+  +w+    +   +  P+  G+e vG v + g+e  +++vg+rv   
+  GCA_016858245.2_ASM1685824v2_707  13 LWMTDVAKPEIGHNDLLIRIRKTAI-CGTDIHIWNWDDWAQKTIPVPMHVGHEYVGVVEAIGSEVqGFSVGQRVSGE 88 
+                                       6666777777888888888888887.488888888888888888888888888888888877664157888888544 PP
+
+              trimmed_msa_bchC_hmm  90 G.......akcfedvrgl....f.......Ggaasrlvvpaarvvkvdeelgee.gvllalaatarh.alagkekka 146
+                                       G        +c ++ r l    f       G+ a+ lv+pa  +++++++++++ + ++     a h al+ +   +
+  GCA_016858245.2_ASM1685824v2_707  89 GhitcghcRNCRAGRRHLcrntFgvgvnreGAFAEYLVIPAFNAFPIPDDISDDlASIFDPFGNAVHtALSFNLVGE 165
+                                       422111222344433333222252222222567999*************9988735566666666661555556667 PP
+
+              trimmed_msa_bchC_hmm 147 pdlivGhGvlGrllarltvaagaeapvvWetnaaraegaegyevidpeederr.............dykaivdasGd 210
+                                         li G G +G +   ++  +ga++ v+ + n+ r e a+   ++++ +  ++              +++ +++sG+
+  GCA_016858245.2_ASM1685824v2_707 166 DVLITGAGPIGIMAVAIARHVGARHVVITDVNEYRLELARKMGATRAVNVAKQdlkqvmaelhmteGFDVGLEMSGN 242
+                                       77899***********************9999988766654443333333333000011111111145555678*** PP
+
+              trimmed_msa_bchC_hmm 211 aevldkliarlakggeivlaGfyeeplsfafppafmrearlr.vaaewkkedlaavkalvesGrlsldglithrasa 286
+                                       ++ + +++  +++gg++ l G   ++ +  + +   +  +++ +      e   ++ al++sG l++  +ith+ + 
+  GCA_016858245.2_ASM1685824v2_707 243 PQAFRQMLDTMNHGGKVALLGIPPADTAIDWNHVIFKGLEIKgIYGREMFETWYKMVALIQSG-LDITPIITHHFPV 318
+                                       *************************99999999999998887455555566778889999999.9*********999 PP
+
+              trimmed_msa_bchC_hmm 287 eeaeeayrt 295
+                                       +e ++ ++ 
+  GCA_016858245.2_ASM1685824v2_707 319 AEFQQGFEA 327
+                                       999988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       4930  (1041767 residues searched)
+Passed MSV filter:                       116  (0.0235294); expected 98.6 (0.02)
+Passed bias filter:                       94  (0.0190669); expected 98.6 (0.02)
+Passed Vit filter:                        11  (0.00223124); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020284); expected 0.0 (1e-05)
+Initial search space (Z):               4930  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13901.26
+//
+[ok]

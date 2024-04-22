@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022014655.1_ASM2201465v1/GCA_022014655.1_ASM2201465v1_protein.faa
+# output directed to file:         results/GCA_022014655.1_ASM2201465v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.2e-05   17.6   0.2    0.00017   16.4   0.2    1.6  1  GCA_022014655.1_ASM2201465v1_1249  UKJ12577.1 NAD(P)/FAD-dependent 
+     0.0014   13.4   1.2     0.0025   12.6   1.2    1.3  1  GCA_022014655.1_ASM2201465v1_1462  UKJ12756.1 alanine dehydrogenase
+  ------ inclusion threshold ------
+      0.032    8.9   3.4      0.066    7.9   1.1    2.4  3  GCA_022014655.1_ASM2201465v1_980   UKJ12343.1 thioredoxin-disulfide
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022014655.1_ASM2201465v1_1249  UKJ12577.1 NAD(P)/FAD-dependent oxidoreductase [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.2   3.8e-07   0.00017       2      50 ..       7      56 ..       6      58 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 3.8e-07
+               trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGl.dvtvlekaaapGGKlrevevggaaid 50
+                                       +v+++GaG gG+a+a++   aG+ +v ++ek+++  G + ++  +g++id
+  GCA_022014655.1_ASM2201465v1_1249  7 DVLIVGAGPGGIATAVECEIAGVkKVLLCEKTESHSGMMEKFYKAGKRID 56
+                                       599*******************8459999*************99999998 PP
+
+>> GCA_022014655.1_ASM2201465v1_1462  UKJ12756.1 alanine dehydrogenase [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   1.2   5.6e-06    0.0025       2      31 ..     173     202 ..     172     206 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 5.6e-06
+               trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlek 31 
+                                        ++vv+G G+ G+ +a  l++ G +vt+le 
+  GCA_022014655.1_ASM2201465v1_1462 173 KIVVVGGGVVGMESAKVLSQMGAKVTILEL 202
+                                        79**************************95 PP
+
+>> GCA_022014655.1_ASM2201465v1_980  UKJ12343.1 thioredoxin-disulfide reductase [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   1.1   0.00015     0.066       4      40 ..       5      41 ..       3      52 .. 0.91
+   2 ?   -0.2   0.0     0.043        19     237     290 ..      67     122 ..      46     126 .. 0.64
+   3 ?   -3.0   0.0      0.29   1.3e+02       2      32 ..     145     175 ..     144     178 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.00015
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaapGGKlr 40
+                                       +iG G +GL+a l  ++ G++  vl ++  pGG++ 
+  GCA_022014655.1_ASM2201465v1_980  5 AIIGGGPAGLSAGLYATRGGVKNAVLFEKGMPGGQIT 41
+                                      69********************************985 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.043
+              trimmed_msa_crtD_hmm 237 akgaefrygeeveeilveegr..vsgvrladgerieadavvfngDvaalaagllge 290
+                                       ++  +f +++e++ i+  +++     +  +dg++ ea++v++++  +  ++g+ ge
+  GCA_022014655.1_ASM2201465v1_980  67 EQCFRFGLKHEMTAIQRVSKKdsHFVILAEDGKTFEAKSVIIATGGSPKRTGIKGE 122
+                                       44455555666777766555411344566899*********988777777776665 PP
+
+  == domain 3  score: -3.0 bits;  conditional E-value: 0.29
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvleka 32 
+                                       +v v+G G + +  a+ la+   +v ++ ++
+  GCA_022014655.1_ASM2201465v1_980 145 EVAVLGGGDTAVEEAIYLANICKKVYLIHRR 175
+                                       79999***************99999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1335  (428556 residues searched)
+Passed MSV filter:                        53  (0.0397004); expected 26.7 (0.02)
+Passed bias filter:                       46  (0.0344569); expected 26.7 (0.02)
+Passed Vit filter:                         8  (0.00599251); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00224719); expected 0.0 (1e-05)
+Initial search space (Z):               1335  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8980.89
+//
+[ok]

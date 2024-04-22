@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635275.1_40757_D01/GCA_900635275.1_40757_D01_protein.faa
+# output directed to file:         results/GCA_900635275.1_40757_D01/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+  ------ inclusion threshold ------
+      0.016   11.1   0.3      0.022   10.7   0.3    1.1  1  GCA_900635275.1_40757_D01_2435  VDZ36202.1 Molybdate-binding pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635275.1_40757_D01_2435  VDZ36202.1 Molybdate-binding protein [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.3   7.5e-06     0.022     275     344 ..      24      93 ..      19     104 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 7.5e-06
+            trimmed_msa_bchD_hmm 275 aeeeeeeeeeeeeeeealedvvleaakaalpadllaklaakaarrakaassgkaGakrksarrGrplgar 344
+                                     ++++e +++++++ +++  +v  +a  + + ++l +++++++++   + + g++Ga rk+ ++G p+ + 
+  GCA_900635275.1_40757_D01_2435  24 NDNNETKKDDADNGKKQEIQVAAAASLTDVTKKLASEFKKEHKNADVKFNYGGSGALRKQIESGAPVDVF 93 
+                                     33333344444444444444555555677889999999999998889999***************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2929  (725208 residues searched)
+Passed MSV filter:                       106  (0.0361898); expected 58.6 (0.02)
+Passed bias filter:                       69  (0.0235575); expected 58.6 (0.02)
+Passed Vit filter:                        17  (0.00580403); expected 2.9 (0.001)
+Passed Fwd filter:                         6  (0.00204848); expected 0.0 (1e-05)
+Initial search space (Z):               2929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 5785.02
+//
+[ok]

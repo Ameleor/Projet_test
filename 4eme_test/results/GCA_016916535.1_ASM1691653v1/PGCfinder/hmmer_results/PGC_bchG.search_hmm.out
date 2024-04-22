@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016916535.1_ASM1691653v1/GCA_016916535.1_ASM1691653v1_protein.faa
+# output directed to file:         results/GCA_016916535.1_ASM1691653v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0011   15.9   0.2     0.0011   15.9   0.2    2.1  2  GCA_016916535.1_ASM1691653v1_300  QRX63978.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016916535.1_ASM1691653v1_300  QRX63978.1 1,4-dihydroxy-2-naphthoate octaprenyltransferase [Dysgonomonadaceae bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   1.4     0.075   2.1e+02      89     122 ..      16      49 ..      11      56 .. 0.88
+   2 !   15.9   0.2     4e-07    0.0011     176     240 ..     189     254 ..     103     294 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.075
+              trimmed_msa_bchG_hmm  89 lyialiltllsllvaaalgtlvfvaavlglvlaW 122
+                                       l++a+   +l   va++ g +++ + +l+++la 
+  GCA_016916535.1_ASM1691653v1_300  16 LFLAVSSVILGSGVAWFKGLFTLHTFILAFLLAV 49 
+                                       8999999999999******999999999999885 PP
+
+  == domain 2  score: 15.9 bits;  conditional E-value: 4e-07
+              trimmed_msa_bchG_hmm 176 igahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvval..llawgkalhalv 240
+                                       + +  i+ +n+++ +e dr  g ++++vklG + a r+ ++ m+++ ++  al  l+++ ++l   +
+  GCA_016916535.1_ASM1691653v1_300 189 LISSMILNVNNMRDIENDRSSGKRTIAVKLGLKGAKRYHAA-MTLATILSFALfnLIYLPSSLPGYL 254
+                                       33456999**************************9998654.5555555555411333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2840  (1030660 residues searched)
+Passed MSV filter:                        97  (0.0341549); expected 56.8 (0.02)
+Passed bias filter:                       37  (0.0130282); expected 56.8 (0.02)
+Passed Vit filter:                         2  (0.000704225); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000352113); expected 0.0 (1e-05)
+Initial search space (Z):               2840  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12140.63
+//
+[ok]

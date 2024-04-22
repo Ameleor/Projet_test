@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021654395.1_ARM1_1.0/GCA_021654395.1_ARM1_1.0_protein.faa
+# output directed to file:         results/GCA_021654395.1_ARM1_1.0/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+     0.0002   16.0   0.2     0.0057   11.2   0.0    2.1  2  GCA_021654395.1_ARM1_1.0_302  BCS90845.1 MAG: ATP-binding prot
+    0.00098   13.7   0.2     0.0021   12.6   0.1    1.5  2  GCA_021654395.1_ARM1_1.0_481  BCS91024.1 MAG: site-determining
+     0.0012   13.5   0.1      0.092    7.2   0.0    2.2  2  GCA_021654395.1_ARM1_1.0_264  BCS90807.1 MAG: signal recogniti
+     0.0021   12.6   0.1     0.0022   12.5   0.1    1.0  1  GCA_021654395.1_ARM1_1.0_393  BCS90936.1 MAG: acylphosphatase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021654395.1_ARM1_1.0_302  BCS90845.1 MAG: ATP-binding protein [Candidatus Micrarchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0   2.7e-05    0.0057      15      59 ..      18      63 ..       7      70 .. 0.82
+   2 ?    2.7   0.0      0.01       2.2     200     265 ..     187     254 ..     171     260 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2.7e-05
+          trimmed_msa_bchX_hmm 15 tgevtketqiiaiy.gkggigksftlanlsymlaqqgkkvlligcd 59
+                                  +++ ++ t ii +y  kgg+gk+    nl+y +    kk  l+  d
+  GCA_021654395.1_ARM1_1.0_302 18 DKHLSNITSIIGVYsAKGGVGKTSVSINLAYAFKALKKKTALLDAD 63
+                                  456677899*****559****************9999999988777 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.01
+          trimmed_msa_bchX_hmm 200 vaglvinkddgtgea..qafaeavgipvlaaipadedirrksanyeiigkpesewgslfeelaenvae 265
+                                   + g++ n  d+  e+  + +ae  ++ vl  +p ++  ++     +   + +++  ++f+++a+n+ +
+  GCA_021654395.1_ARM1_1.0_302 187 ILGVIENMSDSNKESysDKLAERLSVGVLGRVPYKDSFKNAVELGKAAYELDENIKEIFDNIANNIIS 254
+                                   66888899998888522679****************99988777777777889999999999999865 PP
+
+>> GCA_021654395.1_ARM1_1.0_481  BCS91024.1 MAG: site-determining protein [Candidatus Micrarchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.1     1e-05    0.0021      29      96 ..       9      77 ..       2      83 .. 0.80
+   2 ?   -2.6   0.0      0.41        88     228     263 ..     192     229 ..     187     232 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1e-05
+          trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcdpksdttsllfg.gkacptiietsskkklageevkigdv 96
+                                   kgg+gks    n++  l ++g +vlli  d    + +  +g  +   t ++    k+   e + i+d 
+  GCA_021654395.1_ARM1_1.0_481  9 NKGGVGKSVIAINIAIDLENKGFNVLLIDADITNSSIATYLGlANVKHTFLDILKGKRSIDECIMIHDT 77
+                                  69*****************************87666555555155567888888888888888888876 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.41
+          trimmed_msa_bchX_hmm 228 aipadedirrksanye...iigkpesewgslfeelaenv 263
+                                    ip d+++ r     +   ii kp+s+++  ++ l+e+v
+  GCA_021654395.1_ARM1_1.0_481 192 KIPYDDNVNRSIQL-QrpiIIDKPNSKFSRSISRLSERV 229
+                                   68889988775432.224488999999999988888877 PP
+
+>> GCA_021654395.1_ARM1_1.0_264  BCS90807.1 MAG: signal recognition particle protein [Candidatus Micrarchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.2   0.0   0.00043     0.092      25      60 ..      97     132 ..      83     167 .. 0.87
+   2 !    4.0   0.0     0.004      0.84     181     216 ..     212     248 ..     203     280 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.00043
+          trimmed_msa_bchX_hmm  25 iaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                   i + g  g gk+ t a+l+y+  ++g k lli  d 
+  GCA_021654395.1_ARM1_1.0_264  97 IMLIGLYGAGKTTTAAKLAYFYKEKGLKPLLITTDR 132
+                                   5566777899**********************9985 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.004
+          trimmed_msa_bchX_hmm 181 annvcsaveyf.rklggnvgvaglvinkddgtgeaqa 216
+                                   + ++ + v+ + + +   vg+ g++i k dg+ +a  
+  GCA_021654395.1_ARM1_1.0_264 212 SADIGEVVKSLvKAFNDAVGIDGIIITKMDGSAKAGG 248
+                                   555555555431456789*************998864 PP
+
+>> GCA_021654395.1_ARM1_1.0_393  BCS90936.1 MAG: acylphosphatase [Candidatus Micrarchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.1   1.1e-05    0.0022     196     250 ..      24      79 ..       9      86 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.1e-05
+          trimmed_msa_bchX_hmm 196 gnvgvaglvinkddgtgeaqafaeavgip.vlaaipadedirrksanyeiigkpes 250
+                                    ++g+ g v n+ddg+ e  a+ +++ +  +l +i  d d   +  n ei+ ++e+
+  GCA_021654395.1_ARM1_1.0_393  24 VKLGIKGYVKNRDDGSVELVAYGDKAKLDqLLKSIDVDIDNGPQVMNIEIVEESEK 79 
+                                   4689*********************9996378899999999999999999987764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        849  (247350 residues searched)
+Passed MSV filter:                        35  (0.041225); expected 17.0 (0.02)
+Passed bias filter:                       30  (0.0353357); expected 17.0 (0.02)
+Passed Vit filter:                         7  (0.00824499); expected 0.8 (0.001)
+Passed Fwd filter:                         4  (0.00471143); expected 0.0 (1e-05)
+Initial search space (Z):                849  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6320.40
+//
+[ok]

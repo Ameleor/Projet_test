@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_022846075.1_ASM2284607v1/GCA_022846075.1_ASM2284607v1_protein.faa
+# output directed to file:         results/GCA_022846075.1_ASM2284607v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.2e-10   37.7   0.1    0.00022   17.9   0.0    3.4  4  GCA_022846075.1_ASM2284607v1_100  BDF66128.1 Fis family transcript
+     0.0055   13.3   0.0      0.017   11.7   0.0    1.8  2  GCA_022846075.1_ASM2284607v1_748  BDF66776.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022846075.1_ASM2284607v1_100  BDF66128.1 Fis family transcriptional regulator [Oscillospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.3e-06    0.0019       4      59 ..     216     269 ..     213     277 .. 0.88
+   2 !   17.9   0.0   1.5e-07   0.00022     125     185 ..     316     376 ..     309     380 .. 0.95
+   3 ?   -1.0   0.0     0.085   1.3e+02     191     208 ..     403     420 ..     398     426 .. 0.85
+   4 ?   -1.4   0.0      0.11   1.6e+02     282     306 ..     497     521 ..     485     526 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.3e-06
+              trimmed_msa_bchI_hmm   4 fpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavk 59 
+                                         f+ + gq++ k+al +aa   +   vl++G  G+Gks  +r l ++lP ++  +
+  GCA_022846075.1_ASM2284607v1_100 216 LDFAEVKGQENGKRALEIAAAGGH--NVLMIGPPGSGKSMLARRLPSILPGLSERE 269
+                                       569999*************98664..7***********************998765 PP
+
+  == domain 2  score: 17.9 bits;  conditional E-value: 1.5e-07
+              trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        pG ++ a+ G l++de+  +   ++++l    + G+  + r g s r parf+lv + nP
+  GCA_022846075.1_ASM2284607v1_100 316 RPGEISLAHHGVLFLDELPEFHKDVLEVLRQPMEEGTVQITRAGGSERFPARFMLVCAMNP 376
+                                       589999*****************************************************99 PP
+
+  == domain 3  score: -1.0 bits;  conditional E-value: 0.085
+              trimmed_msa_bchI_hmm 191 rPqlldrfGlsvevrtpk 208
+                                          lldr  l+vev +p+
+  GCA_022846075.1_ASM2284607v1_100 403 SGPLLDRVDLTVEVDAPD 420
+                                       5669**********9985 PP
+
+  == domain 4  score: -1.4 bits;  conditional E-value: 0.11
+              trimmed_msa_bchI_hmm 282 tllraaralaalegakevtkehlkk 306
+                                        +lr ar++a l+ +++++  hl++
+  GCA_022846075.1_ASM2284607v1_100 497 RILRVARTIADLDHSEAIQVPHLAE 521
+                                       589***************9999975 PP
+
+>> GCA_022846075.1_ASM2284607v1_748  BDF66776.1 hypothetical protein CE91St43_07480 [Oscillospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.0   1.2e-05     0.017      26      51 ..     205     230 ..     193     255 .. 0.87
+   2 ?   -2.2   0.0      0.19   2.8e+02     193     222 ..     332     363 ..     326     380 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_bchI_hmm  26 psigGvlvlGdrGtGkstavralaal 51 
+                                       +++  vl++Gd GtGks++v++l +l
+  GCA_022846075.1_ASM2284607v1_748 205 RRVNNVLLYGDSGTGKSATVKSLLSL 230
+                                       57889*****************9876 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.19
+              trimmed_msa_bchI_hmm 193 qlldrfGlsvevr..tpkdleervevvrrrda 222
+                                        l drfGl +     +  +  e vev+ rr+ 
+  GCA_022846075.1_ASM2284607v1_748 332 ALADRFGLRIPYLglAKAEYLELVEVLARRAG 363
+                                       589*****998651134455577888877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2991  (958238 residues searched)
+Passed MSV filter:                       151  (0.0504848); expected 59.8 (0.02)
+Passed bias filter:                      117  (0.0391174); expected 59.8 (0.02)
+Passed Vit filter:                        24  (0.00802407); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000668673); expected 0.0 (1e-05)
+Initial search space (Z):               2991  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8171.35
+//
+[ok]

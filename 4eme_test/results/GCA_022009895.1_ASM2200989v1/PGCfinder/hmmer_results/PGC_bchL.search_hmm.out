@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_022009895.1_ASM2200989v1/GCA_022009895.1_ASM2200989v1_protein.faa
+# output directed to file:         results/GCA_022009895.1_ASM2200989v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.3e-08   30.6   1.4    6.1e-08   30.1   1.4    1.2  1  GCA_022009895.1_ASM2200989v1_1692  UKI38033.1 MAG: septum site-dete
+    0.00027   18.1   0.0    0.00048   17.3   0.0    1.4  1  GCA_022009895.1_ASM2200989v1_2576  UKI38602.1 MAG: AAA family ATPas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022009895.1_ASM2200989v1_1692  UKI38033.1 MAG: septum site-determining protein MinD [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.1   1.4   3.2e-11   6.1e-08      26     179 ..       9     155 ..       2     169 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 30.1 bits;  conditional E-value: 3.2e-11
+               trimmed_msa_bchL_hmm  26 ygkggigksttssnlsvafsklgkrvlqigcdpkh...dstftltkklvptvidvleevdfhseelrpedfvvegy 98 
+                                         gkgg+gk+t+++n+ + +s  gk v+ i  d      d +  l +++   v d+++ v+    el++   v    
+  GCA_022009895.1_ASM2200989v1_1692   9 SGKGGVGKTTAAANIGIGLSLEGKSVILIDTDIGLrnlDIAVGLENEI---VYDLVDVVNG-DCELKQAVVVNRNQ 80 
+                                        59******************************7651115555555554...5555555665.56899999999999 PP
+
+               trimmed_msa_bchL_hmm  99 ngvmcveaggppagtgcggyvvgqtvkllkehhlledtdvvifdvlgdvvcggfaaplqhadralivaandfdsif 174
+                                        +g+  +    p a t     v g+ +k l    l +  d vi+d    v   gf + +  ad+a++v++ d+ s+ 
+  GCA_022009895.1_ASM2200989v1_1692  81 KGLAVL----PAAQTKNQQAVTGEQMKKLCG-ELKNIFDYVIIDCPAGV-DYGFETAICAADKAIVVTTPDLSSMR 150
+                                        998766....788999999999998887764.577889******98776.568*******************9987 PP
+
+               trimmed_msa_bchL_hmm 175 amnri 179
+                                          ++ 
+  GCA_022009895.1_ASM2200989v1_1692 151 DADKA 155
+                                        66554 PP
+
+>> GCA_022009895.1_ASM2200989v1_2576  UKI38602.1 MAG: AAA family ATPase [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   0.0   2.5e-07   0.00048      21      63 ..       3      46 ..       1      71 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 2.5e-07
+               trimmed_msa_bchL_hmm 21 kvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                       k++a+   kgg gk+tt+ nl + +++ gk+vl i  d +   t
+  GCA_022009895.1_ASM2200989v1_2576  3 KIIAISnQKGGTGKTTTTVNLGIGLANEGKKVLLIDYDAQGSLT 46
+                                       677775269**************************999876555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3797  (446472 residues searched)
+Passed MSV filter:                       101  (0.0265999); expected 75.9 (0.02)
+Passed bias filter:                       74  (0.0194891); expected 75.9 (0.02)
+Passed Vit filter:                         6  (0.00158019); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000526732); expected 0.0 (1e-05)
+Initial search space (Z):               3797  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14425.94
+//
+[ok]

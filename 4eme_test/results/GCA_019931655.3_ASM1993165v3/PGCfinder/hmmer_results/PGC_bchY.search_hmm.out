@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_019931655.3_ASM1993165v3/GCA_019931655.3_ASM1993165v3_protein.faa
+# output directed to file:         results/GCA_019931655.3_ASM1993165v3/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.029   10.9   0.0      0.035   10.6   0.0    1.1  1  GCA_019931655.3_ASM1993165v3_2934  UAL26613.1 stage III sporulation
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019931655.3_ASM1993165v3_2934  UAL26613.1 stage III sporulation protein SpoIIIAB [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   8.3e-06     0.035     376     484 ..      33     150 ..      25     157 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 8.3e-06
+               trimmed_msa_bchY_hmm 376 eqdlaaleelkpdlaiGttpvvqkakeaa......ipalyft...nlisarpllGvaGagslaqvinaalankerf 442
+                                         q laal++l+ ++  G tp++q++k+ a      i +l+ t    l       G+a   sl +v   +  +k+ +
+  GCA_019931655.3_ASM1993165v3_2934  33 RQLLAALQSLEAEIMYGHTPLLQASKQIAhqlsgpIASLFQTfaeQLEKGSASAGTAWEDSLEKVWPETALKKKEY 108
+                                        6779*********************997644444467887663334566677788888899999998888889999 PP
+
+               trimmed_msa_bchY_hmm 443 dkmkeffegvGegdaagvweeapkerpefrakakkklekaak 484
+                                        + +++f e +G++d     ++   + ++++++ ++++ ++ak
+  GCA_019931655.3_ASM1993165v3_2934 109 EILRQFGETLGRHDLISQQKHIKLALTHLETEEAEANLAQAK 150
+                                        99*****99999987766666665555555555444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       4159  (1147161 residues searched)
+Passed MSV filter:                       123  (0.0295744); expected 83.2 (0.02)
+Passed bias filter:                      105  (0.0252465); expected 83.2 (0.02)
+Passed Vit filter:                         5  (0.00120221); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000240442); expected 0.0 (1e-05)
+Initial search space (Z):               4159  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 17220.43
+//
+[ok]

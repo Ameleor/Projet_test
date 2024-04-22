@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_020422945.1_ASM2042294v1/GCA_020422945.1_ASM2042294v1_protein.faa
+# output directed to file:         results/GCA_020422945.1_ASM2042294v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0034   11.9   0.1      0.011   10.3   0.0    1.8  2  GCA_020422945.1_ASM2042294v1_185  UCP02773.1 ParA family protein [
+     0.0034   11.9   0.1      0.011   10.3   0.0    1.8  2  GCA_020422945.1_ASM2042294v1_532  UCP02268.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020422945.1_ASM2042294v1_185  UCP02773.1 ParA family protein [Mycoplasmopsis bovis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   2.5e-05     0.011      29      64 ..       9      44 ..       4      56 .. 0.87
+   2 ?   -1.8   0.0      0.12        51     189     207 ..     175     193 ..     133     203 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.5e-05
+              trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcdpksdt 64
+                                       kgg+gk+    n++  la+q kkvl+   d +   
+  GCA_020422945.1_ASM2042294v1_185  9 NKGGVGKTTITLNIADALAKQNKKVLIFDFDSQGSL 44
+                                      59******9999***************999987655 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.12
+              trimmed_msa_bchX_hmm 189 eyfrklggnvgvaglvink 207
+                                       +  r+lg n  + g+++n+
+  GCA_020422945.1_ASM2042294v1_185 175 NNTRELGLNDNIQGIILNR 193
+                                       4568888888888888887 PP
+
+>> GCA_020422945.1_ASM2042294v1_532  UCP02268.1 ParA family protein [Mycoplasmopsis bovis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   2.5e-05     0.011      29      64 ..       9      44 ..       4      56 .. 0.87
+   2 ?   -1.8   0.0      0.12        51     189     207 ..     175     193 ..     133     203 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.5e-05
+              trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcdpksdt 64
+                                       kgg+gk+    n++  la+q kkvl+   d +   
+  GCA_020422945.1_ASM2042294v1_532  9 NKGGVGKTTITLNIADALAKQNKKVLIFDFDSQGSL 44
+                                      59******9999***************999987655 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.12
+              trimmed_msa_bchX_hmm 189 eyfrklggnvgvaglvink 207
+                                       +  r+lg n  + g+++n+
+  GCA_020422945.1_ASM2042294v1_532 175 NNTRELGLNDNIQGIILNR 193
+                                       4568888888888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        848  (310090 residues searched)
+Passed MSV filter:                        37  (0.0436321); expected 17.0 (0.02)
+Passed bias filter:                       29  (0.0341981); expected 17.0 (0.02)
+Passed Vit filter:                         5  (0.00589623); expected 0.8 (0.001)
+Passed Fwd filter:                         2  (0.00235849); expected 0.0 (1e-05)
+Initial search space (Z):                848  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7684.90
+//
+[ok]

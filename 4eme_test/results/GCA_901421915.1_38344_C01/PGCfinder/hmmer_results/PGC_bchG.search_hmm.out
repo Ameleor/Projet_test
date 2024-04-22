@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_901421915.1_38344_C01/GCA_901421915.1_38344_C01_protein.faa
+# output directed to file:         results/GCA_901421915.1_38344_C01/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    7.4e-07   27.5  10.2    1.3e-06   26.7  10.2    1.5  1  GCA_901421915.1_38344_C01_2028  VTO16834.1 4-hydroxybenzoate pol
+    0.00029   19.0   9.1     0.0011   17.0   9.1    2.1  1  GCA_901421915.1_38344_C01_1822  VTO16213.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_901421915.1_38344_C01_2028  VTO16834.1 4-hydroxybenzoate polyprenyltransferase [Klebsiella variicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7  10.2   3.9e-10   1.3e-06      21     212 ..      33     214 ..      12     286 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 3.9e-10
+            trimmed_msa_bchG_hmm  21 mWafacGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsGripGrWGlyialiltl 97 
+                                     +Wa    v s g++     +++vaGv     l+ a+  +vnd+ dr+ d       +rp+PsG ++ +    + ++l l
+  GCA_901421915.1_38344_C01_2028  33 LWALW--VASPGVPPLWILAVFVAGVW----LMRAAGCVVNDYADRKFDGHvkRTARRPLPSGDVTEKEARTLFIVLVL 105
+                                     44443..45566665555555555555....46677889*********9751145789********************* PP
+
+            trimmed_msa_bchG_hmm  98 lsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsae..vlllally 174
+                                     ls+l+ ++l t+++  +v +l+laW+y      +k+   l + + g ++     ++ +a ++++lP +   + l  +l+
+  GCA_901421915.1_38344_C01_2028 106 LSFLLVLTLNTMTILLSVAALALAWVYPF----MKRYTHLPQVVLGAAFGWSIPMAFSA-VSESLPLSCwlMFLANILW 179
+                                     ***************************53....56666676666666664333333333.3444444330033333455 PP
+
+            trimmed_msa_bchG_hmm 175 sigahGimtlndfkaveGdrklgvkslpvklGveraar 212
+                                     +++     ++ d    + d k+g+ks ++ +G +    
+  GCA_901421915.1_38344_C01_2028 180 AVAYDTQYAMVD---RDDDVKIGIKSTAILFGENDRLI 214
+                                     554444444444...35566777777777777665444 PP
+
+>> GCA_901421915.1_38344_C01_1822  VTO16213.1 1,4-dihydroxy-2-naphthoate octaprenyltransferase [Klebsiella variicola]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   9.1   3.5e-07    0.0011      41     281 ..      43     302 ..       5     305 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 3.5e-07
+            trimmed_msa_bchG_hmm  41 lvvaGvllaGPlvcatsqavndWfdrhvdainePerpiP.....sGripG...rWGlyialiltl...lsllvaa..al 106
+                                     + ++ ++ aG l+   s  +nd+ d  v   ++P+r  P      G i+    +  l ++++l     l+ll aa   +
+  GCA_901421915.1_38344_C01_1822  43 VALLALITAG-LLQILSNLANDYGD-AVKGSDKPDRIGPlrgmqKGVITPqqmKRALIVTVALIClfgLALLCAAwqSV 119
+                                     3444444444.55667777777776.45666666665442111144443211122333332221111133333321123 PP
+
+            trimmed_msa_bchG_hmm 107 gtl.vfva.avlglvlaWaysapPlrlkknGwlGnaavg.lsyeglaWltgaavlagalPsaevlllallysigahGim 182
+                                     g + +f a   l++v+a +y++     +  G++G + ++ l + g   + g+  l+++  +a + l a+  ++ a  ++
+  GCA_901421915.1_38344_C01_1822 120 GDFiGFLAlGGLSIVAAITYTV---GTRPYGYIGLGDISvLVFFGWLSVLGSWYLQAHNVEAAIFLPATACGLLATAVL 195
+                                     3331232212355566666654...445667777665442566666667788899999999999999999********* PP
+
+            trimmed_msa_bchG_hmm 183 tlndfkaveGdrklgvkslpvklGveraarv.aclvmavpqvvvvalllawgkalhalvvav..llvvqlvlmar.... 254
+                                      +n+++ ++ dr+ g ++l+v+lG+ +a r+ acl++ +  ++ +  lla+++a+  l + +  llv q+  + r    
+  GCA_901421915.1_38344_C01_1822 196 NINNLRDIDSDRQNGKNTLAVRLGPVNARRYhACLLLGALLCLALFNLLALHSAWGWLFILAtpLLVKQARYVLResdp 274
+                                     ****************************986388887666555555555555555444433212555555443331122 PP
+
+            trimmed_msa_bchG_hmm 255 llkdPkekalwynav.gvtlyvlGmlvs 281
+                                     l  +P+ + +   a+    l+v+G+++s
+  GCA_901421915.1_38344_C01_1822 275 LAMRPMLEKTVKGALlTNLLFVIGIIAS 302
+                                     3333433333333331234566666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       6339  (1575667 residues searched)
+Passed MSV filter:                       333  (0.0525319); expected 126.8 (0.02)
+Passed bias filter:                       94  (0.0148288); expected 126.8 (0.02)
+Passed Vit filter:                         7  (0.00110428); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.000315507); expected 0.1 (1e-05)
+Initial search space (Z):               6339  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10498.57
+//
+[ok]

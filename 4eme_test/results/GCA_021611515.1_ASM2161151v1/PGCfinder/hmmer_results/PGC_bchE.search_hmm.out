@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_021611515.1_ASM2161151v1/GCA_021611515.1_ASM2161151v1_protein.faa
+# output directed to file:         results/GCA_021611515.1_ASM2161151v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.4e-06   23.7   5.8    3.7e-05   20.3   5.8    2.1  1  GCA_021611515.1_ASM2161151v1_187   UJQ94593.1 metalloregulator ArsR
+      0.001   15.5   0.2     0.0014   15.1   0.2    1.1  1  GCA_021611515.1_ASM2161151v1_1472  UJQ95819.1 methyltransferase [Ma
+  ------ inclusion threshold ------
+       0.02   11.2   0.0      0.032   10.6   0.0    1.2  1  GCA_021611515.1_ASM2161151v1_86    UJQ94496.1 cyclopropane fatty ac
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021611515.1_ASM2161151v1_187  UJQ94593.1 metalloregulator ArsR/SmtB family transcription factor [Mariluticola hal
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   5.8   3.5e-08   3.7e-05     180     301 ..     135     253 ..       8     261 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 3.5e-08
+                      trimmed_bchE 180 sqalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsfl 256
+                                         a v + +l+a+  ++   llD+G G+G  l+ +a+++ +  + +    + ++ ara+l aa++s ++++  G+ +
+  GCA_021611515.1_ASM2161151v1_187 135 PEAAVEAAILEAVGGRKLDLLLDLGTGTGRMLELLAEKYQR-GVGVDSSREMIAVARAKLVAANIS-HAHIRLGDIT 209
+                                       45778999****************************99865.688888999***********9998.6788999998 PP
+
+                      trimmed_bchE 257 k.dplPegaDlisLvRvlhDHdDeavlkllrkvraaLppggrLlia 301
+                                       + d+    aDli +  vlh  dD    ++l+ +r+aL+pgg+++i 
+  GCA_021611515.1_ASM2161151v1_187 210 EiDAHAGPADLIIIHQVLHYFDDP--GNILHTARRALKPGGEMIIV 253
+                                       74777888*************997..58****************96 PP
+
+>> GCA_021611515.1_ASM2161151v1_1472  UJQ95819.1 methyltransferase [Mariluticola halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.2   1.3e-06    0.0014     193     251 ..       6      65 ..       1      72 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.3e-06
+                       trimmed_bchE 193 dlkrhrrllDvGGGeGaFlaavaarapklklklfD.lpaVaerararleaaglsdrveva 251
+                                          ++ r+llD+G G G+ +  + a+ p+l+ +l +  p+ ++ a+++++a+ ++ r+++ 
+  GCA_021611515.1_ASM2161151v1_1472   6 VAAQSRTLLDLGSGVGTAALSALAHNPALEARLAEqNPDMLALANDNIAANDMAGRAATL 65 
+                                        56789****************************97369****************999876 PP
+
+>> GCA_021611515.1_ASM2161151v1_86  UJQ94496.1 cyclopropane fatty acyl phospholipid synthase [Mariluticola halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0     3e-05     0.032     181     239 ..     139     197 ..     134     208 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3e-05
+                     trimmed_bchE 181 qalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararl 239
+                                      q+   + + + ++l++ +r+ D+G G GaF+  +a+++ +  + +   p+ a+  r+r+
+  GCA_021611515.1_ASM2161151v1_86 139 QEAKFDMICRKIQLQQGERVWDIGCGWGAFMGFAAEKYGASCVGVTVSPDQAAYGRERY 197
+                                      666667889999***********************999887777766666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       3197  (1022744 residues searched)
+Passed MSV filter:                       166  (0.0519237); expected 63.9 (0.02)
+Passed bias filter:                      112  (0.0350328); expected 63.9 (0.02)
+Passed Vit filter:                        16  (0.00500469); expected 3.2 (0.001)
+Passed Fwd filter:                         3  (0.00093838); expected 0.0 (1e-05)
+Initial search space (Z):               3197  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11592.90
+//
+[ok]

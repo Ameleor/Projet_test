@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_017346835.1_ASM1734683v1/GCA_017346835.1_ASM1734683v1_protein.faa
+# output directed to file:         results/GCA_017346835.1_ASM1734683v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.9e-21   74.5  12.1    2.1e-21   74.3  12.1    1.0  1  GCA_017346835.1_ASM1734683v1_2214  QSV63223.1 MAG: TspO protein [Do
+    3.8e-18   63.8  14.5    3.8e-18   63.8  14.5    1.6  2  GCA_017346835.1_ASM1734683v1_3156  QSV64035.1 MAG: TspO/MBR family 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017346835.1_ASM1734683v1_2214  QSV63223.1 MAG: TspO protein [Dolichospermum sp. DL01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.3  12.1     1e-24   2.1e-21       3     151 ..       6     155 ..       4     156 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 74.3 bits;  conditional E-value: 1e-24
+               trimmed_msa_tspO_hmm   3 lvaalaavlvavlggalte.lgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfa 77 
+                                        +++  +a+lv+++g  +t   ++w+++L++P+w   + a +++Wt+i+++ a++a ++w++++++++++l++ l+ 
+  GCA_017346835.1_ASM1734683v1_2214   6 MIIGSIAFLVGFIGNWITPnQSQWFRHLQRPKWLTFESAIPLIWTIIFICGAWSAYIIWEHSPNTDITRLMMGLYL 81 
+                                        567788999******99962679***************************************************** PP
+
+               trimmed_msa_tspO_hmm  78 lnavlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                        l  ++ i++s++  r+r l ++ +   +  l  l+++l++ +vs  aallllPYl+W  i ++  +++ rlNp+
+  GCA_017346835.1_ASM1734683v1_2214  82 LLEIFTIAYSPVMLRFRSLIAGTILGGTGLLICLLITLAVLSVSLWAALLLLPYLLWSPIGTYTTWQMSRLNPQ 155
+                                        ******************9988887777777778889999********************************96 PP
+
+>> GCA_017346835.1_ASM1734683v1_3156  QSV64035.1 MAG: TspO/MBR family protein [Dolichospermum sp. DL01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.1      0.29     6e+02      81      96 ..      81      96 ..      65     105 .. 0.69
+   2 !   63.8  14.5   1.8e-21   3.8e-18      23     150 ..     110     237 ..     105     239 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.29
+               trimmed_msa_tspO_hmm 81 vlnilWsllfFrlrrl 96
+                                        +++l ++lfF l  +
+  GCA_017346835.1_ASM1734683v1_3156 81 WFSTLVTALFFALLSI 96
+                                       4556666777766555 PP
+
+  == domain 2  score: 63.8 bits;  conditional E-value: 1.8e-21
+               trimmed_msa_tspO_hmm  23 gewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrrldw 98 
+                                         + y+++ +P+w PP  aF++vW  i +l  ++ vl+w++++++    l l+lf+++ +l   W ++f   rrl +
+  GCA_017346835.1_ASM1734683v1_3156 110 RTTYDQVIRPRWSPPPLAFPIVWMFIAVLRVISSVLVWQEMNHQ-FLVLPLILFVVHLALGDTWNTIFTVERRLGA 184
+                                        5679**********************************666555.555999*****************99999999 PP
+
+               trimmed_msa_tspO_hmm  99 alvevvl.LWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNp 150
+                                        a+ +v+l  Wls ++++ ++w++  la+++l    vW ++A +L l++++lN+
+  GCA_017346835.1_ASM1734683v1_3156 185 AVPVVILgPWLSAMVVTAIYWQTVPLAGMILSFSCVWLTVASVLVLRIWQLNG 237
+                                        986655426*******************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4154  (1238128 residues searched)
+Passed MSV filter:                       197  (0.0474242); expected 83.1 (0.02)
+Passed bias filter:                       93  (0.0223881); expected 83.1 (0.02)
+Passed Vit filter:                        10  (0.00240732); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000481464); expected 0.0 (1e-05)
+Initial search space (Z):               4154  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 16548.37
+//
+[ok]

@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_020881835.1_ASM2088183v1/GCA_020881835.1_ASM2088183v1_protein.faa
+# output directed to file:         results/GCA_020881835.1_ASM2088183v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0089   12.6   7.6      0.083    9.4   7.6    2.3  1  GCA_020881835.1_ASM2088183v1_1549  UER54468.1 alcohol dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020881835.1_ASM2088183v1_1549  UER54468.1 alcohol dehydrogenase catalytic domain-containing protein [Kineosporiac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   7.6   2.9e-05     0.083      22      90 ..      21      86 ..       2     331 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 2.9e-05
+               trimmed_msa_bchC_hmm 22 tapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagees.klkvgervfvPG 90
+                                         p+++ vvv +e +gi    +   w+G+ P    +  P vPG+e  G+vv++g++  + +vg+rv vP 
+  GCA_020881835.1_ASM2088183v1_1549 21 PVPSPAGVVVRVEATGICRS-DWHAWQGHDP---DVVLPHVPGHELAGTVVAVGPDVvRWTVGQRVTVPF 86
+                                       56778889999999999864.5567888765...6899****************98626789*****994 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2816  (925451 residues searched)
+Passed MSV filter:                       105  (0.0372869); expected 56.3 (0.02)
+Passed bias filter:                       51  (0.0181108); expected 56.3 (0.02)
+Passed Vit filter:                         6  (0.00213068); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000355114); expected 0.0 (1e-05)
+Initial search space (Z):               2816  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 16295.41
+//
+[ok]

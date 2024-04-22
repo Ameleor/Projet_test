@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699185.1_ASM1669918v1/GCA_016699185.1_ASM1669918v1_protein.faa
+# output directed to file:         results/GCA_016699185.1_ASM1669918v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00021   16.1   0.0    0.00054   14.7   0.0    1.5  2  GCA_016699185.1_ASM1669918v1_392  QQR62197.1 class I SAM-dependent
+     0.0007   14.4   0.1     0.0011   13.8   0.1    1.2  1  GCA_016699185.1_ASM1669918v1_142  QQR61953.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699185.1_ASM1669918v1_392  QQR62197.1 class I SAM-dependent methyltransferase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   1.1e-06   0.00054     185     304 ..      50     171 ..      45     181 .. 0.84
+   2 ?   -1.3   0.0     0.081        39     333     351 ..     179     197 ..     173     206 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.1e-06
+              trimmed_msa_crtF_hmm 185 aeevldaydlkrhrrllDvGGGeGaFlaavaarapklklkl..fDlp.aVaerararleaaglsdrvevagGsflkd 258
+                                       a e+++ ++l+   ++lD+G G G     +a+++ ++  ++  +D+  + +e+ar++ e+ gl  ++++++G    d
+  GCA_016699185.1_ASM1669918v1_392  50 ATEIIRFLSLRPGMKILDIGCGPGRICVPLAEKIDAIGGHVtgLDIQsDMIEKAREKSEKLGLL-NIDFICGTI--D 123
+                                       78999****************************9998655522677536899****99999997.79*****76..8 PP
+
+              trimmed_msa_crtF_hmm 259 plPegaDlis..LvRvlhDHdDeavlkllrkvraaLppggrLliaEpm 304
+                                       +lP+++ + s  +v vl + +  + +k+l+k+ ++L p+g + ++E +
+  GCA_016699185.1_ASM1669918v1_392 124 QLPDNTYYNSmlMVCVLGEIPATEHAKVLEKMSSHLVPEGIISVTETV 171
+                                       999987665511688899999*********************999976 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.081
+              trimmed_msa_crtF_hmm 333 aeeirallaeaGFakvkll 351
+                                       ++++++l+++ GFa++k  
+  GCA_016699185.1_ASM1669918v1_392 179 HAKVKKLMKNNGFAEIKYR 197
+                                       578999*******999865 PP
+
+>> GCA_016699185.1_ASM1669918v1_142  QQR61953.1 hypothetical protein IPH25_00725 [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   2.2e-06    0.0011      20     108 ..     402     489 ..     382     503 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.2e-06
+              trimmed_msa_crtF_hmm  20 waarfpltrriarrraealFdlvaGFvysQvllacveldllellaegplsleelaerlklpedalerLlraaaalkL 96 
+                                       +a+++ + ++i++++ e++ dl+aGFv  Q  +  ++l+l ++l +g l+ + l ++++ +  +   Ll+  +a+k 
+  GCA_016699185.1_ASM1669918v1_142 402 FANTVEFSQEISEKSLENIKDLCAGFVVDQENQQALDLNLEKALIKGGLESSYLIKKAESHLTRNFYLLSMVKAMKD 478
+                                       678889999**************************************************999999999999999876 PP
+
+              trimmed_msa_crtF_hmm  97 lerrsedryaLg 108
+                                       l +  +++y+L+
+  GCA_016699185.1_ASM1669918v1_142 479 LVHL-GQTYELS 489
+                                       6665.3566665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                        973  (320354 residues searched)
+Passed MSV filter:                        31  (0.0318602); expected 19.5 (0.02)
+Passed bias filter:                       24  (0.024666); expected 19.5 (0.02)
+Passed Vit filter:                         3  (0.00308325); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.0020555); expected 0.0 (1e-05)
+Initial search space (Z):                973  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6145.51
+//
+[ok]

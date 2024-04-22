@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_015697925.1_ASM1569792v1/GCA_015697925.1_ASM1569792v1_protein.faa
+# output directed to file:         results/GCA_015697925.1_ASM1569792v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.7e-08   25.6   0.6    2.2e-05   16.8   0.0    2.1  2  GCA_015697925.1_ASM1569792v1_210  QPJ58559.1 NAD(P)/FAD-dependent 
+    2.5e-05   16.6   0.1    0.00055   12.2   0.0    2.0  2  GCA_015697925.1_ASM1569792v1_14   QPJ58402.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015697925.1_ASM1569792v1_210  QPJ58559.1 NAD(P)/FAD-dependent oxidoreductase [Candidatus Pinguicoccus supinus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0     2e-07   2.2e-05       3      33 ..      12      42 ..      11      52 .. 0.88
+   2 !    7.2   0.1   0.00016     0.017       2      32 ..     188     218 ..     187     221 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 2e-07
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaa 33
+                                       v+iG+G gGL++al la++ ++v ++ek  
+  GCA_015697925.1_ASM1569792v1_210 12 FVIIGSGPGGLTTALLLAKNFYRVALVEKYY 42
+                                      59**************************965 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.00016
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvleka 32 
+                                       ++ ++G G+ GL  a+ l   G +vt+le +
+  GCA_015697925.1_ASM1569792v1_210 188 HICILGGGVIGLELAIYLQGIGSQVTLLEYS 218
+                                       789*************************976 PP
+
+>> GCA_015697925.1_ASM1569792v1_14  QPJ58402.1 hypothetical protein E5P55_00090 [Candidatus Pinguicoccus supinus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0     5e-06   0.00055       2      38 ..       3      38 ..       2      48 .. 0.84
+   2 !    2.5   0.0    0.0042      0.46       2      33 ..     144     175 ..     143     179 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 5e-06
+             trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGK 38
+                                     +v++iG+G +GL+a++ +a+a ++  ++e   + GG+
+  GCA_015697925.1_ASM1569792v1_14  3 KVLIIGSGCSGLTASIYVARASFRPLLIEGY-KLGGQ 38
+                                     89**********************9999965.45555 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.0042
+             trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                       vv+iGaG +    al l++   +v vl +++
+  GCA_015697925.1_ASM1569792v1_14 144 TVVIIGAGDSACEEALFLSKIARKVIVLCRKN 175
+                                      79***********************9998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        222  (33664 residues searched)
+Passed MSV filter:                         5  (0.0225225); expected 4.4 (0.02)
+Passed bias filter:                        5  (0.0225225); expected 4.4 (0.02)
+Passed Vit filter:                         2  (0.00900901); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.00900901); expected 0.0 (1e-05)
+Initial search space (Z):                222  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4510.81
+//
+[ok]

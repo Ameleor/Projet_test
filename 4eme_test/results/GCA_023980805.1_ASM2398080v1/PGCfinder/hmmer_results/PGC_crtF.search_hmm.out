@@ -1,0 +1,112 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_023980805.1_ASM2398080v1/GCA_023980805.1_ASM2398080v1_protein.faa
+# output directed to file:         results/GCA_023980805.1_ASM2398080v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.5e-07   26.0   0.1    8.6e-07   25.6   0.1    1.1  1  GCA_023980805.1_ASM2398080v1_1013  USR88395.1 methyltransferase dom
+    1.9e-05   21.2   0.2    0.00017   18.0   0.2    1.9  1  GCA_023980805.1_ASM2398080v1_798   USR88212.1 demethylmenaquinone m
+     0.0033   13.8   0.0     0.0049   13.2   0.0    1.3  1  GCA_023980805.1_ASM2398080v1_1638  USR86178.1 peptide chain release
+  ------ inclusion threshold ------
+      0.017   11.5   0.1       0.02   11.2   0.1    1.0  1  GCA_023980805.1_ASM2398080v1_1680  USR86216.1 autorepressor SdpR fa
+      0.021   11.2   0.0      0.025   10.9   0.0    1.2  1  GCA_023980805.1_ASM2398080v1_2444  USR86881.1 tRNA (guanosine(46)-N
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023980805.1_ASM2398080v1_1013  USR88395.1 methyltransferase domain-containing protein [Lactiplantibacillus pentos
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   0.1   1.4e-09   8.6e-07     184     301 ..      65     192 ..      56     207 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 1.4e-09
+               trimmed_msa_crtF_hmm 184 vaeevldaydlkrhrrllDvGGGeGaFlaavaara.pklklklfDl.......paVaerararleaaglsdrveva 251
+                                        + +e ++ ++lk   ++lD+G G+Ga l+++a++  p+ k++ +Dl        + ++ +++++e+ gl++rv+++
+  GCA_023980805.1_ASM2398080v1_1013  65 LFDEAMHRLNLKPDSQVLDLGCGRGALLTRIAQQLgPAGKVTGLDLwlsrdqsHNKMAVTQKNVEDLGLANRVDLV 140
+                                        5678899999********************9988548889999998333322223445567788999********* PP
+
+               trimmed_msa_crtF_hmm 252 gGsflkdplPe.gaDlisLvRvlhDHdDeavl.kllrkvraaLppggrLlia 301
+                                        +G++ k   P+  +D+++    +h  + e+++ + ++++ + L+pgg+L+i 
+  GCA_023980805.1_ASM2398080v1_1013 141 TGDMAKLDFPNaSFDVVTSSFAIHNIKNEQARiNAVKEAIRVLKPGGHLMII 192
+                                        **********7368**********99888775378999999*********96 PP
+
+>> GCA_023980805.1_ASM2398080v1_798  USR88212.1 demethylmenaquinone methyltransferase [Lactiplantibacillus pentosus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   0.2   2.7e-07   0.00017     186     319 ..      37     172 ..      31     229 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 2.7e-07
+              trimmed_msa_crtF_hmm 186 eevldaydlkrhrrllDvGGGeGaFlaavaar.apklklklfDlpa.VaerararleaaglsdrvevagGsflkdpl 260
+                                       +++++ ++l+  +++lD+  G+G +  a+a++  p+ ++  +D+ a  ++ a+++++++ ++drv +  G+ +  +l
+  GCA_023980805.1_ASM2398080v1_798  37 KQTMAQIHLAPDAHVLDLCCGTGDWTIALARElQPTGEVIGLDFSApMLKLAQQKVAQQHVADRVWLRRGNAM--HL 111
+                                       68899999****************988877652799999999997637899********************98..57 PP
+
+              trimmed_msa_crtF_hmm 261 PegaDlisLvRvlhDHdD.eavlkllrkvraaLppggrLliaEpma.gtagaeavgdaYFg 319
+                                       P    ++ Lv + +      + ++ l+++++ L+pg rL+  E    +++  ++v + YF+
+  GCA_023980805.1_ASM2398080v1_798 112 PFKDNTFDLVTIGFGLRNlPDKAQALAEIYRVLKPGARLVCLETSQpDQPLIKPVWQWYFT 172
+                                       777777777777665444122357799************9988754144555666666665 PP
+
+>> GCA_023980805.1_ASM2398080v1_1638  USR86178.1 peptide chain release factor N(5)-glutamine methyltransferase [Lactipla
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   7.9e-06    0.0049     197     266 ..     118     186 ..     100     189 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 7.9e-06
+               trimmed_msa_crtF_hmm 197 hrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDl 266
+                                          r+lD+G G+Ga + a++++ p+ +++  D+ +  + a a+ +a++l+ +v+++  ++l+    e +D+
+  GCA_023980805.1_ASM2398080v1_1638 118 PLRVLDIGTGSGAIALALKHERPSWQVTASDVSSA-ALAVAKRNAEQLALDVNFVQSDLLQSIAAEPFDV 186
+                                        4589***************************9875.4555556788888888888888777666666665 PP
+
+>> GCA_023980805.1_ASM2398080v1_1680  USR86216.1 autorepressor SdpR family transcription factor [Lactiplantibacillus pen
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   3.2e-05      0.02      55     113 ..      14      72 ..       8      78 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 3.2e-05
+               trimmed_msa_crtF_hmm  55 veldllellaegplsleelaerlklpedalerLlraaaalkLlerrsedryaLgklgaa 113
+                                        v+ ++le l+++ +s+ e+a++++l++++++  l+  ++ +L++ ++e++y   +l a+
+  GCA_023980805.1_ASM2398080v1_1680  14 VRRQILEELRQNRQSAGEIAAHFNLSQATVSYHLKLLRSAGLVTVTKEKNYLYYELNAS 72 
+                                        8899*************************998777777777887777777766666655 PP
+
+>> GCA_023980805.1_ASM2398080v1_2444  USR86881.1 tRNA (guanosine(46)-N7)-methyltransferase TrmB [Lactiplantibacillus pen
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   4.1e-05     0.025     196     227 ..      37      69 ..      12     110 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 4.1e-05
+               trimmed_msa_crtF_hmm 196 rhrrl.lDvGGGeGaFlaavaarapklklklfD 227
+                                        +++ l ++vG G+G F+ ++a+r+p+++ +  +
+  GCA_023980805.1_ASM2398080v1_2444  37 KQQPLqIEVGSGKGQFIIEMAKRHPEINYVAIE 69 
+                                        44444389******************9987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       3129  (886502 residues searched)
+Passed MSV filter:                       143  (0.0457015); expected 62.6 (0.02)
+Passed bias filter:                       81  (0.0258869); expected 62.6 (0.02)
+Passed Vit filter:                        10  (0.00319591); expected 3.1 (0.001)
+Passed Fwd filter:                         5  (0.00159795); expected 0.0 (1e-05)
+Initial search space (Z):               3129  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11782.73
+//
+[ok]

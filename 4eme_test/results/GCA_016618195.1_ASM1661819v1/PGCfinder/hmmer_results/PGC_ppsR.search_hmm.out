@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016618195.1_ASM1661819v1/GCA_016618195.1_ASM1661819v1_protein.faa
+# output directed to file:         results/GCA_016618195.1_ASM1661819v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00023   18.0   0.1    0.00032   17.6   0.1    1.1  1  GCA_016618195.1_ASM1661819v1_317   QQO62721.1 nitrogen regulation p
+     0.0012   15.7   1.4     0.0021   14.9   0.3    1.7  2  GCA_016618195.1_ASM1661819v1_3265  QQO61863.1 DNA-binding transcrip
+     0.0023   14.8   0.0     0.0033   14.2   0.0    1.2  1  GCA_016618195.1_ASM1661819v1_316   QQO62720.1 nitrogen regulation p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016618195.1_ASM1661819v1_317  QQO62721.1 nitrogen regulation protein NR(II) [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   0.1   2.5e-07   0.00032     146     262 ..      13     126 ..      10     137 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 2.5e-07
+              trimmed_msa_ppsR_hmm 146 feasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesre.elqallaavrasgeaeeievrlark 221
+                                       +++  ++vlivd +   i  aN+aA ++l ++++++ g++++ l +  s + el  +  +  +s + +e+++  +++
+  GCA_016618195.1_ASM1661819v1_317  13 LDSLLNSVLIVDYD-LVIHYANHAALQILAQSQRKIYGTPLPVLCSYCSLNdELMINSLKEGHSFTDNEVTLVFNNH 88 
+                                       56666899***986.68***************************998776514544455556667778888899999 PP
+
+              trimmed_msa_ppsR_hmm 222 grevsvsaslfrqegesllLvrlspaeaaaaaaeeaeakll 262
+                                       ++ +s+sa+ f +   +++L++ls+ +++++  +e+++++ 
+  GCA_016618195.1_ASM1661819v1_317  89 SHVMSLSAQPFSA---QFILLELSQLDSQRRLSQEQAQNAQ 126
+                                       999********75...6788888888877773333333332 PP
+
+>> GCA_016618195.1_ASM1661819v1_3265  QQO61863.1 DNA-binding transcriptional regulator Fis [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0     0.055        71     289     307 ..      11      29 ..       4      63 .. 0.52
+   2 !   14.9   0.3   1.7e-06    0.0021     418     448 ..      67      97 ..      57      98 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.055
+               trimmed_msa_ppsR_hmm 289 lelaqlaseeqvrgrsLer 307
+                                        l +a ++s++qv++++L +
+  GCA_016618195.1_ASM1661819v1_3265  11 LTVATVNSQDQVTQKPLRD 29 
+                                        4444444444444444432 PP
+
+  == domain 2  score: 14.9 bits;  conditional E-value: 1.7e-06
+               trimmed_msa_ppsR_hmm 418 LelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_016618195.1_ASM1661819v1_3265  67 MQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                        799***************************8 PP
+
+>> GCA_016618195.1_ASM1661819v1_316  QQO62720.1 nitrogen regulation protein NR(I) [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   2.6e-06    0.0033     400     448 ..     426     474 ..     423     475 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 2.6e-06
+              trimmed_msa_ppsR_hmm 400 dlVrettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       +l+++tt ++E    + AL++T+ +   AA +LG  R  L  KL+  g+
+  GCA_016618195.1_ASM1661819v1_316 426 NLLAQTTPLMEHTMLNCALKYTKGHKQEAARLLGWGRNTLTRKLKELGI 474
+                                       5899****************************************98887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3820  (1201358 residues searched)
+Passed MSV filter:                       189  (0.0494764); expected 76.4 (0.02)
+Passed bias filter:                      102  (0.0267016); expected 76.4 (0.02)
+Passed Vit filter:                        10  (0.0026178); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078534); expected 0.0 (1e-05)
+Initial search space (Z):               3820  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11622.24
+//
+[ok]

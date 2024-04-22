@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635275.1_40757_D01/GCA_900635275.1_40757_D01_protein.faa
+# output directed to file:         results/GCA_900635275.1_40757_D01/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0006   16.2   0.1     0.0046   13.2   0.0    2.0  2  GCA_900635275.1_40757_D01_104   VDZ33871.1 capsular polysacchari
+     0.0041   13.4   0.3      0.021   11.1   0.0    2.0  2  GCA_900635275.1_40757_D01_1296  VDZ35063.1 Signal recognition pa
+     0.0043   13.3   0.1      0.012   11.9   0.0    1.6  2  GCA_900635275.1_40757_D01_2867  VDZ36634.1 Tyrosine-protein kina
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635275.1_40757_D01_104  VDZ33871.1 capsular polysaccharide synthesis enzyme [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   4.7e-06    0.0046      25      73 ..      45      93 ..      28     120 .. 0.83
+   2 ?    0.9   0.0     0.027        26     182     245 ..     162     225 ..     159     228 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 4.7e-06
+           trimmed_msa_bchX_hmm 25 iaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggka 73
+                                   +    k g gks  ++n++   aq g k l+i  d +  t   +f  ++
+  GCA_900635275.1_40757_D01_104 45 LVTSEKPGAGKSTVVSNVAITYAQAGYKTLVIDGDMRKPTQNYIFNEQN 93
+                                   5566799*********************************999998765 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.027
+           trimmed_msa_bchX_hmm 182 nnvcsaveyfrklggnvgvaglvinkddgtgeaqafaeavgipvlaaipadedirrksanyeii 245
+                                    n v +a  y r +   + v     n  +   +a+++ e++g  +l  i ++ ++ + s+ y+  
+  GCA_900635275.1_40757_D01_104 162 NTVTDAQLYARAIKDSLLVIDSEKNDKNEVKKAKTLMEKAGSNILGVILNKAKVDKSSSYYHYY 225
+                                    5666666677777777766666667777788999999999999999999999999999888765 PP
+
+>> GCA_900635275.1_40757_D01_1296  VDZ35063.1 Signal recognition particle receptor protein FtsY (=alpha subunit) [Staphy
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   2.2e-05     0.021      20      59 ..     184     223 ..     166     250 .. 0.83
+   2 ?   -0.3   0.0     0.061        59     189     225 ..     322     361 ..     313     368 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.2e-05
+            trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      + ++i + g  g+gk+ t+ +l+y    +gkkv+l   d
+  GCA_900635275.1_40757_D01_1296 184 GRLNVILMVGVNGVGKTTTIGKLAYRYKMEGKKVMLAAGD 223
+                                     456799999**************************98877 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.061
+            trimmed_msa_bchX_hmm 189 eyfrklggnvgvaglvinkddgtge...aqafaeavgipv 225
+                                        r++     v+g+v+ k dgt +     a+ ++  ipv
+  GCA_900635275.1_40757_D01_1296 322 SQARNFKEVTNVTGIVLTKLDGTAKggiVLAIRNELHIPV 361
+                                     555666667789**********965111445666666766 PP
+
+>> GCA_900635275.1_40757_D01_2867  VDZ36634.1 Tyrosine-protein kinase EpsD [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.0   1.2e-05     0.012      17      69 ..      36      89 ..      24      96 .. 0.83
+   2 ?   -1.8   0.0      0.18   1.7e+02     188     241 ..     167     220 ..     160     228 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.2e-05
+            trimmed_msa_bchX_hmm 17 evtketqiiaiyg.kggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                    ++ +  q i i     g gks   anl+   aq g k l++  d +  t   +f
+  GCA_900635275.1_40757_D01_2867 36 NPDSAVQSIVITSeATGAGKSTIAANLAVAYAQAGYKTLIVDGDMRKPTQHYIF 89
+                                    55566777777651579***************************9998887777 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.18
+            trimmed_msa_bchX_hmm 188 veyfrklggnvg.vaglvinkddgtgeaqafaeavgipvlaaipadedirrksan 241
+                                      + f k+ gnv  v     n+ d   + + + ea g  +l  +  +   + ksa+
+  GCA_900635275.1_40757_D01_2867 167 AQLFSKFTGNVVyVVNSENNNKDEVKKGKELIEATGAKLLGVVL-NRMPKDKSAS 220
+                                     46778888886424444445555566666677777766665543.3333445555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2929  (725208 residues searched)
+Passed MSV filter:                       107  (0.0365312); expected 58.6 (0.02)
+Passed bias filter:                       82  (0.0279959); expected 58.6 (0.02)
+Passed Vit filter:                        15  (0.0051212); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00102424); expected 0.0 (1e-05)
+Initial search space (Z):               2929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10580.57
+//
+[ok]

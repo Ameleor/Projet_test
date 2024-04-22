@@ -1,0 +1,134 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_022453915.1_ASM2245391v1/GCA_022453915.1_ASM2245391v1_protein.faa
+# output directed to file:         results/GCA_022453915.1_ASM2245391v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-07   28.5   0.1    1.5e-07   28.0   0.1    1.2  1  GCA_022453915.1_ASM2245391v1_2905  UMM46813.1 ParA family protein [
+    1.1e-05   21.9   0.2    6.4e-05   19.3   0.0    2.1  3  GCA_022453915.1_ASM2245391v1_242   UMM47085.1 Mrp/NBP35 family ATP-
+    0.00057   16.2   0.5       0.23    7.7   0.0    2.2  2  GCA_022453915.1_ASM2245391v1_2912  UMM46820.1 septum site-determini
+     0.0035   13.6   0.5       0.58    6.3   0.1    2.2  2  GCA_022453915.1_ASM2245391v1_2039  UMM45987.1 signal recognition pa
+     0.0063   12.8   0.0     0.0093   12.2   0.0    1.1  1  GCA_022453915.1_ASM2245391v1_759   UMM47574.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022453915.1_ASM2245391v1_2905  UMM46813.1 ParA family protein [Lawsonibacter asaccharolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.0   0.1   2.6e-10   1.5e-07      23      69 ..       3      50 ..       1      66 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 28.0 bits;  conditional E-value: 2.6e-10
+               trimmed_msa_bchX_hmm 23 qiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                       +iiai   kgg+gk+ t  nl+  la  gk+vll   dp++++ts + 
+  GCA_022453915.1_ASM2245391v1_2905  3 KIIAIVnQKGGVGKTTTTVNLTAALAALGKRVLLCDFDPQANATSGMG 50
+                                       789986269**********************************99764 PP
+
+>> GCA_022453915.1_ASM2245391v1_242  UMM47085.1 Mrp/NBP35 family ATP-binding protein [Lawsonibacter asaccharolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   1.1e-07   6.4e-05      15      72 ..      25      83 ..      13      98 .. 0.79
+   2 ?   -1.8   0.0      0.31   1.8e+02     168     186 ..     169     188 ..     138     205 .. 0.64
+   3 ?   -0.8   0.0      0.15        87     215     236 ..     224     245 ..     209     268 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 1.1e-07
+              trimmed_msa_bchX_hmm 15 tgevtketqiia.iygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggk 72
+                                      +++ ++  ++ia + gkgg+gks   + l+  + ++g+kv ++  d    +  + fg +
+  GCA_022453915.1_ASM2245391v1_242 25 ANALSSIKKVIAvVSGKGGVGKSTVTSSLAVAMVRRGRKVAVLDADITGPSIPMAFGVH 83
+                                      444555556776257****************************9999888888888865 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.31
+              trimmed_msa_bchX_hmm 168 ivvgs.ndlqslyvannvcs 186
+                                       ivv+s +dl s+ v++ v  
+  GCA_022453915.1_ASM2245391v1_242 169 IVVTSpQDLVSMIVSKAVHM 188
+                                       44444356666666655543 PP
+
+  == domain 3  score: -0.8 bits;  conditional E-value: 0.15
+              trimmed_msa_bchX_hmm 215 qafaeavgipvlaaipadedir 236
+                                       +  a++ g+p+la +p d  + 
+  GCA_022453915.1_ASM2245391v1_242 224 EEVARELGLPILARLPIDPALA 245
+                                       5678999999999999887665 PP
+
+>> GCA_022453915.1_ASM2245391v1_2912  UMM46820.1 septum site-determining protein MinD [Lawsonibacter asaccharolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.9   0.3   0.00069       0.4      22      59 ..       3      40 ..       1      54 [. 0.92
+   2 !    7.7   0.0   0.00039      0.23     139     234 ..     112     203 ..     104     223 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00069
+               trimmed_msa_bchX_hmm 22 tqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59
+                                       t i+   gkgg+gk+     ++  la+ g+ vl i  d
+  GCA_022453915.1_ASM2245391v1_2912  3 TAIVVTSGKGGTGKTSITGGVAGSLARLGHSVLCIDMD 40
+                                       7899999**************************99887 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00039
+               trimmed_msa_bchX_hmm 139 fdyvlldflgdvvcggfglpiardlcqkvivvgsndlqslyvannvcsaveyfrklggnvgvaglvinkddgtgea 214
+                                        +dy+l+d        g g+ +a   +++ ivv++nd  sl  a+     ++++r++   +      + ++  t   
+  GCA_022453915.1_ASM2245391v1_2912 112 YDYILIDSPAG---LGTGFRMACCGADRAIVVSTNDASSLRDAQRTVGELDFLRQIHLVMNRIQPKLLRQLRTTID 184
+                                        67777776543...367788899999****************************9875554433333344444333 PP
+
+               trimmed_msa_bchX_hmm 215 qafaeavgipvlaaipaded 234
+                                        +a  +++g+p+l  +p+d +
+  GCA_022453915.1_ASM2245391v1_2912 185 DA-MDTAGLPLLGVVPEDPQ 203
+                                        33.35567777777776655 PP
+
+>> GCA_022453915.1_ASM2245391v1_2039  UMM45987.1 signal recognition particle-docking protein FtsY [Lawsonibacter asaccha
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.6   0.0    0.0016      0.95      21      60 ..      88     127 ..      72     149 .. 0.85
+   2 !    6.3   0.1     0.001      0.58     197     227 ..     233     266 ..     221     281 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.0016
+               trimmed_msa_bchX_hmm  21 etqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        +  ++   g  g+gk+ t+ ++   l ++ kkvll   d 
+  GCA_022453915.1_ASM2245391v1_2039  88 KPSVVLFIGVNGVGKTTTIGKIGAQLKKERKKVLLCAADT 127
+                                        4456777899*************************99885 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.001
+               trimmed_msa_bchX_hmm 197 nvgvaglvinkddgt...geaqafaeavgipvla 227
+                                          g++g+v+ k dgt   g a a+a++ g+pv  
+  GCA_022453915.1_ASM2245391v1_2039 233 AAGITGIVLTKLDGTakgGIAIAIARELGVPVKY 266
+                                        579***********95556799*********964 PP
+
+>> GCA_022453915.1_ASM2245391v1_759  UMM47574.1 ParA family protein [Lawsonibacter asaccharolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   1.6e-05    0.0093      24      97 ..       5      80 ..       2      85 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_bchX_hmm 24 iiai.ygkggigksftlanlsymlaqqgkkvlligcdpksd.ttsllfggkacptiietsskkklageevkigdvc 97
+                                      ii+i   kgg+gk+ t + l   l ++g kvl +  dp+   + sl +    c ti ++        ++v+  d c
+  GCA_022453915.1_ASM2245391v1_759  5 IISItNQKGGVGKTTTACALLSSLHNRGAKVLGVDLDPQGSlSFSLGLDIEHCVTIYDVFRGTASPEQAVSPTDTC 80
+                                      56662469***********9999***************96515688888899999988766555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2909  (892840 residues searched)
+Passed MSV filter:                       120  (0.0412513); expected 58.2 (0.02)
+Passed bias filter:                      100  (0.0343761); expected 58.2 (0.02)
+Passed Vit filter:                        18  (0.00618769); expected 2.9 (0.001)
+Passed Fwd filter:                         5  (0.0017188); expected 0.0 (1e-05)
+Initial search space (Z):               2909  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12192.91
+//
+[ok]

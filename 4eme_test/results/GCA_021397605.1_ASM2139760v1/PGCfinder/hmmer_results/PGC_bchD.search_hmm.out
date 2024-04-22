@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021397605.1_ASM2139760v1/GCA_021397605.1_ASM2139760v1_protein.faa
+# output directed to file:         results/GCA_021397605.1_ASM2139760v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00012   19.1   0.2    0.00018   18.6   0.2    1.1  1  GCA_021397605.1_ASM2139760v1_6552  UIL31311.1 MoxR family ATPase (p
+  ------ inclusion threshold ------
+      0.023   11.6   0.8      0.026   11.4   0.8    1.1  1  GCA_021397605.1_ASM2139760v1_38    UIL28047.1 aminoacyl-tRNA hydrol
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021397605.1_ASM2139760v1_6552  UIL31311.1 MoxR family ATPase (plasmid) [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.2   6.1e-08   0.00018      90     256 ..     109     302 ..     102     312 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 6.1e-08
+               trimmed_msa_bchD_hmm  90 vlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldeial 163
+                                        ++    R ++++ + l +a++e+  ++  dg++ +l   f ++a  + +e++ +  lpea ldR  ++l +d    
+  GCA_021397605.1_ASM2139760v1_6552 109 LADEINRAPPKTQSALLQAMNER--MVTLDGTDYSLGPDFFVLATQNPIEQQGTypLPEAQLDRFLFKLVVDF-PS 181
+                                        555567999**************..578899******************887652278*********997765.44 PP
+
+               trimmed_msa_bchD_hmm 164 rdleelaa.....................eaedieaararlpkvtleeealealvataaalGid.......slRap 211
+                                        rd+e +                       + +++++ ra +  ++l+++ l+ +v + +a+  d       s+Ra+
+  GCA_021397605.1_ASM2139760v1_6552 182 RDTEIAILskhatqalksdlrnagirplvTSAALATGRALIDAIHLDNTILTYIVDLVRATRSDpdilygaSTRAA 257
+                                        4333333335566778889999999999999999999999999999*999999998877765422223333***** PP
+
+               trimmed_msa_bchD_hmm 212 llalraaralAalegrteveeedlalAarlvlapratrlpeeeee 256
+                                          +++a r+ Aa+egr+    +d+++ +   l +r +  p++e +
+  GCA_021397605.1_ASM2139760v1_6552 258 DAVASAVRVRAAFEGRDYGLPDDVQALLVPALRHRIVLSPSAEID 302
+                                        ************************988777777777777766554 PP
+
+>> GCA_021397605.1_ASM2139760v1_38  UIL28047.1 aminoacyl-tRNA hydrolase [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.8   8.9e-06     0.026     280     343 ..      84     144 ..      63     145 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 8.9e-06
+             trimmed_msa_bchD_hmm 280 eeeeeeeeeeealedvvleaakaalpadllaklaakaarrakaassgkaGakrksarrGrplga 343
+                                      ++++++e++++ l++++leaak   p+    k ++++    +++  +k+G ++ +++rGrp g+
+  GCA_021397605.1_ASM2139760v1_38  84 SQDRNREDARDRLKELILEAAKPPPPPRKKTKPTKGSV---ERRLKEKSGRSEVKKMRGRPGGS 144
+                                      6788999999************9998876666666666...45889999************886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5913  (1621566 residues searched)
+Passed MSV filter:                       330  (0.0558092); expected 118.3 (0.02)
+Passed bias filter:                      110  (0.0186031); expected 118.3 (0.02)
+Passed Vit filter:                        15  (0.00253678); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000507357); expected 0.1 (1e-05)
+Initial search space (Z):               5913  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 19352.86
+//
+[ok]

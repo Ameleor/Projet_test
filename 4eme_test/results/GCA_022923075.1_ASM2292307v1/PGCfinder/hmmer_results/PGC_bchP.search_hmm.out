@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_022923075.1_ASM2292307v1/GCA_022923075.1_ASM2292307v1_protein.faa
+# output directed to file:         results/GCA_022923075.1_ASM2292307v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0041   12.4   0.1     0.0079   11.4   0.1    1.4  1  GCA_022923075.1_ASM2292307v1_490   UOR90876.1 FAD-binding oxidoredu
+     0.0079   11.4   0.2      0.012   10.9   0.2    1.2  1  GCA_022923075.1_ASM2292307v1_1492  UOR90413.1 alanine dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022923075.1_ASM2292307v1_490  UOR90876.1 FAD-binding oxidoreductase [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.1   1.1e-05    0.0079       4      34 ..       4      34 ..       1      41 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      +vvv+GGG  G   a ++ + G+kv++++++
+  GCA_022923075.1_ASM2292307v1_490  4 EVVVIGGGIVGLSCAYSMHKLGHKVCVIEKS 34
+                                      79**************************987 PP
+
+>> GCA_022923075.1_ASM2292307v1_1492  UOR90413.1 alanine dehydrogenase [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.2   1.6e-05     0.012       4      32 ..     173     201 ..     170     206 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllld 32 
+                                         +vvvGGG  G  +a+ l+++G kv++l+
+  GCA_022923075.1_ASM2292307v1_1492 173 KIVVVGGGVVGMESAKVLSQMGAKVMILE 201
+                                        58************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1408  (461109 residues searched)
+Passed MSV filter:                        44  (0.03125); expected 28.2 (0.02)
+Passed bias filter:                       37  (0.0262784); expected 28.2 (0.02)
+Passed Vit filter:                         8  (0.00568182); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00142045); expected 0.0 (1e-05)
+Initial search space (Z):               1408  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11903.08
+//
+[ok]

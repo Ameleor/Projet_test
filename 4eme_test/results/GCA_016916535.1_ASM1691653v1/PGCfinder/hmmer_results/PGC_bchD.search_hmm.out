@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016916535.1_ASM1691653v1/GCA_016916535.1_ASM1691653v1_protein.faa
+# output directed to file:         results/GCA_016916535.1_ASM1691653v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00061   15.8   0.0     0.0012   14.8   0.0    1.4  1  GCA_016916535.1_ASM1691653v1_1517  QRX62793.1 AAA family ATPase [Dy
+     0.0013   14.6   0.1     0.0029   13.6   0.1    1.5  1  GCA_016916535.1_ASM1691653v1_1252  QRX64856.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016916535.1_ASM1691653v1_1517  QRX62793.1 AAA family ATPase [Dysgonomonadaceae bacterium zrk40]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.0   8.5e-07    0.0012      93     257 ..     120     314 ..     111     323 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 8.5e-07
+               trimmed_msa_bchD_hmm  93 mAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldeialrdl 166
+                                           R ++++ + l +a+ e++v++  ++   +l++ f ++a  + +e++ +  lpea +dR  l++ ++  + ++ 
+  GCA_016916535.1_ASM1691653v1_1517 120 EINRAPAKVQSALLEAMQERQVTIGEET--YSLPSPFLVMATQNPIEQEGTypLPEAQVDRFMLKVVISYPSREEE 193
+                                        55799999************88887776..677899**********887652378***********9998777755 PP
+
+               trimmed_msa_bchD_hmm 167 eelaa..............eaedieaararlpkvtl.................eeealealvataaalGi.dslRa 210
+                                        +++                ++++i +ar+ +++v +                 +      ++++  ++G  +s Ra
+  GCA_016916535.1_ASM1691653v1_1517 194 KQIIRqnifepvttdkpviTTQEILEARKVVREVYIdekiskyivdivfatrfP--DQYGMAHLKDMIGFgASPRA 267
+                                        5544467778888888888*****************777777777766665332..223344455556644699** PP
+
+               trimmed_msa_bchD_hmm 211 pllalraaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                        ++  + aara A +++r  v  ed+++  + vl +r   + e+e+++
+  GCA_016916535.1_ASM1691653v1_1517 268 SINLALAARAFAFIKRRGYVIPEDIRAVCHDVLRHRIGLTYEAEANN 314
+                                        **********************************9987766666554 PP
+
+>> GCA_016916535.1_ASM1691653v1_1252  QRX64856.1 YifB family Mg chelatase-like AAA ATPase [Dysgonomonadaceae bacterium z
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.1     2e-06    0.0029     148     239 ..     382     500 ..     375     505 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 2e-06
+               trimmed_msa_bchD_hmm 148 LldRlalrldldeialrdleelaa..eaedieaararlpkvtl.........................eeealeal 196
+                                        LldR+ +++++  +  ++++ + +  + e+i++   + ++++                          ++e+   l
+  GCA_016916535.1_ASM1691653v1_1252 382 LLDRIDMHIEIVPVPFEKMAGNGVteKSETIRQRVIQGREIQHerfkktngiycnaqmsnkmlhryaqPDETGLRL 457
+                                        666666666666666665544433232222222222222333333333333444444455555555559999999* PP
+
+               trimmed_msa_bchD_hmm 197 vataaalGidslRapllalraaralAalegrteveeedlalAa 239
+                                         ++a++    s+Ra    l++ar++A l+g ++v++++la A+
+  GCA_016916535.1_ASM1691653v1_1252 458 LKVAMEQLSLSARAYSRILKVARTIADLAGSESVRAAHLAEAI 500
+                                        ****************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2840  (1030660 residues searched)
+Passed MSV filter:                        98  (0.034507); expected 56.8 (0.02)
+Passed bias filter:                       63  (0.0221831); expected 56.8 (0.02)
+Passed Vit filter:                         6  (0.00211268); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00105634); expected 0.0 (1e-05)
+Initial search space (Z):               2840  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 13351.94
+//
+[ok]

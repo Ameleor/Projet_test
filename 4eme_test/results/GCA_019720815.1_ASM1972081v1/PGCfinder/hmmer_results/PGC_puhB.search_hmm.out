@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_019720815.1_ASM1972081v1/GCA_019720815.1_ASM1972081v1_protein.faa
+# output directed to file:         results/GCA_019720815.1_ASM1972081v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0008   16.3   2.1     0.0008   16.3   2.1    1.8  2  GCA_019720815.1_ASM1972081v1_1645  QZE27036.1 DUF4233 domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019720815.1_ASM1972081v1_1645  QZE27036.1 DUF4233 domain-containing protein [Brevibacterium casei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   2.1   2.8e-07    0.0008      31      85 ..       7      61 ..       3      65 .. 0.93
+   2 ?   -0.8   0.8     0.044   1.3e+02      84      93 ..      92     101 ..      71     115 .. 0.46
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 2.8e-07
+               trimmed_msa_puhB_hmm 31 alareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalall 85
+                                       +la + + ++lv++Yfa+l ++ ++++++ + +l++ l++a++++++a+va++ll
+  GCA_019720815.1_ASM1972081v1_1645  7 VLAGSILICELVVVYFAALTAYGLTVKTNGTLTLTQLLVGASIIAVVAIVAVVLL 61
+                                       5778888999*****************************************9998 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.044
+               trimmed_msa_puhB_hmm  84 llallawlsa 93 
+                                        ++++ a+++a
+  GCA_019720815.1_ASM1972081v1_1645  92 MFFVAAIFVA 101
+                                        2222222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       2921  (901913 residues searched)
+Passed MSV filter:                       237  (0.0811366); expected 58.4 (0.02)
+Passed bias filter:                      141  (0.0482711); expected 58.4 (0.02)
+Passed Vit filter:                        15  (0.00513523); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000342349); expected 0.0 (1e-05)
+Initial search space (Z):               2921  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11960.02
+//
+[ok]

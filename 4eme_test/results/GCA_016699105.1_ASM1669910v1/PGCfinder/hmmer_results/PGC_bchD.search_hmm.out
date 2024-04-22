@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699105.1_ASM1669910v1/GCA_016699105.1_ASM1669910v1_protein.faa
+# output directed to file:         results/GCA_016699105.1_ASM1669910v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.2e-05   19.6   0.1    5.2e-05   18.4   0.0    1.5  2  GCA_016699105.1_ASM1669910v1_591  QQR53053.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699105.1_ASM1669910v1_591  QQR53053.1 YifB family Mg chelatase-like AAA ATPase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.06        91     102     133 ..     121     152 ..     101     154 .. 0.82
+   2 !   18.4   0.0   3.4e-08   5.2e-05     141     258 ..     180     323 ..     166     344 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.06
+              trimmed_msa_bchD_hmm 102 aarlaaaldegavalerdglalrlearfglva 133
+                                          l + l+eg+++++r + +l  +arf+lva
+  GCA_016699105.1_ASM1669910v1_591 121 LEVLRQPLEEGRITIARAAGTLVFPARFMLVA 152
+                                       556788999*******************9998 PP
+
+  == domain 2  score: 18.4 bits;  conditional E-value: 3.4e-08
+              trimmed_msa_bchD_hmm 141 dealpeaLldRlalrldldeialrdleelaa............eaedieaararlpkvtl..............eee 191
+                                       +++l+  LldRl l +d++++  +d+  ++             +++++++ar + +k ++               ++
+  GCA_016699105.1_ASM1669910v1_591 180 QQKLSGPLLDRLDLVIDVHKVDQDDMLGAKGgrstaelahsvlRVRHVQQARFNHQKFKCnahmtneeikmyckLDN 256
+                                       6788999*****************87777665655555556666777777777777766699999999999999899 PP
+
+              trimmed_msa_bchD_hmm 192 alealvataaalGidslRapllalraaralAalegrteveeedlalAarlvlapratrlpeeeeeea 258
+                                         +a++a+a      s+R  l  lr+ar++A +e++ +++ e+ + A++    +r    p +++ + 
+  GCA_016699105.1_ASM1669910v1_591 257 ETTAIAAMAIDRLSLSTRGYLRILRVARTIADIENQPNIKLEHFTEALQYRPKQRLSSKPIKPQGQL 323
+                                       9999*****99999**********************************9988888888887777664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1531  (352683 residues searched)
+Passed MSV filter:                        73  (0.0476813); expected 30.6 (0.02)
+Passed bias filter:                       29  (0.0189419); expected 30.6 (0.02)
+Passed Vit filter:                         5  (0.00326584); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000653168); expected 0.0 (1e-05)
+Initial search space (Z):               1531  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12778.02
+//
+[ok]

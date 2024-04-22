@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_018399075.1_ASM1839907v1/GCA_018399075.1_ASM1839907v1_protein.faa
+# output directed to file:         results/GCA_018399075.1_ASM1839907v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0013   14.3   0.1     0.0019   13.8   0.1    1.1  1  GCA_018399075.1_ASM1839907v1_968   QVL56737.1 MAG: bifunctional dem
+  ------ inclusion threshold ------
+      0.012   11.2   0.0       0.58    5.6   0.0    2.1  2  GCA_018399075.1_ASM1839907v1_1660  QVL57404.1 MAG: methyltransferas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018399075.1_ASM1839907v1_968  QVL56737.1 MAG: bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-poly
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   2.1e-06    0.0019     194     302 ..      48     157 ..      39     176 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.1e-06
+                      trimmed_bchE 194 lkrhrrllDvGGGeGaFlaavaarapklklkl.fDlp.aVaerararleaaglsdrvevagGsflkdplPeg.aDli 267
+                                        ++  rllD++ G+G  l ++ ++a +++++l +Dl  + +   + ++ ++  +++v+++ G+ ++ +l +  +D++
+  GCA_018399075.1_ASM1839907v1_968  48 RAEDIRLLDLATGTGDQLITIVKKAKQVQTALgLDLSqEMIRVGQGKIIDKPYAHQVTLMKGDATDISLKDAaVDCV 124
+                                       566779************************9989**7257888999********************99986526*** PP
+
+                      trimmed_bchE 268 sL...vRvlhDHdDeavlkllrkvraaLppggrLliaE 302
+                                       ++   +R + D     v k l+++++ L+p grL+i E
+  GCA_018399075.1_ASM1839907v1_968 125 TMsfgIRNVVD-----VDKCLSECFRVLTPCGRLMILE 157
+                                       99666777776.....7799***************987 PP
+
+>> GCA_018399075.1_ASM1839907v1_1660  QVL57404.1 MAG: methyltransferase domain-containing protein [Simkaniaceae bacteriu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6   0.0   0.00066      0.58     187     298 ..      71     185 ..      64     190 .. 0.85
+   2 ?    3.1   0.0    0.0037       3.3     332     359 ..     251     278 ..     246     280 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.00066
+                       trimmed_bchE 187 evldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPe 262
+                                         +++a+ ++  +++lD+  G+G    ++a+r  +    +      +  ar+r ++ gls+  ++  G+ +k ++ +
+  GCA_018399075.1_ASM1839907v1_1660  71 MLIKATGITPSQKILDLCCGQGRHTLELAKRGYSYVSGIDRSRYLIRLARKRGNSMGLSRIPKFSEGDARKIRVSS 146
+                                        56888999999*************999999988887777667789999**********************999875 PP
+
+                       trimmed_bchE 263 .gaDlisLvRv...lhDHdDeavlkllrkvraaLppggrL 298
+                                           Dli+++      ++H+D++  k+l++v++aL ++g +
+  GCA_018399075.1_ASM1839907v1_1660 147 nSLDLITIMGNsfgYFEHEDDDL-KVLKEVNRALSSQGMI 185
+                                        16899999976222579**9985.799*******999876 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.0037
+                       trimmed_bchE 332 saeeirallaeaGFakvkllrtarplla 359
+                                        s +++++ll++aGF++++ l++ + l +
+  GCA_018399075.1_ASM1839907v1_1660 251 SYADLHQLLEKAGFETIEYLENVQSLST 278
+                                        67899*************9999988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1758  (593183 residues searched)
+Passed MSV filter:                        55  (0.0312856); expected 35.2 (0.02)
+Passed bias filter:                       53  (0.0301479); expected 35.2 (0.02)
+Passed Vit filter:                         7  (0.0039818); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00113766); expected 0.0 (1e-05)
+Initial search space (Z):               1758  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11568.45
+//
+[ok]

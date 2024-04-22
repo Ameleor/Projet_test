@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchH.hmm
+# target sequence database:        data/genomes_unzip/GCA_019720815.1_ASM1972081v1/GCA_019720815.1_ASM1972081v1_protein.faa
+# output directed to file:         results/GCA_019720815.1_ASM1972081v1/PGCfinder/hmmer_results/PGC_bchH.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchH_hmm  [M=1219]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0069   11.4   0.0      0.017   10.1   0.0    1.5  2  GCA_019720815.1_ASM1972081v1_2238  QZE24796.1 transcriptional repre
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019720815.1_ASM1972081v1_2238  QZE24796.1 transcriptional repressor LexA [Brevibacterium casei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.0   5.8e-06     0.017     433     478 ..      58     103 ..      43     151 .. 0.74
+   2 ?   -1.9   0.0     0.026        75     735     796 ..     169     230 ..     152     237 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 5.8e-06
+               trimmed_msa_bchH_hmm 433 aivlfnfPPnaGavGtaaylsvfeslfntlkalkaeGydvdvPesv 478
+                                        a+v  ++PP   ++G aa l+  +s+ + l++l++ Gy    P+  
+  GCA_019720815.1_ASM1972081v1_2238  58 AVVTNGYPPSMREIGEAAGLASLSSVAHQLSQLERLGYVRRDPKRP 103
+                                        89999*********************************87766543 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.026
+               trimmed_msa_bchH_hmm 735 lhvvGealseeeraellkavaeakeeakareaiealvegeaakelleelaeldkllaedeel 796
+                                        l vvG+++ e++  +   +v +++++a++ ++++al++gea++++l+++a  + ll ++++ 
+  GCA_019720815.1_ASM1972081v1_2238 169 LKVVGDSMIEAAICHDDWVVVRKQHTADNGQIVAALLDGEATVKTLKRKAGRQWLLPQNKDY 230
+                                        77899998888888777778888888888999999999999999999998888888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1219 nodes)
+Target sequences:                       2921  (901913 residues searched)
+Passed MSV filter:                        90  (0.0308114); expected 58.4 (0.02)
+Passed bias filter:                       70  (0.0239644); expected 58.4 (0.02)
+Passed Vit filter:                         6  (0.00205409); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000342349); expected 0.0 (1e-05)
+Initial search space (Z):               2921  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 15249.96
+//
+[ok]

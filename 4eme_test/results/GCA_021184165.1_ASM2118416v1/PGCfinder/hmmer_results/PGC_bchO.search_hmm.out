@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_021184165.1_ASM2118416v1/GCA_021184165.1_ASM2118416v1_protein.faa
+# output directed to file:         results/GCA_021184165.1_ASM2118416v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.2e-12   42.5   0.0    1.1e-07   27.7   0.0    2.1  2  GCA_021184165.1_ASM2118416v1_634  UGW82474.1 lipase EstV [Helicoba
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021184165.1_ASM2118416v1_634  UGW82474.1 lipase EstV [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.7   0.0   7.8e-11   1.1e-07      35     118 ..      25     108 ..      19     143 .. 0.85
+   2 !   13.0   0.0   2.2e-06    0.0032     218     278 ..     173     232 ..     169     233 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 27.7 bits;  conditional E-value: 7.8e-11
+              trimmed_msa_bchO_hmm  35 P.vlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaa.eerlsLpgmaealaaLlaalgvepavvvGHS 109
+                                       P   L+lHG G+s   +++ +     +++ + +DLPg    +s++ e+ l  +  a+ ++  l+++g + +vv GHS
+  GCA_021184165.1_ASM2118416v1_634  25 PlNALFLHGWGSSKEIMQQAFQGCFLNYNHLYVDLPGFN--QSPNdEKVLETKDYANIINLFLKSVGKKAHVVFGHS 99 
+                                       54689*******************************855..5554156688999*********************** PP
+
+              trimmed_msa_bchO_hmm 110 AGaaialrl 118
+                                        G+ +a+  
+  GCA_021184165.1_ASM2118416v1_634 100 FGGKVAILC 108
+                                       **9998754 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 2.2e-06
+              trimmed_msa_bchO_hmm 218 llrdlpklktplllivgekDravppkearevaallpkarlveleglGHLahEeapeevael 278
+                                       ++++ ++ ++++ll  g++D+a p+++a+ +++ll+k++l  leg  H +  ++++e+ +l
+  GCA_021184165.1_ASM2118416v1_634 173 FSDHFKRCEKEVLLFWGKDDKATPLSSAQTMRTLLKKSELFVLEG-DHFFFLNQAKEIEKL 232
+                                       667788999***********************************9.898887777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1409  (454818 residues searched)
+Passed MSV filter:                        31  (0.0220014); expected 28.2 (0.02)
+Passed bias filter:                       28  (0.0198722); expected 28.2 (0.02)
+Passed Vit filter:                         2  (0.00141945); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000709723); expected 0.0 (1e-05)
+Initial search space (Z):               1409  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 18089.29
+//
+[ok]

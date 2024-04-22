@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410805.1_ASM2041080v1/GCA_020410805.1_ASM2041080v1_protein.faa
+# output directed to file:         results/GCA_020410805.1_ASM2041080v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0025   12.8   0.0     0.0086   11.0   0.0    1.7  2  GCA_020410805.1_ASM2041080v1_573  UCM93222.1 MAG: YifB family Mg c
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410805.1_ASM2041080v1_573  UCM93222.1 MAG: YifB family Mg chelatase-like AAA ATPase [Rickettsia endosymbiont o
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0     0.035        51      84     133 ..     294     343 ..     284     345 .. 0.85
+   2 !   11.0   0.0   5.8e-06    0.0086     144     239 ..     374     497 ..     367     500 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.035
+              trimmed_msa_bchD_hmm  84 adggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglva 133
+                                       a++gvl+l     +++++   l + +++g++ ++r + + + +a+f+l+a
+  GCA_020410805.1_ASM2041080v1_573 294 AHNGVLFLDELPEFPPNVIESLRQPIETGEILIARANSHIKYPANFQLIA 343
+                                       66777777777778888999999*************************98 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 5.8e-06
+              trimmed_msa_bchD_hmm 144 lpeaLldRlalrldldeialrdleelaa..............eaedieaararlpkvtl.................. 188
+                                       ++  ++dR  l++++ +i   + + ++                a++i+                             
+  GCA_020410805.1_ASM2041080v1_573 374 ISGPIMDRFDLHIEVGSIDSYNYNLIEDdteeesgqianrveMARNIQ----------Qtryegyniktnnrldgql 440
+                                       566677777777777777777655555533333333333332233333..........1333444444477777777 PP
+
+              trimmed_msa_bchD_hmm 189 ......eeealealvataaalGidslRapllalraaralAalegrteveeedlalAa 239
+                                             + +  ++l + aa+    s+Ra +  lr+ar++A l+  ++v + ++a A+
+  GCA_020410805.1_ASM2041080v1_573 441 liehalPVDDGKDLLNEAATKFRISMRAYNRILRVARTIADLDASSNVYRIHIAEAL 497
+                                       7777775555555555555555569************************99999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1485  (437244 residues searched)
+Passed MSV filter:                        40  (0.026936); expected 29.7 (0.02)
+Passed bias filter:                       30  (0.020202); expected 29.7 (0.02)
+Passed Vit filter:                         5  (0.003367); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000673401); expected 0.0 (1e-05)
+Initial search space (Z):               1485  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10888.58
+//
+[ok]

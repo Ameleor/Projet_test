@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_022836955.1_ASM2283695v1/GCA_022836955.1_ASM2283695v1_protein.faa
+# output directed to file:         results/GCA_022836955.1_ASM2283695v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.6e-06   24.5  13.5    4.8e-06   24.1  13.5    1.2  1  GCA_022836955.1_ASM2283695v1_2286  UOK59453.1 heme o synthase [Baci
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022836955.1_ASM2283695v1_2286  UOK59453.1 heme o synthase [Bacillus sp. OVS6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1  13.5   1.2e-09   4.8e-06      31     219 ..      56     240 ..      31     306 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 1.2e-09
+               trimmed_msa_bchG_hmm  31 sgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePe..rpiPsGripGrWGlyialiltllsllvaa 104
+                                        +g+s+ +++  v+  vll   l+ a s a+n+++dr++d i e +  rp  +G++     l+i ++l ++ +++  
+  GCA_022836955.1_ASM2283695v1_2286  56 TGQSFLQNIDSVL-FVLLGSALIIAGSCAINNFYDRDIDHIMERTkmRPTVTGKMNPIQALWIGILLLTFGFIL-- 128
+                                        5666666666554.5899999********************997522777789999999999988765555544.. PP
+
+               trimmed_msa_bchG_hmm 105 algtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysigahG 180
+                                         l + +++a+++gl+   +y        k  ++ n++vg    +++ l g a + + l     +l ++++      
+  GCA_022836955.1_ASM2283695v1_2286 129 -LLMTTVTATLIGLIGVITYVFLYTMWTKRHYTLNTVVGSVSGAVPPLIGWAAIDADLSVLAWVLFMIMFIWQPPH 203
+                                        .344567899999999999999998899999999*****999********99999999999999999999888888 PP
+
+               trimmed_msa_bchG_hmm 181 imtlndfkaveGdrklgvkslpvklGveraarvaclvma 219
+                                         ++l  +k ve  r+ g+  lpv++G + + r    v +
+  GCA_022836955.1_ASM2283695v1_2286 204 FLALA-MKRVEEYRAAGIPMLPVVHGFAITKRQMM-VWV 240
+                                        89885.8*******************986655322.222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3943  (875168 residues searched)
+Passed MSV filter:                       120  (0.0304337); expected 78.9 (0.02)
+Passed bias filter:                       52  (0.0131879); expected 78.9 (0.02)
+Passed Vit filter:                         4  (0.00101446); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000253614); expected 0.0 (1e-05)
+Initial search space (Z):               3943  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 16734.33
+//
+[ok]

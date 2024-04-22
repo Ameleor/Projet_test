@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCA_900638075.1_55685_B01/GCA_900638075.1_55685_B01_protein.faa
+# output directed to file:         results/GCA_900638075.1_55685_B01/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    0.00059   17.5   3.3    0.00093   16.9   3.3    1.3  1  GCA_900638075.1_55685_B01_1089  VEI45229.1 phosphatidate cytidyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900638075.1_55685_B01_1089  VEI45229.1 phosphatidate cytidylyltransferase [Actinobacillus equuli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   3.3   1.9e-07   0.00093       2      88 ..      47     141 ..      46     168 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 1.9e-07
+            trimmed_msa_puhE_hmm   2 pvlvalfvWwfsTGlillldrrprr........tfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwq 72 
+                                     p+l+  ++Wwf   l+++   ++ +        +f   +++ ++++++al++     + ++ +g+yl     llvWg  
+  GCA_900638075.1_55685_B01_1089  47 PLLFISCIWWFIAFLLVVSYPKSANvwaksviaKFSFGFCTLVPFFIAALALRFNNYAVNEFQGTYLLLYVCLLVWGAD 125
+                                     78899999**9877666655555555566565555555667788899999999999*********************** PP
+
+            trimmed_msa_puhE_hmm  73 elafltGvvtGprrea 88 
+                                       a+++G   G r+ a
+  GCA_900638075.1_55685_B01_1089 126 SGAYFFGRAFGKRKLA 141
+                                     ***********99854 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       4848  (580097 residues searched)
+Passed MSV filter:                       172  (0.0354785); expected 97.0 (0.02)
+Passed bias filter:                       82  (0.0169142); expected 97.0 (0.02)
+Passed Vit filter:                         5  (0.00103135); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000206271); expected 0.0 (1e-05)
+Initial search space (Z):               4848  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11635.99
+//
+[ok]

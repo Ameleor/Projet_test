@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700335.1_ASM1670033v1/GCA_016700335.1_ASM1670033v1_protein.faa
+# output directed to file:         results/GCA_016700335.1_ASM1670033v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.8e-05   20.4   0.9    4.6e-05   19.7   0.9    1.3  1  GCA_016700335.1_ASM1670033v1_1746  QQS67863.1 MAG: sigma-54-depende
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700335.1_ASM1670033v1_1746  QQS67863.1 MAG: sigma-54-dependent Fis family transcriptional regulator [Chlorobio
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.9   1.8e-08   4.6e-05     409     449 ..     350     390 ..     342     391 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 1.8e-08
+               trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         Ek +I  ALe  + NR +AA +LG+S   LY KL  y l+
+  GCA_016700335.1_ASM1670033v1_1746 350 LEKKAILIALEKNRGNRRAAAKLLGISERTLYRKLIDYSLE 390
+                                        58999******************************999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2468  (921434 residues searched)
+Passed MSV filter:                        77  (0.0311994); expected 49.4 (0.02)
+Passed bias filter:                       54  (0.0218801); expected 49.4 (0.02)
+Passed Vit filter:                         8  (0.00324149); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000405186); expected 0.0 (1e-05)
+Initial search space (Z):               2468  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 15603.24
+//
+[ok]

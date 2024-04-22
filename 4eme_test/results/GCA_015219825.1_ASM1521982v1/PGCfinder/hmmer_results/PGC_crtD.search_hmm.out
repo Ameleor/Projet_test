@@ -1,0 +1,130 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_015219825.1_ASM1521982v1/GCA_015219825.1_ASM1521982v1_protein.faa
+# output directed to file:         results/GCA_015219825.1_ASM1521982v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.9e-06   20.6   0.0    1.5e-05   19.8   0.0    1.3  1  GCA_015219825.1_ASM1521982v1_11    QOW63832.1 glutamate synthase su
+    0.00036   15.3   0.2    0.00054   14.7   0.2    1.2  1  GCA_015219825.1_ASM1521982v1_1074  QOW63492.1 bifunctional tRNA (5-
+    0.00072   14.3   0.0     0.0018   13.0   0.0    1.6  2  GCA_015219825.1_ASM1521982v1_456   QOW64195.1 NAD(P)-binding domain
+    0.00076   14.2   0.5     0.0011   13.6   0.5    1.2  1  GCA_015219825.1_ASM1521982v1_335   QOW64100.1 fumarate reductase fl
+  ------ inclusion threshold ------
+      0.011   10.3   6.0      0.064    7.8   0.9    3.3  4  GCA_015219825.1_ASM1521982v1_121   QOW63920.1 thioredoxin-disulfide
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015219825.1_ASM1521982v1_11  QOW63832.1 glutamate synthase subunit beta [Campylobacter hepaticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.0   5.9e-08   1.5e-05       2      38 ..     154     190 ..     153     203 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 5.9e-08
+             trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGK 38 
+                                      ++ +iG+G +GLa+a +l + G++v v+e+++++GG 
+  GCA_015219825.1_ASM1521982v1_11 154 KIAIIGSGPSGLACANTLNSLGYKVSVFERSDKIGGL 190
+                                      799********************************96 PP
+
+>> GCA_015219825.1_ASM1521982v1_1074  QOW63492.1 bifunctional tRNA (5-methylaminomethyl-2-thiouridine)(34)-methyltransfe
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.2   2.1e-06   0.00054       2      38 ..     247     283 ..     246     291 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.1e-06
+               trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGK 38 
+                                        ++ +iGaGi+    a +l+ +G++v v+ek+ + GG 
+  GCA_015219825.1_ASM1521982v1_1074 247 KIAIIGAGIASAILAYELSLRGFEVDVFEKNLDFGGG 283
+                                        799******************************9996 PP
+
+>> GCA_015219825.1_ASM1521982v1_456  QOW64195.1 NAD(P)-binding domain-containing protein [Campylobacter hepaticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0     7e-06    0.0018       3      50 ..       6      53 ..       4      55 .. 0.91
+   2 ?   -3.1   0.0      0.54   1.4e+02       2      22 ..     159     179 ..     158     188 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 7e-06
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevggaaid 50
+                                       ++iGaG +G+a+a++   +  +v +lek++++   l ++  +g+++d
+  GCA_015219825.1_ASM1521982v1_456  6 LIIIGAGPTGIACAVEAKLKNKEVLILEKSNHICQTLMQFYKDGKRVD 53
+                                      69******************************9998888888888877 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.54
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaa 22 
+                                       +++v+G G + +  al+la++
+  GCA_015219825.1_ASM1521982v1_456 159 NILVVGGGNSAVEYALDLAKS 179
+                                       689999999999999999986 PP
+
+>> GCA_015219825.1_ASM1521982v1_335  QOW64100.1 fumarate reductase flavoprotein subunit [Campylobacter hepaticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.5   4.5e-06    0.0011       3      29 ..       8      34 ..       6      52 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 4.5e-06
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvl 29
+                                       ++iG G++GL aa+++a++G +vt+l
+  GCA_015219825.1_ASM1521982v1_335  8 ALIIGGGLAGLRAAIEVAKSGQSVTLL 34
+                                      689**********************98 PP
+
+>> GCA_015219825.1_ASM1521982v1_121  QOW63920.1 thioredoxin-disulfide reductase [Campylobacter hepaticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8   0.9   0.00025     0.064       4      40 ..       5      41 ..       3      52 .. 0.90
+   2 ?    2.9   0.0    0.0077         2     216     291 ..      51     124 ..      41     129 .. 0.76
+   3 ?    0.0   0.0     0.059        15       2      34 ..     146     178 ..     145     195 .. 0.91
+   4 ?   -3.2   0.0      0.56   1.4e+02     455     466 ..     270     281 ..     268     305 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00025
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaapGGKlr 40
+                                       +iG G +GL+a l  ++ Gl+ +v+ ++  pGG++ 
+  GCA_015219825.1_ASM1521982v1_121  5 AIIGGGPAGLSAGLYATRGGLKNVVMFEKGMPGGQIT 41
+                                      69*******************9999999999***985 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.0077
+              trimmed_msa_crtD_hmm 216 gvwlvegGmsklaealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngDvaalaagllgee 291
+                                       gv +v  G+s +a   ++   + g + ++  ev++il++++    +++++g++  a+av++ +  +  +ag  gee
+  GCA_015219825.1_ASM1521982v1_121  51 GVAQVMDGISFMAPWNEQ-CMRFGLKHEM-VEVQQILQNNDGSFTINIRGGKSQLAKAVIVCTGSSPKKAGFKGEE 124
+                                       666777777666654444.3455665544.689********************99**9999888888888877765 PP
+
+  == domain 3  score: 0.0 bits;  conditional E-value: 0.059
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                       +v v+G G + L  al la+   +v ++ ++++
+  GCA_015219825.1_ASM1521982v1_121 146 EVAVLGGGDTALEEALYLANICSKVYLIHRRDE 178
+                                       799************************999875 PP
+
+  == domain 4  score: -3.2 bits;  conditional E-value: 0.56
+              trimmed_msa_crtD_hmm 455 rtklpgLylaGG 466
+                                       +t+++gL++aG 
+  GCA_015219825.1_ASM1521982v1_121 270 QTNIAGLFVAGD 281
+                                       799999999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1277  (376075 residues searched)
+Passed MSV filter:                        45  (0.0352388); expected 25.5 (0.02)
+Passed bias filter:                       41  (0.0321065); expected 25.5 (0.02)
+Passed Vit filter:                        12  (0.00939702); expected 1.3 (0.001)
+Passed Fwd filter:                         5  (0.00391543); expected 0.0 (1e-05)
+Initial search space (Z):               1277  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6929.86
+//
+[ok]

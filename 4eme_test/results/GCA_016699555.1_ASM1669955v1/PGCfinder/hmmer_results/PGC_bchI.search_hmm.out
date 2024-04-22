@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699555.1_ASM1669955v1/GCA_016699555.1_ASM1669955v1_protein.faa
+# output directed to file:         results/GCA_016699555.1_ASM1669955v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-05   20.7   0.1     0.0043   12.2   0.0    2.4  2  GCA_016699555.1_ASM1669955v1_1080  QQR92597.1 ATP-dependent proteas
+     0.0081   11.3   0.1       0.13    7.3   0.0    2.0  2  GCA_016699555.1_ASM1669955v1_286   QQR92897.1 AAA family ATPase [Ca
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699555.1_ASM1669955v1_1080  QQR92597.1 ATP-dependent protease LonB [Candidatus Diapherotrites archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.0   0.0    0.0006      0.33      29      72 ..      70     113 ..      49     134 .. 0.74
+   2 !   12.2   0.0   7.9e-06    0.0043     124     212 ..     246     344 ..     240     441 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.0006
+               trimmed_msa_bchI_hmm  29 gGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeae 72 
+                                          vl++G  G Gks  ++a+a++lP  k  +   y  ++++++ 
+  GCA_016699555.1_ASM1669955v1_1080  70 RNVLLIGVPGIGKSMLAQAMAEILPVSKLHDVLVYPNEEDANQP 113
+                                        469**********************8887777777666665554 PP
+
+  == domain 2  score: 12.2 bits;  conditional E-value: 7.9e-06
+               trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevnlledhlvdllldvaasGe.nvveregls....vrh...parfvlvGsGnPee.Gel 190
+                                         epG++ ran G l++de+  l+ +    ll + +  +  +  +  +s     r    p  fvlv +Gn e+  ++
+  GCA_016699555.1_ASM1669955v1_1080 246 VEPGMIHRANGGVLFLDEISTLNMKSQQELLTALQEKRySITGQSEMSsgamTRTepvPCDFVLVAAGNYEDlQHV 321
+                                        69******************999776666665544333033333333311113422336789******99983467 PP
+
+               trimmed_msa_bchI_hmm 191 rPqlldrf.Glsvevrtpkdlee 212
+                                         P l  r  G   ev    d+e+
+  GCA_016699555.1_ASM1669955v1_1080 322 HPALRSRIrGYGYEVYLNLDMED 344
+                                        88888885566666665555554 PP
+
+>> GCA_016699555.1_ASM1669955v1_286  QQR92897.1 AAA family ATPase [Candidatus Diapherotrites archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.0   0.00024      0.13      31      77 ..      11      55 ..       3      77 .. 0.70
+   2 !    2.1   0.0    0.0098       5.4     248     281 ..     113     146 ..     106     160 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00024
+              trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceec 77
+                                      +l+ G  GtGkst ++ l + l  + + +++   c +e+ a++ +++
+  GCA_016699555.1_ASM1669955v1_286 11 LLITGTPGTGKSTIAKRLGKKLKAVVVNEKA--FCRNEKCATFDSKT 55
+                                      5899***************999887665543..34444433333333 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.0098
+              trimmed_msa_bchI_hmm 248 arkrlekvevpdavlekaaklclalgtdGlrgel 281
+                                       a++r ++++++++++ +a+  c++  t   rg  
+  GCA_016699555.1_ASM1669955v1_286 113 AKRRYAELKIQENMFCEATDYCMQQVTKHYRGKK 146
+                                       889999******************9999999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1093  (315166 residues searched)
+Passed MSV filter:                        47  (0.0430009); expected 21.9 (0.02)
+Passed bias filter:                       38  (0.0347667); expected 21.9 (0.02)
+Passed Vit filter:                         8  (0.0073193); expected 1.1 (0.001)
+Passed Fwd filter:                         2  (0.00182983); expected 0.0 (1e-05)
+Initial search space (Z):               1093  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5975.24
+//
+[ok]

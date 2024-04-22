@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699405.1_ASM1669940v1/GCA_016699405.1_ASM1669940v1_protein.faa
+# output directed to file:         results/GCA_016699405.1_ASM1669940v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0021   15.9   6.2      0.003   15.4   4.9    2.0  2  GCA_016699405.1_ASM1669940v1_1915  QQR75821.1 MAG: cytochrome c bio
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699405.1_ASM1669940v1_1915  QQR75821.1 MAG: cytochrome c biogenesis protein CcsA [Holophagales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   4.9   7.1e-07     0.003      24     132 ..      44     150 ..      33     162 .. 0.66
+   2 ?    1.0   0.0      0.02        84       8      32 ..     135     159 ..     128     199 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 7.1e-07
+               trimmed_msa_bchF_hmm  24 laplqflvflvslalvlrylatGegaaaat.lsvvvktlvlytim..itGaiwekvvfgkylfaeaffwedvfsll 96 
+                                        +a + f+ f v+ +  +r+la  +  a  + + v v+  +l+ ++  +tGa+w +v++g y   ++     v+++l
+  GCA_016699405.1_ASM1669940v1_1915  44 MAWVSFVAFAVAGVWSIRFLAGARSLAHDRaAHVAVQLGLLFCVLatVTGALWARVMWGAYWNWDPRQTSIVLAML 119
+                                        68899***************99887655431345566666666543399***********9765555555555554 PP
+
+               trimmed_msa_bchF_hmm  97 vlalhtaylvalltgllsaeeqlllalaayaayvin 132
+                                            ++ayl+ l + + ++e++  la aaya   + 
+  GCA_016699405.1_ASM1669940v1_1915 120 F---YAAYLA-LRAAVEEPETRRRLA-AAYAVLGLV 150
+                                        3...456654.344444555555554.566665554 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.02
+               trimmed_msa_bchF_hmm   8 erarrdatkwtlvqgilaplqflvf 32 
+                                        e +rr a+ ++++  ++ap+ ++++
+  GCA_016699405.1_ASM1669940v1_1915 135 ETRRRLAAAYAVLGLVVAPFLYFIL 159
+                                        5678888899999999999766553 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4228  (1577343 residues searched)
+Passed MSV filter:                       109  (0.0257805); expected 84.6 (0.02)
+Passed bias filter:                       71  (0.0167928); expected 84.6 (0.02)
+Passed Vit filter:                         3  (0.000709555); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000236518); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7315.20
+//
+[ok]

@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_022646745.1_ASM2264674v1/GCA_022646745.1_ASM2264674v1_protein.faa
+# output directed to file:         results/GCA_022646745.1_ASM2264674v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.3e-08   30.8   0.8    4.4e-07   26.6   0.2    2.3  2  GCA_022646745.1_ASM2264674v1_2106  UNM07326.1 MAG: methyltransferas
+    6.4e-06   22.8   0.0    8.5e-06   22.4   0.0    1.1  1  GCA_022646745.1_ASM2264674v1_2942  UNM08132.1 MAG: peptide chain re
+     0.0021   14.5   0.0      0.003   14.0   0.0    1.1  1  GCA_022646745.1_ASM2264674v1_2078  UNM07298.1 MAG: protein-glutamat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022646745.1_ASM2264674v1_2106  UNM07326.1 MAG: methyltransferase domain-containing protein [Planctomycetales bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.0     0.011        12      66     119 ..      49     103 ..      10     111 .. 0.81
+   2 !   26.6   0.2     4e-10   4.4e-07     200     307 ..     180     285 ..     171     351 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.011
+                       trimmed_bchE  66 gplsleelaerlklpedalerLlraaaalkLler.rsedryaLgklgaallgnpg 119
+                                        + ++++e+ae+ +l+e  ++  l a ++ +++e  r ++ry+L  + aa++++++
+  GCA_022646745.1_ASM2264674v1_2106  49 DWATTHEIAEQGGLNERYVREWLGAMVTGGVVEFdRDTNRYHLPAEHAAVITSKA 103
+                                        446899**************************96256799***887777766554 PP
+
+  == domain 2  score: 26.6 bits;  conditional E-value: 4e-10
+                       trimmed_bchE 200 llDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflk.dplPegaDlisLvRvlh 274
+                                         +D+G G+G  + ++a+ +p+ +++ +D++a a +a+ +l++++  +++++   +  + d+l + +Dl++   v+h
+  GCA_022646745.1_ASM2264674v1_2106 180 CVDIGCGSGHAAIRMAEMYPNSTFAGYDFEAPAVEAAIELARSKGLTNINFKVQDIAAwDEL-AKFDLVTAFDVIH 254
+                                        68****************************9999********99999********9873666.67*********** PP
+
+                       trimmed_bchE 275 DHdDeavlkllrkvraaLppggrLliaEpmagt 307
+                                        D  D   +++l++vr+aL++gg+ l+ +  a  
+  GCA_022646745.1_ASM2264674v1_2106 255 DQADP--ARVLKNVRRALKDGGVYLMQDIKACS 285
+                                        99996..589************99987655444 PP
+
+>> GCA_022646745.1_ASM2264674v1_2942  UNM08132.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Pla
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.4   0.0   7.9e-09   8.5e-06     195     257 ..      96     159 ..      89     170 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 22.4 bits;  conditional E-value: 7.9e-09
+                       trimmed_bchE 195 krhrrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflk 257
+                                        +r  ++lD+G G+G     +a r+p+l+++  D+ pa +e ar++ + +g+++r+++  G++++
+  GCA_022646745.1_ASM2264674v1_2942  96 RRSMSMLDLGSGSGCVGISMALRHPRLEVVFIDIsPAALEVARKNARLHGVEQRCQFLEGDWFE 159
+                                        566789***************************879999**********************985 PP
+
+>> GCA_022646745.1_ASM2264674v1_2078  UNM07298.1 MAG: protein-glutamate O-methyltransferase CheR [Planctomycetales bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   2.7e-06     0.003     242     310 ..     196     266 ..     188     277 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.7e-06
+                       trimmed_bchE 242 aglsdrvevagGsflkdplPegaDlisLvRvlhDHdDeavlkllrkvraaLppggrLli..aEpmagtaga 310
+                                        + + +rv++   ++l+d+ P+++D+i    v+    D+a ++l+ +  +aL++ g+L+i  +E + +t++a
+  GCA_022646745.1_ASM2264674v1_2078 196 QFVRNRVRFEQHNLLEDRFPSNMDIILCRNVVIYFRDQAKRELFIRFSKALARHGVLMIggSERIPNTEEA 266
+                                        5678999*******************8888*****************************444555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       3260  (1229896 residues searched)
+Passed MSV filter:                       132  (0.0404908); expected 65.2 (0.02)
+Passed bias filter:                      102  (0.0312883); expected 65.2 (0.02)
+Passed Vit filter:                        21  (0.00644172); expected 3.3 (0.001)
+Passed Fwd filter:                         3  (0.000920245); expected 0.0 (1e-05)
+Initial search space (Z):               3260  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 13575.18
+//
+[ok]

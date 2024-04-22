@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018866225.1_ASM1886622v1/GCA_018866225.1_ASM1886622v1_protein.faa
+# output directed to file:         results/GCA_018866225.1_ASM1886622v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.1e-06   21.6   0.7     0.0012   13.1   0.0    3.0  3  GCA_018866225.1_ASM1886622v1_725  QWQ31993.1 FAD-dependent oxidore
+     0.0019   12.4   0.1     0.0021   12.3   0.1    1.1  1  GCA_018866225.1_ASM1886622v1_752  QWQ32018.1 FAD-dependent oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018866225.1_ASM1886622v1_725  QWQ31993.1 FAD-dependent oxidoreductase [Candidatus Minimicrobia naudis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0   2.6e-06    0.0012       2      37 ..       4      38 ..       3      49 .. 0.87
+   2 !    5.5   0.0   0.00051      0.23     224     280 ..      59     111 ..      53     125 .. 0.78
+   3 ?   -1.8   0.0     0.085        39     228     265 ..     183     220 ..     179     230 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 2.6e-06
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                      +vv++GaG + L+aa+ l+++++  t+ e+   +GG
+  GCA_018866225.1_ASM1886622v1_725  4 DVVIVGAGPSALTAAIYLSREDVPTTLYERGV-VGG 38
+                                      79**************************9974.444 PP
+
+  == domain 2  score: 5.5 bits;  conditional E-value: 0.00051
+              trimmed_msa_crtD_hmm 224 msklaealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngDv 280
+                                       m kla+ l+++ae+ ga+++yg  v+e+++ +g+     + dg++++a++v++++  
+  GCA_018866225.1_ASM1886622v1_725  59 M-KLASELQQQAERFGAKIEYGD-VTELKQVDGELEL--TIDGQSVRAKSVLLATGS 111
+                                       4.79*****************95.8888888877653..348999999999987655 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.085
+              trimmed_msa_crtD_hmm 228 aealaklaeakgaefrygeeveeilveegrvsgvrlad 265
+                                        + l+k + +  +++++g++ +ei v++++  gv+ ++
+  GCA_018866225.1_ASM1886622v1_725 183 QKDLQKYVDDGKITVHIGATTDEIIVKDDKFYGVKSTQ 220
+                                       5678888888889999*****************98654 PP
+
+>> GCA_018866225.1_ASM1886622v1_752  QWQ32018.1 FAD-dependent oxidoreductase [Candidatus Minimicrobia naudis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.1   4.6e-06    0.0021       4      38 ..       9      44 ..       7      73 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 4.6e-06
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaap.GGK 38
+                                      ++iG G +G + a+ la+a  +v ++e++ ++ GG 
+  GCA_018866225.1_ASM1886622v1_752  9 LIIGFGKAGKTLAVALANAEKKVALVERSPKMyGGT 44
+                                      79**************************97652665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        915  (138699 residues searched)
+Passed MSV filter:                        32  (0.0349727); expected 18.3 (0.02)
+Passed bias filter:                       28  (0.0306011); expected 18.3 (0.02)
+Passed Vit filter:                         5  (0.00546448); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00218579); expected 0.0 (1e-05)
+Initial search space (Z):                915  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9199.00
+//
+[ok]

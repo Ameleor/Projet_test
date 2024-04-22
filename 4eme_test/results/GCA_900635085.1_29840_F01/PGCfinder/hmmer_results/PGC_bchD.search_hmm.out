@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635085.1_29840_F01/GCA_900635085.1_29840_F01_protein.faa
+# output directed to file:         results/GCA_900635085.1_29840_F01/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0043   14.0   0.1     0.0057   13.6   0.1    1.1  1  GCA_900635085.1_29840_F01_1898  VDY40186.1 Inter-alpha-trypsin i
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635085.1_29840_F01_1898  VDY40186.1 Inter-alpha-trypsin inhibitor heavy chain H3 Inter-alpha-inhibitor heavy c
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.1   9.7e-07    0.0057     398     509 ..     136     248 ..     110     255 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 9.7e-07
+            trimmed_msa_bchD_hmm 398 setttifvVDASGS.aAleRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLppt..rSLvrakraLagLpGGGg 473
+                                       + ++f++D SGS + +eRL     A+ lL  +  +  d++++v++ G +  + L+ t     +  k a+ +L   G+
+  GCA_900635085.1_29840_F01_1898 136 PPANLVFLIDTSGSmQPAERLPLIQSALKLLVNDLRA-QDNITIVTYAGGT-HVALASTagNNTTAIKAAIDNLDAYGS 212
+                                     45679*********44699**********99999765.6********9855.566665522456777999********* PP
+
+            trimmed_msa_bchD_hmm 474 TPLAagleaalelaeaarrrGrtpllvlLtDGraNi 509
+                                     T   agl+ a+e ae+   +G    ++l tDG  N+
+  GCA_900635085.1_29840_F01_1898 213 TGGEAGLRLAYEQAEKGFIKGGVNRILLTTDGDFNL 248
+                                     ********************************9886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5815  (1373450 residues searched)
+Passed MSV filter:                       256  (0.0440241); expected 116.3 (0.02)
+Passed bias filter:                      118  (0.0202923); expected 116.3 (0.02)
+Passed Vit filter:                        15  (0.00257954); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171969); expected 0.1 (1e-05)
+Initial search space (Z):               5815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 16963.31
+//
+[ok]

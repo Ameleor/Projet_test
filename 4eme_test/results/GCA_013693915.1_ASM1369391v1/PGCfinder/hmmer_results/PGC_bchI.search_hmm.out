@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693915.1_ASM1369391v1/GCA_013693915.1_ASM1369391v1_protein.faa
+# output directed to file:         results/GCA_013693915.1_ASM1369391v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-05   21.5   4.2    3.5e-05   20.7   1.5    2.1  2  GCA_013693915.1_ASM1369391v1_3031  QLQ26037.1 MAG: MoxR family ATPa
+     0.0019   15.0   0.0     0.0045   13.8   0.0    1.6  1  GCA_013693915.1_ASM1369391v1_2996  QLQ26006.1 MAG: DNA polymerase I
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693915.1_ASM1369391v1_3031  QLQ26037.1 MAG: MoxR family ATPase [Dechloromonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.1     0.019        32      29      53 ..      32      57 ..      17      79 .. 0.71
+   2 !   20.7   1.5     2e-08   3.5e-05     243     320 ..     199     283 ..     124     300 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.019
+               trimmed_msa_bchI_hmm 29 gGvlvlGd.rGtGkstavralaallP 53
+                                        G ++l d  GtGk+  +rala  l 
+  GCA_013693915.1_ASM1369391v1_3031 32 RGHVLLEDvPGTGKTMLARALARSLD 57
+                                       4544455526************8775 PP
+
+  == domain 2  score: 20.7 bits;  conditional E-value: 2e-08
+               trimmed_msa_bchI_hmm 243 kkilaarkrlekvevpdavlekaaklclalgtd.....Gl..rgeltllraaralaalegakevtkehlkkvapla 311
+                                        ++ilaar+++++v+v+ +v + +a+++ a  +      G+  rg l+l r ++ +a l+g++ vt + +k++a ++
+  GCA_013693915.1_ASM1369391v1_3031 199 AEILAAREAVKAVHVAADVAQYMARISAATRSHpdlrlGVspRGTLALARGSQGMALLRGREFVTPDIVKAMAGAV 274
+                                        6899*********************998876542233333459********************************* PP
+
+               trimmed_msa_bchI_hmm 312 lrhrlrrdp 320
+                                        l+hrl   p
+  GCA_013693915.1_ASM1369391v1_3031 275 LEHRLIVRP 283
+                                        ****97655 PP
+
+>> GCA_013693915.1_ASM1369391v1_2996  QLQ26006.1 MAG: DNA polymerase III subunit gamma/tau [Dechloromonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   2.6e-06    0.0045       5      62 ..      14      72 ..      11     105 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsi.gGvlvlGdrGtGkstavralaallPkikavkgcr 62
+                                        f+++vgq+++ +al  a   +++    l  G rG Gk+t +r la+ l   + v++++
+  GCA_013693915.1_ASM1369391v1_2996 14 SFTSLVGQEHVVRALTHALASQRLhHAYLXTGTRGVGKTTLARILAKSLNCETGVTDTP 72
+                                       599************999777776257899****************9887666655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3429  (1103264 residues searched)
+Passed MSV filter:                       177  (0.0516185); expected 68.6 (0.02)
+Passed bias filter:                      121  (0.0352873); expected 68.6 (0.02)
+Passed Vit filter:                        22  (0.00641586); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.00058326); expected 0.0 (1e-05)
+Initial search space (Z):               3429  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11359.33
+//
+[ok]

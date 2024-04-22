@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898485.1_ASM2389848v1/GCA_023898485.1_ASM2389848v1_protein.faa
+# output directed to file:         results/GCA_023898485.1_ASM2389848v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.7e-16   55.1   0.1    6.5e-16   54.6   0.1    1.2  1  GCA_023898485.1_ASM2389848v1_548  USN57372.1 MAG: polyprenyl synth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898485.1_ASM2389848v1_548  USN57372.1 MAG: polyprenyl synthetase family protein [Candidatus Peribacteria bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.6   0.1   4.4e-19   6.5e-16      30     241 ..      42     262 ..      22     291 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 54.6 bits;  conditional E-value: 4.4e-19
+              trimmed_msa_crtE_hmm  30 avfpgGaRiRPrlclavaaacGdddpal.adaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhka....f.... 97 
+                                           gG+ +RP ++      cG +d+     + ++  el+h  +L+hDD+   D+  +RR +p+ h +    +    
+  GCA_023898485.1_ASM2389848v1_548  42 DYNQGGKALRPYMVYLWYKLCGGQDDVYqMMSIGVINELIHTRALIHDDI--ADQGLIRRHRPTYHIQlrqvYdddh 116
+                                       55689*************9998776655156677888************8..5************965222342222 PP
+
+              trimmed_msa_crtE_hmm  98 .geplavLaGDalivlaf.etlareaaksparlakllkt..laravGapaGivaGqaweseaevdlsayqraktgaL 170
+                                        g++ a+L+GD     a  et+  e++++ + +++++++  +++   + +  + G     ++ + +++    k g  
+  GCA_023898485.1_ASM2389848v1_548 117 vGDSQAMLVGDLAYSWAVsETVQIENTAARTIISDMIEKviIGEILDIHYSYIDGE----MDAMTIATKDDLKSGQY 189
+                                       256789*****776666537787788888888888887522566666677777775....44555555556666554 PP
+
+              trimmed_msa_crtE_hmm 171 .faaatvaGaiaag...adaeewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsavaelGlegav 241
+                                        faa  + Ga+ ag   ++ ++ +++g+ +G a+q+ DDl D l      Gk+   D ++g  ++v ++ l+ a 
+  GCA_023898485.1_ASM2389848v1_548 190 tFAAPMMLGATLAGatdEQVAAISEIGTIIGVAFQMRDDLLDWLPAD--DGKTKFSDIQEGNQTIVWSYLLAHAS 262
+                                       24444455665554100556678899****************98765..69999999999999988877766654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       1495  (191101 residues searched)
+Passed MSV filter:                        34  (0.0227425); expected 29.9 (0.02)
+Passed bias filter:                       21  (0.0140468); expected 29.9 (0.02)
+Passed Vit filter:                         1  (0.000668896); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000668896); expected 0.0 (1e-05)
+Initial search space (Z):               1495  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7834.32
+//
+[ok]

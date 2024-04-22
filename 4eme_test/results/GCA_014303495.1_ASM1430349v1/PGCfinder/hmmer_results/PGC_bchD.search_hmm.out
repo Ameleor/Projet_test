@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_014303495.1_ASM1430349v1/GCA_014303495.1_ASM1430349v1_protein.faa
+# output directed to file:         results/GCA_014303495.1_ASM1430349v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.7e-11   39.1   0.0    8.3e-11   38.5   0.0    1.1  1  GCA_014303495.1_ASM1430349v1_904  QNK78367.1 MoxR family ATPase [W
+    5.1e-07   26.0   0.0    7.7e-07   25.4   0.0    1.1  1  GCA_014303495.1_ASM1430349v1_562  QNK78042.1 von Willebrand factor
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014303495.1_ASM1430349v1_904  QNK78367.1 MoxR family ATPase [Winogradskyella sp. PAMC22761]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.0   5.4e-14   8.3e-11      88     257 ..     122     316 ..     117     324 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 38.5 bits;  conditional E-value: 5.4e-14
+              trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldldeia 162
+                                       ++++    R ++++ a l + ++e++     dg++ + ++ f+++a  + +e++   alpea ldR  +++++d  +
+  GCA_014303495.1_ASM1430349v1_904 122 IVLIDEINRAPAKTQAALFETMEERQ--ATIDGTTYKFDNPFMVLATQNPIEQEGtyALPEAQLDRFIFKIKVDYPT 196
+                                       6677777899***************5..6789*******************87752368***************999 PP
+
+              trimmed_msa_bchD_hmm 163 lrdleelaa..................eaedieaararlpkvtleeealealvataaalGid.......slRaplla 214
+                                       l++  ++ a                  +++++e+ +++++++ +ee+ ++ ++++ +++  +       s Ra++  
+  GCA_014303495.1_ASM1430349v1_904 197 LEEEIKIIAshherkgekpqalinailDTASLEDYKNKTQEILVEEKIIKYIAEIVSKTRNHphlylggSPRASISI 273
+                                       886555555677888888899999999*************************9999887754444444599****** PP
+
+              trimmed_msa_bchD_hmm 215 lraaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                       l++a+a Aa++gr+ v  ed++  ++ vl +r + +pe+e e 
+  GCA_014303495.1_ASM1430349v1_904 274 LNTAKAFAAINGRDFVIPEDIKKSLNPVLNHRIILTPEREMEG 316
+                                       *************************************998775 PP
+
+>> GCA_014303495.1_ASM1430349v1_562  QNK78042.1 von Willebrand factor type A domain-containing protein [Winogradskyella 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   0.0   5.1e-10   7.7e-07     401     512 ..     337     449 ..     324     455 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 5.1e-10
+              trimmed_msa_bchD_hmm 401 ttifvVDASGSaA.leRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvrak..raLagLpGGGgT 474
+                                        + f++D SGS    ++L   K A  lL  +   ++d+V++v + G+ A ++L+pt    +    +aL  L  GG+T
+  GCA_014303495.1_ASM1430349v1_562 337 NLTFLIDVSGSMGsQNKLPLLKSAFKLLVNQ-LREKDKVSIVVYAGA-AGVILKPTSGNQKETilKALDYLNSGGST 411
+                                       5679*******861579********988877.5799********995.899*****88776533499********** PP
+
+              trimmed_msa_bchD_hmm 475 PLAagleaalelaeaarrrGrtpllvlLtDGraNiald 512
+                                          ag+e a++lae+  ++     ++l tDG  N+ ++
+  GCA_014303495.1_ASM1430349v1_562 412 AGGAGIELAYKLAEKNFKKNGNNRIILATDGDFNVGAS 449
+                                       **************9999999999**********9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3060  (1031519 residues searched)
+Passed MSV filter:                        78  (0.0254902); expected 61.2 (0.02)
+Passed bias filter:                       56  (0.0183007); expected 61.2 (0.02)
+Passed Vit filter:                        10  (0.00326797); expected 3.1 (0.001)
+Passed Fwd filter:                         3  (0.000980392); expected 0.0 (1e-05)
+Initial search space (Z):               3060  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 14703.95
+//
+[ok]

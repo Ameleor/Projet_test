@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014672855.1_ASM1467285v1/GCA_014672855.1_ASM1467285v1_protein.faa
+# output directed to file:         results/GCA_014672855.1_ASM1467285v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0023   14.8   0.4      0.032   11.0   0.0    2.4  2  GCA_014672855.1_ASM1467285v1_1911  QNT72923.1 ATP-dependent proteas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014672855.1_ASM1467285v1_1911  QNT72923.1 ATP-dependent protease LonB [Bacillus licheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0   9.2e-06     0.032       5     143 ..      67     189 ..      63     212 .. 0.64
+   2 ?   -3.4   0.1      0.22   7.8e+02     278     306 ..     303     331 ..     269     336 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 9.2e-06
+               trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeckek 80 
+                                         f  ivgq++  +al  a   p+   v+++G  G Gk++a+r +   l + k  k ++++ +++            
+  GCA_014672855.1_ASM1467285v1_1911  67 AFKDIVGQEDGIKALKAALCGPNPQHVIIYGPPGVGKTAAARLV---LEEAKKNKRSPFQEHSAFV---------- 129
+                                        6899**********************************999954...4444444444443332222.......... PP
+
+               trimmed_msa_bchI_hmm  81 aeaeklkvkkvpvpvvdlPlGatedrvv.GaldleraltkGekafepGllaranrGflyidevn 143
+                                         e + ++++  +  + d  +G+  d +  Ga  + +a   G+ + + G +++a+ G l+ide+ 
+  GCA_014672855.1_ASM1467285v1_1911 130 -ELDATTARFDERGIADPLIGSVHDPIYqGAGAMGQA---GIPQPKQGAVTHAHGGVLFIDEIG 189
+                                        .112222222233344444566666553255444443...666666666666666666666665 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.22
+               trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkk 306
+                                        r  + +++ a  +a  e+++evt e+++ 
+  GCA_014672855.1_ASM1467285v1_1911 303 REVVNMMQIAAGMALTEERDEVTVEDIEW 331
+                                        44456777777777777777777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3517  (916644 residues searched)
+Passed MSV filter:                       163  (0.0463463); expected 70.3 (0.02)
+Passed bias filter:                      137  (0.0389537); expected 70.3 (0.02)
+Passed Vit filter:                        21  (0.005971); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000284333); expected 0.0 (1e-05)
+Initial search space (Z):               3517  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10293.02
+//
+[ok]

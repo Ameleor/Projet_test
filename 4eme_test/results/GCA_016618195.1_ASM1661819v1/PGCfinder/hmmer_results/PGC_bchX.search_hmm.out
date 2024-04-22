@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016618195.1_ASM1661819v1/GCA_016618195.1_ASM1661819v1_protein.faa
+# output directed to file:         results/GCA_016618195.1_ASM1661819v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.7e-06   24.9   0.0     0.0014   15.3   0.0    2.3  2  GCA_016618195.1_ASM1661819v1_2860  QQO61486.1 iron-sulfur cluster c
+    5.1e-05   20.0   0.1    0.00014   18.6   0.1    1.7  1  GCA_016618195.1_ASM1661819v1_3785  QQO62355.1 polysaccharide biosyn
+    0.00015   18.5   0.1     0.0027   14.4   0.1    2.2  2  GCA_016618195.1_ASM1661819v1_2126  QQO60812.1 septum site-determini
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016618195.1_ASM1661819v1_2860  QQO61486.1 iron-sulfur cluster carrier protein ApbC [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.0   1.1e-06    0.0014      24      59 ..     110     146 ..      89     161 .. 0.86
+   2 !    7.5   0.0   0.00027      0.34     210     265 ..     295     352 ..     221     361 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 1.1e-06
+               trimmed_msa_bchX_hmm  24 iiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                        i+a+  gkgg+gks t  nl+  laq+g kv ++  d
+  GCA_016618195.1_ASM1661819v1_2860 110 ILAVsSGKGGVGKSSTSVNLALALAQEGAKVGILDAD 146
+                                        6666359************************888776 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00027
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksa..nyeiigkpesewgslfeelaenvae 265
+                                        gtg a+ +ae+ +  +l  ip +  +r      +  ++  pe+e+++++ e+a+n+++
+  GCA_016618195.1_ASM1661819v1_2860 295 GTGGAEKLAEKYNTQLLGQIPLHISLREDLDrgQPTVMRDPEGEFADIYREIASNISS 352
+                                        9**********************99999755115669999***************986 PP
+
+>> GCA_016618195.1_ASM1661819v1_3785  QQO62355.1 polysaccharide biosynthesis tyrosine autokinase [Providencia manganoxyd
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.1   1.1e-07   0.00014      28      63 ..     514     549 ..     493     569 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 1.1e-07
+               trimmed_msa_bchX_hmm  28 ygkggigksftlanlsymlaqqgkkvlligcdpksd 63 
+                                            g+gksf  +n++ +la+ gkkvlli  d +  
+  GCA_016618195.1_ASM1661819v1_3785 514 CASPGVGKSFVTSNMAVVLANAGKKVLLIDTDLRKG 549
+                                        45679************************9997765 PP
+
+>> GCA_016618195.1_ASM1661819v1_2126  QQO60812.1 septum site-determining protein MinD [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.1   2.1e-06    0.0027      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?    1.7   0.0     0.015        20     220     270 ..     203     255 ..     194     270 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 2.1e-06
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCA_016618195.1_ASM1661819v1_2126  5 IVVTSGKGGVGKTTSSAAIATGLAQRGKKTVVIDFDIGL 43
+                                       55668***************************9988655 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.015
+               trimmed_msa_bchX_hmm 220 avgipvlaaipadedirrksanye.iigkpesewgslfeelaenv.aeappvr 270
+                                           ip++  ip+d+ + r s + e +i  +es+ g+ +++   ++ +e  p+r
+  GCA_016618195.1_ASM1661819v1_2126 203 ILCIPLIGVIPEDQSVLRSSNQGEpVILDAESDAGQAYSDCVDRIlGEERPIR 255
+                                        5679***********99999876636777788888877776554315555655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3820  (1201358 residues searched)
+Passed MSV filter:                       121  (0.0316754); expected 76.4 (0.02)
+Passed bias filter:                       97  (0.0253927); expected 76.4 (0.02)
+Passed Vit filter:                        10  (0.0026178); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078534); expected 0.0 (1e-05)
+Initial search space (Z):               3820  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11515.09
+//
+[ok]

@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898365.1_ASM2389836v1/GCA_023898365.1_ASM2389836v1_protein.faa
+# output directed to file:         results/GCA_023898365.1_ASM2389836v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      1e-12   44.3   8.6      1e-12   44.2   8.6    1.0  1  GCA_023898365.1_ASM2389836v1_528  USN46030.1 MAG: tryptophan-rich 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898365.1_ASM2389836v1_528  USN46030.1 MAG: tryptophan-rich sensory protein [Candidatus Woesearchaeota archaeon
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.2   8.6   9.5e-16     1e-12      99     150 ..       3      54 ..       1      55 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 44.2 bits;  conditional E-value: 9.5e-16
+              trimmed_msa_tspO_hmm  99 alvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNp 150
+                                       +++e+v+LW ++l++i+ +++vs +aa+ll+PY++Wvs+Aa+ Nl++  lN+
+  GCA_023898365.1_ASM2389836v1_528   3 GFIEIVVLWDAILLTIILFYQVSLVAAILLIPYVLWVSFAAIANLATYLLNA 54 
+                                       799**********************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       1090  (349477 residues searched)
+Passed MSV filter:                        49  (0.0449541); expected 21.8 (0.02)
+Passed bias filter:                       14  (0.012844); expected 21.8 (0.02)
+Passed Vit filter:                         2  (0.00183486); expected 1.1 (0.001)
+Passed Fwd filter:                         1  (0.000917431); expected 0.0 (1e-05)
+Initial search space (Z):               1090  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17698.30
+//
+[ok]

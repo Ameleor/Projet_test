@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484765.1_ASM2148476v1/GCA_021484765.1_ASM2148476v1_protein.faa
+# output directed to file:         results/GCA_021484765.1_ASM2148476v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.4e-06   25.8   0.4      0.099    9.9   0.0    3.2  3  GCA_021484765.1_ASM2148476v1_646   UIY29875.1 YifB family Mg chelat
+     0.0011   16.3   0.0     0.0017   15.7   0.0    1.2  1  GCA_021484765.1_ASM2148476v1_2820  UIY28198.1 ABC transporter ATP-b
+     0.0056   14.0   0.7       0.32    8.2   0.0    2.2  2  GCA_021484765.1_ASM2148476v1_5866  UIY31327.1 dipeptide ABC transpo
+  ------ inclusion threshold ------
+       0.01   13.1   0.0      0.021   12.1   0.0    1.5  1  GCA_021484765.1_ASM2148476v1_5411  UIY32753.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484765.1_ASM2148476v1_646  UIY29875.1 YifB family Mg chelatase-like AAA ATPase [Neorhizobium galegae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.2   0.0   0.00027      0.33       8      57 ..     192     239 ..     185     252 .. 0.88
+   2 !    9.9   0.0   8.2e-05     0.099     116     185 ..     277     346 ..     274     352 .. 0.92
+   3 !    4.2   0.1    0.0043       5.2     277     307 ..     466     496 ..     371     509 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.00027
+              trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57 
+                                        i gq+  k+al +aa   +   +l++G  G+Gks  +  l ++lP+++a
+  GCA_021484765.1_ASM2148476v1_646 192 DIKGQESAKRALEVAAAGGH--NLLMVGPPGSGKSMLAARLPSILPPLSA 239
+                                       5889***********97654..6999**********9999*******987 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 8.2e-05
+              trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                       al+ G     pG  + a+ G l++de   +    +d l    ++Ge ++ r    v +pa + lv + nP
+  GCA_021484765.1_ASM2148476v1_646 277 ALVGGGLRARPGEASLAHHGVLFLDEFPEFSPQALDALRQPLETGECIIARANHRVSYPASIQLVAAMNP 346
+                                       666677777899999****************************************************999 PP
+
+  == domain 3  score: 4.2 bits;  conditional E-value: 0.0043
+              trimmed_msa_bchI_hmm 277 lrgeltllraaralaalegakevtkehlkkv 307
+                                        rg   +l+ ar+la l+g+++v + hl++ 
+  GCA_021484765.1_ASM2148476v1_646 466 ARGYHRILKVARTLADLDGKDTVGRIHLAEA 496
+                                       4888899********************9864 PP
+
+>> GCA_021484765.1_ASM2148476v1_2820  UIY28198.1 ABC transporter ATP-binding protein [Neorhizobium galegae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   0.0   1.4e-06    0.0017      32      59 ..      36      63 ..      21      70 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.4e-06
+               trimmed_msa_bchI_hmm 32 lvlGdrGtGkstavralaallPkikavk 59
+                                        ++G+ G+Gkst +ra+a llP+    +
+  GCA_021484765.1_ASM2148476v1_2820 36 AIIGESGSGKSTLARAMAGLLPPAAKLA 63
+                                       589*******************987655 PP
+
+>> GCA_021484765.1_ASM2148476v1_5866  UIY31327.1 dipeptide ABC transporter ATP-binding protein (plasmid) [Neorhizobium g
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.2   0.0   0.00027      0.32      31      56 ..      39      64 ..      26     110 .. 0.81
+   2 !    4.0   0.1     0.005       6.1      31      53 ..     315     337 ..     291     370 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.00027
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkik 56
+                                       v ++G+ G+Gk+ a+ra   llPk  
+  GCA_021484765.1_ASM2148476v1_5866 39 VALVGESGSGKTVAARAAMRLLPKAI 64
+                                       4467*******************854 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.005
+               trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaallP 53 
+                                        v v+G  G+Gk+t  ra+  llP
+  GCA_021484765.1_ASM2148476v1_5866 315 VAVVGGSGSGKTTLGRAMLGLLP 337
+                                        5699******************9 PP
+
+>> GCA_021484765.1_ASM2148476v1_5411  UIY32753.1 ABC transporter ATP-binding protein (plasmid) [Neorhizobium galegae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   1.7e-05     0.021      31      69 ..      27      65 ..      11      89 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.7e-05
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkikavkgcryncdpee 69
+                                       v ++G+ G+Gkst  ra+  l P+  +vk+ r++ ++ +
+  GCA_021484765.1_ASM2148476v1_5411 27 VGIIGESGSGKSTVGRAIMRLQPPQAVVKADRLQFEDIN 65
+                                       6689***********************999888877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4849  (1208091 residues searched)
+Passed MSV filter:                       306  (0.0631058); expected 97.0 (0.02)
+Passed bias filter:                      221  (0.0455764); expected 97.0 (0.02)
+Passed Vit filter:                        53  (0.0109301); expected 4.8 (0.001)
+Passed Fwd filter:                         4  (0.000824912); expected 0.0 (1e-05)
+Initial search space (Z):               4849  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8212.32
+//
+[ok]

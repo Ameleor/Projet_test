@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_023586645.2_ASM2358664v2/GCA_023586645.2_ASM2358664v2_protein.faa
+# output directed to file:         results/GCA_023586645.2_ASM2358664v2/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.2e-07   27.5  12.7    6.2e-07   27.2  12.7    1.0  1  GCA_023586645.2_ASM2358664v2_3070  URJ34539.1 putative 4-hydroxyben
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023586645.2_ASM2358664v2_3070  URJ34539.1 putative 4-hydroxybenzoate polyprenyltransferase [Paenibacillus polymyx
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2  12.7   1.4e-10   6.2e-07       9     285 ..       9     282 ..       2     285 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 1.4e-10
+               trimmed_msa_bchG_hmm   9 lellk.PitwfpPmWafacGvvssgaslsekwllvvaGvllaGPlvcatsqa..vndWfdrhvdain..ePerpiP 79 
+                                        le++k   t f+  +af+  v+ s + + +      +G +l   +v a s a   n  +dr +d  n     r+iP
+  GCA_023586645.2_ASM2358664v2_3070   9 LEMIKiEHTLFALPFAFMGAVLGSVVVTDNLPSWPQIGWILL-AMVGARSAAfgFNRMIDRVIDGKNprTAGRAIP 83 
+                                        5666523588999999*9888888887777666777787765.4899999884469*********9933357**** PP
+
+               trimmed_msa_bchG_hmm  80 sGripGrWGlyialiltllsllva.aalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltg 154
+                                        +G +     + i +i++ll l +a ++l++l+f    l++ +   ys      k+  wl   + gl+  gla l +
+  GCA_023586645.2_ASM2358664v2_3070  84 AGLLKSS-EVVIFIIVSLLLLFWAsFKLSPLAFKLFPLAFFMLVFYSYT----KRFTWLCHFVLGLTI-GLAPLGA 153
+                                        **99876.5677777787777776268************9999999975....8889*********97.8888876 PP
+
+               trimmed_msa_bchG_hmm 155 aavlagalPsaevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalll 230
+                                           ++g++   + ++l l  ++ + G  ++   + ++ d+  gv s+p+++Gv+ a ++a ++ +++ +  ++l++
+  GCA_023586645.2_ASM2358664v2_3070 154 WVAVTGQMD-LTAIVLYLTIAFWTAGFDVIYACQDIDFDQSEGVYSIPARFGVAGALNIARVFHVITAIGFIVLFF 228
+                                        666667765.5555666666777778888999999*********************************99999999 PP
+
+               trimmed_msa_bchG_hmm 231 awgkalhalvvavllvvqlvlmarllkdPkekalwynavgvtlyvlGmlvsafal 285
+                                        + + ++  l  ++++   ++  ++++ +Pk+ +   +a+ ++  vl ++v af+l
+  GCA_023586645.2_ASM2358664v2_3070 229 IADLSWWYL-AGMIISYIILFYEHYIVSPKDLSRLQTAFFTMNGVLSIVVFAFTL 282
+                                        999888654.455566666778889999999999999998888888888888877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4372  (1238051 residues searched)
+Passed MSV filter:                       209  (0.0478042); expected 87.4 (0.02)
+Passed bias filter:                       72  (0.0164684); expected 87.4 (0.02)
+Passed Vit filter:                         7  (0.0016011); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000228728); expected 0.0 (1e-05)
+Initial search space (Z):               4372  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 19663.74
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCA_021391635.1_ASM2139163v1/GCA_021391635.1_ASM2139163v1_protein.faa
+# output directed to file:         results/GCA_021391635.1_ASM2139163v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0033   14.7   0.0       0.15    9.3   0.0    2.3  2  GCA_021391635.1_ASM2139163v1_1173  UIJ90931.1 nitrogenase molybdenu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021391635.1_ASM2139163v1_1173  UIJ90931.1 nitrogenase molybdenum-iron protein subunit beta [Sinorhizobium melilot
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.0   2.5e-05      0.15     194     303 ..     273     382 ..     263     409 .. 0.75
+   2 !    2.9   0.0    0.0021        13     355     396 ..     454     495 ..     420     502 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 2.5e-05
+               trimmed_msa_bchZ_hmm 194 gshladvrkladadvnvclyrefGrll...cealerp..ylqapiGlesttkflrklGellgldpepfierekhtt 264
+                                        g++++dvr   +a+++v l +   r     c+a  +    ++ p+G+++t +fl k+ e+ g +    i+ e+   
+  GCA_021391635.1_ASM2139163v1_1173 273 GTKIEDVRAALNAEATVSLQQYNTRRTleyCKAAGQStvSFHYPLGVKATDEFLVKVSEISGREIPEAIRLERGRL 348
+                                        899***************9887777541225555554125789*******************99888899888887 PP
+
+               trimmed_msa_bchZ_hmm 265 lkplwdlwrsvtqdffatasfaivanetyarGvrkfled 303
+                                        + ++ d     +q ++   ++ai  +  +   v +f+ +
+  GCA_021391635.1_ASM2139163v1_1173 349 VDAMAD-----SQSWLHGKKYAIYGDPDFVYAVARFIME 382
+                                        777766.....4556666666666666666666666655 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.0021
+               trimmed_msa_bchZ_hmm 355 aayipasfpgaiirrhtGtpfmGyaGatylvqevcnalfdal 396
+                                        +  i   fp      h   p+mGy G   ++  + + +fd l
+  GCA_021391635.1_ASM2139163v1_1173 454 TPLIRLMFPIFDRHHHHRFPLMGYQGGLRVLTTILDKIFDRL 495
+                                        4567777777666778889********************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       6046  (1824280 residues searched)
+Passed MSV filter:                       157  (0.0259676); expected 120.9 (0.02)
+Passed bias filter:                      137  (0.0226596); expected 120.9 (0.02)
+Passed Vit filter:                         8  (0.00132319); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000165399); expected 0.1 (1e-05)
+Initial search space (Z):               6046  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 19690.52
+//
+[ok]

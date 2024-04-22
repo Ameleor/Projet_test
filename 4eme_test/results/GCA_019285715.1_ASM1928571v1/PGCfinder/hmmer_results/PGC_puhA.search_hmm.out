@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCA_019285715.1_ASM1928571v1/GCA_019285715.1_ASM1928571v1_protein.faa
+# output directed to file:         results/GCA_019285715.1_ASM1928571v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.7e-98  325.4   0.0    5.3e-98  325.2   0.0    1.0  1  GCA_019285715.1_ASM1928571v1_224   QXQ08330.1 photosynthetic reacti
+  ------ inclusion threshold ------
+      0.011   13.0   0.1      0.012   12.8   0.1    1.1  1  GCA_019285715.1_ASM1928571v1_2220  QXQ04873.1 DUF1328 domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019285715.1_ASM1928571v1_224  QXQ08330.1 photosynthetic reaction center subunit H [Sphingosinicellaceae bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  325.2   0.0  2.6e-101   5.3e-98       3     252 .]       3     253 ..       1     253 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 325.2 bits;  conditional E-value: 2.6e-101
+              trimmed_msa_puhA_hmm   3 ltgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetge.ekaegllevpepktfklphg.gtvtaPskere 77 
+                                       +t+ lD+a+lvl+af+lff+gL++ylrredrrEGyPled++tg+ ++  g+le+++pktf lp++ gtvt P+ +r+
+  GCA_019285715.1_ASM1928571v1_224   3 FTAGLDIAELVLWAFFLFFLGLIIYLRREDRREGYPLEDDVTGRiNSPGGILEMAKPKTFVLPFDlGTVTQPNGDRD 79 
+                                       7899****************************************888899*************************** PP
+
+              trimmed_msa_puhA_hmm  78 eedlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaD 154
+                                       + +l+a++t +++G+Pl+ptgnpl++gvGp++ya Rad+pdl+++g++rivP+  + +f v+++dpdprG++vvgaD
+  GCA_019285715.1_ASM1928571v1_224  80 SMNLRARRTGPWAGSPLVPTGNPLTAGVGPGSYALRADRPDLNMEGHPRIVPMVGHPDFYVSRRDPDPRGFAVVGAD 156
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhA_hmm 155 gkvaGtvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTllEEd 231
+                                       + vaGtv+d W+D+++ ++RYlev+l  gg++vl Pm +a++++k++ ++v+a+l++qfa +P    + ++Tll E+
+  GCA_019285715.1_ASM1928571v1_224 157 RVVAGTVVDAWIDTADRVVRYLEVALP-GGGSVLAPMFMATVERKRRIIEVDALLGHQFAGAPPAPVDGTITLLQEE 232
+                                       **************************9.99*********************************************** PP
+
+              trimmed_msa_puhA_hmm 232 kivaYyggGtlYatperqepl 252
+                                          aY+g+G+lYat++rqep+
+  GCA_019285715.1_ASM1928571v1_224 233 LAQAYFGAGYLYATAARQEPI 253
+                                       *******************95 PP
+
+>> GCA_019285715.1_ASM1928571v1_2220  QXQ04873.1 DUF1328 domain-containing protein [Sphingosinicellaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.1   5.9e-06     0.012       6      33 ..      27      55 ..      22      56 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 5.9e-06
+               trimmed_msa_puhA_hmm  6 elDvaqlvlyafwlff.agLvlylrredr 33
+                                       ++ +a++ +y+f+++f +gL+++l r +r
+  GCA_019285715.1_ASM1928571v1_2220 27 SMGIAKILFYIFIVLFvIGLIMHLVRGNR 55
+                                       6889********9766279*****99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       4025  (1310803 residues searched)
+Passed MSV filter:                        84  (0.0208696); expected 80.5 (0.02)
+Passed bias filter:                       73  (0.0181366); expected 80.5 (0.02)
+Passed Vit filter:                         8  (0.00198758); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000496894); expected 0.0 (1e-05)
+Initial search space (Z):               4025  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 20043.77
+//
+[ok]

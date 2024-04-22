@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_904863155.1_INF058/GCA_904863155.1_INF058_protein.faa
+# output directed to file:         results/GCA_904863155.1_INF058/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                    -----------
+    0.00075   16.5   0.0     0.0011   16.0   0.0    1.1  1  GCA_904863155.1_INF058_1631  LJLNAL_08475 nitrogenase iron-mo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_904863155.1_INF058_1631  LJLNAL_08475 nitrogenase iron-molybdenum cofactor biosynthesis protein NifE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0     2e-07    0.0011     105     223 ..     101     223 ..      81     236 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 2e-07
+         trimmed_msa_bchY_hmm 105 direavheladpekydavvvinlcvptasGvplrllpk...einGvriiGidvpGfGvpthaeakdvlagamlkya..rkea 181
+                                   + +av ++ d  +  av + n cvp+  G  l+ + +      Gv +i id  Gf  +       +    ml+    ++e 
+  GCA_904863155.1_INF058_1631 101 RLFHAVRHIVDRYHPAAVFIYNTCVPAMEGDDLEAVCQaaqTATGVPVIAIDAAGFYGSKN-LGNRMAGDVMLRQVigQREP 181
+                                  5567888999999999*****************99865111568***********965443.44455666788876114555 PP
+
+         trimmed_msa_bchY_hmm 182 eaGpvaaprggrsdkptvtllGelfpa.dpvvigalleplGla 223
+                                  +  p ++p  + +++  + l+Ge+  a +  ++  ll+ lG+ 
+  GCA_904863155.1_INF058_1631 182 APWPDNTPF-APAQRHDIGLIGEFNIAgEFWQVQPLLDELGIR 223
+                                  555666776.467899999999987661445777888888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       5454  (1713555 residues searched)
+Passed MSV filter:                       189  (0.0346535); expected 109.1 (0.02)
+Passed bias filter:                      127  (0.0232857); expected 109.1 (0.02)
+Passed Vit filter:                         9  (0.00165017); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000183352); expected 0.1 (1e-05)
+Initial search space (Z):               5454  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 19145.00
+//
+[ok]

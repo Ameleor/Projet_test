@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484765.1_ASM2148476v1/GCA_021484765.1_ASM2148476v1_protein.faa
+# output directed to file:         results/GCA_021484765.1_ASM2148476v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      2e-39  133.1  16.3    2.3e-39  132.9  16.3    1.0  1  GCA_021484765.1_ASM2148476v1_620  UIY29860.1 tryptophan-rich senso
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484765.1_ASM2148476v1_620  UIY29860.1 tryptophan-rich sensory protein [Neorhizobium galegae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.9  16.3   4.7e-43   2.3e-39       5     149 ..      10     150 .]       5     150 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 132.9 bits;  conditional E-value: 4.7e-43
+              trimmed_msa_tspO_hmm   5 aalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                        ++a v++++l+ga   +gewy+sL+kP ++PP w+F +vWtv+y+li+va    w   e++  +   l+lfa++a+
+  GCA_021484765.1_ASM2148476v1_620  10 FIVACVALGALSGASNVPGEWYQSLNKPFFNPPGWIFAPVWTVLYVLIGVALSETW-YDENNGRR---LVLFAIQAA 82 
+                                       33445567899*********************************************.44444445...89******* PP
+
+              trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       ln+lWs+ fF+l+ + ++lv++v L +++l++i + w+ ++ aa+l++PY +Wv++A++LNls+v +N
+  GCA_021484765.1_ASM2148476v1_620  83 LNLLWSPAFFGLQSPVLGLVVIVPLLVAILLFIAASWQENRRAAWLFVPYALWVAFATLLNLSIVLMN 150
+                                       ****************************************************************9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4849  (1208091 residues searched)
+Passed MSV filter:                       260  (0.0536193); expected 97.0 (0.02)
+Passed bias filter:                      107  (0.0220664); expected 97.0 (0.02)
+Passed Vit filter:                         8  (0.00164982); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000206228); expected 0.0 (1e-05)
+Initial search space (Z):               4849  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17762.82
+//
+[ok]

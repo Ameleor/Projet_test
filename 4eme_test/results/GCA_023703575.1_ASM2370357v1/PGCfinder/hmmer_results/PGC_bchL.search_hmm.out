@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703575.1_ASM2370357v1/GCA_023703575.1_ASM2370357v1_protein.faa
+# output directed to file:         results/GCA_023703575.1_ASM2370357v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.5e-06   23.0   0.1    5.7e-06   22.3   0.1    1.2  1  GCA_023703575.1_ASM2370357v1_1591  URQ66611.1 ParA family protein [
+     0.0053   12.6   0.0      0.013   11.4   0.0    1.6  2  GCA_023703575.1_ASM2370357v1_511   URQ67110.1 DnaA/Hda family prote
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703575.1_ASM2370357v1_1591  URQ66611.1 ParA family protein [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.3   0.1   7.2e-09   5.7e-06      27      63 ..      10      46 ..       3      57 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 22.3 bits;  conditional E-value: 7.2e-09
+               trimmed_msa_bchL_hmm 27 gkggigksttssnlsvafsklgkrvlqigcdpkhdst 63
+                                        kgg+gk+tt+ nls+++s + + vl +  dp+ ++t
+  GCA_023703575.1_ASM2370357v1_1591 10 QKGGVGKTTTAVNLSASLSAMKRAVLLVDLDPQANAT 46
+                                       69******************************99887 PP
+
+>> GCA_023703575.1_ASM2370357v1_511  URQ67110.1 DnaA/Hda family protein [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.0   1.6e-05     0.013      20      83 ..      46     109 ..      36     129 .. 0.81
+   2 ?   -1.6   0.0      0.15   1.2e+02     211     245 ..     158     192 ..     120     221 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_bchL_hmm  20 akvfavygkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkklvptvidvleevdf 83 
+                                       +++f ++g+ g+gks     l   f + gkr + +    ++ s+  + ++l +  + ++e++d 
+  GCA_023703575.1_ASM2370357v1_511  46 SNLFYIWGREGVGKSYIMQALNREFINQGKRTFHLSLTDRKVSSHKILQHLEALDVILIENIDN 109
+                                       56899******************************99888888888888887766666677664 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.15
+              trimmed_msa_bchL_hmm 211 fneavglkrlahlpdldairrsrlkkstlfemeds 245
+                                       + +a+ + ++++ ++ldai +s  +k   ++ +++
+  GCA_023703575.1_ASM2370357v1_511 158 YFTAIEVPEITNEEKLDAISQSSARKGIDLDTKTK 192
+                                       45566666777777777777777777655555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1586  (503330 residues searched)
+Passed MSV filter:                        49  (0.0308953); expected 31.7 (0.02)
+Passed bias filter:                       41  (0.0258512); expected 31.7 (0.02)
+Passed Vit filter:                         3  (0.00189155); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.00126103); expected 0.0 (1e-05)
+Initial search space (Z):               1586  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12024.78
+//
+[ok]

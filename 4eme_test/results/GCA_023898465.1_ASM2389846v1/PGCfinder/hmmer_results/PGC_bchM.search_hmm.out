@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchM.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898465.1_ASM2389846v1/GCA_023898465.1_ASM2389846v1_protein.faa
+# output directed to file:         results/GCA_023898465.1_ASM2389846v1/PGCfinder/hmmer_results/PGC_bchM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchM_hmm  [M=228]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.7e-15   51.8   0.0    4.6e-15   51.5   0.0    1.1  1  GCA_023898465.1_ASM2389846v1_250  USN53793.1 MAG: DUF2431 domain-c
+    3.4e-06   22.5   0.0      7e-06   21.5   0.0    1.5  2  GCA_023898465.1_ASM2389846v1_123  USN53670.1 MAG: ribosomal RNA sm
+    0.00011   17.6   0.0    0.00016   17.0   0.0    1.2  1  GCA_023898465.1_ASM2389846v1_617  USN53159.1 MAG: peptide chain re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898465.1_ASM2389846v1_250  USN53793.1 MAG: DUF2431 domain-containing protein [Candidatus Nomurabacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.5   0.0   1.4e-17   4.6e-15      53     128 ..       7      81 ..       1      96 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 51.5 bits;  conditional E-value: 1.4e-17
+              trimmed_msa_bchM_hmm  53 PedltgarvlDaGCGtGalavelarrGaevvavDlsptlvelarerlpeklkagkiefragDmldpalGefdhvva 128
+                                        e+++g++vl+ GCG+G +++ +ar+Ga+v+a D+sp  v+ a+  +  ++  +++e   +D++++  G+fd ++ 
+  GCA_023898465.1_ASM2389846v1_250   7 NEEMEGKQVLEMGCGSGYISIIAARKGAKVIASDISPIAVDAAKINTIINK-IKNVECYCSDLFSNLEGKFDLILF 81 
+                                       578****************************************98776655.48******************9975 PP
+
+>> GCA_023898465.1_ASM2389846v1_123  USN53670.1 MAG: ribosomal RNA small subunit methyltransferase A [Candidatus Nomurab
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.0   2.1e-08     7e-06      57     120 ..      44     109 ..       7     128 .. 0.73
+   2 ?   -3.8   0.0       1.1   3.8e+02      31      52 ..     214     235 ..     212     238 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 2.1e-08
+              trimmed_msa_bchM_hmm  57 tgarvlDaGCGtGalavelarrGaevvavDlsptlvelarerlpeklka..gkiefragDmldpal 120
+                                       + + +l+ G G G+l+  l+++ ++v+a++l ++l e+ ++r +++++    + +fr +D+ +  l
+  GCA_023898465.1_ASM2389846v1_123  44 SEHPILEIGPGFGVLTEALVQKASQVIAIELEKKLAEHLQKRFSSQKNLtiVQNDFRFTDLAALGL 109
+                                       34679*************************************998877633566899999865444 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 1.1
+              trimmed_msa_bchM_hmm  31 sriratvraGrdemretllswl 52 
+                                       s +r + +  r+++r+ l s l
+  GCA_023898465.1_ASM2389846v1_123 214 SIVRSAFQGKRKKLRNSLASVL 235
+                                       5577788888999999998877 PP
+
+>> GCA_023898465.1_ASM2389846v1_617  USN53159.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Cand
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.0   4.9e-07   0.00016      49     128 ..     119     199 ..     108     204 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 4.9e-07
+              trimmed_msa_bchM_hmm  49 lswlPedltgarvlDaGCGtGalavelarr..GaevvavDlsptlvelarerlpeklkagkiefragDmldp.alGe 122
+                                       l+++P+  +  +v D G G+G +a+ la      ++ a +ls++ +++ar+ +++ + +++++ ++g+ml+p +   
+  GCA_023898465.1_ASM2389846v1_617 119 LQYFPAA-KKLQVADLGSGSGCIALSLACErpRWQIYATELSSSAIHYARKNAKHWQ-HKNLHIMQGNMLQPlRTTA 193
+                                       5556654.568999********99999865124689**************9877655.69**********9833456 PP
+
+              trimmed_msa_bchM_hmm 123 fdhvva 128
+                                        d +va
+  GCA_023898465.1_ASM2389846v1_617 194 LDLIVA 199
+                                       777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (228 nodes)
+Target sequences:                       1016  (322726 residues searched)
+Passed MSV filter:                        33  (0.0324803); expected 20.3 (0.02)
+Passed bias filter:                       21  (0.0206693); expected 20.3 (0.02)
+Passed Vit filter:                         6  (0.00590551); expected 1.0 (0.001)
+Passed Fwd filter:                         3  (0.00295276); expected 0.0 (1e-05)
+Initial search space (Z):               1016  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14730.84
+//
+[ok]

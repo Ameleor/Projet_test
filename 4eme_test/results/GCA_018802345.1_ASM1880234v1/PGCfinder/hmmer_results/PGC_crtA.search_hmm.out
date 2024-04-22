@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCA_018802345.1_ASM1880234v1/GCA_018802345.1_ASM1880234v1_protein.faa
+# output directed to file:         results/GCA_018802345.1_ASM1880234v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.014   12.4   0.2      0.018   12.0   0.2    1.1  1  GCA_018802345.1_ASM1880234v1_2510  QWL74720.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018802345.1_ASM1880234v1_2510  QWL74720.1 hypothetical protein HQ396_12885 [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.2   4.8e-06     0.018      32     107 ..      11      88 ..       1     100 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 4.8e-06
+               trimmed_msa_crtA_hmm  32 vpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivrryraraeesltvlleptsa..rGaWs 105
+                                        ++g+ ++ +lGsG+ +     P ++++  ++ ++++ +a++ + e+   ++ +a a+e +   l   sa  + +W+
+  GCA_018802345.1_ASM1880234v1_2510  11 THGALLLLMLGSGMAQAADALPVIQQQWAVCQYQQTGKAKESCLEQLSSQADQASAKEAFRTDLLIWSAivKSTWA 86 
+                                        567778889*************************************99**********998877766643378888 PP
+
+               trimmed_msa_crtA_hmm 106 ge 107
+                                        g 
+  GCA_018802345.1_ASM1880234v1_2510  87 GA 88 
+                                        76 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3640  (1119892 residues searched)
+Passed MSV filter:                        79  (0.0217033); expected 72.8 (0.02)
+Passed bias filter:                       67  (0.0184066); expected 72.8 (0.02)
+Passed Vit filter:                         5  (0.00137363); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000274725); expected 0.0 (1e-05)
+Initial search space (Z):               3640  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11008.08
+//
+[ok]

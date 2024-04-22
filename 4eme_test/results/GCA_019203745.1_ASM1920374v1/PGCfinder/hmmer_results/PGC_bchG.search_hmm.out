@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203745.1_ASM1920374v1/GCA_019203745.1_ASM1920374v1_protein.faa
+# output directed to file:         results/GCA_019203745.1_ASM1920374v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-09   37.0   6.0    1.8e-09   36.4   6.0    1.2  1  GCA_019203745.1_ASM1920374v1_7641  JGHLMO_38785 1,4-dihydroxy-2-nap
+    0.00066   18.1   0.1     0.0017   16.8   0.0    1.6  2  GCA_019203745.1_ASM1920374v1_7604  JGHLMO_38600 Polysaccharide bios
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203745.1_ASM1920374v1_7641  JGHLMO_38785 1,4-dihydroxy-2-naphthoate octaprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   6.0   4.4e-13   1.8e-09      55     282 ..      55     303 ..      35     307 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 36.4 bits;  conditional E-value: 4.4e-13
+               trimmed_msa_bchG_hmm  55 atsqavndWfd..rhvda..inePe.rpiPsGripGrWGlyialiltllsllvaaalgtlvfv.......aavlgl 118
+                                          s  +nd+ d  +  da  ine e r++ sG+i+ +      +++++ls++ ++al  ++f+          +gl
+  GCA_019203745.1_ASM1920374v1_7641  55 ILSNYANDYGDgvKGTDAkrINEAEaRAVASGKITAKQMKNAVILFSALSFIATIALLYVAFIpeymnefYIFIGL 130
+                                        567778888884434565559997549*********9988888888999988888777777652221111345788 PP
+
+               trimmed_msa_bchG_hmm 119 vlaWaysapP..lrlkknGwlGnaav.glsyeglaWltgaavlagalPsaevlllallysigahGimtlndfkave 191
+                                         +a + +a    +  k  G++G + +  + + gl  + g+  l +++ s+++ll  +  ++ +  ++ ln+++ +e
+  GCA_019203745.1_ASM1920374v1_7641 131 GVASILAAIGytVGKKPYGYMGLGDIfVFIFFGLVSVCGSYFLFTKTFSWDMLLPGTAVGMMSMAVLNLNNMRDIE 206
+                                        778777776511556888***98754267899******************************************** PP
+
+               trimmed_msa_bchG_hmm 192 GdrklgvkslpvklGveraarvaclvmavpqvvvvall....lawgkalhalvvavllvvqlvlmarl..lkdPke 261
+                                         d+  g +s++ ++G ++a  +  +++++p v+++ +l    ++ +++++  +v++ll+  + l +++  +k+Pke
+  GCA_019203745.1_ASM1920374v1_7641 207 SDKLSGKNSFALRIGFKNAMIYEMILLQLPLVLILIFLgvngFIQQQNYYVFIVMILLFPLAKLRRNImsVKEPKE 282
+                                        *******************************99999883222233445555666666655555544442268**** PP
+
+               trimmed_msa_bchG_hmm 262 kalwynavgvtlyvlGmlvsa 282
+                                          ++++ vg++ +v+ +l +a
+  GCA_019203745.1_ASM1920374v1_7641 283 LDQYLKQVGIMTFVMAILTAA 303
+                                        ***************999876 PP
+
+>> GCA_019203745.1_ASM1920374v1_7604  JGHLMO_38600 Polysaccharide biosynthesis protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.1     0.076     3e+02      99     124 ..      23      45 ..      14      81 .. 0.67
+   2 !   16.8   0.0   4.2e-07    0.0017      42     113 ..      66     137 ..      56     147 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.076
+               trimmed_msa_bchG_hmm  99 sllvaaalgtlvfvaavlglvlaWay 124
+                                        s  v+++lg   fvaa+l+++l   y
+  GCA_019203745.1_ASM1920374v1_7604  23 SQFVGFLLGARFFVAALLTFAL---Y 45 
+                                        6778889999999999887765...3 PP
+
+  == domain 2  score: 16.8 bits;  conditional E-value: 4.2e-07
+               trimmed_msa_bchG_hmm  42 vvaGvllaGPlvcatsqavndWfdrhvdainePerpiPsGripGrWGlyialiltllsllvaaalgtlvfva 113
+                                         v G++++  l   +  ++n ++d + d i +P r+     i  ++ ly  l l+++sl va+a+++ vfv 
+  GCA_019203745.1_ASM1920374v1_7604  66 KVHGIIFCTVLTILAGGIINQFYDLEKDHIVKPFRTRVQSFIKQKYFLYAYLGLSAISLGVAWAISHNVFVF 137
+                                        57899999999999999************************************************9988864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       7982  (1294827 residues searched)
+Passed MSV filter:                       190  (0.0238036); expected 159.6 (0.02)
+Passed bias filter:                      106  (0.0132799); expected 159.6 (0.02)
+Passed Vit filter:                         6  (0.000751691); expected 8.0 (0.001)
+Passed Fwd filter:                         2  (0.000250564); expected 0.1 (1e-05)
+Initial search space (Z):               7982  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 12966.54
+//
+[ok]

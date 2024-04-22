@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898365.1_ASM2389836v1/GCA_023898365.1_ASM2389836v1_protein.faa
+# output directed to file:         results/GCA_023898365.1_ASM2389836v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.3e-11   39.4   0.1    1.4e-06   23.7   0.0    2.2  2  GCA_023898365.1_ASM2389836v1_7    USN45513.1 MAG: alpha/beta fold 
+     0.0075   11.4   0.0      0.011   10.8   0.0    1.3  1  GCA_023898365.1_ASM2389836v1_741  USN45164.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898365.1_ASM2389836v1_7  USN45513.1 MAG: alpha/beta fold hydrolase [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.0   2.5e-09   1.4e-06      24     117 ..      16     114 ..       2     125 .. 0.73
+   2 !   13.5   0.0   3.2e-06    0.0017     221     268 ..     180     226 ..     169     236 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 2.5e-09
+            trimmed_msa_bchO_hmm  24 lrWhvqelgegPvlLLlHGtGast.h.swrdllplLaarfrviapDLPghgftesaaeerls...LpgmaealaaLlaa 97 
+                                     l  h+ e  +   + L+HG  +s  h   ++l+  La++f+v   D  ghg ++ +  + +    +++  +a++ + ++
+  GCA_023898365.1_ASM2389836v1_7  16 LVGHICEKNNDTLVVLMHGFLSSDeHpPISNLFASLAEEFTVFSFDFSGHGASQGTIGQMTPenyVREAKAAIRLMQTK 94 
+                                     55577777777789999**98885243589**********************998776554411144444455555555 PP
+
+            trimmed_msa_bchO_hmm  98 lgvepavvvGHSAGaaialr 117
+                                     +  +  +++GHS G+ +al+
+  GCA_023898365.1_ASM2389836v1_7  95 IRPKQVILIGHSMGGVVALE 114
+                                     555667789*******9987 PP
+
+  == domain 2  score: 13.5 bits;  conditional E-value: 3.2e-06
+            trimmed_msa_bchO_hmm 221 dlpklktplllivgekDravppkearevaallpkarlveleglGHLah 268
+                                     ++++ k+p+++++g kD+avp++eare+++  +  +l e+e+ GHL+ 
+  GCA_023898365.1_ASM2389836v1_7 180 RIASSKKPIIVMHGVKDSAVPVEEAREAMQANELVELYEFET-GHLLK 226
+                                     46667899********************************99.***86 PP
+
+>> GCA_023898365.1_ASM2389836v1_741  USN45164.1 MAG: hypothetical protein H6502_03835 [Candidatus Woesearchaeota archaeo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.0   2.1e-05     0.011     222     265 ..     124     166 ..     103     180 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.1e-05
+              trimmed_msa_bchO_hmm 222 lpklktplllivgekDravppkearevaallpkarlveleglGH 265
+                                       ++k k+p+l+i+ +kD+ +p  +++++a+ + + +lve e+ GH
+  GCA_023898365.1_ASM2389836v1_741 124 IKKHKKPILIIHDRKDKKIPFVNSQKIANSCSNITLVESEQ-GH 166
+                                       567789*******************************9998.98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1090  (349477 residues searched)
+Passed MSV filter:                        33  (0.0302752); expected 21.8 (0.02)
+Passed bias filter:                       29  (0.0266055); expected 21.8 (0.02)
+Passed Vit filter:                         3  (0.00275229); expected 1.1 (0.001)
+Passed Fwd filter:                         2  (0.00183486); expected 0.0 (1e-05)
+Initial search space (Z):               1090  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17086.30
+//
+[ok]

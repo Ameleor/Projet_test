@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_018771625.1_ASM1877162v1/GCA_018771625.1_ASM1877162v1_protein.faa
+# output directed to file:         results/GCA_018771625.1_ASM1877162v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00033   16.5   2.9      0.023   10.5   0.1    2.6  3  GCA_018771625.1_ASM1877162v1_1640  QWK20750.1 MAG: ferritin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018771625.1_ASM1877162v1_1640  QWK20750.1 MAG: ferritin-like domain-containing protein [Hydrogenobacter thermophi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.5   0.1   1.2e-05     0.023      83     149 ..       3      69 ..       1      74 [. 0.89
+   2 ?   -2.1   0.1      0.08   1.5e+02      92     130 ..      87     125 ..      80     137 .. 0.71
+   3 !    5.9   0.0   0.00029      0.55      96     142 ..     236     282 ..     214     293 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_acsF_hmm  83 rkefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagfindalkdagigvdlgf 149
+                                        ++e++++l+  ++ e+s  v y      +++k+i+e ++++ar e rh  +  +++   g +v l  
+  GCA_018771625.1_ASM1877162v1_1640   3 KRELINLLLYNVALEHSAIVQYLYHIFLITDKNITEEIEVIARQEMRHLKWFAQKVVSLGGQVVLNR 69 
+                                        689*******************999999********************9999988877777766655 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.08
+               trimmed_msa_acsF_hmm  92 ssltaefsGcvlyaeikkrvknkdikelfkllardesrh 130
+                                          + ae      y+     vk++ +k+l++ + +de  h
+  GCA_018771625.1_ASM1877162v1_1640  87 KDVDAEQMAIETYTKQLEVVKDESVKRLLERVIKDEEDH 125
+                                        555566666666777777788899999999999998877 PP
+
+  == domain 3  score: 5.9 bits;  conditional E-value: 0.00029
+               trimmed_msa_acsF_hmm  96 aefsGcvlyaeikkrvknkdikelfkllardesrhagfindalkdag 142
+                                         e s    y+ +    k++d+++lf+++   e  h  ++ + +k + 
+  GCA_018771625.1_ASM1877162v1_1640 236 YEQSTGEDYKKVVESLKDPDLQRLFRFIENQEEYHKHMLSEFFKTMR 282
+                                        56666667999*************************99999988764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       1880  (564883 residues searched)
+Passed MSV filter:                        79  (0.0420213); expected 37.6 (0.02)
+Passed bias filter:                       53  (0.0281915); expected 37.6 (0.02)
+Passed Vit filter:                         4  (0.00212766); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000531915); expected 0.0 (1e-05)
+Initial search space (Z):               1880  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10721.96
+//
+[ok]

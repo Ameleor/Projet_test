@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699385.1_ASM1669938v1/GCA_016699385.1_ASM1669938v1_protein.faa
+# output directed to file:         results/GCA_016699385.1_ASM1669938v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.4e-22   76.0   0.2    4.7e-11   38.2   0.0    2.0  2  GCA_016699385.1_ASM1669938v1_500  QQR78004.1 polyprenyl synthetase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699385.1_ASM1669938v1_500  QQR78004.1 polyprenyl synthetase family protein [Candidatus Moranbacteria bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   0.0   4.6e-14   4.7e-11       2      98 ..      13     112 ..      12     119 .. 0.84
+   2 !   36.1   0.0   1.9e-13     2e-10      95     236 ..     125     273 ..     120     294 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 38.2 bits;  conditional E-value: 4.6e-14
+              trimmed_msa_crtE_hmm   2 rieraleaalas..aeaeeapprlaaalrya...vfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasL 73 
+                                       r+++ + + l++  +e+e+  p +a++lry    v++gG+R+R  ++    +a G +d +    aa++iel+h   L
+  GCA_016699385.1_ASM1669938v1_500  13 RVDQEIARYLDRtiKETEKYDPFMAESLRYVktlVLSGGKRLRAAFMYYGYIAAGGTDRERMLRAAVSIELVHIFLL 89 
+                                       56666666665411456788999******9655599*********9999999999888888888************* PP
+
+              trimmed_msa_crtE_hmm  74 vhDDlPcfDdadlRRgkpsvhkafg 98 
+                                       +hDD+  +D ++ R g  + h++f 
+  GCA_016699385.1_ASM1669938v1_500  90 IHDDI--IDRDEKRHGVVTAHEHFR 112
+                                       ****7..8999***********996 PP
+
+  == domain 2  score: 36.1 bits;  conditional E-value: 1.9e-13
+              trimmed_msa_crtE_hmm  95 kafgeplavLaGDalivlafetlareaak...sparlakllktla.ravGapaGivaGqaweseaevdlsayqrakt 167
+                                       ++fg+++a+++GD +  l+ +++ ++        + l+kl ++++ + vG+ + i    a  + ++  ls y++ kt
+  GCA_016699385.1_ASM1669938v1_500 125 AHFGNSMAIIVGDMVGALGNQIIFESGFPperILRALSKLQDIISfTVVGQAKDILIEYAGKATEKEILSMYEH-KT 200
+                                       579********************999864111334456777777734679999997666665555656888875.66 PP
+
+              trimmed_msa_crtE_hmm 168 gaL.faaatvaGaiaagadaeewra...lgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsavaelG 236
+                                       +   +    + G i ag ++e  +a   ++  lG a+q+ DD+  + +++e++Gkp+g D ++g+ s+  +  
+  GCA_016699385.1_ASM1669938v1_500 201 ARYtIDGPLQLGVILAGGSEELATAfggYAVPLGIAFQIQDDILGVFGSEEKVGKPIGSDIEEGKISILVSRA 273
+                                       65515667889999888776655550005567********************************998766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       1021  (320948 residues searched)
+Passed MSV filter:                        26  (0.0254652); expected 20.4 (0.02)
+Passed bias filter:                       22  (0.0215475); expected 20.4 (0.02)
+Passed Vit filter:                         4  (0.00391773); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000979432); expected 0.0 (1e-05)
+Initial search space (Z):               1021  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 11551.40
+//
+[ok]

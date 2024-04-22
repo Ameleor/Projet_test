@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_015679705.1_ASM1567970v1/GCA_015679705.1_ASM1567970v1_protein.faa
+# output directed to file:         results/GCA_015679705.1_ASM1567970v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-14   51.1   0.7    1.3e-10   37.8   0.1    2.1  2  GCA_015679705.1_ASM1567970v1_2444  QPH81380.1 pimeloyl-[acyl-carrie
+    6.5e-05   19.1   0.0      0.013   11.6   0.0    2.1  2  GCA_015679705.1_ASM1567970v1_670   QPH81249.1 prolyl aminopeptidase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015679705.1_ASM1567970v1_2444  QPH81380.1 pimeloyl-[acyl-carrier protein] methyl ester esterase [Neisseria mening
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.8   0.1   1.3e-13   1.3e-10      37     138 ..      17     111 ..       9     137 .. 0.82
+   2 !   11.9   0.0     1e-05     0.011     220     265 ..     190     235 ..     178     248 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 37.8 bits;  conditional E-value: 1.3e-13
+               trimmed_msa_bchO_hmm  37 lLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGHSAGa 112
+                                        + L+HG Ga  h + dl+p L a++ v a+DLPghg   ++  + + +++ a+a+aa ++    +pa ++G S G+
+  GCA_015679705.1_ASM1567970v1_2444  17 VYLIHGWGANRHMFDDLMPRLPATWPVSAVDLPGHGD--APFAQPFDIEAAADAVAAQID----TPADILGWSLGG 86 
+                                        679*********************************6..566777889999999987665....5999******** PP
+
+               trimmed_msa_bchO_hmm 113 aialrlaldgkiapkkvvglngallp 138
+                                         +al la+++  + + +  l +++++
+  GCA_015679705.1_ASM1567970v1_2444  87 LVALYLAARHPDKVRSL-CLTASFAR 111
+                                        ******99996555433.44555544 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 1e-05
+               trimmed_msa_bchO_hmm 220 rdlpklktplllivgekDravppkearevaallpkarlveleglGH 265
+                                        + l k+++p+ll+ g kD++ pp++ + ++++l+ +rlv +e+  H
+  GCA_015679705.1_ASM1567970v1_2444 190 HLLDKIDVPVLLVFGGKDAITPPRMGEYLHRHLKGSRLVVMEKAAH 235
+                                        56899*************************************9998 PP
+
+>> GCA_015679705.1_ASM1567970v1_670  QPH81249.1 prolyl aminopeptidase [Neisseria meningitidis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.0   1.2e-05     0.013      23     125 ..      20     123 ..       9     133 .. 0.77
+   2 !    5.4   0.0   0.00094      0.98     224     267 ..     246     289 ..     238     296 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_bchO_hmm  23 glrWhvqelgegPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaa.eerlsLpgmaealaaLlaal 98 
+                                       ++ W      +g  +++lHG  ++  s +       + fr++++D  g g ++  a  e+ +   + ++++++ + l
+  GCA_015679705.1_ASM1567970v1_670  20 QIYWEESGNPDGVPVIFLHGGPGAGASPECRGFFNPDVFRIVIIDQRGCGRSRPYAcAEDNTTWDLVADIEKVREML 96 
+                                       55554444444666778887655555554444555689***************988678999999************ PP
+
+              trimmed_msa_bchO_hmm  99 gvepavvvGHSAGaaialrlaldgkia 125
+                                       g+ + +v G S G+++ l +a  +  +
+  GCA_015679705.1_ASM1567970v1_670  97 GIGKWLVFGGSWGSTLSLAYAQTHPER 123
+                                       ****************99998877544 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00094
+              trimmed_msa_bchO_hmm 224 klkt.plllivgekDravppkearevaallpkarlveleglGHLa 267
+                                       k++  p++++ g+ D   p+++a  +++  p+a+l+ ++  GH a
+  GCA_015679705.1_ASM1567970v1_670 246 KIQHiPTIIVQGRYDLCTPMQSAWALSKAFPEAELRVVQA-GHRA 289
+                                       5543389999**************************9998.9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2091  (549790 residues searched)
+Passed MSV filter:                        63  (0.0301291); expected 41.8 (0.02)
+Passed bias filter:                       42  (0.0200861); expected 41.8 (0.02)
+Passed Vit filter:                         4  (0.00191296); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.00095648); expected 0.0 (1e-05)
+Initial search space (Z):               2091  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10355.22
+//
+[ok]

@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729705.1_ASM2172970v1/GCA_021729705.1_ASM2172970v1_protein.faa
+# output directed to file:         results/GCA_021729705.1_ASM2172970v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.9e-05   18.5   0.0     0.0059   12.3   0.0    2.7  3  GCA_021729705.1_ASM2172970v1_778  BHLKFG_04000 putative Mg-chelata
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729705.1_ASM2172970v1_778  BHLKFG_04000 putative Mg-chelatase, contains ChlI-like and ATPase domains, YifB fam
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.5   0.0    0.0035       5.7       5      57 ..     200     250 ..     196     274 .. 0.85
+   2 !   12.3   0.0   3.6e-06    0.0059     122     185 ..     294     357 ..     288     366 .. 0.94
+   3 ?   -1.2   0.0      0.05        81     184     225 ..     451     493 ..     448     501 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.0035
+              trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57 
+                                        f  + gq   k+a l+a+       +++ G  G Gks  +  +  +lP+++ 
+  GCA_021729705.1_ASM2172970v1_778 200 DFKEVKGQAVAKEAALIASA--GFHNLILEGSPGCGKSMIINRMRYILPPLSL 250
+                                       57788899999999999874..67788999*******************9975 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 3.6e-06
+              trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                       k+ +pG +a a+ G l+ de+  ++  +++ l +  +  + vv r    + +++ f++vG+ nP
+  GCA_021729705.1_ASM2172970v1_778 294 KEPKPGEIALAHNGMLFFDELPHFKKDILEALREPLENNKLVVSRVHSKIEYETSFLFVGAQNP 357
+                                       6778***********************************************************9 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 0.05
+              trimmed_msa_bchI_hmm 184 nPeeGelrPqlldrfGlsv.evrtpkdleervevvrrrdafer 225
+                                       n e  +l  q ++rf ls+  v+  k++++ +  +  +++ e+
+  GCA_021729705.1_ASM2172970v1_778 451 NAEAQKLLEQAIERFNLSMrSVNKVKKVARTIADLNACENIEK 493
+                                       5566677778888888887346666667666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1627  (490150 residues searched)
+Passed MSV filter:                        77  (0.0473264); expected 32.5 (0.02)
+Passed bias filter:                       64  (0.0393362); expected 32.5 (0.02)
+Passed Vit filter:                         7  (0.0043024); expected 1.6 (0.001)
+Passed Fwd filter:                         1  (0.000614628); expected 0.0 (1e-05)
+Initial search space (Z):               1627  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8424.90
+//
+[ok]

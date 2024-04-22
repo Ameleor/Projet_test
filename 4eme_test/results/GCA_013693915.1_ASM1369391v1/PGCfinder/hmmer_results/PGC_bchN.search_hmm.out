@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693915.1_ASM1369391v1/GCA_013693915.1_ASM1369391v1_protein.faa
+# output directed to file:         results/GCA_013693915.1_ASM1369391v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.005   13.4   0.0     0.0075   12.8   0.0    1.2  1  GCA_013693915.1_ASM1369391v1_2914  QLQ25936.1 MAG: tryptophan synth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693915.1_ASM1369391v1_2914  QLQ25936.1 MAG: tryptophan synthase subunit alpha [Dechloromonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   2.2e-06    0.0075     291     374 ..      28     112 ..       2     126 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 2.2e-06
+               trimmed_msa_bchN_hmm 291 pdsqleiplarflarelgmelvevgtpylhrellaeelallpedvrlseGqdvdkqldrv...raarpdlvvcGlG 363
+                                        pd+ l +pl   l  e g++++e+g p+ +  +    ++  +++ +l+ G ++ k ++ v   ra++    v  +G
+  GCA_013693915.1_ASM1369391v1_2914  28 PDAALTVPLMHALV-EAGADVIELGVPFSDPMADGPTIQR-ASERALAGGMSLRKVFELVlafRATDKTTPVVLMG 101
+                                        9********98885.99***********999988888877.56678999*999998887622255556677999** PP
+
+               trimmed_msa_bchN_hmm 364 lanpleaegla 374
+                                         anp+ea gl 
+  GCA_013693915.1_ASM1369391v1_2914 102 YANPIEAMGLE 112
+                                        ********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       3429  (1103264 residues searched)
+Passed MSV filter:                       100  (0.029163); expected 68.6 (0.02)
+Passed bias filter:                       78  (0.0227472); expected 68.6 (0.02)
+Passed Vit filter:                         5  (0.00145815); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.00029163); expected 0.0 (1e-05)
+Initial search space (Z):               3429  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 13463.16
+//
+[ok]

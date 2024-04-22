@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_015099395.1_ASM1509939v1/GCA_015099395.1_ASM1509939v1_protein.faa
+# output directed to file:         results/GCA_015099395.1_ASM1509939v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0046   15.1   1.0      0.042   11.9   0.1    2.1  2  GCA_015099395.1_ASM1509939v1_3999  BCL81534.1 PH domain-containing 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015099395.1_ASM1509939v1_3999  BCL81534.1 PH domain-containing protein [Ktedonobacteria bacterium brp13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.1   5.9e-06     0.042      29     127 ..      62     156 ..      42     162 .. 0.67
+   2 !    1.5   0.1    0.0089        64      47     106 ..     299     360 ..     277     384 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 5.9e-06
+               trimmed_msa_puhB_hmm  29 wkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsarttvYtiTnrR 104
+                                        w+ l   ++ + l +    vl++++++ ++a + +l+ ++  + +++++++++ + ++   w      +Y++Tn+R
+  GCA_015099395.1_ASM1509939v1_3999  62 WWFLFLPSWPLLLSV----VLFVAAIIYSAAYQGPLTVSISVIGITFLAVLATGVWFTYSQWSKWWYDTYIVTNKR 133
+                                        555555555444444....4444455555444577777777777666666666666677778888899******** PP
+
+               trimmed_msa_puhB_hmm 105 vvlriGiaLsvtlnlPfkqiesa 127
+                                        ++   G   +     P ++++++
+  GCA_015099395.1_ASM1509939v1_3999 134 IIHSHGLLEPSRQQTPIEKVQQV 156
+                                        ***99998888888888888876 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.0089
+               trimmed_msa_puhB_hmm  47 avlllwrvlaaladgeslsealasaalllalaavalallall..awlsarttvYtiTnrRvv 106
+                                        ++l+++  ++ l  g+ +    + a +  +++++ l+ll ++   + ++   v+++TnrR++
+  GCA_015099395.1_ASM1509939v1_3999 299 LLLVILVPTTLLGPGTGIVPFSVWAFWWPLMGFIILGLLGAIflIYSNHVDDVFILTNRRII 360
+                                        5555555555555566666666666677777788888876540045556678********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       7205  (2376233 residues searched)
+Passed MSV filter:                       455  (0.0631506); expected 144.1 (0.02)
+Passed bias filter:                      269  (0.0373352); expected 144.1 (0.02)
+Passed Vit filter:                        23  (0.00319223); expected 7.2 (0.001)
+Passed Fwd filter:                         3  (0.000416378); expected 0.1 (1e-05)
+Initial search space (Z):               7205  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11149.44
+//
+[ok]

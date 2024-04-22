@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_019856455.1_ASM1985645v1/GCA_019856455.1_ASM1985645v1_protein.faa
+# output directed to file:         results/GCA_019856455.1_ASM1985645v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0018   14.2   0.0     0.0063   12.4   0.0    1.9  2  GCA_019856455.1_ASM1985645v1_825  QZT30136.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019856455.1_ASM1985645v1_825  QZT30136.1 signal recognition particle-docking protein FtsY [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   2.8e-06    0.0063      20      60 ..     218     258 ..     202     294 .. 0.82
+   2 ?   -2.3   0.0     0.083   1.9e+02     200     225 ..     367     395 ..     353     402 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.8e-06
+              trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        +  ++   g  g+gk+ ++ +l+y   q gkkv+l+  d 
+  GCA_019856455.1_ASM1985645v1_825 218 DDLTVMLFVGVNGVGKTTSIGKLAYKYKQAGKKVMLVAADT 258
+                                       55567778899**************************9996 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.083
+              trimmed_msa_bchX_hmm 200 vaglvinkddgt...geaqafaeavgipv 225
+                                       ++glv+ k dgt   g   a+ ++ +ipv
+  GCA_019856455.1_ASM1985645v1_825 367 LTGLVLTKLDGTakgGVVLAIRQELDIPV 395
+                                       6899******9933334567778888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2264  (718636 residues searched)
+Passed MSV filter:                        84  (0.0371025); expected 45.3 (0.02)
+Passed bias filter:                       72  (0.0318021); expected 45.3 (0.02)
+Passed Vit filter:                         8  (0.00353357); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000441696); expected 0.0 (1e-05)
+Initial search space (Z):               2264  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13073.70
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699735.1_ASM1669973v1/GCA_016699735.1_ASM1669973v1_protein.faa
+# output directed to file:         results/GCA_016699735.1_ASM1669973v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.6e-07   25.7   0.1      0.007   12.8   0.0    2.2  2  GCA_016699735.1_ASM1669973v1_703   QQS57909.1 MAG: NAD(P)-dependent
+    3.4e-05   20.4   0.0    4.9e-05   19.9   0.0    1.4  1  GCA_016699735.1_ASM1669973v1_1949  QQS56579.1 MAG: NADP-dependent o
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699735.1_ASM1669973v1_703  QQS57909.1 MAG: NAD(P)-dependent alcohol dehydrogenase [Alphaproteobacteria bacteri
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   5.3e-06     0.007      23      88 ..      25      87 ..      13      95 .. 0.79
+   2 !   10.8   0.0   2.1e-05     0.028      98     198 ..     124     232 ..      86     240 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 5.3e-06
+              trimmed_msa_bchC_hmm 23 apeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagees.klkvgervfv 88
+                                      a++++dv++di++ g+       +++ r  e+    +P+vPG+e vG v ++g++  k+k g+rv v
+  GCA_016699735.1_ASM1669973v1_703 25 AVGDNDVLIDIAYCGVCHSD---IHQAR-NEWGNSIFPMVPGHEIVGIVSKVGKNVkKFKAGDRVGV 87
+                                      67788999999999987654...44444.56777789****************98625799999865 PP
+
+  == domain 2  score: 10.8 bits;  conditional E-value: 2.1e-05
+              trimmed_msa_bchC_hmm  98 rglfGgaasrlvvpaarvvkvdeel..geegvllalaatarhalagke..kkapdlivGhGvlGrllarltvaagae 170
+                                       +  fGg +  +v+ ++ v++++++l  +  + ll+   t++  l + +  k ++  i+G G lG +  +++   gae
+  GCA_016699735.1_ASM1669973v1_703 124 TPTFGGYSDVIVTHQDFVLSIPDNLplDAAAPLLCAGITTYSPLRHWKigKGHKVGIIGLGGLGHMGVKFASSFGAE 200
+                                       468*******************99722455668888889999887655115567789******************88 PP
+
+              trimmed_msa_bchC_hmm 171 apvvWetna....araegaegyevidpeeder 198
+                                       + v+  + +    a++ ga+g  v + e+d +
+  GCA_016699735.1_ASM1669973v1_703 201 TLVITTSASkaadAKRLGAAGVVVSKDEADLK 232
+                                       87776543311113455666666666666654 PP
+
+>> GCA_016699735.1_ASM1669973v1_1949  QQS56579.1 MAG: NADP-dependent oxidoreductase [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.0   3.7e-08   4.9e-05       9     122 ..      13     121 ..       9     226 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 3.7e-08
+               trimmed_msa_bchC_hmm   9 ekPeelalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee.sklkvg 83 
+                                         +P+ l+l +l+l + ++++v+v i+  ++   t+  + +Gr+ e  G  +P+  G +  G v e g+e s++k g
+  GCA_016699735.1_ASM1669973v1_1949  13 GEPDVLELGTLDLPTLGDNQVIVIIKAVAVNP-TDCKIRKGRLKEINGTHFPMYTGTDFCGVVDEIGSEvSGFKAG 87 
+                                        5899**********************999975.777789**************************98763789999 PP
+
+               trimmed_msa_bchC_hmm  84 ervfvPGakcfedvrglfGgaasrlvvpaarvvkvdeel 122
+                                        +  fv G+  ++   +l G+ a+++++++a +   +e++
+  GCA_016699735.1_ASM1669973v1_1949  88 D--FVYGSVNYK---TLGGAMAEKVMTAEANIALKPEKI 121
+                                        9..566998885...688999999999998876555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2650  (817258 residues searched)
+Passed MSV filter:                        64  (0.0241509); expected 53.0 (0.02)
+Passed bias filter:                       52  (0.0196226); expected 53.0 (0.02)
+Passed Vit filter:                         7  (0.00264151); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000754717); expected 0.0 (1e-05)
+Initial search space (Z):               2650  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8731.05
+//
+[ok]

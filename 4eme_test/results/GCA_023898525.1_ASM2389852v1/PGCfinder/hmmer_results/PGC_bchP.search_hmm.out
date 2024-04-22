@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898525.1_ASM2389852v1/GCA_023898525.1_ASM2389852v1_protein.faa
+# output directed to file:         results/GCA_023898525.1_ASM2389852v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00014   16.7   0.2       0.02    9.6   0.0    2.4  3  GCA_023898525.1_ASM2389852v1_886  USN87652.1 MAG: FAD-dependent ox
+    0.00015   16.7   0.2     0.0033   12.2   0.1    2.5  3  GCA_023898525.1_ASM2389852v1_520  USN87294.1 MAG: FAD-dependent ox
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898525.1_ASM2389852v1_886  USN87652.1 MAG: FAD-dependent oxidoreductase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.6   0.0    0.0013      0.68       2      31 ..       1      30 [.       1      36 [. 0.79
+   2 ?   -3.2   0.0       0.3   1.6e+02      92     138 ..      61     107 ..      59     116 .. 0.72
+   3 !    9.6   0.0   3.9e-05      0.02       4      38 ..     147     181 ..     144     188 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.0013
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvlll 31
+                                      +f+  ++GGGPaG +a    +rk  k l++
+  GCA_023898525.1_ASM2389852v1_886  1 MFELTIIGGGPAGIAAGVYASRKQLKTLFI 30
+                                      58999********99887777776666665 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 0.3
+              trimmed_msa_bchP_hmm  92 efdeflreraaeagaerrtgtferierdedgtavvvyrekeegeeek 138
+                                       +f e+l + a e    +  +  ++i++ +dg+  +++ + e++++++
+  GCA_023898525.1_ASM2389852v1_886  61 NFKEHLTKYAGEYVDIKAGSLVTEITKPDDGSFSITLDNGETHQTKA 107
+                                       68888888888888888888889999999999999887755544443 PP
+
+  == domain 3  score: 9.6 bits;  conditional E-value: 3.9e-05
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrik 38 
+                                       dv v+GGG a   +a +l    k+v ll+r++  k
+  GCA_023898525.1_ASM2389852v1_886 147 DVAVIGGGNAAFETAAQLLAYAKSVTLLQRSENYK 181
+                                       9**********9999999999********998766 PP
+
+>> GCA_023898525.1_ASM2389852v1_520  USN87294.1 MAG: FAD-dependent oxidoreductase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.1   6.3e-06    0.0033       2      48 ..       1      51 [.       1      63 [. 0.78
+   2 ?   -2.7   0.0      0.22   1.1e+02     160     194 ..      77     110 ..      71     147 .. 0.71
+   3 ?    1.4   0.0     0.012       6.3       6      40 ..     175     209 ..     173     230 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 6.3e-06
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldrag.rik.Pc..GGaiPprl 48
+                                      ++d++++G G  G  +a+ +   G kvll+d++   i   c   G +P+++
+  GCA_023898525.1_ASM2389852v1_520  1 MYDIIIIGAGSGGLNVASFMNSIGLKVLLIDKSAdHIGgDClnTGCVPSKA 51
+                                      69*****************************97513421343346666665 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.22
+              trimmed_msa_bchP_hmm 160 pgaekvklvfayheivkapeeeeaefdaercdvyy 194
+                                       +  e + +v +  +i++++e+ +++f ++  dv+ 
+  GCA_023898525.1_ASM2389852v1_520  77 NLDEVMAYVKSTQDIIRTHES-ADHFRSKGMDVVL 110
+                                       555667788888899999888.8888888888864 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.012
+              trimmed_msa_bchP_hmm   6 vvvGGGPaGataaedlarkGkkvllldragrikPc 40 
+                                       +v+G GP G    + + + G  v ++  ++ri P 
+  GCA_023898525.1_ASM2389852v1_520 175 LVIGAGPIGIELGQAFRHFGSAVDMVTIDDRILPR 209
+                                       79******************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1048  (313508 residues searched)
+Passed MSV filter:                        33  (0.0314885); expected 21.0 (0.02)
+Passed bias filter:                       25  (0.023855); expected 21.0 (0.02)
+Passed Vit filter:                         4  (0.00381679); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.0019084); expected 0.0 (1e-05)
+Initial search space (Z):               1048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8666.90
+//
+[ok]

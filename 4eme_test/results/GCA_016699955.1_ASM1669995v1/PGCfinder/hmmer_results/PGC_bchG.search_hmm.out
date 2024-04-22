@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699955.1_ASM1669995v1/GCA_016699955.1_ASM1669995v1_protein.faa
+# output directed to file:         results/GCA_016699955.1_ASM1669995v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-06   24.5   5.2    1.5e-06   24.1   5.2    1.2  1  GCA_016699955.1_ASM1669995v1_864  QQS19513.1 protoheme IX farnesyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699955.1_ASM1669995v1_864  QQS19513.1 protoheme IX farnesyltransferase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   5.2   1.2e-09   1.5e-06      39     189 ..      35     189 ..      19     262 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 1.2e-09
+              trimmed_msa_bchG_hmm  39 wllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsGripGrWGlyialiltllsllvaaalgtlvfva 113
+                                         + ++G ++   l+ a+s ++n+++dr++d       +r+  +G ip r  ly a ++ ll + + + l+   + +
+  GCA_016699955.1_ASM1669995v1_864  35 HFTALVGAVFGALLIIAASCVLNNYLDRDIDRRmhRTAKRASVTGIIPYRIALYYAAAMYLLGFGLMLWLT--NIPT 109
+                                       5567899999999******************751156789999****************999877766665..5678 PP
+
+              trimmed_msa_bchG_hmm 114 avlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllally.....sigahGimtln 185
+                                       a++gl  a +y+      k+  ++G+ + ++   + + l+g    +g l +a  ll ++++      + a Gi+ ++
+  GCA_016699955.1_ASM1669995v1_864 110 AAIGLTGAVLYTSVYYHAKRRTYWGTFVGAFPG-ATPPLAGYVAATGRLDRAALLLFIIMFvwqmpHFYAVGIFRME 185
+                                       889**********************98877764.4455666666666666666665555541111146688888888 PP
+
+              trimmed_msa_bchG_hmm 186 dfka 189
+                                       d+k 
+  GCA_016699955.1_ASM1669995v1_864 186 DYKR 189
+                                       8874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       1193  (342382 residues searched)
+Passed MSV filter:                        46  (0.0385583); expected 23.9 (0.02)
+Passed bias filter:                       12  (0.0100587); expected 23.9 (0.02)
+Passed Vit filter:                         1  (0.000838223); expected 1.2 (0.001)
+Passed Fwd filter:                         1  (0.000838223); expected 0.0 (1e-05)
+Initial search space (Z):               1193  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 18946.06
+//
+[ok]

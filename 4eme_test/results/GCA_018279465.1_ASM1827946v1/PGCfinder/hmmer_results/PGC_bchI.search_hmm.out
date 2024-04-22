@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018279465.1_ASM1827946v1/GCA_018279465.1_ASM1827946v1_protein.faa
+# output directed to file:         results/GCA_018279465.1_ASM1827946v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.9e-06   24.5   0.2      4e-06   23.5   0.0    1.6  2  GCA_018279465.1_ASM1827946v1_589   QUR83812.1 MoxR family ATPase [L
+  ------ inclusion threshold ------
+       0.02   11.3   0.1       0.12    8.7   0.0    1.9  2  GCA_018279465.1_ASM1827946v1_2345  QUR85389.1 sigma-54-dependent Fi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018279465.1_ASM1827946v1_589  QUR83812.1 MoxR family ATPase [Listeria monocytogenes]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.2      0.31   4.1e+02      29      50 ..      37      59 ..      20      63 .. 0.70
+   2 !   23.5   0.0     3e-09     4e-06     160     316 ..     125     284 ..     102     306 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.31
+              trimmed_msa_bchI_hmm 29 gGvlvlGd.rGtGkstavralaa 50
+                                      gG ++l d  G Gk+  vr+l++
+  GCA_018279465.1_ASM1827946v1_589 37 GGHVLLEDvPGVGKTMMVRTLSK 59
+                                      55555555259999999999975 PP
+
+  == domain 2  score: 23.5 bits;  conditional E-value: 3e-09
+              trimmed_msa_bchI_hmm 160 GenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrdafe..rdpeaf 230
+                                        en v  +g++ + +  f ++ + nP e e    l    ldrf l +++  p+ +ee ++++  ++  +   ++++ 
+  GCA_018279465.1_ASM1827946v1_589 125 AENSVTVDGITRKLANPFFVMATQNPIEYEgtyaLPEAQLDRFLLKINIGYPT-VEEEMQLLTLKQYQDplDQTKQV 200
+                                       47899999999999999999999**987653333445679********99886.66667766554433311233334 PP
+
+              trimmed_msa_bchI_hmm 231 vakwkkedakvrkkilaarkrlek..vevpdavlekaaklclalgtdGlrgeltllraaralaalegakevtkehlk 305
+                                       v+  +  d k ++k +   + l++  ++  da+     + ++alg+   rg l++++aa+a+a +eg++ v  ++++
+  GCA_018279465.1_ASM1827946v1_589 201 VTLSELLDLKNKAKQVFIDDVLKNyiIRLVDAT---RKHPSVALGIS-PRGSLAFMQAAQAFALIEGRDYVIPDDIQ 273
+                                       444444444444444444444444112222222...22345677775.5**************************** PP
+
+              trimmed_msa_bchI_hmm 306 kvaplalrhrl 316
+                                        +ap  ++hrl
+  GCA_018279465.1_ASM1827946v1_589 274 YLAPYIFTHRL 284
+                                       **********8 PP
+
+>> GCA_018279465.1_ASM1827946v1_2345  QUR85389.1 sigma-54-dependent Fis family transcriptional regulator [Listeria monoc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.0     0.035        47      14      45 ..     156     188 ..     148     195 .. 0.72
+   2 ?    8.7   0.0   9.2e-05      0.12     118     190 ..     227     297 ..     191     357 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.035
+               trimmed_msa_bchI_hmm  14 emklallla.avdpsigGvlvlGdrGtGkstav 45 
+                                         mk+ + ++  + p  + vl++G+ GtGk    
+  GCA_018279465.1_ASM1827946v1_2345 156 AMKQIVRVCnQIAPFDSKVLLYGESGTGKEVLS 188
+                                        466666554257778889***********8655 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 9.2e-05
+               trimmed_msa_bchI_hmm 118 tkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGel 190
+                                         +G    +pG+l  a+ G l++de+  +   l   +l v ++Ge  v r g +   + rf l+ + n + Ge+
+  GCA_018279465.1_ASM1827946v1_2345 227 FTGADIEKPGMLELADGGTLFLDEISEMPLELQAKMLRVLETGE--VRRLGSTTETKRRFRLISATNRNLGEM 297
+                                        56777779***********************************9..99******************9988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2691  (792069 residues searched)
+Passed MSV filter:                       160  (0.0594575); expected 53.8 (0.02)
+Passed bias filter:                      121  (0.0449647); expected 53.8 (0.02)
+Passed Vit filter:                        18  (0.00668896); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000743218); expected 0.0 (1e-05)
+Initial search space (Z):               2691  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7471.38
+//
+[ok]

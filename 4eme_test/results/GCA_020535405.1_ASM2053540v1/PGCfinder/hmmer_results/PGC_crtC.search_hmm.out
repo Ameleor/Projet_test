@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_020535405.1_ASM2053540v1/GCA_020535405.1_ASM2053540v1_protein.faa
+# output directed to file:         results/GCA_020535405.1_ASM2053540v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.3e-08   29.6   0.2      1e-07   28.9   0.2    1.3  1  GCA_020535405.1_ASM2053540v1_2540  UDF13042.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020535405.1_ASM2053540v1_2540  UDF13042.1 hypothetical protein LH407_12900 [Microbacteriaceae bacterium SG_E_30_P
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.2   3.7e-11     1e-07      64     127 ..     164     231 ..     114     240 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 3.7e-11
+               trimmed_msa_crtC_hmm  64 daegrh..rWrpiapsarvevelde..pelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavl 127
+                                        d++ +h   W    p ++v+  ++e    ++ +G++Y+D+N+G++ + +  ++W W+Ra++ d ++v 
+  GCA_020535405.1_ASM2053540v1_2540 164 DSARSHylAWVVPVPYGTVTAAITEagATTQLTGSAYHDHNWGNHLMGSFLDHWYWGRAHVGDYTIVY 231
+                                        5566663359999999****999993345699*****************9***********9998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       2776  (896299 residues searched)
+Passed MSV filter:                        51  (0.0183718); expected 55.5 (0.02)
+Passed bias filter:                       48  (0.0172911); expected 55.5 (0.02)
+Passed Vit filter:                         3  (0.00108069); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000360231); expected 0.0 (1e-05)
+Initial search space (Z):               2776  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 16102.56
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_018141785.1_ASM1814178v1/GCA_018141785.1_ASM1814178v1_protein.faa
+# output directed to file:         results/GCA_018141785.1_ASM1814178v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0033   14.2   0.0     0.0045   13.8   0.0    1.1  1  GCA_018141785.1_ASM1814178v1_1700  HLOILF_08655 Ubiquinone/menaquin
+     0.0033   14.2   0.0     0.0042   13.8   0.0    1.2  1  GCA_018141785.1_ASM1814178v1_3689  HLOILF_18790 Methyltransf-11 dom
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018141785.1_ASM1814178v1_1700  HLOILF_08655 Ubiquinone/menaquinone biosynthesis methyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   2.2e-06    0.0045     187     301 ..     135     252 ..     126     271 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.2e-06
+                       trimmed_bchE 187 evldaydlkrhrrllDvGGGeG..aFlaa..vaarapklklklfDlpaVaerararleaaglsdrvevagGsflkd 258
+                                        +vl  y  ++++ +lD+G   G  +F+ +   ++++  ++++ +Dl      a a+l+++g +  +  + G+  + 
+  GCA_018141785.1_ASM1814178v1_1700 135 QVLGEYGPDKVEDILDIGCSVGisTFALHhyYKQKHNPVRTVGLDLSPY-MLAVAKLRDEGKE-IAGWVHGKGEET 208
+                                        7888888899999*****8666447765411466777788888999765.3566678888865.567777889999 PP
+
+                       trimmed_bchE 259 plPeg.aDlisLvRvlhDHdDeavlkllrkvraaLppggrLlia 301
+                                        + P++ +Dl++L  vlh+ + +a +++++++++ L+pgg + i 
+  GCA_018141785.1_ASM1814178v1_1700 209 EFPDDsFDLVTLQFVLHELPRKATKAIFQEAHRLLRPGGCIAIV 252
+                                        9998648********************************99876 PP
+
+>> GCA_018141785.1_ASM1814178v1_3689  HLOILF_18790 Methyltransf-11 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   2.1e-06    0.0042     177     304 ..      53     176 ..      42     218 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.1e-06
+                       trimmed_bchE 177 maasqalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevag 252
+                                        ma++ + +a++v    +l++  r+lD+G G G  ++++a ++    + l   ++  ++ ++r +++gl++ ++++ 
+  GCA_018141785.1_ASM1814178v1_3689  53 MAKTTEWMAQQV---QNLNSDFRVLDLGSGYGPAARHLAGKYGCHVTCLNISEEQNQENERRNREQGLDNLIDIVF 125
+                                        889999999987...5789999****************9999765555555556667777888999********** PP
+
+                       trimmed_bchE 253 GsflkdplPegaDlisLvRv..lhDHdDeavlkllrkvraaLppggrLliaEpm 304
+                                        G+f++  +P +   + Lv       H D +  ++l+++++ L+pgg+Ll  + +
+  GCA_018141785.1_ASM1814178v1_3689 126 GNFKD--IPFDDASFDLVWSqdALFHTDGQ-DRVLEEAYRVLKPGGQLLFMDIL 176
+                                        ***95..67766666666431144588887.6899*************987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       4086  (1052630 residues searched)
+Passed MSV filter:                       122  (0.0298581); expected 81.7 (0.02)
+Passed bias filter:                       97  (0.0237396); expected 81.7 (0.02)
+Passed Vit filter:                        16  (0.00391581); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000489476); expected 0.0 (1e-05)
+Initial search space (Z):               4086  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14875.87
+//
+[ok]

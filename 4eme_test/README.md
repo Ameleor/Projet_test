@@ -6,5 +6,9 @@ Le but de cet essais est de décompresser les génomes comme sur l'essai précé
 ##Résultat:
 
 ###1:
+Test sur 10 génomes fonctionnels
+
+###2:
+Test sur 100 génomes fonctionnels
 
 

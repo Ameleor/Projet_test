@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484925.1_ASM2148492v1/GCA_021484925.1_ASM2148492v1_protein.faa
+# output directed to file:         results/GCA_021484925.1_ASM2148492v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      0.007   13.0   0.1     0.0086   12.7   0.1    1.1  1  GCA_021484925.1_ASM2148492v1_771  UIY53816.1 TetR/AcrR family tran
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484925.1_ASM2148492v1_771  UIY53816.1 TetR/AcrR family transcriptional regulator [Acinetobacter baumannii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.1   2.6e-06    0.0086     155     249 ..      39     140 ..      15     149 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 2.6e-06
+              trimmed_msa_acsF_hmm 155 kytyfkPkfifyatylsekiGyaryitiyrql..ekhPekrfhPifkwfeewcndefrhGeaf....alllradpkl 225
+                                        y+yf  k +     l  +i   +  ++  ++  + +P +++  if+w+  w n e   G  f      +l+  p++
+  GCA_021484925.1_ASM2148492v1_771  39 FYKYFSSKEVLIEECLRRRILEVQT-SLLDKVnsADNPLNKLKSIFNWYIDWINTEDFSGCLFkkatIEVLQLYPSI 114
+                                       5555555555555555555544433.2333331156899***************99777765522114578999999 PP
+
+              trimmed_msa_acsF_hmm 226 lsgvnkl..wirffllavyatmyvrd 249
+                                        + vnk+  wi  ++l+++  + + d
+  GCA_021484925.1_ASM2148492v1_771 115 KKQVNKYreWIYSLVLSIFLELEIED 140
+                                       99999987799999999997766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       3272  (923115 residues searched)
+Passed MSV filter:                        99  (0.0302567); expected 65.4 (0.02)
+Passed bias filter:                       66  (0.0201711); expected 65.4 (0.02)
+Passed Vit filter:                        11  (0.00336186); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.000305623); expected 0.0 (1e-05)
+Initial search space (Z):               3272  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17409.87
+//
+[ok]

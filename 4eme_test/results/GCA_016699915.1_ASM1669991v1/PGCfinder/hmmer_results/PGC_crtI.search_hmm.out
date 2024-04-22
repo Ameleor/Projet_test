@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699915.1_ASM1669991v1/GCA_016699915.1_ASM1669991v1_protein.faa
+# output directed to file:         results/GCA_016699915.1_ASM1669991v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00047   14.4   0.2    0.00061   14.0   0.2    1.1  1  GCA_016699915.1_ASM1669991v1_816  QQS16636.1 MAG: NAD(P)-binding p
+     0.0016   12.6   0.1     0.0029   11.7   0.1    1.3  1  GCA_016699915.1_ASM1669991v1_406  QQS16996.1 MAG: putative selenat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699915.1_ASM1669991v1_816  QQS16636.1 MAG: NAD(P)-binding protein [Neisseriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.2   1.5e-06   0.00061       2      39 ..      55      92 ..      54      96 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 1.5e-06
+              trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      k++++iGaG  Gla+a  lg +G  v + e+  + GG 
+  GCA_016699915.1_ASM1669991v1_816 55 KRVLIIGAGPCGLATAYYLGLAGHDVEIHENGPMAGGM 92
+                                      6899****************************999995 PP
+
+>> GCA_016699915.1_ASM1669991v1_406  QQS16996.1 MAG: putative selenate reductase subunit YgfK [Neisseriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   7.3e-06    0.0029       4      39 ..     554     589 ..     551     595 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 7.3e-06
+              trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvlekldapGGr 39 
+                                       + v+GaG  Gl+aa  l+  Gy v ++ek ++ GG 
+  GCA_016699915.1_ASM1669991v1_406 554 VAVLGAGPAGLSAAYFLARVGYPVMIFEKEKNAGGV 589
+                                       679*******************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        813  (261741 residues searched)
+Passed MSV filter:                        32  (0.0393604); expected 16.3 (0.02)
+Passed bias filter:                       26  (0.0319803); expected 16.3 (0.02)
+Passed Vit filter:                        10  (0.0123001); expected 0.8 (0.001)
+Passed Fwd filter:                         2  (0.00246002); expected 0.0 (1e-05)
+Initial search space (Z):                813  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5623.39
+//
+[ok]

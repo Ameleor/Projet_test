@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_019931655.3_ASM1993165v3/GCA_019931655.3_ASM1993165v3_protein.faa
+# output directed to file:         results/GCA_019931655.3_ASM1993165v3/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00045   17.2   0.1       0.28    8.0   0.0    2.2  2  GCA_019931655.3_ASM1993165v3_3652  UAL26138.2 DUF2202 domain-contai
+     0.0053   13.7   0.2       0.26    8.1   0.0    2.0  2  GCA_019931655.3_ASM1993165v3_1309  UAL27637.1 ferritin-like domain-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019931655.3_ASM1993165v3_3652  UAL26138.2 DUF2202 domain-containing protein [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.0   0.00013      0.28      87     131 ..      17      61 ..      11      71 .. 0.89
+   2 !    7.3   0.0   0.00022      0.46      78     133 ..      80     135 ..      63     187 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00013
+               trimmed_msa_acsF_hmm  87 ldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrha 131
+                                        ++ ++ ++  e+s    y++i+ ++  + i++ ++ + +de rh 
+  GCA_019931655.3_ASM1993165v3_3652  17 INDILKAINGEYSAIFCYKQIAENAPTEGIRKQIREIRQDEQRHF 61 
+                                        555678899***********************************5 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.00022
+               trimmed_msa_acsF_hmm  78 lepelrkefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagf 133
+                                        + +e  k++   l s+   e     +y +++ +++++ ik++f+  a de  ha +
+  GCA_019931655.3_ASM1993165v3_3652  80 ITEECPKQYSTSLKSAFKDEQETVDFYLDLADQTQDQSIKKVFQRAAADEQNHAVW 135
+                                        55666677777788888888888889***************************975 PP
+
+>> GCA_019931655.3_ASM1993165v3_1309  UAL27637.1 ferritin-like domain-containing protein [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.1   0.0   0.00012      0.26      90     132 ..      23      65 ..      10      75 .. 0.86
+   2 !    3.9   0.0    0.0024       4.9     103     133 ..     108     138 ..      88     145 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00012
+               trimmed_msa_acsF_hmm  90 lvssltaefsGcvlyaeikkrvknkdikelfkllardesrhag 132
+                                        l  ++  e+s  v y+ i++++ + + k+ +  + +de rh +
+  GCA_019931655.3_ASM1993165v3_1309  23 LEKAVNGEHSAVVCYQKIAQKAPDSETKKRILEIRQDEIRHFN 65 
+                                        5567889**********************************64 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0024
+               trimmed_msa_acsF_hmm 103 lyaeikkrvknkdikelfkllardesrhagf 133
+                                        +y +i+  vk++ i+e fk  a de  ha +
+  GCA_019931655.3_ASM1993165v3_1309 108 FYLDIADYVKDRAIREAFKRAAADEQNHAVW 138
+                                        6999999*********************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       4159  (1147161 residues searched)
+Passed MSV filter:                       164  (0.0394326); expected 83.2 (0.02)
+Passed bias filter:                      108  (0.0259678); expected 83.2 (0.02)
+Passed Vit filter:                        12  (0.00288531); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000480885); expected 0.0 (1e-05)
+Initial search space (Z):               4159  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11482.53
+//
+[ok]

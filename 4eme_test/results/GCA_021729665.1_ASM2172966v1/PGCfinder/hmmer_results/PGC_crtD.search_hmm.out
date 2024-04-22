@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729665.1_ASM2172966v1/GCA_021729665.1_ASM2172966v1_protein.faa
+# output directed to file:         results/GCA_021729665.1_ASM2172966v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-09   33.0   0.4    1.5e-05   20.2   0.3    2.2  2  GCA_021729665.1_ASM2172966v1_978   FBNPDJ_05015 D-amino acid dehydr
+     0.0002   16.5   0.1    0.00054   15.1   0.1    1.7  1  GCA_021729665.1_ASM2172966v1_1176  FBNPDJ_06075 Thioredoxin reducta
+     0.0017   13.4   1.2     0.0031   12.6   1.2    1.3  1  GCA_021729665.1_ASM2172966v1_1574  FBNPDJ_08125 Alanine dehydrogena
+  ------ inclusion threshold ------
+      0.026    9.5   2.8      0.082    7.9   1.1    2.4  3  GCA_021729665.1_ASM2172966v1_556   FBNPDJ_02875 thioredoxin-disulfi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729665.1_ASM2172966v1_978  FBNPDJ_05015 D-amino acid dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2   0.3   3.6e-08   1.5e-05       2      37 ..       4      39 ..       3      42 .. 0.92
+   2 !   10.6   0.0   2.9e-05     0.012     227     279 ..     196     247 ..     192     269 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 3.6e-08
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                      +vvviG Gi GL++a ++ + G++v v+ek++ + G
+  GCA_021729665.1_ASM2172966v1_978  4 EVVVIGGGIVGLSCAYSMHKLGHKVCVIEKSDGANG 39
+                                      79****************************987665 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 2.9e-05
+              trimmed_msa_crtD_hmm 227 laealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngD 279
+                                       + ++l++  ++ g+ef y+eev  ++ +++ + gv  ++ e+i+a+++++++ 
+  GCA_021729665.1_ASM2172966v1_978 196 VMHSLQEYLQNAGVEFLYNEEVVDFEFKNNLIDGVI-THKEKIQAEKIILATG 247
+                                       5678999999************************97.67789***99997654 PP
+
+>> GCA_021729665.1_ASM2172966v1_1176  FBNPDJ_06075 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.1   1.3e-06   0.00054       2      50 ..       7      56 ..       6      59 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.3e-06
+               trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGl.dvtvlekaaapGGKlrevevggaaid 50
+                                       +v+++GaG gG+a+a++   aG+ +v ++ek+++  G + ++  +g++id
+  GCA_021729665.1_ASM2172966v1_1176  7 DVLIVGAGPGGIATAIECEIAGVkKVLLCEKTESHSGMIEKFYKAGKRID 56
+                                       599*******************8459999***********9999999998 PP
+
+>> GCA_021729665.1_ASM2172966v1_1574  FBNPDJ_08125 Alanine dehydrogenase (includes sporulation protein SpoVN)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   1.2   7.4e-06    0.0031       2      31 ..     173     202 ..     172     206 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7.4e-06
+               trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlek 31 
+                                        ++vv+G G+ G+ +a  l++ G +vt+le 
+  GCA_021729665.1_ASM2172966v1_1574 173 KIVVVGGGVVGMESAKVLSQMGAKVTILEL 202
+                                        79**************************95 PP
+
+>> GCA_021729665.1_ASM2172966v1_556  FBNPDJ_02875 thioredoxin-disulfide reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   1.1    0.0002     0.082       4      40 ..       5      41 ..       3      52 .. 0.91
+   2 ?   -0.2   0.0     0.057        24     237     290 ..      67     122 ..      46     126 .. 0.64
+   3 ?   -2.1   0.0      0.21        88       2      33 ..     145     176 ..     144     230 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.0002
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaapGGKlr 40
+                                       +iG G +GL+a l  ++ G++  vl ++  pGG++ 
+  GCA_021729665.1_ASM2172966v1_556  5 AIIGGGPAGLSAGLYATRGGVKNAVLFEKGMPGGQIT 41
+                                      69********************************985 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.057
+              trimmed_msa_crtD_hmm 237 akgaefrygeeveeilveegr..vsgvrladgerieadavvfngDvaalaagllge 290
+                                       ++  +f +++e++ i+  +++     +  +dg++ ea++v++++  +  ++g+ ge
+  GCA_021729665.1_ASM2172966v1_556  67 EQCFRFGLKHEMTAIQRVSKKdsHFVILAEDGKTFEAKSVIIATGGSPKRTGIKGE 122
+                                       44455555666777766555411344566899*********988777777776665 PP
+
+  == domain 3  score: -2.1 bits;  conditional E-value: 0.21
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                       +v v+G G + +  a+ la+   +v ++ +++
+  GCA_021729665.1_ASM2172966v1_556 145 EVAVLGGGDTAVEEAIYLANICKKVYLIHRRD 176
+                                       57777777777777777777777777776654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1657  (460737 residues searched)
+Passed MSV filter:                        62  (0.037417); expected 33.1 (0.02)
+Passed bias filter:                       54  (0.032589); expected 33.1 (0.02)
+Passed Vit filter:                        15  (0.0090525); expected 1.7 (0.001)
+Passed Fwd filter:                         4  (0.002414); expected 0.0 (1e-05)
+Initial search space (Z):               1657  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8396.29
+//
+[ok]

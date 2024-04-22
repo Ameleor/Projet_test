@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_018831525.1_ASM1883152v1/GCA_018831525.1_ASM1883152v1_protein.faa
+# output directed to file:         results/GCA_018831525.1_ASM1883152v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.033   11.8   0.0      0.044   11.4   0.0    1.1  1  GCA_018831525.1_ASM1883152v1_3498  FICOPD_17820 Secondary thiamine-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018831525.1_ASM1883152v1_3498  FICOPD_17820 Secondary thiamine-phosphate synthase enzyme
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0     9e-06     0.044     181     231 ..      45      94 ..      42     100 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 9e-06
+               trimmed_msa_crtB_hmm 181 agldpeafladpefspalarvvkrLlaeadrlyaraeaGiarLplrcrpai 231
+                                        agl+ ++  adp++++ ++++ +rL++e + +y+++ +G  ++p+++++++
+  GCA_018831525.1_ASM1883152v1_3498  45 AGLTINE-NADPDVQTDMEAIFNRLVKEREPYYQHTCEGDDDMPAHAKATL 94 
+                                        6777777.89**********************************9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       4869  (1589769 residues searched)
+Passed MSV filter:                       144  (0.0295749); expected 97.4 (0.02)
+Passed bias filter:                      108  (0.0221811); expected 97.4 (0.02)
+Passed Vit filter:                        10  (0.00205381); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000205381); expected 0.0 (1e-05)
+Initial search space (Z):               4869  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 16188.90
+//
+[ok]

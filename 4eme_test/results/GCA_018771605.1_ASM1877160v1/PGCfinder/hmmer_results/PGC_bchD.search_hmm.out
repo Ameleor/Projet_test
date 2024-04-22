@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018771605.1_ASM1877160v1/GCA_018771605.1_ASM1877160v1_protein.faa
+# output directed to file:         results/GCA_018771605.1_ASM1877160v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.4e-06   21.9   0.0    8.8e-06   21.2   0.0    1.2  1  GCA_018771605.1_ASM1877160v1_348  QWK13369.1 MAG: MoxR family ATPa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018771605.1_ASM1877160v1_348  QWK13369.1 MAG: MoxR family ATPase [Aquificota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.0   4.9e-09   8.8e-06      90     248 ..      99     279 ..      88     286 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 4.9e-09
+              trimmed_msa_bchD_hmm  90 vlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldldeialr 164
+                                       ++    R ++++ + l +a+ eg  ++  dg++ +l++ f ++a  + +e+     lpe+ ldR ++rl l     +
+  GCA_018771605.1_ASM1877160v1_348  99 LADEINRSTPKTQSALLEAMAEG--KVSVDGITYELPQPFFIIATQNPVEQYGtyPLPESQLDRFSMRLSLGYPDPE 173
+                                       555567999**************..5899******************99875511689*************987777 PP
+
+              trimmed_msa_bchD_hmm 165 dleelaa...............eaedieaararlpkvtleeealealvataaal....Gid...slRapllalraar 219
+                                       +  ++                 +++di ++  ++++  ++ e+++ +va+ +a+    Gi    s+Ra+++ ++ a+
+  GCA_018771605.1_ASM1877160v1_348 174 TEMQIIRgenplerveklkpvvKPQDILTTIDAIKRFYVSPEVAKLVVAIGQATrqhpGIVvgvSTRALIHLVNCAK 250
+                                       44444444555666666666778888888888888888899999999988877622224424449************ PP
+
+              trimmed_msa_bchD_hmm 220 alAalegrteveeedlalAarlvlaprat 248
+                                       alA  ++r+ +  ed+   a ++l++r +
+  GCA_018771605.1_ASM1877160v1_348 251 ALAYTKERDFIVPEDVLELAPVCLSHRII 279
+                                       **************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1810  (537832 residues searched)
+Passed MSV filter:                        64  (0.0353591); expected 36.2 (0.02)
+Passed bias filter:                       55  (0.0303867); expected 36.2 (0.02)
+Passed Vit filter:                         6  (0.00331492); expected 1.8 (0.001)
+Passed Fwd filter:                         3  (0.00165746); expected 0.0 (1e-05)
+Initial search space (Z):               1810  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12032.02
+//
+[ok]

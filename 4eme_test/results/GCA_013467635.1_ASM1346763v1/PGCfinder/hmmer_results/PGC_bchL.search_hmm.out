@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_013467635.1_ASM1346763v1/GCA_013467635.1_ASM1346763v1_protein.faa
+# output directed to file:         results/GCA_013467635.1_ASM1346763v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.4e-08   30.6   0.0    2.2e-08   30.0   0.0    1.2  1  GCA_013467635.1_ASM1346763v1_913  QLL23656.1 ParA family protein [
+    1.4e-07   27.4   0.1    2.1e-07   26.8   0.1    1.3  1  GCA_013467635.1_ASM1346763v1_202  QLL22986.1 ParA family protein [
+    0.00081   15.0   0.0     0.0014   14.3   0.0    1.3  1  GCA_013467635.1_ASM1346763v1_547  QLL23312.1 MRP family ATP-bindin
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013467635.1_ASM1346763v1_913  QLL23656.1 ParA family protein [Actinobacteria bacterium IMCC25003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   0.0   4.9e-11   2.2e-08      17      60 ..      34      78 ..      29     111 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 4.9e-11
+              trimmed_msa_bchL_hmm 17 ietakvfavyg.kggigksttssnlsvafsklgkrvlqigcdpkh 60
+                                       ++akv++++  kgg+gk+t++ nl +a+++lg+rvl +  dp+ 
+  GCA_013467635.1_ASM1346763v1_913 34 HGDAKVISIFNqKGGVGKTTSTINLGAALAELGRRVLLVDFDPQG 78
+                                      578******9549*****************************985 PP
+
+>> GCA_013467635.1_ASM1346763v1_202  QLL22986.1 ParA family protein [Actinobacteria bacterium IMCC25003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.1   4.6e-10   2.1e-07      14      66 ..      25      78 ..      11     119 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 4.6e-10
+              trimmed_msa_bchL_hmm 14 elkietakvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftl 66
+                                       +k  ++++f+v   kgg+gk+tt+ n+++a+++ g rvl i  dp+ +++ +l
+  GCA_013467635.1_ASM1346763v1_202 25 MAKPTSTRIFTVAnQKGGVGKTTTTVNIAAAMAMGGLRVLVIDLDPQGNASTAL 78
+                                      4556678999996269******************************98876555 PP
+
+>> GCA_013467635.1_ASM1346763v1_547  QLL23312.1 MRP family ATP-binding protein [Actinobacteria bacterium IMCC25003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   3.1e-06    0.0014      21      59 ..     110     149 ..     101     177 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 3.1e-06
+              trimmed_msa_bchL_hmm  21 kvfav.ygkggigksttssnlsvafsklgkrvlqigcdpk 59 
+                                       +v+ v  gkgg+gks+ ++nl+va ++ g rv  +  d  
+  GCA_013467635.1_ASM1346763v1_547 110 RVIGVaSGKGGVGKSSLTANLAVASAHKGLRVGILDADVY 149
+                                       55555259***********************977777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1348  (428419 residues searched)
+Passed MSV filter:                        43  (0.0318991); expected 27.0 (0.02)
+Passed bias filter:                       38  (0.0281899); expected 27.0 (0.02)
+Passed Vit filter:                        10  (0.0074184); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00222552); expected 0.0 (1e-05)
+Initial search space (Z):               1348  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8134.85
+//
+[ok]

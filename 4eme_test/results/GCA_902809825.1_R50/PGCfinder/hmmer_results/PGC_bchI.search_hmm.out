@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_902809825.1_R50/GCA_902809825.1_R50_protein.faa
+# output directed to file:         results/GCA_902809825.1_R50/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+      8e-05   19.2   0.0      0.069    9.6   0.0    2.4  2  GCA_902809825.1_R50_2188  CAB1129694.1 spore-specific ATP-dep
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_902809825.1_R50_2188  CAB1129694.1 spore-specific ATP-dependent protease LonB [Candidatus Hydrogenisulfobacillus 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.6   0.0   2.5e-05     0.069       5      47 ..      67     109 ..      63     115 .. 0.93
+   2 !    7.1   0.0   0.00014      0.39     120     156 ..     166     202 ..     161     212 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 2.5e-05
+      trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavra 47 
+                                f+ ivgqd+  +al  a   p+   vl++G  G Gk++a+r 
+  GCA_902809825.1_R50_2188  67 SFADIVGQDDGIRALRAALCGPHPQHVLLYGPPGVGKTAAARL 109
+                               699*************************************995 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.00014
+      trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldv 156
+                               G+ + +pG +++a+ G l+ide+  l    ++ ll v
+  GCA_902809825.1_R50_2188 166 GIPQPKPGAVTKAHGGILFIDEIGELHPIQMNKLLKV 202
+                               566678*****************98887777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2756  (772371 residues searched)
+Passed MSV filter:                       148  (0.053701); expected 55.1 (0.02)
+Passed bias filter:                       91  (0.0330189); expected 55.1 (0.02)
+Passed Vit filter:                        18  (0.0065312); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000725689); expected 0.0 (1e-05)
+Initial search space (Z):               2756  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11329.48
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_023980805.1_ASM2398080v1/GCA_023980805.1_ASM2398080v1_protein.faa
+# output directed to file:         results/GCA_023980805.1_ASM2398080v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.018   11.6   0.1      0.029   10.9   0.1    1.2  1  GCA_023980805.1_ASM2398080v1_1609  USR86151.1 glucose-6-phosphate i
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023980805.1_ASM2398080v1_1609  USR86151.1 glucose-6-phosphate isomerase [Lactiplantibacillus pentosus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.1   9.2e-06     0.029       7      84 ..     242     319 ..     235     338 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 9.2e-06
+               trimmed_msa_acsF_hmm   7 ekkaaseeatklakedtllsPrfyttdfaaldridvssvraewdaliaelesdknkkhfkrneefdkeleelepel 82 
+                                        ++  +++ea + a   ++l  + ytt+  +  + ++    + w +l+ e e+ ++k+ +  +++f+++l++l + +
+  GCA_023980805.1_ASM2398080v1_1609 242 DADLTKNEAYQYAAYRNILYRKGYTTEILENYEPNMAMFSEWWKQLMGESEGKDQKGIYPSSANFTTDLHSLGQYI 317
+                                        5667899***********************99**************************************998776 PP
+
+               trimmed_msa_acsF_hmm  83 rk 84 
+                                        ++
+  GCA_023980805.1_ASM2398080v1_1609 318 QE 319
+                                        54 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       3129  (886502 residues searched)
+Passed MSV filter:                       105  (0.033557); expected 62.6 (0.02)
+Passed bias filter:                       59  (0.0188559); expected 62.6 (0.02)
+Passed Vit filter:                         5  (0.00159795); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000319591); expected 0.0 (1e-05)
+Initial search space (Z):               3129  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 24590.67
+//
+[ok]

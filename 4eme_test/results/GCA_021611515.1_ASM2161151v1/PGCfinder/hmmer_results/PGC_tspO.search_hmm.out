@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_021611515.1_ASM2161151v1/GCA_021611515.1_ASM2161151v1_protein.faa
+# output directed to file:         results/GCA_021611515.1_ASM2161151v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.2e-36  121.1  17.3    6.7e-36  121.0  17.3    1.0  1  GCA_021611515.1_ASM2161151v1_459  UJQ95918.1 tryptophan-rich senso
+      3e-16   57.2  17.5    3.3e-16   57.1  17.5    1.1  1  GCA_021611515.1_ASM2161151v1_460  UJQ94845.1 tryptophan-rich senso
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021611515.1_ASM2161151v1_459  UJQ95918.1 tryptophan-rich sensory protein [Mariluticola halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  121.0  17.3   4.2e-39   6.7e-36      12     149 ..       4     137 .]       1     137 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 121.0 bits;  conditional E-value: 4.2e-39
+              trimmed_msa_tspO_hmm  12 vavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsl 88 
+                                       +++l g+ t +g+w+ +L+kP ++PP w+F +vWt++y++ia+a+ +  r+a++ +    ++ l+  ++vln +Ws+
+  GCA_021611515.1_ASM2161151v1_459   4 AGFLIGVSTAPGPWFAALDKPPFNPPSWLFAPVWTILYVMIAIAGFRSYRRAPTGR----AMQLWGAQMVLNWAWSI 76 
+                                       56778999*****************************************7776654....469************** PP
+
+              trimmed_msa_tspO_hmm  89 lfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       +fF  + + +a++++ +LW+ ++ ++    r + ++all++PY++Wvs+Aa+LN+s+  lN
+  GCA_021611515.1_ASM2161151v1_459  77 VFFSAHMIWAAFAVIFALWVLIAGFVALNRRQDPVSALLFVPYFAWVSFAALLNFSIGILN 137
+                                       *********************************************************9888 PP
+
+>> GCA_021611515.1_ASM2161151v1_460  UJQ94845.1 tryptophan-rich sensory protein [Mariluticola halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.1  17.5   2.1e-19   3.3e-16       5     135 ..      17     144 ..      12     158 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 57.1 bits;  conditional E-value: 2.1e-19
+              trimmed_msa_tspO_hmm   5 aalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                        + a+vl ++ +g l ++g++y+ L+kP++ PP+w F + W   ++ +a+ ++++wra+ + ++  lll+l+a++ v
+  GCA_021611515.1_ASM2161151v1_460  17 FLSASVLGGASAGILSKPGTRYDLLNKPWFAPPEWFFAPLWLASLVALAIVGWRIWRAVGEPRE--LLLMLWAVQLV 91 
+                                       3455667777889999****************************************66665554..69********* PP
+
+              trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWv 135
+                                       l  lW ++f  +  +++al+ ++ +   + +l+  ++r ++l   lllP l W 
+  GCA_021611515.1_ASM2161151v1_460  92 LVWLWPPVFLLFGPPELALLIICSVA-FIQMLLALCMRWDRLVLKLLLPCLGWL 144
+                                       *******************9988774.46777778999***************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3197  (1022744 residues searched)
+Passed MSV filter:                       183  (0.0572412); expected 63.9 (0.02)
+Passed bias filter:                       55  (0.0172036); expected 63.9 (0.02)
+Passed Vit filter:                         3  (0.00093838); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000625586); expected 0.0 (1e-05)
+Initial search space (Z):               3197  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12509.18
+//
+[ok]

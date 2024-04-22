@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410805.1_ASM2041080v1/GCA_020410805.1_ASM2041080v1_protein.faa
+# output directed to file:         results/GCA_020410805.1_ASM2041080v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.7e-10   35.3   0.2    0.00041   16.0   0.0    3.2  3  GCA_020410805.1_ASM2041080v1_573   UCM93222.1 MAG: YifB family Mg c
+     0.0015   14.2   0.0     0.0024   13.5   0.0    1.3  1  GCA_020410805.1_ASM2041080v1_1155  UCM92379.1 MAG: DNA polymerase I
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410805.1_ASM2041080v1_573  UCM93222.1 MAG: YifB family Mg chelatase-like AAA ATPase [Rickettsia endosymbiont o
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   2.6e-06    0.0019       4      58 ..     186     239 ..     183     269 .. 0.83
+   2 !   16.0   0.0   5.6e-07   0.00041     122     186 ..     284     348 ..     271     355 .. 0.93
+   3 ?    1.5   0.1     0.014        11     276     305 ..     465     494 ..     371     500 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.6e-06
+              trimmed_msa_bchI_hmm   4 fp.fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikav 58 
+                                       +p f  i gq+  k+al +aa       +l+lG  GtGks  ++++  +lPk++  
+  GCA_020410805.1_ASM2041080v1_573 186 YPdFKDIKGQKAAKRALEIAASGG--HNLLMLGPPGTGKSMLAQCIPGILPKMQPE 239
+                                       555899**************9765..479************************854 PP
+
+  == domain 2  score: 16.0 bits;  conditional E-value: 5.6e-07
+              trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                       k  +pG ++ a+ G l++de+  +   +++ l    ++Ge ++ r    +++pa f l+ + nP 
+  GCA_020410805.1_ASM2041080v1_573 284 KRVKPGEISLAHNGVLFLDELPEFPPNVIESLRQPIETGEILIARANSHIKYPANFQLIAAMNPC 348
+                                       7789***********************************************************95 PP
+
+  == domain 3  score: 1.5 bits;  conditional E-value: 0.014
+              trimmed_msa_bchI_hmm 276 Glrgeltllraaralaalegakevtkehlk 305
+                                        +r+   +lr ar++a l+++++v + h++
+  GCA_020410805.1_ASM2041080v1_573 465 SMRAYNRILRVARTIADLDASSNVYRIHIA 494
+                                       577777889999999999999988888876 PP
+
+>> GCA_020410805.1_ASM2041080v1_1155  UCM92379.1 MAG: DNA polymerase III subunit gamma/tau [Rickettsia endosymbiont of C
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   3.2e-06    0.0024       5      85 ..      19      96 ..      15     112 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.2e-06
+               trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsig.GvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeckeka 81
+                                        fs + gq+ +++ l  + + ++i+ G l+ G rG Gk+t++r +a+ +   +      ++ d+ ++ e c++c++ +
+  GCA_020410805.1_ASM2041080v1_1155 19 NFSELYGQEVLTKILSYTILKNRISqGYLLTGIRGVGKTTSARIIAKTINCTNL----IVEGDSIKPCESCQNCSSFN 92
+                                       6999*****************999659****************99987765544....44555556656666666555 PP
+
+               trimmed_msa_bchI_hmm 82 eaek 85
+                                       ++++
+  GCA_020410805.1_ASM2041080v1_1155 93 KNNH 96
+                                       4444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1485  (437244 residues searched)
+Passed MSV filter:                        60  (0.040404); expected 29.7 (0.02)
+Passed bias filter:                       51  (0.0343434); expected 29.7 (0.02)
+Passed Vit filter:                        11  (0.00740741); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.0013468); expected 0.0 (1e-05)
+Initial search space (Z):               1485  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7045.79
+//
+[ok]

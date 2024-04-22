@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016600905.1_ASM1660090v1/GCA_016600905.1_ASM1660090v1_protein.faa
+# output directed to file:         results/GCA_016600905.1_ASM1660090v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.039   11.0   0.0      0.039   11.0   0.0    1.0  1  GCA_016600905.1_ASM1660090v1_1829  JBPAHO_09250 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016600905.1_ASM1660090v1_1829  JBPAHO_09250 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   9.3e-06     0.039       5      48 ..       6      47 ..       2      54 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 9.3e-06
+               trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavral 48
+                                        f  i gq++ k+a ++aa+   +  +l  G  G+Gk   + al
+  GCA_016600905.1_ASM1660090v1_1829  6 DFKDIKGQEKAKRACMIAALG--MHNILFEGSPGSGKVCVLNAL 47
+                                       6899***************96..6799**********9998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4247  (300098 residues searched)
+Passed MSV filter:                        78  (0.0183659); expected 84.9 (0.02)
+Passed bias filter:                       64  (0.0150695); expected 84.9 (0.02)
+Passed Vit filter:                        14  (0.00329644); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.00023546); expected 0.0 (1e-05)
+Initial search space (Z):               4247  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13888.79
+//
+[ok]

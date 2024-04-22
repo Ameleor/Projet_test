@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014218195.1_ASM1421819v1/GCA_014218195.1_ASM1421819v1_protein.faa
+# output directed to file:         results/GCA_014218195.1_ASM1421819v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.031   10.0   2.2      0.036    9.7   0.2    1.9  2  GCA_014218195.1_ASM1421819v1_1291  QNF24181.1 dihydrolipoyl dehydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014218195.1_ASM1421819v1_1291  QNF24181.1 dihydrolipoyl dehydrogenase [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.2   1.5e-05     0.036       2      39 ..       7      44 ..       6      48 .. 0.93
+   2 ?   -0.8   0.1     0.022        55       4      35 ..     178     209 ..     176     217 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                       +++vv+GaG  G +aa r +  G+ + ++e+  ++GG 
+  GCA_014218195.1_ASM1421819v1_1291  7 TQVVVLGAGPAGYSAAFRAADLGLDTIIVERYSTLGGV 44
+                                       5789********************************95 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.022
+               trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                         +viG G+ Gl +    ++ G ++ v+e  d+
+  GCA_014218195.1_ASM1421819v1_1291 178 LLVIGGGIIGLEMGTVYSSLGSEIDVVEFADQ 209
+                                        589************************98887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       2496  (654640 residues searched)
+Passed MSV filter:                        75  (0.0300481); expected 49.9 (0.02)
+Passed bias filter:                       69  (0.0276442); expected 49.9 (0.02)
+Passed Vit filter:                        14  (0.00560897); expected 2.5 (0.001)
+Passed Fwd filter:                         4  (0.00160256); expected 0.0 (1e-05)
+Initial search space (Z):               2496  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12076.88
+//
+[ok]

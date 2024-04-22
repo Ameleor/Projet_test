@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203785.1_ASM1920378v1/GCA_019203785.1_ASM1920378v1_protein.faa
+# output directed to file:         results/GCA_019203785.1_ASM1920378v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00013   19.1   0.0    0.00018   18.7   0.0    1.2  1  GCA_019203785.1_ASM1920378v1_1206  AAEPAK_06080 Iron-sulfur cluster
+  ------ inclusion threshold ------
+      0.018   12.1   0.0      0.038   11.1   0.0    1.5  1  GCA_019203785.1_ASM1920378v1_598   AAEPAK_03035 Polysaccharide bios
+      0.058   10.4   0.0        0.1    9.7   0.0    1.3  1  GCA_019203785.1_ASM1920378v1_1351  AAEPAK_06810 CbiA domain-contain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203785.1_ASM1920378v1_1206  AAEPAK_06080 Iron-sulfur cluster carrier protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0     1e-07   0.00018      22      81 ..     109     171 ..      93     209 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 1e-07
+               trimmed_msa_bchX_hmm  22 tqii.aiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfg..gkacptiiets 81 
+                                        t++i    gkgg+gks   anl+  la+qg  v l+  d +  +   l+g    + pt i+  
+  GCA_019203785.1_ASM1920378v1_1206 109 TRVIlVSSGKGGVGKSTVTANLAVALADQGLAVGLVDADVHGFSIPGLLGipSGTQPTRIDDL 171
+                                        44441557****************************999887666666552223346666555 PP
+
+>> GCA_019203785.1_ASM1920378v1_598  AAEPAK_03035 Polysaccharide biosynthesis tyrosine autokinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   2.2e-05     0.038      26      61 ..     267     303 ..     242     314 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.2e-05
+              trimmed_msa_bchX_hmm  26 aiygkg.gigksftlanlsymlaqqgkkvlligcdpk 61 
+                                        i   g g gks t anl+  +a+ g++v li  d +
+  GCA_019203785.1_ASM1920378v1_598 267 VITSSGpGEGKSTTAANLALAFADAGHRVALIDADLR 303
+                                       444444389***********************99965 PP
+
+>> GCA_019203785.1_ASM1920378v1_1351  AAEPAK_06810 CbiA domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   5.7e-05       0.1      21      87 ..     120     187 ..     102     191 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 5.7e-05
+               trimmed_msa_bchX_hmm  21 etqiiaiyg.kggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacptiietsskkkla 87 
+                                          ++ia++g +g  g+s    +l+  la++g++  l+  d  + + +ll+g       + +++++ +a
+  GCA_019203785.1_ASM1920378v1_1351 120 PPRVIAVWGpHGAPGRSTVAVQLAVELARRGRRTALVDADTVAPALALLLGMDDDAPGLAAACRRAEA 187
+                                        5689*****446679999999****************************9976544444555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       5209  (928213 residues searched)
+Passed MSV filter:                       125  (0.0239969); expected 104.2 (0.02)
+Passed bias filter:                      112  (0.0215012); expected 104.2 (0.02)
+Passed Vit filter:                        16  (0.00307161); expected 5.2 (0.001)
+Passed Fwd filter:                         3  (0.000575926); expected 0.1 (1e-05)
+Initial search space (Z):               5209  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10731.20
+//
+[ok]

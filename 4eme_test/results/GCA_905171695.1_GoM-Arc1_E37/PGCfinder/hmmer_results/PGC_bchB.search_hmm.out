@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCA_905171695.1_GoM-Arc1_E37/GCA_905171695.1_GoM-Arc1_E37_protein.faa
+# output directed to file:         results/GCA_905171695.1_GoM-Arc1_E37/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      4e-14   49.1   0.0    5.9e-14   48.5   0.0    1.2  1  GCA_905171695.1_GoM-Arc1_E37_1036  CAD7771556.1 Light-independent p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905171695.1_GoM-Arc1_E37_1036  CAD7771556.1 Light-independent protochlorophyllide reductase subunit B [Candidatus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.5   0.0   2.9e-17   5.9e-14      15     350 ..      12     330 ..       7     357 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 48.5 bits;  conditional E-value: 2.9e-17
+               trimmed_msa_bchB_hmm  15 GamrvatamkglhyvlhapqGdtyadllftmierrdkrppvtyttfqardlgadtaelfkeavrdayerfkpeall 90 
+                                        G +r a+a+++  +v+h p G  y   l  ++  r   pp+  + ++  d+     e +++ ++  + r   +++ 
+  GCA_905171695.1_GoM-Arc1_E37_1036  12 GVVRAASAIHNSAIVIHGPLGCGYH--LNYILGMRGGSPPIFLSELDQSDVVFGGEEKLRRIIER-VLREGYDLIT 84 
+                                        899********************95..56677889999*************99999999887765.5677889*** PP
+
+               trimmed_msa_bchB_hmm  91 vgasctaeliqddpgglaealelpvpviplelpsyqrkenwGaaetfyqlvralakkkakkakaegarpscnllGp 166
+                                        v  sc+  li +d ++l +  + p  +i +    ++     G  et+  l + ++ ++ +      +r   n++G 
+  GCA_905171695.1_GoM-Arc1_E37_1036  85 VVDSCAPALIGEDVQALVNGYDDP-RLIYVPGGGFEGDHFDGYLETIRSLSKLVSPSDIE------ERDGLNIIGE 153
+                                        ********************9977.57788889999998889999988877766555554......78899****6 PP
+
+               trimmed_msa_bchB_hmm 167 talGfrhrddvaeitrlleelGievnvvaplgatpadlarlgeadfnvvlypeiaesaarwlerefgqplvkt.vp 241
+                                            fr   d++ +++++ + G++++ v    +t ++++  g+a +n+ +   i++ a++ l+ e+g p++ +  p
+  GCA_905171695.1_GoM-Arc1_E37_1036 154 ----FRGGKDLKIVKEMIGSCGVNIRSVW-TRSTIQEMKASGSALLNIPFCEAIGHDACKLLRDEHGTPFTDVsTP 224
+                                        ....9*********************986.67899************************************8647* PP
+
+               trimmed_msa_bchB_hmm 242 iGvgatrdfiaevaalagvdaeaaleeeesrlpwysrsvdstyltgkrvfifgdathavaaarvaaeelGfev..v 315
+                                        iG++ t df++ +a++   d  + + +e +rl+   +    + + ++++ +fg  t +++  r   +elGfe   +
+  GCA_905171695.1_GoM-Arc1_E37_1036 225 IGISGTIDFLETIADFFDRDLPDETYSEFKRLE---NEF-GNIFIDRKIALFGGPTRVISFLRFF-SELGFETkyI 295
+                                        ****************99988766666666654...444.45567899***************86.69***75338 PP
+
+               trimmed_msa_bchB_hmm 316 GlGtysrefarevreaakeygvealitddylevee 350
+                                         l   s++  +++  + +e+g+ + i  +  ++e+
+  GCA_905171695.1_GoM-Arc1_E37_1036 296 SLDNESKNTLKKISLIKREFGISPEIIGETSQIED 330
+                                        889999999999*99*******9988877766664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                       2055  (553890 residues searched)
+Passed MSV filter:                        73  (0.0355231); expected 41.1 (0.02)
+Passed bias filter:                       61  (0.0296837); expected 41.1 (0.02)
+Passed Vit filter:                         5  (0.00243309); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000486618); expected 0.0 (1e-05)
+Initial search space (Z):               2055  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9658.65
+//
+[ok]

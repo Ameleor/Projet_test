@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_019856335.1_ASM1985633v1/GCA_019856335.1_ASM1985633v1_protein.faa
+# output directed to file:         results/GCA_019856335.1_ASM1985633v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0052   13.2   0.0     0.0097   12.3   0.0    1.4  1  GCA_019856335.1_ASM1985633v1_1511  QZT16505.1 ParA family protein [
+     0.0077   12.7   0.0      0.013   11.9   0.0    1.4  1  GCA_019856335.1_ASM1985633v1_901   QZT18304.1 CpsD/CapB family tyro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019856335.1_ASM1985633v1_1511  QZT16505.1 ParA family protein [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0     8e-06    0.0097      18      84 ..      35      97 ..      25     106 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 8e-06
+               trimmed_msa_bchL_hmm 18 etakvfavygkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkklvptvidvleevdfh 84
+                                       e+  ++  y kgg+gks  s+ ++    k+  +vl i      d   tltk l++t    l +v+f+
+  GCA_019856335.1_ASM1985633v1_1511 35 EAIVILNNYFKGGVGKSKLSTMFAYLTDKFNLKVLMIDK----DLQATLTKDLAKTFKVELPRVNFY 97
+                                       45567788**********999999999999999999965....5667999***99999999999997 PP
+
+>> GCA_019856335.1_ASM1985633v1_901  QZT18304.1 CpsD/CapB family tyrosine-protein kinase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.0   1.1e-05     0.013      29      62 ..      63      96 ..      41     123 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchL_hmm 29 ggigksttssnlsvafsklgkrvlqigcdpkhds 62
+                                       g gkst ++nl+v+++  gk vl +  d +  +
+  GCA_019856335.1_ASM1985633v1_901 63 PGEGKSTVAANLAVSLTATGKNVLLVDTDLRRPT 96
+                                      588**********************999976644 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       2437  (736292 residues searched)
+Passed MSV filter:                       107  (0.0439064); expected 48.7 (0.02)
+Passed bias filter:                       84  (0.0344686); expected 48.7 (0.02)
+Passed Vit filter:                        18  (0.00738613); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000820681); expected 0.0 (1e-05)
+Initial search space (Z):               2437  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11386.58
+//
+[ok]

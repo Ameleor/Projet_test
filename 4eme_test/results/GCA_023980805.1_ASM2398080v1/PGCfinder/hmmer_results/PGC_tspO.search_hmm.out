@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023980805.1_ASM2398080v1/GCA_023980805.1_ASM2398080v1_protein.faa
+# output directed to file:         results/GCA_023980805.1_ASM2398080v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.1e-31  105.2  16.0    6.2e-31  104.9  16.0    1.1  1  GCA_023980805.1_ASM2398080v1_2218  USR86684.1 tryptophan-rich senso
+  ------ inclusion threshold ------
+      0.019   12.4   4.4       0.04   11.4   4.4    1.4  1  GCA_023980805.1_ASM2398080v1_1927  USR86427.1 phosphatidate cytidyl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023980805.1_ASM2398080v1_2218  USR86684.1 tryptophan-rich sensory protein [Lactiplantibacillus pentosus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.9  16.0     4e-34   6.2e-31       7     149 ..      19     161 .]      10     161 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 104.9 bits;  conditional E-value: 4e-34
+               trimmed_msa_tspO_hmm   7 laavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavl 82 
+                                        ++  + ++ g +  ++   y+sL+ P   PPdw+Fg+vW ++yal+a+a+ l++  a++++++ + ++lf+++ +l
+  GCA_023980805.1_ASM2398080v1_2218  19 IIEAIGSLSGWLSGDIKGIYNSLSLPVLSPPDWLFGIVWPILYALMAIAGYLVFYLATTQRERLMNTILFSTQLLL 94 
+                                        2233333444455689999********************************************************* PP
+
+               trimmed_msa_tspO_hmm  83 nilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                        n++Ws++fF      w+lv++++L l vl+++l+++r s+laa l++PY++W+ +A++L l v+ lN
+  GCA_023980805.1_ASM2398080v1_2218  95 NFIWSIIFFSQSAYWWGLVVIIVLDLVVLMCLLQFYRSSRLAAGLMVPYFIWICFATYLTLGVALLN 161
+                                        *************************************************************999988 PP
+
+>> GCA_023980805.1_ASM2398080v1_1927  USR86427.1 phosphatidate cytidylyltransferase [Lactiplantibacillus pentosus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   4.4   2.5e-05      0.04      41     137 ..      52     146 ..      50     152 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.5e-05
+               trimmed_msa_tspO_hmm  41 FgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrrldwalvevvlLWlsvlalilv 116
+                                        F  + +++ ++i +a ++ ++  +d+ ++e+++++ ++  +l+++Ws   F +   d++++ + +L++ + +   +
+  GCA_023980805.1_ASM2398080v1_1927  52 FEAIVSMLAVMIQIAPTKWFNGLPDQLNKEYVVYFLVILLLLHTVWSRNRFSFD--DAGVLTLGILYIGMGFNYFT 125
+                                        7778899999**************************************999886..899***************** PP
+
+               trimmed_msa_tspO_hmm 117 lwrvsklaallllPYlvWvsi 137
+                                        ++r  ++  ll+l ++vW + 
+  GCA_023980805.1_ASM2398080v1_1927 126 AARGINVEMLLFLMFIVWATD 146
+                                        ******************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3129  (886502 residues searched)
+Passed MSV filter:                       229  (0.0731863); expected 62.6 (0.02)
+Passed bias filter:                       50  (0.0159795); expected 62.6 (0.02)
+Passed Vit filter:                         4  (0.00127836); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000639182); expected 0.0 (1e-05)
+Initial search space (Z):               3129  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 18522.51
+//
+[ok]

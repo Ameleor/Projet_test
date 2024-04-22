@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_904863155.1_INF058/GCA_904863155.1_INF058_protein.faa
+# output directed to file:         results/GCA_904863155.1_INF058/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                    -----------
+    6.3e-07   27.5  10.2    1.1e-06   26.7  10.2    1.5  1  GCA_904863155.1_INF058_4874  LJLNAL_25145 4-hydroxybenzoate o
+    0.00039   18.3   9.1     0.0015   16.5   9.1    2.1  1  GCA_904863155.1_INF058_5050  LJLNAL_26180 1,4-dihydroxy-2-nap
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_904863155.1_INF058_4874  LJLNAL_25145 4-hydroxybenzoate octaprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7  10.2   3.9e-10   1.1e-06      21     212 ..      33     214 ..      12     286 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 3.9e-10
+         trimmed_msa_bchG_hmm  21 mWafacGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsGripGrWGlyialiltllsl 100
+                                  +Wa    v s g++     +++vaGv     l+ a+  +vnd+ dr+ d       +rp+PsG ++ +    + ++l lls+
+  GCA_904863155.1_INF058_4874  33 LWALW--VASPGVPPLWILAVFVAGVW----LMRAAGCVVNDYADRKFDGHvkRTARRPLPSGDVTEKEARTLFIVLVLLSF 108
+                                  44443..45566665555555555555....46677889*********9751145789************************ PP
+
+         trimmed_msa_bchG_hmm 101 lvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsae..vlllallysigahG 180
+                                  l+ ++l t+++  +v +l+laW+y      +k+   l + + g ++     ++ +a ++++lP +   + l  +l++++   
+  GCA_904863155.1_INF058_4874 109 LLVLTLNTMTILLSVAALALAWVYPF----MKRYTHLPQVVLGAAFGWSIPMAFSA-VSESLPLSCwlMFLANILWAVAYDT 185
+                                  ************************53....56666676666666664333333333.3444444330033333455554444 PP
+
+         trimmed_msa_bchG_hmm 181 imtlndfkaveGdrklgvkslpvklGveraar 212
+                                    ++ d    + d k+g+ks ++ +G +    
+  GCA_904863155.1_INF058_4874 186 QYAMVD---RDDDVKIGIKSTAILFGENDRLI 214
+                                  444444...35566777777777777665444 PP
+
+>> GCA_904863155.1_INF058_5050  LJLNAL_26180 1,4-dihydroxy-2-naphthoate polyprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   9.1   5.3e-07    0.0015      41     252 ..      43     268 ..       5     305 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 5.3e-07
+         trimmed_msa_bchG_hmm  41 lvvaGvllaGPlvcatsqavndWfdrhvdainePerpiP.....sGripG...rWGlyialiltl...lsllvaa..algtl 109
+                                  + ++ ++ aG l+   s  +nd+ d  v   ++P+r  P      G i+    +  l ++++l     l+ll aa   +g +
+  GCA_904863155.1_INF058_5050  43 VALLALITAG-LLQILSNLANDYGD-AVKGSDKPDRIGPlrgmqKGVITPqqmKRALIVTVALIClfgLALLCAAwqSVGDF 122
+                                  3444444444.55667777777776.45666666665442111144443211122333332221111133333321123333 PP
+
+         trimmed_msa_bchG_hmm 110 .vfva.avlglvlaWaysapPlrlkknGwlGnaavg.lsyeglaWltgaavlagalPsaevlllallysigahGimtlndfk 188
+                                   +f a   l++v+a +y++     +  G++G + ++ l + g   + g+  l+++  +a + l a+  ++ a  ++ +n+++
+  GCA_904863155.1_INF058_5050 123 iGFLAlGGLSIVAAITYTV---GTRPYGYIGLGDISvLVFFGWLSVLGSWYLQAHNVEAAIFLPATACGLLATAVLNINNLR 201
+                                  1232212355566666654...445667777665442566666667788899999999999999999*************** PP
+
+         trimmed_msa_bchG_hmm 189 aveGdrklgvkslpvklGveraarv.aclvmavpqvvvvalllawgkalhalvvav..llvvqlvlm 252
+                                   ++ dr+ g ++l+v+lG+ +a r+ acl++ +  ++ +  lla+++a+  l + +  llv q+  +
+  GCA_904863155.1_INF058_5050 202 DIDSDRQNGKNTLAVRLGPVNARRYhACLLLGALLCLALFNLLALHSAWGWLFILAtpLLVKQARYV 268
+                                  **********************986388887666555555555555555444333212455554433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       5454  (1713555 residues searched)
+Passed MSV filter:                       306  (0.0561056); expected 109.1 (0.02)
+Passed bias filter:                       83  (0.0152182); expected 109.1 (0.02)
+Passed Vit filter:                         8  (0.00146681); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366703); expected 0.1 (1e-05)
+Initial search space (Z):               5454  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10607.19
+//
+[ok]

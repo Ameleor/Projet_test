@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_905171685.1_GoM-Arc1_E50/GCA_905171685.1_GoM-Arc1_E50_protein.faa
+# output directed to file:         results/GCA_905171685.1_GoM-Arc1_E50/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.7e-12   42.3   0.1    4.5e-07   26.1   0.0    3.3  3  GCA_905171685.1_GoM-Arc1_E50_906  CAD7770952.1 Sensor histidine ki
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905171685.1_GoM-Arc1_E50_906  CAD7770952.1 Sensor histidine kinase RcsC [Candidatus Methanoperedenaceae archaeon 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.0   0.0   0.00027      0.57     137     222 ..      73     158 ..      57     177 .. 0.70
+   2 !   26.1   0.0   2.2e-10   4.5e-07     131     217 ..     192     276 ..     185     291 .. 0.84
+   3 !    5.7   0.3   0.00033      0.68     131     259 ..     309     447 ..     306     487 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.00027
+              trimmed_msa_ppsR_hmm 137 eaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaav.rasgeae 212
+                                       + e+r R +f+ + +a+ ++d +  ++ve N+a  +L + ++ ++ g +  +++e +  ++   +l+++ r ++++e
+  GCA_905171685.1_GoM-Arc1_E50_906  73 ASEERARHIFNGAGNAMRVIDRD-FNVVESNHAMIKLSDIPDYKVHGMKCYDHLEGKLCHTEDCMLKQIlRGEERIE 148
+                                       56888888888888888888865.46788888888888888888888888888888777777777766523444555 PP
+
+              trimmed_msa_ppsR_hmm 213 eievrlarkg 222
+                                       ++  + + +g
+  GCA_905171685.1_GoM-Arc1_E50_906 149 TVMYKETPDG 158
+                                       5555555555 PP
+
+  == domain 2  score: 26.1 bits;  conditional E-value: 2.2e-10
+              trimmed_msa_ppsR_hmm 131 dYerlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavra 207
+                                         ++l+e e+rYR l+   +e ++ vd  ++ i+ aNp  ++L++ +++el+g+++++ f++e+r+ + + l++ ++
+  GCA_905171685.1_GoM-Arc1_E50_906 192 KDDALKESEARYRDLVSGMNEGLIAVDE-KGYITFANPKLCELMEYSHDELIGSHITDFFDEENRQIIRSELENHAM 267
+                                       55789*********************96.688**************************************9998776 PP
+
+              trimmed_msa_ppsR_hmm 208 sgeaeeievr 217
+                                        ++ +++e++
+  GCA_905171685.1_GoM-Arc1_E50_906 268 GNN-SQCELT 276
+                                       554.344444 PP
+
+  == domain 3  score: 5.7 bits;  conditional E-value: 0.00033
+              trimmed_msa_ppsR_hmm 131 dYerlreaetrYRllfeasseavl....i..vdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqal 201
+                                       d +r+reaet YR++++a+s + +    +  +d+ + + v +N   ++L g +++el   s +e ++ + r+ + + 
+  GCA_905171685.1_GoM-Arc1_E50_906 309 DLSRVREAETLYRTVLDAASRSKVgfalVqdIDGIEAKHVYVNDYYCELTGYTREELSQISAHEIVHPSMRDIVVDR 385
+                                       7789*************9998754222134467778888899*************************9999998887 PP
+
+              trimmed_msa_ppsR_hmm 202 laavrasg...eaeeievrlarkg.revsvsaslfrqegesllLvrlspaeaaaaaaeeaea 259
+                                        ++ +  +   + +eie   ++++  +v +s+ +   +++  ++  l+ ++ ++++ +e ++
+  GCA_905171685.1_GoM-Arc1_E50_906 386 YRRKMRGEdlpRYNEIEFVKRNGEtVTVGLSSAVATYNNKPAFIYYLTDNTLEKQMRDELKR 447
+                                       76655444122445666555443314556778888889999999999988888884444332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2078  (551108 residues searched)
+Passed MSV filter:                        50  (0.0240616); expected 41.6 (0.02)
+Passed bias filter:                       35  (0.0168431); expected 41.6 (0.02)
+Passed Vit filter:                         5  (0.00240616); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000481232); expected 0.0 (1e-05)
+Initial search space (Z):               2078  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12751.92
+//
+[ok]

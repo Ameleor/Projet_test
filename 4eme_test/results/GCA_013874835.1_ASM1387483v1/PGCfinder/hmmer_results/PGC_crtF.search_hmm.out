@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_013874835.1_ASM1387483v1/GCA_013874835.1_ASM1387483v1_protein.faa
+# output directed to file:         results/GCA_013874835.1_ASM1387483v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00017   17.2   0.0    0.00031   16.3   0.0    1.4  2  GCA_013874835.1_ASM1387483v1_1020  QMI85146.1 decarboxylating cobal
+     0.0036   12.8   0.0     0.0052   12.3   0.0    1.2  1  GCA_013874835.1_ASM1387483v1_284   QMI86087.1 peptide chain release
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013874835.1_ASM1387483v1_1020  QMI85146.1 decarboxylating cobalt-precorrin-6B (C(15))-methyltransferase [Carnobac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   3.6e-07   0.00031     188     226 ..      22      60 ..      10      88 .. 0.80
+   2 ?   -3.3   0.0      0.33   2.8e+02     282     300 ..     110     128 ..     107     141 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 3.6e-07
+               trimmed_msa_crtF_hmm 188 vldaydlkrhrrllDvGGGeGaFlaavaarapklklklf 226
+                                         +d ++l+r +r+lDvG G+G+   ++a+ +p+l+++  
+  GCA_013874835.1_ASM1387483v1_1020  22 SIDKLQLHRAKRMLDVGSGTGSVTIQAAHIYPELDVVAI 60 
+                                        578999****************************98755 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.33
+               trimmed_msa_crtF_hmm 282 lkllrkvraaLppggrLli 300
+                                        +++++ +++ L pggrL++
+  GCA_013874835.1_ASM1387483v1_1020 110 REIFDWCHELLVPGGRLVL 128
+                                        6788889999999999987 PP
+
+>> GCA_013874835.1_ASM1387483v1_284  QMI86087.1 peptide chain release factor N(5)-glutamine methyltransferase [Carnobact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   6.2e-06    0.0052     182     254 ..      95     166 ..      86     179 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 6.2e-06
+              trimmed_msa_crtF_hmm 182 alvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGs 254
+                                       +l+ e+vl+ ++++ + ++lD+G G+G    +++ + p+  + + D+ + a   + + +a++l+++v+++  +
+  GCA_013874835.1_ASM1387483v1_284  95 ELLVEQVLNRIPIDAQIKVLDIGTGTGIIGLTIKLERPNSLVDMVDISKEALCVA-THNAKQLHADVHCFESD 166
+                                       6899**********************************99999999877544333.33556666666665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1695  (545929 residues searched)
+Passed MSV filter:                        67  (0.039528); expected 33.9 (0.02)
+Passed bias filter:                       54  (0.0318584); expected 33.9 (0.02)
+Passed Vit filter:                         9  (0.00530973); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00117994); expected 0.0 (1e-05)
+Initial search space (Z):               1695  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12763.60
+//
+[ok]

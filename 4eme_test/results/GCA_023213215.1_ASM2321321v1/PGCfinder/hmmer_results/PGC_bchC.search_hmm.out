@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_023213215.1_ASM2321321v1/GCA_023213215.1_ASM2321321v1_protein.faa
+# output directed to file:         results/GCA_023213215.1_ASM2321321v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-09   34.5   0.1    0.00031   17.5   0.1    2.2  2  GCA_023213215.1_ASM2321321v1_94    UPT70932.1 MAG: NAD(P)-dependent
+     0.0044   13.7   0.1     0.0082   12.8   0.1    1.4  1  GCA_023213215.1_ASM2321321v1_3467  UPT70838.1 MAG: MlaD family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023213215.1_ASM2321321v1_94  UPT70932.1 MAG: NAD(P)-dependent alcohol dehydrogenase [Flavobacterium sp. JAD_PAG50
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.2e-06    0.0019      26      85 ..      30      86 ..      14      96 .. 0.70
+   2 !   17.5   0.1     2e-07   0.00031     101     233 ..     130     273 ..     119     289 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.2e-06
+             trimmed_msa_bchC_hmm 26 eedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee.sklkvger 85
+                                     ++d+ ++i + g+       l++ r  ++   +yP+vPG+e vG+v+++g+e sklkvg+ 
+  GCA_023213215.1_ASM2321321v1_94 30 PKDIEIEIMYCGVCHSD---LHTAR-NDWGWTTYPVVPGHEIVGKVTKVGSEvSKLKVGDF 86
+                                     55666666666665433...33333.4555678***************9976377888875 PP
+
+  == domain 2  score: 17.5 bits;  conditional E-value: 2e-07
+             trimmed_msa_bchC_hmm 101 fGgaasrlvvpaarvvkvdeelgeegv..llalaatarhalagke..kkapdlivGhGvlGrllarltvaagaeapvv 174
+                                       Gg ++++vv+++ v+kv+++l+  +v  ll+   t+   l + +  k ++  +vG G lG +  +l+  +g ++ ++
+  GCA_023213215.1_ASM2321321v1_94 130 HGGYSEKIVVDEDFVLKVPAHLDLAAVapLLCAGITTWSPLRHWNvgKGSKVAVVGLGGLGHMAIKLAKGLG-AEVTL 206
+                                      5999***************99887777446666667777666544115567789****************99.77889 PP
+
+             trimmed_msa_bchC_hmm 175 Wetnaaraegaegy...evidpeederr.....dykaivdasGdaevldkliarlakggeivlaGfy 233
+                                      + + ++++++a++    +vi + +d +      ++++i+d+    + ++  ia l  +g +v+ G+ 
+  GCA_023213215.1_ASM2321321v1_94 207 FSRTPDKEKDAKDLgadAVIISTDDAQMatvagKFDVIIDTVPYVHDINPYIATLGISGTLVVVGYL 273
+                                      999999998887542225666666654323333799***************************9985 PP
+
+>> GCA_023213215.1_ASM2321321v1_3467  UPT70838.1 MAG: MlaD family protein [Flavobacterium sp. JAD_PAG50586_2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.1   5.3e-06    0.0082     103     180 ..     119     199 ..     110     212 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 5.3e-06
+               trimmed_msa_bchC_hmm 103 gaasrlvvpaarvvkvdeelgeegvllalaatarhalagkekka...pdlivGhGvlGrllarltvaagaeapvvW 175
+                                        g+ s+ vv++ ++++  e ++ ++++ +l  ta  a  ++e+ a   +++  G G+lGrl+    +a + ++ +v 
+  GCA_023213215.1_ASM2321321v1_3467 119 GNGSQQVVKSGQLIATVEPIETDAIMRSLQVTADNAALASEDIAgivAKINKGEGTLGRLIQDKKMAENIDQTIVN 194
+                                        55667777788888888899*************9988776644333367778***********9999999998886 PP
+
+               trimmed_msa_bchC_hmm 176 etnaa 180
+                                         + ++
+  GCA_023213215.1_ASM2321321v1_3467 195 MKTST 199
+                                        55554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       3103  (977020 residues searched)
+Passed MSV filter:                        86  (0.0277151); expected 62.1 (0.02)
+Passed bias filter:                       77  (0.0248147); expected 62.1 (0.02)
+Passed Vit filter:                         6  (0.00193361); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000644538); expected 0.0 (1e-05)
+Initial search space (Z):               3103  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 15549.68
+//
+[ok]

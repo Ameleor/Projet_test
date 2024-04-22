@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703555.1_ASM2370355v1/GCA_023703555.1_ASM2370355v1_protein.faa
+# output directed to file:         results/GCA_023703555.1_ASM2370355v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.4e-06   22.6   0.1    3.6e-06   22.0   0.1    1.2  1  GCA_023703555.1_ASM2370355v1_1029  URQ65293.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703555.1_ASM2370355v1_1029  URQ65293.1 ParA family protein [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.0   0.1   3.5e-09   3.6e-06      25      80 ..       5      62 ..       2      75 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 22.0 bits;  conditional E-value: 3.5e-09
+               trimmed_msa_bchX_hmm 25 iai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsll.fggkacptiiet 80
+                                       iai   kgg+gk+ t  nl+  l++  + vlli  dp++++ts   + g  c ++ e 
+  GCA_023703555.1_ASM2370355v1_1029  5 IAItNQKGGVGKTTTAVNLAASLSKTNRSVLLIDVDPQANATSAAgLSGSDCLSLFEF 62
+                                       4441579********************************9998642677788777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1028  (322135 residues searched)
+Passed MSV filter:                        34  (0.0330739); expected 20.6 (0.02)
+Passed bias filter:                       24  (0.0233463); expected 20.6 (0.02)
+Passed Vit filter:                         3  (0.00291829); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000972763); expected 0.0 (1e-05)
+Initial search space (Z):               1028  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10484.90
+//
+[ok]

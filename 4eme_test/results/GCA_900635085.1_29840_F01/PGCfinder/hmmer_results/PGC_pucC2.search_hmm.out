@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635085.1_29840_F01/GCA_900635085.1_29840_F01_protein.faa
+# output directed to file:         results/GCA_900635085.1_29840_F01/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0088   13.2   7.8      0.011   12.8   7.8    1.1  1  GCA_900635085.1_29840_F01_1950  VDY40274.1 permease [Salmonella 
+  ------ inclusion threshold ------
+      0.025   11.7   0.2      0.028   11.5   0.2    1.0  1  GCA_900635085.1_29840_F01_3752  VDY43753.1 D-alanyl-D-alanine ca
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635085.1_29840_F01_1950  VDY40274.1 permease [Salmonella enterica subsp. enterica serovar Daytona]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   7.8   3.9e-06     0.011      89     181 ..      26     117 ..      20     138 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 3.9e-06
+           trimmed_msa_pucC2_hmm  89 aaavallaselvlglalavlaflliGlGvgaaGtslLaLlakrvaperraaaativWlmmiaGiavtagvagklldPfs 167
+                                     a ++ l+a  ++ g ++ +++  liG+G g+    + + + ++v+p++   a ++ +  m aG+a+ a + g +++   
+  GCA_900635085.1_29840_F01_1950  26 AFTIGLVALGYTNGSIMMIISGGLIGIGYGSVTPVFQTQIISSVEPHKIGVANSLFFNAMDAGMAIGAFIMGMMVESVG 104
+                                     678889999999********************9999***************************************9865 PP
+
+           trimmed_msa_pucC2_hmm 168 aerlvavaaavslv 181
+                                       r++ va+av +v
+  GCA_900635085.1_29840_F01_1950 105 -YRMIYVAGAVLVV 117
+                                     .6788887766433 PP
+
+>> GCA_900635085.1_29840_F01_3752  VDY43753.1 D-alanyl-D-alanine carboxypeptidase fraction C [Salmonella enterica subsp.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.2   9.6e-06     0.028     119     174 ..      12      73 ..       8     105 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 9.6e-06
+           trimmed_msa_pucC2_hmm 119 aaGtslLaLlakrvaperraaa....ativWlmm..iaGiavtagvagklldPfsaerlvav 174
+                                     aaG  lL L+a+ v++e ++ a     +  W++m    G +++ g a + ldP s +++++ 
+  GCA_900635085.1_29840_F01_3752  12 AAGSVLLFLFASLVKAEEQTIAppgvDARAWILMdyASGKVLAEGNADEKLDPASLTKIMTS 73 
+                                     89**************99988833334778****6567******************999853 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       5815  (1373450 residues searched)
+Passed MSV filter:                       384  (0.0660361); expected 116.3 (0.02)
+Passed bias filter:                      101  (0.0173689); expected 116.3 (0.02)
+Passed Vit filter:                         8  (0.00137575); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000343938); expected 0.1 (1e-05)
+Initial search space (Z):               5815  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 17449.57
+//
+[ok]

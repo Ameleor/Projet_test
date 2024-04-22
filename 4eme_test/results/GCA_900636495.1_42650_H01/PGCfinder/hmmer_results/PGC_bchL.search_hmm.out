@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_900636495.1_42650_H01/GCA_900636495.1_42650_H01_protein.faa
+# output directed to file:         results/GCA_900636495.1_42650_H01/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.8e-06   25.2   1.0    0.00078   16.5   0.2    2.1  2  GCA_900636495.1_42650_H01_2340  VEE03190.1 Septum site-determini
+      3e-06   24.4   0.1    4.6e-06   23.8   0.1    1.3  1  GCA_900636495.1_42650_H01_162   VEE01012.1 chromosome partitioni
+    5.1e-05   20.4   0.3     0.0001   19.4   0.3    1.4  1  GCA_900636495.1_42650_H01_1111  VEE01961.1 chromosome partitioni
+    0.00021   18.3   0.1    0.00036   17.6   0.1    1.3  1  GCA_900636495.1_42650_H01_1138  VEE01988.1 flagellar synthesis r
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900636495.1_42650_H01_2340  VEE03190.1 Septum site-determining protein (cell division inhibitor) [Legionella oakr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.2   8.7e-07   0.00078      20      57 ..       6      44 ..       3      72 .. 0.84
+   2 !    7.3   0.0   0.00056       0.5     128     188 ..     111     168 ..     103     173 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 8.7e-07
+            trimmed_msa_bchL_hmm 20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                    ak++ +  gkgg+gk+t+s+ +s  ++ lg++ + i  d
+  GCA_900636495.1_42650_H01_2340  6 AKIIVItSGKGGVGKTTSSAAISSGLALLGHKTVVIDFD 44
+                                    666665269***********************9988766 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.00056
+            trimmed_msa_bchL_hmm 128 kehhlledtdvvifdvlgdvvcggfaaplqhadralivaandfdsifamnrivaaikaksk 188
+                                     ke  l +d d +i d    +  g + a + +ad+a++v+  +  s+   +ri+  + +k+k
+  GCA_900636495.1_42650_H01_2340 111 KE--LSKDFDYIICDSPAGIETGALMA-MYFADHAIVVTNPEVSSVRDSDRILGILASKTK 168
+                                     43..67889999999999888888766.789**********************99999987 PP
+
+>> GCA_900636495.1_42650_H01_162  VEE01012.1 chromosome partitioning protein ParA [Legionella oakridgensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.8   0.1   5.2e-09   4.6e-06      20      78 ..       2      64 ..       1      72 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 23.8 bits;  conditional E-value: 5.2e-09
+           trimmed_msa_bchL_hmm 20 akvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftl...tkklvptvidvl 78
+                                   akv+a+   kgg+gk+tt+ nl+++++   ++vl i  dp+ ++t+      ++lv t  dvl
+  GCA_900636495.1_42650_H01_162  2 AKVIAIAnQKGGVGKTTTAINLAASLAANRQQVLLIDLDPQGNTTMGSgvdKNQLVHTTNDVL 64
+                                   8999996269*********************************99864111456788887776 PP
+
+>> GCA_900636495.1_42650_H01_1111  VEE01961.1 chromosome partitioning ATP-binding protein [Legionella oakridgensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.3   1.2e-07    0.0001      25      53 ..     103     131 ..      90     141 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 1.2e-07
+            trimmed_msa_bchL_hmm  25 vygkggigksttssnlsvafsklgkrvlq 53 
+                                       gkgg+gkst + nl++a+++lg rv  
+  GCA_900636495.1_42650_H01_1111 103 ASGKGGVGKSTVTVNLATALARLGARVGI 131
+                                     469***********************955 PP
+
+>> GCA_900636495.1_42650_H01_1138  VEE01988.1 flagellar synthesis regulator [Legionella oakridgensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   0.1     4e-07   0.00036      20      57 ..      24      62 ..      12      69 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 4e-07
+            trimmed_msa_bchL_hmm 20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                     +v+av  gkgg+gks  + nl+v +++l k+v+ +  d
+  GCA_900636495.1_42650_H01_1138 24 IQVIAVsAGKGGVGKSNIAVNLAVGLAQLNKKVMLLDAD 62
+                                    577887459************************987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3581  (1181500 residues searched)
+Passed MSV filter:                        96  (0.0268082); expected 71.6 (0.02)
+Passed bias filter:                       88  (0.0245741); expected 71.6 (0.02)
+Passed Vit filter:                        15  (0.00418877); expected 3.6 (0.001)
+Passed Fwd filter:                         4  (0.00111701); expected 0.0 (1e-05)
+Initial search space (Z):               3581  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 14096.62
+//
+[ok]

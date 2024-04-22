@@ -1,0 +1,97 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_013426055.1_ASM1342605v1/GCA_013426055.1_ASM1342605v1_protein.faa
+# output directed to file:         results/GCA_013426055.1_ASM1342605v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.4e-06   22.5   0.4    1.4e-05   21.3   0.0    1.7  2  GCA_013426055.1_ASM1342605v1_2244  QLJ55900.1 MoxR family ATPase [F
+  ------ inclusion threshold ------
+      0.011   11.8   0.9      0.026   10.6   0.1    2.0  2  GCA_013426055.1_ASM1342605v1_1557  QLJ55340.1 MoxR family ATPase [F
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013426055.1_ASM1342605v1_2244  QLJ55900.1 MoxR family ATPase [Flavobacterium psychrophilum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.3      0.17   1.8e+02       8      50 ..      24      64 ..      21      69 .. 0.73
+   2 !   21.3   0.0   1.3e-08   1.4e-05     179     324 ..     148     304 ..     112     316 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.17
+               trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                        ivgqde+ + ++l+      g  l++G  G  k+  v ++a+
+  GCA_013426055.1_ASM1342605v1_2244 24 IIVGQDEVVNQIVLSIFAG--GHALLVGVPGLAKTLMVNTIAQ 64
+                                       5899999999999886543..5567777777777777777765 PP
+
+  == domain 2  score: 21.3 bits;  conditional E-value: 1.3e-08
+               trimmed_msa_bchI_hmm 179 lvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrdaf.erdpe.afvakwkkedakvrkkilaa 248
+                                        ++ + nP e e    l    ldrf +++++  p+ ++e v+vv+ + a  + + +  f+a+   + +++ ++i  a
+  GCA_013426055.1_ASM1342605v1_2244 148 VLATQNPIEQEgtypLPEAQLDRFMFAIKLDYPS-FAEEVQVVKSTTANlNVKINpLFTAQEIIDFQQLIRRIPVA 222
+                                        555667755442233444569*******999996.77889999987654144433156666666667777777777 PP
+
+               trimmed_msa_bchI_hmm 249 rkrle......kvevpdavle.kaaklclalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                         + +e      + + pd+ l+ +  k  l  g+ G r+   l+ aa++ aal+g+ + + e++++va+  lrhr+ 
+  GCA_013426055.1_ASM1342605v1_2244 223 DNVIEyavtlvSKTRPDNSLSnEFVKNYLDWGA-GPRASQNLILAAKTNAALNGKFSPDIEDIQAVATGILRHRII 297
+                                        666542111002234555554145566666665.99**************************************99 PP
+
+               trimmed_msa_bchI_hmm 318 rdpldea 324
+                                        ++   +a
+  GCA_013426055.1_ASM1342605v1_2244 298 KNYKADA 304
+                                        9876554 PP
+
+>> GCA_013426055.1_ASM1342605v1_1557  QLJ55340.1 MoxR family ATPase [Flavobacterium psychrophilum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.1     0.081        85       8      50 ..      34      74 ..      32      79 .. 0.84
+   2 ?   10.6   0.1   2.5e-05     0.026     177     324 ..     157     315 ..     115     332 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.081
+               trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                        ivgq++m + ll+  + +  g +l+ G  G  k+ a+ +l++
+  GCA_013426055.1_ASM1342605v1_1557 34 VIVGQKHMIERLLIGLLGQ--GHILLEGVPGLAKTLAINTLSQ 74
+                                       69************98865..7889999999999999888865 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 2.5e-05
+               trimmed_msa_bchI_hmm 177 fvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrda..ferdpeafvakwkkedakvrkkil 246
+                                        f+++ + nP e e    l    +drf l   +  pk  +er+ + ++ +    + +p   v+++ +++++vr+  +
+  GCA_013426055.1_ASM1342605v1_1557 157 FLVLATQNPIEQEgtypLPEAQVDRFMLKTVIDYPKMEDERMVIRQNLNGgfAKVNPVVSVEQIIRAQEAVREVYM 232
+                                        6666667775544223233345677777777777777777765444433221344666666777777777766555 PP
+
+               trimmed_msa_bchI_hmm 247 aar..krlekvevpdavle..kaaklclalgtd.Glrgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                        + +  k + ++  + +  e  k  +l   +g     rg + l  aa+ +a ++ +  v  e++++v   +lrhr+ 
+  GCA_013426055.1_ASM1342605v1_1557 233 DEKieKYILDIIFATRYPEkyKLESLKPLIGFGaSPRGSINLAMAAKCYAFIKRRGYVIPEDVRAVVHDVLRHRIG 308
+                                        4431122333322222222002223333334321459*************************************86 PP
+
+               trimmed_msa_bchI_hmm 318 rdpldea 324
+                                             ea
+  GCA_013426055.1_ASM1342605v1_1557 309 ITYEAEA 315
+                                        5444333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2112  (650694 residues searched)
+Passed MSV filter:                        86  (0.0407197); expected 42.2 (0.02)
+Passed bias filter:                       66  (0.03125); expected 42.2 (0.02)
+Passed Vit filter:                        11  (0.00520833); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.00094697); expected 0.0 (1e-05)
+Initial search space (Z):               2112  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8773.98
+//
+[ok]

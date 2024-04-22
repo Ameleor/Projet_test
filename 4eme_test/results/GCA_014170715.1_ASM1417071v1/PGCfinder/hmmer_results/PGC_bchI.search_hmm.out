@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014170715.1_ASM1417071v1/GCA_014170715.1_ASM1417071v1_protein.faa
+# output directed to file:         results/GCA_014170715.1_ASM1417071v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.3e-08   29.9   0.0    0.00021   18.5   0.0    2.5  3  GCA_014170715.1_ASM1417071v1_4197  QNC06469.1 YifB family Mg chelat
+     0.0011   16.2   0.4      0.044   10.9   0.1    2.1  2  GCA_014170715.1_ASM1417071v1_1763  QNC08204.1 phage shock protein o
+      0.007   13.5   0.1      0.094    9.8   0.0    2.2  2  GCA_014170715.1_ASM1417071v1_3306  QNC05662.1 sigma-54-dependent tr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014170715.1_ASM1417071v1_4197  QNC06469.1 YifB family Mg chelatase-like AAA ATPase [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.7   0.0   0.00014      0.21       5      60 ..     189     242 ..     185     273 .. 0.84
+   2 !   18.5   0.0   1.4e-07   0.00021     123     186 ..     284     347 ..     274     352 .. 0.91
+   3 ?   -3.5   0.0      0.73   1.1e+03     194     204 ..     375     385 ..     371     388 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 0.00014
+               trimmed_msa_bchI_hmm   5 pfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                         +s ++gq++ k+ l ++a   +   +l++G  GtGk+  +  +  llP+++  ++
+  GCA_014170715.1_ASM1417071v1_4197 189 DLSDVIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRINGLLPDLSNEEA 242
+                                        67899************997654..699**********************987655 PP
+
+  == domain 2  score: 18.5 bits;  conditional E-value: 1.4e-07
+               trimmed_msa_bchI_hmm 123 afepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                           pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf lv + nP 
+  GCA_014170715.1_ASM1417071v1_4197 284 IPGPGEISLAHNGVLFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLVAAMNPS 347
+                                        5579999*******************************************************95 PP
+
+  == domain 3  score: -3.5 bits;  conditional E-value: 0.73
+               trimmed_msa_bchI_hmm 194 lldrfGlsvev 204
+                                        +ldrf ls+e+
+  GCA_014170715.1_ASM1417071v1_4197 375 FLDRFDLSLEI 385
+                                        69******998 PP
+
+>> GCA_014170715.1_ASM1417071v1_1763  QNC08204.1 phage shock protein operon transcriptional activator [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0055       7.9      30      44 ..      31      45 ..      21      58 .. 0.81
+   2 !   10.9   0.1     3e-05     0.044     119     202 ..      86     173 ..      57     192 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0055
+               trimmed_msa_bchI_hmm 30 GvlvlGdrGtGksta 44
+                                        vl++G+rGtGk   
+  GCA_014170715.1_ASM1417071v1_1763 31 PVLIIGERGTGKELI 45
+                                       59**********765 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 3e-05
+               trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP......eeG 188
+                                        +G ++ +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n       +eG
+  GCA_014170715.1_ASM1417071v1_1763  86 TGAQKRHPGRFERADGGTLFLDELATAPMMVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNAdlpamvNEG 159
+                                        6888899*********************9999**********9..89999998877777788777752224446** PP
+
+               trimmed_msa_bchI_hmm 189 elrPqlldrfGlsv 202
+                                         +r  lldr+ + v
+  GCA_014170715.1_ASM1417071v1_1763 160 TFRADLLDRLAFDV 173
+                                        *********87765 PP
+
+>> GCA_014170715.1_ASM1417071v1_3306  QNC05662.1 sigma-54-dependent transcriptional regulator [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.0   6.5e-05     0.094      19      51 ..     284     316 ..     270     331 .. 0.86
+   2 ?    1.0   0.0     0.031        46     124     143 ..     356     375 ..     345     389 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 6.5e-05
+               trimmed_msa_bchI_hmm  19 lllaavdpsigGvlvlGdrGtGkstavralaal 51 
+                                         l++ + ps + v+v+G+ GtGk   +ra+ +l
+  GCA_014170715.1_ASM1417071v1_3306 284 RLISRIAPSPSSVMVVGESGTGKEVVARAIHKL 316
+                                        489999***********************9877 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.031
+               trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevn 143
+                                         ++Gl+  an G l++de+ 
+  GCA_014170715.1_ASM1417071v1_3306 356 GKTGLIQAANTGTLFLDEIG 375
+                                        478***************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4357  (1336471 residues searched)
+Passed MSV filter:                       223  (0.051182); expected 87.1 (0.02)
+Passed bias filter:                      159  (0.036493); expected 87.1 (0.02)
+Passed Vit filter:                        30  (0.00688547); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.000688547); expected 0.0 (1e-05)
+Initial search space (Z):               4357  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 7570.14
+//
+[ok]

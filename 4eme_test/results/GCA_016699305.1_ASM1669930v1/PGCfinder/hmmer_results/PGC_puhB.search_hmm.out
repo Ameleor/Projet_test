@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699305.1_ASM1669930v1/GCA_016699305.1_ASM1669930v1_protein.faa
+# output directed to file:         results/GCA_016699305.1_ASM1669930v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.7e-09   33.1   0.5    5.3e-09   32.6   0.5    1.2  1  GCA_016699305.1_ASM1669930v1_293  QQR69383.1 MAG: PH domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699305.1_ASM1669930v1_293  QQR69383.1 MAG: PH domain-containing protein [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   0.5   2.8e-12   5.3e-09      73     132 ..      70     130 ..      51     146 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 32.6 bits;  conditional E-value: 2.8e-12
+              trimmed_msa_puhB_hmm  73 lllalaavalall.allawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklr 132
+                                         la+++v+++++ +l+a+l + tt  ++TnrRv++++Gi+   t+ + ++++esa++++ 
+  GCA_016699305.1_ASM1669930v1_293  70 SWLAMGVVMMGVVsLLIAFLRQVTTEIVLTNRRVIMKVGIIQRSTVEILLAKVESASIHQS 130
+                                       45566666666662568***************************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       1920  (605162 residues searched)
+Passed MSV filter:                       103  (0.0536458); expected 38.4 (0.02)
+Passed bias filter:                       50  (0.0260417); expected 38.4 (0.02)
+Passed Vit filter:                         6  (0.003125); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000520833); expected 0.0 (1e-05)
+Initial search space (Z):               1920  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13891.75
+//
+[ok]

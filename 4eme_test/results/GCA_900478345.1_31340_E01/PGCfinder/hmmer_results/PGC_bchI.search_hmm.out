@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_900478345.1_31340_E01/GCA_900478345.1_31340_E01_protein.faa
+# output directed to file:         results/GCA_900478345.1_31340_E01/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.3e-07   29.4   0.0    0.00017   19.1   0.0    2.3  2  GCA_900478345.1_31340_E01_5216  SQJ31487.1 putative ATP-dependen
+  ------ inclusion threshold ------
+      0.039   11.3   0.0      0.039   11.3   0.0    1.1  1  GCA_900478345.1_31340_E01_933   SQJ13509.1 ATPase component of e
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900478345.1_31340_E01_5216  SQJ31487.1 putative ATP-dependent protease [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.3   0.0   0.00013      0.33       9      60 ..     193     242 ..     186     279 .. 0.84
+   2 !   19.1   0.0   6.6e-08   0.00017     120     186 ..     281     347 ..     273     352 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00013
+            trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                     ++gq++ k+ l ++a   +   +l++G  GtGk+  +  l+ +lP+++  ++
+  GCA_900478345.1_31340_E01_5216 193 VIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRLSGILPPLSNEEA 242
+                                     899*********9997654..699**********************987665 PP
+
+  == domain 2  score: 19.1 bits;  conditional E-value: 6.6e-08
+            trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                     G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_900478345.1_31340_E01_5216 281 GGAIPAPGEISLAHNGILFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLIAAMNPS 347
+                                     555567999********************************************************95 PP
+
+>> GCA_900478345.1_31340_E01_933  SQJ13509.1 ATPase component of energizing module ofqueuosine-regulated ECF transporter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.5e-05     0.039      33      54 ..      34      55 ..      16      61 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.5e-05
+           trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPk 54
+                                   + Gd G+Gkst +r +a ll +
+  GCA_900478345.1_31340_E01_933 34 LTGDNGAGKSTLLRIMAGLLSP 55
+                                   469****************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5272  (1337286 residues searched)
+Passed MSV filter:                       244  (0.0462822); expected 105.4 (0.02)
+Passed bias filter:                      182  (0.034522); expected 105.4 (0.02)
+Passed Vit filter:                        37  (0.00701821); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000379363); expected 0.1 (1e-05)
+Initial search space (Z):               5272  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8726.76
+//
+[ok]

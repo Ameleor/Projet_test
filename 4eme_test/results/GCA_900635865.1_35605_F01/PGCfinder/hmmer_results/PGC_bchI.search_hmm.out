@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635865.1_35605_F01/GCA_900635865.1_35605_F01_protein.faa
+# output directed to file:         results/GCA_900635865.1_35605_F01/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    3.4e-08   31.9   0.0    0.00012   20.1   0.0    2.5  3  GCA_900635865.1_35605_F01_1664  VEB51995.1 putative ATP-dependen
+  ------ inclusion threshold ------
+      0.048   11.6   0.1        4.1    5.3   0.0    2.0  2  GCA_900635865.1_35605_F01_5499  VEB59005.1 transcriptional regul
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635865.1_35605_F01_1664  VEB51995.1 putative ATP-dependent protease [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.2   0.0   6.7e-05      0.27       9      60 ..      13      62 ..       6      94 .. 0.85
+   2 !   20.1   0.0   3.1e-08   0.00012     120     186 ..     101     167 ..      94     173 .. 0.91
+   3 ?   -2.3   0.0      0.21   8.3e+02     194     205 ..     195     206 ..     190     209 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 6.7e-05
+            trimmed_msa_bchI_hmm  9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60
+                                    ++gq++ k+ l ++a   +   +l++G  GtGk+  +  l+ +lP+++  ++
+  GCA_900635865.1_35605_F01_1664 13 VIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRLSGILPPLSNEEA 62
+                                    89**********9997654..699**********************987665 PP
+
+  == domain 2  score: 20.1 bits;  conditional E-value: 3.1e-08
+            trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                     G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_900635865.1_35605_F01_1664 101 GGAIPAPGEISLAHNGILFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLIAAMNPS 167
+                                     555567999********************************************************95 PP
+
+  == domain 3  score: -2.3 bits;  conditional E-value: 0.21
+            trimmed_msa_bchI_hmm 194 lldrfGlsvevr 205
+                                     +ldrf ls+e+ 
+  GCA_900635865.1_35605_F01_1664 195 FLDRFDLSLEIP 206
+                                     79*******985 PP
+
+>> GCA_900635865.1_35605_F01_5499  VEB59005.1 transcriptional regulator [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.0    0.0012       4.6      30      46 ..      42      58 ..      30      81 .. 0.83
+   2 ?    5.3   0.0     0.001       4.1     118     161 ..      96     139 ..      61     162 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0012
+            trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkstavr 46
+                                     vl++G+rGtGk   + 
+  GCA_900635865.1_35605_F01_5499 42 PVLIIGERGTGKELIAN 58
+                                    59**********86655 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.001
+            trimmed_msa_bchI_hmm 118 tkGekafepGllaranrGflyidevnlledhlvdllldvaasGe 161
+                                      +G ++ +pG + ra+ G l++de+      + + ll v + Ge
+  GCA_900635865.1_35605_F01_5499  96 FTGAQKRHPGRFERADGGTLFLDELATAPMLVQEKLLRVIEYGE 139
+                                     56888999****************98877777777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       8023  (1236122 residues searched)
+Passed MSV filter:                       252  (0.0314097); expected 160.5 (0.02)
+Passed bias filter:                      186  (0.0231833); expected 160.5 (0.02)
+Passed Vit filter:                        34  (0.00423782); expected 8.0 (0.001)
+Passed Fwd filter:                         2  (0.000249283); expected 0.1 (1e-05)
+Initial search space (Z):               8023  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9491.42
+//
+[ok]

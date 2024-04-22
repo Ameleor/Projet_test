@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_019704295.1_ASM1970429v1/GCA_019704295.1_ASM1970429v1_protein.faa
+# output directed to file:         results/GCA_019704295.1_ASM1970429v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.041   10.2   0.0      0.041   10.2   0.0    1.6  2  GCA_019704295.1_ASM1970429v1_1585  BCU68148.1 1-pyrroline-5-carboxy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019704295.1_ASM1970429v1_1585  BCU68148.1 1-pyrroline-5-carboxylate dehydrogenase [Sulfolobales archaeon HS-7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   1.9e-05     0.041      36      89 ..      56     110 ..      47     115 .. 0.87
+   2 ?   -4.7   0.5      0.65   1.4e+03      88     102 ..     487     501 ..     485     503 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 1.9e-05
+               trimmed_msa_crtC_hmm  36 Eiavpl.prrvrGrvrvtpealtevelaLdaegrhrWrpiapsarveveldepel 89 
+                                        E+  p+ +++v G+ ++ +e+++++++++ +eg  +Wr i  ++rve+++ + el
+  GCA_019704295.1_ASM1970429v1_1585  56 EVKSPIdEKTVIGKFNLASETTVSKAIQIAKEGFYEWRDIDWKTRVEITMRAAEL 110
+                                        566665146799**************************************98765 PP
+
+  == domain 2  score: -4.7 bits;  conditional E-value: 0.65
+               trimmed_msa_crtC_hmm  88 elswkGegYfDsNeG 102
+                                           wk +gY  +N+G
+  GCA_019704295.1_ASM1970429v1_1585 487 FGGWKHSGYTGKNAG 501
+                                        56799********99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       2140  (570658 residues searched)
+Passed MSV filter:                        48  (0.0224299); expected 42.8 (0.02)
+Passed bias filter:                       47  (0.0219626); expected 42.8 (0.02)
+Passed Vit filter:                         4  (0.00186916); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.00046729); expected 0.0 (1e-05)
+Initial search space (Z):               2140  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 18302.65
+//
+[ok]

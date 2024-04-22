@@ -1,0 +1,101 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484745.1_ASM2148474v1/GCA_021484745.1_ASM2148474v1_protein.faa
+# output directed to file:         results/GCA_021484745.1_ASM2148474v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0014   16.0   0.1      0.093   10.0   0.0    2.3  2  GCA_021484745.1_ASM2148474v1_5171  UIY27549.1 ABC transporter ATP-b
+     0.0017   15.8   0.0     0.0038   14.6   0.0    1.5  1  GCA_021484745.1_ASM2148474v1_3569  UIY23642.1 MoxR family ATPase [R
+     0.0019   15.6   0.1     0.0033   14.8   0.1    1.4  1  GCA_021484745.1_ASM2148474v1_2388  UIY26067.1 ABC transporter ATP-b
+  ------ inclusion threshold ------
+      0.022   12.0   0.0      0.034   11.5   0.0    1.2  1  GCA_021484745.1_ASM2148474v1_869   UIY25033.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484745.1_ASM2148474v1_5171  UIY27549.1 ABC transporter ATP-binding protein (plasmid) [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.0   7.4e-05     0.093      33      61 ..      39      68 ..      27      92 .. 0.81
+   2 !    3.5   0.0     0.007       8.8      16      54 ..     297     336 ..     288     382 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 7.4e-05
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallP.kikavkgc 61
+                                       ++G+ G+Gk+ a ral +llP +ik++ g+
+  GCA_021484745.1_ASM2148474v1_5171 39 IVGESGSGKTLATRALISLLPaPIKVIGGS 68
+                                       68*******************457766554 PP
+
+  == domain 2  score: 3.5 bits;  conditional E-value: 0.007
+               trimmed_msa_bchI_hmm  16 klalllaavdpsigGvlv.lGdrGtGkstavralaallPk 54 
+                                        k+al  +++d + g v++ +G  G+Gk+t  r++a l+ +
+  GCA_021484745.1_ASM2148474v1_5171 297 KRALHGVSIDIHEGEVVAlVGGSGSGKTTLGRTIAGLVRE 336
+                                        788888899999998875269**************99866 PP
+
+>> GCA_021484745.1_ASM2148474v1_3569  UIY23642.1 MoxR family ATPase [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0     3e-06    0.0038     174     316 ..     159     310 ..     151     324 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 3e-06
+               trimmed_msa_bchI_hmm 174 parfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrdaferdpeafvakwkkedak.vrkk 244
+                                        pa f ++ + nP e e    l    ldrf l v+v+ p+  +er  ++  +   e+ pea +++ +  + + + ++
+  GCA_021484745.1_ASM2148474v1_3569 159 PAPFHVLATQNPLEQEgtypLPEAQLDRFLLQVDVNYPELAAERQILLETTGLGETRPEAVIDAQRLIEIQtLVRQ 234
+                                        67788888888866553233445679******************999*************9998887664414555 PP
+
+               trimmed_msa_bchI_hmm 245 ilaarkrlekv....evpdavlekaaklclalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                        +  + + ++++    + +     +a++        G r+  +++ +ara a +eg+ + + +++ ++a   l+hr+
+  GCA_021484745.1_ASM2148474v1_3569 235 MPVSDTVVDAIlalvRSARPGQGNASTDKNVAWGPGPRAGQAMMLCARARALYEGRLAPSLDDIFALAEPILQHRM 310
+                                        5555544444311003333333333333333334699**************************************8 PP
+
+>> GCA_021484745.1_ASM2148474v1_2388  UIY26067.1 ABC transporter ATP-binding protein [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.1   2.6e-06    0.0033      31      64 ..      39      72 ..      26      95 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkikavkgcryn 64
+                                       v ++G+ G+Gkst+ ra+  llP+  +v++ r++
+  GCA_021484745.1_ASM2148474v1_2388 39 VGIVGESGSGKSTTGRAIMRLLPPAAVVSAERLD 72
+                                       6689********************9999887765 PP
+
+>> GCA_021484745.1_ASM2148474v1_869  UIY25033.1 ABC transporter ATP-binding protein [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   2.7e-05     0.034      33      75 ..      38      80 ..      26     106 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.7e-05
+              trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikavkgcryncdpeeeaelce 75
+                                      v+G+ G+Gks a+ al  llP    +++ r++ d ++ + +++
+  GCA_021484745.1_ASM2148474v1_869 38 VVGESGSGKSVAMLALMGLLPWTAKITADRMQFDGKDLRGISA 80
+                                      89********************999999998888777655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5016  (1312241 residues searched)
+Passed MSV filter:                       295  (0.0588118); expected 100.3 (0.02)
+Passed bias filter:                      203  (0.0404705); expected 100.3 (0.02)
+Passed Vit filter:                        48  (0.00956938); expected 5.0 (0.001)
+Passed Fwd filter:                         4  (0.000797448); expected 0.1 (1e-05)
+Initial search space (Z):               5016  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 7249.40
+//
+[ok]

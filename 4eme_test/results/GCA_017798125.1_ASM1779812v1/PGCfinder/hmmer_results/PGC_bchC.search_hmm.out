@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_017798125.1_ASM1779812v1/GCA_017798125.1_ASM1779812v1_protein.faa
+# output directed to file:         results/GCA_017798125.1_ASM1779812v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+     0.0015   14.9   0.1     0.0033   13.8   0.1    1.7  1  GCA_017798125.1_ASM1779812v1_48  QTN37628.1 NAD(P)-dependent alco
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017798125.1_ASM1779812v1_48  QTN37628.1 NAD(P)-dependent alcohol dehydrogenase [Cryomorphaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   1.3e-06    0.0033       7     227 ..       8     235 ..       2     317 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.3e-06
+             trimmed_msa_bchC_hmm   7 vlekPeelalkrleltapeeedvvvdiewsgistGtekllwsGr...mPefPGmgyPl..vPGyesvGrvveagees. 78 
+                                      v   Pe l++++++  +p+e++v+++i+++ +      ++  G+   m  f G+g P    PG +  G+v ++g++  
+  GCA_017798125.1_ASM1779812v1_48   8 VYGGPEILEVRDVDRPEPKENEVLIKIAYTTVNRTDCGVV-LGNyllMQLFTGLGKPKnpTPGTDFSGTVEAVGSQVq 84 
+                                      6678***************************985443333.332234999*******833689********9998752 PP
+
+             trimmed_msa_bchC_hmm  79 klkvgervfvPGakcfedvrg.lfGgaasrlvvpaarvvkvdeelgeegvllalaatarhalagkekkapdlivGhGv 155
+                                      +++vg+rv+    ++++  +      a   l+   + v+  ++  g eg   al    +  la  +     +  G G 
+  GCA_017798125.1_ASM1779812v1_48  85 NFSVGDRVYGLNDNSHATQAEyCTWPADDSLIRIPEGVTFEEAVAGVEGGHYALNFLNKVKLAPGQ--RVMVNGGTGA 160
+                                      689*****9666555544333033344455555555555555566667777777666666665555..3333346666 PP
+
+             trimmed_msa_bchC_hmm 156 lGrllarltvaagaeap.vvWetnaaraegaegyevidpee....derrdykaivdasGdaevldkliarlakggei 227
+                                      +G    ++ v  g +   +   ++++r  +  + +vid  +    +++++y+ ++da G++    +  +r+ k g +
+  GCA_017798125.1_ASM1779812v1_48 161 IGSAAIQMLVDRGIHVVaTCRPEHSERVLALGASRVIDYTAedftQQDEQYDFVFDAVGKSRF--RYCKRIMKPGAV 235
+                                      666666666666654330333344444444444445543220011344567777777776664..455555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2473  (893622 residues searched)
+Passed MSV filter:                        71  (0.0287101); expected 49.5 (0.02)
+Passed bias filter:                       59  (0.0238577); expected 49.5 (0.02)
+Passed Vit filter:                         5  (0.00202184); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000404367); expected 0.0 (1e-05)
+Initial search space (Z):               2473  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13610.09
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_021611515.1_ASM2161151v1/GCA_021611515.1_ASM2161151v1_protein.faa
+# output directed to file:         results/GCA_021611515.1_ASM2161151v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.8e-13   46.9   1.0    6.2e-13   46.5   1.0    1.1  1  GCA_021611515.1_ASM2161151v1_684  UJQ95057.1 squalene/phytoene syn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021611515.1_ASM2161151v1_684  UJQ95057.1 squalene/phytoene synthase family protein [Mariluticola halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.5   1.0   1.9e-16   6.2e-13      18     233 ..      19     237 ..       7     256 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 46.5 bits;  conditional E-value: 1.9e-16
+              trimmed_msa_crtB_hmm  18 aaAskllprrvreaalaLYafCRlaDDl...vDeqekk....aaalarlrerldriyagrpadapadralaavveef 87 
+                                       ++  ++l+ + r+a+ aLYaf      +   v     +    + +l+   + l+   +g+ +++p   al + v+++
+  GCA_021611515.1_ASM2161151v1_684  19 YLSTLVLEGDKRDAVQALYAFSADVAAIparVT----EpgpgEIRLQWWTDALEGHGHGNVNQNPIAAALLKAVDDY 91 
+                                       5677899999***********643332211144....14555999******************************** PP
+
+              trimmed_msa_crtB_hmm  88 aipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgv.rdaevlaRAcdLGvAmQLtNiaRDvg 163
+                                       a+    +  l++  ++D  +    ++e  + Ya    ++     a+++g  +  +  + A  LGvA+ L+   R  g
+  GCA_021611515.1_ASM2161151v1_684  92 ALQTGPLVRLIAARRFDLYQDPMPDIETFEGYAGETNSVLFQYAATILGEgAALDDGDAAGHLGVAYALAGHLRAFG 168
+                                       ************************************************99667788899****************** PP
+
+              trimmed_msa_crtB_hmm 164 eDaragRlYLPleWleeagldpeafladpefspalarvvkrLlaeadrlyaraeaGiarLplrcrpaila 233
+                                         a++gR+YLP + ++++g++ ++++ + + ++ +++ ++++ + a+ + a+a+ +ia+ p + rpa + 
+  GCA_021611515.1_ASM2161151v1_684 169 YNAAHGRIYLPWSIFAANGVNEQQIF-AGQETDGVRAAITQIADIAEGHLAAARRAIAQSPKQVRPAFAL 237
+                                       ********************999955.5667889999999*************************99654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       3197  (1022744 residues searched)
+Passed MSV filter:                       149  (0.0466062); expected 63.9 (0.02)
+Passed bias filter:                       74  (0.0231467); expected 63.9 (0.02)
+Passed Vit filter:                         1  (0.000312793); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000312793); expected 0.0 (1e-05)
+Initial search space (Z):               3197  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17943.07
+//
+[ok]

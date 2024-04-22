@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016858245.2_ASM1685824v2/GCA_016858245.2_ASM1685824v2_protein.faa
+# output directed to file:         results/GCA_016858245.2_ASM1685824v2/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.9e-08   30.7   0.0    5.5e-08   30.2   0.0    1.1  1  GCA_016858245.2_ASM1685824v2_4057  UGA36668.1 methyltransferase dom
+    7.2e-05   19.9   0.0    0.00013   19.1   0.0    1.3  1  GCA_016858245.2_ASM1685824v2_784   UGA38873.1 peptide chain release
+  ------ inclusion threshold ------
+      0.036   11.0   0.0       0.07   10.1   0.0    1.4  1  GCA_016858245.2_ASM1685824v2_474   UGA38656.1 cytochrome c oxidase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016858245.2_ASM1685824v2_4057  UGA36668.1 methyltransferase domain-containing protein [Chromobacterium haemolytic
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.0   3.3e-11   5.5e-08     188     350 ..      38     205 ..      24     214 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 3.3e-11
+               trimmed_msa_crtF_hmm 188 vldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpa.VaerararleaaglsdrvevagGsflk.dplP 261
+                                        v + +d++++ +ll+vG G Ga  + + +r+p+l+++  D+ +  ++ ar+rl+ +  +dr+++   +  + d  P
+  GCA_016858245.2_ASM1685824v2_4057  38 VYRDIDFSGVGQLLEVGCGVGAQTEILLRRYPDLEVTGVDFSQrQLAVARQRLQGSPWQDRARLLHMDAEDlDFQP 113
+                                        456789**********************************98725799***************999888765889* PP
+
+               trimmed_msa_crtF_hmm 262 egaDlisLvRvlhDHdDeavlkllrkvraaLppggrLliaEpmagtagaeavgdaYFgfYllamgs......GrpR 331
+                                        + +D++ L  vl +H  +  +++l++vr+ L+pg rL  +E+m      ++ +  + + Y la +       G p 
+  GCA_016858245.2_ASM1685824v2_4057 114 ASFDAAFLCWVL-EHVLS-PERVLAEVRRVLKPGARLYATEAMNASFFLSPYS-SHLQQYWLAFNDhqlavgGDPF 186
+                                        *******99998.57655.4789********************9987776665.3344444444321222227778 PP
+
+               trimmed_msa_crtF_hmm 332 saeeirallaeaGFakvkl 350
+                                          +++ ++l + GF++v++
+  GCA_016858245.2_ASM1685824v2_4057 187 VGAKLGNMLLRLGFRHVET 205
+                                        8888888888888888776 PP
+
+>> GCA_016858245.2_ASM1685824v2_784  UGA38873.1 peptide chain release factor N(5)-glutamine methyltransferase [Chromobac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   7.7e-08   0.00013     196     264 ..     104     170 ..      91     176 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 7.7e-08
+              trimmed_msa_crtF_hmm 196 rhrrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflkdplPega 264
+                                       +++r++D+G G+Ga +a++a +ap+ +++  Dl p+ ++ ar   +a+ l +rv+++ Gs+ + +lP++a
+  GCA_016858245.2_ASM1685824v2_784 104 GVARVVDLGTGSGAIAATLALEAPAWRVSAVDLsPEALAVAR--GNAERLGARVDFYQGSWYQ-ALPADA 170
+                                       56799****************************566666666..579999**********995.699886 PP
+
+>> GCA_016858245.2_ASM1685824v2_474  UGA38656.1 cytochrome c oxidase accessory protein CcoG [Chromobacterium haemolyticu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   4.2e-05      0.07      46     111 ..     328     394 ..     326     403 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4.2e-05
+              trimmed_msa_crtF_hmm  46 vysQvllacveldllellaegplsleelaerlklpedalerLlraaaalkLlerr.sedryaLgklg 111
+                                       vys  l+ ++ l   +l+ ++p +++ l +r+ l +++   Ll+ +  lkL+++  + +r+++  +g
+  GCA_016858245.2_ASM1685824v2_474 328 VYSSLLAGIIALSTTALILKKPFKVDVLRDRAVLVRATDDGLLENSYNLKLINTSeQAQRFKIQVEG 394
+                                       89*************************************************9875156789888777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       4930  (1041767 residues searched)
+Passed MSV filter:                       178  (0.0361055); expected 98.6 (0.02)
+Passed bias filter:                      114  (0.0231237); expected 98.6 (0.02)
+Passed Vit filter:                        13  (0.00263692); expected 4.9 (0.001)
+Passed Fwd filter:                         3  (0.000608519); expected 0.0 (1e-05)
+Initial search space (Z):               4930  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 12031.29
+//
+[ok]

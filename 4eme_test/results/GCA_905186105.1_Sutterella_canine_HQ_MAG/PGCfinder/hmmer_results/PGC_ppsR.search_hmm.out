@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186105.1_Sutterella_canine_HQ_MAG/GCA_905186105.1_Sutterella_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186105.1_Sutterella_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                      -----------
+    0.00024   17.5   0.0    0.00032   17.1   0.0    1.1  1  GCA_905186105.1_Sutterella_canine_HQ_MAG_2263  BPAOBJ_11700 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186105.1_Sutterella_canine_HQ_MAG_2263  BPAOBJ_11700 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   1.2e-07   0.00032     410     448 ..      70     108 ..      67     110 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 1.2e-07
+                           trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                                    E+  I+ AL++T+  R  AA+ LGL R  L  KL+   l
+  GCA_905186105.1_Sutterella_canine_HQ_MAG_2263  70 ERTVIQEALQVTHGRRMEAAQRLGLGRNTLTRKLQELAL 108
+                                                    8999***************************99986655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2646  (747677 residues searched)
+Passed MSV filter:                        97  (0.0366591); expected 52.9 (0.02)
+Passed bias filter:                       61  (0.0230537); expected 52.9 (0.02)
+Passed Vit filter:                         6  (0.00226757); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000377929); expected 0.0 (1e-05)
+Initial search space (Z):               2646  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17351.38
+//
+[ok]

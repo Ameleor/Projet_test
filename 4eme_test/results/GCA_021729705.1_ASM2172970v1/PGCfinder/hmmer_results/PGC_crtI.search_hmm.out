@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729705.1_ASM2172970v1/GCA_021729705.1_ASM2172970v1_protein.faa
+# output directed to file:         results/GCA_021729705.1_ASM2172970v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.1e-06   21.6   0.6      0.001   14.2   0.3    2.3  2  GCA_021729705.1_ASM2172970v1_929   BHLKFG_04775 D-amino acid dehydr
+     0.0025   13.0   0.0     0.0043   12.2   0.0    1.5  1  GCA_021729705.1_ASM2172970v1_1165  BHLKFG_06040 Thioredoxin reducta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729705.1_ASM2172970v1_929  BHLKFG_04775 D-amino acid dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.3   1.3e-06     0.001       2      39 ..       3      40 ..       2      47 .. 0.91
+   2 !    5.2   0.0   0.00068      0.55     221     272 ..     194     245 ..     188     276 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.3e-06
+              trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      k++vviG G+ Gl+ a  +++ G +v v+ek d   G 
+  GCA_021729705.1_ASM2172970v1_929  3 KEVVVIGGGIVGLSCAYSMHKLGHKVCVIEKSDGANGT 40
+                                      689*****************************988775 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.00068
+              trimmed_msa_crtI_hmm 221 galvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvs 272
+                                       g+++++l +++++ G+e+ +n+ev + e +++ + gv +++ +  + +++ +
+  GCA_021729705.1_ASM2172970v1_929 194 GEVMRSLQEYLQNAGVEFLYNEEVIDFEFKNNLIDGVITHKEKIQAEKIILA 245
+                                       678999*******************************998866665555544 PP
+
+>> GCA_021729705.1_ASM2172970v1_1165  BHLKFG_06040 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   5.3e-06    0.0043       4      51 ..       8      56 ..       6     119 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 5.3e-06
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyr.vtvlekldapGGrayvhrkdgftfD 51
+                                       ++++GaG GG+a+ai  + +G++ v + ek ++  G    + k g + D
+  GCA_021729705.1_ASM2172970v1_1165  8 VLIVGAGPGGIATAIECEIAGVKkVLLCEKTESHSGMIEKFYKAGKRID 56
+                                       689******************9637778999999999999988888777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1627  (490150 residues searched)
+Passed MSV filter:                        58  (0.0356484); expected 32.5 (0.02)
+Passed bias filter:                       50  (0.0307314); expected 32.5 (0.02)
+Passed Vit filter:                         6  (0.00368777); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.00122926); expected 0.0 (1e-05)
+Initial search space (Z):               1627  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13425.82
+//
+[ok]

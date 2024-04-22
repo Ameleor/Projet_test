@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022922995.1_ASM2292299v1/GCA_022922995.1_ASM2292299v1_protein.faa
+# output directed to file:         results/GCA_022922995.1_ASM2292299v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0025   12.8   0.6     0.0029   12.6   0.6    1.0  1  GCA_022922995.1_ASM2292299v1_828   UOR84138.1 sialic acid-binding p
+  ------ inclusion threshold ------
+      0.055    8.3   5.4      0.068    8.0   5.4    1.1  1  GCA_022922995.1_ASM2292299v1_1291  UOR84565.1 SH3 domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022922995.1_ASM2292299v1_828  UOR84138.1 sialic acid-binding protein [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.6     4e-06    0.0029     245     351 ..      41     138 ..       4     142 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 4e-06
+              trimmed_msa_bchD_hmm 245 pratrlpeeeeeeaeeepeqepapppeeeeaeeeeeeeeeeeeeeealedvvleaakaalpadllaklaakaarrak 321
+                                       +  +           +e +   ++ pe++ +  +++ +e +++++++++    ea + a+ +  l+k +++ +    
+  GCA_022922995.1_ASM2292299v1_828  41 QDIVDY--------TKELKMRMEKMPEDKRKAFHKQLHEYATKNTDKMTVADFEARQKAIKEA-LKKGNMEDMDDDF 108
+                                       222222........2222222233344444444445566666666677777789999999665.5555555555779 PP
+
+              trimmed_msa_bchD_hmm 322 aassgkaGakrksarrGrplgarrgeprgg 351
+                                       + +s k+G+++k+ ++G+  g ++g+++++
+  GCA_022922995.1_ASM2292299v1_828 109 GLRSCKHGKMHKHDKHGKKHGKKHGKKHDK 138
+                                       99***********************98876 PP
+
+>> GCA_022922995.1_ASM2292299v1_1291  UOR84565.1 SH3 domain-containing protein [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   5.4   9.4e-05     0.068     214     292 ..      23     108 ..      17     132 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 9.4e-05
+               trimmed_msa_bchD_hmm 214 alraaralAalegrteveeedlalAarlvlapratrlpeeeeeea.......eeepeqepa....pppeeeeaeee 278
+                                        +l  a a+Aal    e +++ +++ ++ +   r     ++++ee+       ee+p ++p+      p ++   +e
+  GCA_022922995.1_ASM2292299v1_1291  23 MLLYALAHAALGFYGEKDSASISQNLEKTEMERQNSALSPKQEETnttttatEENPTKDPPlpleT-PTQK---QE 94 
+                                        556688999999999999999999998887777766555444444345554444444444443322.2222...22 PP
+
+               trimmed_msa_bchD_hmm 279 eeeeeeeeeeeeal 292
+                                        +++e+++e+++e+ 
+  GCA_022922995.1_ASM2292299v1_1291  95 AKQENKQETKQEQE 108
+                                        22222222222211 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1441  (465683 residues searched)
+Passed MSV filter:                        72  (0.0499653); expected 28.8 (0.02)
+Passed bias filter:                       51  (0.0353921); expected 28.8 (0.02)
+Passed Vit filter:                        10  (0.00693963); expected 1.4 (0.001)
+Passed Fwd filter:                         4  (0.00277585); expected 0.0 (1e-05)
+Initial search space (Z):               1441  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11048.77
+//
+[ok]

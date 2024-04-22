@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_905171695.1_GoM-Arc1_E37/GCA_905171695.1_GoM-Arc1_E37_protein.faa
+# output directed to file:         results/GCA_905171695.1_GoM-Arc1_E37/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00015   17.6   0.0    0.00024   17.0   0.0    1.2  1  GCA_905171695.1_GoM-Arc1_E37_163   CAD7768235.1 Ubiquinone/menaquin
+    0.00037   16.3   0.0    0.00048   16.0   0.0    1.1  1  GCA_905171695.1_GoM-Arc1_E37_1762  CAD7775555.1 Ubiquinone/menaquin
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905171695.1_GoM-Arc1_E37_163  CAD7768235.1 Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE [Candidat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.0   2.3e-07   0.00024     187     243 ..      40      95 ..      38     104 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 2.3e-07
+                      trimmed_bchE 187 evldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaag 243
+                                        vl++++l+r  +llD+G G+G F++ v + a    + +   +a+++rar++l++++
+  GCA_905171695.1_GoM-Arc1_E37_163  40 WVLKSLNLERSDTLLDIGCGTGLFINDVSEIAR-RAIGVDISEAILKRARRNLREKK 95 
+                                       599***********************9987543.33444333567777777777665 PP
+
+>> GCA_905171695.1_GoM-Arc1_E37_1762  CAD7775555.1 Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE [Candida
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   4.6e-07   0.00048     195     305 ..      38     148 ..      30     159 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 4.6e-07
+                       trimmed_bchE 195 krhrrllDvGGGeGaFlaavaarapklklkl.fDlpa.VaerararleaaglsdrvevagGsflkdplPegaDlis 268
+                                        k+   +lD+G G+G +  ++a+ + +  +++  Dl +  +++ +++++++++++r+ ++  +  +  + e +D++ 
+  GCA_905171695.1_GoM-Arc1_E37_1762  38 KEGMIVLDIGCGSGLYSVEMAKMVGERGMVIaADLQEgMLQKLKKKIQETKIEKRIILHRCEKDRMGITEKIDFAL 113
+                                        566789*****************99988776369976378999******************************998 PP
+
+                       trimmed_bchE 269 LvRvlhDHdDeavlkllrkvraaLppggrLliaEpma 305
+                                           ++h+ +  + +k+++++r+ L+p+g++li Ep  
+  GCA_905171695.1_GoM-Arc1_E37_1762 114 AFYMVHEVP--NQEKFFKEMRSILKPDGKFLIIEPKF 148
+                                        777776655..5679*******************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2055  (553890 residues searched)
+Passed MSV filter:                        49  (0.0238443); expected 41.1 (0.02)
+Passed bias filter:                       45  (0.0218978); expected 41.1 (0.02)
+Passed Vit filter:                         8  (0.00389294); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000973236); expected 0.0 (1e-05)
+Initial search space (Z):               2055  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10800.46
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_017569285.1_ASM1756928v1/GCA_017569285.1_ASM1756928v1_protein.faa
+# output directed to file:         results/GCA_017569285.1_ASM1756928v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.1e-13   46.5   0.1    2.7e-12   43.8   0.1    1.9  1  GCA_017569285.1_ASM1756928v1_1069  QTE69357.1 zinc-binding alcohol 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017569285.1_ASM1756928v1_1069  QTE69357.1 zinc-binding alcohol dehydrogenase family protein [Clostridiales bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.8   0.1   9.5e-16   2.7e-12       4     300 ..       2     327 ..       1     338 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 43.8 bits;  conditional E-value: 9.5e-16
+               trimmed_msa_bchC_hmm   4 lavvlekPeelalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveag.ees 78 
+                                        +a+ +++P e +++++ +  pe++++++ i + gi  G++   ++G+ P     +yP +PG+e   +vv+++ ++ 
+  GCA_017569285.1_ASM1756928v1_1069   2 KAICITQPFETEIRDIPMPVPEAGEALLRILYCGIC-GADVASFTGNQP---FTTYPRIPGHEFSAQVVSVPdNDR 73 
+                                        6999*******************************5.99999****986...469************999862567 PP
+
+               trimmed_msa_bchC_hmm  79 klkvgerv....fvPGakcfedvrglf..............Ggaasrlvvpaarvvkvdeelgeegvllalaatar 136
+                                        +lk g+ v    +     c++  +g                G+ ++ + +p +r+++     +++ +l+   a +r
+  GCA_017569285.1_ASM1756928v1_1069  74 GLKPGDLVtcnpYFNCGACYACRKGRVnacmdnqtmgvqrdGAFCEYIRMPLERIIPGGGLNARQLALIEPFAISR 149
+                                        899999985555344556886555543111112222222335667778889999999999999999999999**** PP
+
+               trimmed_msa_bchC_hmm 137 halagkekkapd..livGhGvlGrllarltvaagaeapvvWetnaaraegaegy....evidpeederrdykai.. 204
+                                        ha+++ + +  d  l+vG G +G l+a l+  +  ++ +v +  + r ++a  +     v++ ++de ++ +ai  
+  GCA_017569285.1_ASM1756928v1_1069 150 HAISRGDIQPGDrvLVVGAGPIG-LFALLAAKSKGAEVTVCDLLQGRLDKALHFgadhVVTSGAADEAQQLAAItg 224
+                                        ****999877554499*******.889999999999***********99987542221677788999998888722 PP
+
+               trimmed_msa_bchC_hmm 205 .......vdasGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlrvaaewkkedlaavkalvesGr 273
+                                               v+a G++  + k i++  +g+ ++l G  +++ +f ++  + +e ++  + +   +d+ a+ +lv+sG+
+  GCA_017569285.1_ASM1756928v1_1069 225 gsgfdvcVEACGQSVTFLKCIEQACHGASVILIGNGKKETTFLHSILLKKELNVYGSRNAYTADFEALIRLVSSGA 300
+                                        22211114456667777788999999************************************************** PP
+
+               trimmed_msa_bchC_hmm 274 lsldglithrasaeeaeeayrtafedp 300
+                                        + +  +++ + + ++a++a++   ++ 
+  GCA_017569285.1_ASM1756928v1_1069 301 VPVTDMVSAEYDYKDAAAAFDALSHND 327
+                                        *******************98644433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2808  (982302 residues searched)
+Passed MSV filter:                        92  (0.0327635); expected 56.2 (0.02)
+Passed bias filter:                       73  (0.0259972); expected 56.2 (0.02)
+Passed Vit filter:                         5  (0.00178063); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000356125); expected 0.0 (1e-05)
+Initial search space (Z):               2808  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12730.39
+//
+[ok]

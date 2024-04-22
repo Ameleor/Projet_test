@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700395.1_ASM1670039v1/GCA_016700395.1_ASM1670039v1_protein.faa
+# output directed to file:         results/GCA_016700395.1_ASM1670039v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.7e-07   25.1   0.2    5.7e-07   24.5   0.2    1.2  1  GCA_016700395.1_ASM1670039v1_562  QQS70280.1 ParA family protein [
+     0.0077   10.9   0.0      0.011   10.4   0.0    1.1  1  GCA_016700395.1_ASM1670039v1_24   QQS70708.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700395.1_ASM1670039v1_562  QQS70280.1 ParA family protein [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.2   1.2e-09   5.7e-07      26      69 ..       7      50 ..       2      75 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 1.2e-09
+              trimmed_msa_bchX_hmm 26 aiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                          kgg+gk+ t  n +y la++gk  lli  dp+ ++ts l 
+  GCA_016700395.1_ASM1670039v1_562  7 VTNQKGGVGKTTTAINTAYYLAKMGKSTLLIDFDPQGNATSGLG 50
+                                      44679*********************************999774 PP
+
+>> GCA_016700395.1_ASM1670039v1_24  QQS70708.1 hypothetical protein IPP92_00140 [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.4   0.0   2.3e-05     0.011     149     198 ..     129     178 ..     124     182 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2.3e-05
+             trimmed_msa_bchX_hmm 149 dvvcggfglpiardlcqkvivvgsndlqslyvannvcsaveyfrklggnv 198
+                                       vv    gl  + + +   + v+s dl++ly+      a +yfr+l g  
+  GCA_016700395.1_ASM1670039v1_24 129 IVVQQTAGLDASSEASAVALCVASADLRALYMPTGPRAAHDYFRELRGLS 178
+                                      577777888888888889999*************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        962  (276424 residues searched)
+Passed MSV filter:                        44  (0.045738); expected 19.2 (0.02)
+Passed bias filter:                       36  (0.037422); expected 19.2 (0.02)
+Passed Vit filter:                         6  (0.00623701); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.002079); expected 0.0 (1e-05)
+Initial search space (Z):                962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7388.89
+//
+[ok]

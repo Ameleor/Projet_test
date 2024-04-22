@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721615.1_min17_bin64/GCA_928721615.1_min17_bin64_protein.faa
+# output directed to file:         results/GCA_928721615.1_min17_bin64/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0056   12.6   0.4     0.0059   12.5   0.4    1.0  1  GCA_928721615.1_min17_bin64_1035  DIPAGD_05280 TMhelix containing 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721615.1_min17_bin64_1035  DIPAGD_05280 TMhelix containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.4   3.9e-06    0.0059      51      93 ..      16      58 ..       4      60 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 3.9e-06
+              trimmed_msa_puhB_hmm 51 lwrvlaaladgeslsealasaalllalaavalallallawlsa 93
+                                      + +++ +  +g+++++a+++++++++l  +al++l+l+a +++
+  GCA_928721615.1_min17_bin64_1035 16 ISAAFGNNPEGMTFKHAIVGIVTMFVLLGLALGILWLIAAIVN 58
+                                      333444456899***************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       1523  (512873 residues searched)
+Passed MSV filter:                        65  (0.0426789); expected 30.5 (0.02)
+Passed bias filter:                       61  (0.0400525); expected 30.5 (0.02)
+Passed Vit filter:                         5  (0.00328299); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.0013132); expected 0.0 (1e-05)
+Initial search space (Z):               1523  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10701.95
+//
+[ok]

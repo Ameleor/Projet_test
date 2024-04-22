@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021582295.1_ASM2158229v1/GCA_021582295.1_ASM2158229v1_protein.faa
+# output directed to file:         results/GCA_021582295.1_ASM2158229v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00015   17.1   0.1    0.00017   17.0   0.1    1.1  1  GCA_021582295.1_ASM2158229v1_410   ILIDBA_02060 hypothetical protei
+  ------ inclusion threshold ------
+      0.012   10.8   0.1      0.026    9.8   0.1    1.5  1  GCA_021582295.1_ASM2158229v1_1161  ILIDBA_05930 Succinate dehydroge
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021582295.1_ASM2158229v1_410  ILIDBA_02060 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   1.9e-07   0.00017       3      39 ..      69     105 ..      67     148 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 1.9e-07
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39 
+                                       ++ viG+G  Gl++a  l  +G+ vt+ e+  + GG 
+  GCA_021582295.1_ASM2158229v1_410  69 SVAVIGSGPAGLSLATYLLRAGIDVTIYERASRAGGL 105
+                                       578********************************95 PP
+
+>> GCA_021582295.1_ASM2158229v1_1161  ILIDBA_05930 Succinate dehydrogenase flavoprotein subunit
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.1   2.9e-05     0.026       4      34 ..      10      40 ..       7      52 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 2.9e-05
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekld 34
+                                       ++v+GaG+ G aaa+ l+    +v vl kl+
+  GCA_021582295.1_ASM2158229v1_1161 10 VIVVGAGLAGNAAAMELQNSDKKVLVLTKLH 40
+                                       79************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1807  (510108 residues searched)
+Passed MSV filter:                        75  (0.0415053); expected 36.1 (0.02)
+Passed bias filter:                       68  (0.0376314); expected 36.1 (0.02)
+Passed Vit filter:                         8  (0.00442723); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00110681); expected 0.0 (1e-05)
+Initial search space (Z):               1807  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8628.70
+//
+[ok]

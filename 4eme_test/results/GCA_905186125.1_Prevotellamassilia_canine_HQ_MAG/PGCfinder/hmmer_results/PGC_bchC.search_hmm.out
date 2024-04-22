@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG/GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                              -----------
+    2.3e-08   30.4   0.0    2.2e-07   27.2   0.0    2.0  2  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973  BNIPPO_10330 Alcohol dehydrogena
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973  BNIPPO_10330 Alcohol dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0     0.012        24      26      88 ..      25      84 ..      18      99 .. 0.67
+   2 !   27.2   0.0   1.1e-10   2.2e-07     112     295 ..     131     329 ..     116     342 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.012
+                                   trimmed_msa_bchC_hmm 26 eedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveageesk.lkv 82
+                                                           ++d++v ++ s+i +     + +G++P+       +  G+e vG v e+ge+ k +k 
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 25 PKDALVRVTLSSICSSDL-HIKHGSVPRA---VLGITVGHEMVGVVEEVGEAVKtVKP 78
+                                                           566667777777765443.3445666543...33456699999999999987652678 PP
+
+                                   trimmed_msa_bchC_hmm 83 gervfv 88
+                                                           g+rv v
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 79 GDRVTV 84
+                                                           888877 PP
+
+  == domain 2  score: 27.2 bits;  conditional E-value: 1.1e-10
+                                   trimmed_msa_bchC_hmm 112 aarvvkvdeelgeegvlla..laatarhalagke..kkapdlivGhGvlGrllarl 163
+                                                            ++ + ++++++++e +ll   + at   a+  +e   + + li+G G  G      
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 131 DQGLNRIPDTVSNEQALLVgdVLATGFWATRISEitPEDTVLIIGAGPTGICTLLC 186
+                                                            455667888877776666434678888876555400556779********998889 PP
+
+                                   trimmed_msa_bchC_hmm 164 tvaagaeapvvWetnaaraega.egy.evidpeederrdy..........kaivda 207
+                                                            t+++  ++ +v e +a+r++   e y +v++   d+ rd+          ++++++
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 187 TLLQKPRRIIVCEASAERRRFVnEHYpSVLTVTPDDCRDFvckhsdhggaDVVIEV 242
+                                                            999999999*****999887551566457788888888872222222222356666 PP
+
+                                   trimmed_msa_bchC_hmm 208 sGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlrvaaewkkedla 263
+                                                            +G+++ +    +  ++++ + +  +y++p ++  p  + ++ +++     +  d a
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 243 AGAPTTFRLAWECARPNALVTVVALYDQPQQLPLPDMYGKNLTFKTG-GVDGCDCA 297
+                                                            6776666666677778889999**********************975.6899**** PP
+
+                                   trimmed_msa_bchC_hmm 264 avkalvesGrlsldglithrasaeeaeeayrt 295
+                                                            ++ +l+++G+++   lithr + +++eeayr 
+  GCA_905186125.1_Prevotellamassilia_canine_HQ_MAG_1973 298 EILQLIAEGKIDTTPLITHRFPLDRIEEAYRL 329
+                                                            ******************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2035  (750273 residues searched)
+Passed MSV filter:                        43  (0.0211302); expected 40.7 (0.02)
+Passed bias filter:                       37  (0.0181818); expected 40.7 (0.02)
+Passed Vit filter:                         5  (0.002457); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.0004914); expected 0.0 (1e-05)
+Initial search space (Z):               2035  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11278.78
+//
+[ok]

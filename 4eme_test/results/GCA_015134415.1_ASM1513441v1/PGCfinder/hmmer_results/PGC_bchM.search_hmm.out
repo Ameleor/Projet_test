@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchM.hmm
+# target sequence database:        data/genomes_unzip/GCA_015134415.1_ASM1513441v1/GCA_015134415.1_ASM1513441v1_protein.faa
+# output directed to file:         results/GCA_015134415.1_ASM1513441v1/PGCfinder/hmmer_results/PGC_bchM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchM_hmm  [M=228]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.3e-06   22.5   0.0    1.8e-06   22.0   0.0    1.2  1  GCA_015134415.1_ASM1513441v1_94   DMOBDC_00490 hypothetical protei
+     0.0046   10.9   0.0     0.0047   10.9   0.0    1.0  1  GCA_015134415.1_ASM1513441v1_363  DMOBDC_01985 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015134415.1_ASM1513441v1_94  DMOBDC_00490 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.0   0.0   9.7e-09   1.8e-06      61     108 ..      31      72 ..      22     110 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 22.0 bits;  conditional E-value: 9.7e-09
+             trimmed_msa_bchM_hmm  61 vlDaGCGtGalavelarrGaevvavDlsptlvelarerlpeklkagki 108
+                                       l+ GCGtG+l+ el +   +++a+D+ ++l++  +++ ++      i
+  GCA_015134415.1_ASM1513441v1_94  31 FLEIGCGTGQLTKELYKYTKNIIALDIDNNLIKKCKKKKNK------I 72 
+                                      5899****************************999887655......3 PP
+
+>> GCA_015134415.1_ASM1513441v1_363  DMOBDC_01985 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   2.5e-05    0.0047      59      99 ..      15      57 ..       4      70 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.5e-05
+              trimmed_msa_bchM_hmm 59 arvlDaGCGtGalavelarrGaev..vavDlsptlvelarerl 99
+                                      +r+lD G G+G++a+ + +   ++  +++D     ++la+   
+  GCA_015134415.1_ASM1513441v1_363 15 KRILDLGTGSGVIAISISKYCPNIyiLGIDRNILCIKLAKYNS 57
+                                      79*************9999877652267777777777777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (228 nodes)
+Target sequences:                        380  (55227 residues searched)
+Passed MSV filter:                         6  (0.0157895); expected 7.6 (0.02)
+Passed bias filter:                        6  (0.0157895); expected 7.6 (0.02)
+Passed Vit filter:                         2  (0.00526316); expected 0.4 (0.001)
+Passed Fwd filter:                         2  (0.00526316); expected 0.0 (1e-05)
+Initial search space (Z):                380  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3586.72
+//
+[ok]

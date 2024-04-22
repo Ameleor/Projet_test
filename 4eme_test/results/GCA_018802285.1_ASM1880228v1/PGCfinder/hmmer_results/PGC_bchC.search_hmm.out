@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_018802285.1_ASM1880228v1/GCA_018802285.1_ASM1880228v1_protein.faa
+# output directed to file:         results/GCA_018802285.1_ASM1880228v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-09   34.8   2.5    9.5e-09   31.8   2.5    2.1  1  GCA_018802285.1_ASM1880228v1_1817  QWL83614.1 2,3-butanediol dehydr
+    9.4e-06   22.0   0.0      8e-05   19.0   0.0    2.1  2  GCA_018802285.1_ASM1880228v1_68    QWL81865.1 Alcohol dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018802285.1_ASM1880228v1_1817  QWL83614.1 2,3-butanediol dehydrogenase [Streptococcus sp. ZB199]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.8   2.5   8.4e-12   9.5e-09      10     236 ..      11     273 ..       3     287 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 31.8 bits;  conditional E-value: 8.4e-12
+               trimmed_msa_bchC_hmm  10 kPeelalkrleltapeeedvvvdiewsgistGtekllwsGrm..Pe....fPGmgyPlvPGyesvGrvveagee.s 78 
+                                        + ++++++++e+ ++++++v v+++++gi     +   +G +  P+    + G   P+  G+e  G++ve+g++ +
+  GCA_018802285.1_ASM1880228v1_1817  11 AAKDVRIEEVEVPEVQPHQVKVAVKFTGICGTDLHEYLDGPIfiPTeehvYSGQKAPVTLGHEFSGEIVEVGSDvT 86 
+                                        568999***********************75444445566432242233399*******************99846 PP
+
+               trimmed_msa_bchC_hmm  79 klkvgervfvPG..a..kc...fe.....dvrglf..Ggaasrlvvpaarvvkvdeelg.eegvllalaatarhal 139
+                                        ++kvg+rv +    a  +    ++     +  gl   Gg a+  v +++ v  ++++l+ e+++l   aa a +a+
+  GCA_018802285.1_ASM1880228v1_1817  87 RVKVGDRVTIEPilAehNLigdYNldpnlNFVGLAadGGFAKYCVLDGDLVHVIPDSLSyEQAALTEPAAVAVYAV 162
+                                        79******985422211221112211111234443558999**************999747899999********* PP
+
+               trimmed_msa_bchC_hmm 140 agkekka..pdlivGhGvlGrllarltvaagaeapvvWetnaaraegae..gyevidpeederr..........dy 201
+                                         +++ k+  + +i G G +G l+     aaga++    e +++r+++ae  g  v++pee e              
+  GCA_018802285.1_ASM1880228v1_1817 163 RQSALKTgdTAVIFGLGPIGLLIVEALRAAGASKIYAVELSPERQAKAEelGAIVVRPEEGETVveaihrltggGA 238
+                                        99876652267899*******************************9998446678899887643111111111112 PP
+
+               trimmed_msa_bchC_hmm 202 kaivdasGdaevldkliarlakggeivlaGfyeep 236
+                                        ++ ++++G + vl + +a + k ge ++   +e++
+  GCA_018802285.1_ASM1880228v1_1817 239 DVSYEVTGVPVVLGQALAAVHKAGECMVVSIWERE 273
+                                        34456667777777777777777777776666655 PP
+
+>> GCA_018802285.1_ASM1880228v1_68  QWL81865.1 Alcohol dehydrogenase [Streptococcus sp. ZB199]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0     0.025        28      60      90 ..      55      86 ..      14     100 .. 0.69
+   2 !   19.0   0.0   7.1e-08     8e-05     205     308 ..     241     345 ..     164     347 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.025
+             trimmed_msa_bchC_hmm 60 PlvPGyesvGrvveagee.sklkvgervfvPG 90
+                                       + G+e +G v e+g++  ++kvg++v +  
+  GCA_018802285.1_ASM1880228v1_68 55 GTILGHEGIGIVEEVGDAvNNFKVGDKVIISC 86
+                                     45779*********998725789*****9865 PP
+
+  == domain 2  score: 19.0 bits;  conditional E-value: 7.1e-08
+             trimmed_msa_bchC_hmm 205 vdasGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlrvaaewkkedlaavkalvesGrlsldglith 282
+                                      ++  G ++ +d   + ++ gg i   G + +p+sf+    ++++ +l      + +    + ++++sG+++   lith
+  GCA_018802285.1_ASM1880228v1_68 241 MECVGYPATFDVCQNVISVGGHIANVGVHGKPVSFNLDDLWIKNITLNTGL-VNANTTEMLLNVLKSGKIDATKLITH 317
+                                      556678888888899999**************************9998654.4555566778999************* PP
+
+             trimmed_msa_bchC_hmm 283 rasaeeaeeayrt..afedpaClkmvld 308
+                                      + + +e+e+ay++     +++ lk++++
+  GCA_018802285.1_ASM1880228v1_68 318 HFKLSEVEKAYDVfkHAGENHALKVIIE 345
+                                      ***********86113356778888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2252  (560774 residues searched)
+Passed MSV filter:                        60  (0.026643); expected 45.0 (0.02)
+Passed bias filter:                       47  (0.0208703); expected 45.0 (0.02)
+Passed Vit filter:                         3  (0.00133215); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000888099); expected 0.0 (1e-05)
+Initial search space (Z):               2252  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7710.26
+//
+[ok]

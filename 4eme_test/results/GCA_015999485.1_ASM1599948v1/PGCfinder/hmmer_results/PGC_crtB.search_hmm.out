@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_015999485.1_ASM1599948v1/GCA_015999485.1_ASM1599948v1_protein.faa
+# output directed to file:         results/GCA_015999485.1_ASM1599948v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.018   13.1   2.4      0.028   12.5   2.4    1.2  1  GCA_015999485.1_ASM1599948v1_4659  KKFHAD_23820 ABC transporter per
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015999485.1_ASM1599948v1_4659  KKFHAD_23820 ABC transporter permease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   2.4   4.3e-06     0.028      72     163 ..     228     312 ..     192     314 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 4.3e-06
+               trimmed_msa_crtB_hmm  72 adapadralaavveefaipralpealleGfawDaegrryetledllaYaarVA...gaVGvmmalvmgvrdaevla 144
+                                        a  +  r l+a ++++++  +lp+++leG+a        + ++ lla +a VA   g VGvm  +vm+     v++
+  GCA_015999485.1_ASM1599948v1_4659 228 AARSLERYLRARLTQHEVDVQLPRQMLEGMAGQ-----SRVMSGLLAGTAAVAlllGGVGVMNVMVMN-----VVQ 293
+                                        44556778889999***************9853.....345666777777776555999999999997.....588 PP
+
+               trimmed_msa_crtB_hmm 145 RAcdLGvAmQLtNiaRDvg 163
+                                        R  ++Gv m L   aRD++
+  GCA_015999485.1_ASM1599948v1_4659 294 RRREIGVRMALGARARDIA 312
+                                        999**************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       6358  (1919803 residues searched)
+Passed MSV filter:                       268  (0.0421516); expected 127.2 (0.02)
+Passed bias filter:                      147  (0.0231205); expected 127.2 (0.02)
+Passed Vit filter:                        12  (0.00188739); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000157282); expected 0.1 (1e-05)
+Initial search space (Z):               6358  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 18245.81
+//
+[ok]

@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_014896945.1_ASM1489694v1/GCA_014896945.1_ASM1489694v1_protein.faa
+# output directed to file:         results/GCA_014896945.1_ASM1489694v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0063   11.5   0.0     0.0097   10.9   0.0    1.2  1  GCA_014896945.1_ASM1489694v1_1023  QOL20276.1 tRNA1(Val) (adenine(3
+     0.0087   11.1   0.0      0.011   10.8   0.0    1.2  1  GCA_014896945.1_ASM1489694v1_194   QOL19447.1 rRNA methyltransferas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014896945.1_ASM1489694v1_1023  QOL20276.1 tRNA1(Val) (adenine(37)-N6)-methyltransferase [Candidatus Paracaedibact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   1.6e-05    0.0097     189     257 ..      33     103 ..      26     111 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_crtF_hmm 189 lday.dlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflk 257
+                                        l+a+ + k+h+++l++G G Ga   a+a ++p+++++  ++  +++  ++++++a+g ++r +v++G++++
+  GCA_014896945.1_ASM1489694v1_1023  33 LAAFtPAKDHQTVLELGIGVGAASLALAFQHPNITIHGIEIQtDIIPITQKNIDANGWTNRFKVFSGNLTT 103
+                                        555415689***************************9999863799*********************9875 PP
+
+>> GCA_014896945.1_ASM1489694v1_194  QOL19447.1 rRNA methyltransferase [Candidatus Paracaedibacteraceae bacterium 'Lake 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.0   1.8e-05     0.011     174     224 ..      43      96 ..      22     175 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 1.8e-05
+              trimmed_msa_crtF_hmm 174 saLmaasqal..vaeevldaydlk.rhrrllDvGGGeGaFlaavaarapklklk 224
+                                       + Lm++  a    +++vl+ ++l+ +++++lD+G G G+ l av++r  +l+  
+  GCA_014896945.1_ASM1489694v1_194  43 TYLMSRMPATyaAISRVLQEIPLDaNVETVLDIGSGPGTGLWAVRERFDTLESY 96 
+                                       44666544430034689999999725799******************9999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1214  (391532 residues searched)
+Passed MSV filter:                        51  (0.0420099); expected 24.3 (0.02)
+Passed bias filter:                       35  (0.0288303); expected 24.3 (0.02)
+Passed Vit filter:                         7  (0.00576606); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00164745); expected 0.0 (1e-05)
+Initial search space (Z):               1214  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10198.05
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016406665.1_ASM1640666v1/GCA_016406665.1_ASM1640666v1_protein.faa
+# output directed to file:         results/GCA_016406665.1_ASM1640666v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.1e-07   24.8   0.0    8.2e-07   24.3   0.0    1.2  1  GCA_016406665.1_ASM1640666v1_1606  QQF53595.1 ParA family protein [
+    2.3e-06   22.9   1.3    5.5e-06   21.6   0.5    2.0  2  GCA_016406665.1_ASM1640666v1_157   QQF53759.1 Mrp/NBP35 family ATP-
+     0.0012   13.9   0.1     0.0074   11.3   0.0    2.0  2  GCA_016406665.1_ASM1640666v1_565   QQF54042.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016406665.1_ASM1640666v1_1606  QQF53595.1 ParA family protein [Campylobacter coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.3   0.0     2e-09   8.2e-07      24      68 ..       4      49 ..       1      68 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 24.3 bits;  conditional E-value: 2e-09
+               trimmed_msa_bchX_hmm 24 iiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                       ii+i   kgg+gk+ t  nl+  la   kkvlli  dp++++t+ l
+  GCA_016406665.1_ASM1640666v1_1606  4 IITIAnQKGGVGKTTTAVNLAASLAVAEKKVLLIDVDPQANATTGL 49
+                                       67764269*******************************9876543 PP
+
+>> GCA_016406665.1_ASM1640666v1_157  QQF53759.1 Mrp/NBP35 family ATP-binding protein [Campylobacter coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.6   0.5   1.3e-08   5.5e-06      19      62 ..      95     138 ..      79     212 .. 0.81
+   2 ?   -1.3   0.0      0.13        54     210     236 ..     283     309 ..     277     315 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 21.6 bits;  conditional E-value: 1.3e-08
+              trimmed_msa_bchX_hmm  19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62 
+                                       + +  i+   gkgg+gks t  nl+  +a++gk+v ++  d   
+  GCA_016406665.1_ASM1640666v1_157  95 QVKNFIMVSSGKGGVGKSTTTVNLAISMAKMGKRVGILDADIYG 138
+                                       4556688889*************************999888654 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.13
+              trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedir 236
+                                       g g a+ +a+a    vla ip +  +r
+  GCA_016406665.1_ASM1640666v1_157 283 GKGTAEDMAKAYKSEVLAQIPIEMIVR 309
+                                       789999999999999*****9876665 PP
+
+>> GCA_016406665.1_ASM1640666v1_565  QQF54042.1 signal recognition particle-docking protein FtsY [Campylobacter coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   1.8e-05    0.0074      26      60 ..      87     121 ..      74     138 .. 0.91
+   2 ?   -0.0   0.0     0.052        22     198     226 ..     228     259 ..     220     269 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.8e-05
+              trimmed_msa_bchX_hmm  26 aiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        i g  g gk+ ++a+l+ +   qg+kv+l  cd 
+  GCA_016406665.1_ASM1640666v1_565  87 LILGVNGAGKTTSIAKLANLYKSQGQKVILGACDT 121
+                                       58899****************************96 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 0.052
+              trimmed_msa_bchX_hmm 198 vgvaglvinkddgtgeaqa...faeavgipvl 226
+                                       v + g++i k dgt +  a   +a++ ++p+l
+  GCA_016406665.1_ASM1640666v1_565 228 VQLDGVIITKLDGTAKGGAlfsIARELELPIL 259
+                                       67789********9776552125778888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1251  (352134 residues searched)
+Passed MSV filter:                        52  (0.0415667); expected 25.0 (0.02)
+Passed bias filter:                       42  (0.0335731); expected 25.0 (0.02)
+Passed Vit filter:                         9  (0.00719424); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00239808); expected 0.0 (1e-05)
+Initial search space (Z):               1251  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12199.51
+//
+[ok]

@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014931515.1_ASM1493151v1/GCA_014931515.1_ASM1493151v1_protein.faa
+# output directed to file:         results/GCA_014931515.1_ASM1493151v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.6e-05   18.6   2.0     0.0007   14.7   0.4    2.2  2  GCA_014931515.1_ASM1493151v1_1042  QOR27590.1 dihydrolipoyl dehydro
+    8.1e-05   17.8   2.9      0.017   10.1   0.4    2.2  2  GCA_014931515.1_ASM1493151v1_30    QOR28256.1 glutathione-disulfide
+    0.00014   17.0   1.1     0.0016   13.5   0.2    2.3  2  GCA_014931515.1_ASM1493151v1_1457  QOR27888.1 UbiH/UbiF/VisC/COQ6 f
+  ------ inclusion threshold ------
+      0.014   10.4   0.2      0.021    9.8   0.2    1.2  1  GCA_014931515.1_ASM1493151v1_548   QOR28619.1 succinate dehydrogena
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014931515.1_ASM1493151v1_1042  QOR27590.1 dihydrolipoyl dehydrogenase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.4   1.9e-06    0.0007       2      39 ..       6      43 ..       5      47 .. 0.93
+   2 !    3.1   0.1    0.0059       2.2       3      35 ..     177     209 ..     175     226 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.9e-06
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                       +++vv+G+G GG +aa r +  G++v ++e+  ++GG 
+  GCA_014931515.1_ASM1493151v1_1042  6 TQVVVLGSGPGGYSAAFRAADLGLEVVLVERYAEIGGV 43
+                                       5789********************************95 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.0059
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                        + +v+G G+ Gl +a   +  G ++tv+e  d+
+  GCA_014931515.1_ASM1493151v1_1042 177 TMLVVGGGIIGLEMAQVYSELGTKITVVEFADQ 209
+                                        578**************************9887 PP
+
+>> GCA_014931515.1_ASM1493151v1_30  QOR28256.1 glutathione-disulfide reductase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.4   4.4e-05     0.017       5      37 ..       9      41 ..       5      53 .. 0.87
+   2 !    7.8   0.1   0.00023     0.087       2      36 ..     171     205 ..     170     207 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4.4e-05
+             trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapG 37
+                                     + +G G GG+a+a++ ++ G +v+++ek++  G
+  GCA_014931515.1_ASM1493151v1_30  9 ISLGGGSGGIASAVQAAKFGKKVAIIEKRELGG 41
+                                     678*************************97544 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.00023
+             trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldap 36 
+                                      kkav++G G+ G+  a  l+a+G  +t++ ++d+p
+  GCA_014931515.1_ASM1493151v1_30 171 KKAVIVGGGYIGVEIAGVLNAHGTDTTIMVRRDKP 205
+                                      68*****************************9987 PP
+
+>> GCA_014931515.1_ASM1493151v1_1457  QOR27888.1 UbiH/UbiF/VisC/COQ6 family ubiquinone biosynthesis hydroxylase [Francis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.2   4.2e-06    0.0016       2      34 ..       8      40 ..       7      45 .. 0.93
+   2 ?    1.6   0.1     0.017       6.4     222     252 ..     117     147 ..     109     155 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 4.2e-06
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekld 34
+                                       k av++G G+ Gl++a+ l+++G++v+++e+++
+  GCA_014931515.1_ASM1493151v1_1457  8 KDAVIVGGGMVGLSLALALHQNGLQVALVEAKE 40
+                                       78***************************9875 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.017
+               trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedg 252
+                                         +v++l + i+++G e+  n+++++i+ +++
+  GCA_014931515.1_ASM1493151v1_1457 117 VIVEALLEKIRDTGIEIFANQKIHKIQRNGN 147
+                                        699***********************97765 PP
+
+>> GCA_014931515.1_ASM1493151v1_548  QOR28619.1 succinate dehydrogenase flavoprotein subunit [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.2   5.5e-05     0.021       3      32 ..       9      38 ..       7      54 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 5.5e-05
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlek 32
+                                       a+viGaG  Gl a+ +l++ G++++v+ k
+  GCA_014931515.1_ASM1493151v1_548  9 DAIVIGAGGAGLRASFQLSQSGFKTAVVSK 38
+                                      59*************************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1506  (435043 residues searched)
+Passed MSV filter:                        68  (0.0451527); expected 30.1 (0.02)
+Passed bias filter:                       52  (0.0345286); expected 30.1 (0.02)
+Passed Vit filter:                        16  (0.0106242); expected 1.5 (0.001)
+Passed Fwd filter:                         4  (0.00265604); expected 0.0 (1e-05)
+Initial search space (Z):               1506  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7950.71
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186135.1_ASM90518613v1/GCA_905186135.1_ASM90518613v1_protein.faa
+# output directed to file:         results/GCA_905186135.1_ASM90518613v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0047   13.6   0.5     0.0047   13.6   0.5    2.0  2  GCA_905186135.1_ASM90518613v1_40  EKBGNK_00255 Putative ABC-type s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186135.1_ASM90518613v1_40  EKBGNK_00255 Putative ABC-type sugar transport system permease component
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.2     0.032        87      58      94 ..      59      95 ..      46      97 .. 0.62
+   2 !   13.6   0.5   1.8e-06    0.0047      21     135 ..     144     252 ..     142     265 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.032
+              trimmed_msa_puhB_hmm 58 ladgeslsealasaalllalaavalallallawlsar 94
+                                      ++d + +s+ +++   ++a+++++ +l +++a+l +r
+  GCA_905186135.1_ASM90518613v1_40 59 MKDAQFWSSLFLTFKYVIAVVVLVNVLAFAIAYLLTR 95
+                                      4455555666666666666666666666666766655 PP
+
+  == domain 2  score: 13.6 bits;  conditional E-value: 1.8e-06
+              trimmed_msa_puhB_hmm  21 ilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsarttv 97 
+                                       i W ++P+ + la   ++v ++ +Y++++ ++ ++   ++     + + +a++  a + v l  +++  ++s+ t +
+  GCA_905186135.1_ASM90518613v1_40 144 ISWLSEPNKAFLALVLVSVWQLSGYMILIYVAGFMGL-SE-----DVMEAASIDGASGWVKLKHIIMPLMMSSITIC 214
+                                       78************************99988877766.33.....44555555555556666666666667788889 PP
+
+              trimmed_msa_puhB_hmm  98 YtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdg 135
+                                         +T  R  + + + Ls+t   P+ + e a+++ +++ 
+  GCA_905186135.1_ASM90518613v1_40 215 LFLTLSRAFMVYDVNLSLTAGAPYGTTEMAAMHVYEKA 252
+                                       99****************************99988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       2703  (883918 residues searched)
+Passed MSV filter:                       135  (0.0499445); expected 54.1 (0.02)
+Passed bias filter:                      111  (0.0410655); expected 54.1 (0.02)
+Passed Vit filter:                        14  (0.00517943); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000369959); expected 0.0 (1e-05)
+Initial search space (Z):               2703  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9330.76
+//
+[ok]

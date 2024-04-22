@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_020424365.1_ASM2042436v1/GCA_020424365.1_ASM2042436v1_protein.faa
+# output directed to file:         results/GCA_020424365.1_ASM2042436v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0027   13.9   0.0       0.61    6.2   0.0    2.2  2  GCA_020424365.1_ASM2042436v1_1730  BKGOBD_08895 heme ABC exporter A
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020424365.1_ASM2042436v1_1730  BKGOBD_08895 heme ABC exporter ATP-binding protein CcmA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0   0.00027      0.61      32      57 ..      32      57 ..      20      87 .. 0.85
+   2 !    5.4   0.0   0.00049       1.1      31      51 ..     269     289 ..     262     298 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00027
+               trimmed_msa_bchI_hmm 32 lvlGdrGtGkstavralaallPkika 57
+                                       l++G  G Gkst +r la + P+i+ 
+  GCA_020424365.1_ASM2042436v1_1730 32 LLIGPSGIGKSTFLRILAGFYPQIEG 57
+                                       78999******************974 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00049
+               trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaal 51 
+                                         l+ Gd GtGkst   al+ l
+  GCA_020424365.1_ASM2042436v1_1730 269 TLLTGDNGTGKSTFFSALTRL 289
+                                        5889***********999877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2226  (513466 residues searched)
+Passed MSV filter:                       133  (0.0597484); expected 44.5 (0.02)
+Passed bias filter:                      110  (0.049416); expected 44.5 (0.02)
+Passed Vit filter:                        23  (0.0103324); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000449236); expected 0.0 (1e-05)
+Initial search space (Z):               2226  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9657.41
+//
+[ok]

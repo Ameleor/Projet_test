@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484765.1_ASM2148476v1/GCA_021484765.1_ASM2148476v1_protein.faa
+# output directed to file:         results/GCA_021484765.1_ASM2148476v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.7e-09   34.2   0.8    5.9e-09   33.1   0.8    1.5  1  GCA_021484765.1_ASM2148476v1_2547  UIY28030.1 VWA domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484765.1_ASM2148476v1_2547  UIY28030.1 VWA domain-containing protein [Neorhizobium galegae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.8   1.2e-12   5.9e-09     399     512 ..     323     437 ..     314     447 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 33.1 bits;  conditional E-value: 1.2e-12
+               trimmed_msa_bchD_hmm 399 etttifvVDASGS.aAleRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvrak..raLagLpGG 471
+                                        ++ ++f++D SGS  A +RL   K A  lL ++     d+V++v++ G+ A  +L+pt +  r k   a+ +L  G
+  GCA_021484765.1_ASM2148476v1_2547 323 AANLVFLIDVSGSmNAPDRLPLLKSAFRLLVGKL-KPEDKVSIVTYAGN-AGTVLEPTSARERDKilAAIDNLRPG 396
+                                        56789********5599**********9999986.567*********97.66789***9999988334677899** PP
+
+               trimmed_msa_bchD_hmm 472 GgTPLAagleaalelaeaarrrGrtpllvlLtDGraNiald 512
+                                        G+T  A g++aa++la++a  +G    ++l tDG  N+  +
+  GCA_021484765.1_ASM2148476v1_2547 397 GSTAGAEGIDAAYRLARQAFIQGGVNRVMLATDGDFNVGVS 437
+                                        *************************************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4849  (1208091 residues searched)
+Passed MSV filter:                       302  (0.0622809); expected 97.0 (0.02)
+Passed bias filter:                       93  (0.0191792); expected 97.0 (0.02)
+Passed Vit filter:                         7  (0.0014436); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000206228); expected 0.0 (1e-05)
+Initial search space (Z):               4849  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 17850.90
+//
+[ok]

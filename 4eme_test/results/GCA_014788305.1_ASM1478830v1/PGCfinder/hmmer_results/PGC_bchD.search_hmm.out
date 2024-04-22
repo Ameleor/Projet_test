@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_014788305.1_ASM1478830v1/GCA_014788305.1_ASM1478830v1_protein.faa
+# output directed to file:         results/GCA_014788305.1_ASM1478830v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.2e-05   19.4   0.4    0.00011   18.7   0.4    1.3  1  GCA_014788305.1_ASM1478830v1_3593  QOD68363.1 MoxR family ATPase [V
+  ------ inclusion threshold ------
+      0.099    9.0   3.9       0.13    8.6   3.9    1.1  1  GCA_014788305.1_ASM1478830v1_2847  QOD71013.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014788305.1_ASM1478830v1_3593  QOD68363.1 MoxR family ATPase [Vibrio navarrensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.4   5.5e-08   0.00011      94     255 ..     106     299 ..      75     307 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 5.5e-08
+               trimmed_msa_bchD_hmm  94 AERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldldeialr... 164
+                                          R ++++ a + +a+ eg+v+     ++  l+  f ++a  + +e++   +lpea ldR  l+l++d    +   
+  GCA_014788305.1_ASM1478830v1_3593 106 INRAPAKVQAAMLEAMAEGQVTA--GRHTYPLPDLFLVMATQNPIEQEGtySLPEAQLDRFLLHLEVDFPDEDnel 179
+                                        56889999999999999996554..455688999999999999997775225899999999999998876655444 PP
+
+               trimmed_msa_bchD_hmm 165 ...dleelaa................eaedieaararlpkvtl.................eeealealvataaalG 204
+                                           +                      ++ +i aar+++ +v++                 +++  ++l+    ++G
+  GCA_014788305.1_ASM1478830v1_3593 180 ailR-----InrgeakgekavdkprvTQPEIFAARQAVLNVHMaetlerylvrlvmatraPQQYSDELAG-WITMG 249
+                                        4441.....1444445555555555577777777777777777777777777777777644444555544.34566 PP
+
+               trimmed_msa_bchD_hmm 205 idslRapllalraaralAalegrteveeedlalAarlvlapratrlpeeee 255
+                                        + s Ra +   r ara+A l+gr+ v+ +d+++ a  vl +r +   ++++
+  GCA_014788305.1_ASM1478830v1_3593 250 V-SPRATIALDRCARAHAWLSGRDYVTPADIQAMAYPVLRHRIMLSYQAQA 299
+                                        5.89*************************************9887666555 PP
+
+>> GCA_014788305.1_ASM1478830v1_2847  QOD71013.1 hypothetical protein IF132_20650 [Vibrio navarrensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   3.9   6.5e-05      0.13     255     313 ..     152     218 ..     141     249 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 6.5e-05
+               trimmed_msa_bchD_hmm 255 eeeaeeepeqepapppeeeeaeeee......eeeeeeeeeeealedvvleaak..aalpadllakla 313
+                                        +e++++epe+++++p+++++++++       e+++++++ee++ +dv+le++   a++ ++++++  
+  GCA_014788305.1_ASM1478830v1_2847 152 SEKDKNEPEKDKNEPEKDNNKDSDSknengkEDSKSSNSEEKSNTDVMLEVVDrvATMFENMWDSTI 218
+                                        344456666666655333322222233444467778888899999*****98623455555555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4062  (1258560 residues searched)
+Passed MSV filter:                       180  (0.0443131); expected 81.2 (0.02)
+Passed bias filter:                       77  (0.0189562); expected 81.2 (0.02)
+Passed Vit filter:                        11  (0.00270803); expected 4.1 (0.001)
+Passed Fwd filter:                         3  (0.000738552); expected 0.0 (1e-05)
+Initial search space (Z):               4062  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12584.99
+//
+[ok]

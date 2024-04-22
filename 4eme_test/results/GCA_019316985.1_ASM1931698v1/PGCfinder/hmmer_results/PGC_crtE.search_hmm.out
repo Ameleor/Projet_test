@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_019316985.1_ASM1931698v1/GCA_019316985.1_ASM1931698v1_protein.faa
+# output directed to file:         results/GCA_019316985.1_ASM1931698v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.024   12.6   0.1      0.025   12.5   0.1    1.0  1  GCA_019316985.1_ASM1931698v1_9107  ULT41808.1 efflux RND transporte
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019316985.1_ASM1931698v1_9107  ULT41808.1 efflux RND transporter permease subunit [Niabella sp. I65]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   2.9e-06     0.025      31      63 ..       2      34 ..       1      40 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 2.9e-06
+               trimmed_msa_crtE_hmm 31 vfpgGaRiRPrlclavaaacGdddpaladaaaa 63
+                                       v++ G+R+RP l+++ a+a G    a++  aaa
+  GCA_019316985.1_ASM1931698v1_9107  2 VYAAGQRLRPILMTSLAMALGALPIAMSLGAAA 34
+                                       6789*****************987777766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       8432  (1353372 residues searched)
+Passed MSV filter:                       174  (0.0206357); expected 168.6 (0.02)
+Passed bias filter:                      139  (0.0164848); expected 168.6 (0.02)
+Passed Vit filter:                        10  (0.00118596); expected 8.4 (0.001)
+Passed Fwd filter:                         1  (0.000118596); expected 0.1 (1e-05)
+Initial search space (Z):               8432  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 17926.02
+//
+[ok]

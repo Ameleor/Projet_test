@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693915.1_ASM1369391v1/GCA_013693915.1_ASM1369391v1_protein.faa
+# output directed to file:         results/GCA_013693915.1_ASM1369391v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00015   18.9   1.0    0.00022   18.3   1.0    1.2  1  GCA_013693915.1_ASM1369391v1_1757  QLQ24949.1 MAG: carotenoid 1,2-h
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693915.1_ASM1369391v1_1757  QLQ24949.1 MAG: carotenoid 1,2-hydratase [Dechloromonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   1.0   6.4e-08   0.00022      82     170 ..     198     288 ..     189     299 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 18.3 bits;  conditional E-value: 6.4e-08
+               trimmed_msa_crtC_hmm  82 veldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrf.dadGeveevea 155
+                                        v+l   + s +G++++D+ + +e l++d + WdW  ++l+dg a++ +  +  dg +l  a +   adG  e++ +
+  GCA_013693915.1_ASM1369391v1_1757 198 VTLAGKSRSVTGRAWLDHEWSSELLSDDAQGWDWIGVNLDDGsALMAFRLRDGDGGALWSAASWrRADGGSETLLP 273
+                                        6777778899********************************8889999999999999888887256777777777 PP
+
+               trimmed_msa_crtC_hmm 156 ppraklprtlWrver 170
+                                        ++ a  p+  Wr  r
+  GCA_013693915.1_ASM1369391v1_1757 274 AAVAFTPQRHWRSPR 288
+                                        777777778898776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3429  (1103264 residues searched)
+Passed MSV filter:                        73  (0.021289); expected 68.6 (0.02)
+Passed bias filter:                       59  (0.0172062); expected 68.6 (0.02)
+Passed Vit filter:                         1  (0.00029163); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.00029163); expected 0.0 (1e-05)
+Initial search space (Z):               3429  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14760.07
+//
+[ok]

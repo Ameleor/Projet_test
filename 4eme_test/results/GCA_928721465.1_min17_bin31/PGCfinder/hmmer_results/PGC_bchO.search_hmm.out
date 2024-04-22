@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721465.1_min17_bin31/GCA_928721465.1_min17_bin31_protein.faa
+# output directed to file:         results/GCA_928721465.1_min17_bin31/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.6e-09   34.0   0.0      2e-07   27.2   0.0    2.0  2  GCA_928721465.1_min17_bin31_258   JMOLFG_01335 Hydrolase-4 domain-
+    1.8e-08   30.6   0.0    0.00018   17.5   0.0    2.1  2  GCA_928721465.1_min17_bin31_1371  JMOLFG_07040 Proline iminopeptid
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721465.1_min17_bin31_258  JMOLFG_01335 Hydrolase-4 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.0   2.2e-10     2e-07      24     126 ..      63     166 ..      54     204 .. 0.85
+   2 !    5.1   0.0    0.0011         1     224     253 ..     204     233 ..     192     258 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 2.2e-10
+             trimmed_msa_bchO_hmm  24 lrWhvqelgegPvlLLlHGtGasthswr.dllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgv 100
+                                      + W+ +   + P++L+ HG  +   +++ +++  L + ++v++p   g + t  + +++   +  a+a   L ++lg 
+  GCA_928721465.1_min17_bin31_258  63 MCWYAKGNPDKPAILFFHGNAGQIATFSlQMAAYLREGYSVMMPEYRGFASTPGEFSQENIYRDGAAAYDFLHRQLGH 140
+                                      5688888889*********887666665368899******************************************** PP
+
+             trimmed_msa_bchO_hmm 101 epavvvGHSAGaaialrlaldgkiap 126
+                                      +  ++ G S Gaa a+ +a+++ ++ 
+  GCA_928721465.1_min17_bin31_258 141 SDIIIFGYSMGAAAAAAVAAQRPAQG 166
+                                      *****************999987665 PP
+
+  == domain 2  score: 5.1 bits;  conditional E-value: 0.0011
+             trimmed_msa_bchO_hmm 224 klktplllivgekDravppkearevaallp 253
+                                       +++pl++++g++Dr +pp++ + +  l p
+  GCA_928721465.1_min17_bin31_258 204 MFRKPLFIVHGAEDRLIPPSHGKALYGLSP 233
+                                      5789****************9988877664 PP
+
+>> GCA_928721465.1_min17_bin31_1371  JMOLFG_07040 Proline iminopeptidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0     2e-07   0.00018      23     122 ..      20     123 ..      16     140 .. 0.72
+   2 !   10.9   0.0     2e-05     0.017     218     266 ..     238     287 ..     232     294 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 2e-07
+              trimmed_msa_bchO_hmm  23 glrWhvqelge..gPvlLLlHG.tGasth.swrdllplLaarfrviapDLPghgftesaaeerlsLp...gmaeala 92 
+                                       g++ + q++g+  g  +L+ HG  G+s+  s  + + l +++ rvi+ D  g g +++  e+ +sL+   ++ ++ +
+  GCA_928721465.1_min17_bin31_1371  20 GHEIYYQQMGNpkGEPVLFFHGgPGGSCKdSHGNYFNL-KKQ-RVIMFDQRGCGRSKT--EDIISLNdtkRLVKDAN 92 
+                                       66667899**9996677888873466665166666655.444.7*****877776655..56666651115666778 PP
+
+              trimmed_msa_bchO_hmm  93 aLlaalgve.pavvvGHSAGaaialrlaldg 122
+                                       +Ll+ l++  p +v+G S G+++al +a + 
+  GCA_928721465.1_min17_bin31_1371  93 RLLEYLNICePVTVAGGSWGSTLALLFAEKY 123
+                                       8******97699************9988765 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 2e-05
+              trimmed_msa_bchO_hmm 218 llrdlpklkt.plllivgekDravppkearevaallpkarlveleglGHL 266
+                                       +l++++k+++ p+l+++ + D   p+k a ++ + l++a+++ + +lGH+
+  GCA_928721465.1_min17_bin31_1371 238 ILKNIEKIENiPTLIVHNRLDMCCPLKGAWDLYRSLNNAEIEIIADLGHV 287
+                                       56677777764788888999*****************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1791  (587476 residues searched)
+Passed MSV filter:                        38  (0.0212172); expected 35.8 (0.02)
+Passed bias filter:                       30  (0.0167504); expected 35.8 (0.02)
+Passed Vit filter:                         3  (0.00167504); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111669); expected 0.0 (1e-05)
+Initial search space (Z):               1791  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8115.36
+//
+[ok]

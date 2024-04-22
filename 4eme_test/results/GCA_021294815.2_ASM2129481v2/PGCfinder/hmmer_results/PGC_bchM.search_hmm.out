@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchM.hmm
+# target sequence database:        data/genomes_unzip/GCA_021294815.2_ASM2129481v2/GCA_021294815.2_ASM2129481v2_protein.faa
+# output directed to file:         results/GCA_021294815.2_ASM2129481v2/PGCfinder/hmmer_results/PGC_bchM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchM_hmm  [M=228]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.7e-11   37.7   0.0    7.9e-11   37.3   0.0    1.4  1  GCA_021294815.2_ASM2129481v2_465  UPA28148.1 MAG: peptide chain re
+    4.1e-08   28.4   0.1    1.1e-07   27.0   0.1    1.6  2  GCA_021294815.2_ASM2129481v2_161  UPA28610.1 MAG: 50S ribosomal pr
+     0.0003   15.8   0.0    0.00039   15.4   0.0    1.2  1  GCA_021294815.2_ASM2129481v2_310  UPA28756.1 MAG: RsmD family RNA 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021294815.2_ASM2129481v2_465  UPA28148.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Verr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.0   3.1e-13   7.9e-11      47     128 ..     101     186 ..      97     270 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 3.1e-13
+              trimmed_msa_bchM_hmm  47 tllswlPedl..tgarvlDaGCGtGalavelarr..GaevvavDlsptlvelarerlpeklkagkiefragDmldp. 118
+                                        l++wl ++   + + +lD G G+Ga+a+ la++   a+vvavD+sp+ +e+a+e + +++  ++i+f ++D +++ 
+  GCA_021294815.2_ASM2129481v2_465 101 FLVDWLCTQQvqQPKTILDLGTGSGAIAIALANHfpEAQVVAVDISPDALEVAQENARHHQ-ISNIHFIVSDWFKNi 176
+                                       5777876543114568****************97557******************988766.59********99862 PP
+
+              trimmed_msa_bchM_hmm 119 alGefdhvva 128
+                                          +fd ++a
+  GCA_021294815.2_ASM2129481v2_465 177 PQQRFDWIIA 186
+                                       4678999998 PP
+
+>> GCA_021294815.2_ASM2129481v2_161  UPA28610.1 MAG: 50S ribosomal protein L11 methyltransferase [Verrucomicrobiota bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0      0.31        79       8      24 ..      38      54 ..      33      60 .. 0.84
+   2 !   27.0   0.1   4.3e-10   1.1e-07      54     127 ..     144     217 ..     137     239 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.31
+              trimmed_msa_bchM_hmm  8 eletYfdrtaadaWakL 24
+                                      +l  Yfd     aW +L
+  GCA_021294815.2_ASM2129481v2_161 38 QLCGYFDENYEPAWVEL 54
+                                      6778**********998 PP
+
+  == domain 2  score: 27.0 bits;  conditional E-value: 4.3e-10
+              trimmed_msa_bchM_hmm  54 edltgarvlDaGCGtGalavelarrG.aevvavDlsptlvelarerlpeklkagkiefragDmldpalGefdhvv 127
+                                       +dl  ++ +D GCG+G l++ +a+ G a v + D+ p+ ++++r+ +  +++   iefr++D+ +  lG+   ++
+  GCA_021294815.2_ASM2129481v2_161 144 KDLFLKQAIDVGCGSGILSIAAAKLGfAGVYGFDIDPDAIQVSRSNAVLNET-PGIEFRTADLKAGILGRQGDLI 217
+                                       68888899*****************9889**************999887766.88********999999865444 PP
+
+>> GCA_021294815.2_ASM2129481v2_310  UPA28756.1 MAG: RsmD family RNA methyltransferase [Verrucomicrobiota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   1.5e-06   0.00039      35      81 ..      19      65 ..      12     119 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.5e-06
+              trimmed_msa_bchM_hmm 35 atvraGrdemretllswlPedltgarvlDaGCGtGalavelarrGae 81
+                                      +t r   d +r++++s l e + g+r lD   G G   +e+ +rGa+
+  GCA_021294815.2_ASM2129481v2_310 19 DTLRPATDYLRQAVFSSLGERVIGQRFLDLFSGVGGYGLEAWSRGAQ 65
+                                      5889999***************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (228 nodes)
+Target sequences:                        770  (270057 residues searched)
+Passed MSV filter:                        35  (0.0454545); expected 15.4 (0.02)
+Passed bias filter:                       28  (0.0363636); expected 15.4 (0.02)
+Passed Vit filter:                         7  (0.00909091); expected 0.8 (0.001)
+Passed Fwd filter:                         3  (0.0038961); expected 0.0 (1e-05)
+Initial search space (Z):                770  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9764.77
+//
+[ok]

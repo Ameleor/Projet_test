@@ -1,0 +1,125 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_018394295.1_ASM1839429v1/GCA_018394295.1_ASM1839429v1_protein.faa
+# output directed to file:         results/GCA_018394295.1_ASM1839429v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-05   21.8   0.2    1.9e-05   21.2   0.2    1.3  1  GCA_018394295.1_ASM1839429v1_2698  QVK17881.1 ParA family protein [
+    1.6e-05   21.3   0.1      0.017   11.4   0.0    2.1  2  GCA_018394295.1_ASM1839429v1_76    QVK18209.1 ATP-binding protein [
+    4.8e-05   19.8   0.1    8.2e-05   19.0   0.1    1.3  1  GCA_018394295.1_ASM1839429v1_954   QVK19028.1 P-loop NTPase [Mycopl
+     0.0011   15.4   0.0     0.0029   13.9   0.0    1.7  2  GCA_018394295.1_ASM1839429v1_79    QVK18212.1 P-loop NTPase [Mycopl
+     0.0016   14.8   0.1     0.0017   14.7   0.1    1.1  1  GCA_018394295.1_ASM1839429v1_1947  QVK17180.1 CpsD/CapB family tyro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018394295.1_ASM1839429v1_2698  QVK17881.1 ParA family protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.2   3.1e-08   1.9e-05      23      66 ..       3      47 ..       1      62 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 3.1e-08
+               trimmed_msa_bchX_hmm 23 qiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                       +iiai   kgg+gk+ t  nl+  l + g kvl+i  dp+ ++t+
+  GCA_018394295.1_ASM1839429v1_2698  3 KIIAIAnQKGGVGKTTTSINLAASLNRLGDKVLIIDIDPQGNATT 47
+                                       689996269*******************************98876 PP
+
+>> GCA_018394295.1_ASM1839429v1_76  QVK18209.1 ATP-binding protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.1    0.0003      0.18      21     120 ..       5     106 ..       1     117 [. 0.66
+   2 !   11.4   0.0   2.8e-05     0.017     202     265 ..     216     280 ..     183     283 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.0003
+             trimmed_msa_bchX_hmm  21 etqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggk...acptiietssk.kklageevkig 94 
+                                      + +i  + gkgg+gk++   nl    a   k  + i cd       l++  k   + p  i+  s  k l+    k  
+  GCA_018394295.1_ASM1839429v1_76   5 NKKIAVLSGKGGTGKTLVSVNL----AASAKDAVYIDCDVEEPNGHLFLKPKdieSEPISIKIPSVdKSLCDGCRKCV 78 
+                                      56777889*******9876665....78899999*****998888888777622244666666554044444445666 PP
+
+             trimmed_msa_bchX_hmm  95 dvcfkr..dgvfamelggpevgrgcggr 120
+                                      d c  +    ++   +   ev   cgg 
+  GCA_018394295.1_ASM1839429v1_76  79 DFCKFNalAYIYNRLIVFEEVCHSCGGC 106
+                                      7774330133455556666777777775 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 2.8e-05
+             trimmed_msa_bchX_hmm 202 glvinkd.dgtgeaqafaeavgipvlaaipadedirrksanyeiigkpesewgslfeelaenvae 265
+                                      g+++nk  ++   a+ f+ + gi +l  ip d+++    +n ++  ++++e+ ++f++l +++++
+  GCA_018394295.1_ASM1839429v1_76 216 GVILNKClESENPAEKFCIEKGIKILGKIPFDNQLGILNSNAKVAVRENEEYKDIFSTLLQKITK 280
+                                      789999735556799*******************************************9998875 PP
+
+>> GCA_018394295.1_ASM1839429v1_954  QVK19028.1 P-loop NTPase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.1   1.4e-07   8.2e-05      17      59 ..      92     135 ..      77     141 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 1.4e-07
+              trimmed_msa_bchX_hmm  17 evtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                       + +k+ + i i  gkgg+gks   anl+  +a+ g+kv li  d
+  GCA_018394295.1_ASM1839429v1_954  92 DKEKKVRYIGIaSGKGGVGKSTITANLAVTFAKLGHKVGLIDAD 135
+                                       3455666666636****************************988 PP
+
+>> GCA_018394295.1_ASM1839429v1_79  QVK18212.1 P-loop NTPase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   4.8e-06    0.0029       6      61 ..      22      77 ..      17     103 .. 0.76
+   2 ?   -2.1   0.0      0.37   2.2e+02     214     235 ..     228     249 ..     172     274 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 4.8e-06
+             trimmed_msa_bchX_hmm  6 aaeepdavatgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpk 61
+                                      +++ ++ +++ ++ +  i  + gkgg+gks+  + l+ m+ ++  k  ++  d  
+  GCA_018394295.1_ASM1839429v1_79 22 PKTDFSEKPHELSKIKKVIGVVSGKGGVGKSLVTSMLAVMMNRRDYKTAILDADVT 77
+                                     55555555555555555566789********************9999888877765 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.37
+             trimmed_msa_bchX_hmm 214 aqafaeavgipvlaaipadedi 235
+                                       + +a++ ++ vla +p d +i
+  GCA_018394295.1_ASM1839429v1_79 228 IEEIAKKHNVDVLAKLPIDSKI 249
+                                      3344555555555555555554 PP
+
+>> GCA_018394295.1_ASM1839429v1_1947  QVK17180.1 CpsD/CapB family tyrosine-protein kinase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   2.9e-06    0.0017      22     145 ..      31     160 ..      13     215 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.9e-06
+               trimmed_msa_bchX_hmm  22 tqiiaiygk....ggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacptiietsskkklageevki 93 
+                                         +ii +y          k+ t +n++ m a++ k+vlli  d +  +    f  k+   i +      + ge++ i
+  GCA_018394295.1_ASM1839429v1_1947  31 DKIIKVYNItstvANEAKTTTACNMAIMSANKNKRVLLIDLDLRNPSIHRAFTIKNQSGITDMLIDFMKNGENIDI 106
+                                        4566666541111345799999******************************************99999*****99 PP
+
+               trimmed_msa_bchX_hmm  94 gdvc..fkrdgvfamelggpevgrg.cggrgiihgfelleklgfhdwdfdyvlld 145
+                                        ++    +k++ +   +l    vg        i+   ++ e + f + dfd v++d
+  GCA_018394295.1_ASM1839429v1_1947 107 NQYTqlIKHNNII-NQLYVIPVGTEvINPTEILSSKKIKELINFLKKDFDEVIID 160
+                                        9764213444443.34444444443144556666666666677777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3036  (913463 residues searched)
+Passed MSV filter:                       124  (0.0408432); expected 60.7 (0.02)
+Passed bias filter:                      100  (0.0329381); expected 60.7 (0.02)
+Passed Vit filter:                        13  (0.00428195); expected 3.0 (0.001)
+Passed Fwd filter:                         5  (0.0016469); expected 0.0 (1e-05)
+Initial search space (Z):               3036  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10577.76
+//
+[ok]

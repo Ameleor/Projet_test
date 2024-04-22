@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_018399075.1_ASM1839907v1/GCA_018399075.1_ASM1839907v1_protein.faa
+# output directed to file:         results/GCA_018399075.1_ASM1839907v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00016   17.3   3.9    0.00016   17.3   3.9    2.4  2  GCA_018399075.1_ASM1839907v1_822  QVL58293.1 MAG: MFS transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018399075.1_ASM1839907v1_822  QVL58293.1 MAG: MFS transporter [Simkaniaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.0   4.6    0.0082        14     324     400 ..      79     156 ..      48     179 .. 0.72
+   2 !   17.3   3.9   9.2e-08   0.00016     309     406 ..     322     419 ..     299     434 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.0082
+              trimmed_msa_lhaA_hmm 324 iGilafslvifaaplesallfrl.gavliGlggGlfavgtltaamalaeeeesGlalGaWGavqataaGlaialgGa 399
+                                       +G++ f+l  + a+l+s+ ++ + + +  G+g  +++++      +   eee+G a+G+W +        + +lgG+
+  GCA_018399075.1_ASM1839907v1_822  79 LGLFIFALSCLGAALSSTPFWLIvARAFQGVGFAMLMTTSQALLTHAFPEEEHGKAMGIWATLAGVGLVFGPFLGGI 155
+                                       68888888889999988766544044555666666554444444444567888999999966655555555555555 PP
+
+              trimmed_msa_lhaA_hmm 400 l 400
+                                       +
+  GCA_018399075.1_ASM1839907v1_822 156 I 156
+                                       4 PP
+
+  == domain 2  score: 17.3 bits;  conditional E-value: 9.2e-08
+              trimmed_msa_lhaA_hmm 309 argadalrlaalGlliGilafslvifaaplesallfrlgavliGlggGlfavgtltaamalaeeeesGlalGaWGav 385
+                                       ++ +d+ +l   Gll+  +   + +f    +s++l+++g +  G+g  lf +      ++   +++sG+a Ga  ++
+  GCA_018399075.1_ASM1839907v1_822 322 GDRIDKQKLIPSGLLFVFIFALIFLFIGNSTSMILICIGLIFFGIGQALFWAPGTSLGISALPRSQSGVASGAITTI 398
+                                       55677788888888875554456688899999******************98888888888999************* PP
+
+              trimmed_msa_lhaA_hmm 386 qataaGlaialgGalrdvvse 406
+                                       q t   ++ial+G++  v+++
+  GCA_018399075.1_ASM1839907v1_822 399 QETGGSVGIALAGTIFRVTEK 419
+                                       *************99766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       1758  (593183 residues searched)
+Passed MSV filter:                        87  (0.0494881); expected 35.2 (0.02)
+Passed bias filter:                       33  (0.0187713); expected 35.2 (0.02)
+Passed Vit filter:                         6  (0.00341297); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000568828); expected 0.0 (1e-05)
+Initial search space (Z):               1758  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13299.48
+//
+[ok]

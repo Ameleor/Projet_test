@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023169805.1_ASM2316980v1/GCA_023169805.1_ASM2316980v1_protein.faa
+# output directed to file:         results/GCA_023169805.1_ASM2316980v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.9e-42  141.7   8.2    6.8e-42  141.5   8.2    1.0  1  GCA_023169805.1_ASM2316980v1_5402  BCM93575.1 tryptophan-rich prote
+      4e-23   80.5  20.7    5.3e-23   80.1  20.7    1.0  1  GCA_023169805.1_ASM2316980v1_2978  BCM91151.1 tryptophan-rich prote
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023169805.1_ASM2316980v1_5402  BCM93575.1 tryptophan-rich protein TspO [Abditibacteriota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  141.5   8.2   2.1e-45   6.8e-42       7     150 ..      45     192 ..      39     193 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 141.5 bits;  conditional E-value: 2.1e-45
+               trimmed_msa_tspO_hmm   7 laavlvavlggalte...lgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaa.aaelllalfal 78 
+                                        ++a +++++ g +t+    + wy++L+kP+w+PP+ +Fg++W v+++l+avaa+++w + e+++ +++++l+ + +
+  GCA_023169805.1_ASM2316980v1_5402  45 ALAQVIGGAPGFVTTksiKDGWYDRLDKPKWTPPNSIFGPIWGVLFVLMAVAAWRVWLKREENReETKTALTWWGV 120
+                                        556667777777776233479************************************87766551567889999** PP
+
+               trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNp 150
+                                        +  ln+ WsllfF+ r++++a +e+++LW s+++++  lwr +++a+ l++PYl+W+s+A+a+ +s++++N+
+  GCA_023169805.1_ASM2316980v1_5402 121 QLGLNAGWSLLFFGARKPKLACLELLALWGSIVLTMRLLWRRDQMAGALFVPYLAWTSFAMAVSASIAWRNK 192
+                                        ********************************************************************9997 PP
+
+>> GCA_023169805.1_ASM2316980v1_2978  BCM91151.1 tryptophan-rich protein TspO [Abditibacteriota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1  20.7   1.7e-26   5.3e-23      17     149 ..      42     174 ..      26     176 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 1.7e-26
+               trimmed_msa_tspO_hmm  17 galtelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFr 92 
+                                          +  +g+wy sL kP w P   +F +v  +i++l++va ++ w ++++aa+++++l  f+++ +l+++Ws  fF 
+  GCA_023169805.1_ASM2316980v1_2978  42 CSVLGTGNWYGSLIKPLWAPMLGVFAPVQVLIFVLTGVALAYLWASQTGAANKRVVLFWFWTQCALSLAWSFCFFV 117
+                                        3456789*************************************9999999999999999**************** PP
+
+               trimmed_msa_tspO_hmm  93 lrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                        l+ + w+ + v++LW++++al+ +  r+s+ a ++l P + Wv++   L +++++ N
+  GCA_023169805.1_ASM2316980v1_2978 118 LHSPAWSYAAVMILWCAIVALMWTGSRLSRRAFWFLTPLFFWVTFTSSLTFAILSFN 174
+                                        *****************************************************9988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       6384  (2209070 residues searched)
+Passed MSV filter:                       268  (0.0419799); expected 127.7 (0.02)
+Passed bias filter:                      116  (0.0181704); expected 127.7 (0.02)
+Passed Vit filter:                         8  (0.00125313); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000313283); expected 0.1 (1e-05)
+Initial search space (Z):               6384  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18111.84
+//
+[ok]

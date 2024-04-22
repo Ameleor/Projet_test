@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023586685.2_ASM2358668v2/GCA_023586685.2_ASM2358668v2_protein.faa
+# output directed to file:         results/GCA_023586685.2_ASM2358668v2/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.7e-08   31.5   0.8    2.6e-08   30.8   0.8    1.2  1  GCA_023586685.2_ASM2358668v2_3705  URJ42843.1 MoxR family ATPase [P
+  ------ inclusion threshold ------
+      0.025   11.1   0.0       0.04   10.4   0.0    1.2  1  GCA_023586685.2_ASM2358668v2_1595  URJ41042.2 sigma 54-interacting 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023586685.2_ASM2358668v2_3705  URJ42843.1 MoxR family ATPase [Paenibacillus polymyxa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.8   0.8   1.2e-11   2.6e-08      88     257 ..     105     296 ..      99     305 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.8 bits;  conditional E-value: 1.2e-11
+               trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegl..eedealpeaLldRlalrldldei 161
+                                        +l++    R ++++ + l ++++e++  +  dg +++l+  f+l a  + +  e   +lpea ldR  l++ l   
+  GCA_023586685.2_ASM2358668v2_3705 105 ILLADEINRATTKTQSALLEVMEERS--VTVDGDTHMLPHPFMLCATQNPIdfEGTYMLPEAQLDRFMLKISLGYP 178
+                                        5666667899***************6..6778888999999*******99933444679**************988 PP
+
+               trimmed_msa_bchD_hmm 162 alrdleelaa...............eaedieaararlpkvtleeealealvataaalG.......idslRapllal 215
+                                         +++ +++                 ++e+i++ +++++ + ++e++ + l  + +a+         +s Ra+l  +
+  GCA_023586685.2_ASM2358668v2_3705 179 DMETERNMLLhhqagqpadrleavaHMEQIADIQQEIRGIYMDEAVTSYLLDIVRATRehpsvllGASPRAALAFV 254
+                                        8875555555667777788888888999**************999998888776665411111114799******* PP
+
+               trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                         aa+a A l++r+ v  +d+++ a  vl++r    pe++ + 
+  GCA_023586685.2_ASM2358668v2_3705 255 MAAKAYAFLDNRDYVLPDDVKALAPYVLTHRLLLRPEARLDS 296
+                                        *********************************999987766 PP
+
+>> GCA_023586685.2_ASM2358668v2_1595  URJ41042.2 sigma 54-interacting transcriptional regulator [Paenibacillus polymyxa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   1.8e-05      0.04      71     199 ..     157     285 ..     152     314 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 1.8e-05
+               trimmed_msa_bchD_hmm  71 agrpvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedealpe 146
+                                        +g  + ++GL+++adgg+l+l    Rl+++   ++   +d+++   ++ g + r+  +  l++    ++++ ++ +
+  GCA_023586685.2_ASM2358668v2_1595 157 TGADHEKAGLVEKADGGILFLDEIHRLPPEGQEMIFYFMDTHT--YNKLGETDRKRDASVLLIGATTEDPGSSMLK 230
+                                        5777899***********************************5..4555544444333333333445567788889 PP
+
+               trimmed_msa_bchD_hmm 147 aLldRlalrldldeialrdleelaaeaedi..eaararlpkvtleeealealvat 199
+                                        + + R+ +++++ +++ r +ee+    +++  ++a++  + +++e e+++al+  
+  GCA_023586685.2_ASM2358668v2_1595 231 TFIRRIPITINIPSLQERAIEEQMLILKHLfaNEANRVNKPIRIEPEVVRALIGS 285
+                                        999**************99999888666551144444556688888888888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4476  (1244392 residues searched)
+Passed MSV filter:                       177  (0.0395442); expected 89.5 (0.02)
+Passed bias filter:                       89  (0.0198838); expected 89.5 (0.02)
+Passed Vit filter:                         9  (0.00201072); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000446828); expected 0.0 (1e-05)
+Initial search space (Z):               4476  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 15000.02
+//
+[ok]

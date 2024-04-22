@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_019134715.1_ASM1913471v1/GCA_019134715.1_ASM1913471v1_protein.faa
+# output directed to file:         results/GCA_019134715.1_ASM1913471v1/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      0.007   12.1   0.1     0.0092   11.7   0.1    1.2  1  GCA_019134715.1_ASM1913471v1_580  QXF37456.1 short chain dehydroge
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019134715.1_ASM1913471v1_580  QXF37456.1 short chain dehydrogenase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   6.3e-06    0.0092      28      89 ..      80     142 ..      59     157 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 6.3e-06
+              trimmed_msa_pufM_hmm  28 eervgkalfskllGklgnaqiGpiylGllgvvslvfglialeiigln.mlasvnwdpvqfvrq 89 
+                                       ++  + +l++kllG++   qiG  y+   g  +l++g++ +e i++  ++a vn  +  fv+ 
+  GCA_019134715.1_ASM1913471v1_580  80 QQDWNLSLNNKLLGQINLVQIGSKYINDGGSFTLTSGILNFEPIAMGsIAATVNAGLEGFVKA 142
+                                       4556677899********************************999952667888888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       1472  (430841 residues searched)
+Passed MSV filter:                        74  (0.0502717); expected 29.4 (0.02)
+Passed bias filter:                       20  (0.013587); expected 29.4 (0.02)
+Passed Vit filter:                         2  (0.0013587); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000679348); expected 0.0 (1e-05)
+Initial search space (Z):               1472  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 19198.24
+//
+[ok]

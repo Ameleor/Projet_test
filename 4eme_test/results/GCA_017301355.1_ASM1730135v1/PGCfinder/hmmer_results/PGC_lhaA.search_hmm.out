@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_017301355.1_ASM1730135v1/GCA_017301355.1_ASM1730135v1_protein.faa
+# output directed to file:         results/GCA_017301355.1_ASM1730135v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00016   18.0   1.6    0.00016   18.0   1.6    2.2  2  GCA_017301355.1_ASM1730135v1_1412  QSQ01207.1 tetracycline resistan
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017301355.1_ASM1730135v1_1412  QSQ01207.1 tetracycline resistance MFS efflux pump [Enterococcus faecium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   1.4     0.023        65     339     407 ..      98     165 ..      37     188 .. 0.69
+   2 !   18.0   1.6   5.7e-08   0.00016     308     400 ..     276     368 ..     223     376 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.023
+               trimmed_msa_lhaA_hmm 339 esallfrlgavliGlggGlfavgtltaam.alaeeeesGlalGaWGavqataaGlaialgGalrdvvsel 407
+                                        +s  +++lg ++ Gl +G    +tl a   +++e +e   ++G  Ga     + l+ ++gG+l ++ +++
+  GCA_017301355.1_ASM1730135v1_1412  98 NSIWMLFLGRIIEGLTAGEI--STLYAYFaDITEPNERTKVFGWMGALVGIGTTLGPIIGGLLAELGNSV 165
+                                        56677778888888888854..455444314566666677788888888888888888888877776665 PP
+
+  == domain 2  score: 18.0 bits;  conditional E-value: 5.7e-08
+               trimmed_msa_lhaA_hmm 308 largadalrlaalGlliGilafslvifaaplesallfrlgavliGlggGlfavgtltaamalaeeeesGlalGaWG 383
+                                        l ++ +  +++ +G+   ila+ ++ ++  l  ++lf +g +  G+g  +f+     +  +  +++++Gl++G   
+  GCA_017301355.1_ASM1730135v1_1412 276 LLKKFSEQQITRIGMFSEILAYLFITLSGILLLPILFLFGIICYGFGDSIFTPVFNGQLSNSVSDNQQGLVMGGTQ 351
+                                        4556777899*****************************************9888878788888999******999 PP
+
+               trimmed_msa_lhaA_hmm 384 avqataaGlaialgGal 400
+                                        ++q+ +  ++ +++G+l
+  GCA_017301355.1_ASM1730135v1_1412 352 SIQSLSRVIGPLIAGQL 368
+                                        99998888877777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       2844  (840215 residues searched)
+Passed MSV filter:                       142  (0.0499297); expected 56.9 (0.02)
+Passed bias filter:                       47  (0.016526); expected 56.9 (0.02)
+Passed Vit filter:                         5  (0.00175809); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000351617); expected 0.0 (1e-05)
+Initial search space (Z):               2844  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 21750.46
+//
+[ok]

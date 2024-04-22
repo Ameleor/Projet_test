@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021484745.1_ASM2148474v1/GCA_021484745.1_ASM2148474v1_protein.faa
+# output directed to file:         results/GCA_021484745.1_ASM2148474v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+  ------ inclusion threshold ------
+       0.02   11.6   0.8      0.022   11.4   0.8    1.1  1  GCA_021484745.1_ASM2148474v1_38  UIY24454.1 aminoacyl-tRNA hydrol
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021484745.1_ASM2148474v1_38  UIY24454.1 aminoacyl-tRNA hydrolase [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.8   4.5e-06     0.022     280     343 ..      84     144 ..      63     145 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 4.5e-06
+             trimmed_msa_bchD_hmm 280 eeeeeeeeeeealedvvleaakaalpadllaklaakaarrakaassgkaGakrksarrGrplga 343
+                                      ++++++e++++ l++++leaak   p+    k ++++    +++  +k+G ++ +++rGrp g+
+  GCA_021484745.1_ASM2148474v1_38  84 SQDRNREDARDRLKELILEAAKPPPPPRKKTKPTKGSV---ERRLKEKSGRSEVKKMRGRPGGS 144
+                                      6788999999************9998876666666666...45889999************886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5016  (1312241 residues searched)
+Passed MSV filter:                       283  (0.0564195); expected 100.3 (0.02)
+Passed bias filter:                      100  (0.0199362); expected 100.3 (0.02)
+Passed Vit filter:                        13  (0.00259171); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398724); expected 0.1 (1e-05)
+Initial search space (Z):               5016  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13832.31
+//
+[ok]

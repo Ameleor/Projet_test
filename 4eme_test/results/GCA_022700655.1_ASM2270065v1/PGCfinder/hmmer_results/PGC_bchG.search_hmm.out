@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_022700655.1_ASM2270065v1/GCA_022700655.1_ASM2270065v1_protein.faa
+# output directed to file:         results/GCA_022700655.1_ASM2270065v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.9e-05   21.8  10.3    3.9e-05   21.4  10.3    1.1  1  GCA_022700655.1_ASM2270065v1_1175  UNT56643.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022700655.1_ASM2270065v1_1175  UNT56643.1 1,4-dihydroxy-2-naphthoate polyprenyltransferase [Lysinibacillus capsic
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4  10.3   8.5e-09   3.9e-05      28     255 ..      35     268 ..      13     295 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 8.5e-09
+               trimmed_msa_bchG_hmm  28 vvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePerpiPsGri....pGrWGlyialiltlls 99 
+                                        +++ +++ +     +   +l+a  l+ a++ + n+++d ++   ne +  i    +      +  + ial + +++
+  GCA_022700655.1_ASM2270065v1_1175  35 AIALAIEKETIDFGLFFAMLIASMLIQAATNMFNEYYDYKLGLDNEHSVGIGGTIVrhgvQPKTIMIIALSFYAIA 110
+                                        555555555555667788999*************************998876443211114456688999888888 PP
+
+               trimmed_msa_bchG_hmm 100 llvaaal....gtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevllla 171
+                                        +l+++ +    + +  v  ++ +++ ++y+  P  +  + + G+ + g    g+  +  a  +++ + + + +ll 
+  GCA_022700655.1_ASM2270065v1_1175 111 MLLGIYIcastSWWLAVVGLVCMLIGFLYTGGPYPIAYSPF-GEIVSGA-VMGMGIVLIAFYIQALTVTLDAVLLS 184
+                                        888776521114455666677778899****9999988764.5555543.34555555555555555555555555 PP
+
+               trimmed_msa_bchG_hmm 172 llysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavllvv 247
+                                        +   i    im  n+ + + Gd++ g k+l++ +G ++a  v + + +v+ + v+al+++ g ++ al++ + +  
+  GCA_022700655.1_ASM2270065v1_1175 185 VPSMILVGAIMLSNNIRDIVGDTEGGRKTLAILVGRDNAISVLSGFFIVSYLWVIALVAVDGITFWALIIFLSIPK 260
+                                        5444555559*********************************************************999888776 PP
+
+               trimmed_msa_bchG_hmm 248 qlvlmarl 255
+                                         l +++ +
+  GCA_022700655.1_ASM2270065v1_1175 261 PLRAIQIF 268
+                                        66665554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4613  (1336519 residues searched)
+Passed MSV filter:                       224  (0.0485584); expected 92.3 (0.02)
+Passed bias filter:                       56  (0.0121396); expected 92.3 (0.02)
+Passed Vit filter:                         2  (0.000433557); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000216779); expected 0.0 (1e-05)
+Initial search space (Z):               4613  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 24087.82
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021907015.1_ASM2190701v1/GCA_021907015.1_ASM2190701v1_protein.faa
+# output directed to file:         results/GCA_021907015.1_ASM2190701v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0037   14.1   0.0       0.18    8.6   0.0    2.1  2  GCA_021907015.1_ASM2190701v1_960   UKE84584.1 sigma-54 factor inter
+  ------ inclusion threshold ------
+      0.014   12.2   0.0      0.021   11.7   0.0    1.2  1  GCA_021907015.1_ASM2190701v1_1482  UKE85671.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021907015.1_ASM2190701v1_960  UKE84584.1 sigma-54 factor interaction domain-containing protein [Pectobacterium sp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.6   0.0    0.0001      0.18      31      53 ..     218     240 ..     206     253 .. 0.87
+   2 !    3.3   0.0     0.004       7.3     115     196 ..     273     352 ..     268     353 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.0001
+              trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaallP 53 
+                                       vl+lG+rGtGk+t +  l al P
+  GCA_021907015.1_ASM2190701v1_960 218 VLLLGERGTGKTTFANLLRALSP 240
+                                       99***********9998888877 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.004
+              trimmed_msa_bchI_hmm 115 raltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGelr 191
+                                       +   +G  ++ +Gll +a+   l+ de+  l+     +l  +a  G+      g   +h+  f l+ + n     l+
+  GCA_021907015.1_ASM2190701v1_960 273 KGAFTGADKLYSGLLEQADGDSLFFDEIADLDRDTQRML-MAALEGRGFQRIGGTQTQHS-TFRLICATNCSLSRLQ 347
+                                       555678888899****************99976655444.46667776655555555554.5777777777666666 PP
+
+              trimmed_msa_bchI_hmm 192 Pqlld 196
+                                         lld
+  GCA_021907015.1_ASM2190701v1_960 348 DELLD 352
+                                       66665 PP
+
+>> GCA_021907015.1_ASM2190701v1_1482  UKE85671.1 ABC transporter ATP-binding protein [Pectobacterium sp. PL152]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   1.2e-05     0.021      33      56 ..      32      55 ..      23      74 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkik 56
+                                       ++G  G Gkst +++la llP+++
+  GCA_021907015.1_ASM2190701v1_1482 32 IIGANGCGKSTLLKTLAGLLPPLS 55
+                                       79*******************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3619  (979456 residues searched)
+Passed MSV filter:                       198  (0.0547112); expected 72.4 (0.02)
+Passed bias filter:                      151  (0.0417242); expected 72.4 (0.02)
+Passed Vit filter:                        31  (0.0085659); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000552639); expected 0.0 (1e-05)
+Initial search space (Z):               3619  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10993.60
+//
+[ok]

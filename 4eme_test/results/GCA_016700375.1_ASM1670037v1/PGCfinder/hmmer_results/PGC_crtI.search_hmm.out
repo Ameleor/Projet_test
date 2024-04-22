@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700375.1_ASM1670037v1/GCA_016700375.1_ASM1670037v1_protein.faa
+# output directed to file:         results/GCA_016700375.1_ASM1670037v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.3e-11   37.3   0.7    1.1e-09   33.5   0.1    2.1  2  GCA_016700375.1_ASM1670037v1_817   QQS69099.1 FAD-dependent oxidore
+     0.0016   13.2   0.0     0.0035   12.1   0.0    1.5  1  GCA_016700375.1_ASM1670037v1_1146  QQS69421.1 NAD(P)/FAD-dependent 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700375.1_ASM1670037v1_817  QQS69099.1 FAD-dependent oxidoreductase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.5   0.1   1.8e-12   1.1e-09       2      59 ..      32      89 ..      31     128 .. 0.84
+   2 !    2.2   0.1    0.0058       3.6      16      60 ..     210     257 ..     199     286 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 33.5 bits;  conditional E-value: 1.8e-12
+              trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfDaGPtiita 59
+                                      ++++v+GaG+ Gl+aa  l++ G +v vle++da+GGr +  +  g t+ +G   i  
+  GCA_016700375.1_ASM1670037v1_817 32 QRVIVVGAGISGLTAAHELHKDGHEVIVLEAKDAIGGRIQSTNVAGQTYQLGASFIHG 89
+                                      689*************************************************998854 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.0058
+              trimmed_msa_crtI_hmm  16 aairlgakGyrv...tvlekldapGGrayvhrkdgftfDaGPtiitaP 60 
+                                       +ai+  a+G+ +    ++ k +  G    v  kd  tf a   ++t P
+  GCA_016700375.1_ASM1670037v1_817 210 TAIKKLAEGIDIrlnHIVTKVKDTGSEVVVTAKDDKTFAADAVVVTLP 257
+                                       455555555554112245555555666666666666666666666655 PP
+
+>> GCA_016700375.1_ASM1670037v1_1146  QQS69421.1 NAD(P)/FAD-dependent oxidoreductase [Candidatus Saccharibacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.0   5.7e-06    0.0035       2      33 ..       9      40 ..       8      46 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 5.7e-06
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvlekl 33
+                                       k+ v+iGaG  G+ +a +l + G +vtv++  
+  GCA_016700375.1_ASM1670037v1_1146  9 KHIVIIGAGTTGIMVANKLVKSGHHVTVIDPA 40
+                                       799**************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1247  (365009 residues searched)
+Passed MSV filter:                        56  (0.0449078); expected 24.9 (0.02)
+Passed bias filter:                       42  (0.0336808); expected 24.9 (0.02)
+Passed Vit filter:                         6  (0.00481155); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00160385); expected 0.0 (1e-05)
+Initial search space (Z):               1247  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10604.28
+//
+[ok]

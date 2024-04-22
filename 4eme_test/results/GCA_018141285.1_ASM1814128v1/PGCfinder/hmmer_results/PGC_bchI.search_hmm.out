@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018141285.1_ASM1814128v1/GCA_018141285.1_ASM1814128v1_protein.faa
+# output directed to file:         results/GCA_018141285.1_ASM1814128v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      8e-10   34.3   0.5    1.4e-05   20.4   0.0    3.1  3  GCA_018141285.1_ASM1814128v1_929  QUG72318.1 YifB family Mg chelat
+     0.0014   13.7   0.0     0.0019   13.3   0.0    1.2  1  GCA_018141285.1_ASM1814128v1_68   QUG71669.1 MoxR family ATPase [B
+     0.0019   13.3   0.0     0.0028   12.8   0.0    1.2  1  GCA_018141285.1_ASM1814128v1_796  QUG72223.1 ABC transporter ATP-b
+      0.002   13.3   0.0     0.0039   12.3   0.0    1.5  1  GCA_018141285.1_ASM1814128v1_755  QUG72186.1 DNA polymerase III su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018141285.1_ASM1814128v1_929  QUG72318.1 YifB family Mg chelatase-like AAA ATPase [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.5   0.0   0.00044      0.11       8      59 ..     192     241 ..     186     280 .. 0.85
+   2 !   20.4   0.0   5.3e-08   1.4e-05     119     186 ..     280     347 ..     272     354 .. 0.91
+   3 !    3.1   0.3    0.0092       2.4     249     306 ..     438     495 ..     370     507 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00044
+              trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavk 59 
+                                        i gq+  k+al ++a  ++   +l +G  G+Gks  ++ l ++lP++++ +
+  GCA_018141285.1_ASM1814128v1_929 192 EIKGQKTAKRALEVCAAGRH--NLLFVGPPGAGKSMLAQRLPSILPPLNSRE 241
+                                       5889**********998775..79***********************99865 PP
+
+  == domain 2  score: 20.4 bits;  conditional E-value: 5.3e-08
+              trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        G  + +pG ++ a+ G l++de+  +   ++d l    +sGe v+ r    + +par+ l+ + nP 
+  GCA_018141285.1_ASM1814128v1_929 280 GGGLKAQPGEVSLAHNGVLFLDELPEFSPQVLDSLRQPLESGECVIARANHHISYPARIQLIAAMNPC 347
+                                       4555569***********************************************************95 PP
+
+  == domain 3  score: 3.1 bits;  conditional E-value: 0.0092
+              trimmed_msa_bchI_hmm 249 rkrlekvevpdavlek.aaklclalgtdGlrgeltllraaralaalegakevtkehlkk 306
+                                        k +ek+++pd+   +  + ++ ++     r+   +lr ar++a l++a++++++hl++
+  GCA_018141285.1_ASM1814128v1_929 438 AKIIEKIAIPDKNAATlLSDVSEKMH-LSARAYHRILRVARTIADLDEADHLSRRHLAE 495
+                                       46677888887654331344444433.35688999*********************986 PP
+
+>> GCA_018141285.1_ASM1814128v1_68  QUG71669.1 MoxR family ATPase [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   7.5e-06    0.0019     177     319 ..     170     321 ..     131     339 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 7.5e-06
+             trimmed_msa_bchI_hmm 177 fvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdleervevvrrrdaferdpeafvakwk.kedakvrkkilaar 249
+                                      f ++ + nP e e    l    ldrf + +++  p+ ++er  ++  + + ++  +  +++ k ++ +++ +k+  + 
+  GCA_018141285.1_ASM1814128v1_68 170 FHVLATQNPLEQEgtypLPEAQLDRFLMQIDIDYPDLITERRIILETTGEKKQSIKPILSTKKlQKIQQIVRKMPISE 247
+                                      55666677755442233444569******************9999999988888777665544144455666666665 PP
+
+             trimmed_msa_bchI_hmm 250 krlekve..vpdavleka...aklclalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlrrd 319
+                                      + +e++   v  a  +k    a+  +a g  G r+  +l  ++ra a ++g+   + ++++++a   l+hr+  +
+  GCA_018141285.1_ASM1814128v1_68 248 NVVEAILklVRSARPHKDntlANTYVAWG-PGPRASQALSLCSRARALYHGRLMPSLDDVATLAQPILQHRMALN 321
+                                      55555421123333333300033344444.689**************************************9765 PP
+
+>> GCA_018141285.1_ASM1814128v1_796  QUG72223.1 ABC transporter ATP-binding protein [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   1.1e-05    0.0028      31      68 ..      31      68 ..      18      83 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkikavkgcryncdpe 68
+                                      v + Gd G+Gkst ++a+a l+ +i+   + + ++  +
+  GCA_018141285.1_ASM1814128v1_796 31 VAITGDNGAGKSTLLKAIAGLIKPIRGKITKPKKSRIA 68
+                                      5688******************9999776665555544 PP
+
+>> GCA_018141285.1_ASM1814128v1_755  QUG72186.1 DNA polymerase III subunit gamma/tau [Bartonella quintana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   1.5e-05    0.0039       5      53 ..      21      70 ..      17     108 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.5e-05
+              trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigG.vlvlGdrGtGkstavralaallP 53
+                                       fs ++gq+ m ++l  a    +i+   ++ G rG Gk+t++r la  l 
+  GCA_018141285.1_ASM1814128v1_755 21 NFSDLIGQETMVRTLTNAFETGRIAQaWMLTGIRGVGKTTTARILARALN 70
+                                      69************99988888887516888**************98764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1031  (314900 residues searched)
+Passed MSV filter:                        85  (0.0824442); expected 20.6 (0.02)
+Passed bias filter:                       57  (0.0552861); expected 20.6 (0.02)
+Passed Vit filter:                        20  (0.0193986); expected 1.0 (0.001)
+Passed Fwd filter:                         4  (0.00387973); expected 0.0 (1e-05)
+Initial search space (Z):               1031  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4710.93
+//
+[ok]

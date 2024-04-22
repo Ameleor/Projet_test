@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700395.1_ASM1670039v1/GCA_016700395.1_ASM1670039v1_protein.faa
+# output directed to file:         results/GCA_016700395.1_ASM1670039v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.4e-08   30.1   0.1    0.00036   15.6   0.0    3.2  3  GCA_016700395.1_ASM1670039v1_513  QQS71156.1 YifB family Mg chelat
+      4e-07   25.3   0.4      0.001   14.1   0.1    2.8  2  GCA_016700395.1_ASM1670039v1_853  QQS70563.1 MoxR family ATPase [C
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700395.1_ASM1670039v1_513  QQS71156.1 YifB family Mg chelatase-like AAA ATPase [Candidatus Saccharibacteria ba
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   7.4e-07   0.00036       9      59 ..     197     245 ..     191     255 .. 0.88
+   2 !    6.1   0.0   0.00056      0.27     116     185 ..     280     349 ..     277     355 .. 0.93
+   3 !    4.5   0.0    0.0018      0.85     277     306 ..     467     496 ..     407     501 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 7.4e-07
+              trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavk 59 
+                                       i gq++ k+al +aa       +l  G  G+Gk+  ++ala+llP + + +
+  GCA_016700395.1_ASM1670039v1_513 197 IYGQEQAKRALTIAAAGH--HNILFTGLPGAGKTMLAKALANLLPTLDVGE 245
+                                       88************9876..589**********************998765 PP
+
+  == domain 2  score: 6.1 bits;  conditional E-value: 0.00056
+              trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                       a+t G  + +pG ++ a+ G l++de+      +++ l    +  +  + r       pa f+lv + nP
+  GCA_016700395.1_ASM1670039v1_513 280 AITGGGSQIKPGEVSLAHLGVLFLDEIPEYSRVVLEALRQPLEDRVISISRANAKATFPANFMLVATMNP 349
+                                       78999999********************999999999999999999999999999999999999999998 PP
+
+  == domain 3  score: 4.5 bits;  conditional E-value: 0.0018
+              trimmed_msa_bchI_hmm 277 lrgeltllraaralaalegakevtkehlkk 306
+                                        rg + +lr ar++a leg+++v+  h+++
+  GCA_016700395.1_ASM1670039v1_513 467 ARGYFKILRVARTIADLEGSSSVSIPHIAE 496
+                                       3999********************999875 PP
+
+>> GCA_016700395.1_ASM1670039v1_853  QQS70563.1 MoxR family ATPase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.0   0.00017     0.083       9      52 ..      47      88 ..      43     109 .. 0.84
+   2 !   14.1   0.1   2.1e-06     0.001     173     316 ..     165     324 ..     116     334 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00017
+              trimmed_msa_bchI_hmm  9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaall 52
+                                      +vgq+++k+all++ +    g vl+    G  k+ta+ +la+ +
+  GCA_016700395.1_ASM1670039v1_853 47 VVGQENLKTALLVSMITG--GHVLLESVPGLAKTTAAHTLAKSV 88
+                                      8************99964..678888899**********99755 PP
+
+  == domain 2  score: 14.1 bits;  conditional E-value: 2.1e-06
+              trimmed_msa_bchI_hmm 173 hparfvlvGsGnPeeG....elrPqlldrfGlsvevrtpkdleervevvrrrda..ferdpeafvakwkkedakvrk 243
+                                        p  fv++ + nP e     el    ldrf l  ev    ++ + +e+++r ++    +d+++ v+++ + d+    
+  GCA_016700395.1_ASM1670039v1_853 165 LPKPFVVLATQNPIEQegtyELPEAQLDRFLL-KEVLDYPTVPQELEILKRIESgiLGEDAKSSVSAHVEIDD---- 236
+                                       466799999999966411445667779***77.5999999999*******99873345555554444443333.... PP
+
+              trimmed_msa_bchI_hmm 244 kilaarkrlekvevpdavlekaaklcla.......lgtd........G.lrgeltllraaralaalegakevtkehl 304
+                                        ila ++ ++kv ++da+ + + +++ a       ++ d        G  r+ +++ + a+ala ++g++ v  e++
+  GCA_016700395.1_ASM1670039v1_853 237 -ILALQELVNKVYIDDAIKQYIVTIVAAtrqpgtyISQDyakyiqygGsPRASIAFQQVAKALAIINGRNYVIPEDV 312
+                                       .222222222222222222222221111000000011111111111132599************************* PP
+
+              trimmed_msa_bchI_hmm 305 kkvaplalrhrl 316
+                                       k++  ++lrhr+
+  GCA_016700395.1_ASM1670039v1_853 313 KELRHSVLRHRI 324
+                                       ***********7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                        962  (276424 residues searched)
+Passed MSV filter:                        59  (0.0613306); expected 19.2 (0.02)
+Passed bias filter:                       39  (0.0405405); expected 19.2 (0.02)
+Passed Vit filter:                         6  (0.00623701); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.002079); expected 0.0 (1e-05)
+Initial search space (Z):                962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4132.27
+//
+[ok]

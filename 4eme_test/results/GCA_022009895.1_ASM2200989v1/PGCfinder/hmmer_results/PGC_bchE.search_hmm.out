@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_022009895.1_ASM2200989v1/GCA_022009895.1_ASM2200989v1_protein.faa
+# output directed to file:         results/GCA_022009895.1_ASM2200989v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.2e-08   29.2   0.0    1.1e-07   28.9   0.0    1.0  1  GCA_022009895.1_ASM2200989v1_2503  UKI35088.1 MAG: class I SAM-depe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022009895.1_ASM2200989v1_2503  UKI35088.1 MAG: class I SAM-dependent methyltransferase [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.0   2.8e-11   1.1e-07     174     311 ..      24     161 ..      19     165 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 2.8e-11
+                       trimmed_bchE 174 saLmaasqalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaag.lsdrv 248
+                                        +a+m    + va+  l+ +++++++++lD G G Ga ++++ +++p+  ++  D   V  + ++++++++  + r+
+  GCA_022009895.1_ASM2200989v1_2503  24 TAMMNIGHKPVAHWGLQFLKVSSNAKILDCGCGGGANIKKLLKKYPHSIVNGIDYSIVSVEKSKKVNNKAvAEGRC 99 
+                                        7899999999************************************************88888888766515679* PP
+
+                       trimmed_bchE 249 evagGsflkdplP.egaDlisLvRvlhDHdDeavlkllrkvraaLppggrLliaEpmagtagae 311
+                                        +v  G++++ p   + +D+++    ++  +D    k + ++++ L+pgg++li   ++g ++++
+  GCA_022009895.1_ASM2200989v1_2503 100 TVLKGNVMNMPYSaTCFDAVTAFETIYFWQDL--PKCFCEIYRVLKPGGTFLICNEVSGDEAKD 161
+                                        ********887762457**********99996..58999***************9999987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       3797  (446472 residues searched)
+Passed MSV filter:                        56  (0.0147485); expected 75.9 (0.02)
+Passed bias filter:                       51  (0.0134317); expected 75.9 (0.02)
+Passed Vit filter:                         4  (0.00105346); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000263366); expected 0.0 (1e-05)
+Initial search space (Z):               3797  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14247.94
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699815.1_ASM1669981v1/GCA_016699815.1_ASM1669981v1_protein.faa
+# output directed to file:         results/GCA_016699815.1_ASM1669981v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0021   14.2   0.0     0.0029   13.7   0.0    1.1  1  GCA_016699815.1_ASM1669981v1_1488  QQS62007.1 MAG: bifunctional dem
+      0.008   12.3   0.0       0.02   10.9   0.0    1.5  1  GCA_016699815.1_ASM1669981v1_2593  QQS63005.1 MAG: class I SAM-depe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699815.1_ASM1669981v1_1488  QQS62007.1 MAG: bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-pol
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0   2.3e-06    0.0029     197     322 ..      62     184 ..      51     189 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 2.3e-06
+               trimmed_msa_crtF_hmm 197 hrrllDvGGGeGaFlaavaarapklklklfDlpa.VaerararleaaglsdrvevagGsflkdplPegaDlisLvR 271
+                                         ++llDv+ G+G  + ++ +     k++  D+ +  ++  ++++++ +l+d++e+  G+  + +   +  ++  v 
+  GCA_016699815.1_ASM1669981v1_1488  62 LNHLLDVATGTGDMAITALRLLNPAKITGIDISEgMLKIGNEKVKQLSLADKIELLKGDSETIN--FNDNTFDAVT 135
+                                        578****************************976377899******************976544..4444555555 PP
+
+               trimmed_msa_crtF_hmm 272 vlhDH.dDeavlkllrkvraaLppggrLliaEpmagtagaeavgdaYFgfYl 322
+                                        v +   + ++ +k l+++ + L+pgg+L+i E     + ++++ +a ++fY+
+  GCA_016699815.1_ASM1669981v1_1488 136 VAFGVrNFQNLEKGLAEILRVLKPGGKLVILEF---SKPQNRLMKALYNFYM 184
+                                        66654144788999****************985...3445677778888887 PP
+
+>> GCA_016699815.1_ASM1669981v1_2593  QQS63005.1 MAG: class I SAM-dependent methyltransferase [Chitinophagaceae bacteriu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   1.6e-05      0.02     190     321 ..      93     213 ..      81     216 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_crtF_hmm 190 daydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPe.ga 264
+                                        + ++ k++ ++lD+G G+ aFl++++++  +++     l+   ++ar+  +a++l + + + + +f+  +lP+  +
+  GCA_016699815.1_ASM1669981v1_2593  93 TRFTQKTTGTILDIGCGTAAFLHTMKSAGWQITG----LEP-DNTARE--KAQSLYQIAPLPSENFK--TLPAnSF 159
+                                        4555667889*************99877655432....222.233443..45666666666666776..5786258 PP
+
+               trimmed_msa_crtF_hmm 265 DlisLvRvlhDHdDeavlkllrkvraaLppggrLliaEpmagtagaeavgdaYFgfY 321
+                                        D+i+L  vl    D   +  l++++  L+p g+L++a p     +a++ g  Y++ Y
+  GCA_016699815.1_ASM1669981v1_2593 160 DAITLWHVLEHVHD--LQGYLQQIKILLKPAGKLFVAVPNYTSYDAKKYG-LYWAAY 213
+                                        ******99954433..67889999999********999988887777777.565555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2574  (897239 residues searched)
+Passed MSV filter:                        65  (0.0252525); expected 51.5 (0.02)
+Passed bias filter:                       54  (0.020979); expected 51.5 (0.02)
+Passed Vit filter:                         6  (0.002331); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000777001); expected 0.0 (1e-05)
+Initial search space (Z):               2574  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 15611.56
+//
+[ok]

@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699575.1_ASM1669957v1/GCA_016699575.1_ASM1669957v1_protein.faa
+# output directed to file:         results/GCA_016699575.1_ASM1669957v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.021   11.9   0.0      0.029   11.5   0.0    1.2  1  GCA_016699575.1_ASM1669957v1_3357  QQR86273.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699575.1_ASM1669957v1_3357  QQR86273.1 MAG: hypothetical protein IPJ76_17045 [Flavobacteriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   7.8e-06     0.029      43      84 ..      37      78 ..       7      87 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 7.8e-06
+               trimmed_msa_crtC_hmm 43 rrvrGrvrvtpealtevelaLdaegrhrWrpiapsarvevel 84
+                                        +++G v+v+   + ++++ L  +g+ +W pi+p++r +++l
+  GCA_016699575.1_ASM1669957v1_3357 37 VHITGWVHVEDIGFEKTRVLLHIKGEEHWVPITPMGRFDIDL 78
+                                       5799*********************************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3723  (1358121 residues searched)
+Passed MSV filter:                        78  (0.0209508); expected 74.5 (0.02)
+Passed bias filter:                       61  (0.0163846); expected 74.5 (0.02)
+Passed Vit filter:                         2  (0.000537201); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000268601); expected 0.0 (1e-05)
+Initial search space (Z):               3723  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14901.37
+//
+[ok]

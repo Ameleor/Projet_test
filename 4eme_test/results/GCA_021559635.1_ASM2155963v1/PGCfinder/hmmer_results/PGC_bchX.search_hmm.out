@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021559635.1_ASM2155963v1/GCA_021559635.1_ASM2155963v1_protein.faa
+# output directed to file:         results/GCA_021559635.1_ASM2155963v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.7e-07   25.8   0.0     0.0011   15.8   0.0    2.3  2  GCA_021559635.1_ASM2155963v1_3535  UJL19809.1 iron-sulfur cluster c
+    2.7e-06   24.4   0.0    9.7e-06   22.5   0.0    2.0  1  GCA_021559635.1_ASM2155963v1_3584  UJL19834.1 tyrosine-protein kina
+     0.0062   13.3   1.9      0.054   10.2   0.0    2.5  3  GCA_021559635.1_ASM2155963v1_910   UJL17765.1 signal recognition pa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021559635.1_ASM2155963v1_3535  UJL19809.1 iron-sulfur cluster carrier protein ApbC [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.0   7.6e-07    0.0011      22      60 ..     107     146 ..      88     167 .. 0.81
+   2 !    7.5   0.0   0.00026      0.35     210     266 ..     294     352 ..     288     360 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 7.6e-07
+               trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                         +iia+  gkgg+gks t  nl+  la +g kv ++  d 
+  GCA_021559635.1_ASM2155963v1_3535 107 KNIIAVsSGKGGVGKSSTAVNLALALAAEGAKVGILDADI 146
+                                        568888469************************9988875 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00026
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                        gtg a+ +ae+    +l  +p +  +r      +  +i++pese+++++ +la +va+ 
+  GCA_021559635.1_ASM2155963v1_3535 294 GTGGAEKLAEKYHTQLLGQMPLHISLREDldKGTPTVISRPESEFTAIYRQLADRVAAQ 352
+                                        89*********************9999862245678*******************9975 PP
+
+>> GCA_021559635.1_ASM2155963v1_3584  UJL19834.1 tyrosine-protein kinase Wzc [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5   0.0   7.1e-09   9.7e-06      20      74 ..     524     579 ..     506     590 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 7.1e-09
+               trimmed_msa_bchX_hmm  20 ketqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74 
+                                         + +++ + g    igk+f  anl+ +++q  k+vlli cd +   t  l+g +++
+  GCA_021559635.1_ASM2155963v1_3584 524 AQNNVLMMTGVSpSIGKTFVCANLAAVISQTNKRVLLIDCDMRKGYTHELLGTNNV 579
+                                        555566666643279***************************99999988887765 PP
+
+>> GCA_021559635.1_ASM2155963v1_910  UJL17765.1 signal recognition particle-docking protein FtsY [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.9   0.3      0.78   1.1e+03     211     234 ..     154     178 ..     151     186 .. 0.70
+   2 !   10.2   0.0   3.9e-05     0.054      20      60 ..     292     332 ..     272     359 .. 0.84
+   3 ?    2.1   0.0     0.012        16     187     225 ..     428     469 ..     411     488 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -3.9 bits;  conditional E-value: 0.78
+              trimmed_msa_bchX_hmm 211 tgeaqafaeav.gipvlaaipaded 234
+                                         eaqa+a++v +  v+   pa+ed
+  GCA_021559635.1_ASM2155963v1_910 154 EPEAQALAAEVaEEAVMVVSPAEED 178
+                                       5688888877624567777788877 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 3.9e-05
+              trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       k+  +i + g  g+gk+ t+ +l+  + qqgk v+l   d 
+  GCA_021559635.1_ASM2155963v1_910 292 KTPFVILMVGVNGVGKTTTIGKLARQFEQQGKSVMLAAGDT 332
+                                       555689999**************************988775 PP
+
+  == domain 3  score: 2.1 bits;  conditional E-value: 0.012
+              trimmed_msa_bchX_hmm 187 aveyfrklggnvgvaglvinkddgtgea...qafaeavgipv 225
+                                       av   + +   vg++g+ + k dgt +     + a++ gip+
+  GCA_021559635.1_ASM2155963v1_910 428 AVSQAKLFHEAVGLTGITLTKLDGTAKGgviFSVADQFGIPI 469
+                                       66666666778*************966511156799999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       4128  (1191339 residues searched)
+Passed MSV filter:                       153  (0.037064); expected 82.6 (0.02)
+Passed bias filter:                      135  (0.0327035); expected 82.6 (0.02)
+Passed Vit filter:                        18  (0.00436047); expected 4.1 (0.001)
+Passed Fwd filter:                         3  (0.000726744); expected 0.0 (1e-05)
+Initial search space (Z):               4128  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 18004.99
+//
+[ok]

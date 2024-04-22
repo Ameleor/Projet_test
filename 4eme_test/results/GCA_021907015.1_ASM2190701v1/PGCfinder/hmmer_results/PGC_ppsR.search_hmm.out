@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_021907015.1_ASM2190701v1/GCA_021907015.1_ASM2190701v1_protein.faa
+# output directed to file:         results/GCA_021907015.1_ASM2190701v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.001   15.9   0.9     0.0016   15.2   0.9    1.6  1  GCA_021907015.1_ASM2190701v1_2641  UKE82485.1 DNA-binding transcrip
+     0.0032   14.2   0.1     0.0046   13.7   0.1    1.2  1  GCA_021907015.1_ASM2190701v1_2380  UKE85721.1 nitrogen regulation p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021907015.1_ASM2190701v1_2641  UKE82485.1 DNA-binding transcriptional regulator Fis [Pectobacterium sp. PL152]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.9   8.7e-07    0.0016     417     448 ..      66      97 ..      10      98 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 8.7e-07
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                         +++T+ N   AA m+G+ R  L  KL++yg+
+  GCA_021907015.1_ASM2190701v1_2641  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                        579****************************8 PP
+
+>> GCA_021907015.1_ASM2190701v1_2380  UKE85721.1 nitrogen regulation protein NR(II) [Pectobacterium sp. PL152]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.1   2.6e-06    0.0046     152     265 ..      19     130 ..      11     139 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_ppsR_hmm 152 avlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsv 227
+                                        ++l++d    +i   NpaA++Ll +++++l g+++++l+   s + +  l +++ + +   + ev+l  +g+   +
+  GCA_021907015.1_ASM2190701v1_2380  19 SILLLDN-DLAIHYSNPAAQQLLAQSSRKLSGTPLPDLLGYFSLN-IDLLRESLDSGQGFTDNEVTLVVDGKAHIM 92 
+                                        5555554.5689999***********************9988765.444444555666678889999888888888 PP
+
+               trimmed_msa_ppsR_hmm 228 saslfrqegesllLvrlspaeaaaa.aaeeaeakllevl 265
+                                        s ++ r ++  ++L++++p +++++ ++e+ +++  ++ 
+  GCA_021907015.1_ASM2190701v1_2380  93 SLTAQRVQN-DFILLEMAPMDNQRRlSQEQLQHAQQQAA 130
+                                        888877765.57789999999998865555555554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3619  (979456 residues searched)
+Passed MSV filter:                       164  (0.0453164); expected 72.4 (0.02)
+Passed bias filter:                       84  (0.0232108); expected 72.4 (0.02)
+Passed Vit filter:                        11  (0.00303951); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000552639); expected 0.0 (1e-05)
+Initial search space (Z):               3619  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 16349.95
+//
+[ok]

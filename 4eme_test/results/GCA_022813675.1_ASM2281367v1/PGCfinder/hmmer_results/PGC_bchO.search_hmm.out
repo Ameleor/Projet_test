@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_022813675.1_ASM2281367v1/GCA_022813675.1_ASM2281367v1_protein.faa
+# output directed to file:         results/GCA_022813675.1_ASM2281367v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      4e-07   26.5   0.0    9.8e-07   25.2   0.0    1.5  2  GCA_022813675.1_ASM2281367v1_2183  UOD34687.1 alpha/beta fold hydro
+  ------ inclusion threshold ------
+      0.012   11.8   0.0       0.41    6.7   0.0    2.0  2  GCA_022813675.1_ASM2281367v1_2227  UOD34729.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022813675.1_ASM2281367v1_2183  UOD34687.1 alpha/beta fold hydrolase [Deferribacteraceae bacterium V6Fe1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   0.0   8.8e-10   9.8e-07      37     154 ..      87     202 ..      78     228 .. 0.82
+   2 ?   -2.3   0.0       0.2   2.3e+02     218     241 ..     238     261 ..     228     270 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 8.8e-10
+               trimmed_msa_bchO_hmm  37 lLLlHGtGasthswrdllplLaar.frviapDLPghgftesaaeerlsLpgmaealaaLlaalgve..pavvvGHS 109
+                                        +LL+HG  as + +++l + L+++ f v  + LPgh+ +  ++ ++l++  m e l+     l+ +  + +v+G S
+  GCA_022813675.1_ASM2281367v1_2183  87 ILLIHGFTASPFEMKALGEYLNEKgFAVYGVRLPGHASS-PENINKLTFVDMYEGLKYGYYVLKNTnkKIFVIGQS 161
+                                        8*******************98655***********965.667889**********9888777765325679**** PP
+
+               trimmed_msa_bchO_hmm 110 AGaaialrlaldgkiapkkvvglngallpleglagllfpplakll 154
+                                         G+ +a+++a+ +k++   ++ l +a++  ++  +++f p+++ +
+  GCA_022813675.1_ASM2281367v1_2183 162 MGGLLAAEVAIFNKVDG--LIMLSPAFKIKSN--KVIFVPFLRKF 202
+                                        *************9976..9******986544..33555554444 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.2
+               trimmed_msa_bchO_hmm 218 llrdlpklktplllivgekDravp 241
+                                        l   lp++k p++++ ++ D+++ 
+  GCA_022813675.1_ASM2281367v1_2183 238 LIPLLPEMKIPVYVVQSKYDDIID 261
+                                        445589999999999999999886 PP
+
+>> GCA_022813675.1_ASM2281367v1_2227  UOD34729.1 hypothetical protein DSN97_11395 [Deferribacteraceae bacterium V6Fe1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.0    0.0046       5.1     102     152 ..      44      94 ..      34     104 .. 0.73
+   2 ?    6.7   0.0   0.00037      0.41     227     269 ..     146     187 ..     134     194 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0046
+               trimmed_msa_bchO_hmm 102 pavvvGHSAGaaialrlaldgkiapkkvvglngallpleglagllfpplak 152
+                                         +++vG S Ga i+ + + +   + kkv+ + +  +  + + ++ + ++ k
+  GCA_022813675.1_ASM2281367v1_2227  44 GDIIVGWSTGAHILSKAVWRYIDRWKKVILVAPFSDFTNSFSKKALDIMIK 94 
+                                        689***********9999988777788887766555555555555555555 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.00037
+               trimmed_msa_bchO_hmm 227 tplllivgekDravppkearevaallpkarlveleglGHLahE 269
+                                        +++ ++ g++D++v+ ke + v +l ++ar++el +  H + E
+  GCA_022813675.1_ASM2281367v1_2227 146 VKINILYGNEDKIVKRKEIDTVLNLFENARFIELCQ-PHFIDE 187
+                                        5788999**************************988.788777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2231  (728533 residues searched)
+Passed MSV filter:                        60  (0.0268938); expected 44.6 (0.02)
+Passed bias filter:                       59  (0.0264455); expected 44.6 (0.02)
+Passed Vit filter:                         9  (0.00403407); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000896459); expected 0.0 (1e-05)
+Initial search space (Z):               2231  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8184.84
+//
+[ok]

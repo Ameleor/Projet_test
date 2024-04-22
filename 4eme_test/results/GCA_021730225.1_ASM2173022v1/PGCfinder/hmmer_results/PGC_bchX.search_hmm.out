@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021730225.1_ASM2173022v1/GCA_021730225.1_ASM2173022v1_protein.faa
+# output directed to file:         results/GCA_021730225.1_ASM2173022v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.3e-07   24.1   0.4    0.00085   14.1   0.1    2.4  2  GCA_021730225.1_ASM2173022v1_382  OGKLOB_01995 iron-sulfur cluster
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021730225.1_ASM2173022v1_382  OGKLOB_01995 iron-sulfur cluster carrier protein ApbC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.1   8.8e-07   0.00085      22      59 ..      95     133 ..      78     149 .. 0.83
+   2 !    7.8   0.0   7.2e-05     0.069     210     269 ..     282     343 ..     278     350 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 8.8e-07
+              trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                        +iia+  gkgg+gks t  nl+  l  +g kv ++  d
+  GCA_021730225.1_ASM2173022v1_382  95 KNIIAVaSGKGGVGKSTTAVNLALALQAEGAKVAILDAD 133
+                                       46777736*************************998877 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 7.2e-05
+              trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksa..nyeiigkpesewgslfeelaenvaeappv 269
+                                       gtg  +a+a + gi  l a+p + di+      +  +   pe++ +++++e+a++v++   +
+  GCA_021730225.1_ASM2173022v1_382 282 GTGGGKAMAIDEGIEFLGALPLKMDIQTDVDegTPTVTKDPEGKIAKIYKEIAKKVSAKLTQ 343
+                                       8999**********************987651156788899***************987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        967  (290822 residues searched)
+Passed MSV filter:                        35  (0.0361944); expected 19.3 (0.02)
+Passed bias filter:                       27  (0.0279214); expected 19.3 (0.02)
+Passed Vit filter:                         4  (0.0041365); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.00103413); expected 0.0 (1e-05)
+Initial search space (Z):                967  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9809.15
+//
+[ok]

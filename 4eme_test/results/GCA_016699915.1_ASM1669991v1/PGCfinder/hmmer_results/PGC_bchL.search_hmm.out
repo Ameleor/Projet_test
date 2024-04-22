@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699915.1_ASM1669991v1/GCA_016699915.1_ASM1669991v1_protein.faa
+# output directed to file:         results/GCA_016699915.1_ASM1669991v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      7e-05   17.8   0.1      0.001   14.0   0.1    2.1  2  GCA_016699915.1_ASM1669991v1_567  QQS16412.1 MAG: septum site-dete
+     0.0013   13.6   0.0     0.0022   12.9   0.0    1.2  1  GCA_016699915.1_ASM1669991v1_147  QQS16776.1 MAG: iron-sulfur clus
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699915.1_ASM1669991v1_567  QQS16412.1 MAG: septum site-determining protein MinD [Neisseriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.1   2.5e-06     0.001      20      57 ..       2      40 ..       1      72 [. 0.83
+   2 ?    2.0   0.0     0.012       4.7     155     189 ..     132     166 ..     106     211 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.5e-06
+              trimmed_msa_bchL_hmm 20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                      ak++ v  gkgg+gk+tts+ ++  ++  g++ + i  d
+  GCA_016699915.1_ASM1669991v1_567  2 AKIIVVtSGKGGVGKTTTSASFASGLALRGHKTVVIDFD 40
+                                      66665526***********************99988776 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.012
+              trimmed_msa_bchL_hmm 155 plqhadralivaandfdsifamnrivaaikakskn 189
+                                        l +ad a++ +  ++ s+   +ri+  + +ks +
+  GCA_016699915.1_ASM1669991v1_567 132 ALYFADEAIVATNPEISSVRDSDRILGILASKSLH 166
+                                       58899********************9999999855 PP
+
+>> GCA_016699915.1_ASM1669991v1_147  QQS16776.1 MAG: iron-sulfur cluster carrier protein ApbC [Neisseriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   5.4e-06    0.0022      22      51 ..     102     131 ..      89     141 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 5.4e-06
+              trimmed_msa_bchL_hmm  22 vfavygkggigksttssnlsvafsklgkrv 51 
+                                       ++   gkgg+gkst + nl+ a+   g +v
+  GCA_016699915.1_ASM1669991v1_147 102 IIVASGKGGVGKSTVAVNLALALHLEGAKV 131
+                                       55668******************9998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                        813  (261741 residues searched)
+Passed MSV filter:                        38  (0.0467405); expected 16.3 (0.02)
+Passed bias filter:                       31  (0.0381304); expected 16.3 (0.02)
+Passed Vit filter:                         7  (0.00861009); expected 0.8 (0.001)
+Passed Fwd filter:                         2  (0.00246002); expected 0.0 (1e-05)
+Initial search space (Z):                813  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6461.16
+//
+[ok]

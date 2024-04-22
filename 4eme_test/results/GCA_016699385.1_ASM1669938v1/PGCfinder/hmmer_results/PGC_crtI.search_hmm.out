@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699385.1_ASM1669938v1/GCA_016699385.1_ASM1669938v1_protein.faa
+# output directed to file:         results/GCA_016699385.1_ASM1669938v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.8e-05   17.5   3.2     0.0097   10.4   0.1    2.1  2  GCA_016699385.1_ASM1669938v1_760  QQR77270.1 aminoacetone oxidase 
+      0.001   13.6   0.0     0.0015   13.0   0.0    1.2  1  GCA_016699385.1_ASM1669938v1_779  QQR77289.1 carboxypeptidase regu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699385.1_ASM1669938v1_760  QQR77270.1 aminoacetone oxidase family FAD-binding enzyme [Candidatus Moranbacteria
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.9   0.00016     0.084       4      38 ..       6      40 ..       3      53 .. 0.91
+   2 !   10.4   0.1   1.9e-05    0.0097     206     269 ..      97     160 ..      90     170 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00016
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                      +vviG G  G+ aa r +  G rv +lek  ++G 
+  GCA_016699385.1_ASM1669938v1_760  6 VVVIGGGPAGMMAAGRAAECGARVILLEKNTSLGK 40
+                                      79***************************998875 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 1.9e-05
+              trimmed_msa_crtI_hmm 206 kLerkfGvhyamGGtgalvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadv 269
+                                       k+e +  v+      +++ + lv+++++ G+ +  +aev   e+++g+++gv+l+sG++++a+ 
+  GCA_016699385.1_ASM1669938v1_760  97 KMEAENRVFPVSDSAQSVWDVLVSYMRSGGVFVMSDAEVVGFEITEGEISGVQLRSGRMLRAKS 160
+                                       56777778888888899999**************************************999875 PP
+
+>> GCA_016699385.1_ASM1669938v1_779  QQR77289.1 carboxypeptidase regulatory-like domain-containing protein [Candidatus M
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   2.9e-06    0.0015      91     167 ..     151     226 ..     136     243 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.9e-06
+              trimmed_msa_crtI_hmm  91 fddGtkfdysgdeeklraevarlspeDvaGyerflkesekvyevgfeklgdkpfesladllkalpelvklkayrsvy 167
+                                       f+dG+ f++  + e+      rl+  D++Gy++fl +  +  +++feklg++  ++l ++   +++lv+ k   ++ 
+  GCA_016699385.1_ASM1669938v1_779 151 FQDGDAFSACPECENGGPGDPRLN-GDIEGYRKFLVDEYAATQASFEKLGKNISSNLFSMNGDIARLVMDKDTTAIL 226
+                                       677777777777777777667775.69***************************************99988777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1021  (320948 residues searched)
+Passed MSV filter:                        28  (0.0274241); expected 20.4 (0.02)
+Passed bias filter:                       22  (0.0215475); expected 20.4 (0.02)
+Passed Vit filter:                         9  (0.00881489); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00195886); expected 0.0 (1e-05)
+Initial search space (Z):               1021  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9470.81
+//
+[ok]

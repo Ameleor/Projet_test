@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_014844155.1_ASM1484415v1/GCA_014844155.1_ASM1484415v1_protein.faa
+# output directed to file:         results/GCA_014844155.1_ASM1484415v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.016   11.0   0.5      0.022   10.5   0.5    1.1  1  GCA_014844155.1_ASM1484415v1_1923  QOG15103.1 molybdate ABC transpo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014844155.1_ASM1484415v1_1923  QOG15103.1 molybdate ABC transporter substrate-binding protein [Staphylococcus aur
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.5   8.3e-06     0.022     275     344 ..      24      93 ..      19     103 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 8.3e-06
+               trimmed_msa_bchD_hmm 275 aeeeeeeeeeeeeeeealedvvleaakaalpadllaklaakaarrakaassgkaGakrksarrGrplgar 344
+                                        +++++++++++++ +++  +v  +a  + + ++l +++++++++   + + g++Ga rk+ ++G p+ + 
+  GCA_014844155.1_ASM1484415v1_1923  24 NDNQDNKKDAADNGKKQEIQVAAAASLTDVTKKLASEFKKEHKNADIKFNYGGSGALRKQIESGAPVDVF 93 
+                                        344444444444444444445555556678889999999998888889999**************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2644  (763387 residues searched)
+Passed MSV filter:                       103  (0.0389561); expected 52.9 (0.02)
+Passed bias filter:                       68  (0.0257186); expected 52.9 (0.02)
+Passed Vit filter:                        17  (0.00642965); expected 2.6 (0.001)
+Passed Fwd filter:                         5  (0.00189107); expected 0.0 (1e-05)
+Initial search space (Z):               2644  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9386.89
+//
+[ok]

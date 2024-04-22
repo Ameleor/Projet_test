@@ -1,0 +1,153 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721615.1_min17_bin64/GCA_928721615.1_min17_bin64_protein.faa
+# output directed to file:         results/GCA_928721615.1_min17_bin64/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.4e-06   23.1   0.1     0.0033   12.8   0.0    2.3  2  GCA_928721615.1_min17_bin64_1482  DIPAGD_07625 Thioredoxin reducta
+    2.5e-05   19.8   0.2      6e-05   18.5   0.2    1.6  1  GCA_928721615.1_min17_bin64_464   DIPAGD_02365 Dihydropyrimidine d
+     0.0025   13.2   0.0     0.0042   12.5   0.0    1.3  1  GCA_928721615.1_min17_bin64_30    DIPAGD_00150 HI0933 family prote
+     0.0059   12.0   0.5      0.013   10.9   0.3    1.6  2  GCA_928721615.1_min17_bin64_1272  DIPAGD_06560 tRNA uridine-5-carb
+  ------ inclusion threshold ------
+      0.013   10.9   0.0      0.019   10.3   0.0    1.3  1  GCA_928721615.1_min17_bin64_142   DIPAGD_00710 methylenetetrahydro
+      0.015   10.6   0.3        0.1    7.9   0.1    2.3  3  GCA_928721615.1_min17_bin64_1093  DIPAGD_05575 Trk system potassiu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721615.1_min17_bin64_1482  DIPAGD_07625 Thioredoxin reductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   1.3e-05    0.0033       2      51 ..       1      47 [.       1      55 [. 0.85
+   2 !    8.2   0.0   0.00032     0.081       3      36 ..     142     175 ..     140     218 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 1.3e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldragrikPcGGaiPprlikd 51
+                                      ++dv++ G GPaG  aa  l r+  ++l++++     P G  i + li++
+  GCA_928721615.1_min17_bin64_1482  1 MYDVIICGSGPAGMSAALFLRRANLNILIVEKGT---PGGKLISTALIEN 47
+                                      6****************************99863...6666666666665 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00032
+              trimmed_msa_bchP_hmm   3 fdvvvvGGGPaGataaedlarkGkkvllldragr 36 
+                                        +vvv+GGG +    a  la+  kkv ++ r + 
+  GCA_928721615.1_min17_bin64_1482 142 QNVVVIGGGNSAIEEALYLAKICKKVTIITRGHH 175
+                                       589*************************998764 PP
+
+>> GCA_928721615.1_min17_bin64_464  DIPAGD_02365 Dihydropyrimidine dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.2   2.4e-07     6e-05       5     181 ..     116     280 ..     113     299 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 2.4e-07
+             trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldragrikPcGGaiPprlikdfaipdellvakiksarmiaPsdrkvdlpiee 82 
+                                      + v+G G +G  +a +la+ G +v l+d++++i   GG i    + +f   d+++   +        ++ +v++  ++
+  GCA_928721615.1_min17_bin64_464 116 IAVIGAGVSGMNVAIELAKLGLDVTLFDKNNQI---GGVIT-DSLPNFRFNDNVVNVLVAI-----LKKLNVEMVFNK 184
+                                      689****************************98...78775.5679999999976544332.....256689999999 PP
+
+             trimmed_msa_bchP_hmm  83 GfvGmvdreefdeflreraaeagaerrtgtferierdedgtavvvyrekeegeeekvrarlvigadGarsevarqevp 160
+                                       f   ++ ++ ++f      ++g+   +  fe  +   dg +++    k++ ++ + +  lviga     +v+r  v 
+  GCA_928721615.1_min17_bin64_464 185 EFGNNLNFNDLNDFDY-IVFATGTMLSKKIFEDNASVYDGIKLLEDG-KNNIQKINNANSLVIGAGNVAMDVSRLLVR 260
+                                      9987777777776643.345678888888898888888877776322.444555555678999**99999*****999 PP
+
+             trimmed_msa_bchP_hmm 161 gaekvklvfayheivkapeee 181
+                                      + +kv++v+   +i ++p+++
+  GCA_928721615.1_min17_bin64_464 261 SDNKVNIVYR-RNIANSPASK 280
+                                      9999999985.5677777764 PP
+
+>> GCA_928721615.1_min17_bin64_30  DIPAGD_00150 HI0933 family protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   1.6e-05    0.0042       2      37 ..       4      41 ..       3      48 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.6e-05
+            trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkG..kkvllldragri 37
+                                    ++dv++vG GPaG  +a +l +k    kvll+++ + i
+  GCA_928721615.1_min17_bin64_30  4 KYDVILVGAGPAGIFSAYELIKKDptLKVLLVEKGNDI 41
+                                    7********************98522689999987765 PP
+
+>> GCA_928721615.1_min17_bin64_1272  DIPAGD_06560 tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.3     5e-05     0.013       2      41 ..      17      59 ..      16      84 .. 0.78
+   2 ?   -3.7   0.0       1.3   3.4e+02      73     101 ..     456     485 ..     437     500 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 5e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllld.ragri..kPcG 41
+                                      t+d++v+GGG aG  aa   ar G + +++    +ri   Pc 
+  GCA_928721615.1_min17_bin64_1272 17 TYDALVIGGGHAGIEAALANARVGLNTIMVCgAFKRIgnMPCN 59
+                                      8***********************9887764144555333665 PP
+
+  == domain 2  score: -3.7 bits;  conditional E-value: 1.3
+              trimmed_msa_bchP_hmm  73 drkvdlpieeGf.vGmvdreefdeflrera 101
+                                       d++ +  i+ G+  G++  e+++++l++  
+  GCA_928721615.1_min17_bin64_1272 456 DNADQRLIKYGYhTGLISEERYNNYLKKME 485
+                                       444455567777468999999999998754 PP
+
+>> GCA_928721615.1_min17_bin64_142  DIPAGD_00710 methylenetetrahydrofolate--tRNA-(uracil(54)-C(5))-methyltransferase (FA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   7.3e-05     0.019       4      33 ..       3      32 ..       1     149 [. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 7.3e-05
+             trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldr 33
+                                     +v+v+G G aG+ a  +la++G +v l + 
+  GCA_928721615.1_min17_bin64_142  3 NVIVIGAGLAGSEAVYQLAKRGYNVKLYEM 32
+                                     79***********************99764 PP
+
+>> GCA_928721615.1_min17_bin64_1093  DIPAGD_05575 Trk system potassium transporter TrkA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.1    0.0004       0.1       5      36 ..       3      34 ..       1      37 [. 0.91
+   2 ?   -2.0   0.1       0.4     1e+02     119     161 ..      63     102 ..      52     113 .. 0.67
+   3 ?   -1.1   0.0      0.21        53       5      34 ..     231     260 ..     229     277 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.0004
+              trimmed_msa_bchP_hmm  5 vvvvGGGPaGataaedlarkGkkvllldragr 36
+                                      +vv+G G  G t+ ++++++G++++ +d +++
+  GCA_928721615.1_min17_bin64_1093  3 IVVIGCGTIGKTVIKHVSKEGHSIIAIDDDKK 34
+                                      89*************************98776 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.4
+              trimmed_msa_bchP_hmm 119 dedgtavvvyrekeegeeekvrarlvigadGarsevarqevpg 161
+                                       ++d   vv+++   +++e+++ a lv    Ga+s++ar   p+
+  GCA_928721615.1_min17_bin64_1093  63 TKDADLVVAVT---SSDETNILACLVAKRLGAKSTIARVRNPE 102
+                                       44444444443...45667788888888889999999876655 PP
+
+  == domain 3  score: -1.1 bits;  conditional E-value: 0.21
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldra 34 
+                                       ++++GGG      a++l  k  kv l++++
+  GCA_928721615.1_min17_bin64_1093 231 ILIIGGGKIAYYLAKTLISKKYKVKLIENN 260
+                                       789*********************999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1523  (512873 residues searched)
+Passed MSV filter:                        52  (0.0341431); expected 30.5 (0.02)
+Passed bias filter:                       46  (0.0302035); expected 30.5 (0.02)
+Passed Vit filter:                        11  (0.00722259); expected 1.5 (0.001)
+Passed Fwd filter:                         6  (0.00393959); expected 0.0 (1e-05)
+Initial search space (Z):               1523  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7093.58
+//
+[ok]

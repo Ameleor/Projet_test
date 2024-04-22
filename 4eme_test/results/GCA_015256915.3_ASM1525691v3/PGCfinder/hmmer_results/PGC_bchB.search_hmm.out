@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCA_015256915.3_ASM1525691v3/GCA_015256915.3_ASM1525691v3_protein.faa
+# output directed to file:         results/GCA_015256915.3_ASM1525691v3/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0084    9.9   3.5     0.0073   10.1   0.7    1.9  2  GCA_015256915.3_ASM1525691v3_126  QWB91087.1 MAG: cell division pr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015256915.3_ASM1525691v3_126  QWB91087.1 MAG: cell division protein FtsZ [Candidatus Saccharimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.1     0.016       9.4     298     341 ..     116     156 ..     108     165 .. 0.80
+   2 !   10.1   0.7   1.2e-05    0.0073     409     495 ..     320     405 ..     310     407 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.016
+              trimmed_msa_bchB_hmm 298 havaaarvaaeelGfevvGlGtysrefarevreaakeygveali 341
+                                       h+v  a +a +e+G+ v+G+ t    f    r++ +++ +e l 
+  GCA_015256915.3_ASM1525691v3_126 116 HVV--AEIA-REMGILVIGVATRPFTFEGAKRKTNADWAIEKLA 156
+                                       554..4555.69*********99999999999999999999875 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_bchB_hmm 409 wvhplvmGleehlltmfredfefhdeaaashlgakaaaaeaeaeeeeeeaapaavaeaeaeaawaae.aekelkkip 484
+                                       + +p++  le  + + f  + e  ++ +  h  ++a + e   ++ee+++a   +++ e++++wa++  ek+ + ip
+  GCA_015256915.3_ASM1525691v3_126 320 YNEPVINSLESAVSKTFNLEDEHTEAQEINHTISNAIDME--LNNEEKTSAEDFASDIETKNIWAQDeEEKDESDIP 394
+                                       6679999999999999999999888888888887777766..45555555666678889999998761578899*** PP
+
+              trimmed_msa_bchB_hmm 485 ffvrgkarrnt 495
+                                        f+r + r+  
+  GCA_015256915.3_ASM1525691v3_126 395 AFLRRRKRNKK 405
+                                       ****9877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                        597  (186747 residues searched)
+Passed MSV filter:                        14  (0.0234506); expected 11.9 (0.02)
+Passed bias filter:                       12  (0.0201005); expected 11.9 (0.02)
+Passed Vit filter:                         2  (0.00335008); expected 0.6 (0.001)
+Passed Fwd filter:                         1  (0.00167504); expected 0.0 (1e-05)
+Initial search space (Z):                597  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13800.46
+//
+[ok]

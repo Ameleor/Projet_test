@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018866225.1_ASM1886622v1/GCA_018866225.1_ASM1886622v1_protein.faa
+# output directed to file:         results/GCA_018866225.1_ASM1886622v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.4e-09   32.5   0.0    2.8e-09   32.2   0.0    1.0  1  GCA_018866225.1_ASM1886622v1_403  QWQ32619.1 alpha/beta hydrolase 
+     0.0038   12.2   0.1     0.0043   12.0   0.1    1.0  1  GCA_018866225.1_ASM1886622v1_527  QWQ32716.1 alpha/beta hydrolase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018866225.1_ASM1886622v1_403  QWQ32619.1 alpha/beta hydrolase [Candidatus Minimicrobia naudis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.0   6.2e-12   2.8e-09      16      83 ..      16      85 ..      13      94 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 6.2e-12
+              trimmed_msa_bchO_hmm 16 srfveagg..lrWhvqelgegPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerls 83
+                                      s f+++gg  + ++  + g+  ++LL+HG G+  h +  l+  L+++ +++ +DLP hg ++  ++ ++s
+  GCA_018866225.1_ASM1886622v1_403 16 SDFMDVGGvkTAYYFYQGGSNKTILLIHGIGGDFHGMIPLAYHLKNDANLVFVDLPSHGRSQLIKNMKMS 85
+                                      5666666622346777889999****************************************99988776 PP
+
+>> GCA_018866225.1_ASM1886622v1_527  QWQ32716.1 alpha/beta hydrolase [Candidatus Minimicrobia naudis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.1   9.5e-06    0.0043      87     120 ..      23      56 ..      13      58 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 9.5e-06
+              trimmed_msa_bchO_hmm  87 maealaaLlaalgvepavvvGHSAGaaialrlal 120
+                                        a+ +a+L ++  ++ ++v+GHS G+  a++la 
+  GCA_018866225.1_ASM1886622v1_527  23 AASIVATLRREFITRVDIVIGHSMGSLAAVELAK 56 
+                                       567788888999999**********999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                        915  (138699 residues searched)
+Passed MSV filter:                        26  (0.0284153); expected 18.3 (0.02)
+Passed bias filter:                       21  (0.0229508); expected 18.3 (0.02)
+Passed Vit filter:                         2  (0.00218579); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00218579); expected 0.0 (1e-05)
+Initial search space (Z):                915  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8153.45
+//
+[ok]

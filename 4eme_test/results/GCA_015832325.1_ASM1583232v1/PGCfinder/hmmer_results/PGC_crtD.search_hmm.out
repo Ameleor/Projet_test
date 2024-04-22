@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_015832325.1_ASM1583232v1/GCA_015832325.1_ASM1583232v1_protein.faa
+# output directed to file:         results/GCA_015832325.1_ASM1583232v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-06   23.7   0.2    5.3e-06   21.6   0.1    1.9  2  GCA_015832325.1_ASM1583232v1_583   QPN37884.1 NADPH-dependent 2,4-d
+    2.1e-05   19.6   2.0      3e-05   19.1   0.1    1.9  2  GCA_015832325.1_ASM1583232v1_3903  QPN38553.1 dihydrolipoyl dehydro
+     0.0013   13.7   4.8      0.033    9.1   0.1    3.0  3  GCA_015832325.1_ASM1583232v1_3460  QPN37332.1 alkyl hydroperoxide r
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015832325.1_ASM1583232v1_583  QPN37884.1 NADPH-dependent 2,4-dienoyl-CoA reductase [Salmonella enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.6   0.1     1e-08   5.3e-06       3      39 ..     377     413 ..     375     425 .. 0.91
+   2 ?   -0.6   0.0     0.053        28       1      24 [.     496     519 ..     496     524 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 21.6 bits;  conditional E-value: 1e-08
+              trimmed_msa_crtD_hmm   3 vvviGaGigGLaaalklaaaGldvtvlekaaapGGKl 39 
+                                         v+GaG +GLa a++ a++G++vt++++++++GG+ 
+  GCA_015832325.1_ASM1583232v1_583 377 LAVVGAGPAGLAFAINAASRGHHVTLFDAHSEIGGQF 413
+                                       679********************************86 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.053
+              trimmed_msa_crtD_hmm   1 ervvviGaGigGLaaalklaaaGl 24 
+                                       +rv +iG G  G+ +a+ l+++G 
+  GCA_015832325.1_ASM1583232v1_583 496 KRVAIIGCGGIGFDTAMYLSQHGE 519
+                                       589******************996 PP
+
+>> GCA_015832325.1_ASM1583232v1_3903  QPN38553.1 dihydrolipoyl dehydrogenase [Salmonella enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.1   5.8e-08     3e-05       2      39 ..       8      45 ..       7      54 .. 0.92
+   2 ?   -0.5   0.2     0.052        27       2      33 ..     177     208 ..     176     210 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 5.8e-08
+               trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKl 39
+                                       +vvv+GaG +G +aa++ a  Gl+ +++e+ ++ GG  
+  GCA_015832325.1_ASM1583232v1_3903  8 QVVVLGAGPAGYSAAFRCADLGLETVIVERYNTLGGVC 45
+                                       8**********************************965 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.052
+               trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                        r++v+G Gi GL       a G ++ v+e  +
+  GCA_015832325.1_ASM1583232v1_3903 177 RMLVMGGGIIGLEMGTVYHALGSEIDVVEMFD 208
+                                        789*************999********99765 PP
+
+>> GCA_015832325.1_ASM1583232v1_3460  QPN37332.1 alkyl hydroperoxide reductase subunit F [Salmonella enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.1   0.2     0.001      0.54       2      30 ..     214     242 ..     213     259 .. 0.84
+   2 ?   -0.2   0.0     0.042        22     226     278 ..     268     322 ..     264     339 .. 0.81
+   3 !    9.1   0.1   6.4e-05     0.033       1      33 [.     356     388 ..     356     407 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.001
+               trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvle 30 
+                                        +v+++G+G +G aaa+  a++G++  ++ 
+  GCA_015832325.1_ASM1583232v1_3460 214 DVLIVGSGPAGAAAAVYSARKGIRTGLMG 242
+                                        699*******************9987764 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.042
+               trimmed_msa_crtD_hmm 226 klaealaklaeakgaefrygeeveeil..veegrvsgvrladgerieadavvfng 278
+                                        kla al++ +++  +++  ++++++++  ++eg  + +++a+g+ ++a+++++++
+  GCA_015832325.1_ASM1583232v1_3460 268 KLAGALKAHVSDYDVDVIDSQSASKLVpaATEGGLHQIETASGAVLKARSIIIAT 322
+                                        78888888888888888888888887622457889999999*****999999875 PP
+
+  == domain 3  score: 9.1 bits;  conditional E-value: 6.4e-05
+               trimmed_msa_crtD_hmm   1 ervvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                        +rv viG G +G+ aa++la    +vt+le a 
+  GCA_015832325.1_ASM1583232v1_3460 356 KRVAVIGGGNSGVEAAIDLAGIVEHVTLLEFAP 388
+                                        589**************************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1558  (290517 residues searched)
+Passed MSV filter:                        68  (0.0436457); expected 31.2 (0.02)
+Passed bias filter:                       52  (0.0333761); expected 31.2 (0.02)
+Passed Vit filter:                        11  (0.00706033); expected 1.6 (0.001)
+Passed Fwd filter:                         3  (0.00192555); expected 0.0 (1e-05)
+Initial search space (Z):               1558  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6281.66
+//
+[ok]

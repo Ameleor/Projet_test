@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_023117055.1_ASM2311705v1/GCA_023117055.1_ASM2311705v1_protein.faa
+# output directed to file:         results/GCA_023117055.1_ASM2311705v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00012   19.7   0.3       0.01   13.4   0.1    2.1  2  GCA_023117055.1_ASM2311705v1_4297  UPN54802.1 septum site-determini
+     0.0026   15.4   0.1     0.0043   14.6   0.1    1.3  1  GCA_023117055.1_ASM2311705v1_4591  UPN55069.1 iron-sulfur cluster c
+  ------ inclusion threshold ------
+      0.024   12.2   0.0      0.035   11.7   0.0    1.2  1  GCA_023117055.1_ASM2311705v1_5231  UPN58385.1 AAA family ATPase (pl
+      0.029   11.9   0.0      0.099   10.2   0.0    1.8  2  GCA_023117055.1_ASM2311705v1_740   UPN56284.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023117055.1_ASM2311705v1_4297  UPN54802.1 septum site-determining protein MinD [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.1   7.7e-06      0.01      22      57 ..       4      40 ..       1      65 [. 0.85
+   2 !    4.5   0.0    0.0039       5.3     137     189 ..     115     166 ..     101     170 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 7.7e-06
+               trimmed_msa_bchL_hmm 22 vfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                       ++ v  gkgg+gk+t+s+ +++ +++ gk+ + i  d
+  GCA_023117055.1_ASM2311705v1_4297  4 IIVVtSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFD 40
+                                       444426************************9988766 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.0039
+               trimmed_msa_bchL_hmm 137 dvvifdvlgdvvcggfaaplqhadralivaandfdsifamnrivaaikakskn 189
+                                        d ++ d    +  g +   l +ad a+i +  +  s+   +ri+  + +ks+ 
+  GCA_023117055.1_ASM2311705v1_4297 115 DFIVCDSPAGIETGAL-MALYFADEAIITTNPEVSSVRDSDRILGILASKSRR 166
+                                        4555555555555544.4699************************99999985 PP
+
+>> GCA_023117055.1_ASM2311705v1_4591  UPN55069.1 iron-sulfur cluster carrier protein ApbC [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.1   3.2e-06    0.0043      22      52 ..     109     140 ..      94     155 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 3.2e-06
+               trimmed_msa_bchL_hmm  22 vfav.ygkggigksttssnlsvafsklgkrvl 52 
+                                        ++a+  gkgg+gks+t+ nl+ a++  g +v 
+  GCA_023117055.1_ASM2311705v1_4591 109 IIAIsSGKGGVGKSSTAVNLALALAAEGAKVG 140
+                                        5666359******************9999885 PP
+
+>> GCA_023117055.1_ASM2311705v1_5231  UPN58385.1 AAA family ATPase (plasmid) [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   2.6e-05     0.035      25      57 ..      15      47 ..       2      58 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.6e-05
+               trimmed_msa_bchL_hmm 25 vygkggigksttssnlsvafsklgkrvlqigcd 57
+                                          kggi ks +ss+++  + k g rvl+i  d
+  GCA_023117055.1_ASM2311705v1_5231 15 CSQKGGIVKSQSSSEIAHDLRKAGFRVLEIDMD 47
+                                       4579**************************887 PP
+
+>> GCA_023117055.1_ASM2311705v1_740  UPN56284.1 ParA family protein [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   7.3e-05     0.099      25      57 ..       7      39 ..       1      86 [. 0.79
+   2 ?   -1.1   0.0       0.2   2.7e+02     127     145 ..     113     131 ..     107     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 7.3e-05
+              trimmed_msa_bchL_hmm 25 vygkggigksttssnlsvafsklgkrvlqigcd 57
+                                      +  kgg gkst ++nls  ++  g + l i  d
+  GCA_023117055.1_ASM2311705v1_740  7 ISTKGGEGKSTHAANLSGFLADAGLKTLLIDGD 39
+                                      568*********************999999876 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.2
+              trimmed_msa_bchL_hmm 127 lkehhlledtdvvifdvlg 145
+                                       l +h l++  dvv++d  g
+  GCA_023117055.1_ASM2311705v1_740 113 LLQHPLFNAYDVVVIDSQG 131
+                                       679************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       5461  (1651474 residues searched)
+Passed MSV filter:                       201  (0.0368064); expected 109.2 (0.02)
+Passed bias filter:                      188  (0.0344259); expected 109.2 (0.02)
+Passed Vit filter:                        30  (0.0054935); expected 5.5 (0.001)
+Passed Fwd filter:                         4  (0.000732467); expected 0.1 (1e-05)
+Initial search space (Z):               5461  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10570.08
+//
+[ok]

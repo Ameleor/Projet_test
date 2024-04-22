@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022836955.1_ASM2283695v1/GCA_022836955.1_ASM2283695v1_protein.faa
+# output directed to file:         results/GCA_022836955.1_ASM2283695v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.8e-05   19.2   0.0    0.00011   18.8   0.0    1.1  1  GCA_022836955.1_ASM2283695v1_463  UOK58270.1 MoxR family ATPase [B
+  ------ inclusion threshold ------
+      0.019   11.3   0.0      0.021   11.2   0.0    1.1  1  GCA_022836955.1_ASM2283695v1_755  UOK58459.1 sigma 54-interacting 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022836955.1_ASM2283695v1_463  UOK58270.1 MoxR family ATPase [Bacillus sp. OVS6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.0   5.4e-08   0.00011      86     257 ..     103     296 ..     100     306 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 5.4e-08
+              trimmed_msa_bchD_hmm  86 ggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldlde 160
+                                       g+++++    R+++++ + l + ++e   ++  dg++++l   f ++a  + +e + +  lpea ldR  +++++  
+  GCA_022836955.1_ASM2283695v1_463 103 GNIVLADEINRTSPKTQSALLEGMEEA--NVTVDGVTKSLGRPFFVMATQNPIEYEGTypLPEAQLDRFLFKIRMGY 177
+                                       5677777789****************9..5899*******************9776542279***********9987 PP
+
+              trimmed_msa_bchD_hmm 161 ialrdleelaa...............eaedieaararlpkvtleeealealvataaalGi.......dslRapllal 215
+                                        +  +  e+                 ++e++ + +++++++ ++e++ + +v++ +++         +s R ++  +
+  GCA_022836955.1_ASM2283695v1_463 178 PTPGEELEILNlaekerpihhiqaviTKEELVELQKEIQSIYVDETVKRYIVEVVTKTRKhpsvylgASPRGSIALM 254
+                                       6665333333245556667777777788888888889999999888777777666554431111222699******* PP
+
+              trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                       + a+a A l gr+ v  +d++  a  +l++r +  +e++ e 
+  GCA_022836955.1_ASM2283695v1_463 255 KSAQAFAFLYGRDYVIPDDIQYLAPYTLPHRMILKSEAKYEG 296
+                                       *******************************99877766655 PP
+
+>> GCA_022836955.1_ASM2283695v1_755  UOK58459.1 sigma 54-interacting transcriptional regulator [Bacillus sp. OVS6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.1e-05     0.021      74     177 ..      56     157 ..      19     179 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchD_hmm  74 pvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedeal.peaLl 149
+                                       +v + G++++a++g+l+l     l+ +l a+l ++l eg  +++r g +++++ +++++a  + + +deal  e + 
+  GCA_022836955.1_ASM2283695v1_755  56 AVDRMGIFEQANDGTLFLDELNSLDLGLQAKLLRVLQEG--EIRRVGGSKDQKINVKIIAAMNIS-PDEALeREIIR 129
+                                       68899**********************************..599***************987766.55555155667 PP
+
+              trimmed_msa_bchD_hmm 150 dRlalrldldeialrdleelaaeaedie 177
+                                         l +rl++ +i++ +l e +a+  +i+
+  GCA_022836955.1_ASM2283695v1_755 130 SDLFFRLNVVTIQMPSLLERKADIPEIA 157
+                                       7888998888888887777777666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3943  (875168 residues searched)
+Passed MSV filter:                       135  (0.0342379); expected 78.9 (0.02)
+Passed bias filter:                      101  (0.025615); expected 78.9 (0.02)
+Passed Vit filter:                        23  (0.00583312); expected 3.9 (0.001)
+Passed Fwd filter:                         6  (0.00152168); expected 0.0 (1e-05)
+Initial search space (Z):               3943  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8981.51
+//
+[ok]

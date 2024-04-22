@@ -1,0 +1,111 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699045.1_ASM1669904v1/GCA_016699045.1_ASM1669904v1_protein.faa
+# output directed to file:         results/GCA_016699045.1_ASM1669904v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      1e-08   30.9   0.6      0.015   10.7   0.0    3.2  3  GCA_016699045.1_ASM1669904v1_579  QQR49777.1 YifB family Mg chelat
+    5.8e-05   18.6   1.3    0.00043   15.8   1.3    2.0  1  GCA_016699045.1_ASM1669904v1_659  QQR48588.1 MoxR family ATPase [b
+     0.0082   11.5   0.0       0.55    5.6   0.0    2.5  2  GCA_016699045.1_ASM1669904v1_213  QQR49834.1 Holliday junction bra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699045.1_ASM1669904v1_579  QQR49777.1 YifB family Mg chelatase-like AAA ATPase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0   0.00028      0.12       6      57 ..     196     245 ..     191     260 .. 0.87
+   2 !   10.7   0.0   3.5e-05     0.015     119     185 ..     286     352 ..     279     356 .. 0.92
+   3 !    9.1   0.1    0.0001     0.045     194     307 ..     383     497 ..     377     508 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.00028
+              trimmed_msa_bchI_hmm   6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57 
+                                       f  + gq   k+al +aa  ++   +l +G  G+Gk+  ++ +a++lP+++ 
+  GCA_016699045.1_ASM1669904v1_579 196 FDQVKGQLLAKRALQIAAAGRH--NILFIGPPGSGKTMLAKRFATILPPMSF 245
+                                       7778899999*******98775..79***********************975 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 3.5e-05
+              trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        G  +  pG ++ a+ G l++de+  ++   +++l +  +  + ++ r + +v +pa f+lv + nP
+  GCA_016699045.1_ASM1669904v1_579 286 GGGSNPRPGEISLAHNGVLFLDELTEFNRPTLEVLREPLENKKVLISRASCAVEYPANFLLVAALNP 352
+                                       56666789*******************************************************9999 PP
+
+  == domain 3  score: 9.1 bits;  conditional E-value: 0.0001
+              trimmed_msa_bchI_hmm 194 lldrfGlsvevrtpkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpda..vlekaakl 268
+                                       lldr  l ++v+  +      e +++ d+    ++++++ ++ +    +++  + r+++ + +  ++  +l+++a+ 
+  GCA_016699045.1_ASM1669904v1_579 383 LLDRIDLHINVSGVN-----YEEIKNVDHNSMSSAQMLKMVNGAVVLQERRFGSMRNAFMNATQIEQfcTLTDSAEQ 454
+                                       777777777777654.....345677777777777777777777777777777777665544443331257888888 PP
+
+              trimmed_msa_bchI_hmm 269 clalgtd....Glrgeltllraaralaalegakevtkehlkkv 307
+                                        ++l+ d     +rg   +l+ ar++a l++ ++++++h+++ 
+  GCA_016699045.1_ASM1669904v1_579 455 IVKLAFDrlglSMRGYHKILKIARTIADLDQCEQIDRKHIQEA 497
+                                       8888888442246***************************874 PP
+
+>> GCA_016699045.1_ASM1669904v1_659  QQR48588.1 MoxR family ATPase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   1.3   9.8e-07   0.00043     242     316 ..     210     300 ..     185     321 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 9.8e-07
+              trimmed_msa_bchI_hmm 242 rkkilaarkrlekvevpdavlekaaklcla......lgtdGl..........rgeltllraaralaalegakevtke 302
+                                       +++i+aa++ +++v ++d+v+e + kl++a       + d +          r+ l++ +aa+a a l++++ v  +
+  GCA_016699045.1_ASM1669904v1_659 210 KEEINAAKNLVNQVYIDDKVIEYTLKLVFAsrtpqdFNLDDIhffiqygaspRATLAINQAAKAHAFLRKRHFVIPD 286
+                                       5678899999999999999988887777651111113344333333444455899********************** PP
+
+              trimmed_msa_bchI_hmm 303 hlkkvaplalrhrl 316
+                                       ++k+vap  lrhr+
+  GCA_016699045.1_ASM1669904v1_659 287 DVKAVAPDILRHRI 300
+                                       *************7 PP
+
+>> GCA_016699045.1_ASM1669904v1_213  QQR49834.1 Holliday junction branch migration DNA helicase RuvB [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.6   0.0    0.0013      0.55      25      52 ..      56      83 ..      30      99 .. 0.78
+   2 !    3.3   0.0    0.0062       2.7     136     215 ..     113     198 ..     106     267 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.0013
+              trimmed_msa_bchI_hmm 25 dpsigGvlvlGdrGtGkstavralaall 52
+                                      d ++  vl++G  G Gk+t +r +a+ l
+  GCA_016699045.1_ASM1669904v1_213 56 DEHLDHVLIFGPPGLGKTTLARVIAKEL 83
+                                      788999****************999765 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.0062
+              trimmed_msa_bchI_hmm 136 flyidevnlledhlvdllldvaas.Genvvereg...lsvrhpar.fvlvGsGnPeeGelrPqlldrfGls..vevr 205
+                                        l+ide+  l   + ++l  + +   ++v+  +g    s+r p   f l+G+     G l   l  rfG+   ++  
+  GCA_016699045.1_ASM1669904v1_213 113 VLFIDEIHRLPKNVEEILYSAMENfCVDVIIGQGagaKSIRLPINpFTLIGAT-TKTGSLSGPLQTRFGIVerIDFY 188
+                                       57888888888877777766544325666665552225899886548999976.57899999999999985225555 PP
+
+              trimmed_msa_bchI_hmm 206 tpkdleerve 215
+                                        p +l+  ve
+  GCA_016699045.1_ASM1669904v1_213 189 EPAELAAIVE 198
+                                       6666655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1299  (434074 residues searched)
+Passed MSV filter:                        60  (0.0461894); expected 26.0 (0.02)
+Passed bias filter:                       42  (0.0323326); expected 26.0 (0.02)
+Passed Vit filter:                         9  (0.00692841); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00230947); expected 0.0 (1e-05)
+Initial search space (Z):               1299  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8545.84
+//
+[ok]

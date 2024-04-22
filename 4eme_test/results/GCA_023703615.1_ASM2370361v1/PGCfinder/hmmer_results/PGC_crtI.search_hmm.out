@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703615.1_ASM2370361v1/GCA_023703615.1_ASM2370361v1_protein.faa
+# output directed to file:         results/GCA_023703615.1_ASM2370361v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00025   15.9   0.5      0.022    9.4   0.2    2.2  2  GCA_023703615.1_ASM2370361v1_393   URQ69957.1 dihydrolipoyl dehydro
+     0.0023   12.7   1.4     0.0029   12.4   0.1    1.7  2  GCA_023703615.1_ASM2370361v1_1153  URQ69478.1 FAD-dependent oxidore
+     0.0029   12.4   0.0     0.0044   11.8   0.0    1.3  1  GCA_023703615.1_ASM2370361v1_690   URQ70199.1 NAD(P)/FAD-dependent 
+     0.0045   11.7   0.0     0.0067   11.2   0.0    1.2  1  GCA_023703615.1_ASM2370361v1_1054  URQ69380.1 glutamate synthase su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703615.1_ASM2370361v1_393  URQ69957.1 dihydrolipoyl dehydrogenase [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   0.2   7.2e-05     0.022       4      40 ..       4      40 ..       2      44 .. 0.92
+   2 !    4.4   0.0    0.0023      0.73       6      35 ..     182     211 ..     177     225 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 7.2e-05
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGGra 40
+                                      ++viG+G  G  aair ++ G++++ +e+l    G a
+  GCA_023703615.1_ASM2370361v1_393  4 VIVIGSGPAGYVAAIRASQLGLKTACVEELTDTDGSA 40
+                                      69***************************99888876 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.0023
+              trimmed_msa_crtI_hmm   6 viGaGfGGlaaairlgakGyrvtvleklda 35 
+                                       +iGaG+ Gl +    +  G +vtv+e+ld+
+  GCA_023703615.1_ASM2370361v1_393 182 IIGAGIIGLELGSVWSRLGAKVTVIEALDE 211
+                                       8**************************996 PP
+
+>> GCA_023703615.1_ASM2370361v1_1153  URQ69478.1 FAD-dependent oxidoreductase [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.1   9.2e-06    0.0029       2      35 ..       2      35 ..       1      48 [. 0.88
+   2 ?   -1.8   0.1      0.19        59     218     282 ..     200     268 ..     189     275 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 9.2e-06
+               trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgakGyrvtvleklda 35
+                                       kk  +iGaG+ G+a+a +l +k  +vt+++++ +
+  GCA_023703615.1_ASM2370361v1_1153  2 KKIAIIGAGIAGIATAYKLLQKNHNVTIFDARSS 35
+                                       56789*************************9875 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.19
+               trimmed_msa_crtI_hmm 218 GGtgalvkglvk.lieeqGgelrlnaeveeievedgrat.gvrlasGe.eiead.vvvsnadaaltykk 282
+                                        G + ++   l k l+e+  +++ ln+ v++i+ +++++  +++  + e  +++d vvv+ +  ++t+ +
+  GCA_023703615.1_ASM2370361v1_1153 200 GDIHKFCVNLQKvLVEKYFANIELNTLVTNISKSNDKIIvTIKNDDNEnDMSFDnVVVCAGVNTQTFAD 268
+                                        555666666665145677789999999999998887764144444433145555255555566667765 PP
+
+>> GCA_023703615.1_ASM2370361v1_690  URQ70199.1 NAD(P)/FAD-dependent oxidoreductase [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   1.4e-05    0.0044       3      42 ..       6      45 ..       4      73 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGrayv 42
+                                        ++iGaG  Gl +    g  G++ t++++ld+pGG+   
+  GCA_023703615.1_ASM2370361v1_690  6 DIIIIGAGPVGLFTVFEAGLLGLNCTLIDNLDKPGGQCAE 45
+                                      579*********************************8765 PP
+
+>> GCA_023703615.1_ASM2370361v1_1054  URQ69380.1 glutamate synthase subunit beta [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0   2.1e-05    0.0067       2      38 ..     227     263 ..     226     273 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2.1e-05
+               trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGG 38 
+                                        kk+ +iG+G  G+a a  l+  G++  v++k +++GG
+  GCA_023703615.1_ASM2370361v1_1054 227 KKVAIIGSGPAGIACADVLTRSGVKSHVFDKNQEIGG 263
+                                        67889*******************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1251  (392371 residues searched)
+Passed MSV filter:                        60  (0.0479616); expected 25.0 (0.02)
+Passed bias filter:                       54  (0.0431655); expected 25.0 (0.02)
+Passed Vit filter:                        10  (0.00799361); expected 1.3 (0.001)
+Passed Fwd filter:                         4  (0.00319744); expected 0.0 (1e-05)
+Initial search space (Z):               1251  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6774.05
+//
+[ok]

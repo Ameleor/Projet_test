@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699405.1_ASM1669940v1/GCA_016699405.1_ASM1669940v1_protein.faa
+# output directed to file:         results/GCA_016699405.1_ASM1669940v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0003   17.6   7.3     0.0015   15.3   3.7    3.2  3  GCA_016699405.1_ASM1669940v1_1180  QQR75132.1 MAG: MFS transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699405.1_ASM1669940v1_1180  QQR75132.1 MAG: MFS transporter [Holophagales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   4.5e-06     0.019      55      79 ..      73      97 ..      31     109 .. 0.80
+   2 !   15.3   3.7   3.6e-07    0.0015     326     381 ..     114     170 ..     108     190 .. 0.87
+   3 ?   -2.4   6.7      0.08   3.4e+02     299     383 ..     293     370 ..     253     399 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 4.5e-06
+              trimmed_msa_pucC2_hmm 55 llRPrlGygsDkggrrtpwiigGla 79
+                                       l  P +G  sD++grr p+i++Gla
+  GCA_016699405.1_ASM1669940v1_1180 73 LFAPLWGVLSDRTGRRKPFIVAGLA 97
+                                       568********************97 PP
+
+  == domain 2  score: 15.3 bits;  conditional E-value: 3.6e-07
+              trimmed_msa_pucC2_hmm 326 avfvlGlanGvfavaaigsmmala.gegresreGvRmGlwGaaqaiafglGglvGav 381
+                                        ++++l + +G+ +v   ++ m+l+  + +esr+G  mGl Gaa  + +glG+ vG  
+  GCA_016699405.1_ASM1669940v1_1180 114 TLLALRFLQGALSVMGWSTAMTLVaDHAEESRRGRTMGLLGAALILGVGLGAPVGGY 170
+                                        5688999********9999888861567889********************999975 PP
+
+  == domain 3  score: -2.4 bits;  conditional E-value: 0.08
+              trimmed_msa_pucC2_hmm 299 aGClgsalalaalalaalvgpalplkaavfvlGlanGvfavaaigsmmalagegresreGvRmGlwGaaqaiafgl 374
+                                        +G lg +l+l+ + la l    l l +a+++lG+         ++     a   + + +G  mG +  a ++ f+l
+  GCA_016699405.1_ASM1669940v1_1180 293 WGTLGYGLVLTFVGLADL----LLLWPAMIALGVLAAFMFPPTLTLT---AQLADPRTRGSAMGGFNFAGSLGFAL 361
+                                        555555555554444333....3556666667665543333333333...33345567899*************** PP
+
+              trimmed_msa_pucC2_hmm 375 GglvGavav 383
+                                        G l+Ga a 
+  GCA_016699405.1_ASM1669940v1_1180 362 GPLLGAWAQ 370
+                                        *****9764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       4228  (1577343 residues searched)
+Passed MSV filter:                       335  (0.0792337); expected 84.6 (0.02)
+Passed bias filter:                       80  (0.0189215); expected 84.6 (0.02)
+Passed Vit filter:                         9  (0.00212867); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000236518); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 16600.71
+//
+[ok]

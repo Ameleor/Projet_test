@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_021496055.1_ASM2149605v1/GCA_021496055.1_ASM2149605v1_protein.faa
+# output directed to file:         results/GCA_021496055.1_ASM2149605v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    5.2e-06   22.6   0.4      1e-05   21.6   0.4    1.5  1  GCA_021496055.1_ASM2149605v1_19  UJA43252.1 cell wall metabolism 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021496055.1_ASM2149605v1_19  UJA43252.1 cell wall metabolism sensor histidine kinase WalK [Staphylococcus epiderm
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.6   0.4   4.9e-09     1e-05     243     379 ..     248     379 ..     210     394 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 21.6 bits;  conditional E-value: 4.9e-09
+             trimmed_msa_ppsR_hmm 243 rlspaeaaaa.aaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvl 319
+                                      +ls++ ++a+ ++e+++++l +v+++++d+++ td++gr+  aN+  l++  la+e +v+g  +   Lg  +++ +  
+  GCA_021496055.1_ASM2149605v1_19 248 NLSKRVQEAQaNTESEKRRLDSVITHMSDGILATDRRGRVRIANDMALKMLGLAKE-DVIGYYM---LGVLNLENEFS 321
+                                      4555555544488899999*********************************9975.5677644...66667777777 PP
+
+             trimmed_msa_ppsR_hmm 320 lanlreegsvrlfatklrgelgteeeVevsAvsvadgeqpclgfvirdvsrreakekaks 379
+                                      l++++e+    +f   +++e g  + V+ s+   ++g  + ++ v++dv+++++ e+++ 
+  GCA_021496055.1_ASM2149605v1_19 322 LEEIQENSD--SFLLDINEEEGIIARVNFSTIVQETGFVTGYIAVLHDVTEQQQVERERR 379
+                                      777776654..6777778888888888888777777777777777777777766655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2083  (606800 residues searched)
+Passed MSV filter:                        79  (0.0379261); expected 41.7 (0.02)
+Passed bias filter:                       36  (0.0172828); expected 41.7 (0.02)
+Passed Vit filter:                         3  (0.00144023); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000480077); expected 0.0 (1e-05)
+Initial search space (Z):               2083  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12459.86
+//
+[ok]

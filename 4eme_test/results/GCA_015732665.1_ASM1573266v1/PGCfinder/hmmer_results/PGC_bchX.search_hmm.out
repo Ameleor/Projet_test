@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_015732665.1_ASM1573266v1/GCA_015732665.1_ASM1573266v1_protein.faa
+# output directed to file:         results/GCA_015732665.1_ASM1573266v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-06   24.5   0.1    1.8e-06   23.7   0.1    1.4  1  GCA_015732665.1_ASM1573266v1_1994  QPL09649.1 ParA family protein [
+    2.8e-06   23.1   0.4    4.5e-06   22.4   0.4    1.6  1  GCA_015732665.1_ASM1573266v1_56    QPL09792.1 iron-sulfur cluster c
+     0.0001   18.0   0.2      0.031    9.8   0.0    2.3  2  GCA_015732665.1_ASM1573266v1_1852  QPL09534.1 signal recognition pa
+     0.0056   12.3   0.2      0.085    8.4   0.1    2.3  2  GCA_015732665.1_ASM1573266v1_1972  QPL09631.1 septum site-determini
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015732665.1_ASM1573266v1_1994  QPL09649.1 ParA family protein [Neisseria meningitidis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.1   4.1e-09   1.8e-06      23      66 ..       4      48 ..       1      56 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 4.1e-09
+               trimmed_msa_bchX_hmm 23 qiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                       +i+ai   kgg+gk+ t  nl+  la +gk+vl++  dp+ ++t+
+  GCA_015732665.1_ASM1573266v1_1994  4 NILAIAnQKGGVGKTTTTVNLAASLASRGKRVLVVDLDPQGNATT 48
+                                       678885269******************************998875 PP
+
+>> GCA_015732665.1_ASM1573266v1_56  QPL09792.1 iron-sulfur cluster carrier protein ApbC [Neisseria meningitidis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.4   0.4     1e-08   4.5e-06      20      59 ..      94     134 ..      76     309 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 22.4 bits;  conditional E-value: 1e-08
+             trimmed_msa_bchX_hmm  20 ketqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                         +iia+  gkgg+gks t anl+  +a++g +v ++  d
+  GCA_015732665.1_ASM1573266v1_56  94 GVKNIIAVaSGKGGVGKSTTTANLAAAMARMGARVGVLDAD 134
+                                      4456888736*************************988877 PP
+
+>> GCA_015732665.1_ASM1573266v1_1852  QPL09534.1 signal recognition particle-docking protein FtsY [Neisseria meningitidi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.0     7e-05     0.031      17      62 ..     216     261 ..     204     296 .. 0.76
+   2 !    5.9   0.1    0.0011      0.48     179     219 ..     346     386 ..     325     408 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 7e-05
+               trimmed_msa_bchX_hmm  17 evtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62 
+                                        + tke  +i + g  g gk+ ++ +l+  +  qgk vll   d   
+  GCA_015732665.1_ASM1573266v1_1852 216 PETKEPFVIMLAGINGAGKTTSIGKLAKYFQAQGKSVLLAAGDTFR 261
+                                        56889999*******************************9988643 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.0011
+               trimmed_msa_bchX_hmm 179 yvannvcsaveyfrklggnvgvaglvinkddgtgeaqafae 219
+                                          an   +av+  + +   +g++gl++ k dgt +   +a+
+  GCA_015732665.1_ASM1573266v1_1852 346 LDANIGQNAVNQVKAFDDALGLTGLIVTKLDGTAKGGILAA 386
+                                        456777799***********************977654443 PP
+
+>> GCA_015732665.1_ASM1573266v1_1972  QPL09631.1 septum site-determining protein MinD [Neisseria meningitidis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.1   0.00019     0.085      24      68 ..       5      49 ..       1      64 [. 0.82
+   2 ?    1.5   0.0     0.023        10     215     250 ..     198     233 ..     179     255 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00019
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                       i+   gkgg+gk+ t a ++  la +g k  +i  d       l+
+  GCA_015732665.1_ASM1573266v1_1972  5 IVVTSGKGGVGKTTTSASIATGLALRGYKTAVIDFDVGLRNLDLI 49
+                                       55668************************9999888665555555 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.023
+               trimmed_msa_bchX_hmm 215 qafaeavgipvlaaipadedirrksanyeiigkpes 250
+                                        q +++   ip+l  ip+ +++ + s + e + +++s
+  GCA_015732665.1_ASM1573266v1_1972 198 QDICDILHIPLLGVIPESQNVLQASNSGEPVIHQDS 233
+                                        556677889********9999999988776555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1776  (488943 residues searched)
+Passed MSV filter:                        55  (0.0309685); expected 35.5 (0.02)
+Passed bias filter:                       48  (0.027027); expected 35.5 (0.02)
+Passed Vit filter:                         8  (0.0045045); expected 1.8 (0.001)
+Passed Fwd filter:                         4  (0.00225225); expected 0.0 (1e-05)
+Initial search space (Z):               1776  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9538.91
+//
+[ok]

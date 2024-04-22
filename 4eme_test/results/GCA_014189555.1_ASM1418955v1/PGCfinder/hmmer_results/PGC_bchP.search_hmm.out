@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_014189555.1_ASM1418955v1/GCA_014189555.1_ASM1418955v1_protein.faa
+# output directed to file:         results/GCA_014189555.1_ASM1418955v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00012   18.4   0.3      0.038   10.1   0.1    2.3  2  GCA_014189555.1_ASM1418955v1_427   QND41688.1 FAD-binding oxidoredu
+     0.0059   12.7   0.2     0.0093   12.1   0.2    1.3  1  GCA_014189555.1_ASM1418955v1_5281  QND43852.1 GMC family oxidoreduc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014189555.1_ASM1418955v1_427  QND41688.1 FAD-binding oxidoreductase [Rhizobium leguminosarum bv. viciae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.1   2.9e-05     0.038       5      34 ..       9      38 ..       5      49 .. 0.91
+   2 !    6.0   0.0    0.0005      0.67      98     173 ..     211     281 ..     201     293 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 2.9e-05
+              trimmed_msa_bchP_hmm  5 vvvvGGGPaGataaedlarkGkkvllldra 34
+                                      v vvG G  Ga  a +l r+G +v l+d+ 
+  GCA_014189555.1_ASM1418955v1_427  9 VAVVGAGVIGASIAFELQRRGLEVTLIDKG 38
+                                      88**************************95 PP
+
+  == domain 2  score: 6.0 bits;  conditional E-value: 0.0005
+              trimmed_msa_bchP_hmm  98 reraaeagaerrtgtferierdedgtavvvyrekeegeeekvrarlvigadGarsevarqevpgaekvklvfayhe 173
+                                        + a++ag++ ++gt ++ier+ dgtavv +++      ++++a  v+ a G +++   +++ +    ++   yh 
+  GCA_014189555.1_ASM1418955v1_427 211 ADAAKAAGTTFVSGTVRNIERRGDGTAVVLLED-----GRRIEAGSVVLAAGVHTRFLAEKLGEPIPLETERGYHT 281
+                                       567999***********************8887.....45677777888888777776666666555555555655 PP
+
+>> GCA_014189555.1_ASM1418955v1_5281  QND43852.1 GMC family oxidoreductase (plasmid) [Rhizobium leguminosarum bv. viciae
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.2     7e-06    0.0093       2      33 ..      24      56 ..      23      61 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 7e-06
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkk.vllldr 33
+                                       +fd +v G G +G+++a +la+ G+  vlll+ 
+  GCA_014189555.1_ASM1418955v1_5281 24 VFDFIVCGAGSSGSVVAARLAEDGNAsVLLLEA 56
+                                       79**********************861566654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       2647  (528484 residues searched)
+Passed MSV filter:                        82  (0.0309785); expected 52.9 (0.02)
+Passed bias filter:                       68  (0.0256895); expected 52.9 (0.02)
+Passed Vit filter:                        10  (0.00377786); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000755572); expected 0.0 (1e-05)
+Initial search space (Z):               2647  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12327.56
+//
+[ok]

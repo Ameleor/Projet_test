@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_019316985.1_ASM1931698v1/GCA_019316985.1_ASM1931698v1_protein.faa
+# output directed to file:         results/GCA_019316985.1_ASM1931698v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0016   16.0   0.0      0.011   13.2   0.0    2.0  2  GCA_019316985.1_ASM1931698v1_4935  ULT38349.1 ATP-binding protein [
+  ------ inclusion threshold ------
+      0.016   12.7   0.0      0.017   12.6   0.0    1.0  1  GCA_019316985.1_ASM1931698v1_3884  ULT45272.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019316985.1_ASM1931698v1_4935  ULT38349.1 ATP-binding protein [Niabella sp. I65]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.0     0.022        94      84     133 ..      52     101 ..      35     102 .. 0.79
+   2 !   13.2   0.0   2.6e-06     0.011     144     240 ..     132     255 ..     127     259 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.022
+               trimmed_msa_bchD_hmm  84 adggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglva 133
+                                        a++gvl+l     +++ +   + + ++e++v++ r  +al+ +a+f+l+a
+  GCA_019316985.1_ASM1931698v1_4935  52 AHNGVLFLDELPEFKRTVLEVMRQPMEERRVTISRAKIALDFPASFMLIA 101
+                                        56666666666666777777888999999999999999999999999997 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_bchD_hmm 144 lpeaLldRlalrldldeialrdleelaa.................eaedieaararlpkvtl.............. 188
+                                        ++  LldR+ l+++++ +  ++l+++++                 +               +              
+  GCA_019316985.1_ASM1931698v1_4935 132 ISGPLLDRIDLHVEVTPVPFSELSNFRKehnsesirdkvikarevQ---------------Aeryknypgiyanaq 192
+                                        6777999999999999999998888877664555555555444440...............444444444444555 PP
+
+               trimmed_msa_bchD_hmm 189 ...........eeealealvataaalGidslRapllalraaralAalegrteveeedlalAar 240
+                                                    +++ + l ++a++    s+Ra    l++ r++A leg ++++ e la A++
+  GCA_019316985.1_ASM1931698v1_4935 193 mnskmlteictIDNVGQMLLKAAMEKLNLSARAYDRILKVSRTIADLEGSEKIRPEYLAEAIQ 255
+                                        55555555553888889999999999999***************************9999986 PP
+
+>> GCA_019316985.1_ASM1931698v1_3884  ULT45272.1 hypothetical protein KRR40_19530 [Niabella sp. I65]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0     4e-06     0.017     216     257 ..       2      43 ..       1      52 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 4e-06
+               trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                        +a +a+Aa++gr+ v+ ed+   a  vl +r +  pe+e e 
+  GCA_019316985.1_ASM1931698v1_3884   2 NASKATAAIQGRDFVTPEDIIRVAAPVLRHRIILSPEKEMEG 43 
+                                        789*********************************999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       8432  (1353372 residues searched)
+Passed MSV filter:                       190  (0.0225332); expected 168.6 (0.02)
+Passed bias filter:                      140  (0.0166034); expected 168.6 (0.02)
+Passed Vit filter:                        17  (0.00201613); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000237192); expected 0.1 (1e-05)
+Initial search space (Z):               8432  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14303.64
+//
+[ok]

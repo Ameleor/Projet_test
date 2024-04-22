@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_016618195.1_ASM1661819v1/GCA_016618195.1_ASM1661819v1_protein.faa
+# output directed to file:         results/GCA_016618195.1_ASM1661819v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.6e-05   19.6   0.2      0.008   13.3   0.1    2.1  2  GCA_016618195.1_ASM1661819v1_2126  QQO60812.1 septum site-determini
+    0.00031   17.9   0.1    0.00059   17.0   0.1    1.4  1  GCA_016618195.1_ASM1661819v1_2860  QQO61486.1 iron-sulfur cluster c
+     0.0063   13.6   0.0      0.015   12.3   0.0    1.6  1  GCA_016618195.1_ASM1661819v1_3785  QQO62355.1 polysaccharide biosyn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016618195.1_ASM1661819v1_2126  QQO60812.1 septum site-determining protein MinD [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.1   6.3e-06     0.008      22      57 ..       4      40 ..       1      65 [. 0.85
+   2 !    4.5   0.0    0.0029       3.7     138     189 ..     117     167 ..     103     171 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 6.3e-06
+               trimmed_msa_bchL_hmm 22 vfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                       ++ v  gkgg+gk+t+s+ +++ +++ gk+ + i  d
+  GCA_016618195.1_ASM1661819v1_2126  4 IIVVtSGKGGVGKTTSSAAIATGLAQRGKKTVVIDFD 40
+                                       444426************************9988766 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.0029
+               trimmed_msa_bchL_hmm 138 vvifdvlgdvvcggfaaplqhadralivaandfdsifamnrivaaikakskn 189
+                                         v+ d    +  g +   l +ad a+i +  +  s+   +ri+  + +ks+ 
+  GCA_016618195.1_ASM1661819v1_2126 117 FVVCDSPAGIESGAL-MALYFADEAIITTNPEVSSVRDSDRILGILASKSRR 167
+                                        555555555555544.4699************************99999985 PP
+
+>> GCA_016618195.1_ASM1661819v1_2860  QQO61486.1 iron-sulfur cluster carrier protein ApbC [Providencia manganoxydans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   4.6e-07   0.00059      21      52 ..     109     141 ..      95     152 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 4.6e-07
+               trimmed_msa_bchL_hmm  21 kvfav.ygkggigksttssnlsvafsklgkrvl 52 
+                                        +++av  gkgg+gks+ts nl+ a+++ g +v 
+  GCA_016618195.1_ASM1661819v1_2860 109 NILAVsSGKGGVGKSSTSVNLALALAQEGAKVG 141
+                                        46676359*******************999885 PP
+
+>> GCA_016618195.1_ASM1661819v1_3785  QQO62355.1 polysaccharide biosynthesis tyrosine autokinase [Providencia manganoxyd
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   1.2e-05     0.015      22      60 ..     510     548 ..     498     593 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_bchL_hmm  22 vfavygkggigksttssnlsvafsklgkrvlqigcdpkh 60 
+                                        v+      g+gks  +sn++v +++ gk+vl i  d ++
+  GCA_016618195.1_ASM1661819v1_3785 510 VMVTCASPGVGKSFVTSNMAVVLANAGKKVLLIDTDLRK 548
+                                        55556678*************************999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3820  (1201358 residues searched)
+Passed MSV filter:                       134  (0.0350785); expected 76.4 (0.02)
+Passed bias filter:                      118  (0.0308901); expected 76.4 (0.02)
+Passed Vit filter:                        26  (0.00680628); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078534); expected 0.0 (1e-05)
+Initial search space (Z):               3820  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13168.19
+//
+[ok]

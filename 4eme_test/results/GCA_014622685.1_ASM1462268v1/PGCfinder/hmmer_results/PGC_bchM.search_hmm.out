@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchM.hmm
+# target sequence database:        data/genomes_unzip/GCA_014622685.1_ASM1462268v1/GCA_014622685.1_ASM1462268v1_protein.faa
+# output directed to file:         results/GCA_014622685.1_ASM1462268v1/PGCfinder/hmmer_results/PGC_bchM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchM_hmm  [M=228]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    9.6e-07   23.3   0.0    1.2e-06   23.0   0.0    1.2  1  GCA_014622685.1_ASM1462268v1_423  QNS01780.1 MAG: 16S rRNA (guanin
+    9.3e-06   20.1   0.0    1.4e-05   19.5   0.0    1.2  1  GCA_014622685.1_ASM1462268v1_36   QNS01897.1 MAG: peptide chain re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014622685.1_ASM1462268v1_423  QNS01780.1 MAG: 16S rRNA (guanine(966)-N(2))-methyltransferase RsmD [Buchnera aphid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.0   0.0   4.8e-09   1.2e-06      38      90 ..      32      85 ..      19     122 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 23.0 bits;  conditional E-value: 4.8e-09
+              trimmed_msa_bchM_hmm 38 raGrdemretllswlPedltgarvlDaGCGtGalavelarrGaevva.vDlspt 90
+                                      r   +++retl++wl ++++ ar lD   G+G l +e+++r a  v+ +++ ++
+  GCA_014622685.1_ASM1462268v1_423 32 RPTMNHIRETLFNWLSTHIKNARCLDCFAGSGILGIEAISRYAAFVTlLEINKK 85
+                                      5667899**********************************9887751466544 PP
+
+>> GCA_014622685.1_ASM1462268v1_36  QNS01897.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Buchn
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.0   5.6e-08   1.4e-05      62     128 ..     116     181 ..      97     189 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 5.6e-08
+             trimmed_msa_bchM_hmm  62 lDaGCGtGalavelarrGaevvavDlsptlvelarerlpeklkagkiefragDmldpalGefdhvva 128
+                                      l  GCG+ ala+  ++   +++++D s + +e+a+  + + l+ ++++f  +D +++   +fd +v+
+  GCA_014622685.1_ASM1462268v1_36 116 LGTGCGAVALALGSMHTDCNIIGIDKSIKALEIAKLNALQ-LNLKHVSFFYSDWFSHVDQKFDIIVS 181
+                                      3367888888899999******************998776.5569*******************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (228 nodes)
+Target sequences:                        499  (161511 residues searched)
+Passed MSV filter:                        17  (0.0340681); expected 10.0 (0.02)
+Passed bias filter:                       16  (0.0320641); expected 10.0 (0.02)
+Passed Vit filter:                         3  (0.00601202); expected 0.5 (0.001)
+Passed Fwd filter:                         2  (0.00400802); expected 0.0 (1e-05)
+Initial search space (Z):                499  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5785.37
+//
+[ok]

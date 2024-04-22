@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_900097235.1_PFRJS17/GCA_900097235.1_PFRJS17_protein.faa
+# output directed to file:         results/GCA_900097235.1_PFRJS17/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    0.00048   17.2   0.0    0.00062   16.8   0.0    1.1  1  GCA_900097235.1_PFRJS17_2186  SCQ73192.1 Methylase involved in
+    0.00048   17.2   0.0    0.00062   16.8   0.0    1.1  1  GCA_900097235.1_PFRJS17_4640  SCQ81663.1 Methylase involved in
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900097235.1_PFRJS17_2186  SCQ73192.1 Methylase involved in ubiquinone/menaquinone biosynthesis [Propionibacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   2.5e-07   0.00062     199     301 ..      25     122 ..      11     134 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 2.5e-07
+          trimmed_msa_crtF_hmm 199 rllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdpl..PegaDlisLvRvlhDHd 277
+                                    +lD+G G+G  ++++a++a ++ + l   p  +++ar+rl+++    +++v+ Gsfl+ p    + +Dli+ v  lh   
+  GCA_900097235.1_PFRJS17_2186  25 DVLDIGCGDGLLVEKLATKATRV-IGLDPDPRAINQARRRLTET---PNAQVVLGSFLTAPEldGQSFDLITCVATLHH-- 99 
+                                   589**************999876.6777779999*****99886...567999****9876412356899999999984.. PP
+
+          trimmed_msa_crtF_hmm 278 DeavlkllrkvraaLppggrLlia 301
+                                     +  + l++++a L+pgg L i 
+  GCA_900097235.1_PFRJS17_2186 100 -MPLFAALEQMNAKLKPGGGLCIV 122
+                                   .57888999999*****9999875 PP
+
+>> GCA_900097235.1_PFRJS17_4640  SCQ81663.1 Methylase involved in ubiquinone/menaquinone biosynthesis [Propionibacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   2.5e-07   0.00062     199     301 ..      25     122 ..      11     134 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 2.5e-07
+          trimmed_msa_crtF_hmm 199 rllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdpl..PegaDlisLvRvlhDHd 277
+                                    +lD+G G+G  ++++a++a ++ + l   p  +++ar+rl+++    +++v+ Gsfl+ p    + +Dli+ v  lh   
+  GCA_900097235.1_PFRJS17_4640  25 DVLDIGCGDGLLVEKLATKATRV-IGLDPDPRAINQARRRLTET---PNAQVVLGSFLTAPEldGQSFDLITCVATLHH-- 99 
+                                   589**************999876.6777779999*****99886...567999****9876412356899999999984.. PP
+
+          trimmed_msa_crtF_hmm 278 DeavlkllrkvraaLppggrLlia 301
+                                     +  + l++++a L+pgg L i 
+  GCA_900097235.1_PFRJS17_4640 100 -MPLFAALEQMNAKLKPGGGLCIV 122
+                                   .57888999999*****9999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       4909  (1611621 residues searched)
+Passed MSV filter:                       208  (0.0423712); expected 98.2 (0.02)
+Passed bias filter:                      152  (0.0309635); expected 98.2 (0.02)
+Passed Vit filter:                        10  (0.00203707); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000407415); expected 0.0 (1e-05)
+Initial search space (Z):               4909  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 21066.12
+//
+[ok]

@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410785.1_ASM2041078v1/GCA_020410785.1_ASM2041078v1_protein.faa
+# output directed to file:         results/GCA_020410785.1_ASM2041078v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.9e-07   24.2   0.1    1.5e-06   23.6   0.1    1.4  1  GCA_020410785.1_ASM2041078v1_925   UCM85307.1 MAG: AAA family ATPas
+    0.00022   16.5   1.1    0.00032   16.0   0.1    1.6  2  GCA_020410785.1_ASM2041078v1_1314  UCM85635.1 MAG: signal recogniti
+     0.0008   14.7   0.2     0.0076   11.4   0.1    2.2  2  GCA_020410785.1_ASM2041078v1_571   UCM86195.1 MAG: Mrp/NBP35 family
+     0.0031   12.7   0.3      0.007   11.6   0.2    1.6  2  GCA_020410785.1_ASM2041078v1_1441  UCM86447.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410785.1_ASM2041078v1_925  UCM85307.1 MAG: AAA family ATPase [Rickettsia endosymbiont of Culicoides impunctatu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   0.1   4.3e-09   1.5e-06      22      65 ..       2      46 ..       1      92 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 4.3e-09
+              trimmed_msa_bchX_hmm 22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                      t+i+a+   kgg+ ks t  nls  l+ +gkk+l+i  dp+ +++
+  GCA_020410785.1_ASM2041078v1_925  2 TKIVAVvNQKGGVAKSTTTVNLSTALSVMGKKILVIDLDPQGNSS 46
+                                      7888862579******************************98754 PP
+
+>> GCA_020410785.1_ASM2041078v1_1314  UCM85635.1 MAG: signal recognition particle-docking protein FtsY [Rickettsia endos
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.1   9.4e-07   0.00032      18      60 ..      97     139 ..      87     150 .. 0.89
+   2 ?   -2.3   0.1      0.33   1.1e+02     183     217 ..     234     265 ..     230     277 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 9.4e-07
+               trimmed_msa_bchX_hmm  18 vtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                          k+ ++i + g  g+gk+ t+ +l+ +  +qgkkv +  cd 
+  GCA_020410785.1_ASM2041078v1_1314  97 HDKKLNVILVCGVNGSGKTTTIGKLASIYRKQGKKVAIAACDT 139
+                                        568899***********************************96 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.33
+               trimmed_msa_bchX_hmm 183 nvcsaveyfrklggnvgvaglvinkddgtgeaqaf 217
+                                        n+ + ve f  +     ++ l++ k dgt +a   
+  GCA_020410785.1_ASM2041078v1_1314 234 NIYNQVEQFTAIA---NITSLIVTKLDGTAKAGVV 265
+                                        5556666665553...5788999999999988654 PP
+
+>> GCA_020410785.1_ASM2041078v1_571  UCM86195.1 MAG: Mrp/NBP35 family ATP-binding protein [Rickettsia endosymbiont of Cu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.1   2.2e-05    0.0076      23      81 ..     101     159 ..      80     194 .. 0.78
+   2 ?    0.9   0.0     0.036        12     214     235 ..     288     309 ..     240     321 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.2e-05
+              trimmed_msa_bchX_hmm  23 qiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacptiiets 81 
+                                        i+   gkgg+gks   a ++  l  +g kv ++  d    +   +fg   +p i+   
+  GCA_020410785.1_ASM2041078v1_571 101 IILVASGKGGVGKSTITALIAEQLNLEGYKVGIVDADIYGPSIPQIFGISDVPEIVYNK 159
+                                       355568***********************************************998654 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.036
+              trimmed_msa_bchX_hmm 214 aqafaeavgipvlaaipadedi 235
+                                        + fa++ +ip+++ ip + ++
+  GCA_020410785.1_ASM2041078v1_571 288 GENFAKEYNIPLICKIPIEPKL 309
+                                       4679999999999999987665 PP
+
+>> GCA_020410785.1_ASM2041078v1_1441  UCM86447.1 MAG: ParA family protein (plasmid) [Rickettsia endosymbiont of Culicoid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.2     2e-05     0.007      21      66 ..       5      51 ..       2      77 .. 0.85
+   2 ?   -1.0   0.0      0.14        46     224     275 ..      69     123 ..      51     169 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2e-05
+               trimmed_msa_bchX_hmm 21 etqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                       +t+ii++   kgg gk+    +ls  l++   kvl++  dp+  +t 
+  GCA_020410785.1_ASM2041078v1_1441  5 DTKIISVAnQKGGCGKTTITMQLSGTLSRDKYKVLVVDADPQGTATR 51
+                                       68999885269******************************987775 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.14
+               trimmed_msa_bchX_hmm 224 pvlaaipadedirrksanyeii..gkpes.ewgslfeelaenvaeappvrpkpls 275
+                                           a i  +++i++   +y+ i    p s +  + +++l        p+ p p +
+  GCA_020410785.1_ASM2041078v1_1441  69 LSAAGIKVHKEIKKYVGSYDFIiiDCPPSvNSVTPYSALMVSDIVLIPMIPSPAD 123
+                                        4456778888888888888744112222202222333333333334555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1364  (432778 residues searched)
+Passed MSV filter:                        48  (0.0351906); expected 27.3 (0.02)
+Passed bias filter:                       42  (0.0307918); expected 27.3 (0.02)
+Passed Vit filter:                         7  (0.00513196); expected 1.4 (0.001)
+Passed Fwd filter:                         4  (0.00293255); expected 0.0 (1e-05)
+Initial search space (Z):               1364  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6486.88
+//
+[ok]

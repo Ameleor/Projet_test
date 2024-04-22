@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699995.1_ASM1669999v1/GCA_016699995.1_ASM1669999v1_protein.faa
+# output directed to file:         results/GCA_016699995.1_ASM1669999v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.9e-05   18.9   0.1    4.1e-05   18.4   0.1    1.1  1  GCA_016699995.1_ASM1669999v1_830  QQS22823.1 class I SAM-dependent
+     0.0036   12.0   0.0     0.0051   11.5   0.0    1.1  1  GCA_016699995.1_ASM1669999v1_421  QQS23352.1 peptide chain release
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699995.1_ASM1669999v1_830  QQS22823.1 class I SAM-dependent methyltransferase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.1   8.6e-08   4.1e-05     186     300 ..       7     123 ..       2     130 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 8.6e-08
+              trimmed_msa_crtF_hmm 186 eevldaydlkrhrrllDvGGGeGaFlaavaarapkl.klklfDlpaVaerararleaaglsdrvevagGsflk..dp 259
+                                       e+v++ + lk  +++ D+G G+G +  a+++ + +  +++  D+ +    a+++++ ++  ++vev+  ++ k  d+
+  GCA_016699995.1_ASM1669999v1_830   7 EKVVAHMGLKAGNKVTDLGCGSGFYTLAAGKIVGNTgRVAAVDVQDSKLAATKSITIQSGLHNVEVYQADLEKpfDK 83 
+                                       7899999***********************99987648999*****************999**********98779* PP
+
+              trimmed_msa_crtF_hmm 260 lPega.DlisLvRvlhDHdDeavlkllrkvraaLppggrLli 300
+                                       +P+ga D +    +lh+ +D++  +ll++++a L++gg+Ll 
+  GCA_016699995.1_ASM1669999v1_830  84 VPHGAeDGVIAASILHEVKDRH--ALLKNAYALLRTGGKLLT 123
+                                       ****857788889999998886..69**************95 PP
+
+>> GCA_016699995.1_ASM1669999v1_421  QQS23352.1 peptide chain release factor N(5)-glutamine methyltransferase [bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   1.1e-05    0.0051     184     256 ..      90     164 ..      81     174 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_crtF_hmm 184 vaeevldaydlkrhrrllDvGGGeGaFlaavaarap...klklklfDl.paVaerararleaaglsdrvevagGsfl 256
+                                       + +++ld ++ k+ +++lD+G G+G  +  + ++ p   k+k++  D+ p+ ++ a+a  +a++l+++v++   ++l
+  GCA_016699995.1_ASM1669999v1_421  90 LVDKTLDYINTKNIKSILDIGTGSGCLAISIFQNSPagtKIKVTATDIsPKALKIAQA--NAKSLKSKVTFKQSDLL 164
+                                       67999***********************999999883334677777875666666665..56677777777766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                        949  (276418 residues searched)
+Passed MSV filter:                        29  (0.0305585); expected 19.0 (0.02)
+Passed bias filter:                       27  (0.028451); expected 19.0 (0.02)
+Passed Vit filter:                         3  (0.00316122); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00210748); expected 0.0 (1e-05)
+Initial search space (Z):                949  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12032.32
+//
+[ok]

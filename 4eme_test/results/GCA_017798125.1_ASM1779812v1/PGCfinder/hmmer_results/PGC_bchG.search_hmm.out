@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_017798125.1_ASM1779812v1/GCA_017798125.1_ASM1779812v1_protein.faa
+# output directed to file:         results/GCA_017798125.1_ASM1779812v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.2e-13   47.6   6.9    4.4e-13   46.6   6.9    1.4  1  GCA_017798125.1_ASM1779812v1_597   QTN38156.1 homogentisate phytylt
+    5.2e-09   33.2   7.8    7.9e-09   32.6   7.8    1.2  1  GCA_017798125.1_ASM1779812v1_2423  QTN40053.1 UbiA family prenyltra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017798125.1_ASM1779812v1_597  QTN38156.1 homogentisate phytyltransferase [Cryomorphaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.6   6.9   3.6e-16   4.4e-13      60     271 ..      61     282 ..      43     291 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 46.6 bits;  conditional E-value: 3.6e-16
+              trimmed_msa_bchG_hmm  60 vndWfdrhvdainePerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGw 136
+                                       +n   d ++d  n+P+ p+ sG ++     +i  +  +l+ll++++ g  ++v  ++  +l  ays pPl++kkn +
+  GCA_017798125.1_ASM1779812v1_597  61 LNQLTDIDIDRQNKPHLPLASGEMSASTARWIISVSGILTLLFGLLAGYTMLVLVLVVGALGTAYSLPPLKFKKNHF 137
+                                       68999***********************************************99999999***************** PP
+
+              trimmed_msa_bchG_hmm 137 lGnaavglsyeglaWltg....aavla..galPs..aevlllallysigahGimtlndfkaveGdrklgvkslpvkl 205
+                                       + +  ++l    l  +         l     lPs  ++ +ll++l+s+   Gi  + d   veGd++  + +++vk 
+  GCA_017798125.1_ASM1779812v1_597 138 FAALSITLVRGVLVNILMflhfRWELWseWGLPSfmWPLILLMILFSV---GIAWFKDIPDVEGDQNHDIGTVAVKR 211
+                                       ***999988776655443000033333124567633567777778876...79999********************* PP
+
+              trimmed_msa_bchG_hmm 206 Gveraarvaclvmavpqvvvvalll..awgkalhalvvavllvvqlvlmarllkdPkek...alwynavgv 271
+                                       Gv+ a r a  +++++ ++++        + ++  ++v   l++ l+ ++ + ++P +k   + +y a  +
+  GCA_017798125.1_ASM1779812v1_597 212 GVRWAFRGAISLVSLAYLTLILWAGvgLKSYNTDLMAVWHALALLLFWLVAYTTNPFKKvsvTRFYRAYWI 282
+                                       **********9999999887754320122233334455556666666677777888765222456666555 PP
+
+>> GCA_017798125.1_ASM1779812v1_2423  QTN40053.1 UbiA family prenyltransferase [Cryomorphaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.6   7.8   6.4e-12   7.9e-09      42     280 ..      38     277 ..       6     280 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 32.6 bits;  conditional E-value: 6.4e-12
+               trimmed_msa_bchG_hmm  42 vvaGv.llaGPlvcatsqavndWfdrhvdain...ePerpiPsGripGrWGlyialiltllsllvaaalgtlvfva 113
+                                         ++G+ ll+  +v +++ a n ++dr++d+ n      r iP G i+ r  l   ++ ++l ++v++++ +lvf  
+  GCA_017798125.1_ASM1779812v1_2423  38 RLLGLvLLCMVFVRSAAMAFNRYLDRDIDSANprtAAVREIPRGIISPRSALLFVIANSVLFMVVTYLINPLVFYL 113
+                                        4456505566778899999************93333569************************************* PP
+
+               trimmed_msa_bchG_hmm 114 avlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaev.lllallysigahGimtlndfk 188
+                                        + ++l ++  ys      k+   l   + gl    la + +   +++++  ++v   +a+l  +g + i+    ++
+  GCA_017798125.1_ASM1779812v1_2423 114 SPVALFITLGYSYT----KRFTALCHLVLGLGLS-LAPVGAYLAVTAEFAWVPVwFGIAVLTWVGGFDII--YSLQ 182
+                                        ************85....5555667777777654.44444433333333333331568889999999876..3445 PP
+
+               trimmed_msa_bchG_hmm 189 aveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavllvvqlvlmarllkdP....k 260
+                                          e dr+  ++s+pv l   ra ++a+l+ +v+ ++ +++    g+ +     + + +v ++l ++ll +P    k
+  GCA_017798125.1_ASM1779812v1_2423 183 DDEFDREQQLHSIPVLLKRPRALKLASLLHVVTATC-LGIAGWQGNFAWFYWAGYVFFVLMLLRQHLLVSPtdlsK 257
+                                        5689**********************9987776544.333322222222333334444444445555555511114 PP
+
+               trimmed_msa_bchG_hmm 261 ekalwynavgvtlyvlGmlv 280
+                                         + +++++ g++  v G++v
+  GCA_017798125.1_ASM1779812v1_2423 258 VNIAFMTTNGIASVVFGLMV 277
+                                        5678999999*******998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2473  (893622 residues searched)
+Passed MSV filter:                        73  (0.0295188); expected 49.5 (0.02)
+Passed bias filter:                       29  (0.0117266); expected 49.5 (0.02)
+Passed Vit filter:                         5  (0.00202184); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808734); expected 0.0 (1e-05)
+Initial search space (Z):               2473  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13096.51
+//
+[ok]

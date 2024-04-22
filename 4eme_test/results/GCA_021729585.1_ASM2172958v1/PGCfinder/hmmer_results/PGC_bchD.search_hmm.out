@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729585.1_ASM2172958v1/GCA_021729585.1_ASM2172958v1_protein.faa
+# output directed to file:         results/GCA_021729585.1_ASM2172958v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.071    8.2   4.9      0.075    8.1   4.9    1.1  1  GCA_021729585.1_ASM2172958v1_1285  LKDOPP_06670 SH3b domain-contain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729585.1_ASM2172958v1_1285  LKDOPP_06670 SH3b domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   4.9   4.6e-05     0.075     240     296 ..      49     114 ..      17     160 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 4.6e-05
+               trimmed_msa_bchD_hmm 240 rlvlapratrlpeeeeeea.....eeepeqepa........pppeeeeaeeeeeeeeeeeeeeealedvv 296
+                                          + ++  +  p++ee+++     ee+p    a         p +e+e+++e+++e+++e+++e+ ++  
+  GCA_021729585.1_ASM2172958v1_1285  49 TEIESQNSALSPKQEEANTattatEENP----AkdsplpleTPMQEKENKQENKQENKQETKQEQEKENE 114
+                                        3333333333344433333222222233....23333555433333334444333333333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1643  (499964 residues searched)
+Passed MSV filter:                        83  (0.0505173); expected 32.9 (0.02)
+Passed bias filter:                       56  (0.034084); expected 32.9 (0.02)
+Passed Vit filter:                        11  (0.00669507); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.00121729); expected 0.0 (1e-05)
+Initial search space (Z):               1643  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9913.79
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721565.1_min17_bin01/GCA_928721565.1_min17_bin01_protein.faa
+# output directed to file:         results/GCA_928721565.1_min17_bin01/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    0.00077   15.0   0.4     0.0014   14.1   0.1    1.5  2  GCA_928721565.1_min17_bin01_287  EJGMIM_01510 histidine kinase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721565.1_min17_bin01_287  EJGMIM_01510 histidine kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.1   9.3e-07    0.0014     261     382 ..     233     357 ..     228     382 .. 0.69
+   2 ?   -3.8   0.0      0.25   3.7e+02     176     232 ..     489     543 ..     485     555 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 9.3e-07
+             trimmed_msa_ppsR_hmm 261 llevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvllanlreegsvrlfatklr. 337
+                                      l +++++++d+ vv d++  i + N++fl + +++  e++r +++ r L  ++v  + + +  +  ++++    +++ 
+  GCA_928721565.1_min17_bin01_287 233 LQKIVDRISDGYVVLDEDNIITDFNKTFLTVFKIKP-ENLRSQNFIRILNNKKVSKQSISKIEKSIKKAKTTDETISf 309
+                                      6799****************************9975.67999999999*99999999888777777777777666651 PP
+
+             trimmed_msa_ppsR_hmm 338 .gelgteee...VevsAvsvadgeqpclgfvirdvsrreakekakskel 382
+                                       +++++ ++   +e+++    + +     f+++d+++ +++ ++ +++ 
+  GCA_928721565.1_min17_bin01_287 310 eQHFSEIKKyfkIEITSINSDN-TALGTLFLFKDITQHKEDMETIKNNQ 357
+                                      1233333222226666655554.44456677788877777766654444 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 0.25
+             trimmed_msa_ppsR_hmm 176 eeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsaslf 232
+                                      ++++++++ ++++l++    +++ ++  ++   ++ ++ie+ +++kg+++++s++ f
+  GCA_928721565.1_min17_bin01_287 489 TDENQILNGNVNSLVQVV--NNMISNAIQAYDGKHDQNIELAVNKKGNDIVISVKDF 543
+                                      555555555565555443..3334444455566777888888888888888887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1478  (459253 residues searched)
+Passed MSV filter:                        81  (0.0548038); expected 29.6 (0.02)
+Passed bias filter:                       33  (0.0223275); expected 29.6 (0.02)
+Passed Vit filter:                         3  (0.00202977); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.00067659); expected 0.0 (1e-05)
+Initial search space (Z):               1478  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12157.84
+//
+[ok]

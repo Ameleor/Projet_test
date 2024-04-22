@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_019704295.1_ASM1970429v1/GCA_019704295.1_ASM1970429v1_protein.faa
+# output directed to file:         results/GCA_019704295.1_ASM1970429v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.6e-08   28.4   0.0    0.00041   16.5   0.0    2.1  2  GCA_019704295.1_ASM1970429v1_75    BCU66638.1 2-hydroxy-6-oxo-6-phe
+  ------ inclusion threshold ------
+      0.029   10.5   0.0       0.62    6.1   0.0    2.1  2  GCA_019704295.1_ASM1970429v1_1070  BCU67633.1 acylaminoacyl-peptida
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019704295.1_ASM1970429v1_75  BCU66638.1 2-hydroxy-6-oxo-6-phenylhexa-2,4-dienoate hydrolase [Sulfolobales archaeo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.0   3.8e-07   0.00041      20      77 ..       6      67 ..       1     104 [. 0.77
+   2 !   10.5   0.0   2.7e-05     0.029     207     260 ..     111     165 ..      96     180 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 3.8e-07
+             trimmed_msa_bchO_hmm 20 eagglrWhvqelgegP.vlLLlHGtGasthswrdllplLa...arfrviapDLPghgftesa 77
+                                     e +  + +  e+geg  +++L HG+  ++ +w+++ +l a   a fr +a+D Pg g ++ +
+  GCA_019704295.1_ASM1970429v1_75  6 ELSRGKIRFIEMGEGDrTVILFHGARFTADTWSQVGTLEAianAGFRAVAVDFPGFGKSKGN 67
+                                     5555555667899977699*************9998764422378************98764 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 2.7e-05
+             trimmed_msa_bchO_hmm 207 LemmAnwdlekllrdlpklkt.plllivgekDravppkearevaallpkarlvel 260
+                                      L ++ + ++++ +++l+k+k  p+lli g++D++ p+++ar ++ ++p+a lv++
+  GCA_019704295.1_ASM1970429v1_75 111 LILVGAVSVANYSKELNKIKDiPILLIWGKRDTVSPIENARLIQGVIPHAILVHV 165
+                                      567777888999999***98549***************************99876 PP
+
+>> GCA_019704295.1_ASM1970429v1_1070  BCU67633.1 acylaminoacyl-peptidase [Sulfolobales archaeon HS-7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.0     0.011        11      22      43 ..     340     361 ..     326     373 .. 0.82
+   2 ?    6.1   0.0   0.00058      0.62     222     252 ..     507     537 ..     496     553 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.011
+               trimmed_msa_bchO_hmm  22 gglrWhvqelgegPvlLLlHGt 43 
+                                        ++  W +++  e P++L++HG 
+  GCA_019704295.1_ASM1970429v1_1070 340 ENKGWIIRTKRENPTILFIHGG 361
+                                        56679999999*********95 PP
+
+  == domain 2  score: 6.1 bits;  conditional E-value: 0.00058
+               trimmed_msa_bchO_hmm 222 lpklktplllivgekDravppkearevaall 252
+                                        ++++ktpllli+ge+D   p+++a++  + l
+  GCA_019704295.1_ASM1970429v1_1070 507 VRNVKTPLLLIHGENDYRCPIEQAEQFYQGL 537
+                                        67899*******************9988766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2140  (570658 residues searched)
+Passed MSV filter:                        56  (0.0261682); expected 42.8 (0.02)
+Passed bias filter:                       55  (0.0257009); expected 42.8 (0.02)
+Passed Vit filter:                         4  (0.00186916); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000934579); expected 0.0 (1e-05)
+Initial search space (Z):               2140  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14406.42
+//
+[ok]

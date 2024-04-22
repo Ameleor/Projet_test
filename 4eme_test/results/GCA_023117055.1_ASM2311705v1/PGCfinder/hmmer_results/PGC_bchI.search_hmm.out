@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023117055.1_ASM2311705v1/GCA_023117055.1_ASM2311705v1_protein.faa
+# output directed to file:         results/GCA_023117055.1_ASM2311705v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00035   18.1   0.8      0.017   12.5   0.2    2.1  2  GCA_023117055.1_ASM2311705v1_3232  UPN53822.1 phage shock protein o
+     0.0045   14.5   0.0     0.0064   14.0   0.0    1.2  1  GCA_023117055.1_ASM2311705v1_4567  UPN58222.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023117055.1_ASM2311705v1_3232  UPN53822.1 phage shock protein operon transcriptional activator [Klebsiella pneumo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.2   0.0    0.0022       6.1      30      45 ..      36      51 ..      26      62 .. 0.81
+   2 !   12.5   0.2   6.4e-06     0.017     117     202 ..      89     178 ..      58     200 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.0022
+               trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkstav 45
+                                        vlv+G+rGtGk   +
+  GCA_023117055.1_ASM2311705v1_3232 36 PVLVIGERGTGKELIA 51
+                                       59**********8655 PP
+
+  == domain 2  score: 12.5 bits;  conditional E-value: 6.4e-06
+               trimmed_msa_bchI_hmm 117 ltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP......e 186
+                                          +G  + +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n       e
+  GCA_023117055.1_ASM2311705v1_3232  89 AFTGASKRHPGRFERADGGTLFLDELATAPMLVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNAdlpqmvE 162
+                                        556888889******************99999999*********9..89999998777777777777743335569 PP
+
+               trimmed_msa_bchI_hmm 187 eGelrPqlldrfGlsv 202
+                                        eG++r  lldr+ + v
+  GCA_023117055.1_ASM2311705v1_3232 163 EGHFRADLLDRLAFDV 178
+                                        ***********87765 PP
+
+>> GCA_023117055.1_ASM2311705v1_4567  UPN58222.1 ABC transporter ATP-binding protein [Klebsiella pneumoniae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   2.4e-06    0.0064      32      76 ..      46      90 ..      29     114 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.4e-06
+               trimmed_msa_bchI_hmm 32 lvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelcee 76
+                                        ++G+ G+Gkst  ral +l Pk   v+++r++ ++ + ++l+e 
+  GCA_023117055.1_ASM2311705v1_4567 46 AIVGESGSGKSTVGRALLQLHPKKARVSASRMQFADLDLQHLSEA 90
+                                       589***************************999888777665554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5461  (1651474 residues searched)
+Passed MSV filter:                       285  (0.0521882); expected 109.2 (0.02)
+Passed bias filter:                      206  (0.037722); expected 109.2 (0.02)
+Passed Vit filter:                        40  (0.00732467); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366233); expected 0.1 (1e-05)
+Initial search space (Z):               5461  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 8668.61
+//
+[ok]

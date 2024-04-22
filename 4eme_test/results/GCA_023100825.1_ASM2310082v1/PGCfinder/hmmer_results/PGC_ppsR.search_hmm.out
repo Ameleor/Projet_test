@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_023100825.1_ASM2310082v1/GCA_023100825.1_ASM2310082v1_protein.faa
+# output directed to file:         results/GCA_023100825.1_ASM2310082v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.4e-06   23.4   0.1    1.8e-05   21.8   0.1    1.8  1  GCA_023100825.1_ASM2310082v1_2190  UPK72999.1 EAL domain-containing
+  ------ inclusion threshold ------
+       0.01   12.8   0.0      0.015   12.3   0.0    1.3  1  GCA_023100825.1_ASM2310082v1_2412  UPK73212.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023100825.1_ASM2310082v1_2190  UPK72999.1 EAL domain-containing protein [Nocardioidaceae bacterium SCSIO 66511]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   0.1   8.6e-09   1.8e-05     127     227 ..     252     352 ..     238     399 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 8.6e-09
+               trimmed_msa_ppsR_hmm 127 slErdYerlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqall 202
+                                        +lEr  e++r+  ++YR l+e++ + v++ ++ ++ i+  N aA+++ g +++e vg+s++   ++++ ++l++l+
+  GCA_023100825.1_ASM2310082v1_2190 252 ELERQREAIRASAEQYRQLVESTGD-VVVTSTVEGVITSWNRAAEKVYGYTHDEAVGSSMELVTTSDQLADLAQLV 326
+                                        7999999************998887.5667888899************************9999999999999999 PP
+
+               trimmed_msa_ppsR_hmm 203 aavrasgeaeeievrlarkg.revsv 227
+                                        +++++  +++  e++ +r++   v v
+  GCA_023100825.1_ASM2310082v1_2190 327 HRASEGMTIAGHETTHRRRDgTAVDV 352
+                                        99999888877776665543133333 PP
+
+>> GCA_023100825.1_ASM2310082v1_2412  UPK73212.1 ATP-binding protein [Nocardioidaceae bacterium SCSIO 66511]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   6.8e-06     0.015     153     195 ..      10      51 ..       2     132 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 6.8e-06
+               trimmed_msa_ppsR_hmm 153 vlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesr 195
+                                        vl+ d + + ++e+N+a +rLlg++++el+g+++++++  ++r
+  GCA_023100825.1_ASM2310082v1_2412  10 VLVAD-ADGVVTEVNAAFERLLGSDRSELIGTHLTDALVLDDR 51 
+                                        44444.4567888888888888888888888888777655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       4299  (1400695 residues searched)
+Passed MSV filter:                       127  (0.0295418); expected 86.0 (0.02)
+Passed bias filter:                       85  (0.019772); expected 86.0 (0.02)
+Passed Vit filter:                        12  (0.00279135); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000465224); expected 0.0 (1e-05)
+Initial search space (Z):               4299  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 13349.61
+//
+[ok]

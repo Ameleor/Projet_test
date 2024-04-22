@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_018394295.1_ASM1839429v1/GCA_018394295.1_ASM1839429v1_protein.faa
+# output directed to file:         results/GCA_018394295.1_ASM1839429v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.7e-18   61.8   1.0    3.5e-12   43.5   0.1    3.1  3  GCA_018394295.1_ASM1839429v1_1862  QVK17097.1 PAS domain S-box prot
+    0.00012   18.7   0.0    0.00017   18.2   0.0    1.1  1  GCA_018394295.1_ASM1839429v1_2327  QVK17537.1 diguanylate cyclase [
+    0.00032   17.3   0.0    0.00058   16.4   0.0    1.4  1  GCA_018394295.1_ASM1839429v1_1870  QVK17105.1 4Fe-4S binding protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018394295.1_ASM1839429v1_1862  QVK17097.1 PAS domain S-box protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.0     0.025        25     158     222 ..      16      84 ..       1     108 [. 0.76
+   2 !   43.5   0.1   3.5e-15   3.5e-12     135     310 ..     120     291 ..     117     295 .. 0.79
+   3 !   26.1   0.1   6.5e-10   6.5e-07     160     294 ..     260     397 ..     259     407 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.025
+               trimmed_msa_ppsR_hmm 158 aesrriveaNpaAarLlge.eakelvg...ksfaelfeaesreelqallaavrasgeaeeievrlarkg 222
+                                         e++ri+++N +  +L+g  +++el+g   ++++  ++++ +e+l +    ++++ ++++++ + ++++
+  GCA_018394295.1_ASM1839429v1_1862  16 LENERIIDCNLNCVNLFGYdHKEELIGlkpTNLSPYVQDDGKESLIKGSDYIKKAYSEKHVNFSWRHSK 84 
+                                        5789*************9636788999333346667888888888888777777777777777766665 PP
+
+  == domain 2  score: 43.5 bits;  conditional E-value: 3.5e-15
+               trimmed_msa_ppsR_hmm 135 lreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasge 210
+                                        ++  ++ Y+llfe   +av +vd+++ +i++aN+aA +  g + ++  +k+f++    e++e  +++   ++++ +
+  GCA_018394295.1_ASM1839429v1_1862 120 IKDRDKMYKLLFEENINAVYLVDVKTTQIIDANEAALQFYGYDLETFKNKKFTDISLFEDEEIYKNIELVLTHKRH 195
+                                        6778999**********************************************97766666666666566677777 PP
+
+               trimmed_msa_ppsR_hmm 211 aeeievrlarkgrevsvsaslfrq..egesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsa 284
+                                           ++ +la++ +   ++ + f    +g+ ++ + ++++++++    ++++ + +++++ p ++ v d+++r+++ 
+  GCA_018394295.1_ASM1839429v1_1862 196 FFYCKHKLANG-EINDIECNCFSTtiNGQDYMFI-MAHDTTEK---MKQNQIINTFITQSPYPIAVLDNTQRVINI 266
+                                        88888888666.4456666666551145555443.33333333...36789999********************** PP
+
+               trimmed_msa_ppsR_hmm 285 NeaflelaqlaseeqvrgrsLerwLg 310
+                                        N++f +l  l ++e+v g++L++ L+
+  GCA_018394295.1_ASM1839429v1_1862 267 NDKFSDLF-LYTKEEVLGENLNNLLT 291
+                                        *******8.5677899*****99886 PP
+
+  == domain 3  score: 26.1 bits;  conditional E-value: 6.5e-10
+               trimmed_msa_ppsR_hmm 160 srriveaNpaAarLlgeeakelvgksfaelfea.esreelqallaavrasgeaeeievrlarkgrevsvsaslfrq 234
+                                        ++r++++N   ++L+  +++e++g+++++l+++ e r+e ++ +  v +++ ++  ++r +++++ ++v++ +f  
+  GCA_018394295.1_ASM1839429v1_1862 260 TQRVININDKFSDLFLYTKEEVLGENLNNLLTTiEYRDEYKSHMDMVFNTNFVHVKTLRKRKDNSLINVEIVAFPI 335
+                                        89****************************987367899***********************************76 PP
+
+               trimmed_msa_ppsR_hmm 235 egesllL.vrlspaeaaaa.aaeeaeakllevleklpdalvvtdaegrilsaNeaflelaql 294
+                                          +  ++   ++  + +++ +a+++ +   ++le+  +++++tda+g+i  +N+af +++  
+  GCA_018394295.1_ASM1839429v1_1862 336 TYNDKIIgAYVHYIDITHKiKANNQLNLFKKILENNNEGIIITDADGHIEWVNHAFTNITGF 397
+                                        655554415666667676667777779999**************************998865 PP
+
+>> GCA_018394295.1_ASM1839429v1_2327  QVK17537.1 diguanylate cyclase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.0   1.7e-07   0.00017     133     241 ..     215     322 ..     206     349 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 1.7e-07
+               trimmed_msa_ppsR_hmm 133 erlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavras 208
+                                        ++l+  e+ +R lf++   +++iv    + ++e N++A + ++ +++++ + ++ + f   +++e+ + l++  ++
+  GCA_018394295.1_ASM1839429v1_2327 215 AKLQVSEQNFRKLFDINPYPLFIVRHFDGLVIESNKNAINYFEINPENMNDLKIDDIFIYPKEQEIMEKLKQQGHA 290
+                                        688999*****************************************************99999999999876555 PP
+
+               trimmed_msa_ppsR_hmm 209 geaeeievrlarkgrevsvsaslfrqegesllL 241
+                                         + + +e+++ +  + v+ + +l   +g+++lL
+  GCA_018394295.1_ASM1839429v1_2327 291 YN-HVVEIKVDKVYKWVVANYELIDYHGDKCLL 322
+                                        33.334444444445555555555555555555 PP
+
+>> GCA_018394295.1_ASM1839429v1_1870  QVK17105.1 4Fe-4S binding protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.0   5.7e-07   0.00058     138     193 ..     400     454 ..     395     534 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 5.7e-07
+               trimmed_msa_ppsR_hmm 138 aetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeae 193
+                                        aet   ++f+++ + vl+++    +i+e NpaA++ ++ ++++++g +++  ++++
+  GCA_018394295.1_ASM1839429v1_1870 400 AETLTNVIFDVTPNTVLMIKK-DLTILEFNPAAETFFNMQRNDVIGLPVSVVLDDD 454
+                                        6777789************86.689***********************99988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3036  (913463 residues searched)
+Passed MSV filter:                        86  (0.0283267); expected 60.7 (0.02)
+Passed bias filter:                       54  (0.0177866); expected 60.7 (0.02)
+Passed Vit filter:                         7  (0.00230567); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.000988142); expected 0.0 (1e-05)
+Initial search space (Z):               3036  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13995.52
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_023614295.1_ASM2361429v1/GCA_023614295.1_ASM2361429v1_protein.faa
+# output directed to file:         results/GCA_023614295.1_ASM2361429v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.4e-07   26.9   0.0    6.8e-07   26.3   0.0    1.2  1  GCA_023614295.1_ASM2361429v1_5012  URN13568.1 PAS domain-containing
+      0.008   12.9   0.0      0.013   12.2   0.0    1.3  1  GCA_023614295.1_ASM2361429v1_1147  URN11603.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023614295.1_ASM2361429v1_5012  URN13568.1 PAS domain-containing protein [Streptomyces radiopugnans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.0   3.8e-10   6.8e-07     134     226 ..      66     158 ..      56     188 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 3.8e-10
+               trimmed_msa_ppsR_hmm 134 rlreaetr.YRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavras 208
+                                        r  ++e r  R+lf+    av ++d +   ++ +NpaA +Llg +a   +g+ ++  ++++sr+++ +++aav+  
+  GCA_023614295.1_ASM2361429v1_5012  66 REEHHEHRlLRTLFQRLPVAVALLDRD-AVVRRCNPAAGQLLGVRAGYATGRALTASLAHDSRAAFRSQVAAVARG 140
+                                        4456677736***************86.579********************************************* PP
+
+               trimmed_msa_ppsR_hmm 209 geaeeievrlarkgrevs 226
+                                        +    ++vrl  ++++++
+  GCA_023614295.1_ASM2361429v1_5012 141 EGDRGLTVRLPGHQQRAR 158
+                                        *99999999998887765 PP
+
+>> GCA_023614295.1_ASM2361429v1_1147  URN11603.1 ATP-binding protein [Streptomyces radiopugnans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   7.1e-06     0.013     257     378 ..      34     159 ..      21     175 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 7.1e-06
+               trimmed_msa_ppsR_hmm 257 aeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvllanlreeg..svr 330
+                                        +++ +  + ++lpd+lvv da+gr++  N+a  +++ l++e ++ gr+ e+ L  ++++ +   + +  +g  ++r
+  GCA_023614295.1_ASM2361429v1_1147  34 RDDGTGVLPDDLPDGLVVADARGRVVCFNAAAARITALPRE-DALGRPVEQVLPLEDLEGRRWWKVTDPYGglAIR 108
+                                        455566667899********************999999875.6789999999988888888877777776633567 PP
+
+               trimmed_msa_ppsR_hmm 331 lfatklrgelgteeeVevsAvsvad...geqpclgfvirdvsrreakekak 378
+                                          + + +  l + +eV vsA +v++   g+ + l++++r ++ r ++e+++
+  GCA_023614295.1_ASM2361429v1_1147 109 TGQPERNLLLPGGREVLVSARYVRArptGPVQRLVVSLRGTEARRRTERSH 159
+                                        777777777777788888888776644455667777777777666555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3626  (784478 residues searched)
+Passed MSV filter:                       100  (0.0275786); expected 72.5 (0.02)
+Passed bias filter:                       72  (0.0198566); expected 72.5 (0.02)
+Passed Vit filter:                        10  (0.00275786); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000551572); expected 0.0 (1e-05)
+Initial search space (Z):               3626  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12072.43
+//
+[ok]

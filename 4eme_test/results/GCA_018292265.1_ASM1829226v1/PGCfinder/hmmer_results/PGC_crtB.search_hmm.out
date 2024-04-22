@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_018292265.1_ASM1829226v1/GCA_018292265.1_ASM1829226v1_protein.faa
+# output directed to file:         results/GCA_018292265.1_ASM1829226v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.8e-37  125.4   0.0    8.4e-37  125.2   0.0    1.0  1  GCA_018292265.1_ASM1829226v1_2035  IJCDCG_10690 4,4'-diapophytoene 
+    0.00069   17.0   0.0    0.00076   16.8   0.0    1.0  1  GCA_018292265.1_ASM1829226v1_2034  IJCDCG_10685 Dehydrosqualene syn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018292265.1_ASM1829226v1_2035  IJCDCG_10690 4,4'-diapophytoene synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  125.2   0.0   4.5e-40   8.4e-37       3     195 ..       8     206 ..       6     219 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 125.2 bits;  conditional E-value: 4.5e-40
+               trimmed_msa_crtB_hmm   3 laacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekkaaalarlrerldri....yagr..pa 72 
+                                         + c+++++++SksF  A  llp++ r+a++a+Ya CR  DD +D   +  + l++++e ++ i    y+ +  + 
+  GCA_018292265.1_ASM1829226v1_2035   8 FKYCHKIMKKHSKSFSYAFDLLPEDQRKAVWAIYAVCRKIDDSIDVYGDI-QFLNQIKEDIQSIekypYEHHhfQS 82 
+                                        578******************************************98875.5677787777776332233331134 PP
+
+               trimmed_msa_crtB_hmm  73 dapadralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgv.rdaevlaRAc 147
+                                        d     al++v+++ +i+ + + +l++    D++   +et ++l  Y++ VAg+VG +++ ++   + +++++ A 
+  GCA_018292265.1_ASM1829226v1_2035  83 DRRIMMALQHVAQHKNIAFQSFYNLIDTVYKDQHFTMFETDAELFGYCYGVAGTVGEVLTPILSDhETHQTYDVAR 158
+                                        455667*****************************************************99998747789****** PP
+
+               trimmed_msa_crtB_hmm 148 dLGvAmQLtNiaRDvgeDaragRlYLPleWleeagldpeafladpefs 195
+                                         LG  +QL Ni RDvgeD  ++R+Y+ ++ l++ ++d ++++++   +
+  GCA_018292265.1_ASM1829226v1_2035 159 RLGESLQLINILRDVGEDFDNERVYFSKQRLKQYEVDIAEVYQNGVNN 206
+                                        *************************************99988876655 PP
+
+>> GCA_018292265.1_ASM1829226v1_2034  IJCDCG_10685 Dehydrosqualene synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   4.1e-07   0.00076     221     270 ..      17      65 ..      10      72 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 4.1e-07
+               trimmed_msa_crtB_hmm 221 arLplrcrpailaArliYaeigrevarrgldsvsrRavvskarKlallak 270
+                                        +   ++++p i  A++iY ei  ev+++++ ++++R+ v k++K++l+ +
+  GCA_018292265.1_ASM1829226v1_2034  17 KVFSIEAQPIIELAARIYIEILDEVRQANY-TLHERVFVDKWKKAKLFHE 65 
+                                        5667889999***************99998.589***********99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       3704  (724234 residues searched)
+Passed MSV filter:                       111  (0.0299676); expected 74.1 (0.02)
+Passed bias filter:                       78  (0.0210583); expected 74.1 (0.02)
+Passed Vit filter:                         8  (0.00215983); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539957); expected 0.0 (1e-05)
+Initial search space (Z):               3704  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 19956.54
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_902825215.1_PfAR1/GCA_902825215.1_PfAR1_protein.faa
+# output directed to file:         results/GCA_902825215.1_PfAR1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                   -----------
+    5.5e-07   26.2   9.2    7.1e-07   25.8   9.2    1.2  1  GCA_902825215.1_PfAR1_5344  CAB1405334.1 4-hydroxybenzoate po
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_902825215.1_PfAR1_5344  CAB1405334.1 4-hydroxybenzoate polyprenyltransferase (EC 2.5.1.39) [Pseudomonas fluoresce
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.8   9.2   3.8e-10   7.1e-07      10     208 ..      24     216 ..      15     265 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 25.8 bits;  conditional E-value: 3.8e-10
+        trimmed_msa_bchG_hmm  10 ellkPitwfpPmWa..facGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsGripGrWG 88 
+                                 ++ kPi  +  +W   +a  +   g +  ++++++v+Gv+l+     a   ++ndW dr+vd       +rp+ sG+i+ +  
+  GCA_902825215.1_PfAR1_5344  24 RMDKPIGIYLLLWPtlWALWIAGKGSPSLANVVIFVLGVVLTR----AGGCVINDWADRKVDGHvkRTAQRPLASGKISSKEA 102
+                                 556777665555531123345678999999**********986....455589*********75124689************* PP
+
+        trimmed_msa_bchG_hmm  89 lyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsye.glaWltgaavlagalPsaevll. 169
+                                 l    +l  +s+l+ +     ++  ++ gl+la +y    + +k+  ++ + + g ++  g++     +  +g+lP+a  ll 
+  GCA_902825215.1_PfAR1_5344 103 LVFFAVLMGISFLLVLCTNAPTIWLSLGGLALACTYP---F-MKRYTYYPQVVLGAAFSwGMPMA--FTAETGELPAAAWLLw 179
+                                 9988888899999999999999999********9994...4.78888888888887764233332..2223477777665431 PP
+
+        trimmed_msa_bchG_hmm 170 .lallysigahGimtlndfkaveGdrklgvkslpvklGve 208
+                                    ll+++g     ++ d    + d k+gvks ++ +G +
+  GCA_902825215.1_PfAR1_5344 180 iANLLWTVGYDTYYAMTDR---DDDLKIGVKSTAILFGEA 216
+                                 1346777777666666664...578888888888888865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       1856  (591399 residues searched)
+Passed MSV filter:                        83  (0.0447198); expected 37.1 (0.02)
+Passed bias filter:                       22  (0.0118534); expected 37.1 (0.02)
+Passed Vit filter:                         3  (0.00161638); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000538793); expected 0.0 (1e-05)
+Initial search space (Z):               1856  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14787.41
+//
+[ok]

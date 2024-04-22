@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_022009915.1_ASM2200991v1/GCA_022009915.1_ASM2200991v1_protein.faa
+# output directed to file:         results/GCA_022009915.1_ASM2200991v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.9e-05   18.2   0.0    8.3e-05   17.9   0.0    1.1  1  GCA_022009915.1_ASM2200991v1_1966  UKI39346.1 MAG: class I SAM-depe
+    0.00048   15.4   0.0    0.00064   15.0   0.0    1.1  1  GCA_022009915.1_ASM2200991v1_283   UKI39581.1 MAG: methyltransferas
+     0.0025   13.1   0.3      0.012   10.9   0.1    1.8  2  GCA_022009915.1_ASM2200991v1_383   UKI39645.1 MAG: bifunctional dem
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022009915.1_ASM2200991v1_1966  UKI39346.1 MAG: class I SAM-dependent methyltransferase [Alistipes putredinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.0   1.8e-07   8.3e-05     196     278 ..      45     124 ..      34     138 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 1.8e-07
+               trimmed_msa_crtF_hmm 196 rhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflkdplPegaDlisLv 270
+                                        + +++ D+G+G+G   +++   +p+ +++l D+  + +e ar+r++   l +  ++ + ++ +d lP+g+D+i   
+  GCA_022009915.1_ASM2200991v1_1966  45 EAKKIADLGAGTGLLTKEMYMLYPDAQFTLIDISdDMLEVARRRFAG--L-EGFNFKAADYSHD-LPDGCDIICSA 116
+                                        678899**************************962688999999864..3.5789999***999.******99755 PP
+
+               trimmed_msa_crtF_hmm 271 RvlhDHdD 278
+                                          +h   D
+  GCA_022009915.1_ASM2200991v1_1966 117 LSIHHLTD 124
+                                        55555555 PP
+
+>> GCA_022009915.1_ASM2200991v1_283  UKI39581.1 MAG: methyltransferase [Alistipes putredinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0   1.3e-06   0.00064     199     264 ..      11      75 ..       4      80 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.3e-06
+              trimmed_msa_crtF_hmm 199 rllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflkdplPega 264
+                                       r+lD+G G+G  +  +aa+ p+ +++ +D+ p  ++ ar++ + +g+s  v+++ G+ l++ l  ga
+  GCA_022009915.1_ASM2200991v1_283  11 RILDIGTGSGCIAVCLAAELPESSVSALDIsPFALDYARENARLNGVS--VDFVQGDILDEVLDVGA 75 
+                                       79***************************9455668888876666665..9999****999998775 PP
+
+>> GCA_022009915.1_ASM2200991v1_383  UKI39645.1 MAG: bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-poly
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.1   2.5e-05     0.012     188     301 ..      28     140 ..      20     162 .. 0.77
+   2 ?    0.1   0.0     0.047        22     333     352 ..     189     208 ..     186     214 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.5e-05
+              trimmed_msa_crtF_hmm 188 vldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflkdplPeg 263
+                                       v+++ + ++  + +Dv+ G+   +  +a+r    +++  Dl  a +e  r+++e+agl dr+++++G+   ++lP++
+  GCA_022009915.1_ASM2200991v1_383  28 VVKMATQRGAVHAIDVATGTADLAIDLARRS-GAEVVGVDLSeAMIEIGRRKVERAGLGDRIRLIAGDA--ENLPSE 101
+                                       666666677778899*999999888887775.5566667886267899*******************95..689986 PP
+
+              trimmed_msa_crtF_hmm 264 ...aDlisLvRvlhDHdDeavlkllrkvraaLppggrLlia 301
+                                          aD++++   +   +D ++   lr++++ L pgg+  + 
+  GCA_022009915.1_ASM2200991v1_383 102 dcsADCLTVAFGVRNFQDMEA--GLRQMHRVLVPGGSCYVL 140
+                                       344788777666666666554..588899999888876665 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 0.047
+              trimmed_msa_crtF_hmm 333 aeeirallaeaGFakvkllr 352
+                                        e+++++++ aGF++vk ++
+  GCA_022009915.1_ASM2200991v1_383 189 REKFESMMRGAGFDEVKSVK 208
+                                       678899*********99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1422  (329232 residues searched)
+Passed MSV filter:                        40  (0.0281294); expected 28.4 (0.02)
+Passed bias filter:                       34  (0.02391); expected 28.4 (0.02)
+Passed Vit filter:                         6  (0.00421941); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.0021097); expected 0.0 (1e-05)
+Initial search space (Z):               1422  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11368.88
+//
+[ok]

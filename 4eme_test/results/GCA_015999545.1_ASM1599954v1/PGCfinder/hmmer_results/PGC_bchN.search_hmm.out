@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_015999545.1_ASM1599954v1/GCA_015999545.1_ASM1599954v1_protein.faa
+# output directed to file:         results/GCA_015999545.1_ASM1599954v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0046   13.9   0.0     0.0049   13.8   0.0    1.0  1  GCA_015999545.1_ASM1599954v1_1881  QPQ37114.1 redoxin domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015999545.1_ASM1599954v1_1881  QPQ37114.1 redoxin domain-containing protein [Lysinibacillus sp. JNUCC-52]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   1.1e-06    0.0049     164     268 ..      43     148 ..      12     150 .] 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.1e-06
+               trimmed_msa_bchN_hmm 164 lvvGaladvve..dqfarlfeelgieevkvlpareaeelpavgp.ntrfllaqpflgetaraleer.Gakrlaapf 235
+                                        l   a++dv +  dq++   +el++  v++  ++e ++l ++    ++  ++qp + ++  +l++    + ++a f
+  GCA_015999545.1_ASM1599954v1_1881  43 LCKEAMPDVNNfrDQYK---DELNVIAVHMPRSEEDTDLNTIKAvAAEHDITQPIFVDSEMKLTDAfENQYVPAYF 115
+                                        55567888732114444...4667767776666666666666541456789***99999999987626788***** PP
+
+               trimmed_msa_bchN_hmm 236 plGaeGttawlkaaaeafgvdeakfeavvaakr 268
+                                         + ++G  ++++a  + +++ e+++++v++++r
+  GCA_015999545.1_ASM1599954v1_1881 116 VFDKDGQLRHMQAGGSGMKMLEKRVNRVLDEMR 148
+                                        ***************************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4421  (1282256 residues searched)
+Passed MSV filter:                       146  (0.0330242); expected 88.4 (0.02)
+Passed bias filter:                      110  (0.0248812); expected 88.4 (0.02)
+Passed Vit filter:                         6  (0.00135716); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000226193); expected 0.0 (1e-05)
+Initial search space (Z):               4421  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 14658.42
+//
+[ok]

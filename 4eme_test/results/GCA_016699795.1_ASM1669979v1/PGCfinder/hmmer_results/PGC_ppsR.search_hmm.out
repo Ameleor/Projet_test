@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699795.1_ASM1669979v1/GCA_016699795.1_ASM1669979v1_protein.faa
+# output directed to file:         results/GCA_016699795.1_ASM1669979v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.4e-07   24.4   3.8    2.5e-05   19.4   2.9    2.4  2  GCA_016699795.1_ASM1669979v1_586  QQS60853.1 PAS domain S-box prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699795.1_ASM1669979v1_586  QQS60853.1 PAS domain S-box protein [Candidatus Moranbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.6   0.1   0.00037      0.39     334     385 ..     300     348 ..     206     355 .. 0.71
+   2 !   19.4   2.9   2.4e-08   2.5e-05     223     389 ..     343     516 ..     243     520 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.00037
+              trimmed_msa_ppsR_hmm 334 tklrgelgteeeVevsAvsvadgeqpclgf..virdvsrreakekakskelprs 385
+                                         lr + g+ +eVe+s v ++++e +++ f  +i+dv++ ++ +++ +    ++
+  GCA_016699795.1_ASM1669979v1_586 300 ILLRHKNGEMREVEISGVFIQEKE-SIIEFqgIIHDVTKEKRINQKIE----AQ 348
+                                       468899999999999999999744.43433226777776555444433....33 PP
+
+  == domain 2  score: 19.4 bits;  conditional E-value: 2.4e-08
+              trimmed_msa_ppsR_hmm 223 revsvsaslfrqegesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeq 299
+                                       ++++ + + ++++ ++ lL  l+  e +++++e++++kl ++l ++ d++ v+d++ +i+ +N+    l+  ++ee 
+  GCA_016699795.1_ASM1669979v1_586 343 QKIEAQTENLKNS-QKALLNVLEDIEIEKEKMEQEKDKLDAILYSIGDGVFVVDRHLKIVMVNNMVSTLTGYSNEEL 418
+                                       5555555555544.455677888889999999********************************************9 PP
+
+              trimmed_msa_ppsR_hmm 300 vrgrsL...erwLgr.agvDlkvllanlreegsvrlf..atklrgelgteeeVevsAvsvadgeqpclgf..virdv 368
+                                       + ++      ++++  +++  + +++ + ++g+ +++   t l ++ g++ +V  sA  +++++ +++g+  v+rd+
+  GCA_016699795.1_ASM1669979v1_586 419 LLNEVYferMKFISDdNEMKRDTFVEDVIQTGEEKKMmeHTALIQKNGNRMPVADSASPLKNKKGEVIGCvvVFRDA 495
+                                       999853222458876268999***********9998744699****************9999888777751167999 PP
+
+              trimmed_msa_ppsR_hmm 369 srreakekakskelprsveql 389
+                                       ++  + +++ks+ ++ +++ql
+  GCA_016699795.1_ASM1669979v1_586 496 TKEREINRMKSEFVSVASHQL 516
+                                       998888888887777666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1044  (344593 residues searched)
+Passed MSV filter:                        38  (0.0363985); expected 20.9 (0.02)
+Passed bias filter:                       23  (0.0220307); expected 20.9 (0.02)
+Passed Vit filter:                         2  (0.00191571); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000957854); expected 0.0 (1e-05)
+Initial search space (Z):               1044  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9160.44
+//
+[ok]

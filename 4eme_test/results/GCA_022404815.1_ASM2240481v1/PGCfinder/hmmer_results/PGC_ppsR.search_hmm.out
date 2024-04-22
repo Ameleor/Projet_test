@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_022404815.1_ASM2240481v1/GCA_022404815.1_ASM2240481v1_protein.faa
+# output directed to file:         results/GCA_022404815.1_ASM2240481v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00018   18.2   0.0    0.00018   18.2   0.0    1.1  1  GCA_022404815.1_ASM2240481v1_645   ULX63763.1 Fis family transcript
+    0.00023   17.9   0.3    0.00036   17.2   0.3    1.2  1  GCA_022404815.1_ASM2240481v1_2309  ULX65082.1 PAS domain-containing
+     0.0063   13.1   0.1       0.01   12.5   0.1    1.2  1  GCA_022404815.1_ASM2240481v1_2937  ULX65576.1 response regulator [B
+  ------ inclusion threshold ------
+      0.012   12.2   0.2        1.5    5.3   0.0    2.9  3  GCA_022404815.1_ASM2240481v1_1896  ULX64770.1 sigma-54-dependent Fi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022404815.1_ASM2240481v1_645  ULX63763.1 Fis family transcriptional regulator [Bordetella pertussis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.0   2.1e-07   0.00018     408     448 ..      37      77 ..       8      79 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 2.1e-07
+              trimmed_msa_ppsR_hmm 408 viEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +E+   e ALe  + N   A+emLG+ R  L  KL  +++
+  GCA_022404815.1_ASM2240481v1_645  37 CVERPVLEVALERSGGNQSRASEMLGITRNTLRKKLLAHNI 77 
+                                       589999*****************************998887 PP
+
+>> GCA_022404815.1_ASM2240481v1_2309  ULX65082.1 PAS domain-containing protein [Bordetella pertussis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.3   4.4e-07   0.00036     155     267 ..      15     125 ..       6     130 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 4.4e-07
+               trimmed_msa_ppsR_hmm 155 ivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeie.vrlarkgrevsvsa 229
+                                        ++  e+++i  aN+aA++L+g+++k+l g s a+lf++   e+lq+++ +++a + a+  + ++l+r  ++v+v++
+  GCA_022404815.1_ASM2240481v1_2309  15 FLLNERGHIEYANAAAEDLFGRSRKQLRGLSAATLFDNP--EDLQSAIDSAAAGKFADVRQlASLRRVVESVEVTV 88 
+                                        44467899****************************974..56777777777666555444145566666677777 PP
+
+               trimmed_msa_ppsR_hmm 230 slfrqegesllLvrlspaeaaaaaaeeaeakllevlek 267
+                                        ++   +g++   v ++++e +++  ++++++l++ +e+
+  GCA_022404815.1_ASM2240481v1_2309  89 TTVSLSGQAWP-VLIETREIEQRVLADRNQRLVDEIES 125
+                                        76666666553.34566666666777777777777765 PP
+
+>> GCA_022404815.1_ASM2240481v1_2937  ULX65576.1 response regulator [Bordetella pertussis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.1   1.2e-05      0.01     414     445 ..     142     173 ..     137     174 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_ppsR_hmm 414 IeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                        I+ AL+ T+ N  +AA +LG+ R SL  KL +
+  GCA_022404815.1_ASM2240481v1_2937 142 IQQALSETGGNVSAAARLLGMHRRSLQRKLAK 173
+                                        899*************************9976 PP
+
+>> GCA_022404815.1_ASM2240481v1_1896  ULX64770.1 sigma-54-dependent Fis family transcriptional regulator [Bordetella per
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   0.0     0.014        11       4      41 ..      67     104 ..      64     116 .. 0.80
+   2 ?    5.3   0.0    0.0018       1.5     146     187 ..     214     253 ..     208     263 .. 0.78
+   3 ?    0.4   0.1     0.055        45     414     445 ..     587     618 ..     586     619 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.014
+               trimmed_msa_ppsR_hmm   4 eaaaklvaaaaDialvldaegviedvavgsedlakeel 41 
+                                        e++a +va a+ ++l+ da+gvi +++ ++  l+++++
+  GCA_022404815.1_ASM2240481v1_1896  67 ETLAGMVASASSLVLLADASGVILQASGNTGFLQRADH 104
+                                        678899*******************9999888876654 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.0018
+               trimmed_msa_ppsR_hmm 146 feasseavlivdaesrriveaNpaAarLlgeeakelvgksfa 187
+                                        +++++  +l++  e +riv aN aA +Llg++  +l+++++ 
+  GCA_022404815.1_ASM2240481v1_1896 214 LDSVERGLLLI--EDERIVGANDAAVALLGATWPALLDQPLD 253
+                                        55555566665..46799999999999999999999999876 PP
+
+  == domain 3  score: 0.4 bits;  conditional E-value: 0.055
+               trimmed_msa_ppsR_hmm 414 IeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                        I+ AL   + N a AA  LG+ R  LY  L r
+  GCA_022404815.1_ASM2240481v1_1896 587 IDQALARHGGNIAGAAHELGIHRSTLYRHLAR 618
+                                        7789999999*****************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3312  (1053013 residues searched)
+Passed MSV filter:                       112  (0.0338164); expected 66.2 (0.02)
+Passed bias filter:                       68  (0.0205314); expected 66.2 (0.02)
+Passed Vit filter:                        13  (0.00392512); expected 3.3 (0.001)
+Passed Fwd filter:                         4  (0.00120773); expected 0.0 (1e-05)
+Initial search space (Z):               3312  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10355.12
+//
+[ok]

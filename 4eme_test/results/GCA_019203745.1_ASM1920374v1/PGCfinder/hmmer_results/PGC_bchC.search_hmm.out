@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_019203745.1_ASM1920374v1/GCA_019203745.1_ASM1920374v1_protein.faa
+# output directed to file:         results/GCA_019203745.1_ASM1920374v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.1e-06   25.0   0.0    5.5e-06   24.6   0.0    1.1  1  GCA_019203745.1_ASM1920374v1_4913  JGHLMO_25055 D-arabinose 1-dehyd
+    0.00015   19.9   0.0    0.00016   19.7   0.0    1.0  1  GCA_019203745.1_ASM1920374v1_19    JGHLMO_00095 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019203745.1_ASM1920374v1_4913  JGHLMO_25055 D-arabinose 1-dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   0.0   1.4e-09   5.5e-06     100     232 ..      47     190 ..      25     198 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 1.4e-09
+               trimmed_msa_bchC_hmm 100 lfGgaasrlvvpaarvvkvdeelgeegvllalaa..tarhalagkek..kapdlivGhGvlGrllarltvaagaea 171
+                                         fGg ++++vv++++v+kv+e+l+  +v   l+a  t+   l + +    ++  +vG G lG +  +l+  +g ++
+  GCA_019203745.1_ASM1920374v1_4913  47 TFGGYSQKVVVDSHHVLKVPENLDPAAVAPILCAgiTTWSPLRHWNVgpGSKVAVVGLGGLGHMAIKLAKGLG-AE 121
+                                        5***********************9999666655325555555444311457789***************999.67 PP
+
+               trimmed_msa_bchC_hmm 172 pvvWetnaaraegae....gyevidpeederr....dykaivdasGdaevldkliarlakggeivlaGf 232
+                                         +++ + + ++e+a+    ++ +i+++e++ +    ++++i+d+    + ++  ++ l+ +g  vl G+
+  GCA_019203745.1_ASM1920374v1_4913 122 VTLFSRTPGKTEDAKqlgaDHVIISTDEEQMKsvkgKFDVIIDTVPYVHDVNPYVTTLNVNGTHVLVGY 190
+                                        7888888888877763322455666666665523336889999999999*****************998 PP
+
+>> GCA_019203745.1_ASM1920374v1_19  JGHLMO_00095 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.0   4.1e-08   0.00016     208     295 ..      40     128 ..      13     134 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 4.1e-08
+             trimmed_msa_bchC_hmm 208 sGdaevldkliarlakggeivlaGfyeepl.sfafppafmrearlrvaaewkkedlaavkalvesGrlsldglithra 284
+                                       G+ +vl++ ++ +++gg + + G y  +  +f   + f +  +++      +  +  +   vesG++ ld +ithr 
+  GCA_019203745.1_ASM1920374v1_19  40 KGSIKVLEACMSAVRRGGTVSVLGVYPVNYdNFRLGQIFDKGITIKAGQCNVHPIIDHLMGYVESGQVTLDDVITHRL 117
+                                      6999**********************87763799***********988777788888999****************** PP
+
+             trimmed_msa_bchC_hmm 285 saeeaeeayrt 295
+                                      s + +++ y+ 
+  GCA_019203745.1_ASM1920374v1_19 118 SLDAVDKGYEI 128
+                                      ***99999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       7982  (1294827 residues searched)
+Passed MSV filter:                       143  (0.0179153); expected 159.6 (0.02)
+Passed bias filter:                      126  (0.0157855); expected 159.6 (0.02)
+Passed Vit filter:                        11  (0.0013781); expected 8.0 (0.001)
+Passed Fwd filter:                         2  (0.000250564); expected 0.1 (1e-05)
+Initial search space (Z):               7982  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 16634.66
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016415125.1_ASM1641512v1/GCA_016415125.1_ASM1641512v1_protein.faa
+# output directed to file:         results/GCA_016415125.1_ASM1641512v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.4e-07   26.5   0.1     0.0039   12.7   0.1    2.2  2  GCA_016415125.1_ASM1641512v1_1140  QQF76398.1 iron-sulfur cluster c
+     0.0016   14.0   0.1     0.0075   11.8   0.0    1.9  2  GCA_016415125.1_ASM1641512v1_412   QQF77442.1 signal recognition pa
+     0.0051   12.3   0.0      0.009   11.5   0.0    1.3  1  GCA_016415125.1_ASM1641512v1_1296  QQF76536.1 ParA family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016415125.1_ASM1641512v1_1140  QQF76398.1 iron-sulfur cluster carrier protein ApbC [Histophilus somni]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.1   6.8e-06    0.0039      21      59 ..     106     145 ..      91     164 .. 0.82
+   2 !   11.5   0.0   1.6e-05    0.0091     210     266 ..     297     355 ..     292     368 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 6.8e-06
+               trimmed_msa_bchX_hmm  21 etqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                          +iia+  gkgg+gks    nl+  l  qg kv ++  d
+  GCA_016415125.1_ASM1641512v1_1140 106 IKNIIAVsSGKGGVGKSTISVNLALALQTQGAKVGILDAD 145
+                                        4578888459************************988777 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksany..eiigkpesewgslfeelaenvaea 266
+                                        gtg a+ +a++ +i +la +p + ++r    n    +i++pese ++ f +lae+va+ 
+  GCA_016415125.1_ASM1641512v1_1140 297 GTGGAKKMAQKYQIKLLAQLPLHIQLREDMDNGipTVISAPESEISQSFLQLAEKVASE 355
+                                        8**************************9987743389*******************975 PP
+
+>> GCA_016415125.1_ASM1641512v1_412  QQF77442.1 signal recognition particle-docking protein FtsY [Histophilus somni]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   1.3e-05    0.0075      15      60 ..     236     281 ..     223     314 .. 0.78
+   2 ?   -0.8   0.0     0.091        53     194     225 ..     384     418 ..     374     435 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.3e-05
+              trimmed_msa_bchX_hmm  15 tgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       + + +k+  +i + g  g+gk+ t+ +l+  + +qgk v+l   d 
+  GCA_016415125.1_ASM1641512v1_412 236 QLDNSKKPYVILMVGVNGVGKTTTIGKLANQFQRQGKSVMLAAGDT 281
+                                       5567788999*******************************98886 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.091
+              trimmed_msa_bchX_hmm 194 lggnvgvaglvinkddgtge...aqafaeavgipv 225
+                                       +   vg++g+ + k dgt +     a+a++ ++p+
+  GCA_016415125.1_ASM1641512v1_412 384 FNEAVGLTGISLTKLDGTAKggvIFAIADQFNLPI 418
+                                       55689************965111456677777776 PP
+
+>> GCA_016415125.1_ASM1641512v1_1296  QQF76536.1 ParA family protein [Histophilus somni]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   1.6e-05     0.009      24      62 ..      14      52 ..       2      59 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       i     kgg+ ks   an+  + a++g + lli  d + 
+  GCA_016415125.1_ASM1641512v1_1296 14 ITIASTKGGSAKSTNAANIGAFCAEHGLRTLLIDTDTQP 52
+                                       444468***************************999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1731  (557891 residues searched)
+Passed MSV filter:                        68  (0.0392837); expected 34.6 (0.02)
+Passed bias filter:                       56  (0.0323512); expected 34.6 (0.02)
+Passed Vit filter:                         5  (0.0028885); expected 1.7 (0.001)
+Passed Fwd filter:                         3  (0.0017331); expected 0.0 (1e-05)
+Initial search space (Z):               1731  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 12974.38
+//
+[ok]

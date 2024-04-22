@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022845955.1_ASM2284595v1/GCA_022845955.1_ASM2284595v1_protein.faa
+# output directed to file:         results/GCA_022845955.1_ASM2284595v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.8e-09   34.1   3.9    5.7e-09   33.6   3.9    1.2  1  GCA_022845955.1_ASM2284595v1_807   BDF43684.1 MoxR-like ATPase [Lac
+    5.4e-06   23.7   0.6    7.2e-06   23.3   0.0    1.4  2  GCA_022845955.1_ASM2284595v1_5672  BDF48549.1 magnesium chelatase [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022845955.1_ASM2284595v1_807  BDF43684.1 MoxR-like ATPase [Lachnospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   3.9   1.8e-12   5.7e-09      88     257 ..     101     293 ..      92     308 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 1.8e-12
+              trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDeglee..dealpeaLldRlalrldldeia 162
+                                       +l++    R+++++ a l +a++e+  ++  dg++  l+  f+++a  + +e+    +lpea ldR  +++ +   +
+  GCA_022845955.1_ASM2284595v1_807 101 ILLADEINRTSPKTQASLLEAMEER--QITADGKTYPLPELFMVIATQNPIEQlgTYRLPEAQLDRFLMKVSMGYPE 175
+                                       66666778*****************..69*********************986335689************987665 PP
+
+              trimmed_msa_bchD_hmm 163 lrdleelaa.................eaedieaararlpkvtleeealealvataaalGi.......dslRapllal 215
+                                        ++ e+ +                  + ++++a++++l++v+++++ ++  v++a+++         +s Ra++  +
+  GCA_022845955.1_ASM2284595v1_807 176 KEKEEA-DIvrralngeavkqlspvtTRDAVAAMKKELREVRVHDDIMSYAVEIARNTRKsryltlgASPRAAIALV 251
+                                       553333.3346777888888899998899999***********************987642222223699******* PP
+
+              trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                       raar  A legr+ ++ ed+a+ a  vl +r +  ++++ e 
+  GCA_022845955.1_ASM2284595v1_807 252 RAARSRAYLEGRSFATPEDVAALAPPVLLHRLILSAQARLEG 293
+                                       ************************999999999888777665 PP
+
+>> GCA_022845955.1_ASM2284595v1_5672  BDF48549.1 magnesium chelatase [Lachnospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.1      0.37   1.2e+03     465     484 ..      38      57 ..      37      59 .. 0.84
+   2 !   23.3   0.0   2.2e-09   7.2e-06      88     250 ..      99     283 ..      95     315 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 0.37
+               trimmed_msa_bchD_hmm 465 LagLpGGGgTPLAagleaal 484
+                                        L ++pG G T +A++l+a+l
+  GCA_022845955.1_ASM2284595v1_5672  38 LEDVPGTGKTKMAKALSASL 57 
+                                        67899*****9999999875 PP
+
+  == domain 2  score: 23.3 bits;  conditional E-value: 2.2e-09
+               trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldei 161
+                                        vl++    R ++ + a l + ++e+  ++  dg ++++e  f ++a  + +e   +  lpea +dR  ++l +   
+  GCA_022845955.1_ASM2284595v1_5672  99 VLLADEINRATPRTQAGLLECMEER--QVTVDGETRKMEEPFFVIATQNPVETAGTfpLPEAQTDRFIMKLSMGLP 172
+                                        5666667899***************..58899999**************998776522689*****9988877654 PP
+
+               trimmed_msa_bchD_hmm 162 alrdleelaa...............eaedieaararlpkvtleeealealvataaalGid.......slRapllal 215
+                                          ++  ++                 + e++ + +++ +k+ ++      l+ +a a+  +       s R  l  +
+  GCA_022845955.1_ASM2284595v1_5672 173 DREEEIRILEtykdrdplpwlrpvmSREELLSIKEEAEKIYVHPLINGYLADIALATRKQekvvmgvSPRGTLALM 248
+                                        444322222246778889999999988888899999999999666666666666554432222222399******* PP
+
+               trimmed_msa_bchD_hmm 216 raaralAalegrteveeedlalAarlvlapratrl 250
+                                        r a+a A++egr+ v  +d++  a  vla+r +  
+  GCA_022845955.1_ASM2284595v1_5672 249 RCAKARACMEGRSYVIPDDVKKLASAVLAHRLMFS 283
+                                        *******************************8754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       6393  (2156330 residues searched)
+Passed MSV filter:                       233  (0.0364461); expected 127.9 (0.02)
+Passed bias filter:                      137  (0.0214297); expected 127.9 (0.02)
+Passed Vit filter:                        16  (0.00250274); expected 6.4 (0.001)
+Passed Fwd filter:                         3  (0.000469263); expected 0.1 (1e-05)
+Initial search space (Z):               6393  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 13674.95
+//
+[ok]

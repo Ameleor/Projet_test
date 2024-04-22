@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_911810475.1_August2016_Plant3_pacbio_assembly/GCA_911810475.1_August2016_Plant3_pacbio_assembly_protein.faa
+# output directed to file:         results/GCA_911810475.1_August2016_Plant3_pacbio_assembly/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                               Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                               -----------
+    4.5e-05   19.9   0.4    0.00012   18.5   0.4    1.6  1  GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486  CAG9001555.1 MAG: hypothetical p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486  CAG9001555.1 MAG: hypothetical protein CENE_03578 [Candidatus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.4   3.2e-08   0.00012      87     248 ..      99     292 ..      26     302 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 3.2e-08
+                                    trimmed_msa_bchD_hmm  87 gvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleed 141
+                                                             ++l++    R ++++ + l +a+ e++v++ r +   rl+  f+++a  + le++
+  GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486  99 NLLLADEINRAPAKVQSALLEAMAEQQVTIGRRT--YRLPELFMVMATQNPLEQE 151
+                                                             45777788899***************99998876..899************9887 PP
+
+                                    trimmed_msa_bchD_hmm 142 ea..lpeaLldRlalrldldeialr......dleelaa................e 172
+                                                              +  lpea ldR  l+++ld  +++      +                      +
+  GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486 152 GTypLPEAQLDRFLLKINLDYPSAEqelailE-----LndaetrkqkihkptklT 201
+                                                             652378*************9877663333331.....233444444555555555 PP
+
+                                    trimmed_msa_bchD_hmm 173 aedieaararlpkvtl....................eeealealvataaalGids 207
+                                                             +e++ + r ++ +v++                     ++ l++l++    +G +s
+  GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486 202 QEQLFELRDAVMSVHIaptlkqyivdlimatrnptpYDAELSELIE----FG-AS 251
+                                                             5555555555555555999999999999997765544445555544....44.69 PP
+
+                                    trimmed_msa_bchD_hmm 208 lRapllalraaralAalegrteveeedlalAarlvlaprat 248
+                                                              Ra +  +r ara A l++r+ v+ +d+++ +  vl +r  
+  GCA_911810475.1_August2016_Plant3_pacbio_assembly_3486 252 PRATISLARCARAKAFLHDRDFVTPDDIQQLVLPVLRHRVL 292
+                                                             9****************************999888888865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3723  (1155449 residues searched)
+Passed MSV filter:                       147  (0.0394843); expected 74.5 (0.02)
+Passed bias filter:                       68  (0.0182648); expected 74.5 (0.02)
+Passed Vit filter:                        10  (0.00268601); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000537201); expected 0.0 (1e-05)
+Initial search space (Z):               3723  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 13891.26
+//
+[ok]

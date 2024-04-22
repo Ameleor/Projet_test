@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_020809085.1_ASM2080908v1/GCA_020809085.1_ASM2080908v1_protein.faa
+# output directed to file:         results/GCA_020809085.1_ASM2080908v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.041   11.1   0.0      0.047   10.9   0.0    1.1  1  GCA_020809085.1_ASM2080908v1_4517  UEL22664.1 30S ribosomal protein
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020809085.1_ASM2080908v1_4517  UEL22664.1 30S ribosomal protein S8 [Pseudomonas fluorescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   8.7e-06     0.047     278     364 ..      15     101 ..       4     116 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 8.7e-06
+               trimmed_msa_bchN_hmm 278 areklegkrifflpdsqleiplarflarelgmelvevgtpylhrellaeelallpedvrlseGqdvdkqldrvraa 353
+                                         ++++++k+++ +p s+l++++a+ l+ e  +   ++++    + ll+ el++++   ++ e + v +   r  ++
+  GCA_020809085.1_ASM2080908v1_4517  15 RNAQMAEKSVVSMPSSKLKVAVAKVLKDEGYIAGYQISSE--TKPLLSIELKYFEGRSVIEEVKRVSRPGLRQYKS 88 
+                                        456899***********************99888888875..5778888888888888888888888765555555 PP
+
+               trimmed_msa_bchN_hmm 354 rpdl..vvcGlGl 364
+                                          dl  v  GlG+
+  GCA_020809085.1_ASM2080908v1_4517  89 AEDLpkVRGGLGV 101
+                                        5555323345555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       5388  (1687312 residues searched)
+Passed MSV filter:                       150  (0.0278396); expected 107.8 (0.02)
+Passed bias filter:                      108  (0.0200445); expected 107.8 (0.02)
+Passed Vit filter:                        12  (0.00222717); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185598); expected 0.1 (1e-05)
+Initial search space (Z):               5388  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 20337.39
+//
+[ok]

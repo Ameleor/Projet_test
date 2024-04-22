@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCA_905142475.1_LMG_31884/GCA_905142475.1_LMG_31884_protein.faa
+# output directed to file:         results/GCA_905142475.1_LMG_31884/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+  ------ inclusion threshold ------
+      0.084   11.2   0.0       0.16   10.3   0.0    1.4  1  GCA_905142475.1_LMG_31884_5263  CAD7717952.1 Sensor histidine ki
+      0.084   11.2   0.0       0.16   10.3   0.0    1.4  1  GCA_905142475.1_LMG_31884_5264  CAD7717954.1 Sensor histidine ki
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905142475.1_LMG_31884_5263  CAD7717952.1 Sensor histidine kinase RcsC [Xanthomonas hydrangeae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   3.4e-05      0.16      82     156 ..     181     255 ..     172     303 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 3.4e-05
+            trimmed_msa_puhA_hmm  82 aakktakaeGaP.leptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgk 156
+                                     a ++ +++ G P  + +g pl+d vGpa   eR+   ++ + g++  v  +        ++d++ r ++ ++aDg 
+  GCA_905142475.1_LMG_31884_5263 181 ANRSYEDWIGIPpADVIGRPLVDVVGPAVVEERRAWIEAALAGQTLTVEASW-PYADGRRRDAEIRYMPRLDADGV 255
+                                     66778899998626678*********************99999876665443.23444555566666666666655 PP
+
+>> GCA_905142475.1_LMG_31884_5264  CAD7717954.1 Sensor histidine kinase RcsC [Xanthomonas hydrangeae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   3.4e-05      0.16      82     156 ..     181     255 ..     172     303 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 3.4e-05
+            trimmed_msa_puhA_hmm  82 aakktakaeGaP.leptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgk 156
+                                     a ++ +++ G P  + +g pl+d vGpa   eR+   ++ + g++  v  +        ++d++ r ++ ++aDg 
+  GCA_905142475.1_LMG_31884_5264 181 ANRSYEDWIGIPpADVIGRPLVDVVGPAVVEERRAWIEAALAGQTLTVEASW-PYADGRRRDAEIRYMPRLDADGV 255
+                                     66778899998626678*********************99999876665443.23444555566666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       9402  (3168196 residues searched)
+Passed MSV filter:                       176  (0.0187194); expected 188.0 (0.02)
+Passed bias filter:                      150  (0.0159541); expected 188.0 (0.02)
+Passed Vit filter:                        10  (0.0010636); expected 9.4 (0.001)
+Passed Fwd filter:                         2  (0.000212721); expected 0.1 (1e-05)
+Initial search space (Z):               9402  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 16297.24
+//
+[ok]

@@ -1,0 +1,131 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_014189595.1_ASM1418959v1/GCA_014189595.1_ASM1418959v1_protein.faa
+# output directed to file:         results/GCA_014189595.1_ASM1418959v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00016   19.4   0.0      0.018   12.7   0.0    2.3  2  GCA_014189595.1_ASM1418959v1_3396  QND33795.1 ABC transporter ATP-b
+    0.00026   18.7   0.3       0.36    8.4   0.0    3.2  3  GCA_014189595.1_ASM1418959v1_687   QND31458.1 YifB family Mg chelat
+  ------ inclusion threshold ------
+       0.01   13.5   1.6       0.88    7.1   0.1    3.0  3  GCA_014189595.1_ASM1418959v1_7005  QND36933.1 ABC transporter ATP-b
+      0.015   13.0   0.8        1.6    6.3   0.1    2.2  2  GCA_014189595.1_ASM1418959v1_3746  QND34096.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014189595.1_ASM1418959v1_3396  QND33795.1 ABC transporter ATP-binding protein [Sinorhizobium meliloti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   1.1e-05     0.018      33      66 ..      39      72 ..      19      97 .. 0.82
+   2 !    4.3   0.0    0.0041       6.6      13      55 ..     294     337 ..     288     367 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.1e-05
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikavkgcryncd 66
+                                       ++G+ G+Gk+ a ral +llP+   v++  ++ +
+  GCA_014189595.1_ASM1418959v1_3396 39 IVGESGSGKTLATRALISLLPPTIKVADGSVSYK 72
+                                       68*******************9888877766554 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.0041
+               trimmed_msa_bchI_hmm  13 demklalllaavdpsigGvlv.lGdrGtGkstavralaallPki 55 
+                                        ++ k+al  +++d + g v++ +G  G+Gk+t  r++a l+ + 
+  GCA_014189595.1_ASM1418959v1_3396 294 NKPKRALHGVSIDINEGEVVAlVGGSGSGKTTLGRTIAGLVTES 337
+                                        566889999999999999876269***************98765 PP
+
+>> GCA_014189595.1_ASM1418959v1_687  QND31458.1 YifB family Mg chelatase-like AAA ATPase [Sinorhizobium meliloti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.0   0.00023      0.36       7      57 ..     191     239 ..     187     250 .. 0.88
+   2 !    4.2   0.0    0.0042       6.7     117     185 ..     278     346 ..     274     352 .. 0.90
+   3 ?    1.9   0.3     0.022        36     251     307 ..     440     496 ..     403     506 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00023
+              trimmed_msa_bchI_hmm   7 saivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57 
+                                       + i gq+  k+al +aa  ++   +l++G  G+Gks  +  l ++lP+++ 
+  GCA_014189595.1_ASM1418959v1_687 191 ADIKGQESAKRALEVAAAGNH--NLLMVGPPGSGKSMLAARLPSILPPLSP 239
+                                       5689************98775..79************9999******9875 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0042
+              trimmed_msa_bchI_hmm 117 ltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                       l  G    +pG  + a+ G l++de   +    +d l    ++ + ++ r    v +pa + l+ + nP
+  GCA_014189595.1_ASM1418959v1_687 278 LIGGGFRAKPGEASLAHNGVLFLDEFPEFAPQALDALRQPLETATCIIARANHRVTYPAAIQLIAAMNP 346
+                                       555555668999999***************************************************999 PP
+
+  == domain 3  score: 1.9 bits;  conditional E-value: 0.022
+              trimmed_msa_bchI_hmm 251 rlekvevpdavlekaaklclalgtdGlrgeltllraaralaalegakevtkehlkkv 307
+                                       ++ek++ pda+  +  + + +      rg   +l+ ar+la l++a +v + hl++ 
+  GCA_014189595.1_ASM1418959v1_687 440 MIEKIAEPDAAGLQLLRDAAEKMKFSARGYHRVLKVARTLADLDAAPTVGRIHLAEA 496
+                                       555555555543333333333334456888999******************999864 PP
+
+>> GCA_014189595.1_ASM1418959v1_7005  QND36933.1 ABC transporter ATP-binding protein (plasmid) [Sinorhizobium meliloti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.1    0.0091        14      31      62 ..      41      72 ..      27     107 .. 0.80
+   2 ?    0.2   0.0      0.07   1.1e+02     193     229 ..     202     243 ..     197     260 .. 0.74
+   3 ?    7.1   0.1   0.00056      0.88      33      54 ..     318     339 ..     311     348 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0091
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkikavkgcr 62
+                                       + v+G+ G+Gks ++ ++  ll k  +v+g+ 
+  GCA_014189595.1_ASM1418959v1_7005 41 LAVVGESGSGKSQTMMGIMGLLAKNGTVTGSA 72
+                                       4589******************9998887754 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.07
+               trimmed_msa_bchI_hmm 193 qlldrfGlsvevrt.....pkdleervevvrrrdaferdpea 229
+                                         l  rfG+++ + t      k +++rv v+rr + +e+  +a
+  GCA_014189595.1_ASM1418959v1_7005 202 SLQRRFGMAIVLIThdlgiVKYFADRVAVMRRGEVVEQGMTA 243
+                                        6788999999776622222457899*******9999987655 PP
+
+  == domain 3  score: 7.1 bits;  conditional E-value: 0.00056
+               trimmed_msa_bchI_hmm  33 vlGdrGtGkstavralaallPk 54 
+                                        ++G+ G+Gkst  ral  llP 
+  GCA_014189595.1_ASM1418959v1_7005 318 IVGESGSGKSTLGRALLRLLPS 339
+                                        78*******************6 PP
+
+>> GCA_014189595.1_ASM1418959v1_3746  QND34096.1 ABC transporter ATP-binding protein [Sinorhizobium meliloti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   0.1   0.00098       1.6      33      54 ..      40      61 ..      18      85 .. 0.83
+   2 ?    5.0   0.1    0.0025         4      31      53 ..     325     347 ..     311     363 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.00098
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPk 54
+                                       ++G+ G+Gks   ral  llP 
+  GCA_014189595.1_ASM1418959v1_3746 40 LVGESGSGKSLFCRALVRLLPS 61
+                                       57*******************6 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0025
+               trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaallP 53 
+                                        v ++G+ G+Gkst +ra+  l P
+  GCA_014189595.1_ASM1418959v1_3746 325 VGIVGESGSGKSTLARAMLGLTP 347
+                                        5589**************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       6343  (1846011 residues searched)
+Passed MSV filter:                       382  (0.0602239); expected 126.9 (0.02)
+Passed bias filter:                      254  (0.0400441); expected 126.9 (0.02)
+Passed Vit filter:                        47  (0.00740974); expected 6.3 (0.001)
+Passed Fwd filter:                         4  (0.000630616); expected 0.1 (1e-05)
+Initial search space (Z):               6343  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 8780.68
+//
+[ok]

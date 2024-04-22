@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898525.1_ASM2389852v1/GCA_023898525.1_ASM2389852v1_protein.faa
+# output directed to file:         results/GCA_023898525.1_ASM2389852v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00091   13.8   0.1     0.0017   12.9   0.1    1.4  1  GCA_023898525.1_ASM2389852v1_520   USN87294.1 MAG: FAD-dependent ox
+     0.0033   11.9   0.2     0.0044   11.5   0.2    1.1  1  GCA_023898525.1_ASM2389852v1_1024  USN87788.1 MAG: NAD(P)H-hydrate 
+  ------ inclusion threshold ------
+      0.018    9.5   2.1       0.13    6.6   0.4    2.1  2  GCA_023898525.1_ASM2389852v1_765   USN87534.1 MAG: NADP-dependent m
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898525.1_ASM2389852v1_520  USN87294.1 MAG: FAD-dependent oxidoreductase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.1   4.8e-06    0.0017       4      38 ..       4      39 ..       1      44 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 4.8e-06
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekl.dapGG 38
+                                       ++iGaG GGl +a  +++ G++v +++k  d++GG
+  GCA_023898525.1_ASM2389852v1_520  4 IIIIGAGSGGLNVASFMNSIGLKVLLIDKSaDHIGG 39
+                                      69**************************85378888 PP
+
+>> GCA_023898525.1_ASM2389852v1_1024  USN87788.1 MAG: NAD(P)H-hydrate epimerase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.2   1.3e-05    0.0044       8      59 ..      63     114 ..      53     123 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.3e-05
+               trimmed_msa_crtI_hmm   8 GaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfDaGPtiita 59 
+                                        G G GGlaaa  l+ +G +vt++ +  + G   ++ r+     + G  ++ta
+  GCA_023898525.1_ASM2389852v1_1024  63 GNGGGGLAAARHLQNHGAQVTIVLATSKYGLSKTTRRQLDILEEIGLNVVTA 114
+                                        7899*******************99999987777777777777777777776 PP
+
+>> GCA_023898525.1_ASM2389852v1_765  USN87534.1 MAG: NADP-dependent malic enzyme [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.4   0.00038      0.13       3      32 ..     196     225 ..     194     241 .. 0.86
+   2 ?    2.4   0.1    0.0073       2.5     215     301 ..     268     355 ..     259     362 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.00038
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlek 32 
+                                       k+vv+GaG  G a+a+ l+ +G++  ++  
+  GCA_023898525.1_ASM2389852v1_765 196 KVVVVGAGAAGRATALLLKEAGVQNIIVTD 225
+                                       689********************9887754 PP
+
+  == domain 2  score: 2.4 bits;  conditional E-value: 0.0073
+              trimmed_msa_crtI_hmm 215 yamGGtgalvkglvklieeqGgelrlnaeveeievedg.ratgvrlasGeeieadvvvsnadaaltykklleeekrk 290
+                                         + G g+++++ v  + e+   + + +++ ei+ ed+ ra +v +a+G++  a+ v         ++  l++  ++
+  GCA_023898525.1_ASM2389852v1_765 268 IGVSGPGTIAQAHVAAMAEKAIVFAMANPIPEIMPEDAkRAGAVVVATGRSDFANQVNNALAFPGLFRGALDKGVKE 344
+                                       55678999*************************99875278889999999988887765555556666666666666 PP
+
+              trimmed_msa_crtI_hmm 291 rwtdkklerkr 301
+                                          + kl+ ++
+  GCA_023898525.1_ASM2389852v1_765 345 ITDKVKLAAAK 355
+                                       66666666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1048  (313508 residues searched)
+Passed MSV filter:                        49  (0.0467557); expected 21.0 (0.02)
+Passed bias filter:                       39  (0.0372137); expected 21.0 (0.02)
+Passed Vit filter:                         4  (0.00381679); expected 1.0 (0.001)
+Passed Fwd filter:                         3  (0.0028626); expected 0.0 (1e-05)
+Initial search space (Z):               1048  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10864.54
+//
+[ok]

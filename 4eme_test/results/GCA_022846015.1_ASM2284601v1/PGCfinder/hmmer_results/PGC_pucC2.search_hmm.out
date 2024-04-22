@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_022846015.1_ASM2284601v1/GCA_022846015.1_ASM2284601v1_protein.faa
+# output directed to file:         results/GCA_022846015.1_ASM2284601v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.056    9.4  23.7       0.17    7.8   4.8    2.3  2  GCA_022846015.1_ASM2284601v1_2598  BDF59781.1 putative MFS-type tra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022846015.1_ASM2284601v1_2598  BDF59781.1 putative MFS-type transporter YxlH [Christensenellaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8   4.8   6.5e-05      0.17      38     113 ..      35     111 ..       6     117 .. 0.89
+   2 ?    7.3  11.0   9.2e-05      0.25      74     185 ..     264     373 ..     249     380 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 6.5e-05
+              trimmed_msa_pucC2_hmm  38 lpavlPglLvalhyavql.lRPrlGygsDkggrrtpwiigGlavLalggllaaaavallaselvlglalavlafll 112
+                                         +av+ g++ + + ++q+ lR  lG  sDk+g+    +i G+++L+++++l   a ++ +  ++ g+a a +a+ +
+  GCA_022846015.1_ASM2284601v1_2598  35 ATAVMLGVIGGAYGVMQIlLRIPLGIVSDKSGKDKLLLIIGFVILTVSAVLFLFANTVETVIFARGVAGAAAAWWV 110
+                                        56777777777777778636999***********************************9999*****999999987 PP
+
+              trimmed_msa_pucC2_hmm 113 i 113
+                                        i
+  GCA_022846015.1_ASM2284601v1_2598 111 I 111
+                                        7 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 9.2e-05
+              trimmed_msa_pucC2_hmm  74 iigGlavLalggllaaaavallaselvlglalavlaflliGlGvgaaGtslLaLlakrvaperraaaativWlmmi 149
+                                         igG+ v+ ++  l a + + +  +  + l++  +  ++ G+G g+   +l   + k+vap++r++a+ i   +  
+  GCA_022846015.1_ASM2284601v1_2598 264 KIGGIKVVVIAFSLCAFSCIPVFYH--MNLTVIYIMQVISGVGYGTLTSALAGFVIKAVAPHQRSTATGIFQSVYA 337
+                                        5788888887776666665554444..445555556677899999998889999********************** PP
+
+              trimmed_msa_pucC2_hmm 150 aGiavtagvagklldPfsaerlvavaaavslvalll 185
+                                        +Gi +   +ag +++  s +   +v +a++++a + 
+  GCA_022846015.1_ASM2284601v1_2598 338 IGIFIGPMIAGGVIQTASFDAAYLVIGAITAAAAIA 373
+                                        ***************999988888888887776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       2667  (834751 residues searched)
+Passed MSV filter:                       184  (0.0689914); expected 53.3 (0.02)
+Passed bias filter:                       47  (0.0176228); expected 53.3 (0.02)
+Passed Vit filter:                         7  (0.00262467); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000374953); expected 0.0 (1e-05)
+Initial search space (Z):               2667  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 20032.17
+//
+[ok]

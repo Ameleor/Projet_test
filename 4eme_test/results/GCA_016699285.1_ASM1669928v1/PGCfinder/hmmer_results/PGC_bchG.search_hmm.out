@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699285.1_ASM1669928v1/GCA_016699285.1_ASM1669928v1_protein.faa
+# output directed to file:         results/GCA_016699285.1_ASM1669928v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    9.6e-07   25.9   1.0    1.9e-06   25.0   1.0    1.5  1  GCA_016699285.1_ASM1669928v1_916  QQR67511.1 MAG: 4-hydroxy-3-meth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699285.1_ASM1669928v1_916  QQR67511.1 MAG: 4-hydroxy-3-methylbut-2-enyl diphosphate reductase [Candidatus Broc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   1.0   6.8e-10   1.9e-06      56     233 ..     338     522 ..     298     553 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 6.8e-10
+              trimmed_msa_bchG_hmm  56 tsqavndWfdrhvdainePerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlk 132
+                                       + q++n +f+++  a+neP+ +    r      + + +i ++ s+++++al++ +f    l+ ++ + y  + +   
+  GCA_016699285.1_ASM1669928v1_916 338 SMQVLNRFFNKEAVALNEPTSAKFYERKQTL-FVCLGIIGAVASFVLGFALSKSIFFCIFLASLFGFFYRLDIIPKS 413
+                                       5799***************988887776544.356788999999999999999999999999999999987765544 PP
+
+              trimmed_msa_bchG_hmm 133 knGwlGnaa...v...glsyeglaWltgaavla...galPsaevlllallysigahGi.mtlndfkaveGdrklgvk 199
+                                        + ++       +      + g+aW  ++a++     +   +++ll+a++++++   i  ++ d + ++Gdr lg +
+  GCA_016699285.1_ASM1669928v1_916 414 MSKFIRYRSleeIpgsKEIFYGIAWAVSTALIPflgVQKNFMPSLLIAMIFAFSLAFIrAVVLDIRDIQGDRILGKE 490
+                                       4444432220012111224569****9999986442344557899*******99666615678************** PP
+
+              trimmed_msa_bchG_hmm 200 slpvklGveraarvaclvmavpqvvvvalllawg 233
+                                       ++p+ +G+e++ ++ +  ++++ v+v++++ +w 
+  GCA_016699285.1_ASM1669928v1_916 491 TIPIAIGKENTKTILV--IITALVAVLMIVSSWL 522
+                                       ********99877654..4555566666666664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2736  (836718 residues searched)
+Passed MSV filter:                        85  (0.0310673); expected 54.7 (0.02)
+Passed bias filter:                       45  (0.0164474); expected 54.7 (0.02)
+Passed Vit filter:                         6  (0.00219298); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000365497); expected 0.0 (1e-05)
+Initial search space (Z):               2736  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13389.29
+//
+[ok]

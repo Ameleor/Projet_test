@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022846075.1_ASM2284607v1/GCA_022846075.1_ASM2284607v1_protein.faa
+# output directed to file:         results/GCA_022846075.1_ASM2284607v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0023   13.9   0.5     0.0031   13.5   0.5    1.1  1  GCA_022846075.1_ASM2284607v1_895  BDF66923.1 ribosomal RNA small s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022846075.1_ASM2284607v1_895  BDF66923.1 ribosomal RNA small subunit methyltransferase H [Oscillospiraceae bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.5     1e-06    0.0031     332     385 ..     160     214 ..     125     223 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 1e-06
+              trimmed_msa_bchD_hmm 332 rksarrGrplgarrgeprggarldlvatLRaAaPwQrlRrrea.kaaeeerievr 385
+                                       r +      +   rg+   ++ l+lv+ +R+A+P Q+lR++++ ++++ + +++ 
+  GCA_022846075.1_ASM2284607v1_895 160 RYAPAIAAAIVRARGQAPIETTLQLVDVIRSAMPPQALREKQHpAKRTFQAVRIA 214
+                                       555555556667789999999********************99634444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2991  (958238 residues searched)
+Passed MSV filter:                       176  (0.0588432); expected 59.8 (0.02)
+Passed bias filter:                       85  (0.0284186); expected 59.8 (0.02)
+Passed Vit filter:                         6  (0.00200602); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000334336); expected 0.0 (1e-05)
+Initial search space (Z):               2991  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 13891.97
+//
+[ok]

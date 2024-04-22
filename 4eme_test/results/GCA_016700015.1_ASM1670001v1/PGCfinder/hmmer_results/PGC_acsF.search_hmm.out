@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700015.1_ASM1670001v1/GCA_016700015.1_ASM1670001v1_protein.faa
+# output directed to file:         results/GCA_016700015.1_ASM1670001v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.034    9.1   7.0      0.064    8.2   0.7    2.8  3  GCA_016700015.1_ASM1670001v1_1017  QQS21904.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700015.1_ASM1670001v1_1017  QQS21904.1 hypothetical protein IPM09_05350 [Candidatus Saccharibacteria bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0      0.06        62      52      86 ..      58      92 ..      55     103 .. 0.82
+   2 ?    3.6   0.4    0.0015       1.6      28      86 ..     105     162 ..      72     166 .. 0.83
+   3 ?    8.2   0.7   6.2e-05     0.064      41      86 ..     197     242 ..     186     274 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.06
+               trimmed_msa_acsF_hmm 52 liaelesdknkkhfkrneefdkeleelepelrkef 86
+                                       +++e e d +k   k+ ee++k+le+  ++l +e+
+  GCA_016700015.1_ASM1670001v1_1017 58 ILDEAEEDYQKILRKNAEELQKNLESTTEKLSREL 92
+                                       67888888888888888999999999999998886 PP
+
+  == domain 2  score: 3.6 bits;  conditional E-value: 0.0015
+               trimmed_msa_acsF_hmm  28 rfyttdfaaldridvssvraewdaliaelesdknkkhfkrneefdkeleelepelrkef 86 
+                                        r+y    ++l +   +s+  + +al+ae +++ ++k   r+ee+d++l++ e el++++
+  GCA_016700015.1_ASM1670001v1_1017 105 RLYREGLDELREGTATSIT-NAQALLAEHQTEMREKFAARQEEMDSKLRAYEAELQAKL 162
+                                        6677777777777777765.4689****************************9999765 PP
+
+  == domain 3  score: 8.2 bits;  conditional E-value: 6.2e-05
+               trimmed_msa_acsF_hmm  41 dvssvraewdaliaelesdknkkhfkrneefdkeleelepelrkef 86 
+                                        ++++  ++ ++++a+ ++d n + ++r+++++++l ++e++l +e+
+  GCA_016700015.1_ASM1670001v1_1017 197 ELEAALKQRETVLAQHQADLNAEFLERQKQHAAHLAAMEDKLTQEM 242
+                                        56666678899********************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       1041  (301958 residues searched)
+Passed MSV filter:                        26  (0.024976); expected 20.8 (0.02)
+Passed bias filter:                       21  (0.0201729); expected 20.8 (0.02)
+Passed Vit filter:                         2  (0.00192123); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000960615); expected 0.0 (1e-05)
+Initial search space (Z):               1041  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9383.23
+//
+[ok]

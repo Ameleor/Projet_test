@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699935.1_ASM1669993v1/GCA_016699935.1_ASM1669993v1_protein.faa
+# output directed to file:         results/GCA_016699935.1_ASM1669993v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0022   13.3   0.0     0.0033   12.7   0.0    1.2  1  GCA_016699935.1_ASM1669993v1_491  QQS18920.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699935.1_ASM1669993v1_491  QQS18920.1 class I SAM-dependent methyltransferase [Candidatus Saccharibacteria bac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   2.3e-06    0.0033     199     316 ..      52     163 ..      48     199 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 2.3e-06
+                      trimmed_bchE 199 rllDvGGGeG...aFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisLvRv 272
+                                       r+lD+G G+G   aF a+++  +  ++++    p+ +e a++++ +     +v+++ G++ + +   ++D++ +   
+  GCA_016699935.1_ASM1669993v1_491  52 RILDLGCGSGwtsAFFARAGYDVVGVDIS----PEAVEAASKHYLE---LPNVSFVVGDYDTLAYSGEFDAAVFFDS 121
+                                       799***99995556666666666666654....8888888876544...46899*********************99 PP
+
+                      trimmed_bchE 273 lhDHdDeavlkllrkvraaLppggrLliaEpmagtagaeavgda 316
+                                       lh H +++vl+ l++++ aL+pgg L+  Ep  g++++++  da
+  GCA_016699935.1_ASM1669993v1_491 122 LH-HAEDEVLA-LKAAFVALRPGGILVACEPGVGHSKTAKSIDA 163
+                                       99.55556665.69999**************9999888887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1447  (286555 residues searched)
+Passed MSV filter:                        48  (0.0331721); expected 28.9 (0.02)
+Passed bias filter:                       33  (0.0228058); expected 28.9 (0.02)
+Passed Vit filter:                         7  (0.0048376); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000691085); expected 0.0 (1e-05)
+Initial search space (Z):               1447  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13359.10
+//
+[ok]

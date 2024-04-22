@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018966485.1_ASM1896648v1/GCA_018966485.1_ASM1896648v1_protein.faa
+# output directed to file:         results/GCA_018966485.1_ASM1896648v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.031   11.4   5.0      0.041   11.0   5.0    1.2  1  GCA_018966485.1_ASM1896648v1_761  QWU07282.1 YisL family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018966485.1_ASM1896648v1_761  QWU07282.1 YisL family protein [Heyndrickxia coagulans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   5.0   1.7e-05     0.041      45     141 ..      12     109 ..       7     115 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.7e-05
+              trimmed_msa_tspO_hmm  45 WtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrrldwalvevvlLW..lsvlalilvlwr 119
+                                       W +  +l  +a  l  ra +++a +++ ++l  + +++ +  +llfF+ +rld al+ + lL   l + ++ +++ r
+  GCA_018966485.1_ASM1896648v1_761  12 WVIAILLFILALFLH-RAGREKAFKTVQMVLRLFYILVIVTGALLFFHNQRLDPALYGLKLLGgiLVIGMMEMITLR 87 
+                                       554444444444333.3555555565666666666777778899***************999621344444456677 PP
+
+              trimmed_msa_tspO_hmm 120 vsklaallllPYlvWvsiAaaL 141
+                                       +sk  +  +l  l+ + +Aa+L
+  GCA_018966485.1_ASM1896648v1_761  88 LSKRKSTGILWVLLIIFFAAVL 109
+                                       8888888777777777777777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       2472  (689995 residues searched)
+Passed MSV filter:                       142  (0.0574434); expected 49.4 (0.02)
+Passed bias filter:                       43  (0.0173948); expected 49.4 (0.02)
+Passed Vit filter:                         5  (0.00202265); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000404531); expected 0.0 (1e-05)
+Initial search space (Z):               2472  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12410.54
+//
+[ok]

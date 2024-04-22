@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_018399075.1_ASM1839907v1/GCA_018399075.1_ASM1839907v1_protein.faa
+# output directed to file:         results/GCA_018399075.1_ASM1839907v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0024   13.6   0.3     0.0038   13.0   0.2    1.4  2  GCA_018399075.1_ASM1839907v1_919  QVL56688.1 MAG: V-type ATP synth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018399075.1_ASM1839907v1_919  QVL56688.1 MAG: V-type ATP synthase subunit E [Simkaniaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.2   2.2e-06    0.0038      41     136 ..      22     118 ..      15     137 .. 0.85
+   2 ?   -3.3   0.0      0.18   3.2e+02     111     129 ..     184     202 ..     146     207 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.2e-06
+              trimmed_msa_acsF_hmm  41 dvssvraewdaliaelesdknkkhfkrneefdkeleelepelrkefldflvs.sltaefsGcvlyaeikkrvknkdi 116
+                                        +++ ++e d++ia+ ++d +k     ++e ++  +e + ++++e   f  s  l+a  s   l +ei+k+  n+++
+  GCA_018399075.1_ASM1839907v1_919  22 TLDPAKKEGDQIIAKARADAEKIIEDAKSEASRIHDEAKRKIEEERNVFQASmNLAAKKSVDTLKQEIEKKLFNPEL 98 
+                                       678999****************99999999999999999******9999998458999******************* PP
+
+              trimmed_msa_acsF_hmm 117 kelfkllardesrhagfind 136
+                                        el++   +d    a +i  
+  GCA_018399075.1_ASM1839907v1_919  99 SELVTEKMKDPKVVAELIGA 118
+                                       ***99988887777766654 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.18
+              trimmed_msa_acsF_hmm 111 vknkdikelfkllardesr 129
+                                       ++++ +k+l+  + rd+ r
+  GCA_018399075.1_ASM1839907v1_919 184 MSDEALKSLLASFVRDDFR 202
+                                       4445555555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       1758  (593183 residues searched)
+Passed MSV filter:                        72  (0.0409556); expected 35.2 (0.02)
+Passed bias filter:                       49  (0.0278726); expected 35.2 (0.02)
+Passed Vit filter:                         8  (0.00455063); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000568828); expected 0.0 (1e-05)
+Initial search space (Z):               1758  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17310.33
+//
+[ok]

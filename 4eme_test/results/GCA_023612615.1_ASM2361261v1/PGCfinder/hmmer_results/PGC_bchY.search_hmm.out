@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_023612615.1_ASM2361261v1/GCA_023612615.1_ASM2361261v1_protein.faa
+# output directed to file:         results/GCA_023612615.1_ASM2361261v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.017   11.4   0.7       0.14    8.3   0.0    2.0  2  GCA_023612615.1_ASM2361261v1_2453  URM15366.1 OmpH family outer mem
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023612615.1_ASM2361261v1_2453  URM15366.1 OmpH family outer membrane protein [Vibrio splendidus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.1    0.0047        16     442     484 ..      17      59 ..       8      71 .. 0.73
+   2 ?    8.3   0.0   4.1e-05      0.14     100     125 ..     120     145 ..     107     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.0047
+               trimmed_msa_bchY_hmm 442 fdkmkeffegvGegdaagvweeapkerpefrakakkklekaak 484
+                                        f++  e  ++vG  ++a v++  p+++  +++ +++ ++kaa+
+  GCA_023612615.1_ASM2361261v1_2453  17 FATAAEAAQKVGYVNTAQVFQALPQREVVLQKMQEEFKDKAAE 59 
+                                        5666677789999999999999999887777666655555543 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 4.1e-05
+               trimmed_msa_bchY_hmm 100 Gklfedireavheladpekydavvvi 125
+                                         klf+ i++av+++a+ e yd +v i
+  GCA_023612615.1_ASM2361261v1_2453 120 QKLFKVIQDAVTKVAEKEGYDMIVDI 145
+                                        69********************9955 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       3448  (1002590 residues searched)
+Passed MSV filter:                       108  (0.0313225); expected 69.0 (0.02)
+Passed bias filter:                       81  (0.0234919); expected 69.0 (0.02)
+Passed Vit filter:                         5  (0.00145012); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000290023); expected 0.0 (1e-05)
+Initial search space (Z):               3448  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 14066.54
+//
+[ok]

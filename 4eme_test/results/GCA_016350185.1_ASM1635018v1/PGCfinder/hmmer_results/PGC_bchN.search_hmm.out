@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_016350185.1_ASM1635018v1/GCA_016350185.1_ASM1635018v1_protein.faa
+# output directed to file:         results/GCA_016350185.1_ASM1635018v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.016   12.2   0.0      0.016   12.1   0.0    1.0  1  GCA_016350185.1_ASM1635018v1_735  IFIEJK_03980 Thiol-disulfide iso
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016350185.1_ASM1635018v1_735  IFIEJK_03980 Thiol-disulfide isomerase or thioredoxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   3.6e-06     0.016     168     268 ..      47     148 ..      12     150 .] 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 3.6e-06
+              trimmed_msa_bchN_hmm 168 aladv..vedqfarlfeelgieevkvlpareaeelpavgp.ntrfllaqpflgetaraleer.GakrlaapfplGae 240
+                                       a+++v    dq+++   el++  v++  ++  ++l ++    ++  ++qp + +   +l++    + ++a f + ++
+  GCA_016350185.1_ASM1635018v1_735  47 AMPEVnnFRDQYKD---ELNVIAVHMPRSEADTDLDTIKAvAAEHDITQPIFVDNEMKLTDAfENQYVPAYFVFDKD 120
+                                       56665112355554...4555555543333334444443314456789**99998888876526789********** PP
+
+              trimmed_msa_bchN_hmm 241 Gttawlkaaaeafgvdeakfeavvaakr 268
+                                       G  ++++a  + +++ e+++++v++++r
+  GCA_016350185.1_ASM1635018v1_735 121 GQLRHMQAGGSGMKMLEKRVNRVLDEMR 148
+                                       **********************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4545  (1298195 residues searched)
+Passed MSV filter:                       150  (0.0330033); expected 90.9 (0.02)
+Passed bias filter:                      114  (0.0250825); expected 90.9 (0.02)
+Passed Vit filter:                         6  (0.00132013); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000220022); expected 0.0 (1e-05)
+Initial search space (Z):               4545  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 13717.55
+//
+[ok]

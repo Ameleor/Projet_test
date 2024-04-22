@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721565.1_min17_bin01/GCA_928721565.1_min17_bin01_protein.faa
+# output directed to file:         results/GCA_928721565.1_min17_bin01/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    8.6e-10   34.7   0.5    4.6e-05   19.1   0.4    2.8  2  GCA_928721565.1_min17_bin01_676  EJGMIM_03555 hypothetical protei
+    0.00018   17.2   0.1    0.00039   16.1   0.0    1.6  2  GCA_928721565.1_min17_bin01_469  EJGMIM_02485 DNA polymerase III 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721565.1_min17_bin01_676  EJGMIM_03555 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   0.0   8.9e-06    0.0065       4      62 ..     103     159 ..     100     182 .. 0.86
+   2 !   19.1   0.4   6.2e-08   4.6e-05     120     305 ..     196     406 ..     190     416 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 8.9e-06
+             trimmed_msa_bchI_hmm   4 fpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcr 62 
+                                        fs + gq+++ +al +aa   +    +++G  G+Gk+  ++ l ++lP+++  ++ +
+  GCA_928721565.1_min17_bin01_676 103 IDFSEVKGQENVIRALEIAAAGGH--NCILIGSPGSGKTMMAKRLVTILPELTIEEAME 159
+                                      579****************98765..46789********************98876655 PP
+
+  == domain 2  score: 19.1 bits;  conditional E-value: 6.2e-08
+             trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP........eeGe 189
+                                      G +  +pG ++ a+ G l++de+  +   +++ l +  +  e +++r +   r+p  f+lv s nP        ee e
+  GCA_928721565.1_min17_bin01_676 196 GGRIPQPGEISLAHCGVLFLDELTEFSRNVLESLREPLENREVIINRLSGNYRYPCNFMLVASMNPcpcgyygdEEKE 273
+                                      666779***********************************************************9888888887888 PP
+
+             trimmed_msa_bchI_hmm 190 lr..PqlldrfGlsvevrtpkdleervevvr.rrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlek 264
+                                       r  Pq + ++   +     + ++ ++ev+r + ++ ++++++  ++  ++  +  +ki++ r +  +++ + ++ +k
+  GCA_928721565.1_min17_bin01_676 274 CRctPQEIHKYLRKISGPLLDRIDIQIEVLRpKFEKIKTKEKSENSETIRQRVNYARKIQSERYKKYRIHSNAEITTK 351
+                                      776699888888778777778888888888733355555555555556666666666777777776677666666666 PP
+
+             trimmed_msa_bchI_hmm 265 aaklclalgtdG..............lrgeltllraaralaalegakevtkehlk 305
+                                      +a    +l t G              +r+   +l+ ar++a l+ +++++ +h++
+  GCA_928721565.1_min17_bin01_676 352 MALEFCKLDTKGekllqnafiklklsVRAYEKILKVARTIADLDRKENIEFQHIA 406
+                                      6654445555543322222222111135555667777777777777777777775 PP
+
+>> GCA_928721565.1_min17_bin01_469  EJGMIM_02485 DNA polymerase III subunit gamma/tau
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   5.3e-07   0.00039       5      62 ..      14      72 ..      10     115 .. 0.79
+   2 ?   -3.6   0.0      0.53   3.9e+02     207     233 ..     180     206 ..     176     224 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 5.3e-07
+             trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigGvlvl.GdrGtGkstavralaallPkikavkgcr 62
+                                      f+ +vgq++++++l    + +++g   ++ G rGtGk+t+++ la  +  ++  +g +
+  GCA_928721565.1_min17_bin01_469 14 TFAEMVGQEHITRTLRNQIMANRVGHAYLFnGGRGTGKTTSAKVLARAINCLNPKDGEP 72
+                                     6999*********************8766559**********99998877766655544 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 0.53
+             trimmed_msa_bchI_hmm 207 pkdleervevvrrrdaferdpeafvak 233
+                                       +d+ +r+e+v +  + e  ++a+   
+  GCA_928721565.1_min17_bin01_469 180 NEDIIKRLEIVCKESNIEITKQALNII 206
+                                      567888888888888887777765544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1478  (459253 residues searched)
+Passed MSV filter:                        85  (0.0575101); expected 29.6 (0.02)
+Passed bias filter:                       60  (0.0405954); expected 29.6 (0.02)
+Passed Vit filter:                         6  (0.00405954); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00135318); expected 0.0 (1e-05)
+Initial search space (Z):               1478  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10779.17
+//
+[ok]

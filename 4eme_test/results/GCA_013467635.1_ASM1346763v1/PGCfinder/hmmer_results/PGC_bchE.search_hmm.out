@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_013467635.1_ASM1346763v1/GCA_013467635.1_ASM1346763v1_protein.faa
+# output directed to file:         results/GCA_013467635.1_ASM1346763v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-05   19.9   0.5      3e-05   19.3   0.5    1.2  1  GCA_013467635.1_ASM1346763v1_696   QLL23450.1 IclR family transcrip
+     0.0035   12.5   0.0     0.0084   11.3   0.0    1.6  2  GCA_013467635.1_ASM1346763v1_1310  QLL24033.1 peptide chain release
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013467635.1_ASM1346763v1_696  QLL23450.1 IclR family transcriptional regulator [Actinobacteria bacterium IMCC2500
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.5   4.5e-08     3e-05      57     128 ..      15      86 ..      10     108 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 4.5e-08
+                      trimmed_bchE  57 ldllellaegplsleelaerlklpedalerLlraaaalkLlerrsedryaLgklgaallgnpgiaamirHha 128
+                                       +++l++l++gp sl+el +++++++ +++rL  a +  +L++r  ++r+ Lg+++a l++++g   +i   a
+  GCA_013467635.1_ASM1346763v1_696  15 VGILATLESGPHSLAELVAATGIARPTAHRLAVALEFHRLVARDLNGRFILGPRSAELAAAAGEDRLIAAAA 86 
+                                       6899**********************************************************9999887655 PP
+
+>> GCA_013467635.1_ASM1346763v1_1310  QLL24033.1 peptide chain release factor N(5)-glutamine methyltransferase [Actinoba
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   1.2e-05    0.0084     183     223 ..     106     147 ..     101     174 .. 0.83
+   2 ?   -2.6   0.0       0.2   1.4e+02     337     364 ..     234     261 ..     230     262 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.2e-05
+                       trimmed_bchE 183 lvaeevld.aydlkrhrrllDvGGGeGaFlaavaarapklkl 223
+                                        l+ e vl+   +l++  +++D+G G+Ga + a+a++ap+ ++
+  GCA_013467635.1_ASM1346763v1_1310 106 LLVEAVLThIEKLSGAVSVVDLGSGSGALALAIATEAPQTHV 147
+                                        4555666515689*************************9987 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.2
+                       trimmed_bchE 337 rallaeaGFakvkllrtarpllasvlva 364
+                                         +ll+e G+ ++++++ + + +a vl+a
+  GCA_013467635.1_ASM1346763v1_1310 234 GRLLKEGGYLAIEHHEEQGAAIADVLSA 261
+                                        5799999999999999999999999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1348  (428419 residues searched)
+Passed MSV filter:                        53  (0.0393175); expected 27.0 (0.02)
+Passed bias filter:                       35  (0.0259644); expected 27.0 (0.02)
+Passed Vit filter:                         4  (0.00296736); expected 1.3 (0.001)
+Passed Fwd filter:                         2  (0.00148368); expected 0.0 (1e-05)
+Initial search space (Z):               1348  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14022.94
+//
+[ok]

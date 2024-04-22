@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699085.1_ASM1669908v1/GCA_016699085.1_ASM1669908v1_protein.faa
+# output directed to file:         results/GCA_016699085.1_ASM1669908v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.1e-14   49.8   0.0      4e-12   41.5   0.0    2.1  2  GCA_016699085.1_ASM1669908v1_779  QQR50232.1 alpha/beta hydrolase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699085.1_ASM1669908v1_779  QQR50232.1 alpha/beta hydrolase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.5   0.0   4.7e-15     4e-12      26     141 ..      59     174 ..      45     210 .. 0.82
+   2 !    6.5   0.0   0.00021      0.18     216     275 ..     215     276 ..     210     280 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 41.5 bits;  conditional E-value: 4.7e-15
+              trimmed_msa_bchO_hmm  26 WhvqelgegPvlLLlHGtGasthswrdll..plLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgv 100
+                                        + +++g+g  lL++HG  +s+  + d      La++++++  D Pg g t+   ++ +   ++a+++  L+++   
+  GCA_016699085.1_ASM1669908v1_779  59 IFYRQSGNGLPLLFIHGSPGSADVFVDYQaeNKLAEKYTMVTYDRPGYGRTSGGVRSLAQQVQIAHEV--LVTQFPN 133
+                                       55678999999************9998762268*********************99999888888876..9****** PP
+
+              trimmed_msa_bchO_hmm 101 epavvvGHSAGaaialrlaldgkiapkkvvglngallpleg 141
+                                       ++ ++vGHS G++ia+ l+l++   +++v+ + + l+p+  
+  GCA_016699085.1_ASM1669908v1_779 134 KKVTIVGHSYGGTIAALLVLEHPEVAEQVILFAPMLDPVGE 174
+                                       **********************99999*****999999864 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.00021
+              trimmed_msa_bchO_hmm 216 ekllrdlpklktplllivgekDravppkearevaall.pk.arlveleglGHLahEeapeev 275
+                                       ++  ++l++++ p+ li+g++D  vp+++   +++   p+  + + ++g+ H +    pe +
+  GCA_016699085.1_ASM1669908v1_779 215 RQYIDRLKTIRIPIKLITGTRDFLVPISNVAFAKTYFdPNiLSTEVISGMSHFIPQHYPEVI 276
+                                       5567899********************99887776664331345566777777766666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                        842  (237883 residues searched)
+Passed MSV filter:                        26  (0.0308789); expected 16.8 (0.02)
+Passed bias filter:                       24  (0.0285036); expected 16.8 (0.02)
+Passed Vit filter:                         1  (0.00118765); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.00118765); expected 0.0 (1e-05)
+Initial search space (Z):                842  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4752.80
+//
+[ok]

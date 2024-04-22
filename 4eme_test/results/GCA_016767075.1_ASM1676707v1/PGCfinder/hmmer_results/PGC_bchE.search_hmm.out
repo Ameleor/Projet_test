@@ -1,0 +1,88 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016767075.1_ASM1676707v1/GCA_016767075.1_ASM1676707v1_protein.faa
+# output directed to file:         results/GCA_016767075.1_ASM1676707v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.2e-05   19.0   0.0    0.00018   17.5   0.0    1.7  2  GCA_016767075.1_ASM1676707v1_617   QQY66829.1 50S ribosomal protein
+  ------ inclusion threshold ------
+      0.011   11.6   0.0      0.015   11.1   0.0    1.2  1  GCA_016767075.1_ASM1676707v1_1220  QQY65316.1 methyltransferase dom
+      0.016   11.0   0.0      0.023   10.5   0.0    1.1  1  GCA_016767075.1_ASM1676707v1_1379  QQY67340.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016767075.1_ASM1676707v1_617  QQY66829.1 50S ribosomal protein L11 methyltransferase [Clostridioides difficile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0      0.17   1.2e+02     136     206 ..      35     101 ..      32     112 .. 0.61
+   2 !   17.5   0.0   2.5e-07   0.00018     195     267 ..     176     247 ..     162     275 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.17
+                      trimmed_bchE 136 dpvallrgeaketelakyWpYaaeakaaeldaeevaaYsaLmaasqalvaeevldaydlkrhrrllDvGGG 206
+                                       dp ++l ++  ++el   W+Y++e+  ++ ++++v   + +  +   +   e+++   l  +   +D+G G
+  GCA_016767075.1_ASM1676707v1_617  35 DPKDFLFQK--KNELD--WDYVEEEVFKKNEEDDVLIKTYVSEEKNVMEFVEIIKQKVLGLKDFGIDIGEG 101
+                                       666666655..45554..99999996665555555444444444444545566666666666666666666 PP
+
+  == domain 2  score: 17.5 bits;  conditional E-value: 2.5e-07
+                      trimmed_bchE 195 krhrrllDvGGGeGaFlaavaarapklklklfDlpaVa.erararleaaglsdrvevagGsflkdplPegaDli 267
+                                       ++  +++D+G G+G  +  +aa+  + +++  Dl +Va + a++++ ++++++ v+v+ G+++ d + + aD+i
+  GCA_016767075.1_ASM1676707v1_617 176 NKDSKVFDIGCGSGILAI-AAAKLGAKEVVAVDLDEVAvKVAKENVLENKVEKSVSVMHGNLT-DVIKDKADVI 247
+                                       567889********8655.5566777899999*****7467999*****************86.8999999987 PP
+
+>> GCA_016767075.1_ASM1676707v1_1220  QQY65316.1 methyltransferase domain-containing protein [Clostridioides difficile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   2.1e-05     0.015     184     230 ..      79     125 ..      66     156 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.1e-05
+                       trimmed_bchE 184 vaeevlday.dlkrhrrllDvGGGeGaFlaavaarapklklklfDlpa 230
+                                        v e++++ + d  + r +lDvG GeG +++++++r+ + ++  fDl  
+  GCA_016767075.1_ASM1676707v1_1220  79 VLEKIIQFIsDTPSIRNILDVGCGEGFYARQIQQRT-ERNIFAFDLSR 125
+                                        56666665415667899***********99999876.56788899864 PP
+
+>> GCA_016767075.1_ASM1676707v1_1379  QQY67340.1 class I SAM-dependent methyltransferase [Clostridioides difficile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   3.2e-05     0.023     198     300 ..      62     162 ..      48     169 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.2e-05
+                       trimmed_bchE 198 rrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisLvRvl 273
+                                         +llD+G G G ++++ a++  k++   f   ++ + a++r ++++l  +++    s+l+ +  e++Dl++L+   
+  GCA_016767075.1_ASM1676707v1_1379  62 PKLLDLGCGPGLYAEKFAQKGYKVTGIDFSKRSI-NYAQNRNKETNL--NINYLFQSYLNMNYNEEFDLATLIYCD 134
+                                        579****************998888877776665.777777666665..58888889***************9888 PP
+
+                       trimmed_bchE 274 hDHdDeav.lkllrkvraaLppggrLli 300
+                                        +     +  + l++k++++L+pgg+L++
+  GCA_016767075.1_ASM1676707v1_1379 135 YGALSTENrRLLMEKIYDSLKPGGKLIL 162
+                                        776555550556799***********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2146  (650725 residues searched)
+Passed MSV filter:                        48  (0.0223672); expected 42.9 (0.02)
+Passed bias filter:                       43  (0.0200373); expected 42.9 (0.02)
+Passed Vit filter:                         8  (0.00372787); expected 2.1 (0.001)
+Passed Fwd filter:                         3  (0.00139795); expected 0.0 (1e-05)
+Initial search space (Z):               2146  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13945.35
+//
+[ok]

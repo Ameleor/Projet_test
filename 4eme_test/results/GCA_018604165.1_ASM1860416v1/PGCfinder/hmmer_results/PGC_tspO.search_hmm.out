@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018604165.1_ASM1860416v1/GCA_018604165.1_ASM1860416v1_protein.faa
+# output directed to file:         results/GCA_018604165.1_ASM1860416v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.4e-22   77.7  18.6    1.5e-22   77.6  18.6    1.0  1  GCA_018604165.1_ASM1860416v1_1020  EJAIEJ_05195 TspO protein
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018604165.1_ASM1860416v1_1020  EJAIEJ_05195 TspO protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.6  18.6     5e-26   1.5e-22      21     143 ..      26     147 ..       3     154 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 77.6 bits;  conditional E-value: 5e-26
+               trimmed_msa_tspO_hmm  21 elgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrrl 96 
+                                         ++ewy+sL+k  w+PP w+Fg +W++i ++ +v  ++a   ++ ++   +l ++f l+ vln++W ++fFr + +
+  GCA_018604165.1_ASM1860416v1_1020  26 ATNEWYQSLNKAPWTPPGWVFGAAWSTIMLCFSVFMWKASGVVSVQT-YPMLYVMFGLQFVLNVVWNPVFFRWHMM 100
+                                        5789**********************************996555555.5599************************ PP
+
+               trimmed_msa_tspO_hmm  97 dwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNl 143
+                                          +lv +++L   v +++    +   l + l+lPY++W  iA+ LN 
+  GCA_018604165.1_ASM1860416v1_1020 101 GSGLVIIIALTALVGWFVWWGLKSMGLWGALILPYFIWLLIATSLNG 147
+                                        **********9999999999999999********************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3060  (1008908 residues searched)
+Passed MSV filter:                       172  (0.0562092); expected 61.2 (0.02)
+Passed bias filter:                       57  (0.0186275); expected 61.2 (0.02)
+Passed Vit filter:                         5  (0.00163399); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000326797); expected 0.0 (1e-05)
+Initial search space (Z):               3060  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11683.75
+//
+[ok]

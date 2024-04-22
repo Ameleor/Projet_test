@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693775.1_ASM1369377v1/GCA_013693775.1_ASM1369377v1_protein.faa
+# output directed to file:         results/GCA_013693775.1_ASM1369377v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0023   14.2   0.1     0.0024   14.2   0.1    1.0  1  GCA_013693775.1_ASM1369377v1_3267  QLQ04142.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693775.1_ASM1369377v1_3267  QLQ04142.1 MAG: hypothetical protein HZY77_16600 [Thiobacillus sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.1   7.7e-07    0.0024     112     162 ..      13      60 ..       2      69 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 7.7e-07
+              trimmed_msa_pucC2_hmm 112 liGlGvgaaGtslLaLlakrvaperraaaativWlmmiaGiavtagvagkl 162
+                                        li    +aaG  l  Ll +r +p+rr a   + W+++ +Gia t  +++++
+  GCA_013693775.1_ASM1369377v1_3267  13 LIAGTRAAAGAGLALLLCNRLDPDRRRA---VGWTLLAVGIATTIPLVARV 60 
+                                        56556689******************86...78*********998877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       3085  (978033 residues searched)
+Passed MSV filter:                       205  (0.0664506); expected 61.7 (0.02)
+Passed bias filter:                       51  (0.0165316); expected 61.7 (0.02)
+Passed Vit filter:                         2  (0.000648298); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000324149); expected 0.0 (1e-05)
+Initial search space (Z):               3085  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 17476.86
+//
+[ok]

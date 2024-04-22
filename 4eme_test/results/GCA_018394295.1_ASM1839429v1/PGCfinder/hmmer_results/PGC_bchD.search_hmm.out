@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018394295.1_ASM1839429v1/GCA_018394295.1_ASM1839429v1_protein.faa
+# output directed to file:         results/GCA_018394295.1_ASM1839429v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.6e-06   24.4   0.0    2.2e-06   23.9   0.0    1.1  1  GCA_018394295.1_ASM1839429v1_595  QVK19534.1 VWA domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018394295.1_ASM1839429v1_595  QVK19534.1 VWA domain-containing protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   0.0   7.2e-10   2.2e-06     399     511 ..     143     256 ..     118     264 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 7.2e-10
+              trimmed_msa_bchD_hmm 399 etttifvVDASGS.aAleRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvra..kraLagLpGGG 472
+                                       ++ ++f++D SGS +  ++L   K  + lL  +   + d +++v + G+ + ++L+ptr   +    +a+ +L  GG
+  GCA_018394295.1_ASM1839429v1_595 143 QSNLVFLIDVSGSmSDSNKLPLVKSSLRLLVNH-LREDDLISIVVYAGS-SRVVLEPTRGNEKDtiNQAIDSLQAGG 217
+                                       56799********44589*********887764.445566888888876.79*******988752278999****** PP
+
+              trimmed_msa_bchD_hmm 473 gTPLAagleaalelaeaarrrGrtpllvlLtDGraNial 511
+                                       +T   +g++ a+e a++  ++G    ++l tDG  N+  
+  GCA_018394295.1_ASM1839429v1_595 218 STAGGSGIQLAYEQANKYFAEGGNNRVILTTDGDFNVGV 256
+                                       ************************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3036  (913463 residues searched)
+Passed MSV filter:                        64  (0.0210804); expected 60.7 (0.02)
+Passed bias filter:                       50  (0.016469); expected 60.7 (0.02)
+Passed Vit filter:                         6  (0.00197628); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000329381); expected 0.0 (1e-05)
+Initial search space (Z):               3036  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 22920.54
+//
+[ok]

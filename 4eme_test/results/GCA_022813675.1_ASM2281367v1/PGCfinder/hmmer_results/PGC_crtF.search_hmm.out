@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_022813675.1_ASM2281367v1/GCA_022813675.1_ASM2281367v1_protein.faa
+# output directed to file:         results/GCA_022813675.1_ASM2281367v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00034   16.6   0.0    0.00051   16.0   0.0    1.2  1  GCA_022813675.1_ASM2281367v1_593  UOD35321.1 class I SAM-dependent
+  ------ inclusion threshold ------
+      0.029   10.2   0.0      0.045    9.6   0.0    1.2  1  GCA_022813675.1_ASM2281367v1_291  UOD35033.1 peptide chain release
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022813675.1_ASM2281367v1_593  UOD35321.1 class I SAM-dependent methyltransferase [Deferribacteraceae bacterium V6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   4.6e-07   0.00051     190     300 ..      30     138 ..      24     149 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 4.6e-07
+              trimmed_msa_crtF_hmm 190 daydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevag..GsflkdplPeg. 263
+                                       +a+ l ++++l+D+G+G+G F  a+ ++    ++   D+ +++      ++++ +++++e+++   + +k plP++ 
+  GCA_022813675.1_ASM2281367v1_593  30 KAVGLVNVETLVDIGAGTGLFSLALLNEFKCKTVYACDVSDIMIDW---MKENIVTKHTEIIPlkSDEVKVPLPDNt 103
+                                       67889999*****************999999999999988886554...4455566666655411667778888753 PP
+
+              trimmed_msa_crtF_hmm 264 aDlisLvRvlhDHdDeavlkllrkvraaLppggrLli 300
+                                       aDl+ ++ +   H+ ++ + +l+++++ L++gg++li
+  GCA_022813675.1_ASM2281367v1_593 104 ADLVIMMNLH--HELDEPELILKDAFRVLKKGGKILI 138
+                                       6777666544..555566789**************98 PP
+
+>> GCA_022813675.1_ASM2281367v1_291  UOD35033.1 peptide chain release factor N(5)-glutamine methyltransferase [Deferriba
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0     4e-05     0.045     183     257 ..     103     178 ..      98     192 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 4e-05
+              trimmed_msa_crtF_hmm 183 lvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflk 257
+                                        + e+vl+++d  ++ ++lD+  G+G  l a+ ++  +      Dl  a ++ a +++ + gl+dr+ ++ G++lk
+  GCA_022813675.1_ASM2281367v1_291 103 TLVESVLNSVDRGKQYKILDLCTGSGCILIALLKELENSIGYGVDLSyAALKVAGKNIYDLGLNDRAYLINGDVLK 178
+                                       56799**************************999999888888899835668999******************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2231  (728533 residues searched)
+Passed MSV filter:                        61  (0.027342); expected 44.6 (0.02)
+Passed bias filter:                       59  (0.0264455); expected 44.6 (0.02)
+Passed Vit filter:                         6  (0.00268938); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000896459); expected 0.0 (1e-05)
+Initial search space (Z):               2231  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10027.35
+//
+[ok]

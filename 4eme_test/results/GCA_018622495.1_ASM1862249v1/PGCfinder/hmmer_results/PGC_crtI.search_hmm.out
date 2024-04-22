@@ -1,0 +1,111 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018622495.1_ASM1862249v1/GCA_018622495.1_ASM1862249v1_protein.faa
+# output directed to file:         results/GCA_018622495.1_ASM1862249v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.6e-06   21.4   0.4    1.7e-05   20.0   0.0    1.8  2  GCA_018622495.1_ASM1862249v1_542  QWB96382.1 NAD(P)/FAD-dependent 
+    9.3e-05   17.6   3.2      0.021    9.8   0.7    2.4  2  GCA_018622495.1_ASM1862249v1_76   QWB95967.1 dihydrolipoyl dehydro
+  ------ inclusion threshold ------
+      0.037    9.0   3.5       0.13    7.3   0.9    2.9  4  GCA_018622495.1_ASM1862249v1_873  QWB95233.1 CoA-disulfide reducta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018622495.1_ASM1862249v1_542  QWB96382.1 NAD(P)/FAD-dependent oxidoreductase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0   0.0   3.3e-08   1.7e-05       4      65 ..       6      67 ..       3      87 .. 0.88
+   2 ?   -2.3   0.1      0.19        99       4      28 ..     158     182 ..     156     195 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 3.3e-08
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfDaGPtiitaPallee 65
+                                      + +iG G  Glaaa  ++  G++v ++e+ d++GG  +   ++gf       ++t P++ ++
+  GCA_018622495.1_ASM1862249v1_542  6 VTIIGGGAAGLAAATSFKDSGLKVLLVERSDQLGGILNQCIHNGFGLHVFKEMLTGPEFAQR 67
+                                      579**********************************99999**999888888888877665 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.19
+              trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvt 28 
+                                       + ++G+G  Gl +a r++ +G +v 
+  GCA_018622495.1_ASM1862249v1_542 158 VFILGSGDIGLIMARRMTLEGAKVH 182
+                                       5789*****************9996 PP
+
+>> GCA_018622495.1_ASM1862249v1_76  QWB95967.1 dihydrolipoyl dehydrogenase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.7   4.2e-05     0.021       4      38 ..       6      39 ..       3      44 .. 0.87
+   2 !    7.6   0.1    0.0002       0.1       4      35 ..     174     205 ..     171     208 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 4.2e-05
+             trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                     +v+iG G GG  aai+ g+ G++++++ek   +GG
+  GCA_018622495.1_ASM1862249v1_76  6 VVIIGGGPGGYVAAIKAGQSGLKTALIEKE-VVGG 39
+                                     79*************************985.4555 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.0002
+             trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                       v+iG G+ G+  a  ++a G +vt++ekld 
+  GCA_018622495.1_ASM1862249v1_76 174 LVIIGGGVIGIEFATIFNALGSNVTIIEKLDG 205
+                                      69***************************995 PP
+
+>> GCA_018622495.1_ASM1862249v1_873  QWB95233.1 CoA-disulfide reductase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0      0.17        85       2      22 ..       3      23 ..       2     113 .. 0.65
+   2 ?    7.3   0.9   0.00025      0.13       2      38 ..     154     190 ..     153     212 .. 0.85
+   3 ?    0.3   0.1     0.031        16     223     271 ..     196     241 ..     189     247 .. 0.85
+   4 ?   -2.9   0.0      0.31   1.6e+02      28      60 ..     647     682 ..     629     717 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.17
+              trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlga 22
+                                      kk v+iG   GG ++a rl  
+  GCA_018622495.1_ASM1862249v1_873  3 KKIVIIGGVAGGATTAARLRR 23
+                                      567888888888888888864 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.00025
+              trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGG 38 
+                                       kkavviG Gf G+ +   l+  G++vt++e   ++ G
+  GCA_018622495.1_ASM1862249v1_873 154 KKAVVIGGGFIGVEMMENLTHLGLQVTLVEMAPQVMG 190
+                                       68****************************9876554 PP
+
+  == domain 3  score: 0.3 bits;  conditional E-value: 0.031
+              trimmed_msa_crtI_hmm 223 lvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvv 271
+                                       +++ + +++ +qG+ l l++ v++ e e+   + + l+sG++++ad+++
+  GCA_018622495.1_ASM1862249v1_873 196 MAQIIHQHVVDQGVGLVLSDGVKSFEQEG---KQIVLQSGTTLAADLII 241
+                                       66778899999999999999999987665...5689**********997 PP
+
+  == domain 4  score: -2.9 bits;  conditional E-value: 0.31
+              trimmed_msa_crtI_hmm  28 tvlekldapGGrayvhrkdgftfD...aGPtiitaP 60 
+                                       +v+ +  + G +++v +++gf+      G ti+   
+  GCA_018622495.1_ASM1862249v1_873 647 KVIKAYIQKGTKTKVQQQNGFEVQeskNGTTIVVFS 682
+                                       566666667777777777777653222466666544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1537  (444735 residues searched)
+Passed MSV filter:                        68  (0.044242); expected 30.7 (0.02)
+Passed bias filter:                       54  (0.0351334); expected 30.7 (0.02)
+Passed Vit filter:                        12  (0.00780742); expected 1.5 (0.001)
+Passed Fwd filter:                         3  (0.00195185); expected 0.0 (1e-05)
+Initial search space (Z):               1537  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9121.00
+//
+[ok]

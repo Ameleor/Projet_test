@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchY.hmm
+# target sequence database:        data/genomes_unzip/GCA_018802285.1_ASM1880228v1/GCA_018802285.1_ASM1880228v1_protein.faa
+# output directed to file:         results/GCA_018802285.1_ASM1880228v1/PGCfinder/hmmer_results/PGC_bchY.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchY_hmm  [M=491]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.013   11.1   0.3      0.018   10.7   0.3    1.1  1  GCA_018802285.1_ASM1880228v1_1847  QWL83644.1 Transcriptional regul
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018802285.1_ASM1880228v1_1847  QWL83644.1 Transcriptional regulator, MarR family [Streptococcus sp. ZB199]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.3   7.8e-06     0.018     438     483 ..     101     146 ..      89     154 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 7.8e-06
+               trimmed_msa_bchY_hmm 438 nkerfdkmkeffegvGegdaagvweeapkerpefrakakkklekaa 483
+                                         k+++++mk+ffe+v ++  agv ee+ +   ++ ++  ++++k a
+  GCA_018802285.1_ASM1880228v1_1847 101 VKNKLNDMKQFFEEVDQKMMAGVSEEELAIFFKVMHQFYENMKKGA 146
+                                        5899********************9988777777766666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (491 nodes)
+Target sequences:                       2252  (560774 residues searched)
+Passed MSV filter:                        61  (0.027087); expected 45.0 (0.02)
+Passed bias filter:                       47  (0.0208703); expected 45.0 (0.02)
+Passed Vit filter:                         6  (0.0026643); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.00044405); expected 0.0 (1e-05)
+Initial search space (Z):               2252  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 18887.60
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_014701265.1_ASM1470126v1/GCA_014701265.1_ASM1470126v1_protein.faa
+# output directed to file:         results/GCA_014701265.1_ASM1470126v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      4e-43  147.0   4.3    4.8e-43  146.8   4.3    1.0  1  GCA_014701265.1_ASM1470126v1_691  BCI85485.1 phytoene synthase [My
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014701265.1_ASM1470126v1_691  BCI85485.1 phytoene synthase [Mycobacterium kansasii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  146.8   4.3   5.9e-47   4.8e-43       4     282 ..      21     308 ..      18     319 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 146.8 bits;  conditional E-value: 5.9e-47
+              trimmed_msa_crtB_hmm   4 aacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekk...aaalarlrerldriyagrp.adapa 76 
+                                       + cr++ +++ ++F++A +ll  + r +++aLY+f R+aDD+ D+ + +   + + +rl+e  d  +ag++ +d+++
+  GCA_014701265.1_ASM1470126v1_691  21 RRCRRINAAHGRTFFLATRLLAPDQRPPVHALYGFARHADDILDSLDPDlgmDVRAQRLQELSDGFFAGADlTDHSV 97 
+                                       689999999***********************************999988889999*************87478999 PP
+
+              trimmed_msa_crtB_hmm  77 dralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgv..rdaevlaRAcdLGv 151
+                                         a ++++++++i  a +e++l+ +++D +  +y + ++l +Y    A a+G+    ++g+    ae+   A+ LG 
+  GCA_014701265.1_ASM1470126v1_691  98 LVAVRHTARRYDINTAPFEDFLASMRMDLTITDYPNRDALNDYMRGSAEAIGLQVLPILGAvvPVAEAAPYAAALGR 174
+                                       *****************************************************999999985667888999****** PP
+
+              trimmed_msa_crtB_hmm 152 AmQLtNiaRDvgeDaragRlYLPleWleeagldpea..fl.adpefspalarvvkrLlaeadrlyaraeaGiarLpl 225
+                                       A+QLtN  RD+ eD  ++R+YLP + l+ +g+d +   +   ++ +++++++  +   a   + y+ a+ Gia L  
+  GCA_014701265.1_ASM1470126v1_691 175 AFQLTNFIRDIDEDLTRNRVYLPADELAGDGVDRDLlmWChRNRCTDNRVRNALAAQHAITRNTYRFAADGIAMLAP 251
+                                       **********************************983333134455566777777777778999************* PP
+
+              trimmed_msa_crtB_hmm 226 rcrpailaArliYaeigrevarrgldsvsrRavvskarKlallakalleavaaaael 282
+                                       r+rp +++A ++Y+ei  +++  +++  s+Ra+v++ar+l++  ++l++a  a++++
+  GCA_014701265.1_ASM1470126v1_691 252 RSRPCVATALTLYSEILDRIEDDDFEVFSHRATVGQARRLRVAGAGLIQAWLARNSV 308
+                                       ******************************************999999998877643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       8110  (1846359 residues searched)
+Passed MSV filter:                       346  (0.0426634); expected 162.2 (0.02)
+Passed bias filter:                      193  (0.0237978); expected 162.2 (0.02)
+Passed Vit filter:                        10  (0.00123305); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000123305); expected 0.1 (1e-05)
+Initial search space (Z):               8110  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 18836.16
+//
+[ok]

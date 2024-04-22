@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016454805.1_ASM1645480v1/GCA_016454805.1_ASM1645480v1_protein.faa
+# output directed to file:         results/GCA_016454805.1_ASM1645480v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.4e-07   26.6   0.0    4.4e-06   22.5   0.0    2.1  2  GCA_016454805.1_ASM1645480v1_1131  FJLAML_05875 Threonine dehydroge
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016454805.1_ASM1645480v1_1131  FJLAML_05875 Threonine dehydrogenase or related Zn-dependent dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.1   0.0    0.0047         7      22      90 ..      21      86 ..       3      98 .. 0.74
+   2 !   22.5   0.0     3e-09   4.4e-06     200     308 ..     236     345 ..     166     347 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 2.1 bits;  conditional E-value: 0.0047
+               trimmed_msa_bchC_hmm 22 tapeeedvvvdiewsgistGtekllwsGrmPef.PGmgyPlvPGyesvGrvveagees.klkvgervfvPG 90
+                                       + ++++d+vv +  + i  Gt+  +  G +P+  PG +     G+e +G v e+g++  ++kvg++v +  
+  GCA_016454805.1_ASM1645480v1_1131 21 QVIKPTDAVVRLVKTTI-CGTDLHILGGDVPACkPGTT----LGHEGIGIVEEVGSAVnHFKVGDKVIISC 86
+                                       44567788888877777.58888888999987547765....49*********998762679****99865 PP
+
+  == domain 2  score: 22.5 bits;  conditional E-value: 3e-09
+               trimmed_msa_bchC_hmm 200 dykaivdasGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlrvaaewkkedlaavkalvesGrls 275
+                                          +++++  G ++ +d   + ++ gg i   G + +p++f+    ++++ +l      + +    + +++e+G+++
+  GCA_016454805.1_ASM1645480v1_1131 236 GVDVVLECVGYPATFDICQNVVSIGGHIANVGVHGKPVEFNLQDLWIKNITLNTGL-VNANTTEMLLEVLETGKID 310
+                                        45677888899999999999999**************************9998654.455566678899******* PP
+
+               trimmed_msa_bchC_hmm 276 ldglithrasaeeaeeayr..tafedpaClkmvld 308
+                                           l+th+ + +e+eeay+  +a e+++ lk++++
+  GCA_016454805.1_ASM1645480v1_1131 311 ATQLVTHHFKLSEIEEAYKvfKAAEENNTLKVIIE 345
+                                        ******************944599999*****986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       1502  (450799 residues searched)
+Passed MSV filter:                        46  (0.0306258); expected 30.0 (0.02)
+Passed bias filter:                       37  (0.0246338); expected 30.0 (0.02)
+Passed Vit filter:                         4  (0.00266312); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000665779); expected 0.0 (1e-05)
+Initial search space (Z):               1502  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11394.18
+//
+[ok]

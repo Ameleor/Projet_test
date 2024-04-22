@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_018802345.1_ASM1880234v1/GCA_018802345.1_ASM1880234v1_protein.faa
+# output directed to file:         results/GCA_018802345.1_ASM1880234v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00057   17.2   8.1    0.00085   16.6   8.1    1.3  1  GCA_018802345.1_ASM1880234v1_4027  QWL76009.1 1,4-dihydroxy-2-napht
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018802345.1_ASM1880234v1_4027  QWL76009.1 1,4-dihydroxy-2-naphthoate polyprenyltransferase [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   8.1   2.3e-07   0.00085      43     232 ..      42     244 ..      19     257 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 2.3e-07
+               trimmed_msa_bchG_hmm  43 vaGvllaGPlvcatsqavndWfdrhvdaine....PerpiPsGripGrWGlyialiltllsllva......aalg. 107
+                                        +a  ll+  l+   s  +nd+ d    a n     P+r++ sG i+ r  + +a++lt+l+ +v+       a+g 
+  GCA_018802345.1_ASM1880234v1_4027  42 MALSLLTAILLQILSNLANDYGDAVSGADNGerigPQRAVVSGLITRR-QMCVAMALTALAAVVSglallgCAFGd 116
+                                        44457788888889999******999998844455********99865.688888888887665322111133332 PP
+
+               trimmed_msa_bchG_hmm 108 tlvfvaavl.....glvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysiga 178
+                                        ++  + + +     ++v+a +y++    +   G+ G   v l + gl  + g+  l +++ +++ ll a+  ++ a
+  GCA_018802345.1_ASM1880234v1_4027 117 QWLQILTFVllggaAIVAAITYTVGKTPYGYRGF-GDISVFL-FFGLLGVLGSYYLFTKTLQWDLLLPATACGLLA 190
+                                        4554444432232256777788877777666664.6666666.557888889999999999*************** PP
+
+               trimmed_msa_bchG_hmm 179 hGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllaw 232
+                                          ++ +n+ + +e d   g  +l+v+lG +ra  +  +++ ++ ++ +a+ll+ 
+  GCA_018802345.1_ASM1880234v1_4027 191 TAVLNINNVRDIETDAVSGKITLAVRLGRNRAIAYHWVLLGAALLTTIAFLLTQ 244
+                                        *********************************999999999999999888764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3640  (1119892 residues searched)
+Passed MSV filter:                       155  (0.0425824); expected 72.8 (0.02)
+Passed bias filter:                       57  (0.0156593); expected 72.8 (0.02)
+Passed Vit filter:                         3  (0.000824176); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000274725); expected 0.0 (1e-05)
+Initial search space (Z):               3640  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13642.46
+//
+[ok]

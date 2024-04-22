@@ -1,0 +1,148 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023277545.1_ASM2327754v1/GCA_023277545.1_ASM2327754v1_protein.faa
+# output directed to file:         results/GCA_023277545.1_ASM2327754v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.7e-10   35.9   0.3    1.3e-07   26.4   0.1    2.2  2  GCA_023277545.1_ASM2327754v1_790  UQA78358.1 NAD(P)/FAD-dependent 
+    4.5e-10   34.5   1.0    3.9e-06   21.5   0.1    3.5  4  GCA_023277545.1_ASM2327754v1_729  UQA78319.1 thioredoxin-disulfide
+    0.00016   16.2   0.1    0.00024   15.6   0.1    1.2  1  GCA_023277545.1_ASM2327754v1_533  UQA79122.1 UDP-galactopyranose m
+     0.0062   10.9   0.7       0.12    6.6   0.0    2.8  3  GCA_023277545.1_ASM2327754v1_298  UQA78927.1 FAD-dependent oxidore
+     0.0082   10.5   0.0      0.015    9.6   0.0    1.4  1  GCA_023277545.1_ASM2327754v1_386  UQA79007.1 FAD-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023277545.1_ASM2327754v1_790  UQA78358.1 NAD(P)/FAD-dependent oxidoreductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.4   0.1   6.1e-10   1.3e-07       2      52 ..      10      64 ..       9      72 .. 0.91
+   2 !    7.5   0.0   0.00032     0.066     218     295 ..     247     332 ..     238     344 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 26.4 bits;  conditional E-value: 6.1e-10
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaG....ldvtvlekaaapGGKlrevevggaaidaG 52
+                                      +vv+iG G +GL+aa +l + G    +dvtvle++++ GG  r+v+ +g+++d G
+  GCA_023277545.1_ASM2327754v1_790 10 SVVIIGGGPAGLTAAWELVKDGgasrYDVTVLEASKEFGGISRTVKYNGNRMDIG 64
+                                      79****************9988666689************************988 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00032
+              trimmed_msa_crtD_hmm 218 wlvegGmsklaealaklaeakgaefrygeeveeilveegrvsgvrladg....erieadavvfng...D.vaalaag 286
+                                       w  + G  +l e++++  +++ga++ ++++v  i++ +g++s+v ++++    ++++ad+ +      D vaa+++g
+  GCA_023277545.1_ASM2327754v1_790 247 WYPKLGPGQLWETVERRCRENGATVLTDAKVVAIKQCDGKISSVVVENQdglqQELHADQFISSMpikDlVAAIEHG 323
+                                       55566677889999*****************************9998752233678999999775222335677777 PP
+
+              trimmed_msa_crtD_hmm 287 llgeearra 295
+                                       + g+e+ ++
+  GCA_023277545.1_ASM2327754v1_790 324 AEGNESVQV 332
+                                       777776655 PP
+
+>> GCA_023277545.1_ASM2327754v1_729  UQA78319.1 thioredoxin-disulfide reductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.1   1.9e-08   3.9e-06       1      42 [.       6      47 ..       6      63 .. 0.89
+   2 !    6.6   0.1   0.00058      0.12     226     287 ..      64     123 ..      55     133 .. 0.80
+   3 !    2.9   0.0    0.0078       1.6       2      33 ..     149     180 ..     148     193 .. 0.92
+   4 ?   -2.4   0.0      0.32        67     449     466 ..     264     281 ..     258     288 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 1.9e-08
+              trimmed_msa_crtD_hmm  1 ervvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrev 42
+                                      ++v++iG+G +G +aal la+aG++  v+  a +pGG+l + 
+  GCA_023277545.1_ASM2327754v1_729  6 KKVIIIGSGPAGYTAALYLARAGYTPLVIAGALTPGGQLMNT 47
+                                      58***********************************97654 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00058
+              trimmed_msa_crtD_hmm 226 klaealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfngDvaalaagl 287
+                                        l ea++k+ae+ ga++ ++  v +++ + +  + v+++dge+ +a+av++ +  +  + g+
+  GCA_023277545.1_ASM2327754v1_729  64 DLMEAMQKQAEKFGAQIILNDVV-SVDFK-DDLKTVTTDDGETYTANAVIISTGSQVRKLGV 123
+                                       5889*************998765.56655.56789***************987766555555 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.0078
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                        +vv+G G + +  al l++ G +vt++ +++
+  GCA_023277545.1_ASM2327754v1_729 149 PIVVVGGGDSAFEEALFLTRFGSSVTLIHRRD 180
+                                       59**************************9986 PP
+
+  == domain 4  score: -2.4 bits;  conditional E-value: 0.32
+              trimmed_msa_crtD_hmm 449 fqRpgartklpgLylaGG 466
+                                        q ++++t++pg++ aG 
+  GCA_023277545.1_ASM2327754v1_729 264 VQGASTKTSIPGIFAAGD 281
+                                       5667899********996 PP
+
+>> GCA_023277545.1_ASM2327754v1_533  UQA79122.1 UDP-galactopyranose mutase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.1   1.1e-06   0.00024       3      39 ..       7      44 ..       5      55 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 1.1e-06
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaa.aGldvtvlekaaapGGKl 39
+                                       vv+GaG+ GL+ a + a+ aG +v++++ ++++GG  
+  GCA_023277545.1_ASM2327754v1_533  7 LVVVGAGLFGLTIAQQAAErAGARVEIIDVRNHIGGNA 44
+                                      79**************996369**************76 PP
+
+>> GCA_023277545.1_ASM2327754v1_298  UQA78927.1 FAD-dependent oxidoreductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0      0.24        50     237     270 ..      68     100 ..      66     111 .. 0.84
+   2 ?    1.2   0.1     0.027       5.5       2      34 ..     150     182 ..     149     186 .. 0.93
+   3 !    6.6   0.0   0.00058      0.12     228     277 ..     193     240 ..     190     272 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.24
+              trimmed_msa_crtD_hmm 237 akgaefrygeeveeilveegrvsgvrladgerie 270
+                                       +kga+++++++v  i+ ++++v  v+l+dg+ i+
+  GCA_023277545.1_ASM2327754v1_298  68 KKGAKVNLESKVLDIDYAKKEV-TVELKDGSVIH 100
+                                       6899***********9887665.79*****9987 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.027
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                       +vvv+G G  G+  a    + G +vt+++ +++
+  GCA_023277545.1_ASM2327754v1_298 150 NVVVLGGGYIGVELAEAFKRLGKNVTLIDMEDH 182
+                                       79**************************99876 PP
+
+  == domain 3  score: 6.6 bits;  conditional E-value: 0.00058
+              trimmed_msa_crtD_hmm 228 aealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfn 277
+                                       ++ l+++ e+kg++f++g++veei+  + +v++v++++g+  +ad+v+++
+  GCA_023277545.1_ASM2327754v1_298 193 SDNLKRIMEDKGIKFELGQAVEEIV-GDTEVKAVKTSKGT-YDADMVICA 240
+                                       67899*******************8.5667999*998886.599999986 PP
+
+>> GCA_023277545.1_ASM2327754v1_386  UQA79007.1 FAD-binding protein [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.6   0.0   7.5e-05     0.015       2      23 ..      30      51 ..      29      65 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 7.5e-05
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaG 23
+                                      +vv+iGaG +GL++al l ++ 
+  GCA_023277545.1_ASM2327754v1_386 30 DVVIIGAGAAGLSSALGLVKSE 51
+                                      69**************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1035  (362936 residues searched)
+Passed MSV filter:                        36  (0.0347826); expected 20.7 (0.02)
+Passed bias filter:                       23  (0.0222222); expected 20.7 (0.02)
+Passed Vit filter:                         7  (0.00676329); expected 1.0 (0.001)
+Passed Fwd filter:                         5  (0.00483092); expected 0.0 (1e-05)
+Initial search space (Z):               1035  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5862.03
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699555.1_ASM1669955v1/GCA_016699555.1_ASM1669955v1_protein.faa
+# output directed to file:         results/GCA_016699555.1_ASM1669955v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      0.007   11.2   0.0      0.011   10.6   0.0    1.2  1  GCA_016699555.1_ASM1669955v1_780  QQR92304.1 class I SAM-dependent
+     0.0098   10.8   0.0      0.014   10.3   0.0    1.2  1  GCA_016699555.1_ASM1669955v1_854  QQR92377.1 methyltransferase dom
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699555.1_ASM1669955v1_780  QQR92304.1 class I SAM-dependent methyltransferase [Candidatus Diapherotrites archa
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.0     2e-05     0.011     175     300 ..      23     148 ..      14     151 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2e-05
+                      trimmed_bchE 175 aLmaasqalvaeevldaydlkrh....rrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdr 247
+                                       +L ++  +  a+++l+  dl+++    +++lD G G+G     +a++a k  +   Dl +   + +++l+++   ++
+  GCA_016699555.1_ASM1669955v1_780  23 NLSRKHLETYADQLLACADLTTRqlegKTILDGGCGTGEITCSMATHAKK--VIGIDLSSTSITHAQSLAKKYALEN 97 
+                                       56666667778899998888865222268************999998865..5668**9999999999********* PP
+
+                      trimmed_bchE 248 vevagGsflkdplPegaDlisLvRvlhDHdDeavlkllrkvraaLppggrLli 300
+                                       ++++  + l+ ++ e +Dl++   vlh H  ++ +  ++ + + ++++g L+i
+  GCA_016699555.1_ASM1669955v1_780  98 ITFIQQDILQLRMKEKFDLVTSFGVLH-HTQNPTK-GFEIISQRVKKNGILII 148
+                                       *************************98.5444433.34556666666666665 PP
+
+>> GCA_016699555.1_ASM1669955v1_854  QQR92377.1 methyltransferase domain-containing protein [Candidatus Diapherotrites a
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   2.6e-05     0.014     193     310 ..      71     183 ..      60     204 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.6e-05
+                      trimmed_bchE 193 dlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisL 269
+                                       d+k +  llD+  G G  l+++ +  p+lkl+  D+ +  ++ +     ++  + +e+++ ++lk +  + +D+i  
+  GCA_016699555.1_ASM1669955v1_854  71 DVKPQSELLDLMCGPGYLLSKISTMRPDLKLTGVDIDKRYTHYT-----RNKYSSIECITADVLKWQTNRKFDTIVC 142
+                                       6778899****************************987655544.....356678999999**************99 PP
+
+                      trimmed_bchE 270 vRvlhDHdDeavlkllrkvraaLppggrLliaEpmagtaga 310
+                                          +h  +  + +++++k+++ L+++g  ++a+p  +  ++
+  GCA_016699555.1_ASM1669955v1_854 143 TGGIHHIPYPQQHAIVQKIFTLLNDDGFCIVADPYVSDYSN 183
+                                       9999999999999*******************998665444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1093  (315166 residues searched)
+Passed MSV filter:                        48  (0.0439158); expected 21.9 (0.02)
+Passed bias filter:                       36  (0.0329369); expected 21.9 (0.02)
+Passed Vit filter:                        13  (0.0118939); expected 1.1 (0.001)
+Passed Fwd filter:                         2  (0.00182983); expected 0.0 (1e-05)
+Initial search space (Z):               1093  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6912.38
+//
+[ok]

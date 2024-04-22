@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_900638075.1_55685_B01/GCA_900638075.1_55685_B01_protein.faa
+# output directed to file:         results/GCA_900638075.1_55685_B01/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0006   17.2   0.0    0.00074   16.9   0.0    1.2  1  GCA_900638075.1_55685_B01_4192  VEI48332.1 alcohol dehydrogenase
+     0.0037   14.6   0.0     0.0048   14.2   0.0    1.2  1  GCA_900638075.1_55685_B01_4191  VEI48331.1 alcohol dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900638075.1_55685_B01_4192  VEI48332.1 alcohol dehydrogenase GroES domain-containing protein [Actinobacillus equu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.0   3.1e-07   0.00074      19      78 ..      22      77 ..      10      81 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 3.1e-07
+            trimmed_msa_bchC_hmm 19 leltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagees 78
+                                     e ++++e+dv +di + g+       l++ r  ++    yP+vPG+e +Grv ++g++s
+  GCA_900638075.1_55685_B01_4192 22 FERRDVREDDVEIDILYCGVCHSD---LHQARN-DWGVSMYPVVPGHEIIGRVSRVGNKS 77
+                                    556678889999999999997654...666654.444556****************9987 PP
+
+>> GCA_900638075.1_55685_B01_4191  VEI48331.1 alcohol dehydrogenase GroES domain-containing protein [Actinobacillus equu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0     2e-06    0.0048     144     232 ..      34     129 ..       1     136 [. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 2e-06
+            trimmed_msa_bchC_hmm 144 kkapdlivGhGvlGrllarltvaagaeapvvWetnaaraegae....gyevidpeederr....dykaivdasGdaevl 214
+                                     k ++  +vG G lG +  +l+ a+g ++ +++ +++ ++e+a+    +  vi+++e++ +     +++i+d+   ++ l
+  GCA_900638075.1_55685_B01_4191  34 KGSKVAVVGLGGLGHMAIKLAHALG-AEVTLFTRSPGKEEDAHrlgaSRVVISTDEEQMKsvanTFDVIIDTVPYTHDL 111
+                                     3456679******************.6788888888888887633213456677776655222257889999999999* PP
+
+            trimmed_msa_bchC_hmm 215 dkliarlakggeivlaGf 232
+                                        +  la +g +vl G+
+  GCA_900638075.1_55685_B01_4191 112 KPYVPTLAISGTLVLVGL 129
+                                     ***************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       4848  (580097 residues searched)
+Passed MSV filter:                        91  (0.0187706); expected 97.0 (0.02)
+Passed bias filter:                       68  (0.0140264); expected 97.0 (0.02)
+Passed Vit filter:                         6  (0.00123762); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000412541); expected 0.0 (1e-05)
+Initial search space (Z):               4848  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10295.91
+//
+[ok]

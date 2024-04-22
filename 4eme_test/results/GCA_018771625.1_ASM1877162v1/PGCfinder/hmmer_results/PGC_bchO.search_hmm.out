@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018771625.1_ASM1877162v1/GCA_018771625.1_ASM1877162v1_protein.faa
+# output directed to file:         results/GCA_018771625.1_ASM1877162v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      2e-05   20.6   0.0     0.0028   13.6   0.0    2.2  2  GCA_018771625.1_ASM1877162v1_1503  QWK19363.1 MAG: alpha/beta hydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018771625.1_ASM1877162v1_1503  QWK19363.1 MAG: alpha/beta hydrolase [Hydrogenobacter thermophilus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0   0.00028      0.52      65     129 ..      24      81 ..       4     104 .. 0.70
+   2 !   13.6   0.0   1.5e-06    0.0028     177     266 ..     106     194 ..      65     199 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00028
+               trimmed_msa_bchO_hmm  65 apDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGHSAGaaialrlaldgkiapkkv 129
+                                         +DLP hg ++ + ++  sL     ++a        +p+v++G S G+++a+ +al+   + k +
+  GCA_018771625.1_ASM1877162v1_1503  24 RIDLPAHGKSKLTYRDFESLA---CDVAV----RISKPSVLLGWSMGGSLAVLIALKFPGKVKGL 81 
+                                        589999999999998877764...44433....33479999999999999998888764444333 PP
+
+  == domain 2  score: 13.6 bits;  conditional E-value: 1.5e-06
+               trimmed_msa_bchO_hmm 177 llestgsrldaeglalYrrLlrspeHvagaLemmAnwdlekllrdlpklktplllivgekDravppkearevaall 252
+                                        l ++    l   +   Y   ++++  ++ a +m+ ++   +l++ lp ++++++++ g +D++vp  +   + +l+
+  GCA_018771625.1_ASM1877162v1_1503 106 LRREGEEFLRYFRKLAYPFAFEDSINLSVAYRMLEDYVKLDLTKLLPYITQRTVIVQGIDDEIVPFVSGLTLYNLI 181
+                                        5555555555555666666677777777788888888778899********************************* PP
+
+               trimmed_msa_bchO_hmm 253 pkarlveleglGHL 266
+                                        +++++++++g GH 
+  GCA_018771625.1_ASM1877162v1_1503 182 KRSKFITFQG-GHF 194
+                                        **********.996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1880  (564883 residues searched)
+Passed MSV filter:                        39  (0.0207447); expected 37.6 (0.02)
+Passed bias filter:                       38  (0.0202128); expected 37.6 (0.02)
+Passed Vit filter:                         7  (0.0037234); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000531915); expected 0.0 (1e-05)
+Initial search space (Z):               1880  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11794.05
+//
+[ok]

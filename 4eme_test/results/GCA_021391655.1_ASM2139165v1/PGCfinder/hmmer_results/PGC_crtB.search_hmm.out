@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_021391655.1_ASM2139165v1/GCA_021391655.1_ASM2139165v1_protein.faa
+# output directed to file:         results/GCA_021391655.1_ASM2139165v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.7e-12   46.1   0.7    2.2e-12   45.8   0.7    1.1  1  GCA_021391655.1_ASM2139165v1_2180  UIK00633.1 phytoene/squalene syn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021391655.1_ASM2139165v1_2180  UIK00633.1 phytoene/squalene synthase family protein [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.8   0.7   3.2e-16   2.2e-12       3     199 ..      10     209 ..       8     234 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 45.8 bits;  conditional E-value: 3.2e-16
+               trimmed_msa_crtB_hmm   3 laacreliregSksFaaAskllprrvreaalaLYafCRla...DDlvDeqekkaaalarlrerldriyagrpadap 75 
+                                        ++ c +++re  +  ++A +l p++ r a  aLYaf        Dlv e   ++ +l+  ++ l+   +g+ a +p
+  GCA_021391655.1_ASM2139165v1_2180  10 QEICLAMLRESDRDRYLACLLSPEEKRGALAALYAFNAELariRDLVHEPLPGEVRLQYWHDLLEGSAHGSTAANP 85 
+                                        678*********************************75431115788888888*********************** PP
+
+               trimmed_msa_crtB_hmm  76 adralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgvrdae.vlaRAcdLG 150
+                                        +  al + +e++++pr+ + +++    +D  +   et   l+ Ya   A+a   + +lv+  ++a+   + A   G
+  GCA_021391655.1_ASM2139165v1_2180  86 VAAALLMAIETHRLPRKTLIDMIGARTFDLYDDPMETRLSLEGYAGETASALIQLASLVLSPEEAArSADAAGHAG 161
+                                        *************************************************************97665156667789* PP
+
+               trimmed_msa_crtB_hmm 151 vAmQLtNiaRDvgeDaragRlYLPleWleeagldpeafladpefspala 199
+                                        vA  ++ +   +    r+g +Y+Pl+ l++ gld +afla ++ +p+++
+  GCA_021391655.1_ASM2139165v1_2180 162 VAQAVAGLLLLMPLHRRRGQIYIPLQILSATGLDRDAFLAGED-RPRIS 209
+                                        *************************************998543.33333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       6722  (1959693 residues searched)
+Passed MSV filter:                       296  (0.0440345); expected 134.4 (0.02)
+Passed bias filter:                      166  (0.024695); expected 134.4 (0.02)
+Passed Vit filter:                        13  (0.00193395); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148765); expected 0.1 (1e-05)
+Initial search space (Z):               6722  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 14521.07
+//
+[ok]

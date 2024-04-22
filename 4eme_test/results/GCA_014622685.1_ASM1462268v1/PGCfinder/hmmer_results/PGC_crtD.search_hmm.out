@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_014622685.1_ASM1462268v1/GCA_014622685.1_ASM1462268v1_protein.faa
+# output directed to file:         results/GCA_014622685.1_ASM1462268v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    6.4e-06   19.7   0.1    0.00039   13.8   0.1    2.3  2  GCA_014622685.1_ASM1462268v1_66  QNS01924.1 MAG: dihydrolipoyl de
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014622685.1_ASM1462268v1_66  QNS01924.1 MAG: dihydrolipoyl dehydrogenase [Buchnera aphidicola (Pentalonia nigrone
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   7.8e-07   0.00039       2      37 ..       8      43 ..       7      49 .. 0.95
+   2 !    3.5   0.0    0.0011      0.53       2      33 ..     176     207 ..     175     210 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 7.8e-07
+             trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                     +vvviG+G +G +aa++ +  Gl+ +++e +++ GG
+  GCA_014622685.1_ASM1462268v1_66  8 QVVVIGSGPSGYSAAFRCSDLGLETVLIECDNKLGG 43
+                                     79*********************************9 PP
+
+  == domain 2  score: 3.5 bits;  conditional E-value: 0.0011
+             trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                      r ++iG G+ GL  a   ++ G ++ ++++ +
+  GCA_014622685.1_ASM1462268v1_66 176 RFLIIGGGVIGLEMATIYSSLGSKIDIVDRFK 207
+                                      679*************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        499  (161511 residues searched)
+Passed MSV filter:                        16  (0.0320641); expected 10.0 (0.02)
+Passed bias filter:                       14  (0.0280561); expected 10.0 (0.02)
+Passed Vit filter:                         5  (0.01002); expected 0.5 (0.001)
+Passed Fwd filter:                         1  (0.00200401); expected 0.0 (1e-05)
+Initial search space (Z):                499  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8676.39
+//
+[ok]

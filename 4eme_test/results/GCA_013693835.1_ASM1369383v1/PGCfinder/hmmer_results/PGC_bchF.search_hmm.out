@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693835.1_ASM1369383v1/GCA_013693835.1_ASM1369383v1_protein.faa
+# output directed to file:         results/GCA_013693835.1_ASM1369383v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.025   11.6   0.1      0.025   11.6   0.1    2.1  2  GCA_013693835.1_ASM1369383v1_709  QLQ12559.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693835.1_ASM1369383v1_709  QLQ12559.1 MAG: hypothetical protein HZY74_03615 [Brevundimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1     1e-05     0.025      31      85 ..      12      66 ..       2      79 .. 0.83
+   2 ?    0.9   2.5     0.021        50      18      61 ..      84     119 ..      75     136 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1e-05
+              trimmed_msa_bchF_hmm 31 vflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvfgkylfae 85
+                                      v+l  ++++  +l  G gaaaa++  ++  +v  + m +Ga+w+  v +  lf +
+  GCA_013693835.1_ASM1369383v1_709 12 VVLYNIVVLTDVLGGGGGAAAANANAILGETVXSIPMASGAVWDIGVGDMILFLS 66
+                                      5666777888899999************999999**********99999999865 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.021
+              trimmed_msa_bchF_hmm  18 tlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktl 61 
+                                       ++v+  l+ + f+++lv l         G+g a++t+  ++ t+
+  GCA_013693835.1_ASM1369383v1_709  84 AIVNHALSMILFVICLVQLL-------LGKGFATSTYF-LITTM 119
+                                       45555555566666665554.......34444333332.22222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       2390  (723329 residues searched)
+Passed MSV filter:                        56  (0.023431); expected 47.8 (0.02)
+Passed bias filter:                       33  (0.0138075); expected 47.8 (0.02)
+Passed Vit filter:                         4  (0.00167364); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.00041841); expected 0.0 (1e-05)
+Initial search space (Z):               2390  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8719.11
+//
+[ok]

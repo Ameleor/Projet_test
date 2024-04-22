@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_022814845.1_ASM2281484v1/GCA_022814845.1_ASM2281484v1_protein.faa
+# output directed to file:         results/GCA_022814845.1_ASM2281484v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0073   14.3   1.8       0.03   12.3   1.0    2.2  2  GCA_022814845.1_ASM2281484v1_694  PMHBLH_03620 phosphonate ABC tra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022814845.1_ASM2281484v1_694  PMHBLH_03620 phosphonate ABC transporter, permease protein PhnE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0     0.052   2.5e+02      32      52 ..      21      41 ..      11      56 .. 0.77
+   2 !   12.3   1.0   6.3e-06      0.03      20     114 ..      96     182 ..      90     205 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.052
+              trimmed_msa_bchF_hmm 32 flvslalvlrylatGegaaaa 52
+                                      +l sl lv+ yl +G+ a+  
+  GCA_022814845.1_ASM2281484v1_694 21 LLWSLGLVVLYLGAGNLAEFN 41
+                                      567999999999999876655 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 6.3e-06
+              trimmed_msa_bchF_hmm  20 vqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvfgkylfaeaffwedvfsll 96 
+                                       +q  la     +f v +a vl +la+G+ ++ a++ + ++tlv +   +    w        +f+ af    +  +l
+  GCA_022814845.1_ASM2281484v1_694  96 LQLALAA---TIFSVLVATVLAFLAAGNTYTPASVRLAIRTLVAFLRTMPELAWA------VMFVMAFGIGAIPGFL 163
+                                       5554444...578888999*************************99999988885......5789999999999999 PP
+
+              trimmed_msa_bchF_hmm  97 vlalhta.ylvalltglls 114
+                                        lalht+  l+ l+ ++++
+  GCA_022814845.1_ASM2281484v1_694 164 ALALHTIgSLTKLFYESIE 182
+                                       9999997346666666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4818  (1457259 residues searched)
+Passed MSV filter:                       192  (0.0398506); expected 96.4 (0.02)
+Passed bias filter:                       76  (0.0157742); expected 96.4 (0.02)
+Passed Vit filter:                         5  (0.00103778); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000207555); expected 0.0 (1e-05)
+Initial search space (Z):               4818  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14513.53
+//
+[ok]

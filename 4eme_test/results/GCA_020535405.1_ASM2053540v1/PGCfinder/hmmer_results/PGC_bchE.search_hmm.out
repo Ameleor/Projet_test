@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_020535405.1_ASM2053540v1/GCA_020535405.1_ASM2053540v1_protein.faa
+# output directed to file:         results/GCA_020535405.1_ASM2053540v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.006   12.8   0.2       0.01   12.0   0.2    1.4  1  GCA_020535405.1_ASM2053540v1_2563  UDF13065.1 methyltransferase dom
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020535405.1_ASM2053540v1_2563  UDF13065.1 methyltransferase domain-containing protein [Microbacteriaceae bacteriu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.2   3.7e-06      0.01     194     350 ..      34     191 ..      26     200 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 3.7e-06
+                       trimmed_bchE 194 lkrhrrllDvGGGeGaFlaavaarapklklklfD.lpaVaerararleaaglsdrvevagGsflkdplPegaDlis 268
+                                        l++ ++llD+G G G+   + a+r +  +++ +D   +V+era  +++++    ++e++ Gs  +  lP   D++ 
+  GCA_020535405.1_ASM2053540v1_2563  34 LEQGQSLLDLGCGPGTITVEFADRLAPGRVVGLDaAAEVIERAVGEFSRD----NLEFVVGSAYE--LPFADDTFD 103
+                                        67889************999998877777666661568*****9988765....55688898775..555555555 PP
+
+                       trimmed_bchE 269 LvRv..lhDHdDeavlkllrkvraaLppggrLliaEp.magtagaeavg..daYFgfYllamgs..GrpRsaeeir 337
+                                        +v    +  H  ++v ++lr++r+  +pgg++   E   agt     +   da+ ++Y    +s  G p   +++ 
+  GCA_020535405.1_ASM2053540v1_2563 104 VVHAhqVLQHVADPV-AVLREMRRVTKPGGVVAAREVdYAGTFWFPLLPglDAWLALYDRVHRSngGEPDAGRRLL 178
+                                        443222345666666.478999999999998877774245554443322337777777655543337777777777 PP
+
+                       trimmed_bchE 338 allaeaGFakvkl 350
+                                        +  ++aGF+++++
+  GCA_020535405.1_ASM2053540v1_2563 179 SWARAAGFDTIST 191
+                                        7777777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2776  (896299 residues searched)
+Passed MSV filter:                       114  (0.0410663); expected 55.5 (0.02)
+Passed bias filter:                       77  (0.0277378); expected 55.5 (0.02)
+Passed Vit filter:                        11  (0.00396254); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000360231); expected 0.0 (1e-05)
+Initial search space (Z):               2776  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13048.29
+//
+[ok]

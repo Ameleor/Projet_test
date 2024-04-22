@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635275.1_40757_D01/GCA_900635275.1_40757_D01_protein.faa
+# output directed to file:         results/GCA_900635275.1_40757_D01/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0069   13.2   0.9     0.0092   12.8   0.9    1.1  1  GCA_900635275.1_40757_D01_2231  VDZ35998.1 membrane spanning pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635275.1_40757_D01_2231  VDZ35998.1 membrane spanning protein [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.9   3.1e-06    0.0092      27     130 ..      10     112 ..       8     119 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 3.1e-06
+            trimmed_msa_puhB_hmm  27 PdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsarttvYtiTnrRv 105
+                                     P++k+++r +  + ++ + +++l+++++l  +   e l++ +  ++ ++++ +va+  l++  +   +   Y + ++ +
+  GCA_900635275.1_40757_D01_2231  10 PHAKKVMRLSAVLFWIPIALVLLIAFNILN-WLFWEILDNYISIVSSVIIILLVAVFTLVIAPVYRYKHCRYAFEKHHL 87 
+                                     555555666666666666666666665554.57778899999999999999999999999999**************** PP
+
+            trimmed_msa_puhB_hmm 106 vlriGiaLsvtlnlPfkqiesadlk 130
+                                      +r Gi +     +P+ +i+++d++
+  GCA_900635275.1_40757_D01_2231  88 RVRNGILFLDEKVIPYFRIQNIDID 112
+                                     ********************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       2929  (725208 residues searched)
+Passed MSV filter:                       191  (0.06521); expected 58.6 (0.02)
+Passed bias filter:                      164  (0.0559918); expected 58.6 (0.02)
+Passed Vit filter:                        14  (0.00477979); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000341413); expected 0.0 (1e-05)
+Initial search space (Z):               2929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7828.04
+//
+[ok]

@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018208355.1_ASM1820835v1/GCA_018208355.1_ASM1820835v1_protein.faa
+# output directed to file:         results/GCA_018208355.1_ASM1820835v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00058   16.1   0.1     0.0065   12.6   0.0    2.0  2  GCA_018208355.1_ASM1820835v1_837  QUL99282.1 MAG: alpha/beta fold 
+     0.0017   14.6   0.6      0.015   11.4   0.1    2.4  3  GCA_018208355.1_ASM1820835v1_831  QUL99276.1 MAG: alpha/beta fold 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018208355.1_ASM1820835v1_837  QUL99282.1 MAG: alpha/beta fold hydrolase [Bacillota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.0     0.015        16      32      44 ..      54      66 ..      30      71 .. 0.77
+   2 !   12.6   0.0     6e-06    0.0065      80     131 ..     117     171 ..     110     197 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.015
+              trimmed_msa_bchO_hmm 32 gegPvlLLlHGtG 44
+                                      g+ P++ L+HG G
+  GCA_018208355.1_ASM1820835v1_837 54 GPFPAVVLVHGSG 66
+                                      44679******99 PP
+
+  == domain 2  score: 12.6 bits;  conditional E-value: 6e-06
+              trimmed_msa_bchO_hmm  80 erlsLpgmaealaaLlaalgvepa..vvvGHSAGaaialrlaldgkiapk.kvvg 131
+                                       ++ +++   +a+a L ++  v+p+  +v+GHS Ga++a r+a +  ++++ ++ g
+  GCA_018208355.1_ASM1820835v1_837 117 KEETIDDAVAAVALLKETPRVDPErvFVIGHSLGATLAPRIAEECLASQRtRIAG 171
+                                       5567777888888888888888763368*************99885554313333 PP
+
+>> GCA_018208355.1_ASM1820835v1_831  QUL99276.1 MAG: alpha/beta fold hydrolase [Bacillota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0     0.033        35      32      44 ..     144     156 ..     120     160 .. 0.71
+   2 !   11.4   0.1   1.4e-05     0.015      81     132 ..     208     262 ..     201     313 .. 0.69
+   3 ?   -3.3   0.0      0.43   4.6e+02     224     245 ..     341     362 ..     336     373 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.033
+              trimmed_msa_bchO_hmm  32 gegPvlLLlHGtG 44 
+                                       g+ P++ L+HG G
+  GCA_018208355.1_ASM1820835v1_831 144 GPFPAVVLVHGSG 156
+                                       34679******99 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_bchO_hmm  81 rlsLpgmaealaaLlaalgvepa..vvvGHSAGaaialrlaldgkiapk.kvvgl 132
+                                       + +++   +a+a L ++  v+p+  +v+GHS Ga++a r+a +  ++++ ++ g+
+  GCA_018208355.1_ASM1820835v1_831 208 EETIDDAVAAVALLKETPRVDPErvFVIGHSLGATLAPRIAEECLASQRtRIAGI 262
+                                       567777788888888888888763368*************998855543133333 PP
+
+  == domain 3  score: -3.3 bits;  conditional E-value: 0.43
+              trimmed_msa_bchO_hmm 224 klktplllivgekDravppkea 245
+                                       ++  p+l++ ge+D  v++k+ 
+  GCA_018208355.1_ASM1820835v1_831 341 EVGLPMLILQGERDYQVTMKDL 362
+                                       5667788888888888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2147  (670205 residues searched)
+Passed MSV filter:                        76  (0.0353982); expected 42.9 (0.02)
+Passed bias filter:                       68  (0.0316721); expected 42.9 (0.02)
+Passed Vit filter:                        11  (0.00512343); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000931532); expected 0.0 (1e-05)
+Initial search space (Z):               2147  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9922.93
+//
+[ok]

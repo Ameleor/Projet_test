@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_022919915.1_ASM2291991v1/GCA_022919915.1_ASM2291991v1_protein.faa
+# output directed to file:         results/GCA_022919915.1_ASM2291991v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00018   17.9   0.2      0.015   11.6   0.2    2.1  2  GCA_022919915.1_ASM2291991v1_2230  UOR08816.1 phage shock protein o
+     0.0022   14.3   2.0      0.028   10.6   0.1    2.2  2  GCA_022919915.1_ASM2291991v1_1194  UOR10093.1 DNA polymerase III su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022919915.1_ASM2291991v1_2230  UOR08816.1 phage shock protein operon transcriptional activator [Qipengyuania flav
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.3   0.0     0.002       2.4      31      47 ..      31      47 ..      21      70 .. 0.83
+   2 !   11.6   0.2   1.2e-05     0.015     120     206 ..      86     174 ..      72     191 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.002
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavra 47
+                                       vlv+G+rGtGk   +  
+  GCA_022919915.1_ASM2291991v1_2230 31 VLVIGERGTGKELIAER 47
+                                       9**********866555 PP
+
+  == domain 2  score: 11.6 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGs....GnPeeGelr 191
+                                        G  +   G + +a++G l++de+  l     + ll + + Ge +    +  vr + r+v        G  e Ge+r
+  GCA_022919915.1_ASM2291991v1_2230  86 GATKARVGRFEEADKGTLFLDELGTLSMGAQERLLRAVEYGEITRIGSSRPVRVDVRIVAATNedlpGKAERGEFR 161
+                                        555567788999*****************************9776677777********98754455999****** PP
+
+               trimmed_msa_bchI_hmm 192 PqlldrfGlsvevrt 206
+                                          lldr+  s ev t
+  GCA_022919915.1_ASM2291991v1_2230 162 ADLLDRL--SFEVIT 174
+                                        ******6..555555 PP
+
+>> GCA_022919915.1_ASM2291991v1_1194  UOR10093.1 DNA polymerase III subunit gamma/tau [Qipengyuania flava]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.1   2.4e-05     0.028       5      55 ..      89     140 ..      85     177 .. 0.80
+   2 !    2.9   0.3    0.0055       6.5     269     314 ..     286     331 ..     246     348 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.4e-05
+               trimmed_msa_bchI_hmm   5 pfsaivgqdemklallla.avdpsigGvlvlGdrGtGkstavralaallPki 55 
+                                         f+ ++gq+ m ++l  a a d+     l+ G rG Gk++++r +a+ l  i
+  GCA_022919915.1_ASM2291991v1_1194  89 TFAELIGQEAMVRTLANAvARDRLAHAFLMTGVRGVGKTSTARLIAKALNCI 140
+                                        6999**********98762556666788999************999888655 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.0055
+               trimmed_msa_bchI_hmm 269 clalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrh 314
+                                        + + +   +r  l++l  a a a l+++++vt+e ++++  la + 
+  GCA_022919915.1_ASM2291991v1_1194 286 VANAAEGSVRDGLSILDQAIAHADLDTDSKVTAERVRDMLGLADKS 331
+                                        444445568999**********************999876555443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2364  (753727 residues searched)
+Passed MSV filter:                       133  (0.0562606); expected 47.3 (0.02)
+Passed bias filter:                       76  (0.0321489); expected 47.3 (0.02)
+Passed Vit filter:                        14  (0.00592217); expected 2.4 (0.001)
+Passed Fwd filter:                         2  (0.000846024); expected 0.0 (1e-05)
+Initial search space (Z):               2364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17481.36
+//
+[ok]

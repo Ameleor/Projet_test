@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016806715.1_ASM1680671v1/GCA_016806715.1_ASM1680671v1_protein.faa
+# output directed to file:         results/GCA_016806715.1_ASM1680671v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.013   11.3   0.0       0.89    5.2   0.0    2.1  2  GCA_016806715.1_ASM1680671v1_787  QRF75306.1 ubiquinone/menaquinon
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016806715.1_ASM1680671v1_787  QRF75306.1 ubiquinone/menaquinone biosynthesis methyltransferase [Thermoplasmatales
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   0.0   0.00044      0.89     187     230 ..      34      77 ..      29      94 .. 0.88
+   2 ?    4.0   0.0     0.001       2.1     329     351 ..     184     206 ..     174     216 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.00044
+                      trimmed_bchE 187 evldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpa 230
+                                       ++l+ +d+++   +lD G+G+G     v++++ k +++ +D+ +
+  GCA_016806715.1_ASM1680671v1_787  34 KMLRLIDVHQGLDILDCGAGTGKLTMLVRENCEKCSITSLDITE 77 
+                                       6788999999999******************9999999988865 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.001
+                      trimmed_bchE 329 rpRsaeeirallaeaGFakvkll 351
+                                       r ++ +ei++lla+aGF+  k+l
+  GCA_016806715.1_ASM1680671v1_787 184 RFKTVDEISSLLAQAGFSVEKVL 206
+                                       88999************977765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2044  (563635 residues searched)
+Passed MSV filter:                        58  (0.0283757); expected 40.9 (0.02)
+Passed bias filter:                       56  (0.0273973); expected 40.9 (0.02)
+Passed Vit filter:                         8  (0.00391389); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000489237); expected 0.0 (1e-05)
+Initial search space (Z):               2044  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10647.19
+//
+[ok]

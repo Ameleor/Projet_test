@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_017088185.1_ASM1708818v1/GCA_017088185.1_ASM1708818v1_protein.faa
+# output directed to file:         results/GCA_017088185.1_ASM1708818v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00073   15.7   0.0     0.0013   14.9   0.0    1.6  1  GCA_017088185.1_ASM1708818v1_2326  QSF65949.1 oxidoreductase [Staph
+    0.00094   15.3   0.0      0.002   14.3   0.0    1.4  1  GCA_017088185.1_ASM1708818v1_224   QSF66376.1 alcohol dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017088185.1_ASM1708818v1_2326  QSF65949.1 oxidoreductase [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.2e-06    0.0013      17     129 ..      23     128 ..       6     251 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.2e-06
+               trimmed_msa_bchC_hmm  17 krleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveageesklkvgervfvPGak 92 
+                                        k+l+ t+  ++dv++++++sgi    + l  +    +    +yP++PG +  G++ve++ + ++++ge+v v    
+  GCA_017088185.1_ASM1708818v1_2326  23 KQLSPTDLPKGDVLIKVHYSGINYK-DALATQD--HNAVVKSYPMIPGIDLAGTIVESE-APGFEKGEQVIVT--- 91 
+                                        5677777889999********9863.4444433..3445679**************986.578999****995... PP
+
+               trimmed_msa_bchC_hmm  93 cfedvrglfGgaasrlvvpaarvvkvdeelgeegvll 129
+                                        +++   + +Gg ++   v+++ ++k++++l+ e  ++
+  GCA_017088185.1_ASM1708818v1_2326  92 SYDLGVSHYGGFSEYARVKSEWIIKLPDTLTLEESMI 128
+                                        7999999999999999999999999999886444333 PP
+
+>> GCA_017088185.1_ASM1708818v1_224  QSF66376.1 alcohol dehydrogenase catalytic domain-containing protein [Staphylococcu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   1.9e-06     0.002      91     241 ..     104     266 ..      57     297 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 1.9e-06
+              trimmed_msa_bchC_hmm  91 akcfedvrglfGgaasrlvvpaarvvkvdeelgeegvl.lalaatarhalagkekkapdl.....ivGhGvlGrlla 161
+                                       a+++    g  G     +v++++r+v+++++++ +++    l + ++ha+++ e+k+  l     i G G lG + a
+  GCA_017088185.1_ASM1708818v1_224 104 ASSYFRSSGYDGFMQDYVVMAHDRIVPLPNDIDLSTISyTELVSVSYHAIQRFERKSIPLktsfgIWGDGNLGYITA 180
+                                       56677778888889999****************999861579*********99988754433334889999999999 PP
+
+              trimmed_msa_bchC_hmm 162 rltvaa.gaeapvvWetnaaraeg....aegyevidpeederrdyka.ivdasGdaevldkliarlakggeivlaGf 232
+                                        l   +  +++  v+ +   + +      + ++v +  +d + d++   v   G++  l++++++++++g i l G 
+  GCA_017088185.1_ASM1708818v1_224 181 ILLRKLyPEAKTYVFGKTDYKLSHfsfvDDIFTVNQIPDDLKIDHAFeCVGGKGSQVALQQIVEHISPEGSIALLGV 257
+                                       8765441455666776665554431111456889998899998887525677899999******************9 PP
+
+              trimmed_msa_bchC_hmm 233 yeeplsfaf 241
+                                        e p++ + 
+  GCA_017088185.1_ASM1708818v1_224 258 SELPVEVNT 266
+                                       988887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       2094  (538749 residues searched)
+Passed MSV filter:                        53  (0.0253104); expected 41.9 (0.02)
+Passed bias filter:                       44  (0.0210124); expected 41.9 (0.02)
+Passed Vit filter:                         3  (0.00143266); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.00095511); expected 0.0 (1e-05)
+Initial search space (Z):               2094  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7727.08
+//
+[ok]

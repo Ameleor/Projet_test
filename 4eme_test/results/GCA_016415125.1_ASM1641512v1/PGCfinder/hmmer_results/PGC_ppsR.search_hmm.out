@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016415125.1_ASM1641512v1/GCA_016415125.1_ASM1641512v1_protein.faa
+# output directed to file:         results/GCA_016415125.1_ASM1641512v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0028   13.3   0.1     0.0053   12.4   0.0    1.4  1  GCA_016415125.1_ASM1641512v1_1155  QQF76411.1 DNA-binding transcrip
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016415125.1_ASM1641512v1_1155  QQF76411.1 DNA-binding transcriptional regulator Fis [Histophilus somni]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   3.1e-06    0.0053     418     449 ..      67      98 .]      57      98 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 3.1e-06
+               trimmed_msa_ppsR_hmm 418 LelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                        +++T+ N   AA mLG+    L  KL++yg+g
+  GCA_016415125.1_ASM1641512v1_1155  67 MQYTRGNQPRAATMLGINSGTLRKKLKKYGMG 98 
+                                        689***************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1731  (557891 residues searched)
+Passed MSV filter:                        87  (0.05026); expected 34.6 (0.02)
+Passed bias filter:                       37  (0.0213749); expected 34.6 (0.02)
+Passed Vit filter:                         4  (0.0023108); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000577701); expected 0.0 (1e-05)
+Initial search space (Z):               1731  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17725.81
+//
+[ok]

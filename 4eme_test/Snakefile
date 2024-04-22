@@ -6,7 +6,7 @@ import pandas as pd
 
 configfile: "config.yaml"
 
-GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GCA*")]
+GENOMES = [os.path.basename(genome) for genome in glob("data/752_genomes/GCA*")]
 
 TIMEOUT=["timeout"]
 
@@ -18,7 +18,7 @@ rule all:
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
-    input:  "data/genomes/{genome}/{genome}_protein.faa.gz"
+    input:  "data/752_genomes/{genome}/{genome}_protein.faa.gz"
     output: "data/genomes_unzip/{genome}/{genome}_protein.faa"
     shell:  "cp {input} {output}.gz && gunzip {output}.gz"
 

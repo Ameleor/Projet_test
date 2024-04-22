@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_020991225.1_ASM2099122v1/GCA_020991225.1_ASM2099122v1_protein.faa
+# output directed to file:         results/GCA_020991225.1_ASM2099122v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.098   10.1   2.1       0.29    8.5   2.1    1.8  1  GCA_020991225.1_ASM2099122v1_2381  UFN69046.1 MATE family efflux tr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020991225.1_ASM2099122v1_2381  UFN69046.1 MATE family efflux transporter [Vibrio alginolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   2.1   6.3e-05      0.29      17     111 ..     109     204 ..     106     215 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 6.3e-05
+               trimmed_msa_puhB_hmm  17 agEkilWqGr.PdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawl 91 
+                                        a+E i WqG+  ++ +la + +h+  va  f++  ++  +   +d ++  ++++ ++ +++  ++ ++ +a+l+w 
+  GCA_020991225.1_ASM2099122v1_2381 109 ADEFIRWQGAeGRVFELALQYLHILIVACVFTLGSIAVPFLLRNDDSPNLATMLMVIGAVINIVLDYVFIAWLGWE 184
+                                        6899*****736889****************9977776666667778888888888888888899999999***99 PP
+
+               trimmed_msa_puhB_hmm  92 sarttvYtiTnrRvvlriGi 111
+                                         + +++ t   + vv  +Gi
+  GCA_020991225.1_ASM2099122v1_2381 185 LTGAAIATALAQLVVTVLGI 204
+                                        99999888777777666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       4640  (1468970 residues searched)
+Passed MSV filter:                       253  (0.0545259); expected 92.8 (0.02)
+Passed bias filter:                      177  (0.0381466); expected 92.8 (0.02)
+Passed Vit filter:                        14  (0.00301724); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000215517); expected 0.0 (1e-05)
+Initial search space (Z):               4640  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13284.54
+//
+[ok]

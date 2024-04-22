@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_022818495.1_ASM2281849v1/GCA_022818495.1_ASM2281849v1_protein.faa
+# output directed to file:         results/GCA_022818495.1_ASM2281849v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.8e-06   24.6   3.0    6.5e-06   23.9   3.0    1.3  1  GCA_022818495.1_ASM2281849v1_830  UOF91472.1 decaprenyl-phosphate 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022818495.1_ASM2281849v1_830  UOF91472.1 decaprenyl-phosphate phosphoribosyltransferase [Alicyclobacillaceae bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   3.0   1.5e-09   6.5e-06       7     173 ..      17     180 ..      14     190 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 1.5e-09
+              trimmed_msa_bchG_hmm   7 avlellkPitwfpPmWafacGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdain..ePerpiPsG 81 
+                                        vl++++P  w   ++ fa+ + s g  l+ + +lvv+   l   l+ ++  ++nd +d + d     +  rp+PsG
+  GCA_022818495.1_ASM2281849v1_830  17 CVLQIIRPKQWIKNFYVFAALIFS-GNLLNIERALVVTYTFLIFCLISSSVYVLNDIIDVKKDKEHpvKKYRPLPSG 92 
+                                       589***************986655.55566666777777888899**************999975422567****** PP
+
+              trimmed_msa_bchG_hmm  82 ripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavl 158
+                                       +++    +   +il ++s+  ++ lg+  +   +l +++  ays   + +k+  ++ + +vg+ +  l  ++ga vl
+  GCA_022818495.1_ASM2281849v1_830  93 KMSIPLAILWLIILIIFSVFTSIYLGKGLLLIILLYFAVNIAYS---FYFKHIFLIEALIVGFGF-VLRAFAGAVVL 165
+                                       ***99998888999999**********99999999999999999...679999999999999998.58889999999 PP
+
+              trimmed_msa_bchG_hmm 159 agalPsaevlllall 173
+                                         ++  +  ++ +ll
+  GCA_022818495.1_ASM2281849v1_830 166 NVQISPWLFVCTILL 180
+                                       877666655555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4382  (1338617 residues searched)
+Passed MSV filter:                       178  (0.0406207); expected 87.6 (0.02)
+Passed bias filter:                       69  (0.0157462); expected 87.6 (0.02)
+Passed Vit filter:                         5  (0.00114103); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000228206); expected 0.0 (1e-05)
+Initial search space (Z):               4382  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14792.72
+//
+[ok]

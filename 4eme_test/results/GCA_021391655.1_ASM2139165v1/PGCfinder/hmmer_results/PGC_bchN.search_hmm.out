@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_021391655.1_ASM2139165v1/GCA_021391655.1_ASM2139165v1_protein.faa
+# output directed to file:         results/GCA_021391655.1_ASM2139165v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00082   17.0   0.0     0.0011   16.6   0.0    1.1  1  GCA_021391655.1_ASM2139165v1_6765  UIK01394.1 nitrogenase iron-moly
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021391655.1_ASM2139165v1_6765  UIK01394.1 nitrogenase iron-molybdenum cofactor biosynthesis protein NifE (plasmid
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0   1.6e-07    0.0011      92     361 ..     121     399 ..      90     410 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 1.6e-07
+               trimmed_msa_bchN_hmm  92 llflvgscpsevikldlsraaerlskklapkvrvls...ysgsGiettftqGedaclaalvpelpkaeedaarell 164
+                                        ++f+ g+c +e+i  d++   ++  +k+a  v  ++   + gs    +   Ge a l  ++ ++ + + +  +++ 
+  GCA_021391655.1_ASM2139165v1_6765 121 AIFVYGTCVTELIGDDIAAVCRHAAQKFAIPVVPVKspgFGGSKNLGSRLAGE-ALLEHVIGTVGADD-SGPHDIN 194
+                                        46788888888888888776666666665433323201144444444444444.67777777776666.7788888 PP
+
+               trimmed_msa_bchN_hmm 165 vvGaladvvedq.farlfeelgieevkvlparea..eelpavgpntrfllaqpflgetaraleerGakrlaapfpl 237
+                                        ++G +    e   ++ l++ lgi+  +++p+     e   a  +++ ++++   l + ar++eer    +     +
+  GCA_021391655.1_ASM2139165v1_6765 195 ILGEFNLSGEFWlVKPLLDRLGIRVRACIPGDARyaEVASAHRSRAAMIVCSTALINLARKMEERWDIPFFEGSFY 270
+                                        888887766665145699*****99999*97555004445555667788899999999999999988877777779 PP
+
+               trimmed_msa_bchN_hmm 238 GaeGttawlkaaaeafgvde......akfeavvaakrerakkalakareklegkrifflpdsqleiplarflarel 307
+                                        G   t++ l+ +a+ +  +       +++ea++a+++era k l+ +r++legkr+ +        ++   l  e+
+  GCA_021391655.1_ASM2139165v1_6765 271 GISSTSESLRRIAQLLVKKGagfallHHVEALLAEEEERAWKKLEVYRRRLEGKRVHLNTGGVKSWSIVHAL-IEI 345
+                                        ************9987544311112256789999***********************998888888887766.589 PP
+
+               trimmed_msa_bchN_hmm 308 gmelvevgtpylhrellaee.l.allpedvrlseGqdvdkqldrvraarpdlvvcG 361
+                                        gme+v   t   + +  ++e +  +l+++ +l +     +     r+++pd+++ G
+  GCA_021391655.1_ASM2139165v1_6765 346 GMEIVG--TSVRKSTVRDKErIkLMLKDENQLHQSMAASELYVMLREHKPDIMLSG 399
+                                        999864..444333333333231356777788888887777788888888888766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       6722  (1959693 residues searched)
+Passed MSV filter:                       177  (0.0263314); expected 134.4 (0.02)
+Passed bias filter:                      133  (0.0197858); expected 134.4 (0.02)
+Passed Vit filter:                        10  (0.00148765); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148765); expected 0.1 (1e-05)
+Initial search space (Z):               6722  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14397.75
+//
+[ok]

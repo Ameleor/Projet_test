@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_015257555.2_ASM1525755v2/GCA_015257555.2_ASM1525755v2_protein.faa
+# output directed to file:         results/GCA_015257555.2_ASM1525755v2/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.3e-08   29.6   0.2    1.8e-08   29.2   0.2    1.2  1  GCA_015257555.2_ASM1525755v2_158  UJD06727.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015257555.2_ASM1525755v2_158  UJD06727.1 MAG: ParA family protein [Candidatus Nanosynbacter sp. HMT-348_TM7c-JB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.2   2.2e-11   1.8e-08      25      69 ..       5      50 ..       2      78 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 2.2e-11
+              trimmed_msa_bchX_hmm 25 iai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                      i+i   kgg+gk+ +  nl+y la+ gkkvll+  dp+ ++ts l 
+  GCA_015257555.2_ASM1525755v2_158  5 ISItNQKGGVGKTTSAVNLAYYLAKAGKKVLLVDFDPQGNATSGLG 50
+                                      5551469**********************************99775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        796  (249227 residues searched)
+Passed MSV filter:                        34  (0.0427136); expected 15.9 (0.02)
+Passed bias filter:                       32  (0.040201); expected 15.9 (0.02)
+Passed Vit filter:                         7  (0.00879397); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.00125628); expected 0.0 (1e-05)
+Initial search space (Z):                796  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6245.98
+//
+[ok]

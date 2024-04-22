@@ -1,0 +1,111 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700015.1_ASM1670001v1/GCA_016700015.1_ASM1670001v1_protein.faa
+# output directed to file:         results/GCA_016700015.1_ASM1670001v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00023   15.6   1.1     0.0015   12.9   0.1    2.2  2  GCA_016700015.1_ASM1670001v1_26   QQS21957.1 NAD(P)/FAD-dependent 
+     0.0058   11.0  11.6      0.045    8.1   0.1    3.4  4  GCA_016700015.1_ASM1670001v1_260  QQS22182.1 FAD-dependent oxidore
+  ------ inclusion threshold ------
+      0.011   10.1   0.4      0.045    8.1   0.1    2.1  2  GCA_016700015.1_ASM1670001v1_258  QQS22180.1 FAD-dependent oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700015.1_ASM1670001v1_26  QQS21957.1 NAD(P)/FAD-dependent oxidoreductase [Candidatus Saccharibacteria bacteriu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.1   4.3e-06    0.0015       3      37 ..      11      44 ..       9      51 .. 0.88
+   2 ?    1.0   0.1     0.018       6.1       4      33 ..     177     206 ..     174     212 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 4.3e-06
+             trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                      +viG+G gG aaa   a++G +v ++e+++  GG
+  GCA_016700015.1_ASM1670001v1_26 11 LIVIGSGAGGSAAATIAAREGKRVAIIEADT-FGG 44
+                                     79*************************9765.444 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.018
+             trimmed_msa_crtD_hmm   4 vviGaGigGLaaalklaaaGldvtvlekaa 33 
+                                       +iGaG  G+  a  +a  G++v + e aa
+  GCA_016700015.1_ASM1670001v1_26 177 YIIGAGTIGVEIAQLMAIFGTKVYLAEIAA 206
+                                      69*********************9998765 PP
+
+>> GCA_016700015.1_ASM1670001v1_260  QQS22182.1 FAD-dependent oxidoreductase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.2   0.00049      0.17       2      37 ..       8      42 ..       7      52 .. 0.86
+   2 !    8.1   0.1   0.00013     0.045     224     278 ..      63     113 ..      57     127 .. 0.77
+   3 !    3.9   0.1    0.0024      0.83       1      67 [.     147     212 ..     147     230 .. 0.74
+   4 ?   -3.6   0.5      0.43   1.5e+02     456     488 ..     271     302 ..     268     305 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00049
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                      +v+++GaG + Laaa+  +++ +d ++ ek   +GG
+  GCA_016700015.1_ASM1670001v1_260  8 DVIMVGAGPSALAAAIYTTRENIDTVLYEKGV-VGG 42
+                                      79**********************98888754.444 PP
+
+  == domain 2  score: 8.1 bits;  conditional E-value: 0.00013
+              trimmed_msa_crtD_hmm 224 msklaealaklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfng 278
+                                       m  lae+l+k+ae+ ga+++yg  v+ +   ++    v + dg++++a+av++++
+  GCA_016700015.1_ASM1670001v1_260  63 M-VLAEQLQKQAERFGAHIEYGD-VTAVR--DEGDYRVVTVDGNEVKARAVLVAT 113
+                                       4.49*****************96.55554..34445566678********99864 PP
+
+  == domain 3  score: 3.9 bits;  conditional E-value: 0.0024
+              trimmed_msa_crtD_hmm   1 ervvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevggaaidaGPtvltmrwvfeelfa 67 
+                                       +r+vv+G G +G+  a+ l++   ++ +l +++     + + + + + id G   + +++v  e+ a
+  GCA_016700015.1_ASM1670001v1_260 147 KRIVVVGGGNSGVQEAIFLTRFANHIDLLVRSTLKASDILQRDLQ-QYIDEGQVTVHLQTVPTEIVA 212
+                                       589******************999999999888777777776654.566777666666666666655 PP
+
+  == domain 4  score: -3.6 bits;  conditional E-value: 0.43
+              trimmed_msa_crtD_hmm 456 tklpgLylaGGsvHPgaGvPmAalSgrlaaeal 488
+                                       t++pg+y a G v  ga + +A+  g+ a++al
+  GCA_016700015.1_ASM1670001v1_260 271 TNVPGVY-ASGDVRSGATMQVASAVGEGATAAL 302
+                                       7899999.5578999999999988888877765 PP
+
+>> GCA_016700015.1_ASM1670001v1_258  QQS22180.1 FAD-dependent oxidoreductase [Candidatus Saccharibacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   0.1   0.00013     0.045       2      30 ..       4      33 ..       3      38 .. 0.80
+   2 ?   -1.3   0.0     0.091        31     226     269 ..     202     245 ..     196     253 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00013
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaG.ldvtvle 30
+                                      +v ++G G gG+ aal++a+    +vt++ 
+  GCA_016700015.1_ASM1670001v1_258  4 QVTIVGGGFGGVKAALEIAKDSkSHVTLIT 33
+                                      699****************86525677765 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.091
+              trimmed_msa_crtD_hmm 226 klaealaklaeakgaefrygeeveeilveegrvsgvrladgeri 269
+                                       k+++ +a+  +  g++++++++ve+ +++e  vsg  +++ + i
+  GCA_016700015.1_ASM1670001v1_258 202 KVSQNVARRLRGLGVRIETNKRVEKANAHELIVSGSPIESHTVI 245
+                                       56677777777788888888888888877777777776666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                       1041  (301958 residues searched)
+Passed MSV filter:                        47  (0.0451489); expected 20.8 (0.02)
+Passed bias filter:                       36  (0.0345821); expected 20.8 (0.02)
+Passed Vit filter:                         5  (0.00480307); expected 1.0 (0.001)
+Passed Fwd filter:                         3  (0.00288184); expected 0.0 (1e-05)
+Initial search space (Z):               1041  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8743.39
+//
+[ok]

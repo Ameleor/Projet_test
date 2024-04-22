@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729705.1_ASM2172970v1/GCA_021729705.1_ASM2172970v1_protein.faa
+# output directed to file:         results/GCA_021729705.1_ASM2172970v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0031   13.0   0.2     0.0094   11.4   0.1    1.7  2  GCA_021729705.1_ASM2172970v1_929  BHLKFG_04775 D-amino acid dehydr
+     0.0063   11.9   0.2      0.021   10.2   0.0    1.9  2  GCA_021729705.1_ASM2172970v1_80   BHLKFG_00445 Malate:quinone oxid
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729705.1_ASM2172970v1_929  BHLKFG_04775 D-amino acid dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.1   1.2e-05    0.0094       4      34 ..       4      34 ..       1      41 [. 0.92
+   2 ?   -1.9   0.0      0.12        98     135     157 ..     233     255 ..     215     274 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      +vvv+GGG  G   a ++ + G+kv++++++
+  GCA_021729705.1_ASM2172970v1_929  4 EVVVIGGGIVGLSCAYSMHKLGHKVCVIEKS 34
+                                      79**************************987 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.12
+              trimmed_msa_bchP_hmm 135 eeekvrarlvigadGarsevarq 157
+                                       ++ek++a  +i a Ga+ ++ ++
+  GCA_021729705.1_ASM2172970v1_929 233 HKEKIQAEKIILATGANPALIKK 255
+                                       67899999999999999887665 PP
+
+>> GCA_021729705.1_ASM2172970v1_80  BHLKFG_00445 Malate:quinone oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0   2.6e-05     0.021       2     151 ..       4     148 ..       3     154 .. 0.78
+   2 ?   -2.7   0.1      0.22   1.8e+02     360     386 ..     333     359 ..     313     361 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.6e-05
+             trimmed_msa_bchP_hmm   2 tfdvvvvGGGPaGataaedlarkG..kkvllldragrikPcGGa..iPprlikdfaipdellvakiksarmiaPsdrk 75 
+                                       fd+v++GGG +G+++  +l++    k+v+++++ +++     +    +++i+d +i  +    k+k  r+ a + r+
+  GCA_021729705.1_ASM2172970v1_80   4 EFDAVIIGGGVSGCATFYTLSEYSslKRVAIVEKCSKLAQISSSakANSQTIHDGSIETNYTPEKAKKVRLSAYKTRQ 81 
+                                      69**************999997543389******99987765441156899*******************99998888 PP
+
+             trimmed_msa_bchP_hmm  76 vdlpieeGfvGmvdreefdeflreraaeagaerrtgtferierdedgtavvvyrekeegeeekvrarlvigadGar 151
+                                        l  ++G   + +   f+    ++  + g+  ++ +f + + ++ +++ v ++e ++++ ++++ ++++ga+Ga 
+  GCA_021729705.1_ASM2172970v1_80  82 YAL--NKG---LQNEVIFE----TQKMAIGVGDEECEFMKKRYESFKEIFVGLEEFDKQKIKELEPNVILGANGAD 148
+                                      765..454...44444444....34455667777778888888888888888888888888999999999999885 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.22
+             trimmed_msa_bchP_hmm 360 eaymnkklvrakPlahlriflkdlahl 386
+                                        y+ k++v + P+   r flkd +++
+  GCA_021729705.1_ASM2172970v1_80 333 RNYVFKNMVFELPVIGKRKFLKDAQKI 359
+                                      468999999999999999999998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1627  (490150 residues searched)
+Passed MSV filter:                        52  (0.0319607); expected 32.5 (0.02)
+Passed bias filter:                       43  (0.026429); expected 32.5 (0.02)
+Passed Vit filter:                        10  (0.00614628); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.00122926); expected 0.0 (1e-05)
+Initial search space (Z):               1627  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7233.20
+//
+[ok]

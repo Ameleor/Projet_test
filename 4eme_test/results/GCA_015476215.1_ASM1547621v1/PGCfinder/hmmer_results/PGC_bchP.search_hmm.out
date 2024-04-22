@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_015476215.1_ASM1547621v1/GCA_015476215.1_ASM1547621v1_protein.faa
+# output directed to file:         results/GCA_015476215.1_ASM1547621v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.4e-06   22.7   0.3    4.2e-05   17.8   0.0    2.3  2  GCA_015476215.1_ASM1547621v1_521  QPC29483.1 dihydrolipoyl dehydro
+    0.00014   16.1   0.0    0.00025   15.3   0.0    1.4  1  GCA_015476215.1_ASM1547621v1_8    QPC29661.1 dihydrolipoyl dehydro
+    0.00021   15.5   0.1    0.00068   13.9   0.0    1.8  2  GCA_015476215.1_ASM1547621v1_445  QPC29411.1 FAD-dependent oxidore
+     0.0025   12.0   0.0     0.0048   11.0   0.0    1.4  1  GCA_015476215.1_ASM1547621v1_36   QPC29687.1 FAD-dependent oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015476215.1_ASM1547621v1_521  QPC29483.1 dihydrolipoyl dehydrogenase [Mesomycoplasma hyorhinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.8   0.0   2.6e-07   4.2e-05       2      49 ..     172     221 ..     171     237 .. 0.84
+   2 ?    2.4   0.1     0.012       2.1       5      32 ..     345     372 ..     343     378 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 2.6e-07
+              trimmed_msa_bchP_hmm   2 tfdvvvvGGGPaGataaedlarkGkkvllldragrikPc..GGaiPprli 49 
+                                        fdv+v+G GP G  aa++  ++G k l+++++     c   G iP++++
+  GCA_015476215.1_ASM1547621v1_521 172 EFDVIVIGSGPGGYLAASEAGQNGLKTLIVEKEFWGGVClnVGCIPTKAM 221
+                                       7*******************************965555533799999986 PP
+
+  == domain 2  score: 2.4 bits;  conditional E-value: 0.012
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllld 32 
+                                       + +vGGG  G   a+ +a +G kv +l+
+  GCA_015476215.1_ASM1547621v1_521 345 ITIVGGGVIGVEFAQIFATAGTKVTILQ 372
+                                       579*********************9997 PP
+
+>> GCA_015476215.1_ASM1547621v1_8  QPC29661.1 dihydrolipoyl dehydrogenase [Mesomycoplasma hyorhinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.0   1.5e-06   0.00025       2      49 ..       7      56 ..       6      69 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 1.5e-06
+            trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldragrikPc..GGaiPprli 49
+                                    +fd+ v+G GP G   a  l+++ kkv+l++r++    c   G iP++++
+  GCA_015476215.1_ASM1547621v1_8  7 KFDIAVLGAGPGGYSLALLLVKNNKKVVLFERQDLGGTCvnEGCIPTKTL 56
+                                    79*******************************99888844599999864 PP
+
+>> GCA_015476215.1_ASM1547621v1_445  QPC29411.1 FAD-dependent oxidoreductase [Mesomycoplasma hyorhinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   4.1e-06   0.00068       2      34 ..       5      37 ..       4      58 .. 0.90
+   2 ?   -1.5   0.0      0.19        31       5      33 ..     150     178 ..     148     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 4.1e-06
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      ++dv+++G GPaG t+a   +r   kv+ll++ 
+  GCA_015476215.1_ASM1547621v1_445  5 KYDVLIIGAGPAGMTTALYASRGNLKVALLEKG 37
+                                      7*****************9999999*****985 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.19
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldr 33 
+                                       ++v+GGG +    +  la    kv ++ r
+  GCA_015476215.1_ASM1547621v1_445 150 AIVIGGGNSAVEESAFLASIASKVSVFVR 178
+                                       699*****999999999999888877665 PP
+
+>> GCA_015476215.1_ASM1547621v1_36  QPC29687.1 FAD-dependent oxidoreductase [Mesomycoplasma hyorhinis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0   2.9e-05    0.0048       4      39 ..     151     186 ..     148     188 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.9e-05
+             trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragrikP 39 
+                                      +v+++GGG  G    e + + Gkkv l+d ++ri P
+  GCA_015476215.1_ASM1547621v1_36 151 NVIIIGGGYIGIELLEAFHKYGKKVTLIDMQSRIIP 186
+                                      79********************************88 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                        662  (235495 residues searched)
+Passed MSV filter:                        22  (0.0332326); expected 13.2 (0.02)
+Passed bias filter:                       19  (0.0287009); expected 13.2 (0.02)
+Passed Vit filter:                         8  (0.0120846); expected 0.7 (0.001)
+Passed Fwd filter:                         4  (0.0060423); expected 0.0 (1e-05)
+Initial search space (Z):                662  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7292.30
+//
+[ok]

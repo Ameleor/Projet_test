@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_021294815.2_ASM2129481v2/GCA_021294815.2_ASM2129481v2_protein.faa
+# output directed to file:         results/GCA_021294815.2_ASM2129481v2/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.1e-05   20.0   0.0    1.8e-05   19.3   0.0    1.3  1  GCA_021294815.2_ASM2129481v2_465  UPA28148.1 MAG: peptide chain re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021294815.2_ASM2129481v2_465  UPA28148.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Verr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   2.3e-08   1.8e-05     189     261 ..     106     177 ..     101     184 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 2.3e-08
+                      trimmed_bchE 189 ldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflkdplP 261
+                                       l + ++++ +++lD+G G+Ga + a+a++ p+ +++  D+ p+ +e a+++ +++++s +++++  +++k+ +P
+  GCA_021294815.2_ASM2129481v2_465 106 LCTQQVQQPKTILDLGTGSGAIAIALANHFPEAQVVAVDIsPDALEVAQENARHHQIS-NIHFIVSDWFKN-IP 177
+                                       566789999******************************8688889999887776665.677777777765.55 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                        770  (270057 residues searched)
+Passed MSV filter:                        24  (0.0311688); expected 15.4 (0.02)
+Passed bias filter:                       18  (0.0233766); expected 15.4 (0.02)
+Passed Vit filter:                         4  (0.00519481); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.0012987); expected 0.0 (1e-05)
+Initial search space (Z):                770  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12138.27
+//
+[ok]

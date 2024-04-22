@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_014217525.1_ASM1421752v1/GCA_014217525.1_ASM1421752v1_protein.faa
+# output directed to file:         results/GCA_014217525.1_ASM1421752v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.1e-07   26.4   0.0    5.7e-07   26.0   0.0    1.3  1  GCA_014217525.1_ASM1421752v1_657   QNF19660.1 ParA family protein [
+    2.8e-06   23.7   0.0      0.003   13.7   0.1    2.4  2  GCA_014217525.1_ASM1421752v1_4054  QNF21665.1 iron-sulfur cluster c
+      1e-05   21.9   0.6    6.2e-05   19.3   0.1    2.3  3  GCA_014217525.1_ASM1421752v1_665   QNF21844.1 MinD/ParA family prot
+    8.5e-05   18.8   0.2    0.00032   17.0   0.1    1.9  2  GCA_014217525.1_ASM1421752v1_3884  QNF21569.1 septum site-determini
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014217525.1_ASM1421752v1_657  QNF19660.1 ParA family protein [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.0   0.0   8.3e-10   5.7e-07      29      68 ..       9      48 ..       3     131 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 26.0 bits;  conditional E-value: 8.3e-10
+              trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                       kgg+gk+ t+  l+ +laq+g++vlli  dp++  ts l
+  GCA_014217525.1_ASM1421752v1_657  9 QKGGVGKTTTVVSLAGILAQRGQRVLLIDTDPHASLTSYL 48
+                                      69*******************************9999976 PP
+
+>> GCA_014217525.1_ASM1421752v1_4054  QNF21665.1 iron-sulfur cluster carrier protein ApbC [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.1   4.4e-06     0.003      23      59 ..      98     134 ..      80     146 .. 0.85
+   2 !    7.2   0.0   0.00044       0.3     210     274 ..     283     349 ..     279     355 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 4.4e-06
+               trimmed_msa_bchX_hmm  23 qiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                         i+   gkgg+gks t  nl+  l ++g +v ++  d
+  GCA_014217525.1_ASM1421752v1_4054  98 IIVVASGKGGVGKSTTSVNLALALQKEGARVAILDAD 134
+                                        355668*************************998877 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.00044
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksan..yeiigkpesewgslfeelaenvaeappvrpkpl 274
+                                        gtg  q +ae+ ++ +l  +p + dir++  +    + g+p +e ++ + +la++v++      kp+
+  GCA_014217525.1_ASM1421752v1_4054 283 GTGGGQKMAEQYQVALLGQLPLHIDIRQHMDDgcPTVFGAPTGELAEAYLKLARRVGAELYFSGKPI 349
+                                        89*************************98754226899*****************998877777776 PP
+
+>> GCA_014217525.1_ASM1421752v1_665  QNF21844.1 MinD/ParA family protein [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.1   9.1e-08   6.2e-05      17      61 ..      11      56 ..       2      78 .. 0.82
+   2 ?   -1.8   0.0      0.24   1.6e+02     271     307 ..     108     146 ..      99     159 .. 0.67
+   3 ?   -0.5   0.0     0.093        64     223     271 ..     214     265 ..     207     283 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 9.1e-08
+              trimmed_msa_bchX_hmm 17 evtketqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpk 61
+                                      +++++ ++ia+  gkgg+gk+    n++  +a qgk+v+++  d  
+  GCA_014217525.1_ASM1421752v1_665 11 RQNNRVKVIAVSgGKGGVGKTNVTLNVAGAMAAQGKRVMVLDADLG 56
+                                      55677899999736*************************9998865 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.24
+              trimmed_msa_bchX_hmm 271 pkplsqdgllglfkaeevgrdvvle..pateedmrgkea 307
+                                         p+++ +l+  f+  ++  d+ l    a  +dm+ + +
+  GCA_014217525.1_ASM1421752v1_665 108 LSPVQHAELIRAFSEMKTQVDILLVdtAAGISDMVLSFT 146
+                                       578899999999999999888887511456678765544 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.093
+              trimmed_msa_bchX_hmm 223 ipvlaaipadedirrksanyeii..gkpesewgslfeelaenvaeap.pvrp 271
+                                       + ++a++p d ++r    + ++i  + p+s  +  f +la++ a+ p p +p
+  GCA_014217525.1_ASM1421752v1_665 214 LELVACVPYDTNLRAAVRKQKLIveAFPKSPAALAFRALANKAASWPiPNQP 265
+                                       5678999999999998888877622457888888899999887654324444 PP
+
+>> GCA_014217525.1_ASM1421752v1_3884  QNF21569.1 septum site-determining protein MinD [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.1   4.7e-07   0.00032      24      61 ..       5      42 ..       1      57 [. 0.82
+   2 ?   -1.1   0.0      0.15     1e+02     217     258 ..     199     241 ..     188     255 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 4.7e-07
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpk 61
+                                       i+   gkgg+gk+ t a ls  laq+g+k ++i  d  
+  GCA_014217525.1_ASM1421752v1_3884  5 IVVTSGKGGVGKTTTSAALSTGLAQRGHKTVVIDFDIG 42
+                                       55668***************************998865 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.15
+               trimmed_msa_bchX_hmm 217 faeavgipvlaaipadedirrksanye.iigkpesewgslfee 258
+                                          e   i +l  ip+ + + r s + e +i  +es+ g+ +e+
+  GCA_014217525.1_ASM1421752v1_3884 199 VQEILAIKLLGVIPESQAVLRASNSGEpVILDKESDAGQAYED 241
+                                        5567789999999999999888877653666677777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2738  (761860 residues searched)
+Passed MSV filter:                        75  (0.0273923); expected 54.8 (0.02)
+Passed bias filter:                       65  (0.02374); expected 54.8 (0.02)
+Passed Vit filter:                        13  (0.00474799); expected 2.7 (0.001)
+Passed Fwd filter:                         4  (0.00146092); expected 0.0 (1e-05)
+Initial search space (Z):               2738  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11532.97
+//
+[ok]

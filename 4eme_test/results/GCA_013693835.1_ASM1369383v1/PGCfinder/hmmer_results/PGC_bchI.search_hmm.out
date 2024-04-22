@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693835.1_ASM1369383v1/GCA_013693835.1_ASM1369383v1_protein.faa
+# output directed to file:         results/GCA_013693835.1_ASM1369383v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0021   14.4   1.2     0.0036   13.6   0.2    1.8  2  GCA_013693835.1_ASM1369383v1_1607  QLQ13263.1 MAG: ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693835.1_ASM1369383v1_1607  QLQ13263.1 MAG: ABC transporter ATP-binding protein [Brevundimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.2   1.5e-06    0.0036      31     128 ..      32     138 ..      21     150 .. 0.67
+   2 ?   -2.6   0.0      0.13   3.1e+02      92     108 ..     187     204 ..     178     213 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 1.5e-06
+               trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeckek..........aeaeklkvkkvpvpvv 96 
+                                        v ++G  G+Gks+ +ra a llP  +   g r+  d+ +  + +e+++++           +++  +v++  +p+v
+  GCA_013693835.1_ASM1369383v1_1607  32 VALVGPNGAGKSSLIRAAAGLLPTTRG--GVRLGGDDVRGLSSAERARRRaylpqdrtlvWNMAAVQVAALXAPFV 105
+                                        667899*****************9874..22333222222222222222111111122236778888888999999 PP
+
+               trimmed_msa_bchI_hmm  97 dlPlGatedrv.vGaldleraltkGekafepGl 128
+                                         lP   +  r+ + al++ +   +G+ ++  G 
+  GCA_013693835.1_ASM1369383v1_1607 106 PLPQALARARIwLEALEIGHLADRGVAEMSGGE 138
+                                        999999999985589999888888888877774 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.13
+               trimmed_msa_bchI_hmm  92 pvpvvdlPlGat.edrvv 108
+                                         +++ dlPl a+  drvv
+  GCA_013693835.1_ASM1369383v1_1607 187 VASLHDLPLAAAwADRVV 204
+                                        4567899*9876479987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2390  (723329 residues searched)
+Passed MSV filter:                       107  (0.0447699); expected 47.8 (0.02)
+Passed bias filter:                       66  (0.0276151); expected 47.8 (0.02)
+Passed Vit filter:                        10  (0.0041841); expected 2.4 (0.001)
+Passed Fwd filter:                         1  (0.00041841); expected 0.0 (1e-05)
+Initial search space (Z):               2390  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9239.75
+//
+[ok]

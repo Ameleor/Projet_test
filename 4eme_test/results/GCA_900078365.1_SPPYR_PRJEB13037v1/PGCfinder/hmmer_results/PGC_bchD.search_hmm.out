@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_900078365.1_SPPYR_PRJEB13037v1/GCA_900078365.1_SPPYR_PRJEB13037v1_protein.faa
+# output directed to file:         results/GCA_900078365.1_SPPYR_PRJEB13037v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    1.2e-08   31.7   3.9    1.8e-08   31.2   3.9    1.1  1  GCA_900078365.1_SPPYR_PRJEB13037v1_3769  SBV34889.1 conserved protein of 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900078365.1_SPPYR_PRJEB13037v1_3769  SBV34889.1 conserved protein of unknown function [uncultured Sphingopyxis sp
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.2   3.9   4.5e-12   1.8e-08      93     254 ..     112     300 ..     103     311 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 31.2 bits;  conditional E-value: 4.5e-12
+                     trimmed_msa_bchD_hmm  93 mAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldlde 160
+                                                 R+++++ a l +a+ e++  +  +g  + ++ rf+++a  + +e++    lpea ldR  ++l +d 
+  GCA_900078365.1_SPPYR_PRJEB13037v1_3769 112 EINRTPPKTQAALLEAMQERR--VTINGEPHAMSPRFTVLATQNPIEQQGvyPLPEAQLDRFLFKLVVDY 179
+                                              55799***************6..56677788999************888633689**********99988 PP
+
+                     trimmed_msa_bchD_hmm 161 ialrdleelaa....................eaedieaararlpkvtleeealealvataaal....... 203
+                                                +++ +++ a                    +a++i aa  ++ +v+l ee ++ +v + +a+       
+  GCA_900078365.1_SPPYR_PRJEB13037v1_3769 180 PDAAEERRIVAdhggrfkspavgdfgvtqvaDAKAIGAAIDTIATVRLAEEIVDYIVRLVRATresadle 249
+                                              7777666666577888888999999999888888888888888888888888887776544441111111 PP
+
+                     trimmed_msa_bchD_hmm 204 GidslRapllalraaralAalegrteveeedlalAarlvlapratrlpeee 254
+                                                +s Ra++l +raa+a+Aal+gr+ v  +d++  a  vl +r +  +++e
+  GCA_900078365.1_SPPYR_PRJEB13037v1_3769 250 CGASPRAATLLARAACAAAALDGRDYVIPDDVQRLAAGVLRHRVILSAAAE 300
+                                              5689*************************************9998766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3930  (1258165 residues searched)
+Passed MSV filter:                       334  (0.0849873); expected 78.6 (0.02)
+Passed bias filter:                       65  (0.0165394); expected 78.6 (0.02)
+Passed Vit filter:                         7  (0.00178117); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000508906); expected 0.0 (1e-05)
+Initial search space (Z):               3930  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12964.03
+//
+[ok]

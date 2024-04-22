@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898665.1_ASM2389866v1/GCA_023898665.1_ASM2389866v1_protein.faa
+# output directed to file:         results/GCA_023898665.1_ASM2389866v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00017   16.2   0.0      0.012   10.3   0.0    2.1  2  GCA_023898665.1_ASM2389866v1_274  USN97748.1 MAG: alpha/beta hydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898665.1_ASM2389866v1_274  USN97748.1 MAG: alpha/beta hydrolase [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.9   0.0    0.0014         1      89     122 ..      63      96 ..      58     109 .. 0.85
+   2 !   10.3   0.0   1.6e-05     0.012     229     268 ..     136     176 ..     124     182 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.0014
+              trimmed_msa_bchO_hmm  89 ealaaLlaalgvepavvvGHSAGaaialrlaldg 122
+                                       ++++ +++  g++ +++++HS G a  lr   ++
+  GCA_023898665.1_ASM2389866v1_274  63 RQINGVCHGKGLQRTAMIAHSLGCAAYLRWLSSQ 96 
+                                       5788899999***************999976554 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_bchO_hmm 229 lllivgekDra.vppkearevaallpkarlveleglGHLah 268
+                                       ++++ +++D     p+  +e++a lp+a+lv+l+glGH + 
+  GCA_023898665.1_ASM2389866v1_274 136 IVIVNSKDDLGgGVPEAIDEIRAALPQAELVNLNGLGHFVT 176
+                                       44455555543234677899******************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                        739  (203868 residues searched)
+Passed MSV filter:                        25  (0.0338295); expected 14.8 (0.02)
+Passed bias filter:                       23  (0.0311231); expected 14.8 (0.02)
+Passed Vit filter:                         3  (0.00405954); expected 0.7 (0.001)
+Passed Fwd filter:                         1  (0.00135318); expected 0.0 (1e-05)
+Initial search space (Z):                739  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13820.64
+//
+[ok]

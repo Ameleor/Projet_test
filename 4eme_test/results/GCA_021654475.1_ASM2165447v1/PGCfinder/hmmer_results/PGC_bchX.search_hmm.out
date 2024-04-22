@@ -1,0 +1,117 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021654475.1_ASM2165447v1/GCA_021654475.1_ASM2165447v1_protein.faa
+# output directed to file:         results/GCA_021654475.1_ASM2165447v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00068   15.5   0.0     0.0011   14.9   0.0    1.4  1  GCA_021654475.1_ASM2165447v1_1033  BCP61845.1 exopolysaccharide bio
+     0.0019   14.1   0.0     0.0059   12.4   0.0    1.9  2  GCA_021654475.1_ASM2165447v1_1282  BCP62094.1 signal recognition pa
+     0.0085   11.9   0.4       0.12    8.1   0.0    2.3  3  GCA_021654475.1_ASM2165447v1_2110  BCP62922.1 chromosome partitioni
+  ------ inclusion threshold ------
+      0.021   10.6   0.2      0.065    9.0   0.0    1.8  2  GCA_021654475.1_ASM2165447v1_816   BCP61628.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021654475.1_ASM2165447v1_1033  BCP61845.1 exopolysaccharide biosynthesis protein [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0     2e-06    0.0011      28      66 ..      59      97 ..      36     123 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2e-06
+               trimmed_msa_bchX_hmm 28 ygkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                           g gks   anl++ la  gkkvl++  d +  t  
+  GCA_021654475.1_ASM2165447v1_1033 59 SSIPGEGKSTVSANLAHSLAAAGKKVLIVDADLRKPTVH 97
+                                       455799************************998877765 PP
+
+>> GCA_021654475.1_ASM2165447v1_1282  BCP62094.1 signal recognition particle receptor FtsY [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   1.1e-05    0.0059      20      60 ..     215     255 ..     199     291 .. 0.82
+   2 ?   -2.3   0.0      0.33   1.7e+02     200     225 ..     364     392 ..     350     399 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.1e-05
+               trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                         +  ++   g  g+gk+ ++ +l+y   q gkkv+l+  d 
+  GCA_021654475.1_ASM2165447v1_1282 215 DDLTVMLFVGVNGVGKTTSIGKLAYKYKQAGKKVMLVAADT 255
+                                        55567778899**************************9996 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.33
+               trimmed_msa_bchX_hmm 200 vaglvinkddgt...geaqafaeavgipv 225
+                                        ++glv+ k dgt   g   a+ ++ +ipv
+  GCA_021654475.1_ASM2165447v1_1282 364 LTGLVLTKLDGTakgGVVLAIRQELDIPV 392
+                                        6899******9933334567778888887 PP
+
+>> GCA_021654475.1_ASM2165447v1_2110  BCP62922.1 chromosome partitioning protein ParA (plasmid) [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.1   0.0   0.00023      0.12      29      66 ..       9      46 ..       2      79 .. 0.78
+   2 ?   -3.8   0.0      0.94     5e+02     135     146 ..     113     125 ..     108     129 .. 0.67
+   3 ?    1.6   0.0     0.022        11     222     248 ..     209     235 ..     192     257 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00023
+               trimmed_msa_bchX_hmm 29 gkggigks.ftlanlsymlaqqgkkvlligcdpksdtts 66
+                                        kgg+gk+ ++l n    la+qg k+l+i  d +++ t 
+  GCA_021654475.1_ASM2165447v1_2110  9 IKGGVGKTtLALLNGQ-YLANQGFKILFIDLDHQCNLTH 46
+                                       49****9624555555.589**********999887775 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 0.94
+               trimmed_msa_bchX_hmm 135 hdwd.fdyvlldf 146
+                                        h+ d +dyv+ld 
+  GCA_021654475.1_ASM2165447v1_2110 113 HNLDqYDYVILDC 125
+                                        5543389***996 PP
+
+  == domain 3  score: 1.6 bits;  conditional E-value: 0.022
+               trimmed_msa_bchX_hmm 222 gipvlaaipadedirrksanyeiigkp 248
+                                        +  v+  ip++e   + s +y ii + 
+  GCA_021654475.1_ASM2165447v1_2110 209 DKNVIGIIPQKELFNKSSKDYTIINMM 235
+                                        5578999****************9865 PP
+
+>> GCA_021654475.1_ASM2165447v1_816  BCP61628.1 hypothetical protein SUT380_08160 [Streptococcus parasuis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   0.0   0.00012     0.065      19      55 ..      33      70 ..      17      79 .. 0.73
+   2 ?   -0.9   0.1      0.12        66     136     147 ..      85      96 ..      72     122 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 0.00012
+              trimmed_msa_bchX_hmm 19 tketqiiaiygkggigksftlanlsy.mlaqqgkkvll 55
+                                      +k+ + + iyg  g+gks  l      +l++q k +ll
+  GCA_021654475.1_ASM2165447v1_816 33 KKRYNPVYIYGEEGVGKSHLLNATNNaLLSEQNKVILL 70
+                                      55566789***********9987766155666655554 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.12
+              trimmed_msa_bchX_hmm 136 dwdfdyvlldfl 147
+                                       + +fdy+l+d l
+  GCA_021654475.1_ASM2165447v1_816  85 NSEFDYILIDDL 96 
+                                       568999999966 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2130  (609519 residues searched)
+Passed MSV filter:                        92  (0.0431925); expected 42.6 (0.02)
+Passed bias filter:                       82  (0.0384977); expected 42.6 (0.02)
+Passed Vit filter:                        21  (0.00985915); expected 2.1 (0.001)
+Passed Fwd filter:                         4  (0.00187793); expected 0.0 (1e-05)
+Initial search space (Z):               2130  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9187.78
+//
+[ok]

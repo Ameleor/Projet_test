@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_019856515.1_ASM1985651v1/GCA_019856515.1_ASM1985651v1_protein.faa
+# output directed to file:         results/GCA_019856515.1_ASM1985651v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0032   14.2   0.1      0.006   13.3   0.1    1.4  1  GCA_019856515.1_ASM1985651v1_2014  QZT35722.1 sigma-54 dependent tr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019856515.1_ASM1985651v1_2014  QZT35722.1 sigma-54 dependent transcriptional regulator [Prolixibacteraceae bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.1   1.6e-06     0.006     400     448 ..     369     419 ..     357     420 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 1.6e-06
+               trimmed_msa_ppsR_hmm 400 dlVrettDviEkl..CIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        ++V e+  ++ k    I+ AL+  s  R +AA+ LG+S   LY K++ y++
+  GCA_019856515.1_ASM1985651v1_2014 369 EIVEESLSLVDKEieLINKALKKHSGKRKQAAQDLGISERTLYRKIKEYNI 419
+                                        89999*99999852259********************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3629  (1415655 residues searched)
+Passed MSV filter:                        96  (0.0264536); expected 72.6 (0.02)
+Passed bias filter:                       68  (0.0187379); expected 72.6 (0.02)
+Passed Vit filter:                         7  (0.00192891); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000275558); expected 0.0 (1e-05)
+Initial search space (Z):               3629  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 16259.53
+//
+[ok]

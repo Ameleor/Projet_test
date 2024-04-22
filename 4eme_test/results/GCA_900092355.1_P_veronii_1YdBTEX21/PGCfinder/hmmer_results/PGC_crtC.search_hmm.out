@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_900092355.1_P_veronii_1YdBTEX21/GCA_900092355.1_P_veronii_1YdBTEX21_protein.faa
+# output directed to file:         results/GCA_900092355.1_P_veronii_1YdBTEX21/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                 -----------
+    2.1e-06   26.0   0.2    3.3e-06   25.3   0.2    1.3  1  GCA_900092355.1_P_veronii_1YdBTEX21_2013  SBW79987.1 iron ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900092355.1_P_veronii_1YdBTEX21_2013  SBW79987.1 iron ABC transporter permease [Pseudomonas veronii 1YdBTEX2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.2   4.5e-10   3.3e-06      78     156 ..     207     286 ..     193     302 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 4.5e-10
+                      trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfd 145
+                                               a+ +v+ld    + +G +++D  + ++pl ++ + WdW   +l++g  ++l+ v+++dg+   +++ +d
+  GCA_900092355.1_P_veronii_1YdBTEX21_2013 207 ANGSVSLDGKVYQVTGPAWLDREWSSQPLAAGQTGWDWFSLHLDRGeQLMLFRVRQKDGTGYLTGTWID 275
+                                               555799999999*******************************999899******************** PP
+
+                      trimmed_msa_crtC_hmm 146 adGeveeveap 156
+                                               ++G++++++ +
+  GCA_900092355.1_P_veronii_1YdBTEX21_2013 276 REGHTQTLHDA 286
+                                               ****9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       7455  (2332949 residues searched)
+Passed MSV filter:                       186  (0.0249497); expected 149.1 (0.02)
+Passed bias filter:                      148  (0.0198524); expected 149.1 (0.02)
+Passed Vit filter:                        10  (0.00134138); expected 7.5 (0.001)
+Passed Fwd filter:                         1  (0.000134138); expected 0.1 (1e-05)
+Initial search space (Z):               7455  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 18068.10
+//
+[ok]

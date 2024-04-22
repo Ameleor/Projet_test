@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_015356075.1_ASM1535607v1/GCA_015356075.1_ASM1535607v1_protein.faa
+# output directed to file:         results/GCA_015356075.1_ASM1535607v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.7e-06   23.6   0.4    2.2e-05   21.9   0.2    1.7  2  GCA_015356075.1_ASM1535607v1_1972  KAFEMF_10150 DNA-binding transcr
+    0.00013   19.3   0.0    0.00022   18.6   0.0    1.3  1  GCA_015356075.1_ASM1535607v1_2387  KAFEMF_12230 nitrogen regulation
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015356075.1_ASM1535607v1_1972  KAFEMF_10150 DNA-binding transcriptional regulator Fis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.045   1.2e+02       9      33 ..       7      31 ..       2      48 .. 0.72
+   2 !   21.9   0.2   8.1e-09   2.2e-05     417     449 ..      55      87 ..      47      88 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.045
+               trimmed_msa_ppsR_hmm  9 lvaaaaDialvldaegviedvavgs 33
+                                       + +a +D+al +  ++ +++  ++ 
+  GCA_015356075.1_ASM1535607v1_1972  7 IFTAQSDVALRIHVDRAVRHYFAQL 31
+                                       6778899999999888888766554 PP
+
+  == domain 2  score: 21.9 bits;  conditional E-value: 8.1e-09
+               trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         Le+T+ N   AAe+LGL R  L  KL+ +gl 
+  GCA_015356075.1_ASM1535607v1_1972  55 VLEYTRGNQTRAAEILGLNRGTLRKKLKAHGLM 87 
+                                        59*****************************96 PP
+
+>> GCA_015356075.1_ASM1535607v1_2387  KAFEMF_12230 nitrogen regulation protein NR(I)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.0   8.4e-08   0.00022     403     448 ..     425     470 ..     418     472 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 8.4e-08
+               trimmed_msa_ppsR_hmm 403 rettDviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                          +t + E+  I+aAL++T+     AAe+LG  R  L  KL+  g+
+  GCA_015356075.1_ASM1535607v1_2387 425 DIATPMFERTLINAALQQTRGRKRHAAELLGWGRNTLTRKLKELGM 470
+                                        5578899**********************************98887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       5317  (1103806 residues searched)
+Passed MSV filter:                       218  (0.0410006); expected 106.3 (0.02)
+Passed bias filter:                      124  (0.0233214); expected 106.3 (0.02)
+Passed Vit filter:                        15  (0.00282114); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000376152); expected 0.1 (1e-05)
+Initial search space (Z):               5317  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 21977.48
+//
+[ok]

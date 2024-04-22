@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699245.1_ASM1669924v1/GCA_016699245.1_ASM1669924v1_protein.faa
+# output directed to file:         results/GCA_016699245.1_ASM1669924v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.1e-06   21.0   0.2      0.011   10.5   0.1    2.2  2  GCA_016699245.1_ASM1669924v1_459  QQR65399.1 FAD-dependent oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699245.1_ASM1669924v1_459  QQR65399.1 FAD-dependent oxidoreductase [Candidatus Kaiserbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.0   4.7e-05     0.049       2      31 ..       1      30 [.       1      36 [. 0.80
+   2 !   10.5   0.1     1e-05     0.011       3      35 ..     145     177 ..     143     184 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 4.7e-05
+              trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvlll 31
+                                      ++d +++GGGPaG  a    +rk  k l++
+  GCA_016699245.1_ASM1669924v1_459  1 MYDLIIIGGGPAGISAGIYASRKQLKTLFI 30
+                                      69***********99987777776666665 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 1e-05
+              trimmed_msa_bchP_hmm   3 fdvvvvGGGPaGataaedlarkGkkvllldrag 35 
+                                        dv v+GGG aG  +a +l    k+v ll+  +
+  GCA_016699245.1_ASM1669924v1_459 145 MDVAVIGGGNAGFETAAQLLAYTKSVTLLNSGD 177
+                                       69***********99999999*******98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1028  (297477 residues searched)
+Passed MSV filter:                        33  (0.0321012); expected 20.6 (0.02)
+Passed bias filter:                       28  (0.0272374); expected 20.6 (0.02)
+Passed Vit filter:                         3  (0.00291829); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000972763); expected 0.0 (1e-05)
+Initial search space (Z):               1028  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8985.73
+//
+[ok]

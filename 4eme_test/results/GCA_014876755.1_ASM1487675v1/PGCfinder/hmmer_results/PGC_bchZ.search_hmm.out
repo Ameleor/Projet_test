@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCA_014876755.1_ASM1487675v1/GCA_014876755.1_ASM1487675v1_protein.faa
+# output directed to file:         results/GCA_014876755.1_ASM1487675v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0092   11.8   0.0      0.013   11.3   0.0    1.2  1  GCA_014876755.1_ASM1487675v1_2057  QOJ76513.1 fructose-bisphosphate
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014876755.1_ASM1487675v1_2057  QOJ76513.1 fructose-bisphosphate aldolase [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   6.2e-06     0.013     155     200 ..      42      87 ..      21     113 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 6.2e-06
+               trimmed_msa_bchZ_hmm 155 prvniiGpvyGtfnmpsdlaeirrlveGiGaevnlvfplgshladv 200
+                                            i+G   G+   +s +  i ++veG+  ++n+++p++ hl++ 
+  GCA_014876755.1_ASM1487675v1_2057  42 NAPVILGVSEGAVRYMSGFYTIVKMVEGLMHDLNITIPVAIHLDHG 87 
+                                        344589************************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       2115  (593617 residues searched)
+Passed MSV filter:                        51  (0.0241135); expected 42.3 (0.02)
+Passed bias filter:                       45  (0.0212766); expected 42.3 (0.02)
+Passed Vit filter:                         5  (0.00236407); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000472813); expected 0.0 (1e-05)
+Initial search space (Z):               2115  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 17338.82
+//
+[ok]

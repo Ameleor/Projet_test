@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_014876755.1_ASM1487675v1/GCA_014876755.1_ASM1487675v1_protein.faa
+# output directed to file:         results/GCA_014876755.1_ASM1487675v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00095   15.0   0.0     0.0013   14.6   0.0    1.2  1  GCA_014876755.1_ASM1487675v1_1635  QOJ76168.1 50S ribosomal protein
+     0.0012   14.7   0.1     0.0027   13.5   0.0    1.6  2  GCA_014876755.1_ASM1487675v1_2048  QOJ78029.1 peptide chain release
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014876755.1_ASM1487675v1_1635  QOJ76168.1 50S ribosomal protein L11 methyltransferase [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   1.2e-06    0.0013     188     266 ..     166     242 ..     159     283 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.2e-06
+                       trimmed_bchE 188 vldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVa.erararleaaglsdrvevagGsflkdplPe 262
+                                         +++y l +h +++DvG G+G  l+ + + +   ++k +D+ + a + a+++++++ +++ +e+++G++lkd+  e
+  GCA_014876755.1_ASM1487675v1_1635 166 AIETYVLPQH-SVIDVGTGSGI-LSIASHLIGVKRIKALDIDEMAvSVAKENFRRNHCETLIEAVPGNLLKDQT-E 238
+                                        5667777766.689*******5.777888888899******99863789**********************974.4 PP
+
+                       trimmed_bchE 263 gaDl 266
+                                         +D+
+  GCA_014876755.1_ASM1487675v1_1635 239 KFDI 242
+                                        5555 PP
+
+>> GCA_014876755.1_ASM1487675v1_2048  QOJ78029.1 peptide chain release factor N(5)-glutamine methyltransferase [Staphylo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.1      0.28     3e+02     210     228 ..      40      58 ..      30      69 .. 0.67
+   2 !   13.5   0.0   2.6e-06    0.0027     193     270 ..     106     182 ..      96     184 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 0.28
+                       trimmed_bchE 210 FlaavaarapklklklfDl 228
+                                        F+ ++++ +pk  ++ fDl
+  GCA_014876755.1_ASM1487675v1_2048  40 FIVHMHDDMPKAMIMKFDL 58 
+                                        5555555555555555555 PP
+
+  == domain 2  score: 13.5 bits;  conditional E-value: 2.6e-06
+                       trimmed_bchE 193 dlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflkdplPegaDli 267
+                                        +l++ ++++D+G G+G  + +++ + p+l++   D+  + ++ ar+  +a++ ++++++ +G+ lk  + eg+ l 
+  GCA_014876755.1_ASM1487675v1_2048 106 QLEDDATIVDIGTGSGVLAITLKCEKPDLNVIATDISlEAMNIARN--NAEKHQSQIQFLTGDALKPLIKEGIKLN 179
+                                        789999*****************************98344455555..68888999*******9999988888776 PP
+
+                       trimmed_bchE 268 sLv 270
+                                         L+
+  GCA_014876755.1_ASM1487675v1_2048 180 GLI 182
+                                        665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2115  (593617 residues searched)
+Passed MSV filter:                        87  (0.0411348); expected 42.3 (0.02)
+Passed bias filter:                       74  (0.0349882); expected 42.3 (0.02)
+Passed Vit filter:                        10  (0.00472813); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000945626); expected 0.0 (1e-05)
+Initial search space (Z):               2115  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9824.01
+//
+[ok]

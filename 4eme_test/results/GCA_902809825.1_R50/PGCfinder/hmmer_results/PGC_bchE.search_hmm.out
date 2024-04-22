@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_902809825.1_R50/GCA_902809825.1_R50_protein.faa
+# output directed to file:         results/GCA_902809825.1_R50/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    3.6e-05   20.1   0.0      6e-05   19.4   0.0    1.3  2  GCA_902809825.1_R50_2747  CAB1130253.1 protein of unknown fun
+    0.00016   18.0   0.1    0.00021   17.6   0.1    1.2  1  GCA_902809825.1_R50_585   CAB1128091.1 Methyltransf_25 domain
+    0.00028   17.2   0.2    0.00037   16.7   0.2    1.1  1  GCA_902809825.1_R50_171   CAB1127677.1 putative Methyltransfe
+     0.0011   15.2   0.3     0.0019   14.5   0.3    1.3  1  GCA_902809825.1_R50_172   CAB1127678.1 conserved protein of u
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_902809825.1_R50_2747  CAB1130253.1 protein of unknown function [Candidatus Hydrogenisulfobacillus filiaventi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.0   8.7e-08     6e-05     181     303 ..      21     140 ..      14     149 .. 0.83
+   2 ?   -3.9   0.0         1   7.1e+02     336     356 ..     160     180 ..     157     182 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 8.7e-08
+              trimmed_bchE 181 qalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrve.vagGsflkdplPeg 263
+                               q+l  e++l  +  +r ++l+D G G G F   +a+     ++  +D  p  ++ +++r +++gl + +  va G++   +lP  
+  GCA_902809825.1_R50_2747  21 QHLPPESLLPDFLYRRDETLIDYGCGAGFFTIPAARYLTGGRVWALDRdPRMVAATTERARREGLPNVAGlVADGDVP--ALPP- 102
+                               66666777777888999***************************9998577788888888888988766514456664..6775. PP
+
+              trimmed_bchE 264 aDlisLvRvlhDHdDeavlkllrkvraaLppggrLliaEp 303
+                               aD++ +  v hD dD ++  +lr+++  L+p grL + E 
+  GCA_902809825.1_R50_2747 103 ADAVLMANVFHDLDDPDA--VLRRLHPLLQPHGRLYLVEW 140
+                               9**************975..8**************99985 PP
+
+  == domain 2  score: -3.9 bits;  conditional E-value: 1
+              trimmed_bchE 336 irallaeaGFakvkllrtarp 356
+                               ++a l++aGF+  +l r   p
+  GCA_902809825.1_R50_2747 160 LAARLEAAGFEVRRLFRDPYP 180
+                               666788999988887776666 PP
+
+>> GCA_902809825.1_R50_585  CAB1128091.1 Methyltransf_25 domain-containing protein [Candidatus Hydrogenisulfobacillus fi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   0.1     3e-07   0.00021     198     302 ..      66     173 ..      54     191 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 3e-07
+             trimmed_bchE 198 rrllDvGGGeGaFlaavaara.pklklklfDl.paVaerararleaaglsdrvevagGsflkdplPega.DlisLvRvlhDHdDea 280
+                               r+ ++G G G  l+a+a+++ p   +   D+ p+ +e++r+rl+++  +  veva  + ++ p P+ a D + +v vl + + ++
+  GCA_902809825.1_R50_585  66 GRVGEIGTGVGVILEALARAVgPGGMVYGVDVqPQAVEMTRRRLARRVPEVPVEVAVADATRLPWPDAAlDRVVMVAVLGEVPAAR 151
+                              566789**********9998745555666675599*******************************8755**************** PP
+
+             trimmed_bchE 281 vlkllrkvraaLppggrLliaE 302
+                                ++l++vr+ L+pggrL+++E
+  GCA_902809825.1_R50_585 152 RPAVLAEVRRVLRPGGRLIVTE 173
+                              ********************99 PP
+
+>> GCA_902809825.1_R50_171  CAB1127677.1 putative Methyltransferase domain-containing protein [Candidatus Hydrogenisulfo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.2   5.4e-07   0.00037     198     301 ..      42     139 ..      25     152 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 5.4e-07
+             trimmed_bchE 198 rrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisLvRvlhDHdDeavlk 283
+                               +++DvG+G+Ga+   +a++ +++  +    p+ a ra a  +a++l   v++  G   + plP+g     L+ v  +  D++ ++
+  GCA_902809825.1_R50_171  42 MTVVDVGAGTGAYSLWLAEQGARVWAV---EPSAAMRAVA--AAKALPPAVTLLEGRAEALPLPDGLADRVLLQVTLEFVDDPTRA 122
+                              6899*********99999998877554...4777777765..688999******************99999************999 PP
+
+             trimmed_bchE 284 llrkvraaLppggrLlia 301
+                              l ++v + L+pggrL+++
+  GCA_902809825.1_R50_171 123 LAEAV-RVLRPGGRLVLG 139
+                              87666.68*******986 PP
+
+>> GCA_902809825.1_R50_172  CAB1127678.1 conserved protein of unknown function [Candidatus Hydrogenisulfobacillus filiav
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.3   2.7e-06    0.0019      51     111 ..      22      85 ..      18      94 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 2.7e-06
+             trimmed_bchE  51 llacveldllellaegplsleelaerlklpedalerLlraaaalkLlerrsed...ryaLgklg 111
+                              l+   +++ll+ll +gp+++e+la+r++l+  ++++ l+  +a +L+e+++ +   ry+L++ g
+  GCA_902809825.1_R50_172  22 LAHPRRVELLDLLCQGPMTVETLARRAELSVGSTSQHLARLRAARLVETERAGthvRYRLAEPG 85 
+                              55556899***********************999888777777777766554322278887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2756  (772371 residues searched)
+Passed MSV filter:                       130  (0.0471698); expected 55.1 (0.02)
+Passed bias filter:                       95  (0.0344702); expected 55.1 (0.02)
+Passed Vit filter:                        16  (0.00580552); expected 2.8 (0.001)
+Passed Fwd filter:                         4  (0.00145138); expected 0.0 (1e-05)
+Initial search space (Z):               2756  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9043.64
+//
+[ok]

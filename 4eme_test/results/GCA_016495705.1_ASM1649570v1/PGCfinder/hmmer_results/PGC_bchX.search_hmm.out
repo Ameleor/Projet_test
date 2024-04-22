@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016495705.1_ASM1649570v1/GCA_016495705.1_ASM1649570v1_protein.faa
+# output directed to file:         results/GCA_016495705.1_ASM1649570v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.5e-07   26.6   0.0     0.0057   13.4   0.0    2.3  2  GCA_016495705.1_ASM1649570v1_3218  QQK72863.1 iron-sulfur cluster c
+    8.2e-06   22.7   0.0    2.3e-05   21.2   0.0    1.7  1  GCA_016495705.1_ASM1649570v1_3207  QQK72854.1 tyrosine-protein kina
+    0.00023   18.0   0.1     0.0023   14.6   0.2    2.1  2  GCA_016495705.1_ASM1649570v1_2523  QQK72284.1 septum site-determini
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016495705.1_ASM1649570v1_3218  QQK72863.1 iron-sulfur cluster carrier protein ApbC [Pectobacterium versatile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   4.3e-06    0.0057      18      60 ..     103     146 ..      88     164 .. 0.79
+   2 !   10.8   0.0   2.6e-05     0.034     210     266 ..     294     352 ..     287     363 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.3e-06
+               trimmed_msa_bchX_hmm  18 vtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        v+   +iia+  gkgg+gks t  n++  la +g +v ++  d 
+  GCA_016495705.1_ASM1649570v1_3218 103 VKGVKNIIAVsSGKGGVGKSSTAVNMALALAAEGANVGILDADI 146
+                                        4445678998459**********************998887775 PP
+
+  == domain 2  score: 10.8 bits;  conditional E-value: 2.6e-05
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                        gtg aq +ae+    +l  +p +  +r      +  ++++p+se++sl+ ela +va+ 
+  GCA_016495705.1_ASM1649570v1_3218 294 GTGGAQKLAEKYHCSLLGQLPLHISLREDldRGEPTVVSQPDSEFTSLYRELAGQVAAQ 352
+                                        8**********************9999872245678*******************9975 PP
+
+>> GCA_016495705.1_ASM1649570v1_3207  QQK72854.1 tyrosine-protein kinase Wzc [Pectobacterium versatile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.0   1.8e-08   2.3e-05      18      74 ..     522     579 ..     506     605 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 1.8e-08
+               trimmed_msa_bchX_hmm  18 vtketqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74 
+                                        ++ + +++ i g    igk+f  anl  ++aq g++vl++ cd +   +  l+g + +
+  GCA_016495705.1_ASM1649570v1_3207 522 MEAKNNVLMISGASpAIGKTFVSANLGAVIAQSGQRVLIVDCDMRKGYAHELMGVQGT 579
+                                        55667788888865389**************************999888888887665 PP
+
+>> GCA_016495705.1_ASM1649570v1_2523  QQK72284.1 septum site-determining protein MinD [Pectobacterium versatile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   1.8e-06    0.0023      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?    0.8   0.0     0.029        38     221     261 ..     203     244 ..     194     269 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.8e-06
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCA_016495705.1_ASM1649570v1_2523  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                       55668***************************9988655 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.029
+               trimmed_msa_bchX_hmm 221 vgipvlaaipadedirrksanye.iigkpesewgslfeelae 261
+                                          ip++  ip+d+ + r s + e +i  +e++ g+ +++  e
+  GCA_016495705.1_ASM1649570v1_2523 203 LRIPLVGVIPEDQSVLRASNQGEpVILDAEADAGKAYADTVE 244
+                                        679***********9999987653566666677766665444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3955  (1230529 residues searched)
+Passed MSV filter:                       132  (0.0333755); expected 79.1 (0.02)
+Passed bias filter:                      117  (0.0295828); expected 79.1 (0.02)
+Passed Vit filter:                        16  (0.00404551); expected 4.0 (0.001)
+Passed Fwd filter:                         3  (0.000758534); expected 0.0 (1e-05)
+Initial search space (Z):               3955  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14586.37
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_023586725.2_ASM2358672v2/GCA_023586725.2_ASM2358672v2_protein.faa
+# output directed to file:         results/GCA_023586725.2_ASM2358672v2/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-58  196.3   0.4    1.6e-58  196.0   0.4    1.0  1  GCA_023586725.2_ASM2358672v2_3152  URJ51432.1 polyprenyl synthetase
+  ------ inclusion threshold ------
+      0.036   11.1   0.0      0.036   11.1   0.0    1.2  1  GCA_023586725.2_ASM2358672v2_4871  URJ49900.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023586725.2_ASM2358672v2_3152  URJ51432.1 polyprenyl synthetase family protein [Paenibacillus polymyxa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  196.0   0.4   7.2e-62   1.6e-58      18     257 ..      37     286 ..      21     304 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 196.0 bits;  conditional E-value: 7.2e-62
+               trimmed_msa_crtE_hmm  18 eapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsv 93 
+                                        + p+ l ++++y++++gG+R+RP l++a+a a+G +++a+    a a+e++h +sL+hDDlP++Dd+d RRgk + 
+  GCA_023586725.2_ASM2358672v2_3152  37 NIPDVLRESMNYSLTAGGKRLRPLLVIAAAEAFGGSREAALP-VACAVEMVHTYSLIHDDLPAMDDDDYRRGKLTN 111
+                                        689********************************9998887.899****************************** PP
+
+               trimmed_msa_crtE_hmm  94 hkafgeplavLaGDalivlafetlareaak...sparlakllktlaravGapaGivaGqawesea.....ev.dls 160
+                                        hk +ge++avLaGDal++ af  + ++ ++   s + l ++++ l++++Ga  G+v+Gq  ++        + +l+
+  GCA_023586725.2_ASM2358672v2_3152 112 HKVYGEAVAVLAGDALLTHAFYSIVQAGRRhgvSSDSLLSIVEDLSEMSGA-RGMVGGQVADMSGeqgmtGIeELE 186
+                                        **********************99988877333567778888889999999.9******99986533444332678 PP
+
+               trimmed_msa_crtE_hmm 161 ayqraktgaLfaaatvaGaiaagada...eewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsava 233
+                                          +  kt+ L++ +  aG+   gad+   e++r++g  lG a+q+ DD+ D+++d++++Gk ++ D ++++ ++  
+  GCA_023586725.2_ASM2358672v2_3152 187 YIHLHKTADLIIFSLLAGGRIGGADKsqlEALRRFGRDLGLAFQIQDDILDLIGDESKMGKKTQSDVEQEKVTYPY 262
+                                        8899***************9777665111667888***************************************** PP
+
+               trimmed_msa_crtE_hmm 234 elGlegavarlkelvaeaiasips 257
+                                         +G+++++++++el+a+a ++i +
+  GCA_023586725.2_ASM2358672v2_3152 263 FIGMDASLRQVEELTASAKKVITE 286
+                                        ******************999976 PP
+
+>> GCA_023586725.2_ASM2358672v2_4871  URJ49900.1 hypothetical protein MF626_004313 [Paenibacillus polymyxa]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   1.6e-05     0.036      64      78 ..       6      20 ..       2      63 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 1.6e-05
+               trimmed_msa_crtE_hmm 64 aiellhCasLvhDDl 78
+                                       a ell C s +hDDl
+  GCA_023586725.2_ASM2358672v2_4871  6 ARELLRCHSFIHDDL 20
+                                       77************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       4413  (1241490 residues searched)
+Passed MSV filter:                        98  (0.0222071); expected 88.3 (0.02)
+Passed bias filter:                       72  (0.0163154); expected 88.3 (0.02)
+Passed Vit filter:                         4  (0.000906413); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000453206); expected 0.0 (1e-05)
+Initial search space (Z):               4413  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 26023.66
+//
+[ok]

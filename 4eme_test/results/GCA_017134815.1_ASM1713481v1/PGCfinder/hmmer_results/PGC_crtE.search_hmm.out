@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_017134815.1_ASM1713481v1/GCA_017134815.1_ASM1713481v1_protein.faa
+# output directed to file:         results/GCA_017134815.1_ASM1713481v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      3e-21   73.0   0.1    1.4e-10   38.0   0.0    2.1  2  GCA_017134815.1_ASM1713481v1_183  QSH41454.1 polyprenyl synthetase
+  ------ inclusion threshold ------
+      0.016   11.5   0.1      0.025   10.9   0.1    1.2  1  GCA_017134815.1_ASM1713481v1_571  QSH41836.1 sugar porter family M
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017134815.1_ASM1713481v1_183  QSH41454.1 polyprenyl synthetase family protein [Lentisphaerota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   0.0   1.1e-13   1.4e-10      34      96 ..      41     100 ..      20     107 .. 0.81
+   2 !   33.0   0.0   3.4e-12   4.5e-09      96     232 ..     118     270 ..     110     283 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 38.0 bits;  conditional E-value: 1.1e-13
+              trimmed_msa_crtE_hmm  34 gGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhka 96 
+                                       gG+R+RP l+    a  G d +++    aaa e+ h   LvhDD+  +D++d+RRg ps h+ 
+  GCA_017134815.1_ASM1713481v1_183  41 GGKRLRPALLCWCCAMLGGDIKKALYP-AAAAEIYHNWTLVHDDI--IDEDDVRRGLPSAHAS 100
+                                       8******98666655556555555553.445699**********7..9*************86 PP
+
+  == domain 2  score: 33.0 bits;  conditional E-value: 3.4e-12
+              trimmed_msa_crtE_hmm  96 afgeplavLaGDalivlafetlareaak..sparlakllktlaravGapaGivaGqawesea.........evdlsa 161
+                                       +fg + a+LaGD     a +tl ++a +  sp+ +++l + + + v     +++G a+++e          + +l +
+  GCA_017134815.1_ASM1713481v1_183 118 KFGRDFAMLAGDIQQGWAANTLLKAADHglSPELTIALSRRMQELVTR--ELISGEALDVEFpmrginnvtSRELLD 192
+                                       799*******************99988767899999999999999876..89********98788888666667888 PP
+
+              trimmed_msa_crtE_hmm 162 yqraktgaLfaaatvaGai....aagadaeewralge...alGeayqvaDDlrDaladaeelGkpagqDaalgrpsa 231
+                                           ktgaL+   + aG++    ++  d  e r+lg+   + G a+q+ DD   + ++ ++ Gk+ g D a+g+p+ 
+  GCA_017134815.1_ASM1713481v1_183 193 MLYLKTGALLRFCAEAGTAialeSTDFDRPEIRKLGDfasTAGIAFQLRDDWLGVFGNFSKFGKTLGSDLAEGKPTL 269
+                                       8899******9999999774444556677788888873336799*******************************97 PP
+
+              trimmed_msa_crtE_hmm 232 v 232
+                                        
+  GCA_017134815.1_ASM1713481v1_183 270 L 270
+                                       5 PP
+
+>> GCA_017134815.1_ASM1713481v1_571  QSH41836.1 sugar porter family MFS transporter [Lentisphaerota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.1   1.9e-05     0.025     139     199 ..      54     115 ..      27     124 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.9e-05
+              trimmed_msa_crtE_hmm 139 vGapaGivaGqaweseaevdlsayqraktgaLfaaatvaGaiaagadaeew.ralgealGea 199
+                                        G  + +++G ++  +++ +ls++q + t +++ a++  Ga+a+g+ +e++ r+ +  lG+a
+  GCA_017134815.1_ASM1713481v1_571  54 FGYGTAVISGAMLFIQDQFHLSTFQMSLTVSILLAGAFFGALASGKITEKLgRKNSLLLGAA 115
+                                       466678999************************************99988723444556766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       2655  (912426 residues searched)
+Passed MSV filter:                        65  (0.0244821); expected 53.1 (0.02)
+Passed bias filter:                       46  (0.0173258); expected 53.1 (0.02)
+Passed Vit filter:                         5  (0.00188324); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000753296); expected 0.0 (1e-05)
+Initial search space (Z):               2655  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10987.94
+//
+[ok]

@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_023277545.1_ASM2327754v1/GCA_023277545.1_ASM2327754v1_protein.faa
+# output directed to file:         results/GCA_023277545.1_ASM2327754v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    8.5e-06   20.8   0.2     0.0044   11.8   0.1    2.5  2  GCA_023277545.1_ASM2327754v1_729  UQA78319.1 thioredoxin-disulfide
+    0.00057   14.7   0.2     0.0017   13.2   0.1    1.7  2  GCA_023277545.1_ASM2327754v1_790  UQA78358.1 NAD(P)/FAD-dependent 
+     0.0011   13.9   0.2     0.0077   11.0   0.0    2.3  3  GCA_023277545.1_ASM2327754v1_298  UQA78927.1 FAD-dependent oxidore
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023277545.1_ASM2327754v1_729  UQA78319.1 thioredoxin-disulfide reductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.1   1.3e-05    0.0044       4      31 ..       7      34 ..       5      54 .. 0.83
+   2 !    6.3   0.0    0.0006      0.21       5      36 ..     150     181 ..     148     197 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.3e-05
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvlll 31
+                                       v+++G GPaG taa  lar+G + l++
+  GCA_023277545.1_ASM2327754v1_729  7 KVIIIGSGPAGYTAALYLARAGYTPLVI 34
+                                      589*******************987776 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.0006
+              trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllldragr 36 
+                                       +vvvGGG +    a  l+r G +v l+ r++ 
+  GCA_023277545.1_ASM2327754v1_729 150 IVVVGGGDSAFEEALFLTRFGSSVTLIHRRDS 181
+                                       79*************************99865 PP
+
+>> GCA_023277545.1_ASM2327754v1_790  UQA78358.1 NAD(P)/FAD-dependent oxidoreductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   4.8e-06    0.0017       4      26 ..      10      32 ..       7      46 .. 0.87
+   2 ?   -1.8   0.0      0.18        61      21      53 ..     264     296 ..     252     316 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 4.8e-06
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGk 26
+                                       vv++GGGPaG taa +l++ G 
+  GCA_023277545.1_ASM2327754v1_790 10 SVVIIGGGPAGLTAAWELVKDGG 32
+                                      69*****************9984 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.18
+              trimmed_msa_bchP_hmm  21 larkGkkvllldragrikPcGGaiPprlikdfa 53 
+                                         ++G +vl   +   ik c G i + ++++ +
+  GCA_023277545.1_ASM2327754v1_790 264 CRENGATVLTDAKVVAIKQCDGKISSVVVENQD 296
+                                       456677777777778888888888887777655 PP
+
+>> GCA_023277545.1_ASM2327754v1_298  UQA78927.1 FAD-dependent oxidoreductase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.0      0.55   1.9e+02       5      39 ..       4      39 ..       3      46 .. 0.71
+   2 !   11.0   0.0   2.2e-05    0.0077       4      37 ..     150     183 ..     147     186 .. 0.92
+   3 ?   -0.4   0.0     0.064        22     117     195 ..     255     332 ..     245     337 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -3.4 bits;  conditional E-value: 0.55
+              trimmed_msa_bchP_hmm  5 vvvvGGGPaGataaed.larkGkkvllldragrikP 39
+                                      ++ +G   aG++ a++ l+  G+++ + d+++ i  
+  GCA_023277545.1_ASM2327754v1_298  4 IIQIGANHAGTACANTiLSYPGNDLTIYDQNSNISF 39
+                                      567888999987776625678999999999988864 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 2.2e-05
+              trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldragri 37 
+                                       +vvv+GGG  G   ae + r Gk+v l+d ++ i
+  GCA_023277545.1_ASM2327754v1_298 150 NVVVLGGGYIGVELAEAFKRLGKNVTLIDMEDHI 183
+                                       799**************************99876 PP
+
+  == domain 3  score: -0.4 bits;  conditional E-value: 0.064
+              trimmed_msa_bchP_hmm 117 erdedgtavvvyrekeegeeekvrarlvigadGarsevarqevpgaekvklvfayheivkapeeeeaefdaercdvy 193
+                                       ++ e+g+ +v  ++++++  +     +    d ars+v+  ++++++    ++a h++  +p e ++  +++   ++
+  GCA_023277545.1_ASM2327754v1_298 255 KQYENGAFLVDKKQQTSDPDVYAIGDCATIYDNARSRVNYIALATNAVRSGLIAGHNVCGTPVE-TEGVQGSSAMMI 330
+                                       5555666666555555555555555666677999****999999999999999****9999998.566666666666 PP
+
+              trimmed_msa_bchP_hmm 194 yq 195
+                                       y+
+  GCA_023277545.1_ASM2327754v1_298 331 YD 332
+                                       66 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1035  (362936 residues searched)
+Passed MSV filter:                        45  (0.0434783); expected 20.7 (0.02)
+Passed bias filter:                       29  (0.0280193); expected 20.7 (0.02)
+Passed Vit filter:                         6  (0.0057971); expected 1.0 (0.001)
+Passed Fwd filter:                         3  (0.00289855); expected 0.0 (1e-05)
+Initial search space (Z):               1035  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8028.79
+//
+[ok]

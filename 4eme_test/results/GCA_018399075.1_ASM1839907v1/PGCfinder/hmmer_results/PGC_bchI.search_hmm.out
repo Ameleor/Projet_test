@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018399075.1_ASM1839907v1/GCA_018399075.1_ASM1839907v1_protein.faa
+# output directed to file:         results/GCA_018399075.1_ASM1839907v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0096   11.8   0.5        1.5    4.6   0.1    2.8  3  GCA_018399075.1_ASM1839907v1_583   QVL58062.1 MAG: ATP-dependent Cl
+  ------ inclusion threshold ------
+      0.012   11.4   0.0       0.02   10.7   0.0    1.2  1  GCA_018399075.1_ASM1839907v1_1132  QVL56896.1 MAG: ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018399075.1_ASM1839907v1_583  QVL58062.1 MAG: ATP-dependent Clp protease ATP-binding subunit ClpX [Simkaniaceae b
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0     0.045        40     261     320 ..      35      95 ..      19     107 .. 0.67
+   2 !    4.6   0.1    0.0017       1.5      29      54 ..     108     133 ..     101     147 .. 0.83
+   3 !    3.5   0.0    0.0036       3.1     129     149 ..     168     188 ..     144     205 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.045
+              trimmed_msa_bchI_hmm 261 vlekaaklclal.gtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlrrdp 320
+                                       + +k+ +lc+ +     ++ e+ ll+       l++    + +  k++++++ +h  r  +
+  GCA_018399075.1_ASM1839907v1_583  35 ICDKCVRLCMDIvEKKAVKHEIKLLKPKEIKVRLDEYIIGQVKAKKTISVAVYNHYKRIRS 95 
+                                       4468999999862567899999999999999999987655555555555555555544444 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0017
+              trimmed_msa_bchI_hmm  29 gGvlvlGdrGtGkstavralaallPk 54 
+                                       + vl+lG  G+Gk+  +r+la++l  
+  GCA_018399075.1_ASM1839907v1_583 108 SNVLLLGPTGSGKTLIARTLAEVLDV 133
+                                       579*******************9965 PP
+
+  == domain 3  score: 3.5 bits;  conditional E-value: 0.0036
+              trimmed_msa_bchI_hmm 129 laranrGflyidevnlledhl 149
+                                       +ara++G +y+de++ +    
+  GCA_018399075.1_ASM1839907v1_583 168 IARAEQGIIYVDEIDKIRKTT 188
+                                       79************9776655 PP
+
+>> GCA_018399075.1_ASM1839907v1_1132  QVL56896.1 MAG: ABC transporter ATP-binding protein [Simkaniaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   2.3e-05      0.02      33      58 ..      39      64 ..      31      82 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.3e-05
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikav 58
+                                       ++G+ G Gks  +r+l+ llP i++ 
+  GCA_018399075.1_ASM1839907v1_1132 39 IVGESGCGKSVMARSLTRLLPSISSR 64
+                                       78********************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1758  (593183 residues searched)
+Passed MSV filter:                        82  (0.0466439); expected 35.2 (0.02)
+Passed bias filter:                       62  (0.0352673); expected 35.2 (0.02)
+Passed Vit filter:                        10  (0.00568828); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00113766); expected 0.0 (1e-05)
+Initial search space (Z):               1758  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8707.95
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699385.1_ASM1669938v1/GCA_016699385.1_ASM1669938v1_protein.faa
+# output directed to file:         results/GCA_016699385.1_ASM1669938v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00011   17.1   0.0    0.00015   16.7   0.0    1.1  1  GCA_016699385.1_ASM1669938v1_363  QQR77870.1 class I SAM-dependent
+     0.0051   11.6   0.0      0.012   10.3   0.0    1.5  2  GCA_016699385.1_ASM1669938v1_838  QQR77346.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699385.1_ASM1669938v1_363  QQR77870.1 class I SAM-dependent methyltransferase [Candidatus Moranbacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.0   2.8e-07   0.00015     194     308 ..      39     148 ..      35     167 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 2.8e-07
+                      trimmed_bchE 194 lkrhrrllDvGGGeGaFlaavaarapklklklfDlpaV.aerararleaaglsdrvevagGsflkdplPega.D.li 267
+                                       l++ +++lD+G G+G        +   l+++  Dl +  +++ar      +    ++ + G+fl+ + P+g+ D +i
+  GCA_016699385.1_ASM1669938v1_363  39 LEQGAKVLDLGSGSGVPYDLYL-TQQGLRVTGIDLSEKhVAMAR------NNVPSAQYILGDFLDYRFPNGQfDaVI 108
+                                       6677889999999998766554.456789999999764123333......34567899************9546367 PP
+
+                      trimmed_bchE 268 sLvRvlhDHdDeavlkllrkvraaLppggrLliaEpmagta 308
+                                       sL  + h   D++ +++++++ ++L+p grLli+    ++a
+  GCA_016699385.1_ASM1669938v1_363 109 SLYALFHTPRDRH-AQVIAEIARTLKPTGRLLITVGTEDVA 148
+                                       8888777777766.57899**************75444444 PP
+
+>> GCA_016699385.1_ASM1669938v1_838  QQR77346.1 class I SAM-dependent methyltransferase [Candidatus Moranbacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   2.4e-05     0.012     186     302 ..      13     132 ..       5     141 .. 0.70
+   2 ?   -2.0   0.0      0.13        67     333     350 ..     150     167 ..     147     170 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.4e-05
+                      trimmed_bchE 186 eevldaydlkrhrrllDvGGGeG....aFlaavaarapklklklf..DlpaVaerararleaaglsdrvev..agGs 254
+                                       eev++ +d  +++++ D G G+G    aF++av+++     l ++   l+aVa+ra+a   ++ +++rv++   gGs
+  GCA_016699385.1_ASM1669938v1_838  13 EEVIEQLDALENASVADFGCGSGffslAFARAVGKSGCVYALDILpsSLEAVASRAKALGLSNVTAKRVNLerEGGS 89 
+                                       7899999999*************444445555555555444444422577888888876556666666654115666 PP
+
+                      trimmed_bchE 255 flkdplPegaDlisLvRvlhDHdDeavlkllrkvraaLppggrLliaE 302
+                                        l d   +  D + +  vl+  +    +++l ++++ L++gg L+i E
+  GCA_016699385.1_ASM1669938v1_838  90 GLPD---DSLDWVIMKDVLFQNKG--KETMLWEAYRVLKSGGFLFIME 132
+                                       4444...45799999999986655..4678899999999999999887 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.13
+                      trimmed_bchE 333 aeeirallaeaGFakvkl 350
+                                        e++ ++l+e GF+ vk 
+  GCA_016699385.1_ASM1669938v1_838 150 REKLIEMLSERGFSPVKD 167
+                                       67899********98875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1021  (320948 residues searched)
+Passed MSV filter:                        41  (0.0401567); expected 20.4 (0.02)
+Passed bias filter:                       34  (0.0333007); expected 20.4 (0.02)
+Passed Vit filter:                         6  (0.00587659); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00195886); expected 0.0 (1e-05)
+Initial search space (Z):               1021  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7319.74
+//
+[ok]

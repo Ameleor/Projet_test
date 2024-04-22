@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_017569285.1_ASM1756928v1/GCA_017569285.1_ASM1756928v1_protein.faa
+# output directed to file:         results/GCA_017569285.1_ASM1756928v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.5e-08   30.0   0.1    7.7e-08   29.3   0.1    1.4  1  GCA_017569285.1_ASM1756928v1_2291  QTE67847.1 ParA family protein [
+    8.7e-07   25.8   0.3    0.00015   18.5   0.1    2.1  2  GCA_017569285.1_ASM1756928v1_2748  QTE68283.1 septum site-determini
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017569285.1_ASM1756928v1_2291  QTE67847.1 ParA family protein [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.3   0.1   5.5e-11   7.7e-08      21      76 ..       3      61 ..       1      68 [. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 29.3 bits;  conditional E-value: 5.5e-11
+               trimmed_msa_bchL_hmm 21 kvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkkl..vptvid 76
+                                       k++a+   kgg+gk+tt+ nls+ +++ gk+vl +  dp+ ++t  l  ++   +tv d
+  GCA_017569285.1_ASM1756928v1_2291  3 KIIAIAnQKGGVGKTTTAVNLSACLAEAGKKVLMVDLDPQGNTTSGLGCTVneRNTVYD 61
+                                       677774269*******************************9999877544411456666 PP
+
+>> GCA_017569285.1_ASM1756928v1_2748  QTE68283.1 septum site-determining protein MinD [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.1   1.1e-07   0.00015      25      77 ..       8      63 ..       2      72 .. 0.80
+   2 !    5.6   0.0   0.00088       1.2     128     236 ..     107     216 ..     101     246 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.1e-07
+               trimmed_msa_bchL_hmm 25 vygkggigksttssnlsvafsklgkrvlqigcdp...khdstftltkklvptvidv 77
+                                         gkgg gkst ++nl + +++ g+ v+ i  d      d+ ++l +++v  ++dv
+  GCA_017569285.1_ASM1756928v1_2748  8 ASGKGGAGKSTVTANLGACLARRGHSVVIIDTDIglrSQDALLSLENQVVYDLVDV 63
+                                       56****************************99962224667777777777777776 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00088
+               trimmed_msa_bchL_hmm 128 kehhlledtdvvifdvlgdvvcggfaaplqh.adralivaandfdsifamnrivaaikaksknykvrlggvian.. 200
+                                        k   ll  +d v+ d    +   gf   l+   d+a++v++ d  si   +r  + ++ak       +   + n  
+  GCA_017569285.1_ASM1756928v1_2748 107 K--ELLRSSDFVLVDCPAGI-ERGFRNVLNAgVDQAILVTTPDDISIRDAERAAQIMEAKHSARPRLIVNRLDNdl 179
+                                        4..48889999999987765.567888887527*************************997665433333333311 PP
+
+               trimmed_msa_bchL_hmm 201 .rsketdeidrfneavglkrlahlpdldairrsrlkk 236
+                                         r  e       ++++ l+ l ++p+  a+ r+ l++
+  GCA_017569285.1_ASM1756928v1_2748 180 iRKGEMYSARTVADTLDLELLGEIPEDPAVYRAMLRH 216
+                                        1233333344455666666666666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       2808  (982302 residues searched)
+Passed MSV filter:                       107  (0.0381054); expected 56.2 (0.02)
+Passed bias filter:                       89  (0.0316952); expected 56.2 (0.02)
+Passed Vit filter:                        17  (0.00605413); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000712251); expected 0.0 (1e-05)
+Initial search space (Z):               2808  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13115.70
+//
+[ok]

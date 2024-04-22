@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_928721465.1_min17_bin31/GCA_928721465.1_min17_bin31_protein.faa
+# output directed to file:         results/GCA_928721465.1_min17_bin31/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.5e-06   23.0   0.0     0.0077   11.5   0.0    2.4  2  GCA_928721465.1_min17_bin31_182   JMOLFG_00945 Amino-oxidase domai
+      0.001   14.4   0.2     0.0015   13.8   0.2    1.2  1  GCA_928721465.1_min17_bin31_1530  JMOLFG_07865 NAD(P) transhydroge
+     0.0019   13.5   1.2     0.0041   12.4   0.0    1.9  2  GCA_928721465.1_min17_bin31_606   JMOLFG_03125 methylenetetrahydro
+  ------ inclusion threshold ------
+      0.013   10.7   0.1      0.046    8.9   0.1    1.8  2  GCA_928721465.1_min17_bin31_1106  JMOLFG_05680 4Fe-4S ferredoxin-t
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_928721465.1_min17_bin31_182  JMOLFG_00945 Amino-oxidase domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   1.7e-05    0.0077       2      53 ..       3      55 ..       2      88 .. 0.84
+   2 !    9.0   0.0   9.8e-05     0.044     214     261 ..     239     286 ..     234     321 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.7e-05
+             trimmed_msa_crtI_hmm  2 kkavviGaGfGGlaaairlgak.GyrvtvlekldapGGrayvhrkdgftfDaG 53
+                                     kka++iGaG  Gl+aa  l ++  ++  +le+ d +GG + +   +  + D G
+  GCA_928721465.1_min17_bin31_182  3 KKAIIIGAGPAGLTAAYELLTRtDIEPVILEENDFVGGISATLDYKHNKIDMG 55
+                                     79**************98765527999***********988877666666665 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 9.8e-05
+             trimmed_msa_crtI_hmm 214 hyamGGtgalvkglvklieeqGgelrlnaeveeievedgratgvrlas 261
+                                      +y + G g++ ++++ l+ee+Gg++ ++++v +++ ++gr+t+v+  +
+  GCA_928721465.1_min17_bin31_182 239 FYPKFGPGHMWQSVAGLVEEKGGKILCKHKVIRVVKKNGRITSVEALD 286
+                                      677889999**********************************98644 PP
+
+>> GCA_928721465.1_min17_bin31_1530  JMOLFG_07865 NAD(P) transhydrogenase subunit alpha
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.2   3.4e-06    0.0015       3      32 ..     164     193 ..     162     206 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.4e-06
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlek 32 
+                                       +a+viGaG+ Gl aa  ++ +G rvt+l+ 
+  GCA_928721465.1_min17_bin31_1530 164 SALVIGAGVTGLQAASVFKRQGCRVTILDI 193
+                                       79*************************995 PP
+
+>> GCA_928721465.1_min17_bin31_606  JMOLFG_03125 methylenetetrahydrofolate--tRNA-(uracil(54)-C(5))-methyltransferase (FA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   9.1e-06    0.0041       4      48 ..       5      47 ..       2      50 .. 0.90
+   2 ?   -1.0   0.3       0.1        45      86     125 ..     180     222 ..     172     226 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 9.1e-06
+             trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgf 48
+                                     a viGaG+ G  aa +l+ +G+ v + e +  p  r+ +h+ dgf
+  GCA_928721465.1_min17_bin31_606  5 ANVIGAGLAGAEAAWQLALRGVAVRLYEMK--PEKRSPAHKADGF 47
+                                     78*************************985..6779999999999 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.1
+             trimmed_msa_crtI_hmm  86 fyrirfddGtkfdysg...deeklraevarlspeDvaGyerfl 125
+                                      +y+ r+d G+k+dy +    +e+  + v+ l   + aG+++f 
+  GCA_928721465.1_min17_bin31_606 180 WYQSRYDKGDKYDYINcplSREQYYEFVNALLEGEKAGFHDFE 222
+                                      9*************98443567888888999999999998885 PP
+
+>> GCA_928721465.1_min17_bin31_1106  JMOLFG_05680 4Fe-4S ferredoxin-type domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.1    0.0001     0.046       3      43 ..     129     169 ..     127     173 .. 0.93
+   2 ?   -1.7   0.0      0.17        74     226     287 ..     182     243 ..     178     256 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.0001
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGrayvh 43 
+                                       +a viG G  Gl a   +  +G++v + ek   +GG a+ +
+  GCA_928721465.1_min17_bin31_1106 129 RAAVIGGGPAGLGALYEFLLRGWQVNLYEKSAVLGGAARLI 169
+                                       699*********************************99865 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.17
+              trimmed_msa_crtI_hmm 226 glvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnadaaltykklleee 287
+                                        +++l+e+  +++rln+e+++ +   +r  +v  a Ge +   + +   +  l y + l++ 
+  GCA_928721465.1_min17_bin31_1106 182 EIARLVENPRVTVRLNTEITDFSALSARYDAVVAALGEPLPRTLGIKGEELCLPYAEYLTSP 243
+                                       57899999999***********9999999999999999887777776666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1791  (587476 residues searched)
+Passed MSV filter:                        64  (0.0357342); expected 35.8 (0.02)
+Passed bias filter:                       54  (0.0301508); expected 35.8 (0.02)
+Passed Vit filter:                         9  (0.00502513); expected 1.8 (0.001)
+Passed Fwd filter:                         4  (0.00223339); expected 0.0 (1e-05)
+Initial search space (Z):               1791  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8063.89
+//
+[ok]

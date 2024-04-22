@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_014529665.2_ASM1452966v2/GCA_014529665.2_ASM1452966v2_protein.faa
+# output directed to file:         results/GCA_014529665.2_ASM1452966v2/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.3e-05   21.2   0.5    5.3e-05   20.6   0.5    1.2  1  GCA_014529665.2_ASM1452966v2_1662  QXD25890.1 carotenoid 1,2-hydrat
+  ------ inclusion threshold ------
+      0.031   11.5   0.0      0.078   10.2   0.0    1.6  2  GCA_014529665.2_ASM1452966v2_3270  QXD23503.1 YceI family protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014529665.2_ASM1452966v2_1662  QXD25890.1 carotenoid 1,2-hydratase [Opitutae bacterium ISCC 51]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   0.5   2.6e-08   5.3e-05      81     154 ..     199     275 ..     187     302 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 2.6e-08
+               trimmed_msa_crtC_hmm  81 eveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselala..lrfdadGeveev 153
+                                        ++ ld+ +l+ +Ge+++D+   ++ l++d + WdW+  +l+dg  +  Y  +++dg+++ ++  + + +dGe++ +
+  GCA_014529665.2_ASM1452966v2_1662 199 TLALDRKQLEVTGEAWMDHEIASQQLSADLQGWDWTAIQLNDGrEIKAYILRQEDGTASPFSrfIWIGKDGETHYA 274
+                                        578999*************************************666689999999987554311556677766655 PP
+
+               trimmed_msa_crtC_hmm 154 e 154
+                                         
+  GCA_014529665.2_ASM1452966v2_1662 275 G 275
+                                        4 PP
+
+>> GCA_014529665.2_ASM1452966v2_3270  QXD23503.1 YceI family protein [Opitutae bacterium ISCC 51]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   3.8e-05     0.078      72     112 ..     116     156 ..     101     182 .. 0.86
+   2 ?   -2.4   0.0      0.27   5.5e+02      16      52 ..     227     263 ..     223     269 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.8e-05
+               trimmed_msa_crtC_hmm  72 rpiapsarveveldepelswkGegYfDsNeGdepleedFse 112
+                                        ++  p +r +++l++  ++w+G+  f + +G  +l+e+F e
+  GCA_014529665.2_ASM1452966v2_3270 116 SSRVPDGRYQIDLEKSVFRWTGRNLFNQHNGRIALSEGFLE 156
+                                        5667999********************************76 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.27
+               trimmed_msa_crtC_hmm  16 laiGpsslewdgdeLvididEiavplprrvrGrvrvt 52 
+                                        + +G+ +l+ + ++L  + +E+ +  +  ++Gr +++
+  GCA_014529665.2_ASM1452966v2_3270 227 IVLGSMHLRGKKKALEFKAQEVFLGGQYGLQGRFKIN 263
+                                        6678888888999999999999999999999988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4084  (1429983 residues searched)
+Passed MSV filter:                        99  (0.0242409); expected 81.7 (0.02)
+Passed bias filter:                       83  (0.0203232); expected 81.7 (0.02)
+Passed Vit filter:                         4  (0.000979432); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000489716); expected 0.0 (1e-05)
+Initial search space (Z):               4084  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 16945.41
+//
+[ok]

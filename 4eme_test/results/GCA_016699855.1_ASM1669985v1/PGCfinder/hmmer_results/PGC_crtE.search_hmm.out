@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699855.1_ASM1669985v1/GCA_016699855.1_ASM1669985v1_protein.faa
+# output directed to file:         results/GCA_016699855.1_ASM1669985v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.6e-32  110.1   2.5    4.6e-32  109.3   2.5    1.3  1  GCA_016699855.1_ASM1669985v1_1476  QQS14023.1 MAG: polyprenyl synth
+  ------ inclusion threshold ------
+      0.026   11.7   0.0      0.035   11.2   0.0    1.2  1  GCA_016699855.1_ASM1669985v1_344   QQS13027.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699855.1_ASM1669985v1_1476  QQS14023.1 MAG: polyprenyl synthetase family protein [Rhodospirillales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.3   2.5   1.9e-35   4.6e-32      27     229 ..      50     250 ..      29     260 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 109.3 bits;  conditional E-value: 1.9e-35
+               trimmed_msa_crtE_hmm  27 lryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhkafgepla 102
+                                          + v +gG+R+RP l++a+a  cG + ++  +  aa +e++h a L+hDD+  +D +dlRRg+p+ h+ +g++  
+  GCA_016699855.1_ASM1669985v1_1476  50 ADHLVGAGGKRMRPMLTVAAAKLCGYRGEHHVQ-LAACVEFIHSATLLHDDV--VDGSDLRRGQPAAHALWGNKAS 122
+                                        3577899********************999988.6778*************6..8********************* PP
+
+               trimmed_msa_crtE_hmm 103 vLaGDalivlafetlareaaksparlakllktlaravGapaGivaGqawesea.......evdlsayqraktgaLf 171
+                                        vL+GD l + afe + +  +          ++l+  +Ga + i+ G  ++  +       e+   +  rakt+ Lf
+  GCA_016699855.1_ASM1669985v1_1476 123 VLVGDFLFTRAFELMVEVGSI---------EVLGILSGASSVIAEGEVLQLSTanntatgEATYLEVIRAKTAKLF 189
+                                        **************9998873.........34444445555555555555544444444466777788******** PP
+
+               trimmed_msa_crtE_hmm 172 aaatvaGaiaag...adaeewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrp 229
+                                         aa+    + a    a+ ++++++g  lG a+q+ DD  D  +++++lGk++g D ++g+ 
+  GCA_016699855.1_ASM1669985v1_1476 190 SAAAEIAPVIAErpvAERAALASYGMNLGIAFQLVDDALDYGGSSARLGKAVGDDFREGKV 250
+                                        999987766655233678889999*******************************999885 PP
+
+>> GCA_016699855.1_ASM1669985v1_344  QQS13027.1 MAG: hypothetical protein IPK81_01785 [Rhodospirillales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.5e-05     0.035     173     200 ..     113     141 ..      79     143 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.5e-05
+              trimmed_msa_crtE_hmm 173 aatvaGaiaagadaeewralg.ealGeay 200
+                                        at+ Gaiaa +d+++w++lg  +lGe +
+  GCA_016699855.1_ASM1669985v1_344 113 IATAGGAIAAATDTARWEQLGyRWLGEVF 141
+                                       5999*****************45799988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       4763  (1483988 residues searched)
+Passed MSV filter:                       301  (0.0631955); expected 95.3 (0.02)
+Passed bias filter:                      116  (0.0243544); expected 95.3 (0.02)
+Passed Vit filter:                        14  (0.00293932); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000419903); expected 0.0 (1e-05)
+Initial search space (Z):               4763  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 15187.01
+//
+[ok]

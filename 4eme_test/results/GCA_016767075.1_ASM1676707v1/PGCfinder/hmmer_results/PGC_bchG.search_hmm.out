@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016767075.1_ASM1676707v1/GCA_016767075.1_ASM1676707v1_protein.faa
+# output directed to file:         results/GCA_016767075.1_ASM1676707v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00069   16.2   0.3    0.00087   15.9   0.3    1.4  1  GCA_016767075.1_ASM1676707v1_2186  QQY66233.1 decaprenyl-phosphate 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016767075.1_ASM1676707v1_2186  QQY66233.1 decaprenyl-phosphate phosphoribosyltransferase [Clostridioides difficil
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.3     4e-07   0.00087      51     126 ..      59     136 ..      13     250 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 4e-07
+               trimmed_msa_bchG_hmm  51 PlvcatsqavndWfdrhvdai..nePerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWay 124
+                                         l+ ++  a+nd +d + d     + +rp+ sGri+ +  + + ++l+l+s++++++++    +   l l+   +y
+  GCA_016767075.1_ASM1676707v1_2186  59 CLMSSSVYALNDAIDMDKDKKhpKKCNRPVASGRISKKSAYILFVVLSLISVCLSTVVSFNLSIILSLYLINNILY 134
+                                        34455556889*999888865226789****************************999887777777777777777 PP
+
+               trimmed_msa_bchG_hmm 125 sa 126
+                                        s 
+  GCA_016767075.1_ASM1676707v1_2186 135 SL 136
+                                        74 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2146  (650725 residues searched)
+Passed MSV filter:                        75  (0.0349487); expected 42.9 (0.02)
+Passed bias filter:                       34  (0.0158434); expected 42.9 (0.02)
+Passed Vit filter:                         1  (0.000465983); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000465983); expected 0.0 (1e-05)
+Initial search space (Z):               2146  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10301.74
+//
+[ok]

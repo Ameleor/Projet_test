@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410785.1_ASM2041078v1/GCA_020410785.1_ASM2041078v1_protein.faa
+# output directed to file:         results/GCA_020410785.1_ASM2041078v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0034   12.3   0.0     0.0046   11.8   0.0    1.2  1  GCA_020410785.1_ASM2041078v1_513  UCM86144.1 MAG: NAD(P)/FAD-depen
+  ------ inclusion threshold ------
+      0.058    8.2   9.4      0.026    9.4   0.6    2.9  3  GCA_020410785.1_ASM2041078v1_863  UCM85254.1 MAG: dihydrolipoyl de
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410785.1_ASM2041078v1_513  UCM86144.1 MAG: NAD(P)/FAD-dependent oxidoreductase [Rickettsia endosymbiont of Cul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   6.8e-06    0.0046       3      58 ..       5      62 ..       3     108 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 6.8e-06
+              trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgftfD..aGPtiit 58
+                                        ++iGaG  Gl a  + g  G+r  v+++++ +GG+ ++   +   +D  a P i++
+  GCA_020410785.1_ASM2041078v1_513  5 DIIIIGAGPVGLFAIFQAGMLGMRCHVVDSQEIIGGQCSILYPEKPIYDipAYPKIMA 62
+                                      579**********************************998866655555225566554 PP
+
+>> GCA_020410785.1_ASM2041078v1_863  UCM85254.1 MAG: dihydrolipoyl dehydrogenase [Rickettsia endosymbiont of Culicoides 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.6   3.7e-05     0.026       5      39 ..       7      41 ..       3      45 .. 0.93
+   2 ?    2.5   0.1    0.0044         3       3      34 ..     174     205 ..     172     208 .. 0.91
+   3 ?    0.6   0.4     0.017        11     222     279 ..     214     276 ..     212     302 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 3.7e-05
+              trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                      +viG G  G + air ++ G++v+ +ek+ ++GG 
+  GCA_020410785.1_ASM2041078v1_863  7 IVIGGGPAGYTGAIRAAQLGMKVACIEKRVTLGGT 41
+                                      9********************************96 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.0044
+              trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekld 34 
+                                       + vviG G+ Gl +    +  G +vtv+e  +
+  GCA_020410785.1_ASM2041078v1_863 174 TMVVIGGGYIGLELGSVWNRLGSKVTVIEYAE 205
+                                       679*************************9765 PP
+
+  == domain 3  score: 0.6 bits;  conditional E-value: 0.017
+              trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgra....tgvrlasGeeieadvvvsn.adaalt 279
+                                       ++++ ++k++++q  elrln++v + e + g++    +  + +s ++i+ad+v    + +a+t
+  GCA_020410785.1_ASM2041078v1_863 214 EIISQFTKILQKQSIELRLNTKVLSAEKKAGKVilniQQTTDSSVQQISADIVLLAvGRKAHT 276
+                                       7899999****************9998887765211133444566788889886441344444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1364  (432778 residues searched)
+Passed MSV filter:                        38  (0.0278592); expected 27.3 (0.02)
+Passed bias filter:                       33  (0.0241935); expected 27.3 (0.02)
+Passed Vit filter:                        10  (0.00733138); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00146628); expected 0.0 (1e-05)
+Initial search space (Z):               1364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9473.68
+//
+[ok]

@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_018622675.1_ASM1862267v1/GCA_018622675.1_ASM1862267v1_protein.faa
+# output directed to file:         results/GCA_018622675.1_ASM1862267v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.6e-07   26.6   0.5    1.2e-06   24.5   0.4    1.9  2  GCA_018622675.1_ASM1862267v1_473  QWC00445.1 P-loop NTPase [Mycopl
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018622675.1_ASM1862267v1_473  QWC00445.1 P-loop NTPase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.4   8.1e-10   1.2e-06      12      57 ..      80     125 ..      69     130 .. 0.77
+   2 ?   -0.8   0.0     0.039        58     186     212 ..     244     271 ..     227     291 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 8.1e-10
+              trimmed_msa_bchL_hmm  12 deelkietakvfavygkggigksttssnlsvafsklgkrvlqigcd 57 
+                                        ++ + ++  ++   gkgg+gkst ++nl+ a+ ++gk+v  i  d
+  GCA_018622675.1_ASM1862267v1_473  80 RKSRNKDAKTILVASGKGGVGKSTVTANLAYALKRMGKKVAIIDAD 125
+                                       333344444466778*************************998877 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.039
+              trimmed_msa_bchL_hmm 186 ksknykvrlggvianrsk.etdeidrfn 212
+                                        +k+ ++ l gv+ n s  e+d +d++ 
+  GCA_018622675.1_ASM1862267v1_473 244 AAKDLSIDLLGVVENMSYyEVDGVDHYI 271
+                                       5789999999*****9953889999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       1470  (502221 residues searched)
+Passed MSV filter:                        85  (0.0578231); expected 29.4 (0.02)
+Passed bias filter:                       59  (0.0401361); expected 29.4 (0.02)
+Passed Vit filter:                         9  (0.00612245); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000680272); expected 0.0 (1e-05)
+Initial search space (Z):               1470  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 17544.30
+//
+[ok]

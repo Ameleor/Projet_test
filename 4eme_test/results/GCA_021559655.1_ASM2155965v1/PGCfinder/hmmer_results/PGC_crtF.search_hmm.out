@@ -1,0 +1,101 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_021559655.1_ASM2155965v1/GCA_021559655.1_ASM2155965v1_protein.faa
+# output directed to file:         results/GCA_021559655.1_ASM2155965v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0018   14.6   0.0     0.0026   14.0   0.0    1.2  1  GCA_021559655.1_ASM2155965v1_477   UJL13768.1 23S rRNA (guanine(745
+     0.0028   13.9   0.0     0.0046   13.2   0.0    1.2  1  GCA_021559655.1_ASM2155965v1_1094  UJL14059.1 50S ribosomal protein
+     0.0029   13.9   0.0      0.011   12.0   0.0    1.8  2  GCA_021559655.1_ASM2155965v1_4828  UJL16024.1 peptide chain release
+  ------ inclusion threshold ------
+       0.02   11.1   0.0       0.04   10.1   0.0    1.5  1  GCA_021559655.1_ASM2155965v1_3388  UJL15364.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021559655.1_ASM2155965v1_477  UJL13768.1 23S rRNA (guanine(745)-N(1))-methyltransferase [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   3.7e-06    0.0026     196     238 ..      85     127 ..      71     140 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 3.7e-06
+              trimmed_msa_crtF_hmm 196 rhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerarar 238
+                                       +  ++lD+G GeG + +a a++ p++++  +D+ +Va +a+a+
+  GCA_021559655.1_ASM2155965v1_477  85 KATAVLDIGCGEGYYTHAFADALPEITTFGLDVSKVAIKAAAK 127
+                                       56789*******************************9887654 PP
+
+>> GCA_021559655.1_ASM2155965v1_1094  UJL14059.1 50S ribosomal protein L3 N(5)-glutamine methyltransferase [Escherichia 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   6.4e-06    0.0046     196     262 ..     132     198 ..     122     206 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 6.4e-06
+               trimmed_msa_crtF_hmm 196 rhrrllDvGGGeGaFlaavaarapklklklfDl.paVaerararleaaglsdrvevagGsflkdplPe 262
+                                        + +++lD+  G+G  + a a + p+ ++   D+ p+ ++ a++++e++gl ++v  +  ++++d lP+
+  GCA_021559655.1_ASM2155965v1_1094 132 QPQHILDMCTGSGCIAIACAYAFPEAEVDAVDIsPDALAVAEQNIEEHGLIHNVIPIRSDLFRD-LPK 198
+                                        6789****************************879999*******************9999999.665 PP
+
+>> GCA_021559655.1_ASM2155965v1_4828  UJL16024.1 peptide chain release factor N(5)-glutamine methyltransferase [Escheric
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   1.5e-05     0.011     198     244 ..     111     158 ..      95     175 .. 0.79
+   2 ?   -0.9   0.0      0.12        88     279     302 ..     215     238 ..     207     250 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_crtF_hmm 198 rrllDvGGGeGaFlaavaarapklklklfD.lpaVaerararleaagl 244
+                                         r+lD+G G+Ga + a+a++ p+ ++   D +p+ ++ a+++ ++ ++
+  GCA_021559655.1_ASM2155965v1_4828 111 CRILDLGTGTGAIALALASERPDCEIIAVDrMPDAVALAQRNAQHLAI 158
+                                        579***********************9999779999999887655544 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.12
+               trimmed_msa_crtF_hmm 279 eavlkllrkvraaLppggrLliaE 302
+                                        +++ +++++ r+aL +gg Ll+  
+  GCA_021559655.1_ASM2155965v1_4828 215 ADIVHIIEQSRNALVSGGFLLLEH 238
+                                        678899**************9865 PP
+
+>> GCA_021559655.1_ASM2155965v1_3388  UJL15364.1 class I SAM-dependent methyltransferase [Escherichia coli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   5.5e-05      0.04     192     304 ..      32     142 ..      26     156 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 5.5e-05
+               trimmed_msa_crtF_hmm 192 ydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaV.aerararleaaglsdrvevagGsflkdplPegaDl 266
+                                        +++k + r+lD+G G+G  l + a+ +    +   D+ +  +++ar+r e+ g+s+rv+++  +       e +D+
+  GCA_021559655.1_ASM2155965v1_3388  32 LRMKPETRILDLGSGSGEMLCTWARDHGITGTG-IDMSSLfTAQARRRAEELGVSERVHFIHNDAAGYVANEKCDV 106
+                                        56788999***************9999876666.587775268999**************9999888888888888 PP
+
+               trimmed_msa_crtF_hmm 267 isLvRvlhDHdDeavlkllrkvraaLppggrLliaEpm 304
+                                        ++ v   +       +  ++ + ++L+pgg +li+Ep 
+  GCA_021559655.1_ASM2155965v1_3388 107 AACVGATWIA--GGFAGTVELLAQSLKPGGIMLIGEPY 142
+                                        8887665533..33334444455677788888888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2876  (738434 residues searched)
+Passed MSV filter:                       113  (0.0392907); expected 57.5 (0.02)
+Passed bias filter:                       90  (0.0312935); expected 57.5 (0.02)
+Passed Vit filter:                        13  (0.00452017); expected 2.9 (0.001)
+Passed Fwd filter:                         4  (0.00139082); expected 0.0 (1e-05)
+Initial search space (Z):               2876  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9447.50
+//
+[ok]

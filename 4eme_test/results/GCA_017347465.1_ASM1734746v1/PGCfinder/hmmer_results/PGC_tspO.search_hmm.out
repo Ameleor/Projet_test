@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_017347465.1_ASM1734746v1/GCA_017347465.1_ASM1734746v1_protein.faa
+# output directed to file:         results/GCA_017347465.1_ASM1734746v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.1e-38  127.6  19.1    5.7e-38  127.4  19.1    1.0  1  GCA_017347465.1_ASM1734746v1_1494  BBO23899.1 tryptophan-rich senso
+  ------ inclusion threshold ------
+      0.013   12.6   4.8      0.083   10.0   1.7    2.4  2  GCA_017347465.1_ASM1734746v1_1331  BBO23736.1 adenylate and Guanyla
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017347465.1_ASM1734746v1_1494  BBO23899.1 tryptophan-rich sensory protein [Candidatus Nitrosymbiomonas proteolyti
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  127.4  19.1   4.5e-41   5.7e-38       5     151 ..      10     156 ..       5     157 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 127.4 bits;  conditional E-value: 4.5e-41
+               trimmed_msa_tspO_hmm   5 aalaavlvavlggal.telgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfaln 79 
+                                         + a++++a+ gg++  + g++y +L kP+w P   +Fg+vW+v+y+li+++++la   a ++++a + + lf  +
+  GCA_017347465.1_ASM1734746v1_1494  10 SFGATLIAALSGGVAsAQSGAFYATLAKPAWAPSPQIFGPVWSVLYVLIGISGTLAL-LAVGWNKAPVPTSLFGAQ 84 
+                                        45556666666665525789************************************9.888999999********* PP
+
+               trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                         v+n lW++lfF+ r   wa++e+vlLW+ +la i+++wr++ +a+ lllPYl+Wv++AaaLN++++r+N++
+  GCA_017347465.1_ASM1734746v1_1494  85 LVFNGLWTWLFFHWRLGGWAFAEIVLLWIVILANIIAFWRIRPVAGALLLPYLAWVGFAAALNFALWRMNTS 156
+                                        **********************************************************************85 PP
+
+>> GCA_017347465.1_ASM1734746v1_1331  BBO23736.1 adenylate and Guanylate cyclase catalytic domain protein [Candidatus Ni
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   1.7   6.4e-05     0.083      73     130 ..     132     190 ..     121     209 .. 0.75
+   2 ?    3.0   0.1    0.0094        12      21     113 ..     260     354 ..     253     389 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 6.4e-05
+               trimmed_msa_tspO_hmm  73 lalfalnavlnilWsllfFrlrrldwalvevvlLW.lsvlalilvlwrvsklaallllP 130
+                                        +++f ++ +  +l  + ++rl r+++al+ +v+ W ls  al++v+w   +   +  +P
+  GCA_017347465.1_ASM1734746v1_1331 132 VLFFGITLATLLLHWTCYYRLGRVRYALLGAVACWvLSATALMVVAWLRMQDQNVSNMP 190
+                                        677887777666666689*****************458889999988666555555555 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.0094
+               trimmed_msa_tspO_hmm  21 elgewyesLkkPswkPPdwaFgvv..WtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlr 94 
+                                        e  +wy++L+  + +P ++a g+    + +y+l+         +a+ +++  l+l+  a+++   +l +++ F  r
+  GCA_017347465.1_ASM1734746v1_1331 260 EERPWYRALETVRAQPLHYAIGLGagAAAVYMLLRGVVFGHLDDASLSRMPLLVLVTLAFQVSDIALMAIVSFVHR 335
+                                        5568*******99999999988751146677777666666666677777777777777777777788888888888 PP
+
+               trimmed_msa_tspO_hmm  95 rldwalvevvlLWlsvlal 113
+                                        ++  a++ +v+  ls l++
+  GCA_017347465.1_ASM1734746v1_1331 336 NVGGAILSAVVYQLSGLLM 354
+                                        8888888888777776555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       2561  (858570 residues searched)
+Passed MSV filter:                       110  (0.042952); expected 51.2 (0.02)
+Passed bias filter:                       41  (0.0160094); expected 51.2 (0.02)
+Passed Vit filter:                         5  (0.00195236); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000780945); expected 0.0 (1e-05)
+Initial search space (Z):               2561  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12758.66
+//
+[ok]

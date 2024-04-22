@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700155.1_ASM1670015v1/GCA_016700155.1_ASM1670015v1_protein.faa
+# output directed to file:         results/GCA_016700155.1_ASM1670015v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.6e-06   24.7   0.1    5.5e-06   23.6   0.1    1.6  1  GCA_016700155.1_ASM1670015v1_1644  QQS37934.1 MAG: ParA family prot
+    0.00079   16.6   0.2     0.0015   15.6   0.2    1.5  1  GCA_016700155.1_ASM1670015v1_443   QQS36799.1 MAG: iron-sulfur clus
+     0.0035   14.4   0.5     0.0073   13.4   0.1    1.6  2  GCA_016700155.1_ASM1670015v1_2906  QQS35495.1 MAG: AAA family ATPas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700155.1_ASM1670015v1_1644  QQS37934.1 MAG: ParA family protein [Ignavibacteriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   0.1   4.3e-09   5.5e-06      20      78 ..       2      62 ..       1      77 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 4.3e-09
+               trimmed_msa_bchL_hmm 20 akvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhdstftltk.klvptvidvl 78
+                                       ak++++   kgg+gk+tt+ nls  ++   k+ l i  dp+ +s+  l+  +  p+v +vl
+  GCA_016700155.1_ASM1670015v1_1644  2 AKIISIAnQKGGVGKTTTAINLSSLLAAAEKKTLLIDIDPQANSSSGLSVtNQSPSVYEVL 62
+                                       7888885269********************************9988876414567787777 PP
+
+>> GCA_016700155.1_ASM1670015v1_443  QQS36799.1 MAG: iron-sulfur cluster carrier protein ApbC [Ignavibacteriales bacteri
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.2   1.2e-06    0.0015      20      57 ..     101     138 ..      79     144 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 1.2e-06
+              trimmed_msa_bchL_hmm  20 akvfavygkggigksttssnlsvafsklgkrvlqigcd 57 
+                                        ++    gkgg+gkst + nl+v+++k g  v  i  d
+  GCA_016700155.1_ASM1670015v1_443 101 NRIAVASGKGGVGKSTVAVNLAVTLAKEGASVGLIDAD 138
+                                       4566668********************99988777665 PP
+
+>> GCA_016700155.1_ASM1670015v1_2906  QQS35495.1 MAG: AAA family ATPase [Ignavibacteriales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.1   5.7e-06    0.0073      21      58 ..      25      63 ..       7      79 .. 0.79
+   2 ?   -1.6   0.0      0.22   2.8e+02     156     205 ..     154     201 ..     120     255 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 5.7e-06
+               trimmed_msa_bchL_hmm 21 kvfa.vygkggigksttssnlsvafsklgkrvlqigcdp 58
+                                       k +a   gkgg gk+  + n++ a+s+l k+vl +  d 
+  GCA_016700155.1_ASM1670015v1_2906 25 KTIAfTSGKGGTGKTFLAVNMAYAISELNKKVLLVDLDS 63
+                                       3333157**************************998886 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.22
+               trimmed_msa_bchL_hmm 156 lqhadralivaandfdsifamnrivaaikaksknykvrlggvianrsket 205
+                                        l h+   +iv++ +  s++    +v+    ks+ y  +   ++   s++ 
+  GCA_016700155.1_ASM1670015v1_2906 154 LLHSSLNVIVTTPEPTSVMDAYVMVK--LLKSNGYAHKNIVIVNKCSTDE 201
+                                        56666677777766666644444333..3355555554443333334444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3812  (1383460 residues searched)
+Passed MSV filter:                       136  (0.0356768); expected 76.2 (0.02)
+Passed bias filter:                      104  (0.0272823); expected 76.2 (0.02)
+Passed Vit filter:                        14  (0.00367261); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.000786988); expected 0.0 (1e-05)
+Initial search space (Z):               3812  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 16331.56
+//
+[ok]

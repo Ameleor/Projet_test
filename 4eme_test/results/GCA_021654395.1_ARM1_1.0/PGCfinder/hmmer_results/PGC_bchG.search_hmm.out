@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_021654395.1_ARM1_1.0/GCA_021654395.1_ARM1_1.0_protein.faa
+# output directed to file:         results/GCA_021654395.1_ARM1_1.0/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    9.6e-15   50.5   3.6    1.3e-14   50.1   3.6    1.1  1  GCA_021654395.1_ARM1_1.0_445  BCS90988.1 MAG: prenyltransferas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021654395.1_ARM1_1.0_445  BCS90988.1 MAG: prenyltransferase [Candidatus Micrarchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.1   3.6   1.5e-17   1.3e-14      51     243 ..      47     235 ..      10     253 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 50.1 bits;  conditional E-value: 1.5e-17
+          trimmed_msa_bchG_hmm  51 P.lvcatsqavndWfdrhvdaine.PerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPl 129
+                                   P lv a+s ++nd+fd +vd  n+  +rp+  G i+ +  l+   i  l+s+++a+ l  +++   +  ++la++ys    
+  GCA_021654395.1_ARM1_1.0_445  47 PiLVSASSFIINDYFDVDVDRANKrNDRPLVNGSISKKEALFYYNISVLISIILALYLNIYAMLVIIAFILLAFLYSY--- 124
+                                   426889999***********9997268*************************************************96... PP
+
+          trimmed_msa_bchG_hmm 130 rlkknGwlGnaavglsyeglaWltgaavlagalPsaevll...lallysigahGimtlndfkaveGdrklgvkslpvklGv 207
+                                   +lk   ++Gn +++ s  +++++ g  +    l ++ +l+   +a +y+++     ++ d+   +Gd+   vks+++ +G+
+  GCA_021654395.1_ARM1_1.0_445 125 KLKLIPLIGNIVIA-STMAIPFIYGGLINGVRLDNT-ILVisaIAFFYGMAREIQGVIRDY---DGDKLRNVKSIAMIIGK 200
+                                   79********9998.5579****9987766555554.444122567788765544456666...8**************** PP
+
+          trimmed_msa_bchG_hmm 208 eraarvaclvmavpqvvvvalllawgkalhalvvav 243
+                                   + aa +a l+  ++ v+ +  +++++ ++++ ++ +
+  GCA_021654395.1_ARM1_1.0_445 201 RWAAALAFLMNLIAVVLSIY-VFYYDPPYRSDIIYI 235
+                                   ******98766666555444.456677776666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                        849  (247350 residues searched)
+Passed MSV filter:                        30  (0.0353357); expected 17.0 (0.02)
+Passed bias filter:                       12  (0.0141343); expected 17.0 (0.02)
+Passed Vit filter:                         2  (0.00235571); expected 0.8 (0.001)
+Passed Fwd filter:                         1  (0.00117786); expected 0.0 (1e-05)
+Initial search space (Z):                849  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11580.92
+//
+[ok]

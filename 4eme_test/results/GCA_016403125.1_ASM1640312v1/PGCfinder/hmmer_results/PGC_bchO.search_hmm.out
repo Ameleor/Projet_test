@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016403125.1_ASM1640312v1/GCA_016403125.1_ASM1640312v1_protein.faa
+# output directed to file:         results/GCA_016403125.1_ASM1640312v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-07   27.6   0.0    2.4e-06   23.4   0.0    2.0  2  GCA_016403125.1_ASM1640312v1_751  QQE68407.1 alpha/beta hydrolase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016403125.1_ASM1640312v1_751  QQE68407.1 alpha/beta hydrolase [Campylobacter jejuni subsp. jejuni]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.4   0.0   1.5e-09   2.4e-06      34     122 ..      25     111 ..       7     136 .. 0.86
+   2 !    2.3   0.0    0.0041       6.5     224     268 ..     182     225 ..     174     236 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 23.4 bits;  conditional E-value: 1.5e-09
+              trimmed_msa_bchO_hmm  34 gPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGHSA 110
+                                        P++L+lHG Ga    +++ +  + ++f  i +DL g g ++   ee l  +  a+  +  l++ +++  + +GHS 
+  GCA_016403125.1_ASM1640312v1_751  25 LPQILILHGWGADKKLMKQSFCPFLKDFCQIYMDLAGFGNSS--VEEILNTQDYANITELFLKQKKLNVCFFMGHSF 99 
+                                       69***************9988888899********9877665..56788999999999999**************** PP
+
+              trimmed_msa_bchO_hmm 111 Gaaialrlaldg 122
+                                       G+ +   la ++
+  GCA_016403125.1_ASM1640312v1_751 100 GGKVSTLLAKEK 111
+                                       **9988777655 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 0.0041
+              trimmed_msa_bchO_hmm 224 klktplllivgekDravppkearevaallpkarlveleglGHLah 268
+                                       k k++ l+  g++D+a p+   +++++ l+++++ +leg  H + 
+  GCA_016403125.1_ASM1640312v1_751 182 KQKAKSLIFWGKSDEATPLYCGEKMHQFLKNSTFYPLEG-DHFFF 225
+                                       5677889999***************************99.67665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1567  (478735 residues searched)
+Passed MSV filter:                        36  (0.0229738); expected 31.3 (0.02)
+Passed bias filter:                       35  (0.0223357); expected 31.3 (0.02)
+Passed Vit filter:                         4  (0.00255265); expected 1.6 (0.001)
+Passed Fwd filter:                         1  (0.000638162); expected 0.0 (1e-05)
+Initial search space (Z):               1567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13557.92
+//
+[ok]

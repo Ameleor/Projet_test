@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_022846075.1_ASM2284607v1/GCA_022846075.1_ASM2284607v1_protein.faa
+# output directed to file:         results/GCA_022846075.1_ASM2284607v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0019   14.7   0.4        0.4    7.0   0.0    2.3  2  GCA_022846075.1_ASM2284607v1_594  BDF66622.1 ATPase AAA [Oscillosp
+     0.0085   12.5   3.3      0.057    9.8   0.1    2.7  3  GCA_022846075.1_ASM2284607v1_681  BDF66709.1 transcriptional regul
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022846075.1_ASM2284607v1_594  BDF66622.1 ATPase AAA [Oscillospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.0   0.0   0.00026       0.4     235     310 ..     129     201 ..     113     223 .. 0.74
+   2 !    5.6   0.1   0.00071       1.1     429     447 ..     537     555 ..     532     557 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00026
+              trimmed_msa_ppsR_hmm 235 egesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLg 310
+                                       + +sll  +l+ +++ +a  +  +++   +++++  a+v td+ g +   N+ fle  +  +e+  +g++L + + 
+  GCA_022846075.1_ASM2284607v1_594 129 NMASLLSSKLQDSDDYSA-LDVIKQEREILMDEVEYAIVSTDNLGVVNYHNRRFLEYFH--QEKSCVGKPLYELIP 201
+                                       444444444544444444.667778888899*************************987..556677777766554 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00071
+              trimmed_msa_ppsR_hmm 429 AemLGLSRQSLYvKLrryg 447
+                                       A +LG+SR  LY K+++y 
+  GCA_022846075.1_ASM2284607v1_594 537 ARLLGISRATLYRKIKQYQ 555
+                                       789**************97 PP
+
+>> GCA_022846075.1_ASM2284607v1_681  BDF66709.1 transcriptional regulator [Oscillospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.1   3.8e-05     0.057     135     188 ..     201     253 ..     181     286 .. 0.74
+   2 ?   -1.4   0.0     0.097   1.5e+02       8      69 ..     297     354 ..     291     359 .. 0.81
+   3 !    2.2   0.1    0.0075        11     410     440 ..     611     641 ..     603     645 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 3.8e-05
+              trimmed_msa_ppsR_hmm 135 lreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfae 188
+                                        r+  tr ++ f++ +e + i d e+++i   NpaAa +++ ++++lvg+++++
+  GCA_022846075.1_ASM2284607v1_681 201 ERKQSTRLKIAFDSLAEGICITD-ERGTISVFNPAAAGIFKLNHQQLVGENIHD 253
+                                       46667788888888887776655.567788888888888888888888877766 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.097
+              trimmed_msa_ppsR_hmm   8 klvaaaaDialvldaegviedvavgsedlakeeleewvgkrwsdtvtvesrpKveallaeaa 69 
+                                        lv++  D++ + + eg i++   ++   ak+++++++g+    t ++e+ +K++al a+ +
+  GCA_022846075.1_ASM2284607v1_681 297 GLVSTFQDVTKIQQLEGQIRRQLNQKGFQAKYTFDSIIGS----THAMETAKKLAALYAQTD 354
+                                       6899999999999999999999988888888899999886....567888888888887765 PP
+
+  == domain 3  score: 2.2 bits;  conditional E-value: 0.0075
+              trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLY 440
+                                       E+  I a Le  ++NR  A+  LG+ R  L+
+  GCA_022846075.1_ASM2284607v1_681 611 EQQYISAILERCGNNRTLASKQLGIGRTTLW 641
+                                       6667999********************9886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       2991  (958238 residues searched)
+Passed MSV filter:                       109  (0.0364427); expected 59.8 (0.02)
+Passed bias filter:                       79  (0.0264126); expected 59.8 (0.02)
+Passed Vit filter:                        11  (0.0036777); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000668673); expected 0.0 (1e-05)
+Initial search space (Z):               2991  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 14292.90
+//
+[ok]

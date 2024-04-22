@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_014171555.1_ASM1417155v1/GCA_014171555.1_ASM1417155v1_protein.faa
+# output directed to file:         results/GCA_014171555.1_ASM1417155v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0069   13.5   9.9     0.0084   13.2   9.9    1.3  1  GCA_014171555.1_ASM1417155v1_3717  QNA97120.1 4-hydroxybenzoate oct
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014171555.1_ASM1417155v1_3717  QNA97120.1 4-hydroxybenzoate octaprenyltransferase [Stenotrophomonas maltophilia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   9.9   2.6e-06    0.0084      28     145 ..      22     133 ..       5     270 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_bchG_hmm  28 vvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePerpiPsGripGrWGlyialiltllsllva 103
+                                          + g +      ++ aGv l+    c     ++ W+d hv+     +rp+ +G i+Gr  l +  +l l+++ + 
+  GCA_014171555.1_ASM1417155v1_3717  22 LAAGGLPPLWTLFVFTAGVWLTRSAGCVINDYADRWLDPHVERT--KARPLATGAISGRAALALFAVLMLVAFGLV 95 
+                                        44667777777888999999999999998888888888888864..68**************************** PP
+
+               trimmed_msa_bchG_hmm 104 aalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavgls 145
+                                        ++l  l+++ + +g+ la  y      lk+   l +   g+s
+  GCA_014171555.1_ASM1417155v1_3717  96 LTLNGLTIGLSFIGVFLAASYPY----LKRYTHLPQVYLGMS 133
+                                        *****************998842....555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3191  (959404 residues searched)
+Passed MSV filter:                       183  (0.0573488); expected 63.8 (0.02)
+Passed bias filter:                       62  (0.0194296); expected 63.8 (0.02)
+Passed Vit filter:                         5  (0.00156691); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000313381); expected 0.0 (1e-05)
+Initial search space (Z):               3191  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18589.62
+//
+[ok]

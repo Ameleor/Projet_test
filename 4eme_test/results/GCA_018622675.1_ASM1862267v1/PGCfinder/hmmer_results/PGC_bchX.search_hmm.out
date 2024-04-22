@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_018622675.1_ASM1862267v1/GCA_018622675.1_ASM1862267v1_protein.faa
+# output directed to file:         results/GCA_018622675.1_ASM1862267v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-07   27.3   0.1    1.8e-07   26.8   0.1    1.3  1  GCA_018622675.1_ASM1862267v1_473  QWC00445.1 P-loop NTPase [Mycopl
+    5.2e-06   21.9   0.1    0.00033   16.0   0.0    2.2  2  GCA_018622675.1_ASM1862267v1_114  QWC00102.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018622675.1_ASM1862267v1_473  QWC00445.1 P-loop NTPase [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.1   2.4e-10   1.8e-07      15      71 ..      82     137 ..      71     182 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 2.4e-10
+              trimmed_msa_bchX_hmm  15 tgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfgg 71 
+                                       + + +    i+   gkgg+gks   anl+y l ++gkkv +i  d        ++gg
+  GCA_018622675.1_ASM1862267v1_473  82 S-RNKDAKTILVASGKGGVGKSTVTANLAYALKRMGKKVAIIDADIYGANMPKILGG 137
+                                       3.333344466678****************************999877666666666 PP
+
+>> GCA_018622675.1_ASM1862267v1_114  QWC00102.1 ATP-binding protein [Mycoplasmatota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.7   0.0    0.0026       1.9      23      46 ..       2      25 ..       1      35 [. 0.86
+   2 !   16.0   0.0   4.5e-07   0.00033     201     256 ..     208     262 ..     204     274 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 3.7 bits;  conditional E-value: 0.0026
+              trimmed_msa_bchX_hmm 23 qiiaiygkggigksftlanlsyml 46
+                                      qi  + gkgg gk++   nl+ ++
+  GCA_018622675.1_ASM1862267v1_114  2 QIAVLSGKGGAGKTLLAVNLANLI 25
+                                      888899********9999998765 PP
+
+  == domain 2  score: 16.0 bits;  conditional E-value: 4.5e-07
+              trimmed_msa_bchX_hmm 201 aglvinkd.dgtgeaqafaeavgipvlaaipadedirrksanyeiigkpesewgslf 256
+                                       +g+vink  +  g  +a+a+++ ip+l  ip d+++    ++ e++++  + + s f
+  GCA_018622675.1_ASM1862267v1_114 208 SGIVINKAvEDNGLVEAYAKEIHIPILGYIPFDKNLALSNSKLEMVSN--GAFKSYF 262
+                                       69****97467899**********************999999998864..3344444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1470  (502221 residues searched)
+Passed MSV filter:                        58  (0.0394558); expected 29.4 (0.02)
+Passed bias filter:                       43  (0.0292517); expected 29.4 (0.02)
+Passed Vit filter:                         9  (0.00612245); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00136054); expected 0.0 (1e-05)
+Initial search space (Z):               1470  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16218.67
+//
+[ok]

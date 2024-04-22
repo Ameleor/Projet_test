@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699105.1_ASM1669910v1/GCA_016699105.1_ASM1669910v1_protein.faa
+# output directed to file:         results/GCA_016699105.1_ASM1669910v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00035   16.0   0.0     0.0005   15.5   0.0    1.2  1  GCA_016699105.1_ASM1669910v1_727  QQR53179.1 peptide chain release
+  ------ inclusion threshold ------
+      0.017   10.4   0.0      0.028    9.7   0.0    1.3  1  GCA_016699105.1_ASM1669910v1_856  QQR51842.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699105.1_ASM1669910v1_727  QQR53179.1 peptide chain release factor N(5)-glutamine methyltransferase [bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   6.5e-07    0.0005     196     236 ..     117     156 ..     105     180 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 6.5e-07
+              trimmed_msa_crtF_hmm 196 rhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerar 236
+                                       ++ rl+D+G G+Ga + a+a++ p+l+++  D+ +  e a 
+  GCA_016699105.1_ASM1669910v1_727 117 QNGRLIDIGTGSGAIAIAIAKNRPDLHITATDITHT-ELAV 156
+                                       6789*************************9999875.3333 PP
+
+>> GCA_016699105.1_ASM1669910v1_856  QQR51842.1 class I SAM-dependent methyltransferase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   3.7e-05     0.028     198     301 ..      49     147 ..      34     158 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 3.7e-05
+              trimmed_msa_crtF_hmm 198 rrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisLvRvlh 274
+                                       rr+lD G G+G   +++a    ++ + +    +     +++  +++    ++ +  ++ k +l e++Dl+ L+ vl+
+  GCA_016699105.1_ASM1669910v1_856  49 RRVLDAGCGNGYLSRKLA-MLGAVVTGVEPSNNLFRYCSEK--EREAPLGITYMQCDLSKMELNEEYDLVVLINVLM 122
+                                       566666666664333333.3344444444444444555543..33344458889999999***************** PP
+
+              trimmed_msa_crtF_hmm 275 DHdDeavlkllrkvraaLppggrLlia 301
+                                       D ++ +  + l ++ + L+pgg+++i+
+  GCA_016699105.1_ASM1669910v1_856 123 DIPEYQ--TALVNCIKVLKPGGEVIIS 147
+                                       *98765..5688999**********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1531  (352683 residues searched)
+Passed MSV filter:                        59  (0.0385369); expected 30.6 (0.02)
+Passed bias filter:                       39  (0.0254735); expected 30.6 (0.02)
+Passed Vit filter:                         8  (0.00522534); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00130634); expected 0.0 (1e-05)
+Initial search space (Z):               1531  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10013.83
+//
+[ok]

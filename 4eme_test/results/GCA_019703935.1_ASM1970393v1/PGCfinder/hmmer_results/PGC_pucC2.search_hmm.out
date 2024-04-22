@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_019703935.1_ASM1970393v1/GCA_019703935.1_ASM1970393v1_protein.faa
+# output directed to file:         results/GCA_019703935.1_ASM1970393v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.017   12.0   0.3      0.022   11.6   0.3    1.1  1  GCA_019703935.1_ASM1970393v1_613  BCN47312.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019703935.1_ASM1970393v1_613  BCN47312.1 hypothetical protein RE9416_06130 [Prescottella equi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.3   4.6e-06     0.022     147     215 ..       1      69 [.       1      83 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 4.6e-06
+             trimmed_msa_pucC2_hmm 147 mmiaGiavtagvagklldPfsaerlvavaaavslvallltllavlglerreaaaaeekeeekasfreal 215
+                                       m++aG++v a va+ ll   +  +l+ v  +v+l a +l ++a+++  r++a  +++ ++ ++ ++ +l
+  GCA_019703935.1_ASM1970393v1_613   1 MIVAGLVVLAVVASLLLIFSESVQLLRVGLVVALWAATLGAIAMTKYRRESALDKAKVRDLQKVYELQL 69 
+                                       899*******99988887667789**********************99998888777666655555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       4911  (1583834 residues searched)
+Passed MSV filter:                       501  (0.102016); expected 98.2 (0.02)
+Passed bias filter:                      111  (0.0226023); expected 98.2 (0.02)
+Passed Vit filter:                         5  (0.00101812); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203625); expected 0.0 (1e-05)
+Initial search space (Z):               4911  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 22701.60
+//
+[ok]

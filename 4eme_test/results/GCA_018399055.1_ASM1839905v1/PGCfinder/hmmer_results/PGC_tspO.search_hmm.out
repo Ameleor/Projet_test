@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_018399055.1_ASM1839905v1/GCA_018399055.1_ASM1839905v1_protein.faa
+# output directed to file:         results/GCA_018399055.1_ASM1839905v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.9e-38  127.6  20.5    4.6e-38  127.4  20.5    1.1  1  GCA_018399055.1_ASM1839905v1_1886  QVL55531.1 MAG: tryptophan-rich 
+    2.7e-08   30.7  17.9    3.3e-08   30.4  17.9    1.2  1  GCA_018399055.1_ASM1839905v1_513   QVL56114.1 MAG: tryptophan-rich 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018399055.1_ASM1839905v1_1886  QVL55531.1 MAG: tryptophan-rich sensory protein [Simkaniaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  127.4  20.5   4.7e-41   4.6e-38       8     149 ..      17     160 .]      10     160 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 127.4 bits;  conditional E-value: 4.7e-41
+               trimmed_msa_tspO_hmm   8 aavlvavlggalt..elgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                         +++v +++g +t  ++g+wy++L+k sw+PP w+Fg++Wt++y+l++++ +++  +++++++++ +  lf  + +
+  GCA_018399055.1_ASM1839905v1_1886  17 PVLCVQIVSGRITigSIGSWYKNLTKASWTPPAWVFGPAWTLLYILMTISVWIIYCTKSTKNQHRIAYSLFFSQLL 92 
+                                        55677788887664489**************************************9999999999*********** PP
+
+               trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                         n+lWs lfF+l+ + wal+++ +L l ++++ + ++r+++laallllPYl+W+ +A+ LN+++++lN
+  GCA_018399055.1_ASM1839905v1_1886  93 ANALWSFLFFKLQMPGWALIDLGILILLIILTSICFFRIRRLAALLLLPYLMWTIYAFSLNVAIWWLN 160
+                                        *******************************************************************9 PP
+
+>> GCA_018399055.1_ASM1839905v1_513  QVL56114.1 MAG: tryptophan-rich sensory protein [Simkaniaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4  17.9   3.4e-11   3.3e-08      26     149 ..      37     159 ..      11     162 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 3.4e-11
+              trimmed_msa_tspO_hmm  26 yesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrrldwalve 102
+                                       yes +   w+ P ++  + Wtv+y++ia+a++++   ++ +++++ +la++ ++ +ln+lW + f+ +    ++ + 
+  GCA_018399055.1_ASM1839905v1_513  37 YESGQSLPWTFPLHVLFPLWTVLYIFIAIAGAMVY-IKRASHIRSFALAAWIIQLALNMLWPVCFYYIPIQIASPIL 112
+                                       5555566688888887789***************9.677778888***********************999999999 PP
+
+              trimmed_msa_tspO_hmm 103 vvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       +++L++++++++ + + ++++  ++ lP+++ v + ++  +    lN
+  GCA_018399055.1_ASM1839905v1_513 113 ITILFMTLIIFMFYGFLLDRKVFFFSLPFFLMVVYKMIFLWIFYILN 159
+                                       *****************************999988777666555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       1967  (661791 residues searched)
+Passed MSV filter:                        87  (0.0442298); expected 39.3 (0.02)
+Passed bias filter:                       24  (0.0122013); expected 39.3 (0.02)
+Passed Vit filter:                         2  (0.00101678); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00101678); expected 0.0 (1e-05)
+Initial search space (Z):               1967  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13655.30
+//
+[ok]

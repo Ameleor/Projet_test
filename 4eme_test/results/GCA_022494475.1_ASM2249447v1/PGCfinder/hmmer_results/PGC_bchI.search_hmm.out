@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_022494475.1_ASM2249447v1/GCA_022494475.1_ASM2249447v1_protein.faa
+# output directed to file:         results/GCA_022494475.1_ASM2249447v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      3e-08   31.6   6.1    7.2e-05   20.5   0.0    3.5  3  GCA_022494475.1_ASM2249447v1_555   HCMGGG_02965 YifB family Mg chel
+    0.00018   19.2   0.8      0.012   13.1   0.1    2.1  2  GCA_022494475.1_ASM2249447v1_3878  HCMGGG_20125 Phage shock protein
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022494475.1_ASM2249447v1_555  HCMGGG_02965 YifB family Mg chelatase-like AAA ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.0   0.0   7.6e-05      0.23       9      62 ..     193     244 ..     189     271 .. 0.83
+   2 !   20.5   0.0   2.4e-08   7.2e-05     125     186 ..     286     347 ..     273     353 .. 0.92
+   3 ?    0.7   3.3     0.025        75     236     331 ..     401     495 ..     368     502 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 7.6e-05
+              trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcr 62 
+                                       ++gq++ k+al ++a       +l++G  GtGk+  +  l  llP+++  ++ +
+  GCA_022494475.1_ASM2249447v1_555 193 VIGQQQGKRALEIVAAGG--HNLLLIGPPGTGKTMLASRLPGLLPPLSNQEALE 244
+                                       799********9988655..4699**********************99876654 PP
+
+  == domain 2  score: 20.5 bits;  conditional E-value: 2.4e-08
+              trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        pG ++ a+ G l++de+  +e  ++d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_022494475.1_ASM2249447v1_555 286 VPGEISLAHNGVLFLDELPEFERRVLDALREPIESGKIHISRSRAKIDYPARFQLIAAMNPS 347
+                                       69999*******************************************************95 PP
+
+  == domain 3  score: 0.7 bits;  conditional E-value: 0.025
+              trimmed_msa_bchI_hmm 236 kedakvrkkilaarkr..lekvevpdavlekaaklclalg.tdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                       +++a+vr+++laar+r  l++ + + ++ ++  k c +l   d +  e tl +   ++ a +   +v     +++a 
+  GCA_022494475.1_ASM2249447v1_555 401 ESSATVRQRVLAARERqmLRQNKLNAHLENREMKNCCRLRrEDAVWLEQTLTQLGLSIRAWQRLLKVA----RTIAD 473
+                                       44455566666555431144444444443344444444431455555555555555555554444443....23444 PP
+
+              trimmed_msa_bchI_hmm 310 lalrhrlrrdpldeagstarve 331
+                                       la    + r  l ea s   ++
+  GCA_022494475.1_ASM2249447v1_555 474 LAEVEEIERCHLQEALSYRAID 495
+                                       4444444444444444444444 PP
+
+>> GCA_022494475.1_ASM2249447v1_3878  HCMGGG_20125 Phage shock protein F
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.8   0.0    0.0014       4.2      30      45 ..      36      51 ..      25      62 .. 0.81
+   2 !   13.1   0.1   4.1e-06     0.012     114     202 ..      86     178 ..      53     186 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.0014
+               trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkstav 45
+                                        vlv+G+rGtGk   +
+  GCA_022494475.1_ASM2249447v1_3878 36 PVLVIGERGTGKELIA 51
+                                       59**********8655 PP
+
+  == domain 2  score: 13.1 bits;  conditional E-value: 4.1e-06
+               trimmed_msa_bchI_hmm 114 eraltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP.... 185
+                                        e    +G  + +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n     
+  GCA_022494475.1_ASM2249447v1_3878  86 EAGAFTGASKRHPGRFERADGGTLFLDELATAPMLVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNAdlpq 159
+                                        455567888889******************99999999*********9..89999998777777777777743335 PP
+
+               trimmed_msa_bchI_hmm 186 ..eeGelrPqlldrfGlsv 202
+                                          eeG++r  lldr+ + v
+  GCA_022494475.1_ASM2249447v1_3878 160 mvEEGHFRADLLDRLAFDV 178
+                                        559***********87765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5910  (1618822 residues searched)
+Passed MSV filter:                       303  (0.051269); expected 118.2 (0.02)
+Passed bias filter:                      224  (0.0379019); expected 118.2 (0.02)
+Passed Vit filter:                        47  (0.00795262); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000338409); expected 0.1 (1e-05)
+Initial search space (Z):               5910  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 7436.18
+//
+[ok]

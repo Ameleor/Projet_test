@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_017101655.1_ASM1710165v1/GCA_017101655.1_ASM1710165v1_protein.faa
+# output directed to file:         results/GCA_017101655.1_ASM1710165v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.016   11.0   0.0      0.023   10.5   0.0    1.1  1  GCA_017101655.1_ASM1710165v1_1854  QPW57184.1 sigma 54-interacting 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017101655.1_ASM1710165v1_1854  QPW57184.1 sigma 54-interacting transcriptional regulator [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   8.5e-06     0.023      71     215 ..     198     342 ..     190     361 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 8.5e-06
+               trimmed_msa_bchD_hmm  71 agrpvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedealpe 146
+                                        +g    ++GL+++adgg+l+l    Rl+++   ++   +d+g+   ++ g + r+ ++   ++    +++  al +
+  GCA_017101655.1_ASM1710165v1_1854 198 TGADTEKSGLVQKADGGILFLDEIHRLPPEGQEMIFYFMDTGT--YNKLGETDRKRKANVFIIGATTEDPASALLK 271
+                                        5777889***********************************5..5666655555555444544555667778889 PP
+
+               trimmed_msa_bchD_hmm 147 aLldRlalrldldeialrdleelaaeaedi..eaararlpkvtleeealealvataaalGidslRapllal 215
+                                        + + R+ +++++ +++ r+le+     e +  ++ ++  ++++++ ++++al+  a+   i  l+ +++ +
+  GCA_017101655.1_ASM1710165v1_1854 272 TFIRRIPIMITIPSFEERNLEDKINIIEYLlsNESHRVNKTIKISCDVIKALIGSASFGNIGQLKSNIQLI 342
+                                        9999************9999987775554411333444568999999999999999877777776666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2722  (781570 residues searched)
+Passed MSV filter:                        60  (0.0220426); expected 54.4 (0.02)
+Passed bias filter:                       53  (0.019471); expected 54.4 (0.02)
+Passed Vit filter:                        10  (0.00367377); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000734754); expected 0.0 (1e-05)
+Initial search space (Z):               2722  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8283.63
+//
+[ok]

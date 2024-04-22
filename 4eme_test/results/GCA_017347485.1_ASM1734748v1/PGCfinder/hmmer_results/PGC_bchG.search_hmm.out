@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_017347485.1_ASM1734748v1/GCA_017347485.1_ASM1734748v1_protein.faa
+# output directed to file:         results/GCA_017347485.1_ASM1734748v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.9e-07   27.4  13.2    3.9e-07   27.4  13.2    1.9  2  GCA_017347485.1_ASM1734748v1_2816  BBO22117.1 prenyltransferase [Ca
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017347485.1_ASM1734748v1_2816  BBO22117.1 prenyltransferase [Candidatus Desulfobacillus denitrificans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.1     0.022        69     167     196 ..      54      85 ..      27     104 .. 0.69
+   2 !   27.4  13.2   1.3e-10   3.9e-07      85     282 ..     111     308 ..      97     314 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.022
+               trimmed_msa_bchG_hmm 167 vlllallysigah.Gimtlndf.kaveGdrkl 196
+                                            ++++++ ah Gi +lnd+  a++G  + 
+  GCA_017347485.1_ASM1734748v1_2816  54 AAFFTVFFALVAHaGINVLNDYyDALNGTDAA 85 
+                                        44556778888887899999963678876555 PP
+
+  == domain 2  score: 27.4 bits;  conditional E-value: 1.3e-10
+               trimmed_msa_bchG_hmm  85 GrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlag 160
+                                        G +G+ +  ++    l++a++ +   +   + gl + WaysapPl+l + Gw G+aa++  +  l  + g+  ++ 
+  GCA_017347485.1_ASM1734748v1_2816 111 GLFGYALLAAVIPAGLWLAWTSAGGLILVGLAGLFVGWAYSAPPLKLMSRGW-GEAAIACGW--LIVVVGTDYVQR 183
+                                        66666555555555677777766666777899******************96.888877665..777888888886 PP
+
+               trimmed_msa_bchG_hmm 161 alPsaevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkal 236
+                                         + sa  ++  l y++    ++ +n f   + d + g +   v+lG++ra     l+  ++   +++ ++    ++
+  GCA_017347485.1_ASM1734748v1_2816 184 GAFSALPCVAGLPYALHVANVLFINQFPDYKADAAAGKRNWVVRLGPRRARYGYPLIAGIAHGWLIGAVALGALPW 259
+                                        6666666677888*************************************************************** PP
+
+               trimmed_msa_bchG_hmm 237 halvvavllvvqlvlmarllk...dPkekalwynavgvtlyvlGmlvsa 282
+                                        +al+  v l+  lv+ + ll+   +P+  a+   a+  +  + G+l++a
+  GCA_017347485.1_ASM1734748v1_2816 260 TALAALVALAPALVATRGLLAhaaEPRLLAPAIRATIGAAMLHGILLAA 308
+                                        ***9999999999998888752226777788777776677778888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3104  (977222 residues searched)
+Passed MSV filter:                       141  (0.0454253); expected 62.1 (0.02)
+Passed bias filter:                       50  (0.0161082); expected 62.1 (0.02)
+Passed Vit filter:                         8  (0.00257732); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000322165); expected 0.0 (1e-05)
+Initial search space (Z):               3104  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17277.11
+//
+[ok]

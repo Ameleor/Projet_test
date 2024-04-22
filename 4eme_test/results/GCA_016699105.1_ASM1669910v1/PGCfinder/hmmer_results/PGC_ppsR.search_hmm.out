@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699105.1_ASM1669910v1/GCA_016699105.1_ASM1669910v1_protein.faa
+# output directed to file:         results/GCA_016699105.1_ASM1669910v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.5e-09   33.1   0.0    3.3e-05   19.5   0.0    2.4  2  GCA_016699105.1_ASM1669910v1_782   QQR53232.1 PAS domain S-box prot
+    3.1e-05   19.6   0.7    7.1e-05   18.4   0.3    1.7  2  GCA_016699105.1_ASM1669910v1_1011  QQR51975.1 PAS domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699105.1_ASM1669910v1_782  QQR53232.1 PAS domain S-box protein [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.0   4.4e-08   3.3e-05     149     289 ..      10     152 ..       4     161 .. 0.77
+   2 !   11.1   0.0   1.6e-05     0.012     132     199 ..     392     458 ..     386     484 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 4.4e-08
+              trimmed_msa_ppsR_hmm 149 sseavlivdaesrriveaNpaAarLlgeeakelvgks.faelfeaesre...elqallaavrasgeaeeievrla.r 220
+                                        ++ +livd+++ ++v aNpaA+++ + +++ l  ++ fa+  ++++ +   ++++    ++ +g++++++ + + +
+  GCA_016699105.1_ASM1669910v1_782  10 LRDGILIVDVHK-QVVYANPAACQIWDLTTSGLRKHPdFASISQNADLKidiKAAEKCIDLAFKGQVSSCSFSQTqS 85 
+                                       56789****976.6888****************98743666666665542224555566677778888887765505 PP
+
+              trimmed_msa_ppsR_hmm 221 kgrevsvsaslfrqegesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeafl 289
+                                        g +++ ++s +  ++e+   v ++ ++ +      ++ kl++++++l+d++v++d++g +++aN++  
+  GCA_016699105.1_ASM1669910v1_782  86 PGLHYEAQMSQYMSSDEQQKTVVIAVHDITPL--YLEKLKLTTMINHLQDGVVMVDKQGIVVEANTEWQ 152
+                                       57899999999999999998898988888876..5567899************************9865 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 1.6e-05
+              trimmed_msa_ppsR_hmm 132 YerlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelq 199
+                                       Y+ + +  +r+  +f+ ++e ++i d  +++iv  Npa +++ g +a++ +gk f + +++   e+++
+  GCA_016699105.1_ASM1669910v1_782 392 YNDVNARRERWEAVFRFTEEGIVIFDQ-KGTIVGFNPASTTITGYQATDAIGKAFGKVIKTVGPETAN 458
+                                       556666678999***********9995.689************************9998876655554 PP
+
+>> GCA_016699105.1_ASM1669910v1_1011  QQR51975.1 PAS domain-containing sensor histidine kinase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.3   9.2e-08   7.1e-05     245     372 ..     441     567 ..     429     587 .. 0.76
+   2 ?   -3.8   0.0       0.5   3.8e+02      61      94 ..     656     689 ..     654     699 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 9.2e-08
+               trimmed_msa_ppsR_hmm 245 spaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgragvDlkvll 320
+                                        s+ ++++++  +++a+l + +e+l+ ++v+td++g i++ N+a  ++  la+++     +L + ++r++   + ++
+  GCA_016699105.1_ASM1669910v1_1011 441 SQLSDRTRELRHSHARLEASVEALSHGFVMTDPNGLIITRNAAVARVLGLAAATVPDLAELASCISRSE--AAKFM 514
+                                        555555667778889999999999999999999999999999999999999999999999999999985..67889 PP
+
+               trimmed_msa_ppsR_hmm 321 anlreegsvrlfatklrgelgteeeVevsAvsvadgeqpclgfv..irdvsrre 372
+                                        + +++ ++ ++ +tkl+   +++++ ++  +s+++ ++++lg+v  i+d+++ +
+  GCA_016699105.1_ASM1669910v1_1011 515 DGIAKIQNGKQTQTKLQITTNKNKDLSIFITSIRS-DNHILGLVilIQDITEEA 567
+                                        99999999999999999999999999998888887.444455441155555544 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 0.5
+               trimmed_msa_ppsR_hmm  61 veallaeaaeekatrwrqvnhaaeagadlpvrys 94 
+                                        v + la+ ++++ ++  +++ ++++++d p+  +
+  GCA_016699105.1_ASM1669910v1_1011 656 VRETLADLSSTAREKHLKLSISCNGKTDAPIIVR 689
+                                        6788999999999999999999999999999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1531  (352683 residues searched)
+Passed MSV filter:                        55  (0.0359242); expected 30.6 (0.02)
+Passed bias filter:                       37  (0.0241672); expected 30.6 (0.02)
+Passed Vit filter:                         2  (0.00130634); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00130634); expected 0.0 (1e-05)
+Initial search space (Z):               1531  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9200.06
+//
+[ok]

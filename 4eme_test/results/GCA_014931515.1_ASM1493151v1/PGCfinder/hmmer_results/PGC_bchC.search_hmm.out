@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_014931515.1_ASM1493151v1/GCA_014931515.1_ASM1493151v1_protein.faa
+# output directed to file:         results/GCA_014931515.1_ASM1493151v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.9e-11   39.5   0.0    4.2e-09   32.5   0.0    2.8  1  GCA_014931515.1_ASM1493151v1_289  QOR28428.1 L-threonine 3-dehydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014931515.1_ASM1493151v1_289  QOR28428.1 L-threonine 3-dehydrogenase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.5   0.0   2.8e-12   4.2e-09       1     310 []       1     350 [.       1     350 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 32.5 bits;  conditional E-value: 2.8e-12
+              trimmed_msa_bchC_hmm   1 metlavvlekPeelalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee 77 
+                                       m++la + ++P    +++  + + + +dv+++i+ ++i  Gt+  +++    +   +  P++ G+e  G+vv+ g+ 
+  GCA_014931515.1_ASM1493151v1_289   1 MKALAKLKKQPGIWMINDAPIPEYGYNDVLIKIKKTAI-CGTDLHIYNWDKWSQNTIPVPMITGHEFAGEVVAKGDG 76 
+                                       6788888899999999999*****************99.59******************************998875 PP
+
+              trimmed_msa_bchC_hmm  78 .sklkvgerv.....fvPG..akcfedvrglf...........Ggaasrlvvpaarvvkvdeelgee.gvllalaat 134
+                                        +++ +g+rv     +v G   +c ++ r l            G+ a+ lv+pa  v+k++++++++ +  +     
+  GCA_014931515.1_ASM1493151v1_289  77 vTSVDIGDRVsgeghLVCGqcRNCRAGKRHLCrktigigvnvqGAFAEYLVMPAVNVFKIPDSISDDiASTFDPMGN 153
+                                       2678899988444445666433666665544222222222233899*****************99873445666666 PP
+
+              trimmed_msa_bchC_hmm 135 arha.lagkekkapdlivGhGvlGrllarltvaagaeapvvWetnaaraegaegyev.....idp...eederrdyk 202
+                                       a h+ l+ + + +  li G G +G +  +++  +ga++ v+ ++n+ r + a+++ +     ++p   +++  ++ +
+  GCA_014931515.1_ASM1493151v1_289 154 AIHTaLSFNLTGEDVLITGAGPIGLMAVKIARFCGARRIVITDINEYRLQMARDFGAtvalnVAPfknQDELVKQMR 230
+                                       766505555566677899****************************9999988775411222333221232233443 PP
+
+              trimmed_msa_bchC_hmm 203 ai.............vdasGdaevldkliarlakggeivlaGfyeeplsfafppafmrearlr.vaaewkkedlaav 265
+                                       ++             +++sG ++ + +++  +++gg++ l G  + ++s  + + + +  +l+ +      e    +
+  GCA_014931515.1_ASM1493151v1_289 231 KVmsdigmtegfdvgLEMSGINSAISMMLDVMNHGGKLSLLGISAGDISVDWGAILFKGLTLKgIYGREMFETWYLM 307
+                                       3311112222211114568999999999999****************************999834444444555566 PP
+
+              trimmed_msa_bchC_hmm 266 kalvesGrlsldglithrasaeeaeeayrtafedpaClkmvldWr 310
+                                       ++++++G ++++ +ithr + +e ++ ++  ++  +C k++ldW+
+  GCA_014931515.1_ASM1493151v1_289 308 TSMLQAG-MDMNPIITHRLHIDEFQKGFEI-MKSGQCGKVILDWS 350
+                                       7777777.7*******************86.68899********5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       1506  (435043 residues searched)
+Passed MSV filter:                        29  (0.0192563); expected 30.1 (0.02)
+Passed bias filter:                       23  (0.0152722); expected 30.1 (0.02)
+Passed Vit filter:                         2  (0.00132802); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000664011); expected 0.0 (1e-05)
+Initial search space (Z):               1506  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 12397.37
+//
+[ok]

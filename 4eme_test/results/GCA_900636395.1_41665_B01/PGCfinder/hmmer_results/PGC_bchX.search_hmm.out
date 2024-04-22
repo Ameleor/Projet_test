@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_900636395.1_41665_B01/GCA_900636395.1_41665_B01_protein.faa
+# output directed to file:         results/GCA_900636395.1_41665_B01/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+      4e-05   20.1   0.0      7e-05   19.3   0.0    1.4  1  GCA_900636395.1_41665_B01_2442  VED77083.1 Iron-sulfur cluster a
+     0.0006   16.2   0.1     0.0046   13.3   0.0    2.0  2  GCA_900636395.1_41665_B01_113   VED70593.1 capsular polysacchari
+     0.0067   12.8   0.1      0.018   11.3   0.0    1.6  2  GCA_900636395.1_41665_B01_3004  VED78781.1 Tyrosine-protein kina
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900636395.1_41665_B01_2442  VED77083.1 Iron-sulfur cluster assembly/repair protein ApbC [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   6.9e-08     7e-05      22      59 ..     110     148 ..      89     169 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 6.9e-08
+            trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      + iai  gkgg+gks    nl+  la++gkkv l+  d
+  GCA_900636395.1_41665_B01_2442 110 VEFIAIaSGKGGVGKSTVAVNLAVALAREGKKVGLVDAD 148
+                                     566787359**************************9988 PP
+
+>> GCA_900636395.1_41665_B01_113  VED70593.1 capsular polysaccharide synthesis enzyme [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   4.5e-06    0.0046      25      73 ..      45      93 ..      28     121 .. 0.83
+   2 ?    0.9   0.0     0.027        27     182     245 ..     162     225 ..     159     228 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 4.5e-06
+           trimmed_msa_bchX_hmm 25 iaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggka 73
+                                   +    k g gks  ++n++   aq g k l+i  d +  t   +f  ++
+  GCA_900636395.1_41665_B01_113 45 LVTSEKPGAGKSTVVSNVAITYAQAGYKTLVIDGDMRKPTQNYIFNEQN 93
+                                   5566799*********************************999998765 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.027
+           trimmed_msa_bchX_hmm 182 nnvcsaveyfrklggnvgvaglvinkddgtgeaqafaeavgipvlaaipadedirrksanyeii 245
+                                    n v +a  y r +   + v     n  +   +a+++ e++g  +l  i ++ ++ + s+ y+  
+  GCA_900636395.1_41665_B01_113 162 NTVTDAQLYARAIKDSLLVIDSEKNDKNEVKKAKTLMEKAGSNILGVILNKAKVDKSSSYYHYY 225
+                                    5666666677777777766666667777788999999999999999999999999999888765 PP
+
+>> GCA_900636395.1_41665_B01_3004  VED78781.1 Tyrosine-protein kinase EpsD [Staphylococcus aureus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.0   1.8e-05     0.018      17      69 ..      36      89 ..      24      96 .. 0.83
+   2 ?   -1.8   0.0      0.18   1.8e+02     188     241 ..     167     220 ..     160     228 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.8e-05
+            trimmed_msa_bchX_hmm 17 evtketqiiaiygk.ggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                    ++ +  q i i     g gks   anl+   aq g k l++  d +  t   +f
+  GCA_900636395.1_41665_B01_3004 36 NPDSAVQSIVITSEaPGAGKSTIAANLAVAYAQAGYKTLIVDGDMRKPTQHYIF 89
+                                    55566777777665169***************************9998887777 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.18
+            trimmed_msa_bchX_hmm 188 veyfrklggnvg.vaglvinkddgtgeaqafaeavgipvlaaipadedirrksan 241
+                                      + f k+ gnv  v     n+ d   + + + ea g  +l  +  +   + ksa+
+  GCA_900636395.1_41665_B01_3004 167 AQLFSKFTGNVVyVVNSENNNKDEVKKGKELIEATGAKLLGVVL-NRMPKDKSAS 220
+                                     46778888886424444445555566666677777766665543.3333445555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3054  (754172 residues searched)
+Passed MSV filter:                       114  (0.0373281); expected 61.1 (0.02)
+Passed bias filter:                       92  (0.0301244); expected 61.1 (0.02)
+Passed Vit filter:                         8  (0.00261952); expected 3.1 (0.001)
+Passed Fwd filter:                         3  (0.000982318); expected 0.0 (1e-05)
+Initial search space (Z):               3054  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 19977.83
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_020809085.1_ASM2080908v1/GCA_020809085.1_ASM2080908v1_protein.faa
+# output directed to file:         results/GCA_020809085.1_ASM2080908v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.4e-07   27.1   7.0    1.1e-06   26.6   7.0    1.2  1  GCA_020809085.1_ASM2080908v1_5062  UEL23140.1 4-hydroxybenzoate oct
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020809085.1_ASM2080908v1_5062  UEL23140.1 4-hydroxybenzoate octaprenyltransferase [Pseudomonas fluorescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   7.0   2.1e-10   1.1e-06      11     208 ..      25     216 ..      15     252 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 2.1e-10
+               trimmed_msa_bchG_hmm  11 llkPitwfpPmWa..facGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsGr 82 
+                                        + kPi  +  +W   +a  +   g +   +++++v+Gv+l+     a   ++ndW dr+vd       +rp+ sG+
+  GCA_020809085.1_ASM2080908v1_5062  25 MDKPIGIYLLLWPtlWALWIAGKGSPSLINIVIFVLGVVLTR----AGGCVINDWADRKVDGHvkRTEQRPLVSGK 96 
+                                        5577766554443112334556788888999999*****986....455589*********75124579******* PP
+
+               trimmed_msa_bchG_hmm  83 ipGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsye.glaWltgaav 157
+                                        i+ +  l    +l  +s+l+ ++    ++  ++ gl+la  y   P+ +k+  ++ + + g ++  g++     + 
+  GCA_020809085.1_ASM2080908v1_5062  97 ISAKEALVFFAVLMGVSFLLVLLTNATTILLSLGGLALAASY---PF-MKRYTYYPQVVLGAAFSwGMPMA--FTA 166
+                                        ******99888888999999999999999999******9988...44.78889999988887764233332..223 PP
+
+               trimmed_msa_bchG_hmm 158 lagalPsaevll.la.llysigahGimtlndfkaveGdrklgvkslpvklGve 208
+                                         +g+lP++  ll +a ll+++g     ++ d    + d k+gvks ++ +G +
+  GCA_020809085.1_ASM2080908v1_5062 167 ETGHLPATAWLLyIAnLLWTVGYDTYYAMTDR---DDDLKIGVKSTAILFGDA 216
+                                        34788877655313326778877666666664...678888888888888864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       5388  (1687312 residues searched)
+Passed MSV filter:                       255  (0.0473274); expected 107.8 (0.02)
+Passed bias filter:                       84  (0.0155902); expected 107.8 (0.02)
+Passed Vit filter:                         7  (0.00129918); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185598); expected 0.1 (1e-05)
+Initial search space (Z):               5388  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 12660.30
+//
+[ok]

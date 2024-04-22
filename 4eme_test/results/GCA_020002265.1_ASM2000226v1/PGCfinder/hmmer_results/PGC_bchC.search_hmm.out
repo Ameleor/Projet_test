@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_020002265.1_ASM2000226v1/GCA_020002265.1_ASM2000226v1_protein.faa
+# output directed to file:         results/GCA_020002265.1_ASM2000226v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.3e-06   21.1   0.0    9.7e-06   20.7   0.0    1.2  1  GCA_020002265.1_ASM2000226v1_412  UAT42946.1 alcohol dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020002265.1_ASM2000226v1_412  UAT42946.1 alcohol dehydrogenase catalytic domain-containing protein [Anaplasmatace
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.7   0.0   1.1e-08   9.7e-06      13      88 ..      18      90 ..       1     138 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 20.7 bits;  conditional E-value: 1.1e-08
+              trimmed_msa_bchC_hmm 13 elalkrleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee..sklkvgervfv 88
+                                      +l++++++l++ ++++v+++ e+ g+      + ++     +P + yP++PG esvGrvv+ +++   ++k g+rv  
+  GCA_020002265.1_ASM2000226v1_412 18 NLKISKVKLRQLRNDEVLIKNEYIGVN----DIDYQQLAAIYP-VKYPFIPGCESVGRVVAINSNmkHGFKEGDRVVC 90
+                                      688999****************99886....466766566666.89*************9876651155678888753 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                        899  (300124 residues searched)
+Passed MSV filter:                        20  (0.0222469); expected 18.0 (0.02)
+Passed bias filter:                       18  (0.0200222); expected 18.0 (0.02)
+Passed Vit filter:                         4  (0.00444939); expected 0.9 (0.001)
+Passed Fwd filter:                         1  (0.00111235); expected 0.0 (1e-05)
+Initial search space (Z):                899  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6493.23
+//
+[ok]

@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_019720755.1_ASM1972075v1/GCA_019720755.1_ASM1972075v1_protein.faa
+# output directed to file:         results/GCA_019720755.1_ASM1972075v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0052   13.4   1.6      0.011   12.4   0.0    1.9  2  GCA_019720755.1_ASM1972075v1_539  QZE14843.1 sigma-54 dependent tr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019720755.1_ASM1972075v1_539  QZE14843.1 sigma-54 dependent transcriptional regulator [Prolixibacteraceae bacteri
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.3     0.023        77     160     227 ..     113     180 ..     106     186 .. 0.75
+   2 !   12.4   0.0   3.2e-06     0.011     407     448 ..     414     455 .]     408     455 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.023
+              trimmed_msa_ppsR_hmm 160 srriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsv 227
+                                       +++++   +aA +L ++++k+   k+ +e ++a+ +++ ++++++ +a +e+ +i+ ++a +++++ +
+  GCA_019720755.1_ASM1972075v1_539 113 NEKVISTTHAALKLSQSQRKNQSLKKESERLKAACNQQEEEIIGRSTAMKEVIKIAQKIAGTDANILI 180
+                                       56777777888888888888877777788888888888888888888888888887777777776665 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 3.2e-06
+              trimmed_msa_ppsR_hmm 407 DviEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       D  Ek  I   Le  + N  + A  LG+ RQ LY KL++++l
+  GCA_019720755.1_ASM1972075v1_539 414 DQLEKKIISQQLEAEDGNMSKVATKLGVTRQTLYNKLKKHNL 455
+                                       6678888888888889999999999***************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3334  (1217502 residues searched)
+Passed MSV filter:                        97  (0.0290942); expected 66.7 (0.02)
+Passed bias filter:                       59  (0.0176965); expected 66.7 (0.02)
+Passed Vit filter:                         4  (0.00119976); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.00029994); expected 0.0 (1e-05)
+Initial search space (Z):               3334  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 23576.16
+//
+[ok]

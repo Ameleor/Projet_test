@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_022700655.1_ASM2270065v1/GCA_022700655.1_ASM2270065v1_protein.faa
+# output directed to file:         results/GCA_022700655.1_ASM2270065v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00083   16.5   0.2       0.15    9.1   0.0    2.0  2  GCA_022700655.1_ASM2270065v1_2206  UNT57621.1 ferritin-like domain-
+     0.0021   15.2   0.8      0.011   12.8   0.1    1.9  2  GCA_022700655.1_ASM2270065v1_2728  UNT53687.1 DUF1541 domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022700655.1_ASM2270065v1_2206  UNT57621.1 ferritin-like domain-containing protein [Lysinibacillus capsici]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.1   0.0   6.6e-05      0.15      78     134 ..       5      62 ..       2      70 .. 0.86
+   2 !    6.1   0.0   0.00052       1.2      77     133 ..      76     132 ..      65     140 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 6.6e-05
+               trimmed_msa_acsF_hmm  78 lepelrkefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrh.agfi 134
+                                        ++++l++ ++  l  ++  e+    +y+ +++ + n+++k+ +  + +de rh  gf+
+  GCA_022700655.1_ASM2270065v1_2206   5 VQQTLNNRLILDLNKAINGEYNAIRFYKHLAQLAPNEEVKNRILEIRKDEMRHfQGFV 62 
+                                        5666777777778889999**********************************44666 PP
+
+  == domain 2  score: 6.1 bits;  conditional E-value: 0.00052
+               trimmed_msa_acsF_hmm  77 elepelrkefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagf 133
+                                        +++++l ++f   ++++   e     +y+ ++++ + + i + f+  a de  ha +
+  GCA_022700655.1_ASM2270065v1_2206  76 QINETLPQNFKSGILTAFKDEQEAVEFYHRVAREYNIPYISNQFSSNASDEQNHAVW 132
+                                        7889999999999999999***********************************963 PP
+
+>> GCA_022700655.1_ASM2270065v1_2728  UNT53687.1 DUF1541 domain-containing protein [Lysinibacillus capsici]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.1     0.021        48     184     220 ..      38      71 ..      23      85 .. 0.65
+   2 !   12.8   0.1   4.9e-06     0.011      84     145 ..      87     148 ..      76     153 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.021
+               trimmed_msa_acsF_hmm 184 rqlekhPekrfhPifkwfeewcndefrhGeafalllr 220
+                                        r ++  P+++f  i         de +h   f+++lr
+  GCA_022700655.1_ASM2270065v1_2728  38 RLIQLTPNEQFRQIILR---IQHDEIKHYHWFTMILR 71 
+                                        34455566666655543...33567777776766666 PP
+
+  == domain 2  score: 12.8 bits;  conditional E-value: 4.9e-06
+               trimmed_msa_acsF_hmm  84 kefldflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagfindalkdagigv 145
+                                        ++f + +  ++  e+     y++i+ +++ + ++  f   + de rha+++ ++l   ++++
+  GCA_022700655.1_ASM2270065v1_2728  87 RDFKEGVQKAIQNELEASAYYQDIASKATTHYVQMHFIHASHDEQRHATWLQNILMMDNMKM 148
+                                        677777778899999999*********************************99997666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       4613  (1336519 residues searched)
+Passed MSV filter:                       163  (0.0353349); expected 92.3 (0.02)
+Passed bias filter:                       84  (0.0182094); expected 92.3 (0.02)
+Passed Vit filter:                         8  (0.00173423); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.000433557); expected 0.0 (1e-05)
+Initial search space (Z):               4613  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 14125.22
+//
+[ok]

@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019931655.3_ASM1993165v3/GCA_019931655.3_ASM1993165v3_protein.faa
+# output directed to file:         results/GCA_019931655.3_ASM1993165v3/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.5e-06   23.4   0.2    3.7e-05   20.9   0.0    1.9  2  GCA_019931655.3_ASM1993165v3_680  UJG56740.1 MoxR family ATPase [B
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019931655.3_ASM1993165v3_680  UJG56740.1 MoxR family ATPase [Bacillus paralicheniformis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.2     0.018        74      20      50 ..      32      61 ..      20      70 .. 0.70
+   2 !   20.9   0.0   8.8e-09   3.7e-05     140     316 ..     109     286 ..     102     306 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.018
+              trimmed_msa_bchI_hmm 20 llaavdpsigGvlvlGdrGtGkstavralaa 50
+                                       l+a+ +  g vl+    G Gk+  vrala+
+  GCA_019931655.3_ASM1993165v3_680 32 SLTAILA-NGHVLLEDVPGVGKTMMVRALAK 61
+                                      4455533.3666666668***********96 PP
+
+  == domain 2  score: 20.9 bits;  conditional E-value: 8.8e-09
+              trimmed_msa_bchI_hmm 140 devnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkdlee 212
+                                       de+n    +    ll++ + G  +v  +g+++  +  f ++ + nP e e    l    ldrf + + +  p+ ++e
+  GCA_019931655.3_ASM1993165v3_680 109 DEINRTSPKTQSALLEAMEEGSVTV--DGVTMPLSXTFFVMATQNPVEYEgtypLPEAQLDRFLFKLRMGYPT-VRE 182
+                                       6666666666666666666665444..6777777777888888888765532334445678887777766654.555 PP
+
+              trimmed_msa_bchI_hmm 213 rvevvrrrdaf...er.dpeafvakwkkedakvrkkilaarkrlekvevpdavle....kaaklclalgtdGlrgel 281
+                                        ++v+  +++    e+ +p    ++ ++ ++       +a k   + ++++ ++e    + ++ ++ lg+   rg +
+  GCA_019931655.3_ASM1993165v3_680 183 ELQVLDLQENRspiEEvEPVIEKEELAAFQK-------EAEKVYVDAAIKEYIVEiaqkTRSHSAVYLGVS-PRGSI 251
+                                       6666654443200022011111122222222.......222333333333333330000333445566664.5**** PP
+
+              trimmed_msa_bchI_hmm 282 tllraaralaalegakevtkehlkkvaplalrhrl 316
+                                       +l++aa+a+a l +++ v  ++++ +ap +l hr+
+  GCA_019931655.3_ASM1993165v3_680 252 ALMKAAQAFAFLYNRDYVIPDDIQYLAPFTLAHRM 286
+                                       **********************************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4159  (1147161 residues searched)
+Passed MSV filter:                       175  (0.0420774); expected 83.2 (0.02)
+Passed bias filter:                      137  (0.0329406); expected 83.2 (0.02)
+Passed Vit filter:                        15  (0.00360664); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000240442); expected 0.0 (1e-05)
+Initial search space (Z):               4159  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11084.68
+//
+[ok]

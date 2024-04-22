@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016858245.2_ASM1685824v2/GCA_016858245.2_ASM1685824v2_protein.faa
+# output directed to file:         results/GCA_016858245.2_ASM1685824v2/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.024   12.7   2.7      0.019   13.1   1.0    1.7  2  GCA_016858245.2_ASM1685824v2_4959  UGA37333.1 ABC transporter perme
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016858245.2_ASM1685824v2_4959  UGA37333.1 ABC transporter permease [Chromobacterium haemolyticum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1     0.048   2.4e+02      74     106 ..      44      76 ..       6      93 .. 0.67
+   2 ?   13.1   1.0   3.8e-06     0.019      52     118 ..      81     147 ..      68     172 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.048
+               trimmed_msa_tspO_hmm  74 alfalnavlnilWsllfFrlrrldwalvevvlL 106
+                                        ++  l++++  l++  +F ++    al  +vlL
+  GCA_016858245.2_ASM1685824v2_4959  44 VFSLLETLVLYLFASSYFDVHAQGGALPFIVLL 76 
+                                        233345555566666677776666666555554 PP
+
+  == domain 2  score: 13.1 bits;  conditional E-value: 3.8e-06
+               trimmed_msa_tspO_hmm  52 iavaavlawraaedaaaaelllalfalnavlnilWsllfFrlrr.ldwalvevvlLWlsvlalilvlw 118
+                                        + +a++++  aa+ a++a+++  l  +++++ +++s +fF  ++ +dw + ++ +L l++la  + ++
+  GCA_016858245.2_ASM1685824v2_4959  81 VCFAGIAIL-AASRATKAQTANGLLEMTILFLVIFSGIFFSYKHfPDWMVSVIEVLPLTILADGMRMI 147
+                                        566777777.666777777999*******************988589*************98666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4930  (1041767 residues searched)
+Passed MSV filter:                       199  (0.0403651); expected 98.6 (0.02)
+Passed bias filter:                       93  (0.0188641); expected 98.6 (0.02)
+Passed Vit filter:                        10  (0.0020284); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020284); expected 0.0 (1e-05)
+Initial search space (Z):               4930  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12711.55
+//
+[ok]

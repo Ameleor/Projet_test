@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_018127705.1_ASM1812770v1/GCA_018127705.1_ASM1812770v1_protein.faa
+# output directed to file:         results/GCA_018127705.1_ASM1812770v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.9e-06   20.4   0.0    1.2e-05   19.7   0.0    1.2  1  GCA_018127705.1_ASM1812770v1_551  QUB37085.1 histidine phosphatase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018127705.1_ASM1812770v1_551  QUB37085.1 histidine phosphatase family protein [TM7 phylum sp. oral taxon 349]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.0   1.3e-08   1.2e-05       2      59 ..     220     280 ..     219     288 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 1.3e-08
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGGKlrevevggaaida...GPtvltmr 59 
+                                       +v++ GaG  GL++a +la+aG +v +lek++ +GG   +   +++ i+    GP ++ ++
+  GCA_018127705.1_ASM1812770v1_551 220 DVIIGGAGPFGLVCAERLASAGKNVLILEKESYIGGTSSSYIDEETGIEVhrfGPHIFHIK 280
+                                       588999******************************9887766665555333377777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        969  (280066 residues searched)
+Passed MSV filter:                        32  (0.0330237); expected 19.4 (0.02)
+Passed bias filter:                       24  (0.0247678); expected 19.4 (0.02)
+Passed Vit filter:                         2  (0.00206398); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.00103199); expected 0.0 (1e-05)
+Initial search space (Z):                969  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9058.56
+//
+[ok]

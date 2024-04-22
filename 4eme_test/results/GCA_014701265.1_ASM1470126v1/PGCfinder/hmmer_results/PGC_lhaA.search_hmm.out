@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_014701265.1_ASM1470126v1/GCA_014701265.1_ASM1470126v1_protein.faa
+# output directed to file:         results/GCA_014701265.1_ASM1470126v1/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0043   14.8   5.9     0.0047   14.6   5.9    1.1  1  GCA_014701265.1_ASM1470126v1_2701  BCI87495.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014701265.1_ASM1470126v1_2701  BCI87495.1 hypothetical protein NIIDMKKI_27010 [Mycobacterium kansasii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   5.9   5.7e-07    0.0047     334     405 ..       2      73 ..       1      96 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 5.7e-07
+               trimmed_msa_lhaA_hmm 334 faaplesallfrlgavliGlggGlfavgtltaamalaeeeesGlalGaWGavqataaGlaialgGalrdvvs 405
+                                        +aa+ +s+  + ++ v++G+g+ l + +tl +  a+ + +++G a+G+W +  ++ + ++++++G+l +  s
+  GCA_014701265.1_ASM1470126v1_2701   2 LAAAAGSPHTIIIARVIMGIGAALIMPSTLSTITAVVHPDHKGRAVGIWAGFASAGSIMGLLISGLLLEHYS 73 
+                                        7899999999****************************************9999999999*****9877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       8110  (1846359 residues searched)
+Passed MSV filter:                       501  (0.0617756); expected 162.2 (0.02)
+Passed bias filter:                      155  (0.0191122); expected 162.2 (0.02)
+Passed Vit filter:                        11  (0.00135635); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000123305); expected 0.1 (1e-05)
+Initial search space (Z):               8110  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 20827.98
+//
+[ok]

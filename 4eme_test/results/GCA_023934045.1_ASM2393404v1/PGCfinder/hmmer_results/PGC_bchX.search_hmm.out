@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023934045.1_ASM2393404v1/GCA_023934045.1_ASM2393404v1_protein.faa
+# output directed to file:         results/GCA_023934045.1_ASM2393404v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.8e-05   18.7   0.1      3e-05   17.9   0.1    1.3  1  GCA_023934045.1_ASM2393404v1_63  USQ93452.1 MAG: signal recogniti
+    0.00059   13.6   0.9     0.0036   11.1   0.2    2.1  2  GCA_023934045.1_ASM2393404v1_64  USQ93453.1 MAG: signal recogniti
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023934045.1_ASM2393404v1_63  USQ93452.1 MAG: signal recognition particle-docking protein FtsY [Candidatus Phytopl
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.1   1.2e-07     3e-05      17      59 ..     111     153 ..      98     171 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 1.2e-07
+             trimmed_msa_bchX_hmm  17 evtketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      + + etq+    g  g+gk+ t+ +l+y   +q kkvll+  d
+  GCA_023934045.1_ASM2393404v1_63 111 SEKDETQVFLFVGVNGVGKTTTIGKLAYKYKKQNKKVLLVAGD 153
+                                      46789**********************************9988 PP
+
+>> GCA_023934045.1_ASM2393404v1_64  USQ93453.1 MAG: signal recognition particle protein [Candidatus Phytoplasma vitis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.2   1.4e-05    0.0036      18      59 ..      94     136 ..      85     143 .. 0.86
+   2 ?    0.6   0.0     0.022       5.6     139     213 ..     181     252 ..     169     283 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 1.4e-05
+             trimmed_msa_bchX_hmm  18 vtketqiiaiygkggigksftlanlsymlaq.qgkkvlligcd 59 
+                                        k+ +ii + g  g+gk+ t  +ls+ + + + kkvlli  d
+  GCA_023934045.1_ASM2393404v1_64  94 LDKKLNIILLMGLQGSGKTTTAGKLSFWIKKkMQKKVLLIAAD 136
+                                      568999********************988651689*****988 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.022
+             trimmed_msa_bchX_hmm 139 fdyvlldflgdvvcggfglpiardlcqkvivvgsndlqslyvannvc..saveyfrklggnvgvaglvinkddgtge 213
+                                      fd v++d  g +      +   +++ qkv     n  + l va+ +   ++v+  + +  ++g +g+++ k d+  +
+  GCA_023934045.1_ASM2393404v1_64 181 FDVVIVDTAGRLTIDTEMIEEIKNIKQKV-----NTSDVLIVADSLLgqQSVNIAKSFHEQIGATGIILTKMDSDTK 252
+                                      66666666665555555555555555554.....5555677887764336889999999999999999999765432 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        498  (163529 residues searched)
+Passed MSV filter:                        19  (0.0381526); expected 10.0 (0.02)
+Passed bias filter:                       17  (0.0341365); expected 10.0 (0.02)
+Passed Vit filter:                         3  (0.0060241); expected 0.5 (0.001)
+Passed Fwd filter:                         2  (0.00401606); expected 0.0 (1e-05)
+Initial search space (Z):                498  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 5165.33
+//
+[ok]

@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_022760255.1_ASM2276025v1/GCA_022760255.1_ASM2276025v1_protein.faa
+# output directed to file:         results/GCA_022760255.1_ASM2276025v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.4e-10   36.9   0.0    0.00018   19.0   0.0    3.2  2  GCA_022760255.1_ASM2276025v1_4888  ALHFNK_25720 YifB family Mg chel
+  ------ inclusion threshold ------
+      0.027   11.9   0.1      0.038   11.4   0.1    1.1  1  GCA_022760255.1_ASM2276025v1_2600  ALHFNK_13605 phage shock protein
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022760255.1_ASM2276025v1_4888  ALHFNK_25720 YifB family Mg chelatase-like AAA ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.0   6.8e-08   0.00018     116     186 ..     277     347 ..     185     354 .. 0.77
+   2 !    5.5   0.0   0.00089       2.4     194     309 ..     375     490 ..     368     500 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 6.8e-08
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        a++ G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf lv + nP 
+  GCA_022760255.1_ASM2276025v1_4888 277 AMVGGGAIPGPGEISLAHNGVLFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLVAAMNPS 347
+                                        4455555667999********************************************************95 PP
+
+  == domain 2  score: 5.5 bits;  conditional E-value: 0.00089
+               trimmed_msa_bchI_hmm 194 lldrfGlsvevrtpkdleervevvrrrdaferdpeafv..akwkkedakvrkkilaar.krlekvevpdavlekaa 266
+                                        +ldrf ls+e+  p        vv   ++   +++ ++  ++  k+++k+++ + +   +++ k+e +da  +   
+  GCA_022760255.1_ASM2276025v1_4888 375 FLDRFDLSLEIPLPPPGILSKTVVPGENSTTVKQRVMAarERQFKRQNKLNAWLDNPEiRQFCKLESEDA--QWLE 448
+                                        6788888888876544333334444444443333333300333344444444444432123334444444..4445 PP
+
+               trimmed_msa_bchI_hmm 267 klclalgtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                        +  ++lg   +r+   ll+ ar++a +++++ +t++hl++  +
+  GCA_022760255.1_ASM2276025v1_4888 449 ETLIHLGL-SIRAWQRLLKVARTIADIDQSDIITRQHLQEAVS 490
+                                        55566765.5899999**********************98654 PP
+
+>> GCA_022760255.1_ASM2276025v1_2600  ALHFNK_13605 phage shock protein operon transcriptional activator
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.1   1.4e-05     0.038     119     202 ..      18     105 ..      12     127 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.4e-05
+               trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP......eeG 188
+                                        +G ++ +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n       +eG
+  GCA_022760255.1_ASM2276025v1_2600  18 TGAQKRHPGRFERADGGTLFLDELATAPMMVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNAdlpamvNEG 91 
+                                        5888889*********************9999**********9..89999998877777788777752224446** PP
+
+               trimmed_msa_bchI_hmm 189 elrPqlldrfGlsv 202
+                                         +r  lldr+ + v
+  GCA_022760255.1_ASM2276025v1_2600  92 TFRADLLDRLAFDV 105
+                                        *********87765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5311  (1546393 residues searched)
+Passed MSV filter:                       269  (0.0506496); expected 106.2 (0.02)
+Passed bias filter:                      195  (0.0367162); expected 106.2 (0.02)
+Passed Vit filter:                        31  (0.00583694); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000376577); expected 0.1 (1e-05)
+Initial search space (Z):               5311  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.05
+# Mc/sec: 8785.11
+//
+[ok]

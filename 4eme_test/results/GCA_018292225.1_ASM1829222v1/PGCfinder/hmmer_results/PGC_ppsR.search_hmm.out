@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_018292225.1_ASM1829222v1/GCA_018292225.1_ASM1829222v1_protein.faa
+# output directed to file:         results/GCA_018292225.1_ASM1829222v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.3e-05   22.0   0.2    2.3e-05   21.2   0.2    1.4  1  GCA_018292225.1_ASM1829222v1_2917  DFMPNP_15385 cell wall metabolis
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018292225.1_ASM1829222v1_2917  DFMPNP_15385 cell wall metabolism sensor histidine kinase WalK
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.2   6.6e-09   2.3e-05     244     303 ..      35      94 ..       4     180 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 6.6e-09
+               trimmed_msa_ppsR_hmm 244 lspaeaaaa.aaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgr 303
+                                        ls++ ++a+ ++e+++++l +v+++++d+++ td++gri  +N+  l++  +a+e+ ++g 
+  GCA_018292225.1_ASM1829222v1_2917  35 LSKRVQEAQaNTESEKRRLDSVITHMSDGIIATDRRGRIRIVNDMALKMLGMAKED-IIGY 94 
+                                        555544444488899999*********************************98765.4554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3411  (775582 residues searched)
+Passed MSV filter:                       138  (0.0404573); expected 68.2 (0.02)
+Passed bias filter:                       67  (0.0196423); expected 68.2 (0.02)
+Passed Vit filter:                         4  (0.00117268); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000293169); expected 0.0 (1e-05)
+Initial search space (Z):               3411  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 17400.41
+//
+[ok]

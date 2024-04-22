@@ -1,0 +1,99 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_017569285.1_ASM1756928v1/GCA_017569285.1_ASM1756928v1_protein.faa
+# output directed to file:         results/GCA_017569285.1_ASM1756928v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      7e-05   19.5   0.1    0.00079   16.0   0.0    2.1  2  GCA_017569285.1_ASM1756928v1_1909  QTE67489.1 MoxR family ATPase [C
+     0.0017   14.9   0.0      0.018   11.5   0.0    2.0  2  GCA_017569285.1_ASM1756928v1_320   QTE68642.1 MoxR family ATPase [C
+     0.0075   12.8   0.0      0.013   12.0   0.0    1.3  1  GCA_017569285.1_ASM1756928v1_215   QTE68547.1 DNA polymerase III su
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017569285.1_ASM1756928v1_1909  QTE67489.1 MoxR family ATPase [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.1     0.021        20       9      50 ..      21      60 ..      17      69 .. 0.84
+   2 !   16.0   0.0   8.4e-07   0.00079     249     317 ..     211     286 ..     120     305 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.021
+               trimmed_msa_bchI_hmm  9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                       ivg++++ + ++++ v +  g +l+    GtGk+  +ra+a 
+  GCA_017569285.1_ASM1756928v1_1909 21 IVGKEDVIEQIVVCLVAS--GHILLEDVPGTGKTMLLRAFAR 60
+                                       899***999999999965..566666668**********985 PP
+
+  == domain 2  score: 16.0 bits;  conditional E-value: 8.4e-07
+               trimmed_msa_bchI_hmm 249 rkrlekvevpdavlekaaklc.......lalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                        rk  ++v+v+d++   + +l+       + l     rg l+l ra++ +aal+g++ v  e++k  a  +l hrl 
+  GCA_017569285.1_ASM1756928v1_1909 211 RKSYPEVRVSDDIAAYIMNLVdatrsseMLLTGISTRGTLALYRACQIIAALRGRDYVIPEDVKLEALCVLPHRLT 286
+                                        555666666666554444443111111133344456**************************************95 PP
+
+>> GCA_017569285.1_ASM1756928v1_320  QTE68642.1 MoxR family ATPase [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.0     0.027        26       8      52 ..      18      60 ..      13      71 .. 0.80
+   2 !   11.5   0.0     2e-05     0.018     140     317 ..     106     285 ..      86     298 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.027
+              trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaall 52
+                                      aivg++e  +  l+a +    g vl+    G Gk+t + ala  l
+  GCA_017569285.1_ASM1756928v1_320 18 AIVGKEEAVEYALIALLC--KGHVLIEDVPGVGKTTLASALARSL 60
+                                      899999887777777664..3778888889999999999999755 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 2e-05
+              trimmed_msa_bchI_hmm 140 devnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPee..Ge..lrPqlldrfGlsvevrtpkdlee 212
+                                       de+n    +    ll+v +  + +v+ e+  +  p  f+++ + nP e  G   l    +drf l + +  p+ +++
+  GCA_017569285.1_ASM1756928v1_320 106 DEINRTSPKTQSALLEVMEEHQVTVDGETHPL--PRPFIVLATQNPGEfvGTypLPEAQVDRFFLRISIGYPT-VQQ 179
+                                       55555555556666666665555555554444..445777777777764432224445678888888887775.777 PP
+
+              trimmed_msa_bchI_hmm 213 rvevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaakl..clalgtdGlrgeltllraa 287
+                                        ++v+ r        ++    ++++d    ++ ++     ++v+   a+l  a++   +++lg+   r+ ++llr  
+  GCA_017569285.1_ASM1756928v1_320 180 EMDVLERYSGSIPPMATIEPVCSAQDVIAMQDQVTRVYCSPEVRSYVATLAAATREdpSFTLGA-STRAAIALLRGG 255
+                                       8888888776655555555555555543333333333445566666666666655322566666.469********* PP
+
+              trimmed_msa_bchI_hmm 288 ralaalegakevtkehlkkvaplalrhrlr 317
+                                       +a a l++++ v  e+++++   +l hr+ 
+  GCA_017569285.1_ASM1756928v1_320 256 QACALLDDRDFVLPEDIQHMFLPVLAHRMV 285
+                                       ****************************85 PP
+
+>> GCA_017569285.1_ASM1756928v1_215  QTE68547.1 DNA polymerase III subunit gamma/tau [Clostridiales bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.0   0.0   1.4e-05     0.013       5      67 ..      14      72 ..      11     103 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigGv.lvlGdrGtGkstavralaallPkikavkgcryncdp 67
+                                       fs +vgq+ + ++l    +  +i+   l  G rGtGk+++++ la+ +   +     ++n dp
+  GCA_017569285.1_ASM1756928v1_215 14 DFSHVVGQKAIIETLRNQVIHDRIAHAyLFCGSRGTGKTSTAKILAKAINCEH-----PVNGDP 72
+                                      59******************99998651677*********9999997654333.....333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2808  (982302 residues searched)
+Passed MSV filter:                       149  (0.0530627); expected 56.2 (0.02)
+Passed bias filter:                      114  (0.0405983); expected 56.2 (0.02)
+Passed Vit filter:                        27  (0.00961538); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00106838); expected 0.0 (1e-05)
+Initial search space (Z):               2808  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10382.42
+//
+[ok]

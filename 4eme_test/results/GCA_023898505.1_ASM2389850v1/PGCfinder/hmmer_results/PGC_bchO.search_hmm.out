@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898505.1_ASM2389850v1/GCA_023898505.1_ASM2389850v1_protein.faa
+# output directed to file:         results/GCA_023898505.1_ASM2389850v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.6e-05   21.0   0.0       0.02   10.8   0.0    2.2  2  GCA_023898505.1_ASM2389850v1_60    USN58602.1 MAG: alpha/beta hydro
+    0.00013   18.0   0.0      0.052    9.4   0.0    2.1  2  GCA_023898505.1_ASM2389850v1_54    USN58597.1 MAG: class I tRNA lig
+    0.00047   16.1   0.0    0.00052   16.0   0.0    1.0  1  GCA_023898505.1_ASM2389850v1_1635  USN58263.1 MAG: alpha/beta hydro
+    0.00077   15.4   0.0    0.00097   15.1   0.0    1.1  1  GCA_023898505.1_ASM2389850v1_1634  USN58262.1 MAG: alpha/beta fold 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898505.1_ASM2389850v1_60  USN58602.1 MAG: alpha/beta hydrolase [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.0   0.00031      0.15      98     131 ..      79     110 ..      72     132 .. 0.77
+   2 !   10.8   0.0   4.2e-05      0.02     226     266 ..     146     186 ..     133     197 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00031
+             trimmed_msa_bchO_hmm  98 lgvepavvvGHSAGaaialrlaldgkiapkkvvg 131
+                                      l+ ep +++GHS Ga+ +l++  ++++++  +++
+  GCA_023898505.1_ASM2389850v1_60  79 LNNEPLILIGHSLGATFLLKYLSENNFPK--IIS 110
+                                      778999**************998887744..554 PP
+
+  == domain 2  score: 10.8 bits;  conditional E-value: 4.2e-05
+             trimmed_msa_bchO_hmm 226 ktplllivgekDravppkearevaallpkarlveleglGHL 266
+                                      +++++l ++++D +vp ++ ++va+llp+a++ ++e+  H 
+  GCA_023898505.1_ASM2389850v1_60 146 AEKIFLYHSKDDPVVPFHHGQSVAKLLPNAQFLQFENRLHF 186
+                                      568999***************************99987775 PP
+
+>> GCA_023898505.1_ASM2389850v1_54  USN58597.1 MAG: class I tRNA ligase family protein [Candidatus Peribacteria bacteriu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.0   0.00049      0.23      69     150 ..     161     243 ..     157     250 .. 0.80
+   2 !    9.4   0.0   0.00011     0.052     217     267 ..     242     294 ..     237     301 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00049
+             trimmed_msa_bchO_hmm  69 PghgftesaaeerlsLpgmaealaaLlaalgve.pavvvGHSAGaaialrlaldgkiapkkvvglngallpleglagl 145
+                                        +g+t   +  +++ +   ++  ++l++l+v+  ++ + HS G  +al++ +++ki+ k++v + +  +     +++
+  GCA_023898505.1_ASM2389850v1_54 161 ANQGITMDCPAFEIGTNISYKNWGEVLDSLDVSkYDTWLCHSLGCRVALEYIIEKKIQLKRLVLIAPGTEATTPEVNE 238
+                                      56666777777777777777778889999999868999*************************999988887777777 PP
+
+             trimmed_msa_bchO_hmm 146 lfppl 150
+                                      ++++l
+  GCA_023898505.1_ASM2389850v1_54 239 FYSTL 243
+                                      76666 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.00011
+             trimmed_msa_bchO_hmm 217 kllrdlpklktpl..llivgekDravppkearevaallpkarlveleglGHLa 267
+                                      +l++d+ ++kt +  +++v+++D++v+ +   + +  ++ a+lv+l+g GH  
+  GCA_023898505.1_ASM2389850v1_54 242 TLQQDISTIKTYVgeVVVVASQDDTVHRQAGVKEIVSTTGAELVQLDGYGHFN 294
+                                      67888888887553378999999999999999999999*************85 PP
+
+>> GCA_023898505.1_ASM2389850v1_1635  USN58263.1 MAG: alpha/beta hydrolase [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   1.1e-06   0.00052     220     265 ..       5      52 ..       1      57 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.1e-06
+               trimmed_msa_bchO_hmm 220 rdlpklktplllivgekDravppkearevaall..pkarlveleglGH 265
+                                        +++++++ p+l+i+g++D++vp ++ +++ +    ++  ++el+g GH
+  GCA_023898505.1_ASM2389850v1_1635   5 EKIKNISIPTLIIHGNSDNIVPFEQGKKLFSASpsKNKYFIELDGWGH 52 
+                                        578999**********************9988843566799******9 PP
+
+>> GCA_023898505.1_ASM2389850v1_1634  USN58262.1 MAG: alpha/beta fold hydrolase [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   2.1e-06   0.00097      37      81 ..      93     138 ..      83     163 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 2.1e-06
+               trimmed_msa_bchO_hmm  37 lLLlHGtGast.hswrdllplLaarfrviapDLPghgftesaaeer 81 
+                                        +   HG G+s  + +++++ +L+  ++via D Pg g ++  + e+
+  GCA_023898505.1_ASM2389850v1_1634  93 VYYFHGNGGSLeYFYSEIAYILSLGYTVIAFDYPGYGKSSGYPYEQ 138
+                                        5568***9997256799********************999877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1872  (244102 residues searched)
+Passed MSV filter:                        37  (0.019765); expected 37.4 (0.02)
+Passed bias filter:                       34  (0.0181624); expected 37.4 (0.02)
+Passed Vit filter:                         6  (0.00320513); expected 1.9 (0.001)
+Passed Fwd filter:                         4  (0.00213675); expected 0.0 (1e-05)
+Initial search space (Z):               1872  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8870.23
+//
+[ok]

@@ -1,0 +1,126 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_900636495.1_42650_H01/GCA_900636495.1_42650_H01_protein.faa
+# output directed to file:         results/GCA_900636495.1_42650_H01/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    2.3e-08   31.2   0.0    0.00038   17.4   0.0    3.1  2  GCA_900636495.1_42650_H01_2823  VEE03673.1 bifunctional enzyme a
+    2.8e-06   24.4   0.2    3.4e-05   20.8   0.0    2.4  2  GCA_900636495.1_42650_H01_172   VEE01022.1 ATPase MoxR [Legionel
+      0.002   15.0   0.0     0.0057   13.5   0.0    1.7  2  GCA_900636495.1_42650_H01_312   VEE01162.1 DNA polymerase III, g
+     0.0028   14.6   0.0       0.53    7.1   0.0    2.2  2  GCA_900636495.1_42650_H01_774   VEE01624.1 peptide transport fus
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900636495.1_42650_H01_2823  VEE03673.1 bifunctional enzyme and transcriptional regulator [Legionella oakridgensis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.0   0.00016      0.15       4      60 ..     189     243 ..     186     261 .. 0.87
+   2 !   17.4   0.0   4.2e-07   0.00038     122     186 ..     284     348 ..     276     501 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.00016
+            trimmed_msa_bchI_hmm   4 fpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                     f +s i gq + k+a+ +aa   +   +l+ G  G+Gk+  ++ + +llP+++ +++
+  GCA_900636495.1_42650_H01_2823 189 FDWSDIKGQLHAKKAMEIAACGGH--NILLSGAPGSGKTMLAKRFITLLPQLSETEA 243
+                                     88999***************8764..6999*********************988765 PP
+
+  == domain 2  score: 17.4 bits;  conditional E-value: 4.2e-07
+            trimmed_msa_bchI_hmm 122 kafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                     +  +pG ++ a++G l++de+  ++  +++ l    +sG   + r ++ +  pa+f l+ + nP 
+  GCA_900636495.1_42650_H01_2823 284 NPPKPGEISLAHQGVLFLDELPEFKRQVLETLRQPLESGSICISRAAVQMEFPAKFQLIAAMNPC 348
+                                     556899*********************************************************95 PP
+
+>> GCA_900636495.1_42650_H01_172  VEE01022.1 ATPase MoxR [Legionella oakridgensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0      0.18   1.6e+02       7      49 ..      26      66 ..      14      69 .. 0.84
+   2 !   20.8   0.0   3.8e-08   3.4e-05     139     316 ..     114     306 ..      96     315 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.18
+           trimmed_msa_bchI_hmm  7 saivgqdemklalllaavdpsigGvlvlGdrGtGkstavrala 49
+                                   s i+gq+ +   ll+a +    g +lv G  G  k+ av+ l+
+  GCA_900636495.1_42650_H01_172 26 SQILGQKALISRLLIALLAD--GHLLVEGAPGLAKTRAVKELS 66
+                                   67889999999999988765..789999999999999999886 PP
+
+  == domain 2  score: 20.8 bits;  conditional E-value: 3.8e-08
+           trimmed_msa_bchI_hmm 139 idevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpk.dleer 213
+                                     de+n    ++   ll++ a  +  v   g +   p  f+++ + nP e e    l    ldrf + v+++ p+ ++e+ 
+  GCA_900636495.1_42650_H01_172 114 ADEINRAPAKVQSALLEAMAERQ--VTIGGKTYPLPELFLVMATQNPIEQEgtypLPEAQLDRFLMYVKISYPDaKVEHD 191
+                                    56666666666666665544333..333455555577789999999977663343445679**********997368888 PP
+
+           trimmed_msa_bchI_hmm 214 vevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklclalgtdGl...............r 278
+                                    +  + r++a+     a+++k +++++  +k++ +ark++ +v++++a+ +   +l++a    G+               r
+  GCA_900636495.1_42650_H01_172 192 ILALSRKEAMG---LAMANKPATTEKLPQKTLFEARKQVLNVHTSEAIENYLVQLVIATRNPGVyseelarwlrfgaspR 268
+                                    88888888776...567788889999999**************************9999888863222233333333334 PP
+
+           trimmed_msa_bchI_hmm 279 geltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                    + ++l r+++a a l+g++ vt ++++ +a  +lrhr+
+  GCA_900636495.1_42650_H01_172 269 ATIALDRCSKAHAWLSGRDYVTPDDIHVIAHDVLRHRI 306
+                                    55778899*****************************7 PP
+
+>> GCA_900636495.1_42650_H01_312  VEE01162.1 DNA polymerase III, gamma and tau subunits [Legionella oakridgensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   6.4e-06    0.0057       5      53 ..      14      63 ..      11      79 .. 0.85
+   2 ?   -3.9   0.0       1.3   1.1e+03     138     154 ..     124     140 ..     121     142 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 6.4e-06
+           trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdpsigG.vlvlGdrGtGkstavralaallP 53
+                                    fs +vgqd++k+al  a  ++++    l  G rG Gk++ +r la+ l 
+  GCA_900636495.1_42650_H01_312 14 TFSQLVGQDHIKTALTNALNQQRLHHaYLFTGTRGVGKTSIARILAKSLN 63
+                                   59*************9999988887516777**************98775 PP
+
+  == domain 2  score: -3.9 bits;  conditional E-value: 1.3
+           trimmed_msa_bchI_hmm 138 yidevnlledhlvdlll 154
+                                     idev +l  h  + ll
+  GCA_900636495.1_42650_H01_312 124 LIDEVHMLSQHSFNALL 140
+                                    49********9988887 PP
+
+>> GCA_900636495.1_42650_H01_774  VEE01624.1 peptide transport fused subunits of ABC superfamily: ATP-binding components
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.1   0.0    0.0023         2      31      57 ..      38      64 ..      13     105 .. 0.78
+   2 !    7.1   0.0   0.00059      0.53      33      55 ..     389     411 ..     381     421 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0023
+           trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPkika 57
+                                   +++lG+ G Gks +  al  llPk  +
+  GCA_900636495.1_42650_H01_774 38 LVLLGESGCGKSLTSLALMRLLPKSGV 64
+                                   4568*******************9655 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.00059
+           trimmed_msa_bchI_hmm  33 vlGdrGtGkstavralaallPki 55 
+                                    ++G+ G Gk+t+ ral  llP +
+  GCA_900636495.1_42650_H01_774 389 LVGESGCGKTTTSRALLRLLPIV 411
+                                    579******************76 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3581  (1181500 residues searched)
+Passed MSV filter:                       143  (0.039933); expected 71.6 (0.02)
+Passed bias filter:                      111  (0.0309969); expected 71.6 (0.02)
+Passed Vit filter:                        24  (0.00670204); expected 3.6 (0.001)
+Passed Fwd filter:                         4  (0.00111701); expected 0.0 (1e-05)
+Initial search space (Z):               3581  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9218.19
+//
+[ok]

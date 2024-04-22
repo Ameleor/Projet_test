@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCA_014873095.1_ASM1487309v1/GCA_014873095.1_ASM1487309v1_protein.faa
+# output directed to file:         results/GCA_014873095.1_ASM1487309v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0017   16.3   4.5     0.0017   16.3   4.5    2.0  2  GCA_014873095.1_ASM1487309v1_3756  QNN24261.1 cytochrome c biogenes
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014873095.1_ASM1487309v1_3756  QNN24261.1 cytochrome c biogenesis protein CcsA [Planctomycetales bacterium ZRK34]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   4.5   3.6e-07    0.0017      27     123 ..      53     148 ..      29     161 .. 0.77
+   2 ?   -1.9   0.0      0.15   7.3e+02     112     128 ..     174     190 ..     157     201 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 3.6e-07
+               trimmed_msa_bchF_hmm  27 lqflvflvslalvlrylatGega..aaatlsvvvktlvlytimitGaiwekvvfgkylfaeaffwedvfsllvlal 100
+                                          fl +lv ++  l yl+t + +   +a +s  v  l+  ++++tG iw k  +g++   ++      fsll+  l
+  GCA_014873095.1_ASM1487309v1_3756  53 NTFLACLVNFIASLAYLWTRRRKydDLAVASATVGVLLCTIVLMTGMIWGKSAWGEWWTWSP---RLTFSLLLWLL 125
+                                        5699999999999*****9865422678889999888888999*************975444...3479999999* PP
+
+               trimmed_msa_bchF_hmm 101 htaylvalltgllsaeeqlllal 123
+                                        ++ yl++  +   ++++ l+ a+
+  GCA_014873095.1_ASM1487309v1_3756 126 YASYLMVRPSIESTTRRALVAAV 148
+                                        ****9987665555555555444 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.15
+               trimmed_msa_bchF_hmm 112 llsaeeqlllalaayaa 128
+                                        +++ e +++l++aa+a 
+  GCA_014873095.1_ASM1487309v1_3756 174 TIALEPKMWLTVAAFAL 190
+                                        55667788888888874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4827  (1692253 residues searched)
+Passed MSV filter:                       146  (0.0302465); expected 96.5 (0.02)
+Passed bias filter:                       86  (0.0178164); expected 96.5 (0.02)
+Passed Vit filter:                         6  (0.00124301); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000207168); expected 0.0 (1e-05)
+Initial search space (Z):               4827  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14565.17
+//
+[ok]

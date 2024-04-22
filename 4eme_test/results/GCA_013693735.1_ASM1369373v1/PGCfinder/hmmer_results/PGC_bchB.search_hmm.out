@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693735.1_ASM1369373v1/GCA_013693735.1_ASM1369373v1_protein.faa
+# output directed to file:         results/GCA_013693735.1_ASM1369373v1/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.009   12.1   0.0      0.014   11.5   0.0    1.2  1  GCA_013693735.1_ASM1369373v1_1032  QLP96915.1 MAG: NAD(P)H-quinone 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693735.1_ASM1369373v1_1032  QLP96915.1 MAG: NAD(P)H-quinone oxidoreductase [Rhodoblastus sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   4.8e-06     0.014     133     192 ..     158     218 ..     153     235 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 4.8e-06
+               trimmed_msa_bchB_hmm 133 aaetfyqlvralakkkakkakaegarpscnllGp.talGfrhrddvaeitrlleelGievn 192
+                                           t  ql +a+ ++  ++a +e++   c  lG+ +a+ +r++d vaei++l e+ G++v 
+  GCA_013693735.1_ASM1369373v1_1032 158 IGSTAIQLAKAFGATVYATAGSEEKXRFCRKLGAdAAINHRTQDYVAEIRKLTEKRGVDVI 218
+                                        55678899999999999999999999999999974789********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                       2824  (866098 residues searched)
+Passed MSV filter:                        90  (0.0318697); expected 56.5 (0.02)
+Passed bias filter:                       63  (0.0223088); expected 56.5 (0.02)
+Passed Vit filter:                         8  (0.00283286); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000354108); expected 0.0 (1e-05)
+Initial search space (Z):               2824  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 17343.17
+//
+[ok]

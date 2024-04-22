@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_014931515.1_ASM1493151v1/GCA_014931515.1_ASM1493151v1_protein.faa
+# output directed to file:         results/GCA_014931515.1_ASM1493151v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      2e-06   23.5   0.0      3e-05   19.6   0.0    2.1  2  GCA_014931515.1_ASM1493151v1_485  QOR28569.1 glutamyl-tRNA reducta
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014931515.1_ASM1493151v1_485  QOR28569.1 glutamyl-tRNA reductase [Francisella tularensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.0     2e-08     3e-05      24     126 ..      82     187 ..      76     197 .. 0.89
+   2 !    1.4   0.0    0.0063       9.5     108     148 ..     362     404 ..     336     411 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 2e-08
+              trimmed_msa_bchN_hmm  24 kiqdafflvvGsrtcahllqsaaGv..mifaeprfataileerdlaGlad.andeldrvverllerrpdikllflvg 97 
+                                       ki+d f l  G+    hl++ a G+  m++ ep+    + +   l+  +  + +eldrv +++++  + ++    +g
+  GCA_014931515.1_ASM1493151v1_485  82 KIKDYFKLRQGTEVIMHLMKLACGLesMVLGEPQILGQVKDSYTLSKKNHaIGKELDRVFQKVFATAKRVRSETRIG 158
+                                       9***********************666******************988761579*********************** PP
+
+              trimmed_msa_bchN_hmm  98 scpsevikldlsraaerlskklapkvrvl 126
+                                        cp  v    ++ a ++l++  + +v ++
+  GCA_014931515.1_ASM1493151v1_485 159 YCPVSVAFSAITLAKRQLDNISSKNVLII 187
+                                       ******99999988888888877776665 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.0063
+              trimmed_msa_bchN_hmm 108 lsraaerlskklap..kvrvlsysgsGiettftqGedaclaal 148
+                                         + ae + k++a   k +vl+y   G++ +  qG   cl ++
+  GCA_014931515.1_ASM1493151v1_485 362 NGKDAEEIIKRFAYeiKKKVLHYPVVGMKEASKQGRSDCLVCM 404
+                                       5666777777766511568********************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       1506  (435043 residues searched)
+Passed MSV filter:                        32  (0.0212483); expected 30.1 (0.02)
+Passed bias filter:                       26  (0.0172643); expected 30.1 (0.02)
+Passed Vit filter:                         5  (0.00332005); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000664011); expected 0.0 (1e-05)
+Initial search space (Z):               1506  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 17134.33
+//
+[ok]

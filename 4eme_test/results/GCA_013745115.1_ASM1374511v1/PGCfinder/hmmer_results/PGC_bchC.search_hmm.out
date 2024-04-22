@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_013745115.1_ASM1374511v1/GCA_013745115.1_ASM1374511v1_protein.faa
+# output directed to file:         results/GCA_013745115.1_ASM1374511v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.4e-10   36.7   0.0    2.7e-06   23.4   0.0    2.2  2  GCA_013745115.1_ASM1374511v1_643  QLY39927.1 L-threonine 3-dehydro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013745115.1_ASM1374511v1_643  QLY39927.1 L-threonine 3-dehydrogenase [Tenericutes bacterium zrk29]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0   8.4e-06     0.014       2      86 ..      13      99 ..      12     109 .. 0.80
+   2 !   23.4   0.0   1.6e-09   2.7e-06     135     307 ..     167     354 ..     133     355 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 8.4e-06
+              trimmed_msa_bchC_hmm  2 etlavvlekPee.lalkrlelt.apeeedvvvdiewsgis.tGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee 77
+                                      e +avv ekPe+ +  k+++++ + ++++v+++i+  ++s  Gt+  +++    +   +  Pl+ G+e  G++++ +++
+  GCA_013745115.1_ASM1374511v1_643 13 EMMAVVKEKPEKgFVFKKVKIStDLKDQEVLIKIK--SVSfCGTDSHIYNYDHWAETHLNLPLIVGHEFSGEIIKMADD 89
+                                      6789******9846778999861456666777666..44438*******************************997766 PP
+
+              trimmed_msa_bchC_hmm 78 s.klkvgerv 86
+                                        +lk+g+ v
+  GCA_013745115.1_ASM1374511v1_643 90 VkGLKIGDVV 99
+                                      5157888876 PP
+
+  == domain 2  score: 23.4 bits;  conditional E-value: 1.6e-09
+              trimmed_msa_bchC_hmm 135 arhalagkekk.apdlivGhGvlGrllarltvaagaeapvvWetnaaraegaegye...vidpeed..........e 197
+                                       a h++++ + k ++ +i+G G +G +   ++ a ga++ +  e n+ r++ a++ +   vi+p ++          +
+  GCA_013745115.1_ASM1374511v1_643 167 AVHTVTHFDVKdKSVVILGCGPIGLMGIDVAKAYGAKQVIAIEVNEFRQNLAKELDadlVINPINEdvyqkvmeatH 243
+                                       778887776551556788******************************99887654333888854311111111113 PP
+
+              trimmed_msa_bchC_hmm 198 rrdykaivdasGdaevldkliarlakggeivlaGfyeeplsfafpp..afmrearlrvaaewkkedlaavkalvesG 272
+                                        +  ++++d sG++  ++   + ++ gg + l G+ +e++s   ++   f       v      e   +vk lv++ 
+  GCA_013745115.1_ASM1374511v1_643 244 GKGVDVVCDFSGNKGAIELAFKYIKAGGGMSLLGLPNENISIDLANdvVFKGLNIYGVVGRRIYETWDKVKYLVSND 320
+                                       3556789********************************999887621454445556888888888999******** PP
+
+              trimmed_msa_bchC_hmm 273 rlsldglithrasaeeaeeayrtafedpaClkmvl 307
+                                        l +d ++th+ + +++++a ++ ++ ++C k++l
+  GCA_013745115.1_ASM1374511v1_643 321 LLHFDKFVTHQFPLSQISQAAEV-MNGKNCGKIIL 354
+                                       *******************9765.78899999997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       1682  (548939 residues searched)
+Passed MSV filter:                        27  (0.0160523); expected 33.6 (0.02)
+Passed bias filter:                       26  (0.0154578); expected 33.6 (0.02)
+Passed Vit filter:                         3  (0.00178359); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.00059453); expected 0.0 (1e-05)
+Initial search space (Z):               1682  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 13166.12
+//
+[ok]

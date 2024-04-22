@@ -1,0 +1,205 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_022870745.1_ASM2287074v1/GCA_022870745.1_ASM2287074v1_protein.faa
+# output directed to file:         results/GCA_022870745.1_ASM2287074v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.3e-91  304.4   2.3    7.6e-73  243.5   0.3    2.3  2  GCA_022870745.1_ASM2287074v1_3972  DPFNMC_20110 Magnesium chelatase
+    9.2e-09   32.8   0.0    1.6e-08   32.1   0.0    1.3  1  GCA_022870745.1_ASM2287074v1_2175  DPFNMC_11075 Magnesium chelatase
+    0.00032   17.9   0.5     0.0012   16.1   0.0    1.9  2  GCA_022870745.1_ASM2287074v1_3590  DPFNMC_18190 DNA polymerase III 
+    0.00047   17.4   0.0     0.0019   15.4   0.0    1.9  2  GCA_022870745.1_ASM2287074v1_2729  DPFNMC_13865 Type 4 fimbriae exp
+     0.0019   15.4   3.6       0.39    7.8   1.5    2.8  2  GCA_022870745.1_ASM2287074v1_948   DPFNMC_04795 YifB family Mg chel
+  ------ inclusion threshold ------
+      0.017   12.3   0.1        1.2    6.2   0.0    2.2  2  GCA_022870745.1_ASM2287074v1_728   DPFNMC_03660 Sigma-54 factor int
+      0.024   11.7   0.3       0.37    7.8   0.0    2.1  2  GCA_022870745.1_ASM2287074v1_1684  DPFNMC_08535 Sigma-54 factor int
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022870745.1_ASM2287074v1_3972  DPFNMC_20110 Magnesium chelatase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.3   0.1   3.3e-20   2.1e-17       3      55 ..       5      56 ..       3      58 .. 0.95
+   2 !  243.5   0.3   1.2e-75   7.6e-73      93     317 ..      57     280 ..      55     286 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 61.3 bits;  conditional E-value: 3.3e-20
+               trimmed_msa_bchI_hmm  3 afpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPki 55
+                                       ++pf+aivgq++mklalll+a+d +i Gvl+ Gd+G+Gk+ta+rala llP++
+  GCA_022870745.1_ASM2287074v1_3972  5 TYPFAAIVGQEQMKLALLLSAIDWRI-GVLLRGDKGAGKTTAARALARLLPDL 56
+                                       8************************9.6999********************87 PP
+
+  == domain 2  score: 243.5 bits;  conditional E-value: 1.2e-75
+               trimmed_msa_bchI_hmm  93 vpvvdlPlGatedrvvGaldleraltkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereg 168
+                                        +p+++lP+G+tedr++G l le +l +G+  ++pGll++a+ G lyidevnll  hl d lld+aa G+ vvereg
+  GCA_022870745.1_ASM2287074v1_3972  57 APFINLPIGVTEDRLLGGLHLESTL-QGKPVLKPGLLSQAHSGVLYIDEVNLLPPHLGDALLDAAAGGVHVVEREG 131
+                                        69********************998.7************************************************* PP
+
+               trimmed_msa_bchI_hmm 169 lsvrhparfvlvGsGnPeeGelrPqlldrfGlsvevrtpkdleervevvrrrdaferdpeafvakwkkedakvrkk 244
+                                        +sv h+a fvl+Gs nPeeG lrPqlldrf lsvev +p d +er +++ rr +ferdp+ f ++++ e++++r +
+  GCA_022870745.1_ASM2287074v1_3972 132 FSVAHAAEFVLLGSMNPEEGSLRPQLLDRFALSVEVAAPLDTDERRSILERRLSFERDPSMFSEHYEGEQEELRIT 207
+                                        **************************************************************************** PP
+
+               trimmed_msa_bchI_hmm 245 ilaarkrlekvevpdavlekaaklclalgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrlr 317
+                                        +laar+r +++e p  +le+++k   a g+  lr++l+ +ra+ a+aal g+ +vtk+hl ++ pl+l+hr +
+  GCA_022870745.1_ASM2287074v1_3972 208 LLAARNRRASIECPGYILEEISKAICAAGVRSLRADLAAVRASIAYAALIGDATVTKHHLDAILPLVLNHRAK 280
+                                        ***********************************************************************75 PP
+
+>> GCA_022870745.1_ASM2287074v1_2175  DPFNMC_11075 Magnesium chelatase subunit I
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.0   2.5e-11   1.6e-08      31     224 ..      72     277 ..      46     308 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 32.1 bits;  conditional E-value: 2.5e-11
+               trimmed_msa_bchI_hmm  31 vlvlGdrGtGkstavralaallPk.ikavkgcryncdpeeeaelcee..ckekaeaeklkvkkvpvpvvd...lPl 100
+                                         ++lG rG  ks  +ral++ll + +  v+g++++ +p ++ +  ++  +++k +a+  + +++    ++    P 
+  GCA_022870745.1_ASM2287074v1_2175  72 FILLGLRGQAKSRILRALTSLLDEfVPYVAGSEIRDNPYRPLSKWSHdlVAAKGDATPIAYMTRDERYIEklaTP- 146
+                                        5789******************98457899999999888875443331244444444444444444444311044. PP
+
+               trimmed_msa_bchI_hmm 101 GatedrvvGaldleraltkGek.....afepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsv 171
+                                         +t   ++G ld  +a + Ge      +++ Gll ranrG + i+e+  l  ++   l+++ + G+  v+ +g  v
+  GCA_022870745.1_ASM2287074v1_2175 147 DVTVADLIGDLDPIKAARGGEDlaselTMHYGLLPRANRGIFAINELPDLAGKIQVALFNILQEGD--VQIKGYPV 220
+                                        45666789********999975322225789********************************998..6778**** PP
+
+               trimmed_msa_bchI_hmm 172 rhparfvlvGsGnPee....GelrPqlldrfGlsvevrtpkdleervevvrrrdafe 224
+                                        r +    lv s nPe+    G++   l dr G  +  +  +++ee + +  + +  e
+  GCA_022870745.1_ASM2287074v1_2175 221 RLELDVALVFSANPEDytarGKIVTPLKDRIGSEIRTHYAENIEEGLAITAQEAWTE 277
+                                        ***************8333355556688*****999999999999998877666555 PP
+
+>> GCA_022870745.1_ASM2287074v1_3590  DPFNMC_18190 DNA polymerase III subunit gamma/tau
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   1.9e-06    0.0012       5      86 ..      14      94 ..      10     103 .. 0.75
+   2 ?   -0.8   0.2      0.26   1.6e+02     265     316 ..     208     263 ..     174     279 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 1.9e-06
+               trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaa.vdpsigGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelceeckeka 81
+                                        fs + gqd+++++ll a  + +   G +  G rG Gk+t +r la+ l   ++  g++ + +pe    +ce+c+e +
+  GCA_022870745.1_ASM2287074v1_3590 14 RFSDVAGQDHVTRTLLNALsLGRIAHGYIFSGHRGIGKTTIARILAQALNC-RTAIGSPERPTPEPC-GVCESCTEIK 89
+                                       599***********99886155555688999****************9965.555566666666544.7888887776 PP
+
+               trimmed_msa_bchI_hmm 82 eaekl 86
+                                       + +  
+  GCA_022870745.1_ASM2287074v1_3590 90 AGNAV 94
+                                       65554 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.26
+               trimmed_msa_bchI_hmm 265 aaklclalgtdGlrgeltllraaralaaleg.akevtkehlkkv...aplalrhrl 316
+                                        a +l  + g   +r  l+++  a a a +e+   ++++++++++    p a+  rl
+  GCA_022870745.1_ASM2287074v1_3590 208 ALALLAEAGDGSMRDALSIMDQAIASAPMENgLAKLDAAQIRELmgtVPNAVFERL 263
+                                        3345556677779************9998751445555555544111455555555 PP
+
+>> GCA_022870745.1_ASM2287074v1_2729  DPFNMC_13865 Type 4 fimbriae expression regulatory protein PilR
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0     3e-06    0.0019       2      50 ..     154     204 ..     153     208 .. 0.90
+   2 ?   -1.3   0.0      0.36   2.3e+02     126     143 ..     246     263 ..     235     270 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 3e-06
+               trimmed_msa_bchI_hmm   2 aafpfsaivgqdemklal..llaavdpsigGvlvlGdrGtGkstavralaa 50 
+                                        +++ fs i+g+ e+ l +  l+a v ps + vl+ G+ GtGk   ++al a
+  GCA_022870745.1_ASM2287074v1_2729 154 QRYSFSNIIGKSEVMLRIfdLVAQVAPSRSTVLIQGESGTGKELIAKALHA 204
+                                        689**********888775689*********************99999865 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.36
+               trimmed_msa_bchI_hmm 126 pGllaranrGflyidevn 143
+                                         Gl+  an G l++de+ 
+  GCA_022870745.1_ASM2287074v1_2729 246 KGLFEVANGGTLFLDEIG 263
+                                        6999************96 PP
+
+>> GCA_022870745.1_ASM2287074v1_948  DPFNMC_04795 YifB family Mg chelatase-like AAA ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0    0.0019       1.2       4      58 ..     199     251 ..     196     266 .. 0.85
+   2 !    7.8   1.5   0.00063      0.39     125     306 ..     298     506 ..     287     515 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.0019
+              trimmed_msa_bchI_hmm   4 fpfsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikav 58 
+                                         f+ + gq+  k+al +aa   +   +l++G  G+Gk+  ++ l ++l +++  
+  GCA_022870745.1_ASM2287074v1_948 199 LDFADVRGQQTAKRALEVAAAGGH--NILMIGPPGSGKTMLAKRLPSILTPLSFE 251
+                                       679999*************98664..79************999999999988755 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.00063
+              trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP..........eeGelr 191
+                                        pG ++ a+ G l++de+  +   +++++    +  + ++ r ++s+  p+ f+l  + nP           e +  
+  GCA_022870745.1_ASM2287074v1_948 298 RPGEVSLAHNGVLFLDELPEFPRNVLEVMRQPLEDRNVTIARASMSLSFPSAFMLAAAMNPcpcgyfndrsRECHCT 374
+                                       6999999***********9999999999999988888889***************9999995555554444477888 PP
+
+              trimmed_msa_bchI_hmm 192 PqlldrfGlsvevrtpkdleervev..vrrrd...aferdpea.fvakwkkedakvrkkilaarkrl.ekvevpdav 261
+                                       P l+ r+   v     + ++  +ev  v+ r+      ++++a   +++ ++ +  r++ l+a++++ ++ ++  + 
+  GCA_022870745.1_ASM2287074v1_948 375 PPLIQRYVSKVSGPLLDRIDIHIEVpaVQYRElrgGAASESSAvIRERVLRAREMQRQRFLSAKEKIySNAQMGTRQ 451
+                                       99999998888877777777777765466554222233444440445556666667778888887762556777777 PP
+
+              trimmed_msa_bchI_hmm 262 lekaaklc........lalgtdGl..rgeltllraaralaalegakevtkehlkk 306
+                                       ++  ++l          a+   Gl  r+   +l+ ar++a l g+++vt +h+++
+  GCA_022870745.1_ASM2287074v1_948 452 IRAFCELGpeaeklleRAMQQQGLtaRAHDRILKVARTIADLAGEERVTVAHIAE 506
+                                       7766555322111111467788885567788999999999999999999999876 PP
+
+>> GCA_022870745.1_ASM2287074v1_728  DPFNMC_03660 Sigma-54 factor interaction domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.0    0.0019       1.2      31      51 ..      13      33 ..       4      46 .. 0.90
+   2 ?    3.9   0.0    0.0095       5.9     119     157 ..      67     105 ..      62     137 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.0019
+              trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaal 51
+                                      vl+ G+ GtGk  a+r+l a+
+  GCA_022870745.1_ASM2287074v1_728 13 VLITGESGTGKEVAARSLHAM 33
+                                      9*****************886 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0095
+              trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldva 157
+                                       +G k+  +G +  a++G l++de+  le  l   ll + 
+  GCA_022870745.1_ASM2287074v1_728  67 TGAKEARAGKFELADKGTLFLDEIGELEFALQSKLLHAL 105
+                                       58899999*******************999988888655 PP
+
+>> GCA_022870745.1_ASM2287074v1_1684  DPFNMC_08535 Sigma-54 factor interaction domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   0.0     0.044        28      29      70 ..      55      96 ..      32     109 .. 0.78
+   2 ?    7.8   0.0    0.0006      0.37     120     160 ..     113     153 ..     106     158 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 1.7 bits;  conditional E-value: 0.044
+               trimmed_msa_bchI_hmm 29 gGvlvlGdrGtGkstavralaallPkikavkgcryncdpeee 70
+                                          l+ G+ GtGk   ++a+ +l  k k  +  +++c+  +e
+  GCA_022870745.1_ASM2287074v1_1684 55 VTTLIEGETGTGKQVLAQAIHSLDGKRKNNAFVTVHCSTVSE 96
+                                       346899**************9999999888888888877665 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0006
+               trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasG 160
+                                        G  a   Gl+  a+ G l++d+vn l   l   lldv + G
+  GCA_022870745.1_ASM2287074v1_1684 113 GAFANRRGLFQAARNGTLFLDDVNDLPLVLQPKLLDVLQRG 153
+                                        6667788******************************9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4339  (1616677 residues searched)
+Passed MSV filter:                       205  (0.0472459); expected 86.8 (0.02)
+Passed bias filter:                      148  (0.0341092); expected 86.8 (0.02)
+Passed Vit filter:                        25  (0.0057617); expected 4.3 (0.001)
+Passed Fwd filter:                         7  (0.00161327); expected 0.0 (1e-05)
+Initial search space (Z):               4339  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10125.77
+//
+[ok]

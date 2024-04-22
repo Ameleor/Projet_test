@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_021391615.1_ASM2139161v1/GCA_021391615.1_ASM2139161v1_protein.faa
+# output directed to file:         results/GCA_021391615.1_ASM2139161v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0063   14.3   0.1      0.011   13.6   0.1    1.3  1  GCA_021391615.1_ASM2139161v1_6550  UIJ90305.1 iron ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021391615.1_ASM2139161v1_6550  UIJ90305.1 iron ABC transporter permease (plasmid) [Rhizobium leguminosarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.1   1.8e-06     0.011      87     156 ..     215     284 ..     197     299 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 1.8e-06
+               trimmed_msa_crtC_hmm  87 pelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveap 156
+                                          ++ +G++++D  + ++pl ++ + WdW   + ++g  ++    r d++ +  a  +++dG+++ +++ 
+  GCA_021391615.1_ASM2139161v1_6550 215 SPVKVTGRAWLDREWSSQPLASNQTGWDWFSLHFDSGEKLMAFRLRDDKDGFISANWISSDGRTTPLSKE 284
+                                        557889******************************9777766677888889999999999998877654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       6042  (1745041 residues searched)
+Passed MSV filter:                       108  (0.0178749); expected 120.8 (0.02)
+Passed bias filter:                       93  (0.0153923); expected 120.8 (0.02)
+Passed Vit filter:                         6  (0.000993049); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000165508); expected 0.1 (1e-05)
+Initial search space (Z):               6042  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 18145.83
+//
+[ok]

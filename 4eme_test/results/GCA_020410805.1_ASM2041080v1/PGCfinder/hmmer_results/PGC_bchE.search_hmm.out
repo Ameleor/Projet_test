@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410805.1_ASM2041080v1/GCA_020410805.1_ASM2041080v1_protein.faa
+# output directed to file:         results/GCA_020410805.1_ASM2041080v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.015   10.6   0.0      0.023   10.0   0.0    1.2  1  GCA_020410805.1_ASM2041080v1_646  UCM93282.1 MAG: peptide chain re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410805.1_ASM2041080v1_646  UCM93282.1 MAG: peptide chain release factor N(5)-glutamine methyltransferase [Rick
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   1.5e-05     0.023     182     266 ..      98     183 ..      91     185 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 1.5e-05
+                      trimmed_bchE 182 alvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflk 257
+                                       +++ + +l+ ++ + + ++l++G G+G  +  +  ++p+ +++  D+  + ++ ar++  ++++sdr +++  ++++
+  GCA_020410805.1_ASM2041080v1_646  98 EVLVDAILSDIKTNAELAILELGTGSGCIALSLLLEMPNSNVTATDISnEAIAIARQNAIKHKVSDRFKIINSNWFE 174
+                                       6788999***************************************96267899******************99998 PP
+
+                      trimmed_bchE 258 dplPegaDl 266
+                                       +   + +D+
+  GCA_020410805.1_ASM2041080v1_646 175 NLEKQKFDI 183
+                                       876666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1485  (437244 residues searched)
+Passed MSV filter:                        49  (0.0329966); expected 29.7 (0.02)
+Passed bias filter:                       45  (0.030303); expected 29.7 (0.02)
+Passed Vit filter:                         5  (0.003367); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000673401); expected 0.0 (1e-05)
+Initial search space (Z):               1485  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16800.46
+//
+[ok]

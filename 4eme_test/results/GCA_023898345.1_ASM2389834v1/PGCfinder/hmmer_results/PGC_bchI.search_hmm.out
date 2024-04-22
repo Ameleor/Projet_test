@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898345.1_ASM2389834v1/GCA_023898345.1_ASM2389834v1_protein.faa
+# output directed to file:         results/GCA_023898345.1_ASM2389834v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.1e-05   21.2   0.0      0.013   11.0   0.0    2.4  2  GCA_023898345.1_ASM2389834v1_902  USN43659.1 MAG: ATP-dependent pr
+  ------ inclusion threshold ------
+      0.011   11.3   0.1      0.016   10.8   0.1    1.5  1  GCA_023898345.1_ASM2389834v1_33   USN44250.1 MAG: MoxR family ATPa
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898345.1_ASM2389834v1_902  USN43659.1 MAG: ATP-dependent protease LonB [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.5   0.0   0.00022      0.16      29      75 ..      62     108 ..      40     129 .. 0.70
+   2 !   11.0   0.0   1.8e-05     0.013     125     198 ..     256     338 ..     249     396 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00022
+              trimmed_msa_bchI_hmm  29 gGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelce 75 
+                                         +l+lG+ GtGks    a+a++l   +av+   y   ++e++ l +
+  GCA_023898345.1_ASM2389834v1_902  62 RHILLLGEPGTGKSLMGSAIAEILSTKNAVDMLCYPNPKDENNPLVK 108
+                                       4699*********************9999988777666555554444 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 1.8e-05
+              trimmed_msa_bchI_hmm 125 epGllaranrGflyidevnlledhlvdllldvaasGe.nvv...ere.glsvrh...parfvlvGsGnPee.GelrP 192
+                                        +G++ +an G l+ide+  l+  +   ll + +  +  +    er  g  vr    p+ fvlv +Gn +   ++ P
+  GCA_023898345.1_ASM2389834v1_902 256 VAGMIHKANGGVLFIDEIATLKPEMQQELLTAIQEKQmPITgrsERSaGAMVRTspaPTDFVLVAAGNLDTlKHMHP 332
+                                       579*******************99998888776655414542224433666885333678*******9876256778 PP
+
+              trimmed_msa_bchI_hmm 193 qlldrf 198
+                                        l  r 
+  GCA_023898345.1_ASM2389834v1_902 333 ALRSRI 338
+                                       777774 PP
+
+>> GCA_023898345.1_ASM2389834v1_33  USN44250.1 MAG: MoxR family ATPase [Candidatus Woesearchaeota archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.1   2.2e-05     0.016     278     316 ..     257     295 ..     106     319 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.2e-05
+             trimmed_msa_bchI_hmm 278 rgeltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                      r+ + l  aa++++ ++g+++v  +++k +ap++lrhr+
+  GCA_023898345.1_ASM2389834v1_33 257 RATINLALAAKTYSLMQGRDHVLPDDVKLLAPSVLRHRI 295
+                                      77888999******************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1467  (462166 residues searched)
+Passed MSV filter:                        74  (0.0504431); expected 29.3 (0.02)
+Passed bias filter:                       64  (0.0436264); expected 29.3 (0.02)
+Passed Vit filter:                        11  (0.0074983); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00136333); expected 0.0 (1e-05)
+Initial search space (Z):               1467  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5508.51
+//
+[ok]

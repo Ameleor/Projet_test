@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023277545.1_ASM2327754v1/GCA_023277545.1_ASM2327754v1_protein.faa
+# output directed to file:         results/GCA_023277545.1_ASM2327754v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.3e-08   28.3   2.8    6.8e-06   21.4   0.2    3.2  3  GCA_023277545.1_ASM2327754v1_199  UQA79169.1 MoxR family ATPase [G
+    9.6e-06   20.9   0.0    0.00088   14.4   0.0    2.2  2  GCA_023277545.1_ASM2327754v1_384  UQA79005.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023277545.1_ASM2327754v1_199  UQA79169.1 MoxR family ATPase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.22   1.1e+02       4      24 ..      50      70 ..      48      77 .. 0.87
+   2 !    4.1   0.2    0.0024       1.2       8      53 ..      78     121 ..      72     145 .. 0.79
+   3 !   21.4   0.2   1.3e-08   6.8e-06     137     330 ..     163     373 ..     153     381 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.22
+              trimmed_msa_bchI_hmm  4 fpfsaivgqdemklalllaav 24
+                                       p sa v+++++k+a  +a +
+  GCA_023277545.1_ASM2327754v1_199 50 QPVSAGVSNEDIKRAQQIADI 70
+                                      5999***********999876 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0024
+              trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallP 53 
+                                       ++vgqd ++++l+l+    + g +l+    G  k+ta+++la+ + 
+  GCA_023277545.1_ASM2327754v1_199  78 TLVGQDSLRESLILTLA--AGGHILIESVPGLAKTTAAQTLATAMS 121
+                                       68**********99864..34678888999***********98665 PP
+
+  == domain 3  score: 21.4 bits;  conditional E-value: 1.3e-08
+              trimmed_msa_bchI_hmm 137 lyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP..eeGe..lrPqlldrfGlsvevrtpkd 209
+                                       + +de+n  + +    +l++ a G  ++  e + +  p  f+++ + nP  eeG   l    +drf +   +++   
+  GCA_023277545.1_ASM2327754v1_199 163 ILLDEINRSNAKTQSAMLEAMAEGATTIGGERINL--PQPFMVIATQNPieEEGTfnLPEAQMDRFMIKA-IMSYPS 236
+                                       678999999999999***********998887665..6779*******966667522555679***8876.666667 PP
+
+              trimmed_msa_bchI_hmm 210 leervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklclalgtdG...l...... 277
+                                       ++e v++++   +  r ++ f  +  ++++   ++++  r++ ++v+v++av++ a  ++ +   +G   l      
+  GCA_023277545.1_ASM2327754v1_199 237 FNEEVSMLKLLTN--RGSDVFNPESLNNQKISLQDVTFLRSATRRVHVSEAVMKYAVDIVATSRGEGshpLktissl 311
+                                       9999999998765..55667888888888888899999999999999999999988887665433332222222222 PP
+
+              trimmed_msa_bchI_hmm 278 .......rgeltllraaralaalegakevtkehlkkvaplalrhr..lrrdpldeagstarv 330
+                                              r+ ++l+r  +a a l+g++ v  e++kk a  +lrhr  l  ++l ++ ++ ++
+  GCA_023277545.1_ASM2327754v1_199 312 vrmgaspRASIALIRIGQAQALLSGRDYVIPEDVKKFAHDVLRHRilLTFEALADSITSDQI 373
+                                       33333448899**********************************44456677666555544 PP
+
+>> GCA_023277545.1_ASM2327754v1_384  UQA79005.1 YifB family Mg chelatase-like AAA ATPase [Gardnerella vaginalis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.9   0.0    0.0026       1.3       6      56 ..     242     290 ..     239     305 .. 0.79
+   2 !   14.4   0.0   1.7e-06   0.00088     124     185 ..     338     399 ..     329     403 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.0026
+              trimmed_msa_bchI_hmm   6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkik 56 
+                                       +s ++gq++ k al +aa   +   v+++G  G+Gk+  +  + +++ +++
+  GCA_023277545.1_ASM2327754v1_384 242 MSEVLGQEHTKWALQVAAAGGH--HVMMIGPPGSGKTMLASRMPSIMCPLN 290
+                                       57899************98664..69**********986666666665555 PP
+
+  == domain 2  score: 14.4 bits;  conditional E-value: 1.7e-06
+              trimmed_msa_bchI_hmm 124 fepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        +pG+++ra+ G l++de   +   ++  l +  +sG+  v r   +  +pa+f lv + nP
+  GCA_023277545.1_ASM2327754v1_384 338 AKPGIITRAHCGVLFMDEAPEFSPRVLQTLREPLESGHIAVSRSKGTTLYPAKFQLVIAANP 399
+                                       58******************************************9999***********999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1035  (362936 residues searched)
+Passed MSV filter:                        74  (0.0714976); expected 20.7 (0.02)
+Passed bias filter:                       52  (0.0502415); expected 20.7 (0.02)
+Passed Vit filter:                        14  (0.0135266); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00193237); expected 0.0 (1e-05)
+Initial search space (Z):               1035  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5521.30
+//
+[ok]

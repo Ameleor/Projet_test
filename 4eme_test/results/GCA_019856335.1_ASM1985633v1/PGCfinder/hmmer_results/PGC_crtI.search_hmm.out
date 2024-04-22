@@ -1,0 +1,131 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019856335.1_ASM1985633v1/GCA_019856335.1_ASM1985633v1_protein.faa
+# output directed to file:         results/GCA_019856335.1_ASM1985633v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0015   14.3   0.1     0.0039   12.9   0.0    1.7  2  GCA_019856335.1_ASM1985633v1_714   QZT18140.1 UDP-galactopyranose m
+     0.0039   12.9   7.8      0.006   12.3   0.8    2.5  3  GCA_019856335.1_ASM1985633v1_2469  QZT17399.1 flavocytochrome c [St
+  ------ inclusion threshold ------
+      0.026   10.2   0.7       0.24    7.0   0.1    2.1  2  GCA_019856335.1_ASM1985633v1_180   QZT17649.1 NAD(P)/FAD-dependent 
+      0.075    8.7   2.6       0.11    8.2   0.1    2.2  3  GCA_019856335.1_ASM1985633v1_2497  QZT17426.1 tRNA uridine-5-carbox
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019856335.1_ASM1985633v1_714  QZT18140.1 UDP-galactopyranose mutase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   6.4e-06    0.0039       5      49 ..       7      51 ..       3      73 .. 0.87
+   2 ?   -1.9   0.0       0.2   1.2e+02     263     303 ..     263     304 ..     256     307 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 6.4e-06
+              trimmed_msa_crtI_hmm  5 vviGaGfGGlaaairlgakGyrvtvlekldapGGrayvhrkdgft 49
+                                      +v+GaG+ G   a   ++kG +++v+ek+d++ G  y+ + +g +
+  GCA_019856335.1_ASM1985633v1_714  7 LVVGAGLFGAVFAHEAAKKGKKIKVIEKRDHIAGNIYTKEVEGIQ 51
+                                      79*********************************9999998864 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.2
+              trimmed_msa_crtI_hmm 263 eeieadvvvsnadaaltykklleeekrkrwtdkk.lerkrys 303
+                                       e+ + ++vv  +d+ + y++++e+++ +  t++k + +++ys
+  GCA_019856335.1_ASM1985633v1_714 263 ENYQGNAVVNYTDSETPYTRIIEHKHFEYGTQEKtIITREYS 304
+                                       567788999999**********99987776655415556666 PP
+
+>> GCA_019856335.1_ASM1985633v1_2469  QZT17399.1 flavocytochrome c [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.8   9.9e-06     0.006       4      40 ..      65     101 ..      62     109 .. 0.92
+   2 !    4.5   0.2    0.0023       1.4     221     271 ..     191     244 ..     184     252 .. 0.81
+   3 ?   -2.6   0.1      0.32     2e+02     211     225 ..     436     448 ..     430     465 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 9.9e-06
+               trimmed_msa_crtI_hmm   4 avviGaGfGGlaaairlgakGyrvtvlekldapGGra 40 
+                                        ++v+G+G  G++aai  + +G  v +lek+  +GG +
+  GCA_019856335.1_ASM1985633v1_2469  65 VIVVGSGGAGMSAAISAKDAGASVVLLEKMPVIGGNT 101
+                                        79********************************976 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.0023
+               trimmed_msa_crtI_hmm 221 galvkglvklieeqGgelrlnaeveeievedgratgvrla.sGe..eieadvvv 271
+                                        g lv+gl + + e+ + + +na+v++++ +dg++tgv+++  Ge  +i+a++vv
+  GCA_019856335.1_ASM1985633v1_2469 191 GYLVNGLYHNLVEREVPIFVNADVTKLQDKDGAVTGVEVKiAGEtkKISAKAVV 244
+                                        369******99999***********************99744541145566665 PP
+
+  == domain 3  score: -2.6 bits;  conditional E-value: 0.32
+               trimmed_msa_crtI_hmm 211 fGvhyamGGtgalvk 225
+                                         Gvh++mGG++  ++
+  GCA_019856335.1_ASM1985633v1_2469 436 PGVHHTMGGVK--IN 448
+                                        69*******97..34 PP
+
+>> GCA_019856335.1_ASM1985633v1_180  QZT17649.1 NAD(P)/FAD-dependent oxidoreductase [Streptococcus suis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.1   0.00039      0.24       4      38 ..       6      40 ..       3      54 .. 0.91
+   2 ?    1.3   0.0     0.021        13     208     252 ..      98     142 ..      93     167 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00039
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                      +++iGaG  G+ aai  +  G ++ +lek +++G 
+  GCA_019856335.1_ASM1985633v1_180  6 TIIIGAGPAGMMAAISSSFYGKKTLLLEKNKRLGK 40
+                                      79***************************999885 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.021
+              trimmed_msa_crtI_hmm 208 erkfGvhyamGGtgalvkglvklieeqGgelrlnaeveeievedg 252
+                                       e +  v+ ++   ++++k l   + e+G+++r+++ev +++  d+
+  GCA_019856335.1_ASM1985633v1_180  98 EDHGRVFPTTDRSQTIIKCLEMKMLENGVDIRTGTEVVSVRKIDE 142
+                                       666667778888899**********************99876554 PP
+
+>> GCA_019856335.1_ASM1985633v1_2497  QZT17426.1 tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG [Stre
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.2     0.073        45       4      27 ..      11      34 ..       8      43 .. 0.79
+   2 ?    8.2   0.1   0.00017      0.11     222     276 ..     105     159 ..      85     180 .. 0.88
+   3 ?   -3.7   0.0       0.7   4.3e+02     145     184 ..     322     361 ..     288     370 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.073
+               trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrv 27
+                                       ++viGaG  G+ a +  +  G ++
+  GCA_019856335.1_ASM1985633v1_2497 11 VIVIGAGHAGVEAGLAASRMGCKT 34
+                                       79*********9988777777765 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00017
+               trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnada 276
+                                        + ++ + +++e+q +    ++ ++ei+ve+g++ g+r+a+ ++++a++vv  + +
+  GCA_019856335.1_ASM1985633v1_2497 105 EYAAEMKRTVERQENLTLRQTMIDEILVEEGKVIGIRTATNQKFSAKAVVVTTGT 159
+                                        556789999999999999999*************************999976655 PP
+
+  == domain 3  score: -3.7 bits;  conditional E-value: 0.7
+               trimmed_msa_crtI_hmm 145 esladllkalpelvklkayrsvyslvakavkdeklreals 184
+                                        +  +dl++ ++ l + + +r+ y++   +v  ++lr  l 
+  GCA_019856335.1_ASM1985633v1_2497 322 DVQQDLIHSIKGLENAQMMRTGYAIEYDMVMPHQLRATLE 361
+                                        3456788888888888888888888888888888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       2437  (736292 residues searched)
+Passed MSV filter:                        87  (0.0356996); expected 48.7 (0.02)
+Passed bias filter:                       70  (0.0287238); expected 48.7 (0.02)
+Passed Vit filter:                        12  (0.00492409); expected 2.4 (0.001)
+Passed Fwd filter:                         4  (0.00164136); expected 0.0 (1e-05)
+Initial search space (Z):               2437  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8555.25
+//
+[ok]

@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700035.1_ASM1670003v1/GCA_016700035.1_ASM1670003v1_protein.faa
+# output directed to file:         results/GCA_016700035.1_ASM1670003v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0062   10.8   0.0     0.0091   10.2   0.0    1.2  1  GCA_016700035.1_ASM1670003v1_160  QQS27116.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700035.1_ASM1670003v1_160  QQS27116.1 YifB family Mg chelatase-like AAA ATPase [bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0     1e-05    0.0091     182     241 ..     438     497 ..     372     510 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 1e-05
+              trimmed_msa_bchD_hmm 182 rlpkvtleeealealvataaalGidslRapllalraaralAalegrteveeedlalAarl 241
+                                       +l+++   +  +++l++ta +    s R ++  l++ar++A le+ t +e+ +l+ A+++
+  GCA_016700035.1_ASM1670003v1_160 438 KLSTICNVSPDAKKLIETALNHFGISQRSAARTLKVARTIADLEDSTLIEATHLSEALQF 497
+                                       44445556667889999998877779*******************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                        870  (272460 residues searched)
+Passed MSV filter:                        53  (0.0609195); expected 17.4 (0.02)
+Passed bias filter:                       19  (0.0218391); expected 17.4 (0.02)
+Passed Vit filter:                         2  (0.00229885); expected 0.9 (0.001)
+Passed Fwd filter:                         1  (0.00114943); expected 0.0 (1e-05)
+Initial search space (Z):                870  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14667.53
+//
+[ok]

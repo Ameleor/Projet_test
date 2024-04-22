@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023300185.1_ASM2330018v1/GCA_023300185.1_ASM2330018v1_protein.faa
+# output directed to file:         results/GCA_023300185.1_ASM2330018v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.5e-07   25.3   0.1    8.1e-07   24.5   0.1    1.3  1  GCA_023300185.1_ASM2330018v1_1474  UQF78124.1 MAG: AAA family ATPas
+    2.9e-05   19.4   0.2    0.00011   17.6   0.0    1.8  2  GCA_023300185.1_ASM2330018v1_1009  UQF77688.1 MAG: Mrp/NBP35 family
+    0.00017   16.9   0.0    0.00042   15.6   0.0    1.6  1  GCA_023300185.1_ASM2330018v1_912   UQF77600.1 MAG: signal recogniti
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023300185.1_ASM2330018v1_1474  UQF78124.1 MAG: AAA family ATPase [Lancefieldella parvula]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.1   1.8e-09   8.1e-07      21      66 ..      14      60 ..       3      66 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 1.8e-09
+               trimmed_msa_bchX_hmm 21 etqiia.iygkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                       + +++a i  kgg+gks t+ nl+  l +  kkvl+i  dp+ ++ts
+  GCA_023300185.1_ASM2330018v1_1474 14 DPKVLAvINQKGGVGKSTTVINLAAALGETKKKVLIIDFDPQGNATS 60
+                                       5556652678*********************************9998 PP
+
+>> GCA_023300185.1_ASM2330018v1_1009  UQF77688.1 MAG: Mrp/NBP35 family ATP-binding protein [Lancefieldella parvula]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   0.0   2.3e-07   0.00011      22      62 ..      42      82 ..      22      95 .. 0.77
+   2 ?   -0.8   0.1     0.086        40     138     184 ..     150     196 ..     135     213 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 2.3e-07
+               trimmed_msa_bchX_hmm 22 tqiiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                         i  + gkgg+gksf    l+  la+ gk+v ++  d   
+  GCA_023300185.1_ASM2330018v1_1009 42 HVIGVVSGKGGVGKSFVTGILATNLARAGKRVGILDGDITG 82
+                                       3345678*************************988877655 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.086
+               trimmed_msa_bchX_hmm 138 dfdyvlldf...lgdvvcggf.glpiardlcqkvivvgsndlqslyvannv 184
+                                        d+dy+l+d+    gdv    f  lp+       viv + +dl  + v + v
+  GCA_023300185.1_ASM2330018v1_1009 150 DLDYLLIDMppgTGDVALTVFqSLPVE----GVVIVSSPQDLVQMVVGKAV 196
+                                        477777776333455555554224432....22333333566655555544 PP
+
+>> GCA_023300185.1_ASM2330018v1_912  UQF77600.1 MAG: signal recognition particle protein [Lancefieldella parvula]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0     9e-07   0.00042      19      61 ..      98     140 ..      86     151 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 9e-07
+              trimmed_msa_bchX_hmm  19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpk 61 
+                                       ++  ++i + g  g+gk+ + a+l+y+l  qgk+ ll  cd +
+  GCA_023300185.1_ASM2330018v1_912  98 NRIPNVIMLVGLQGSGKTTAAAKLAYLLKSQGKNPLLAACDVH 140
+                                       455679999********************************65 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1384  (433708 residues searched)
+Passed MSV filter:                        61  (0.0440751); expected 27.7 (0.02)
+Passed bias filter:                       50  (0.0361272); expected 27.7 (0.02)
+Passed Vit filter:                         7  (0.0050578); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.00216763); expected 0.0 (1e-05)
+Initial search space (Z):               1384  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7596.29
+//
+[ok]

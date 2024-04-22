@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/GCA_905186145.1_Succinivibrio_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                         -----------
+      0.002   13.9   0.0       0.11    8.2   0.0    2.1  2  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1452  EOCKBE_07715 hypothetical protei
+     0.0029   13.4   0.0     0.0054   12.5   0.0    1.5  1  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1468  EOCKBE_07795 Hydrolase-4 domain-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1452  EOCKBE_07715 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.1   0.0    0.0024         2      41      78 ..      27      63 ..      15     152 .. 0.75
+   2 !    8.2   0.0   0.00013      0.11     218     266 ..     198     244 ..     177     257 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.0024
+                              trimmed_msa_bchO_hmm 41 HGtGasthswrdllplLaarfrviapDLPghgftesaa 78
+                                                      HG  a+  s+   +  L ++ +v+ +DLPg g+ ++ a
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1452 27 HGW-ATDSSFTLPIVDLFSTRKVMLLDLPGYGINSHFA 63
+                                                      554.344455544445556669**********987665 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00013
+                              trimmed_msa_bchO_hmm 218 llrdlpklktplllivgekDravppkearevaallpkarlveleglGHL 266
+                                                       l+  l++l +p + + ge+D+ vp+k+a+ +++  +++ +  +++ GH+
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1452 198 LRVCLKNLPQPCFHLFGEHDNLVPAKQAEYLKRFKHQSFV--FKNSGHM 244
+                                                       5567889999********************9999766654..5566786 PP
+
+>> GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1468  EOCKBE_07795 Hydrolase-4 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   6.4e-06    0.0054      36     174 ..      55     199 ..      46     308 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 6.4e-06
+                              trimmed_msa_bchO_hmm  36 vlLLlHGtGasthswrdllplLaa.rfrviapDLPghgftes..aaeerlsLpgm...aea 90 
+                                                       +l ++ G G  +h + +ll  L + + r++++   g+g +++  + ++r+ +++     e+
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1468  55 CLVIIPGRGEIAHKYAELLYSLRNeNKRIVILFVRGQGQSSRllPDKQRCHIDKFcyfRED 115
+                                                       677899***********999887615678899999***9986225689999998622279* PP
+
+                              trimmed_msa_bchO_hmm  91 laaLlaalgvepavvvGHSAGaaialrlaldgkiapkkvvglngallpleglagllfppla 151
+                                                       ++ Ll++l+++   +++ S G+ i l + l++  +p k   l + + p   l   +++ l 
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1468 116 ISFLLKKLNIKSYKLLAFSLGSLISLDVILNSDPPPLKAALLAPYIYPYFPLPRFILSSLI 176
+                                                       ********************************99998888899999999999999999999 PP
+
+                              trimmed_msa_bchO_hmm 152 kllalnplvaslfaklardraav 174
+                                                        +l   p++ ++++ + ++ ++v
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1468 177 MILGSLPFINKCYTPHGKNYKRV 199
+                                                       99999999999888777666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1683  (583205 residues searched)
+Passed MSV filter:                        60  (0.0356506); expected 33.7 (0.02)
+Passed bias filter:                       53  (0.0314914); expected 33.7 (0.02)
+Passed Vit filter:                         7  (0.00415924); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00118835); expected 0.0 (1e-05)
+Initial search space (Z):               1683  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6807.29
+//
+[ok]

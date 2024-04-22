@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699515.1_ASM1669951v1/GCA_016699515.1_ASM1669951v1_protein.faa
+# output directed to file:         results/GCA_016699515.1_ASM1669951v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0014   14.2   0.2     0.0054   12.2   0.0    2.0  2  GCA_016699515.1_ASM1669951v1_580  QQR84132.1 DNA polymerase III su
+     0.0047   12.4   0.2      0.013   11.0   0.0    1.8  2  GCA_016699515.1_ASM1669951v1_516  QQR84069.1 PilT/PilU family type
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699515.1_ASM1669951v1_580  QQR84132.1 DNA polymerase III subunit gamma/tau [Candidatus Peregrinibacteria bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   7.8e-06    0.0054       5      75 ..      11      77 ..       7      96 .. 0.69
+   2 ?   -1.5   0.0      0.12        84      49     102 ..     274     327 ..     254     336 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 7.8e-06
+              trimmed_msa_bchI_hmm  5 pfsaivgqdemklalllaavdps.igGvlvlGdrGtGkstavralaallPkikavkgcryncdpeeeaelce 75
+                                       fs +vgq+ + ++l  a  + + +   l  G rGtGk++ +r +a+ +   +     r ++dp ++ + c+
+  GCA_016699515.1_ASM1669951v1_580 11 TFSDLVGQEAIVKTLSNALTQGRvVHAYLFCGPRGTGKTSMARLMAKSINCAN-----RQEADPCNQCNSCA 77
+                                      69*************9998887615677888********99998886543322.....33333333333333 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.12
+              trimmed_msa_bchI_hmm  49 aallPkikavkgcryncdpeeeaelceeckekaeaeklkvkkvpvpvvdlPlGa 102
+                                       a++l ++ +    ++  + ++++ ++e ++  ++ +++k+k +++ vv lP+ +
+  GCA_016699515.1_ASM1669951v1_580 274 ANVLSELIQYLRKQMLQAARSNQPTTEWIEWIEHIQEAKAKMNQSVVVQLPVEV 327
+                                       555554433333333333333445555565557777788888888888888765 PP
+
+>> GCA_016699515.1_ASM1669951v1_516  QQR84069.1 PilT/PilU family type 4a pilus ATPase [Candidatus Peregrinibacteria bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0   1.9e-05     0.013      27      60 ..     143     176 ..     136     213 .. 0.77
+   2 ?   -2.3   0.0       0.2   1.4e+02     138     201 ..     222     280 ..     208     292 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.9e-05
+              trimmed_msa_bchI_hmm  27 sigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                       + g +lv G  G+Gkst+++al +ll + ++ + 
+  GCA_016699515.1_ASM1669951v1_516 143 REGLLLVCGSAGSGKSTTLQALLQLLNQTTSQHI 176
+                                       557789********************98776554 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.2
+              trimmed_msa_bchI_hmm 138 yidevnlledhlvdllldvaasGenvvereglsvrhparfv.lvGsGnPeeGelrPqlldrfGls 201
+                                        ide+n  + h +d  l+  ++G+ v+    l+v   a +  l+        elr q  dr+ ++
+  GCA_016699515.1_ASM1669951v1_516 222 MIDEIN--DYHTLDAALNLVETGHLVIS-SLLTVHSIATIErLINL---YPPELRDQARDRLSIA 280
+                                       577777..55777777777777766654.33444444443312222...2235666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1384  (369615 residues searched)
+Passed MSV filter:                        49  (0.0354046); expected 27.7 (0.02)
+Passed bias filter:                       37  (0.0267341); expected 27.7 (0.02)
+Passed Vit filter:                         8  (0.00578035); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00144509); expected 0.0 (1e-05)
+Initial search space (Z):               1384  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9339.94
+//
+[ok]

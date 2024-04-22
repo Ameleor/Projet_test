@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_019222785.1_ASM1922278v1/GCA_019222785.1_ASM1922278v1_protein.faa
+# output directed to file:         results/GCA_019222785.1_ASM1922278v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0024   14.0   0.0     0.0055   12.8   0.0    1.6  1  GCA_019222785.1_ASM1922278v1_1881  QXN86430.1 DNA polymerase III su
+     0.0099   12.0   0.0      0.022   10.9   0.0    1.5  1  GCA_019222785.1_ASM1922278v1_1371  QXN86008.1 sigma 54-interacting 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019222785.1_ASM1922278v1_1881  QXN86430.1 DNA polymerase III subunit gamma/tau [Tetragenococcus halophilus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   5.2e-06    0.0055       6      60 ..      15      70 ..      11     101 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 5.2e-06
+               trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsigGv.lvlGdrGtGkstavralaallPkikavkg 60
+                                       f  ++gq+ ++++l  a  +++i+   l  G rGtGk++a++ la+ +   ++v+g
+  GCA_019222785.1_ASM1922278v1_1881 15 FDDVIGQEAITQTLKNAITQSQISHAyLFTGPRGTGKTSAAKILAKAVNCPNSVDG 70
+                                       7889*******************97616669***********99986654444443 PP
+
+>> GCA_019222785.1_ASM1922278v1_1371  QXN86008.1 sigma 54-interacting transcriptional regulator [Tetragenococcus halophi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   2.1e-05     0.022     120     218 ..     165     265 ..     159     279 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.1e-05
+               trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGe.nvvereglsvrhparfvlvGsGnPeeGelrPql 194
+                                        G  + + Gll +a++G l++dev  l +   + l+    +G+   +  e+ +v  + r+++  + nPe   l P +
+  GCA_019222785.1_ASM1922278v1_1371 165 GADTDKKGLLVQADQGVLFLDEVHRLSNENQEKLFQFMDTGRfRPMGEEAKTVTSNVRLLFATTENPEKV-LLPTF 239
+                                        5556678*****************************9999983468899999***************875.77999 PP
+
+               trimmed_msa_bchI_hmm 195 ldrfGlsvevrtpkd..leervevvr 218
+                                          r  +++++ t ++  l er+ +v+
+  GCA_019222785.1_ASM1922278v1_1371 240 YRRISVTIHLPTFHQrpLLERIGLVK 265
+                                        99999888887765422566776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2121  (591583 residues searched)
+Passed MSV filter:                       110  (0.0518623); expected 42.4 (0.02)
+Passed bias filter:                       85  (0.0400754); expected 42.4 (0.02)
+Passed Vit filter:                        13  (0.00612918); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000942951); expected 0.0 (1e-05)
+Initial search space (Z):               2121  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10912.32
+//
+[ok]

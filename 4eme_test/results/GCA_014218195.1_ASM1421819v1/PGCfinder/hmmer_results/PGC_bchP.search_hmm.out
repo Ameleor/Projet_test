@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_014218195.1_ASM1421819v1/GCA_014218195.1_ASM1421819v1_protein.faa
+# output directed to file:         results/GCA_014218195.1_ASM1421819v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.5e-05   19.6   0.1    7.4e-05   18.9   0.1    1.3  1  GCA_014218195.1_ASM1421819v1_1837  QNF24483.1 tRNA uridine-5-carbox
+    0.00061   15.9   0.0     0.0011   15.1   0.0    1.4  1  GCA_014218195.1_ASM1421819v1_3894  QNF25582.1 succinate dehydrogena
+     0.0015   14.6   0.2     0.0023   14.0   0.2    1.2  1  GCA_014218195.1_ASM1421819v1_1742  QNF24425.1 glutathione-disulfide
+  ------ inclusion threshold ------
+      0.013   11.5   0.0      0.033   10.2   0.0    1.6  1  GCA_014218195.1_ASM1421819v1_3371  QNF25322.1 glutamate synthase [A
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014218195.1_ASM1421819v1_1837  QNF24483.1 tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG [Aero
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.9   0.1   1.2e-07   7.4e-05       2      33 ..       6      37 ..       5      56 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 18.9 bits;  conditional E-value: 1.2e-07
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldr 33
+                                       +fdv+vvGGG aG+ aa+  ar+G + lll +
+  GCA_014218195.1_ASM1421819v1_1837  6 QFDVIVVGGGHAGTEAATAAARMGLNTLLLTH 37
+                                       7**************************99975 PP
+
+>> GCA_014218195.1_ASM1421819v1_3894  QNF25582.1 succinate dehydrogenase flavoprotein subunit [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   1.8e-06    0.0011       2      33 ..     122     153 ..     121     161 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.8e-06
+               trimmed_msa_bchP_hmm   2 tfdvvvvGGGPaGataaedlarkGkkvllldr 33 
+                                         fd+vv+G G aG  aa ++a++Gk+ +ll +
+  GCA_014218195.1_ASM1421819v1_3894 122 EFDAVVIGAGGAGMRAALQIAQSGKSCALLSK 153
+                                        69***************************987 PP
+
+>> GCA_014218195.1_ASM1421819v1_1742  QNF24425.1 glutathione-disulfide reductase [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.2   3.7e-06    0.0023       2      49 ..       4      53 ..       3      63 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 3.7e-06
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGataaedlarkGkkvllldragrikPc..GGaiPprli 49
+                                       +fd + +GGG  G ++a++ a  Gkkv+l++ ++    c   G +P +++
+  GCA_014218195.1_ASM1421819v1_1742  4 HFDYIAIGGGSGGIASANRAAMYGKKVALIEAKELGGTCvnVGCVPKKAM 53
+                                       79****************************99887777733477887776 PP
+
+>> GCA_014218195.1_ASM1421819v1_3371  QNF25322.1 glutamate synthase [Aeromonas hydrophila]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   5.3e-05     0.033       5      32 ..     127     154 ..     125     204 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 5.3e-05
+               trimmed_msa_bchP_hmm   5 vvvvGGGPaGataaedlarkGkkvllld 32 
+                                        v+v+G GP+G   a +l r G++v + +
+  GCA_014218195.1_ASM1421819v1_3371 127 VLVIGAGPSGLSCAWHLNRLGHQVEIRE 154
+                                        89*********************98644 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       2496  (654640 residues searched)
+Passed MSV filter:                        75  (0.0300481); expected 49.9 (0.02)
+Passed bias filter:                       65  (0.0260417); expected 49.9 (0.02)
+Passed Vit filter:                        12  (0.00480769); expected 2.5 (0.001)
+Passed Fwd filter:                         4  (0.00160256); expected 0.0 (1e-05)
+Initial search space (Z):               2496  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13519.65
+//
+[ok]

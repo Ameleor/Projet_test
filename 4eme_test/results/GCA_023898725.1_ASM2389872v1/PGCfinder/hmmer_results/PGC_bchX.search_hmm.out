@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898725.1_ASM2389872v1/GCA_023898725.1_ASM2389872v1_protein.faa
+# output directed to file:         results/GCA_023898725.1_ASM2389872v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    5.3e-06   21.4   0.0    1.1e-05   20.3   0.0    1.5  2  GCA_023898725.1_ASM2389872v1_416  USO01827.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898725.1_ASM2389872v1_416  USO01827.1 MAG: ParA family protein [Alphaproteobacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   0.0   1.1e-08   1.1e-05      19      65 ..      12      59 ..       3      66 .. 0.85
+   2 ?   -3.7   0.0      0.22   2.2e+02     129     145 ..     122     138 ..     119     139 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 1.1e-08
+              trimmed_msa_bchX_hmm 19 tketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                       ++ +iia+   kgg+gk+ t  n++  +a   ++vll+  dp+ +++
+  GCA_023898725.1_ASM2389872v1_416 12 VRNPRIIAVvNQKGGVGKTTTAINVATAMAACQRRVLLVDLDPQGNAS 59
+                                      5667788862579******************************98764 PP
+
+  == domain 2  score: -3.7 bits;  conditional E-value: 0.22
+              trimmed_msa_bchX_hmm 129 leklgfhdwdfdyvlld 145
+                                        + lg  + ++dyv++d
+  GCA_023898725.1_ASM2389872v1_416 122 RNTLGKSHHSYDYVVID 138
+                                       5678999999****998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        985  (330416 residues searched)
+Passed MSV filter:                        21  (0.0213198); expected 19.7 (0.02)
+Passed bias filter:                       18  (0.0182741); expected 19.7 (0.02)
+Passed Vit filter:                         4  (0.00406091); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.00101523); expected 0.0 (1e-05)
+Initial search space (Z):                985  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12006.64
+//
+[ok]

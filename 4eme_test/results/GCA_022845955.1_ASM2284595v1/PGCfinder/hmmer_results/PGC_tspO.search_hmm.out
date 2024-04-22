@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_022845955.1_ASM2284595v1/GCA_022845955.1_ASM2284595v1_protein.faa
+# output directed to file:         results/GCA_022845955.1_ASM2284595v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.7e-32  109.3  11.1    6.3e-32  109.1  11.1    1.0  1  GCA_022845955.1_ASM2284595v1_4065  BDF46942.1 histidine kinase [Lac
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022845955.1_ASM2284595v1_4065  BDF46942.1 histidine kinase [Lachnospiraceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.1  11.1   9.9e-36   6.3e-32       4     149 ..      10     156 .]       7     156 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 109.1 bits;  conditional E-value: 9.9e-36
+               trimmed_msa_tspO_hmm   4 vaalaavlvavlggaltelg.ewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                        + +++ vl++ l+g lt+ + + +++L+kP   PP  +F++vWt++y+l+++a  l++++ +++ + + +l ++ l
+  GCA_022845955.1_ASM2284595v1_4065  10 LCIAIPVLTGSLSGFLTRGSmQVFRQLNKPPLSPPGAVFPIVWTILYILMGIASYLVFSSGAGQGDIRNALSVYGL 85 
+                                        456677889999999998653789**************************************************** PP
+
+               trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                        + ++n+ W l+fF+l    +++v +vlLWl +l++i  ++++s+ aa lllPYl+Wv++A++LNl ++ lN
+  GCA_022845955.1_ASM2284595v1_4065  86 QLAVNFFWPLFFFNLGWYFFSFVWLVLLWLLILITIRLFYHISRPAAYLLLPYLLWVTFAGYLNLGIAILN 156
+                                        *******************************************************************9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       6393  (2156330 residues searched)
+Passed MSV filter:                       317  (0.0495855); expected 127.9 (0.02)
+Passed bias filter:                      100  (0.0156421); expected 127.9 (0.02)
+Passed Vit filter:                         7  (0.00109495); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000156421); expected 0.1 (1e-05)
+Initial search space (Z):               6393  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12923.09
+//
+[ok]

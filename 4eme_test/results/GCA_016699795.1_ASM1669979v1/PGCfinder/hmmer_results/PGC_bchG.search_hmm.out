@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699795.1_ASM1669979v1/GCA_016699795.1_ASM1669979v1_protein.faa
+# output directed to file:         results/GCA_016699795.1_ASM1669979v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      1e-17   60.5   1.8    1.9e-17   59.7   1.8    1.5  1  GCA_016699795.1_ASM1669979v1_457  QQS61752.1 UbiA family prenyltra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699795.1_ASM1669979v1_457  QQS61752.1 UbiA family prenyltransferase [Candidatus Moranbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.7   1.8   1.8e-20   1.9e-17      55     235 ..     318     498 ..     271     522 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 59.7 bits;  conditional E-value: 1.8e-20
+              trimmed_msa_bchG_hmm  55 atsqavndWfdrhvdainePerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrl 131
+                                        ts +vnd fd  +dai + +rp+    i+ +    + ++l  lsl +a +  +++++   +  +l+W+y apP+rl
+  GCA_016699795.1_ASM1669979v1_457 318 LTSVVVNDIFDESIDAITNTHRPLIQKTISKNSYKKVGWTLFFLSLFLAGIAHPYAIALVFVYHALTWLYNAPPFRL 394
+                                       4899**************************9998899999999********************************** PP
+
+              trimmed_msa_bchG_hmm 132 kknGwlGnaavgls...yeglaWlt.gaavlagalPsaevlllallysigahGimtlndfkaveGdrklgvkslpvk 204
+                                       k+  ++ + + +++      l +++  ++ + + +P + + ll   y+i+    + + dfk ++Gd+k  + +lpv 
+  GCA_016699795.1_ASM1669979v1_457 395 KRIPFIATFLGSIAsfiIILLGYIAfDTTGIITDIPWEIIFLLLFSYTIS----LPIKDFKDIKGDKKNNIWTLPVL 467
+                                       **887776655554111334555541233345667877777777777775....899******************** PP
+
+              trimmed_msa_bchG_hmm 205 lGveraarvaclvmavpqvvvvalllawgka 235
+                                       +G + a  + ++ +  + ++   +l a +  
+  GCA_016699795.1_ASM1669979v1_457 468 MGEKYARLFVATGIFFSFILSALILNAKNII 498
+                                       ****999888777766666555555555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       1044  (344593 residues searched)
+Passed MSV filter:                        35  (0.0335249); expected 20.9 (0.02)
+Passed bias filter:                       20  (0.0191571); expected 20.9 (0.02)
+Passed Vit filter:                         1  (0.000957854); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000957854); expected 0.0 (1e-05)
+Initial search space (Z):               1044  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8375.05
+//
+[ok]

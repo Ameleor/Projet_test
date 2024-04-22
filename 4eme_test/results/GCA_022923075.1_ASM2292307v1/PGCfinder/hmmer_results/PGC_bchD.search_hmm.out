@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022923075.1_ASM2292307v1/GCA_022923075.1_ASM2292307v1_protein.faa
+# output directed to file:         results/GCA_022923075.1_ASM2292307v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.029    9.2   3.4      0.034    9.0   3.4    1.1  1  GCA_022923075.1_ASM2292307v1_237  UOR90642.1 SH3 domain-containing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022923075.1_ASM2292307v1_237  UOR90642.1 SH3 domain-containing protein [Helicobacter pylori]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   3.4   2.4e-05     0.034     215     287 ..      24     107 ..      17     133 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 2.4e-05
+              trimmed_msa_bchD_hmm 215 lraaralAalegrteveeedlalAarlvlapratrlpeeeeeea.......eeepeqepa....pppeeeeaeeee. 279
+                                       l  a ++Aal   ++ +++ +++ ++ +   r     ++++ee+       ee+p ++p+      p +++++++e 
+  GCA_022923075.1_ASM2292307v1_237  24 LLYALVHAALGFYAKKDSASINQNLEKTEIERQNSALSPKQEETnttttatEENPTKDPPlpleT-PTQKQENKQEt 99 
+                                       55677888888888888888888888777776655444444444245444444444444444422.33332222221 PP
+
+              trimmed_msa_bchD_hmm 280 eeeeeeee 287
+                                       ++e+e+e+
+  GCA_022923075.1_ASM2292307v1_237 100 KQEQEKEN 107
+                                       22222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1408  (461109 residues searched)
+Passed MSV filter:                        70  (0.0497159); expected 28.2 (0.02)
+Passed bias filter:                       53  (0.037642); expected 28.2 (0.02)
+Passed Vit filter:                         8  (0.00568182); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.00213068); expected 0.0 (1e-05)
+Initial search space (Z):               1408  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8732.88
+//
+[ok]

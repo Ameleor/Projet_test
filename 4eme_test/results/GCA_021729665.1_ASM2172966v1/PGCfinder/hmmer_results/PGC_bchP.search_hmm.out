@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729665.1_ASM2172966v1/GCA_021729665.1_ASM2172966v1_protein.faa
+# output directed to file:         results/GCA_021729665.1_ASM2172966v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0029   13.1   0.1     0.0095   11.4   0.1    1.8  2  GCA_021729665.1_ASM2172966v1_978  FBNPDJ_05015 D-amino acid dehydr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729665.1_ASM2172966v1_978  FBNPDJ_05015 D-amino acid dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.1   5.7e-06    0.0095       4      34 ..       4      34 ..       1      41 [. 0.92
+   2 ?   -1.8   0.0     0.058        95     135     158 ..     233     256 ..     220     284 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 5.7e-06
+              trimmed_msa_bchP_hmm  4 dvvvvGGGPaGataaedlarkGkkvllldra 34
+                                      +vvv+GGG  G   a ++ + G+kv++++++
+  GCA_021729665.1_ASM2172966v1_978  4 EVVVIGGGIVGLSCAYSMHKLGHKVCVIEKS 34
+                                      79**************************987 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.058
+              trimmed_msa_bchP_hmm 135 eeekvrarlvigadGarsevarqe 158
+                                       ++ek++a  +i a Ga+ ++ +++
+  GCA_021729665.1_ASM2172966v1_978 233 HKEKIQAEKIILATGANPALIKKT 256
+                                       678899999999999998876654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1657  (460737 residues searched)
+Passed MSV filter:                        43  (0.0259505); expected 33.1 (0.02)
+Passed bias filter:                       39  (0.0235365); expected 33.1 (0.02)
+Passed Vit filter:                         8  (0.004828); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.0006035); expected 0.0 (1e-05)
+Initial search space (Z):               1657  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12359.97
+//
+[ok]

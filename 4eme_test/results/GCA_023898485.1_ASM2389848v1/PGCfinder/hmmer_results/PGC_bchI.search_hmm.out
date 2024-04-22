@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898485.1_ASM2389848v1/GCA_023898485.1_ASM2389848v1_protein.faa
+# output directed to file:         results/GCA_023898485.1_ASM2389848v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00022   16.9   0.0    0.00055   15.6   0.0    1.6  1  GCA_023898485.1_ASM2389848v1_1350  USN56706.1 MAG: DNA polymerase I
+    0.00052   15.7   0.0     0.0006   15.5   0.0    1.2  1  GCA_023898485.1_ASM2389848v1_1356  USN56711.1 MAG: ATP-binding prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898485.1_ASM2389848v1_1350  USN56706.1 MAG: DNA polymerase III subunit gamma/tau [Candidatus Peribacteria bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   7.3e-07   0.00055       5      63 ..      14      73 ..      10     105 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 7.3e-07
+               trimmed_msa_bchI_hmm  5 pfsaivgqdemklall.laavdpsigGvlvlGdrGtGkstavralaallPkikavkgcry 63
+                                        f ++vgqd+++  +    a d++ +  l +G rGtGk++++r +a+ l  ++  +g + 
+  GCA_023898485.1_ASM2389848v1_1350 14 DFKTVVGQDHITSVIReQIAHDAAKANYLFFGPRGTGKTSTARIVAKALNCLNPDHGNPC 73
+                                       6999*******99986246889999******************99998877766555443 PP
+
+>> GCA_023898485.1_ASM2389848v1_1356  USN56711.1 MAG: ATP-binding protein [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   8.1e-07    0.0006       6      56 ..      45      93 ..      40     136 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 8.1e-07
+               trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkik 56
+                                       +s i g    k+al +aa    +  vl++G  G+Gks   +al ++lP++ 
+  GCA_023898485.1_ASM2389848v1_1356 45 MSDIRGHALAKRALTIAAA--GMHNVLLIGSPGSGKSMLSKALHSILPPLG 93
+                                       57788888899*****995..6889***********************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       1495  (191101 residues searched)
+Passed MSV filter:                        58  (0.038796); expected 29.9 (0.02)
+Passed bias filter:                       44  (0.0294314); expected 29.9 (0.02)
+Passed Vit filter:                         7  (0.00468227); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00133779); expected 0.0 (1e-05)
+Initial search space (Z):               1495  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5870.65
+//
+[ok]

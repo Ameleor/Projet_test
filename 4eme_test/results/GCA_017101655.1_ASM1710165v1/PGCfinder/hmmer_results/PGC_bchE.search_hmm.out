@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_017101655.1_ASM1710165v1/GCA_017101655.1_ASM1710165v1_protein.faa
+# output directed to file:         results/GCA_017101655.1_ASM1710165v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0011   15.2   0.0     0.0023   14.2   0.0    1.5  2  GCA_017101655.1_ASM1710165v1_261  QPW58057.1 peptide chain release
+     0.0062   12.7   0.0     0.0083   12.3   0.0    1.1  1  GCA_017101655.1_ASM1710165v1_935  QPW58614.1 class I SAM-dependent
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_017101655.1_ASM1710165v1_261  QPW58057.1 peptide chain release factor N(5)-glutamine methyltransferase [Clostridi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   1.7e-06    0.0023     182     258 ..      98     175 ..      90     185 .. 0.90
+   2 ?   -3.3   0.0      0.33   4.4e+02     335     352 ..     252     269 ..     249     278 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.7e-06
+                      trimmed_bchE 182 alvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVa.erararleaaglsdrvevagGsflk 257
+                                       +++ eev++ ++ ++ + + Dv  G+Ga    +++ + k ++  +D+ ++a e +++++++ +l+d+v v+  ++l+
+  GCA_017101655.1_ASM1710165v1_261  98 EILVEEVIKEIKKNGYNNVCDVCCGSGAIGVSIGKYIEKTRVDCYDISDIAiEVTKSNINKLELNDKVYVYKSDLLD 174
+                                       67899*******************************************9973778899*********9999888776 PP
+
+                      trimmed_bchE 258 d 258
+                                       +
+  GCA_017101655.1_ASM1710165v1_261 175 E 175
+                                       5 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.33
+                      trimmed_bchE 335 eirallaeaGFakvkllr 352
+                                       +++++l + GF+++++++
+  GCA_017101655.1_ASM1710165v1_261 252 DVKEILIQNGFSDIRVVK 269
+                                       678999999999999876 PP
+
+>> GCA_017101655.1_ASM1710165v1_935  QPW58614.1 class I SAM-dependent methyltransferase [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   6.1e-06    0.0083     185     252 ..     153     220 ..     138     269 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 6.1e-06
+                      trimmed_bchE 185 aeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevag 252
+                                        + +l+ ++l++  +llD+G G G  +  +a+++    + +   ++ +e+a++r+++++l+d vev  
+  GCA_017101655.1_ASM1710165v1_935 153 VSYILKKLNLNKGDTLLDIGCGWGELIIDAAKEYGVKATGITLSEEQVEKANKRIKENNLEDLVEVKL 220
+                                       56799****************************9988888888888899**********999888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2722  (781570 residues searched)
+Passed MSV filter:                        74  (0.0271859); expected 54.4 (0.02)
+Passed bias filter:                       70  (0.0257164); expected 54.4 (0.02)
+Passed Vit filter:                        10  (0.00367377); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000734754); expected 0.0 (1e-05)
+Initial search space (Z):               2722  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10880.00
+//
+[ok]

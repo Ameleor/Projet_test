@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchP.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898505.1_ASM2389850v1/GCA_023898505.1_ASM2389850v1_protein.faa
+# output directed to file:         results/GCA_023898505.1_ASM2389850v1/PGCfinder/hmmer_results/PGC_bchP.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchP_hmm  [M=391]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.009   11.6   1.1      0.062    8.9   0.0    2.6  3  GCA_023898505.1_ASM2389850v1_1060  USN57786.1 MAG: FAD-dependent ox
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898505.1_ASM2389850v1_1060  USN57786.1 MAG: FAD-dependent oxidoreductase [Candidatus Peribacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0     0.048        90       2      17 ..       3      18 ..       2      30 .. 0.82
+   2 ?   -0.1   0.1     0.018        33       6      20 ..      30      44 ..      24      49 .. 0.83
+   3 !    8.9   0.0   3.3e-05     0.062       4      35 ..     144     175 ..     141     179 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.048
+               trimmed_msa_bchP_hmm  2 tfdvvvvGGGPaGata 17
+                                        +d +++G G aG  a
+  GCA_023898505.1_ASM2389850v1_1060  3 LYDLIIIGTGSAGLPA 18
+                                       69********999655 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.018
+               trimmed_msa_bchP_hmm  6 vvvGGGPaGataaed 20
+                                       +v+GG P Ga a+++
+  GCA_023898505.1_ASM2389850v1_1060 30 LVIGGQPGGALATSH 44
+                                       79********99875 PP
+
+  == domain 3  score: 8.9 bits;  conditional E-value: 3.3e-05
+               trimmed_msa_bchP_hmm   4 dvvvvGGGPaGataaedlarkGkkvllldrag 35 
+                                        dvv+vGGG +  t a  la+  +kv l+ r++
+  GCA_023898505.1_ASM2389850v1_1060 144 DVVIVGGGNTALTEALYLAEICNKVYLVHRRD 175
+                                        9***************************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (391 nodes)
+Target sequences:                       1872  (244102 residues searched)
+Passed MSV filter:                        32  (0.017094); expected 37.4 (0.02)
+Passed bias filter:                       25  (0.0133547); expected 37.4 (0.02)
+Passed Vit filter:                         4  (0.00213675); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000534188); expected 0.0 (1e-05)
+Initial search space (Z):               1872  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16267.95
+//
+[ok]

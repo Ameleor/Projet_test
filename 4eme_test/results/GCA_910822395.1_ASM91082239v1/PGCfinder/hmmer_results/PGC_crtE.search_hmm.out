@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_910822395.1_ASM91082239v1/GCA_910822395.1_ASM91082239v1_protein.faa
+# output directed to file:         results/GCA_910822395.1_ASM91082239v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                           -----------
+    6.5e-31  104.3   3.5    1.6e-30  103.0   3.5    1.6  1  GCA_910822395.1_ASM91082239v1_855   CAG7844643.1 Heptaprenyl diphosp
+    1.8e-19   66.8   4.0    1.7e-17   60.3   2.3    2.8  2  GCA_910822395.1_ASM91082239v1_1953  CAG7845741.1 Hexaprenyl-diphosph
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_910822395.1_ASM91082239v1_855  CAG7844643.1 Heptaprenyl diphosphate synthase component 2 [Pseudoclavibacter trire
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  103.0   3.5   1.5e-33   1.6e-30      26     227 ..      59     258 ..      32     267 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 103.0 bits;  conditional E-value: 1.5e-33
+               trimmed_msa_crtE_hmm  26 alryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhkafgepl 101
+                                        + +y + +gG+R+RP l l  +    d d +    a+aa+e+ h asL hDD+  +D+adlRRg  + h ++++++
+  GCA_910822395.1_ASM91082239v1_855  59 TATYLMDAGGKRLRPMLALLTSRFGPDADSDDVIRAGAAVEITHLASLYHDDV--MDEADLRRGVLAAHLNWSNSV 132
+                                        45688889***********9999888888888999*****************6..9******************** PP
+
+               trimmed_msa_crtE_hmm 102 avLaGDalivlafetlareaaksparlakllktlaravGapaGivaGqaweseaevdlsayqraktgaLfaaatva 177
+                                        a+LaGD l   +  + a   +++ +  a+  + l    G+    v+ +a e     +  +    ktg+L+aa+++ 
+  GCA_910822395.1_ASM91082239v1_855 133 AILAGDLLFARSSLMFAALGQRAIELQATTFERLV--LGQMRETVGPKAGEDRIA-HYIEVLADKTGSLIAASAQF 205
+                                        ********999888888888887777776666553..344344444444443333.33344578************ PP
+
+               trimmed_msa_crtE_hmm 178 Gaiaagadae...ewralgealGeayqvaDDlrDaladaeelGkpagqDaalg 227
+                                        Gai a+a +e   +++++ge++G a+q+aDD+ D+  ++e+ Gk ag D ++g
+  GCA_910822395.1_ASM91082239v1_855 206 GAICAKAPEElipALAEYGEKVGVAFQIADDVIDLSPQSEATGKLAGTDLRAG 258
+                                        *****9998744467889*******************************8765 PP
+
+>> GCA_910822395.1_ASM91082239v1_1953  CAG7845741.1 Hexaprenyl-diphosphate synthase large subunit ((2E,6E)-farnesyl-diph
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.3   2.3   1.6e-20   1.7e-17      32     231 ..      44     275 ..      12     289 .. 0.70
+   2 ?   -1.2   0.0     0.091        94     232     274 ..     314     356 ..     294     361 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 60.3 bits;  conditional E-value: 1.6e-20
+                trimmed_msa_crtE_hmm  32 fpgGaRiRPrlclavaaac......GdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhk..... 95 
+                                         + gG+R+R +++ a    +      G+++p     aaaa+el+h a+L hDD+  +D +d+RRg ps h+     
+  GCA_910822395.1_ASM91082239v1_1953  44 LRGGKRLRAEFLAAGYRSIageaplGERSP--VVQAAAALELFHAAALAHDDI--IDRSDTRRGAPSTHRvfesr 114
+                                         569999999988765444310000144444..345899**************7..9*************722222 PP
+
+                trimmed_msa_crtE_hmm  96 ...........afgeplavLaGDalivlafetlareaak.sparlakllktlaravGapaGivaGqawesea... 155
+                                                     fge+ a++ GD ++v + e   ++++  +p+r  +  ++  r+   +a ++aGq ++  +   
+  GCA_910822395.1_ASM91082239v1_1953 115 hgdagwtgdgaRFGESAAIIFGDLVLVWSDERFIEACSLvEPDRGRRAREEFRRM---RAEVAAGQYLDLVEela 186
+                                         22222222222468999***********999877776544999988888777664...44577788777666455 PP
+
+                trimmed_msa_crtE_hmm 156 .........evdlsayqraktgaLfaaa.tvaGaiaagada...eewralgealGeayqvaDDlrDaladaeelG 217
+                                                      ++   +k +   + a  v Ga+ agad    e+ ra+g  lG a+q  DD+  +++d++  G
+  GCA_910822395.1_ASM91082239v1_1953 187 wpvvpveerAERARRVATSKSARYSVEApLVLGALLAGADDaavERIRAFGLPLGLAFQFRDDILGVTGDERVTG 261
+                                         55444544312223334445554444332567888777665111678899************************* PP
+
+                trimmed_msa_crtE_hmm 218 kpagqDaalgrpsa 231
+                                         kpag D ++g+ ++
+  GCA_910822395.1_ASM91082239v1_1953 262 KPAGDDLREGKRTV 275
+                                         *******9998765 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.091
+                trimmed_msa_crtE_hmm 232 vaelGlegavarlkelvaeaiasipsckgaaalralvraeaer 274
+                                         va   ++ + a++ +l++ea++s+ s + + + r+l++a a+r
+  GCA_910822395.1_ASM91082239v1_1953 314 VALGAVDDVEAEIARLLEEALSSLESASLDPESRELLEALAHR 356
+                                         5555577788889999999999999988888888888777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       2063  (695112 residues searched)
+Passed MSV filter:                       135  (0.0654387); expected 41.3 (0.02)
+Passed bias filter:                       31  (0.0150267); expected 41.3 (0.02)
+Passed Vit filter:                         4  (0.00193892); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11628.30
+//
+[ok]

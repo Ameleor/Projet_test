@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699205.1_ASM1669920v1/GCA_016699205.1_ASM1669920v1_protein.faa
+# output directed to file:         results/GCA_016699205.1_ASM1669920v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.2e-07   24.3   0.1    1.1e-06   23.7   0.1    1.2  1  GCA_016699205.1_ASM1669920v1_99    QQR60940.1 ParA family protein [
+    0.00068   14.5   0.1      0.011   10.6   0.1    2.1  2  GCA_016699205.1_ASM1669920v1_1051  QQR60829.1 AAA family ATPase [Ca
+     0.0035   12.2   0.0     0.0069   11.2   0.0    1.4  1  GCA_016699205.1_ASM1669920v1_128   QQR60967.1 DNA repair protein Ra
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699205.1_ASM1669920v1_99  QQR60940.1 ParA family protein [Candidatus Uhrbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.1     3e-09   1.1e-06      23      66 ..       3      47 ..       1      53 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 3e-09
+             trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                     +ii+i   kgg+gk+ t  nl   la+qgk vl++  dp++++ts
+  GCA_016699205.1_ASM1669920v1_99  3 RIISIvNQKGGVGKTTTAINLGAYLADQGKFVLIVDLDPQANATS 47
+                                     577662579*********************************998 PP
+
+>> GCA_016699205.1_ASM1669920v1_1051  QQR60829.1 AAA family ATPase [Candidatus Uhrbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.1     3e-05     0.011      25      61 ..       3      39 ..       1      51 [. 0.89
+   2 ?    1.9   0.0     0.014       4.8     185     251 ..     185     255 ..     171     294 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3e-05
+               trimmed_msa_bchX_hmm 25 iaiygkggigksftlanlsymlaqqgkkvlligcdpk 61
+                                       ia  gkgg+gk+   + +   la +gk vl i  d  
+  GCA_016699205.1_ASM1669920v1_1051  3 IAFVGKGGSGKTTMSSLFCRHLASHGKTVLAIDADIN 39
+                                       8999********99999999************99865 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.014
+               trimmed_msa_bchX_hmm 185 csaveyfrklgg...nvgvaglvinkddgtgeaqaf.aeavgipvlaaipadedirrksanyeiigkpese 251
+                                          +v  +r+  g   + gv   vi +     e +af  e+vg  +la ip  + ++ +       + ++ e
+  GCA_016699205.1_ASM1669920v1_1051 185 LASVSVYRQYKGyasEFGVPLAVIGNKVVDSEEEAFlREQVGDDLLAIIPYSKAVKARDRGDATAADADRE 255
+                                        4556666665552225788877886666666666662689**********999998776655555555555 PP
+
+>> GCA_016699205.1_ASM1669920v1_128  QQR60967.1 DNA repair protein RadA [Candidatus Uhrbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0     2e-05    0.0069      28      61 ..      93     126 ..      85     144 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2e-05
+              trimmed_msa_bchX_hmm  28 ygkggigksftlanlsymlaqqgkkvlligcdpk 61 
+                                        g  gigks  la+l+  +a qgk vl +  +  
+  GCA_016699205.1_ASM1669920v1_128  93 GGEPGIGKSTLLAQLALSVAAQGKTVLYVTGEES 126
+                                       5889***********************9876654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1058  (324388 residues searched)
+Passed MSV filter:                        30  (0.0283554); expected 21.2 (0.02)
+Passed bias filter:                       28  (0.026465); expected 21.2 (0.02)
+Passed Vit filter:                         3  (0.00283554); expected 1.1 (0.001)
+Passed Fwd filter:                         3  (0.00283554); expected 0.0 (1e-05)
+Initial search space (Z):               1058  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 8049.95
+//
+[ok]

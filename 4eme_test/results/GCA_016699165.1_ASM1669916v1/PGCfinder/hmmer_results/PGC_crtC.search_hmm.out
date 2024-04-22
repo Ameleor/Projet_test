@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699165.1_ASM1669916v1/GCA_016699165.1_ASM1669916v1_protein.faa
+# output directed to file:         results/GCA_016699165.1_ASM1669916v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.2e-05   22.0   0.5    4.3e-05   21.0   0.5    1.5  1  GCA_016699165.1_ASM1669916v1_1828  QQR59652.1 MAG: carotenoid 1,2-h
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699165.1_ASM1669916v1_1828  QQR59652.1 MAG: carotenoid 1,2-hydratase [Candidatus Melainabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.5   9.3e-09   4.3e-05      84     167 ..     201     287 ..     175     296 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 9.3e-09
+               trimmed_msa_crtC_hmm  84 ldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgs..elalalrfdadGeveeveap 156
+                                        ++  +++ +G++++D+ +G++ l+++   WdW   +l+++  ++lY ++ +dgs  +++ +  ++++G++++++  
+  GCA_016699165.1_ASM1669916v1_1828 201 IKGKRVKVSGTSWMDHEFGSNQLDDNQVGWDWFSIHLDNNkEIMLYLMRLEDGSydQASSGSLITENGKLTHLRLS 276
+                                        556678999****************************99978999******9982234456678999999988877 PP
+
+               trimmed_msa_crtC_hmm 157 praklprtlWr 167
+                                          +    ++Wr
+  GCA_016699165.1_ASM1669916v1_1828 277 DYKIKSIGKWR 287
+                                        66655556665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4639  (1516617 residues searched)
+Passed MSV filter:                       103  (0.0222031); expected 92.8 (0.02)
+Passed bias filter:                       86  (0.0185385); expected 92.8 (0.02)
+Passed Vit filter:                         4  (0.000862255); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000215564); expected 0.0 (1e-05)
+Initial search space (Z):               4639  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 19036.19
+//
+[ok]

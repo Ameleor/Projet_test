@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCA_019222785.1_ASM1922278v1/GCA_019222785.1_ASM1922278v1_protein.faa
+# output directed to file:         results/GCA_019222785.1_ASM1922278v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0071   12.1   0.0     0.0092   11.8   0.0    1.2  1  GCA_019222785.1_ASM1922278v1_523  QXN87352.1 deoxyribose-phosphate
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019222785.1_ASM1922278v1_523  QXN87352.1 deoxyribose-phosphate aldolase [Tetragenococcus halophilus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   4.3e-06    0.0092     122     230 ..      34     138 ..      16     149 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 4.3e-06
+              trimmed_msa_bchZ_hmm 122 dqwqsadraltwlwtefGakkvpakkkrkegekprvniiGpvyGtfnmpsdlaeirrlveGiGaevnlvfplgshla 198
+                                        q+q+a   ++  w  f +++++ +     g      ++G   G++ ++s +ae ++ +e    e+++v+ +g  l 
+  GCA_019222785.1_ASM1922278v1_523  34 KQYQTASVCVNGYWASFVTEQLAGT-----G-IETCIVVGFPLGAMSTASKVAEAKKAIEDGADEIDMVINIGELLG 104
+                                       4667777777777776665554432.....2.2334579999*******************999************* PP
+
+              trimmed_msa_bchZ_hmm 199 dvrkladadvnvcl..yrefGrllcealerpylq 230
+                                       +  + ++ad++ +     + G+ l   le  +l+
+  GCA_019222785.1_ASM1922278v1_523 105 NNDEAVQADIQAVAdeVHQKGKILKVILETSFLN 138
+                                       *********9987622345677777777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       2121  (591583 residues searched)
+Passed MSV filter:                        68  (0.0320603); expected 42.4 (0.02)
+Passed bias filter:                       47  (0.0221594); expected 42.4 (0.02)
+Passed Vit filter:                         5  (0.00235738); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000471476); expected 0.0 (1e-05)
+Initial search space (Z):               2121  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12407.56
+//
+[ok]

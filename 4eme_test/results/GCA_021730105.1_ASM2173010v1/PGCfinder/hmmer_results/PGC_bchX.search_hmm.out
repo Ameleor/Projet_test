@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021730105.1_ASM2173010v1/GCA_021730105.1_ASM2173010v1_protein.faa
+# output directed to file:         results/GCA_021730105.1_ASM2173010v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      1e-07   27.6   0.3     0.0006   15.2   0.1    2.5  3  GCA_021730105.1_ASM2173010v1_749  IMONHK_03855 iron-sulfur cluster
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021730105.1_ASM2173010v1_749  IMONHK_03855 iron-sulfur cluster carrier protein ApbC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.1     4e-07    0.0006      22      60 ..      98     137 ..      79     158 .. 0.83
+   2 ?   -3.0   0.0      0.13     2e+02     199     228 ..     206     234 ..     190     246 .. 0.70
+   3 !    9.9   0.0   1.7e-05     0.025     210     270 ..     285     347 ..     281     353 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 4e-07
+              trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        +iiai  gkgg+gks t  nl+  l  +g kv ++  d 
+  GCA_021730105.1_ASM2173010v1_749  98 KNIIAIaSGKGGVGKSTTAVNLALALQAEGAKVAILDADI 137
+                                       468998459************************9998875 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.13
+              trimmed_msa_bchX_hmm 199 gvaglvinkddgtgeaqafaeavgipvlaa 228
+                                       gv  ++i+   gtg++q    +  ipv  +
+  GCA_021730105.1_ASM2173010v1_749 206 GVDYMIIDLPPGTGDTQLT-LSQKIPVSGS 234
+                                       8888999999999998753.3445666544 PP
+
+  == domain 3  score: 9.9 bits;  conditional E-value: 1.7e-05
+              trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksa..nyeiigkpesewgslfeelaenvaeappvr 270
+                                       gtg  +++a+++++  l a+p + dir      +  +  +pe++ +++++e+a++v++   ++
+  GCA_021730105.1_ASM2173010v1_749 285 GTGGGETMAADADVEFLGALPLEMDIRTDVDegTPTVAKNPEGRISEIYKEIAKKVSAKLTQQ 347
+                                       899999*********************98651145788899***************9876665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1502  (356516 residues searched)
+Passed MSV filter:                        45  (0.0299601); expected 30.0 (0.02)
+Passed bias filter:                       33  (0.0219707); expected 30.0 (0.02)
+Passed Vit filter:                         5  (0.00332889); expected 1.5 (0.001)
+Passed Fwd filter:                         1  (0.000665779); expected 0.0 (1e-05)
+Initial search space (Z):               1502  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9963.63
+//
+[ok]

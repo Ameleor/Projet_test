@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_021491955.1_ASM2149195v1/GCA_021491955.1_ASM2149195v1_protein.faa
+# output directed to file:         results/GCA_021491955.1_ASM2149195v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00063   17.5   9.4    0.00078   17.2   9.4    1.2  1  GCA_021491955.1_ASM2149195v1_2009  EFDNME_10130 1,4-dihydroxy-2-nap
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021491955.1_ASM2149195v1_2009  EFDNME_10130 1,4-dihydroxy-2-naphthoate polyprenyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   9.4   1.6e-07   0.00078      85     256 ..     101     274 ..      17     307 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 1.6e-07
+               trimmed_msa_bchG_hmm  85 GrWGlyial....iltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaa 156
+                                         +  ly+a     +  ll l ++a  + +     ++ +++ ++y+  P+ +     +G+ + g+   g+  +  + 
+  GCA_021491955.1_ASM2149195v1_2009 101 PKTVLYLAYglfgAAVLLGLYICASSSWWLALIGLVCMAVGYLYTGGPFPISYT-PFGEIMSGVFM-GMVIILISY 174
+                                        4555666652111234567777777788888889999999**********9876.57999999865.555555555 PP
+
+               trimmed_msa_bchG_hmm 157 vlagalPsaevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllaw 232
+                                         +++   +++v l+ l  +i   Gi   n+ + + Gd++ g k+lp+  G ++a ++ ++v av+ + ++++ + +
+  GCA_021491955.1_ASM2149195v1_2009 175 YIQTGGLTWNVFLISLPITILVGGINLSNNIRDMVGDKENGRKTLPILAGRKNAVQILSWVFAVSYI-LIGIYIGF 249
+                                        5555556899*****************************************************9976.56666666 PP
+
+               trimmed_msa_bchG_hmm 233 gka.lhalvvavllvvqlvlmarll 256
+                                        + + l + +v + l   + +++++ 
+  GCA_021491955.1_ASM2149195v1_2009 250 EIVsLWSCIVLLSLPKPIKAIQEFK 274
+                                        6541344455555555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4757  (1274109 residues searched)
+Passed MSV filter:                       196  (0.0412024); expected 95.1 (0.02)
+Passed bias filter:                       59  (0.0124028); expected 95.1 (0.02)
+Passed Vit filter:                         4  (0.000840866); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000210217); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 19289.75
+//
+[ok]

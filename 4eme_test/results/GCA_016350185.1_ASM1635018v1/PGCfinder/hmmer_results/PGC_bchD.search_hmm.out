@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016350185.1_ASM1635018v1/GCA_016350185.1_ASM1635018v1_protein.faa
+# output directed to file:         results/GCA_016350185.1_ASM1635018v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.8e-08   29.3   0.0    1.1e-07   28.9   0.0    1.1  1  GCA_016350185.1_ASM1635018v1_4002  IFIEJK_20675 MoxR-like ATPase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016350185.1_ASM1635018v1_4002  IFIEJK_20675 MoxR-like ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.9   0.0   2.3e-11   1.1e-07      86     257 ..      97     290 ..      94     309 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 28.9 bits;  conditional E-value: 2.3e-11
+               trimmed_msa_bchD_hmm  86 ggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldld 159
+                                        g v+++    R+++++ + l +a++e +  +  dg++l++++ f ++a  + +e++ +  lpea ldR  l++++ 
+  GCA_016350185.1_ASM1635018v1_4002  97 GDVVLADEINRTSPKTQSALLEAMEEAS--VTIDGNTLMINQPFFVMATQNPIEHEGTypLPEAQLDRFLLKIKMG 170
+                                        5677777789*****************5..7889999****************887652278***********997 PP
+
+               trimmed_msa_bchD_hmm 160 eialrdleelaa...............eaedieaararlpkvtleeealealvataaalGid.......slRapll 213
+                                          +  +  e+                 +++++ + ++ ++ v +e+++ + +v++a+++  +       s Ra + 
+  GCA_016350185.1_ASM1635018v1_4002 171 YPTRGQEVEILRraengksiekieavlSVAQLIELQQLVQGVYVEDSVKNYMVELASQTRENnyvylgvSPRATIA 246
+                                        65544222222246667777777777799999999999999999**********99987643222333399***** PP
+
+               trimmed_msa_bchD_hmm 214 alraaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                         ++a +a A ++gr+ v  +d++  a  v+++r +  p ++ ++
+  GCA_016350185.1_ASM1635018v1_4002 247 LMKASQAYAFMKGRSYVIPDDVQYLAPYVFSHRLVLKPDARYDD 290
+                                        **********************************9999877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4545  (1298195 residues searched)
+Passed MSV filter:                       174  (0.0382838); expected 90.9 (0.02)
+Passed bias filter:                      112  (0.0246425); expected 90.9 (0.02)
+Passed Vit filter:                        10  (0.00220022); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000440044); expected 0.0 (1e-05)
+Initial search space (Z):               4545  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 16074.98
+//
+[ok]

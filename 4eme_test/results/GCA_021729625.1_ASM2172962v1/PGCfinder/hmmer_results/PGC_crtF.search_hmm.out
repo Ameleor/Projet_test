@@ -1,0 +1,101 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtF.hmm
+# target sequence database:        data/genomes_unzip/GCA_021729625.1_ASM2172962v1/GCA_021729625.1_ASM2172962v1_protein.faa
+# output directed to file:         results/GCA_021729625.1_ASM2172962v1/PGCfinder/hmmer_results/PGC_crtF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtF_hmm  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      0.002   13.6   0.0     0.0036   12.7   0.0    1.4  2  GCA_021729625.1_ASM2172962v1_1026  BBPIBE_05330 Carboxy-S-adenosyl-
+     0.0056   12.1   0.0     0.0082   11.5   0.0    1.1  1  GCA_021729625.1_ASM2172962v1_1217  BBPIBE_06345 Ubiquinone/menaquin
+     0.0098   11.3   0.0      0.015   10.7   0.0    1.2  1  GCA_021729625.1_ASM2172962v1_643   BBPIBE_03325 16S rRNA (cytosine(
+  ------ inclusion threshold ------
+       0.01   11.2   0.0      0.014   10.8   0.0    1.2  1  GCA_021729625.1_ASM2172962v1_1001  BBPIBE_05185 cyclopropane fatty 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021729625.1_ASM2172962v1_1026  BBPIBE_05330 Carboxy-S-adenosyl-L-methionine synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   9.2e-06    0.0036     199     308 ..      59     166 ..      25     185 .. 0.80
+   2 ?   -2.9   0.0      0.52   2.1e+02     333     350 ..     207     224 ..     204     232 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 9.2e-06
+               trimmed_msa_crtF_hmm 199 rllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDlisLvRvlh 274
+                                         + D+G  +G F  a+++++ + +++l  + + + + +++ e+ +  +++++ + +fl+ +  ++a ++sL+ vl 
+  GCA_021729625.1_ASM2172962v1_1026  59 LIYDLGCSTGNFFIALNQQI-QQDIELVGIDNSMPMLKKAQEKLKDFKNARFECMDFLEVEF-KEASAFSLLFVLQ 132
+                                        56799*******99998876.4578888888877777777777777888999999***8887.78999******** PP
+
+               trimmed_msa_crtF_hmm 275 DHdDeavlkllrkvraaLppggrLliaEpmagta 308
+                                             + + ll+k++++L+ +g+Ll++E + ++ 
+  GCA_021729625.1_ASM2172962v1_1026 133 FVRPMQREVLLKKIYNSLALNGVLLVGEKIMSED 166
+                                        *999************************865443 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.52
+               trimmed_msa_crtF_hmm 333 aeeirallaeaGFakvkl 350
+                                         +e  all++ GF++v++
+  GCA_021729625.1_ASM2172962v1_1026 207 LKENVALLESVGFKHVEA 224
+                                        567789999999999876 PP
+
+>> GCA_021729625.1_ASM2172962v1_1217  BBPIBE_06345 Ubiquinone/menaquinone biosynthesis C-methylase UbiE/MenG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   2.1e-05    0.0082     168     214 ..      14      59 ..       4      68 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.1e-05
+               trimmed_msa_crtF_hmm 168 eevaaYsaLmaasqalvaeevldaydlkrhrrllDvGGGeGaFlaav 214
+                                        +++++Y +L a+ q+ +a ++++ ++ k+ +++lD+G G+Ga  +a+
+  GCA_021729625.1_ASM2172962v1_1217  14 KHAKTY-HLFAHIQQQIAICLVQFLKQKHYAKVLDLGSGSGAVFNAL 59 
+                                        555666.799********************************88775 PP
+
+>> GCA_021729625.1_ASM2172962v1_643  BBPIBE_03325 16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   0.0   3.8e-05     0.015     181     256 ..       9      83 ..       3      88 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 3.8e-05
+              trimmed_msa_crtF_hmm 181 qalvaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaer.ararleaaglsdrvevagGsfl 256
+                                       q+++ +evl+a++  ++ +l+D   G G   +a+ ++ p+lkl   D  + a++ a++rl+  +++ r ++ +G f 
+  GCA_021729625.1_ASM2172962v1_643   9 QSVLLQEVLQAFAPLEEGVLIDCTLGLGGHSKAILSQKPHLKLIGIDKDKFAQEiAKERLK--AFEGRYNLLSGGFA 83 
+                                       89999********************************************998762666665..56778888888776 PP
+
+>> GCA_021729625.1_ASM2172962v1_1001  BBPIBE_05185 cyclopropane fatty acid synthase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   3.5e-05     0.014     184     251 ..     149     216 ..     135     279 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 3.5e-05
+               trimmed_msa_crtF_hmm 184 vaeevldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrveva 251
+                                          +++l+ ++lk  ++llD+G G G    ++a+++ +  + +    +  ++a++r+++ gl+d+v++ 
+  GCA_021729625.1_ASM2172962v1_1001 149 KLDHTLKKLHLKPGEKLLDIGCGWGYLSIKAAQEYGAQVMGITISSEQYKQANKRVQELGLEDKVTIK 216
+                                        458899*****************************9999999999999***************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       1566  (490824 residues searched)
+Passed MSV filter:                        50  (0.0319285); expected 31.3 (0.02)
+Passed bias filter:                       43  (0.0274585); expected 31.3 (0.02)
+Passed Vit filter:                         7  (0.00446999); expected 1.6 (0.001)
+Passed Fwd filter:                         4  (0.00255428); expected 0.0 (1e-05)
+Initial search space (Z):               1566  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9040.89
+//
+[ok]

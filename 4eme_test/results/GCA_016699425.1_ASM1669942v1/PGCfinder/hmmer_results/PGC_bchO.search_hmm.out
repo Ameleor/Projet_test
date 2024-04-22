@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699425.1_ASM1669942v1/GCA_016699425.1_ASM1669942v1_protein.faa
+# output directed to file:         results/GCA_016699425.1_ASM1669942v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00018   16.9   0.0     0.0008   14.8   0.0    1.8  2  GCA_016699425.1_ASM1669942v1_724  QQR78173.1 alpha/beta hydrolase 
+     0.0044   12.3   0.0      0.014   10.7   0.0    1.7  2  GCA_016699425.1_ASM1669942v1_905  QQR78347.1 alpha/beta hydrolase 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699425.1_ASM1669942v1_724  QQR78173.1 alpha/beta hydrolase [Candidatus Moranbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0     0.062        37     103     123 ..      83     103 ..      74     117 .. 0.79
+   2 !   14.8   0.0   1.3e-06    0.0008     226     277 ..     142     193 ..     126     194 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.062
+              trimmed_msa_bchO_hmm 103 avvvGHSAGaaialrlaldgk 123
+                                       ++ vGHS G+  ++++  +++
+  GCA_016699425.1_ASM1669942v1_724  83 TIFVGHSLGGVFLAKYFSEER 103
+                                       5789*****999988876654 PP
+
+  == domain 2  score: 14.8 bits;  conditional E-value: 1.3e-06
+              trimmed_msa_bchO_hmm 226 ktplllivgekDravppkearevaallpkarlveleglGHLahEeapeevae 277
+                                        + ++l  +e+D +vp ++    +  lp+a ++ +++ GH + Ee pe v +
+  GCA_016699425.1_ASM1669942v1_724 142 GVSIHLYQSEDDPIVPFSDFAAYQFDLPNAMVRIFKDRGHFLQEEFPELVED 193
+                                       456788899**************************************99876 PP
+
+>> GCA_016699425.1_ASM1669942v1_905  QQR78347.1 alpha/beta hydrolase [Candidatus Moranbacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0     0.098        59      38      47 ..       5      14 ..       3      41 .. 0.72
+   2 !   10.7   0.0   2.3e-05     0.014     101     130 ..      61      90 ..      53     104 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.098
+              trimmed_msa_bchO_hmm 38 LLlHGtGast 47
+                                      ++lHGtG+  
+  GCA_016699425.1_ASM1669942v1_905  5 IILHGTGTKK 14
+                                      689***9865 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 2.3e-05
+              trimmed_msa_bchO_hmm 101 epavvvGHSAGaaialrlaldgkiapkkvv 130
+                                       e +v++GHSAGa ++l++  +  ++ kk +
+  GCA_016699425.1_ASM1669942v1_905  61 EETVLIGHSAGAQVILSVLEKIDVKIKKAI 90 
+                                       56789***********99887766655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1211  (346611 residues searched)
+Passed MSV filter:                        54  (0.0445912); expected 24.2 (0.02)
+Passed bias filter:                       44  (0.0363336); expected 24.2 (0.02)
+Passed Vit filter:                         3  (0.00247729); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00165153); expected 0.0 (1e-05)
+Initial search space (Z):               1211  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11562.09
+//
+[ok]

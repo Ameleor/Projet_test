@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchC.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699515.1_ASM1669951v1/GCA_016699515.1_ASM1669951v1_protein.faa
+# output directed to file:         results/GCA_016699515.1_ASM1669951v1/PGCfinder/hmmer_results/PGC_bchC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchC_hmm  [M=310]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.8e-10   35.7   0.0    0.00016   17.3   0.0    2.2  2  GCA_016699515.1_ASM1669951v1_47  QQR83632.1 NAD(P)-dependent alco
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699515.1_ASM1669951v1_47  QQR83632.1 NAD(P)-dependent alcohol dehydrogenase [Candidatus Peregrinibacteria bact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   0.0   1.1e-07   0.00016      18      88 ..      21      88 ..       5     100 .. 0.79
+   2 !   16.3   0.0   2.3e-07   0.00031     101     241 ..     128     279 ..     111     293 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 1.1e-07
+             trimmed_msa_bchC_hmm 18 rleltapeeedvvvdiewsgistGtekllwsGrmPefPGmgyPlvPGyesvGrvveagee.sklkvgervfv 88
+                                     +l  ++ +++dv++di+++gi     +   +G   e+  + yP+vPG+e  G v ++g++ +++kvg+rv v
+  GCA_016699515.1_ASM1669951v1_47 21 DLPRRELQPNDVLIDIQFAGICHSDIHS-VRG---EWGQVKYPFVPGHEIAGVVSAVGSAvTQHKVGDRVGV 88
+                                     4555678899***********9765433.345...567799*************999876378999**9966 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 2.3e-07
+             trimmed_msa_bchC_hmm 101 fGgaasrlvvpaarvvkvde..elgeegvllalaatarhalagkek..kapdlivGhGvlGrllarltvaagaeapvv 174
+                                       Gg ++++vv+++ v+k+++  el++ + ll+   t++  l + +    ++  ivG G lG +  + + a+ga+  v+
+  GCA_016699515.1_ASM1669951v1_47 128 QGGYSTHIVVEEHFVLKIPDgiELDKAAPLLCAGITTYSPLRRWNVgpGTKVAIVGLGGLGHMAVKSAHALGAQVTVL 205
+                                      5999**************99334567888999999***999987651145778*******************888777 PP
+
+             trimmed_msa_bchC_hmm 175 Wetnaaraeg....aeg.yevidpee..derrdykaivdasGdaevldkliarlakggeivlaGfyeeplsfaf 241
+                                       ++ +++++g    a++ y+  dp++  +  + ++ i+++  ++  l++ ++ la gg +v  G  +epl+   
+  GCA_016699515.1_ASM1669951v1_47 206 SQSLSKKEDGlafgASAyYATSDPATftQLAKTFDLIINTVSAKIDLNAYLSLLAVGGTMVNVGAPSEPLDIHV 279
+                                      77666666643222555145566765214468999999999999999***************999999998654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                       1384  (369615 residues searched)
+Passed MSV filter:                        39  (0.0281792); expected 27.7 (0.02)
+Passed bias filter:                       32  (0.0231214); expected 27.7 (0.02)
+Passed Vit filter:                         2  (0.00144509); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000722543); expected 0.0 (1e-05)
+Initial search space (Z):               1384  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9094.45
+//
+[ok]

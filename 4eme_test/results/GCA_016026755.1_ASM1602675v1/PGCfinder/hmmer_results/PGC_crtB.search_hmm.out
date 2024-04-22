@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCA_016026755.1_ASM1602675v1/GCA_016026755.1_ASM1602675v1_protein.faa
+# output directed to file:         results/GCA_016026755.1_ASM1602675v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-09   36.3   4.6      1e-08   33.1   4.5    2.0  1  GCA_016026755.1_ASM1602675v1_2000  QPR69929.1 squalene/phytoene syn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016026755.1_ASM1602675v1_2000  QPR69929.1 squalene/phytoene synthase family protein [Lysinibacillus macroides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   4.5   2.3e-12     1e-08       4     183 ..       9     211 ..       6     239 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 33.1 bits;  conditional E-value: 2.3e-12
+               trimmed_msa_crtB_hmm   4 aacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekk....................aaalarl 59 
+                                        +++ +++++ S++F++    l ++++ ++ a Y   R+ D + D+++ +                    ++a ++l
+  GCA_016026755.1_ASM1602675v1_2000   9 KEAMQVLKDTSRTFYIPITFLKNDLKLSVAAAYLAMRAIDEIEDHDKLSndvkfdllsatsellkdafnEEAYQAL 84 
+                                        6788899999999999999999999999999999999999999988887788888876666666444433333333 PP
+
+               trimmed_msa_crtB_hmm  60 rerldriyagrpadapadralaavveefaipralpealleGfa.wDaegrryetledllaYaarVAgaVGvmmalv 134
+                                         +  +  +       +   ++   +++ +i +a  +++  G+a w  ++++ +t edl +Y++ VAg VG m++ +
+  GCA_016026755.1_ASM1602675v1_2000  85 LAPYADQLPEVSLRLADWLTFCPEASR-HIVQASTSEMAFGMAkWAKANWQVRTREDLDDYTYYVAGLVGTMLSEL 159
+                                        333333333333333333444444444.56666667777777549999**************************** PP
+
+               trimmed_msa_crtB_hmm 135 mgvrdaevlaR..AcdLGvAmQLtNiaRDvgeD.aragRlYLPleWleeagl 183
+                                             +   +R  A   G  +Q  Ni R   eD +++g  ++P+ W +e+  
+  GCA_016026755.1_ASM1602675v1_2000 160 WAWGADMQTDRelAIGYGRGLQAVNILRNQHEDlEERGVSFVPDGWTREDLF 211
+                                        *9977777777457778889*************4456888******999755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       4485  (1331161 residues searched)
+Passed MSV filter:                       170  (0.0379041); expected 89.7 (0.02)
+Passed bias filter:                      130  (0.0289855); expected 89.7 (0.02)
+Passed Vit filter:                         9  (0.00200669); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000222965); expected 0.0 (1e-05)
+Initial search space (Z):               4485  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 16388.08
+//
+[ok]

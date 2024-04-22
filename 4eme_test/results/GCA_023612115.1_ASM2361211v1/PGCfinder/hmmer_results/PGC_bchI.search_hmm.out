@@ -1,0 +1,114 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023612115.1_ASM2361211v1/GCA_023612115.1_ASM2361211v1_protein.faa
+# output directed to file:         results/GCA_023612115.1_ASM2361211v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-10   39.4   0.1    4.8e-06   24.3   0.0    3.4  3  GCA_023612115.1_ASM2361211v1_1191  URM29179.1 YifB family Mg chelat
+    1.8e-08   32.2   3.9    2.9e-08   31.5   0.6    2.0  2  GCA_023612115.1_ASM2361211v1_2264  URM30137.1 MoxR family ATPase [P
+  ------ inclusion threshold ------
+      0.025   12.1   0.0      0.068   10.6   0.0    1.6  2  GCA_023612115.1_ASM2361211v1_3691  URM26001.1 sigma 54-interacting 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023612115.1_ASM2361211v1_1191  URM29179.1 YifB family Mg chelatase-like AAA ATPase [Pseudomonas frederiksbergensi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.3   0.0   0.00018      0.35       7      65 ..     192     248 ..     185     268 .. 0.82
+   2 !   24.3   0.0   2.6e-09   4.8e-06     116     185 ..     277     346 ..     275     354 .. 0.95
+   3 !    2.7   0.2    0.0093        17     275     306 ..     456     487 ..     371     492 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00018
+               trimmed_msa_bchI_hmm   7 saivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcrync 65 
+                                          + gq   k+all+aa  +    +l  G  GtGk+  +  l  llP++   ++ ++ +
+  GCA_023612115.1_ASM2361211v1_1191 192 NEVQGQLAAKRALLIAAAGA--HNLLFSGPPGTGKTLLASRLPGLLPPLAESEALEVAA 248
+                                        457799999*******9866..579999********************99877766554 PP
+
+  == domain 2  score: 24.3 bits;  conditional E-value: 2.6e-09
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnP 185
+                                        al+ G  + +pG ++ a+ G l++de+  ++ +++++l +  +sG+ v+ r    vr parf lv + nP
+  GCA_023612115.1_ASM2361211v1_1191 277 ALVGGGSKPQPGEITLAHHGVLFLDELPEFDRKVLEVLREPLESGHIVISRAKDRVRFPARFQLVAAMNP 346
+                                        6777888889*********************************************************999 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.0093
+               trimmed_msa_bchI_hmm 275 dGlrgeltllraaralaalegakevtkehlkk 306
+                                          lr+   ll+ ar+la le+ +++ ++h+++
+  GCA_023612115.1_ASM2361211v1_1191 456 LSLRAAHRLLKVARTLADLEQVDAIGRSHVAE 487
+                                        46999999*******************99975 PP
+
+>> GCA_023612115.1_ASM2361211v1_2264  URM30137.1 MoxR family ATPase [Pseudomonas frederiksbergensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   0.1     0.019        36       8      50 ..      34      74 ..      30      83 .. 0.77
+   2 !   31.5   0.6   1.6e-11   2.9e-08     138     320 ..     120     308 ..     115     325 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 1.7 bits;  conditional E-value: 0.019
+               trimmed_msa_bchI_hmm  8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                       a++gq+ +   +l a +    g vl+ G  G Gk+  vrala 
+  GCA_023612115.1_ASM2361211v1_2264 34 AVIGQNIVIDDVLTALIAG--GHVLLEGVPGLGKTLLVRALAR 74
+                                       5666666666665555533..679999**************96 PP
+
+  == domain 2  score: 31.5 bits;  conditional E-value: 1.6e-11
+               trimmed_msa_bchI_hmm 138 yidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPeeGe....lrPqlldrfGlsvevrtpkd 209
+                                          de+n    +    ll++ +  + ++e  +l +     f+++ + nP e e    l    ldrf l v +  p d
+  GCA_023612115.1_ASM2361211v1_2264 120 LADEINRAPAKTQAALLEAMQERQVTLEGRALPIAQ--PFMVLATQNPIEQEgtypLPEAELDRFMLKVRMDYP-D 192
+                                        567777777777777887777666666666666655..59999999*98766333344567*********9988.5 PP
+
+               trimmed_msa_bchI_hmm 210 leervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklclalgt.......dGlr 278
+                                         e+ +++vr+     r    +++    +     k++la ++  +++ ++d+vl+ a +l+ +  t        G r
+  GCA_023612115.1_ASM2361211v1_2264 193 AEQELNMVRQVSRSTRAD--MLDVQPLRTVLQAKDVLALQRIASDLPMDDQVLDYAVRLARTTRTwpgltlgAGPR 266
+                                        688899998877655433..3333333344445666777777777888888888888777554332111122488* PP
+
+               trimmed_msa_bchI_hmm 279 geltllraaralaalegakevtkehlkkvaplalrhrlrrdp 320
+                                        + ++l+r+ara a l+g + v  +++k  a ++lrhr+r  p
+  GCA_023612115.1_ASM2361211v1_2264 267 ASIALVRCARARALLRGGEFVIPDDIKGCALAVLRHRVRIAP 308
+                                        ***************************************877 PP
+
+>> GCA_023612115.1_ASM2361211v1_3691  URM26001.1 sigma 54-interacting transcriptional regulator [Pseudomonas frederiksbe
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0     0.064   1.2e+02      19      56 ..     268     305 ..     263     318 .. 0.84
+   2 ?   10.6   0.0   3.6e-05     0.068      89     145 ..     302     360 ..     285     363 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.064
+               trimmed_msa_bchI_hmm  19 lllaavdpsigGvlvlGdrGtGkstavralaallPkik 56 
+                                        l l  v p+ + vl  G+ G Gk   +r l ++ P+ +
+  GCA_023612115.1_ASM2361211v1_3691 268 LALQRVAPTPATVLFSGESGVGKELFARQLHQFSPRHQ 305
+                                        667788899999****************9999988765 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 3.6e-05
+               trimmed_msa_bchI_hmm  89 kkvpvpvvdlPlGatedrvvGa..ldleraltkGekafepGllaranrGflyidevnll 145
+                                         ++++p+v l   a  d ++ a  + +er   +G  +  pG + ra+ G l++de+  l
+  GCA_023612115.1_ASM2361211v1_3691 302 PRHQAPFVALNCAAIPDNLIEAelFGVERGAYTGATHSRPGRFERAHGGTLFLDEIASL 360
+                                        567899************999865689****************************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5602  (1790539 residues searched)
+Passed MSV filter:                       322  (0.0574795); expected 112.0 (0.02)
+Passed bias filter:                      227  (0.0405212); expected 112.0 (0.02)
+Passed Vit filter:                        41  (0.00731881); expected 5.6 (0.001)
+Passed Fwd filter:                         3  (0.000535523); expected 0.1 (1e-05)
+Initial search space (Z):               5602  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10704.32
+//
+[ok]

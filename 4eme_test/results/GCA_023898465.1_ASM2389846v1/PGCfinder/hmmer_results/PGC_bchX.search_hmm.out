@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898465.1_ASM2389846v1/GCA_023898465.1_ASM2389846v1_protein.faa
+# output directed to file:         results/GCA_023898465.1_ASM2389846v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.7e-07   25.6   0.1    4.2e-07   25.0   0.1    1.3  1  GCA_023898465.1_ASM2389846v1_751  USN53289.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898465.1_ASM2389846v1_751  USN53289.1 MAG: ParA family protein [Candidatus Nomurabacteria bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.1   4.2e-10   4.2e-07      23      68 ..       3      49 ..       1      54 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 4.2e-10
+              trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsll 68
+                                      +ii+i   kgg+gk+ t  nl   la+ g +vlli  dp++++ts l
+  GCA_023898465.1_ASM2389846v1_751  3 RIISIvNQKGGVGKTTTAINLGAYLAHYGARVLLIDLDPQANATSGL 49
+                                      577662579*********************************99965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       1016  (322726 residues searched)
+Passed MSV filter:                        31  (0.0305118); expected 20.3 (0.02)
+Passed bias filter:                       26  (0.0255906); expected 20.3 (0.02)
+Passed Vit filter:                         4  (0.00393701); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000984252); expected 0.0 (1e-05)
+Initial search space (Z):               1016  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10837.96
+//
+[ok]

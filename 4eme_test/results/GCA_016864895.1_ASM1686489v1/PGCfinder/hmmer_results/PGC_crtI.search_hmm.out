@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016864895.1_ASM1686489v1/GCA_016864895.1_ASM1686489v1_protein.faa
+# output directed to file:         results/GCA_016864895.1_ASM1686489v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0011   13.8   0.6     0.0022   12.8   0.2    1.7  2  GCA_016864895.1_ASM1686489v1_613   QRN41142.1 MAG: dihydrolipoyl de
+     0.0052   11.6   0.1     0.0095   10.7   0.1    1.4  1  GCA_016864895.1_ASM1686489v1_1115  QRN41612.1 MAG: NAD(P)-binding p
+     0.0085   10.9   0.1      0.015   10.0   0.1    1.4  1  GCA_016864895.1_ASM1686489v1_919   QRN41431.1 MAG: FAD-dependent 5-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016864895.1_ASM1686489v1_613  QRN41142.1 MAG: dihydrolipoyl dehydrogenase [Neisseriaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.2   5.1e-06    0.0022       4      36 ..       6      38 ..       3      45 .. 0.88
+   2 ?   -2.2   0.0      0.18        76       6      32 ..     189     215 ..     185     219 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 5.1e-06
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldap 36
+                                      +vviGaG GG  aair ++ G++v+ +++ ++ 
+  GCA_016864895.1_ASM1686489v1_613  6 VVVIGAGPGGYIAAIRAAQLGFKVACIDAGKNK 38
+                                      79*************************986654 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.18
+              trimmed_msa_crtI_hmm   6 viGaGfGGlaaairlgakGyrvtvlek 32 
+                                       +iG+G+ Gl ++   +  G +vt+le+
+  GCA_016864895.1_ASM1686489v1_613 189 MIGSGVIGLEMSSVWNRLGSEVTILEA 215
+                                       79**********************996 PP
+
+>> GCA_016864895.1_ASM1686489v1_1115  QRN41612.1 MAG: NAD(P)-binding protein [Neisseriaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   0.1   2.2e-05    0.0095       3      39 ..     381     417 ..     379     424 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.2e-05
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39 
+                                        k+ viGaG  Gl++ai  + k   v ++e+ d++GG+
+  GCA_016864895.1_ASM1686489v1_1115 381 KVAVIGAGPAGLSSAIAAAEKKHYVEIFEANDTIGGQ 417
+                                        678*********************************7 PP
+
+>> GCA_016864895.1_ASM1686489v1_919  QRN41431.1 MAG: FAD-dependent 5-carboxymethylaminomethyl-2-thiouridine(34) oxidored
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.1   3.5e-05     0.015       2      41 ..     154     193 ..     153     213 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 3.5e-05
+              trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGray 41 
+                                       k+av++G G+ G ++a  l+++ ++vt+lek + +  +a+
+  GCA_016864895.1_ASM1686489v1_919 154 KQAVIVGGGIAGATTAYFLAQHDVQVTLLEKEKDIASKAS 193
+                                       68*****************************998887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1304  (438120 residues searched)
+Passed MSV filter:                        59  (0.0452454); expected 26.1 (0.02)
+Passed bias filter:                       54  (0.041411); expected 26.1 (0.02)
+Passed Vit filter:                        12  (0.00920245); expected 1.3 (0.001)
+Passed Fwd filter:                         3  (0.00230061); expected 0.0 (1e-05)
+Initial search space (Z):               1304  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6975.24
+//
+[ok]

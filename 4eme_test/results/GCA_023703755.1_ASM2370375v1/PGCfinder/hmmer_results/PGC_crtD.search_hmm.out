@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703755.1_ASM2370375v1/GCA_023703755.1_ASM2370375v1_protein.faa
+# output directed to file:         results/GCA_023703755.1_ASM2370375v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.9e-06   21.1   0.0    6.2e-06   20.4   0.0    1.3  1  GCA_023703755.1_ASM2370375v1_558  USB81085.1 protoporphyrinogen ox
+    6.6e-06   20.4   4.1    1.4e-05   19.3   1.2    2.3  2  GCA_023703755.1_ASM2370375v1_611  USB81127.1 dihydrolipoyl dehydro
+      4e-05   17.8   0.8    7.3e-05   16.9   0.8    1.4  1  GCA_023703755.1_ASM2370375v1_648  USB81151.1 succinate dehydrogena
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703755.1_ASM2370375v1_558  USB81085.1 protoporphyrinogen oxidase [Chlamydia psittaci]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.4   0.0   2.3e-08   6.2e-06       2      59 ..       3      62 ..       2      71 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 20.4 bits;  conditional E-value: 2.3e-08
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaa..GldvtvlekaaapGGKlrevevggaaidaGPtvltmr 59
+                                      + ++iGaGi+GL++a  l ++    + ++++ka++pGG + +   ++ ++d GP  + +r
+  GCA_023703755.1_ASM2370375v1_558  3 KAIIIGAGISGLSTAWWLHRKfpNSELVIIDKADRPGGLIYSDYQKNFSLDLGPKSFLVR 62
+                                      789*************9998744678999*************************988765 PP
+
+>> GCA_023703755.1_ASM2370375v1_611  USB81127.1 dihydrolipoyl dehydrogenase [Chlamydia psittaci]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   1.2   5.1e-08   1.4e-05       3      37 ..       7      41 ..       5      60 .. 0.86
+   2 ?    1.5   0.1     0.013       3.5       2      34 ..     172     204 ..     171     219 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 5.1e-08
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                       vviGaG gG +aa++ a++Gl+  ++e+++a G 
+  GCA_023703755.1_ASM2370375v1_611  7 CVVIGAGPGGYVAAITAAQQGLKTALIEEQQAGGT 41
+                                      69**************************9887665 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.013
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                       +  +iG G+ G   a    + G+++t++e a++
+  GCA_023703755.1_ASM2370375v1_611 172 KLAIIGGGVIGCEFASLFNTLGVEITIIEVADQ 204
+                                       678**************************8876 PP
+
+>> GCA_023703755.1_ASM2370375v1_648  USB81151.1 succinate dehydrogenase flavoprotein subunit [Chlamydia psittaci]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.8   2.7e-07   7.3e-05       2      30 ..       7      35 ..       6      42 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 2.7e-07
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvle 30
+                                      +v+v+G G++GL+aa+kla  G+ v ++ 
+  GCA_023703755.1_ASM2370375v1_648  7 KVIVVGGGLAGLSAAMKLADFGIVVDLVS 35
+                                      79***********************9985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        814  (267873 residues searched)
+Passed MSV filter:                        31  (0.0380835); expected 16.3 (0.02)
+Passed bias filter:                       28  (0.034398); expected 16.3 (0.02)
+Passed Vit filter:                        10  (0.012285); expected 0.8 (0.001)
+Passed Fwd filter:                         3  (0.0036855); expected 0.0 (1e-05)
+Initial search space (Z):                814  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5503.58
+//
+[ok]

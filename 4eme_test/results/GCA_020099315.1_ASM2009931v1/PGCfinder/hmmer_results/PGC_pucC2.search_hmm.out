@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_020099315.1_ASM2009931v1/GCA_020099315.1_ASM2009931v1_protein.faa
+# output directed to file:         results/GCA_020099315.1_ASM2009931v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0068   13.2   0.2       0.01   12.7   0.2    1.2  1  GCA_020099315.1_ASM2009931v1_1410  UBI18415.1 serine-type D-Ala-D-A
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020099315.1_ASM2009931v1_1410  UBI18415.1 serine-type D-Ala-D-Ala carboxypeptidase [Citrobacter europaeus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.2   2.2e-06      0.01     119     173 ..      12      72 ..       8      99 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 2.2e-06
+              trimmed_msa_pucC2_hmm 119 aaGtslLaLlakrvaperraaaa....tivWlmm..iaGiavtagvagklldPfsaerlva 173
+                                        aaG +lL+Lla +v+++ +++a     +  W++m    G +++ g a + ldP s +++++
+  GCA_020099315.1_ASM2009931v1_1410  12 AAGSALLILLAPTVQAAEQPTAPpsvdARAWILMdyASGKVLAEGNADEKLDPASLTKIMT 72 
+                                        89*************999998852222567****6567*****************999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       4612  (1495582 residues searched)
+Passed MSV filter:                       346  (0.0750217); expected 92.2 (0.02)
+Passed bias filter:                       82  (0.0177797); expected 92.2 (0.02)
+Passed Vit filter:                         5  (0.00108413); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000216826); expected 0.0 (1e-05)
+Initial search space (Z):               4612  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 15069.23
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_015256915.3_ASM1525691v3/GCA_015256915.3_ASM1525691v3_protein.faa
+# output directed to file:         results/GCA_015256915.3_ASM1525691v3/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.5e-05   17.2   0.1    0.00011   15.8   0.1    1.7  1  GCA_015256915.3_ASM1525691v3_493  QWB90866.1 MAG: FAD-dependent ox
+      5e-05   17.0   1.9      0.016    8.7   0.3    2.3  2  GCA_015256915.3_ASM1525691v3_546  QWB90911.1 MAG: FAD-dependent ox
+    0.00086   12.9   0.1     0.0054   10.3   0.1    2.0  2  GCA_015256915.3_ASM1525691v3_537  QWB90903.1 MAG: FAD-dependent ox
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015256915.3_ASM1525691v3_493  QWB90866.1 MAG: FAD-dependent oxidoreductase [Candidatus Saccharimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.1   5.7e-07   0.00011       2      37 ..       3      37 ..       2      47 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 5.7e-07
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapGG 37
+                                      + v++G+G + L+aa+  a+ Gl+v v+ekaa  GG
+  GCA_015256915.3_ASM1525691v3_493  3 DLVIVGSGPSALSAAIYAARDGLSVRVFEKAAF-GG 37
+                                      579**************************9875.43 PP
+
+>> GCA_015256915.3_ASM1525691v3_546  QWB90911.1 MAG: FAD-dependent oxidoreductase [Candidatus Saccharimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.7   0.3   8.3e-05     0.016       4      38 ..       6      41 ..       4      58 .. 0.86
+   2 !    7.4   0.1    0.0002      0.04       4      34 ..     164     194 ..     161     197 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 8.3e-05
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtvlekaaap.GGK 38
+                                      ++iG G +G + a+  a++G +v ++ek+ ++ GG 
+  GCA_015256915.3_ASM1525691v3_546  6 IIIGFGKAGKTLAVLAANKGEKVALIEKSPKMyGGT 41
+                                      89**************************97652665 PP
+
+  == domain 2  score: 7.4 bits;  conditional E-value: 0.0002
+              trimmed_msa_crtD_hmm   4 vviGaGigGLaaalklaaaGldvtvlekaaa 34 
+                                        +iG G  GL  a + a+ G++vt++e+ ++
+  GCA_015256915.3_ASM1525691v3_546 164 AIIGGGFIGLEFASTFAKLGTKVTIFERGDK 194
+                                       69*************************9875 PP
+
+>> GCA_015256915.3_ASM1525691v3_537  QWB90903.1 MAG: FAD-dependent oxidoreductase [Candidatus Saccharimonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.1   2.7e-05    0.0054       3      32 ..      10      39 ..       8      49 .. 0.89
+   2 ?   -0.4   0.0     0.048       9.5     454     493 ..     297     336 ..     293     339 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.7e-05
+              trimmed_msa_crtD_hmm  3 vvviGaGigGLaaalklaaaGldvtvleka 32
+                                       +v+G+G gG aaa   a++Gl+v ++e++
+  GCA_015256915.3_ASM1525691v3_537 10 LIVLGSGAGGSAAANIAAKSGLNVAIVEND 39
+                                      69*************************975 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.048
+              trimmed_msa_crtD_hmm 454 artklpgLylaGGsvHPgaGvPmAalSgrlaaealladla 493
+                                       ++t+++ ++ +GG v P a      l +r+ a ++l++++
+  GCA_015256915.3_ASM1525691v3_537 297 SQTSMKHIFAVGGVVNPQAQTAEILLESRTVAYNILHSRS 336
+                                       799***************9999999999999999888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        597  (186747 residues searched)
+Passed MSV filter:                        14  (0.0234506); expected 11.9 (0.02)
+Passed bias filter:                       11  (0.0184255); expected 11.9 (0.02)
+Passed Vit filter:                         3  (0.00502513); expected 0.6 (0.001)
+Passed Fwd filter:                         3  (0.00502513); expected 0.0 (1e-05)
+Initial search space (Z):                597  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11733.00
+//
+[ok]

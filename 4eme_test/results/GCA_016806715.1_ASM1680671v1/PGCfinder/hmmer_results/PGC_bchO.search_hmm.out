@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_016806715.1_ASM1680671v1/GCA_016806715.1_ASM1680671v1_protein.faa
+# output directed to file:         results/GCA_016806715.1_ASM1680671v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.9e-17   58.9   0.0    5.4e-12   42.3   0.0    2.0  2  GCA_016806715.1_ASM1680671v1_301   QRF74820.1 acetoin dehydrogenase
+    1.2e-06   24.7   0.0     0.0086   12.1   0.0    2.0  2  GCA_016806715.1_ASM1680671v1_1397  QRF75916.1 acetoin dehydrogenase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016806715.1_ASM1680671v1_301  QRF74820.1 acetoin dehydrogenase E2 subunit dihydrolipoyllysine-residue acetyltrans
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.0   5.2e-15   5.4e-12      32     142 ..      20     132 ..      10     169 .. 0.82
+   2 !   15.0   0.0   1.2e-06    0.0012     220     279 .]     170     229 ..     161     229 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 5.2e-15
+              trimmed_msa_bchO_hmm  32 gegPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGH 108
+                                       g+ Pv ++lHG G++  sw  l  lL ++  + ++DL ghg ++++ e   ++++  eal + +++lg++  +++G 
+  GCA_016806715.1_ASM1680671v1_301  20 GTIPV-IFLHGLGGTGNSWIRLDGLLDEKLGLYMIDLIGHGRSSRP-EIPYTIENQCEALDDFVSELGLTDFILAGN 94 
+                                       55565.579********************************99876.5679************************** PP
+
+              trimmed_msa_bchO_hmm 109 SAGaaialrlaldgkiapkkvv....glngallplegl 142
+                                       S G+ ialr+a ++++a+k ++    g+n+++ +  g 
+  GCA_016806715.1_ASM1680671v1_301  95 SYGGWIALRYASSRRKAKKLILvdsaGINTSVGETGGE 132
+                                       ************99988866643333566666555555 PP
+
+  == domain 2  score: 15.0 bits;  conditional E-value: 1.2e-06
+              trimmed_msa_bchO_hmm 220 rdlpklktplllivgekDravppkearevaallpkarlveleglGHLahEeapeevaeli 279
+                                       ++l  +++p++++ g  Dr++p+++ ++++  ++ + ++ + + GH+   e+pee+a +i
+  GCA_016806715.1_ASM1680671v1_301 170 DQLSVVNVPTCIVWGGLDRIIPLEVGERLHGAIQGSIMEVIADAGHVPQVERPEELAGII 229
+                                       56788999************************************************9887 PP
+
+>> GCA_016806715.1_ASM1680671v1_1397  QRF75916.1 acetoin dehydrogenase E2 subunit dihydrolipoyllysine-residue acetyltran
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0   1.7e-05     0.017      36     122 ..      27     118 ..      18     133 .. 0.80
+   2 !   12.1   0.0   8.4e-06    0.0086     214     267 ..     132     185 ..     119     195 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.7e-05
+               trimmed_msa_bchO_hmm  36 vlLLlHGtGasthswrdllp..lLaa.rfrviapDLPghgftesaaeerls..LpgmaealaaLlaalgvepavvv 106
+                                         ++LlHG   s+  w ++ +  +L+   ++v apD Pg g + +++   +s  +++ ++ + +   ++g+   ++v
+  GCA_016806715.1_ASM1680671v1_1397  27 SVILLHGRSFSSKDWVGIKTfeILTGlGYDVYAPDYPGFGNSPANPAYGFSrdFRNSSRFVLDFSGSIGLLGFTLV 102
+                                        5789***********9885522565437**************9999988874466888889999999999999999 PP
+
+               trimmed_msa_bchO_hmm 107 GHSAGaaialrlaldg 122
+                                        G S G+ i lr  +d 
+  GCA_016806715.1_ASM1680671v1_1397 103 GPSMGGGITLRTIIDY 118
+                                        9999999999988876 PP
+
+  == domain 2  score: 12.1 bits;  conditional E-value: 8.4e-06
+               trimmed_msa_bchO_hmm 214 dlekllrdlpklktplllivgekDravppkearevaallpkarlveleglGHLa 267
+                                         +++++++l k+++pll++ ge D++++ ++ + +++l+++++l+ ++g  H +
+  GCA_016806715.1_ASM1680671v1_1397 132 GVDPMRDELSKVDVPLLILWGEFDDVIKKEDGTTLKNLVRNSELKIIQGATHPV 185
+                                        57899*******************************************999955 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       2044  (563635 residues searched)
+Passed MSV filter:                        38  (0.018591); expected 40.9 (0.02)
+Passed bias filter:                       37  (0.0181018); expected 40.9 (0.02)
+Passed Vit filter:                         5  (0.00244618); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000978474); expected 0.0 (1e-05)
+Initial search space (Z):               2044  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8935.68
+//
+[ok]

@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_020683205.1_ASM2068320v1/GCA_020683205.1_ASM2068320v1_protein.faa
+# output directed to file:         results/GCA_020683205.1_ASM2068320v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.9e-22   77.1   0.0    4.8e-20   69.2   0.0    2.7  2  GCA_020683205.1_ASM2068320v1_680  UDQ98594.1 polyprenyl synthetase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020683205.1_ASM2068320v1_680  UDQ98594.1 polyprenyl synthetase family protein [Lentisphaerae bacterium WC36]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.2   0.0   1.5e-23   4.8e-20      21     241 ..      28     283 ..       6     297 .. 0.74
+   2 ?   -0.2   0.0     0.023        70     222     263 ..     301     343 ..     291     357 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 69.2 bits;  conditional E-value: 1.5e-23
+              trimmed_msa_crtE_hmm  21 prlaaalryavfpgGaRiRPrlclavaaacGdddp.aladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhk. 95 
+                                       + l++a++   + gG+R+RP l++ +a  + ++   +    aaaaie+ h   LvhDD+  +D++++RR ++s h+ 
+  GCA_020683205.1_ASM2068320v1_680  28 DFLKDAIKDYPLRGGKRLRPALLIWSARLFDENIAiEKLLPAAAAIEIYHNWTLVHDDI--IDNDEVRRNQKSCHAl 102
+                                       4688999999999*****************88753255667999**************7..9***********9963 PP
+
+              trimmed_msa_crtE_hmm  96 .................afgeplavLaGDalivlafetlareaaksparlakllktlaravG..apaGivaGqawes 153
+                                                         fg + a+LaGD     a++ + + a+ + ++ akl+ ++a++    +   +++G a++ 
+  GCA_020683205.1_ASM2068320v1_680 103 lneyaqknrplhrerseRFGLEFAILAGDVQQAWAMNEILNLAS-QQNVDAKLTIAIAQRLNeiVNCKLISGEAFDI 178
+                                       33222222222222222467789********9999988766555.344556666666665541134589*******9 PP
+
+              trimmed_msa_crtE_hmm 154 ea.........evdlsayqraktgaLfaaatvaGai.....aagadaeewralge...alGeayqvaDDlrDalada 213
+                                       +          + ++++    kt+ L+  a+ +G +     a  +++e+ ++++e   + G a+q  DD   + +d 
+  GCA_020683205.1_ASM2068320v1_680 179 DFsycnwleisTEQINHMIYLKTAVLLQFAAETGVAialncADFKNNESINKISEfvyCAGLAFQYRDDWLGIFGDF 255
+                                       877788884444455666667*********999966444533335566666666522267***************** PP
+
+              trimmed_msa_crtE_hmm 214 eelGkpagqDaalgrpsavaelGlegav 241
+                                       e+ Gkp+  D ++++p++  ++ l+++ 
+  GCA_020683205.1_ASM2068320v1_680 256 EKFGKPICSDLSENKPTILLSYALKNSS 283
+                                       *****************99999887664 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.023
+              trimmed_msa_crtE_hmm 222 qDaalgrpsavaelGlega.varlkelvaeaiasipsckgaaa 263
+                                       +D+ ++  ++v++ G e   ++ +++l+++a++ + +c++++ 
+  GCA_020683205.1_ASM2068320v1_680 301 HDEITEIQNIVRDSGAEQYlIDLMTNLKTDALNILKECPNNKY 343
+                                       67888888999999998861566789999*********98764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       3088  (1049874 residues searched)
+Passed MSV filter:                        59  (0.0191062); expected 61.8 (0.02)
+Passed bias filter:                       47  (0.0152202); expected 61.8 (0.02)
+Passed Vit filter:                         4  (0.00129534); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000323834); expected 0.0 (1e-05)
+Initial search space (Z):               3088  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18381.39
+//
+[ok]

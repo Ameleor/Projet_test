@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_019704035.1_ASM1970403v1/GCA_019704035.1_ASM1970403v1_protein.faa
+# output directed to file:         results/GCA_019704035.1_ASM1970403v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.1e-27   93.1   5.0    5.1e-27   92.8   5.0    1.0  1  GCA_019704035.1_ASM1970403v1_427  BCN71828.1 tryptophan-rich senso
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019704035.1_ASM1970403v1_427  BCN71828.1 tryptophan-rich sensory protein [Prescottella equi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.8   5.0     1e-30   5.1e-27      12     150 ..      28     171 ..      21     173 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 92.8 bits;  conditional E-value: 1e-30
+              trimmed_msa_tspO_hmm  12 vavlggalte...lgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawra..aedaaaaelllalfalnavln 83 
+                                       +a++g+a+t+    ++w+++L+kPs++PP  aF++vWt +ya iav+ ++a  +   ed + a+    + a n ++n
+  GCA_019704035.1_ASM1970403v1_427  28 TALVGSAATRrpaEDDWFTDLRKPSFQPPPVAFPLVWTALYADIAVTSATALARlrEEDPRSAAAYQRALAANLAIN 104
+                                       4555555554222699*************************9998877666554004555666677788999***** PP
+
+              trimmed_msa_tspO_hmm  84 ilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNp 150
+                                       + Ws++fFr +rl +a v++ +L  s   l+  ++r+s +++  l PY vW ++A++L  s++++N+
+  GCA_019704035.1_ASM1970403v1_427 105 ASWSWVFFRAHRLWAAPVVAGVLTASSTDLVRRTARTSPASGAALAPYAVWCAFATVLSGSIWWINR 171
+                                       *****************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4939  (1592124 residues searched)
+Passed MSV filter:                       269  (0.0544645); expected 98.8 (0.02)
+Passed bias filter:                       97  (0.0196396); expected 98.8 (0.02)
+Passed Vit filter:                         6  (0.00121482); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020247); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14181.53
+//
+[ok]

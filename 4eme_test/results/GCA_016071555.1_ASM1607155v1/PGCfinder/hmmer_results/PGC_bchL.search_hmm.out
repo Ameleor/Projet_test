@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCA_016071555.1_ASM1607155v1/GCA_016071555.1_ASM1607155v1_protein.faa
+# output directed to file:         results/GCA_016071555.1_ASM1607155v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.6e-10   37.7   2.6      1e-07   28.4   0.2    2.1  2  GCA_016071555.1_ASM1607155v1_568   QPW55983.1 septum site-determini
+    7.4e-06   22.3   0.3      1e-05   21.9   0.3    1.5  1  GCA_016071555.1_ASM1607155v1_816   QPW56181.1 MinD/ParA family prot
+    0.00025   17.3   0.6    0.00039   16.7   0.1    1.6  2  GCA_016071555.1_ASM1607155v1_2229  QPW56653.1 ParA family protein (
+     0.0021   14.3   0.2       0.11    8.6   0.0    2.4  3  GCA_016071555.1_ASM1607155v1_404   QPW55847.1 ATP-binding protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016071555.1_ASM1607155v1_568  QPW55983.1 septum site-determining protein MinD [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.4   0.2     2e-10     1e-07      25      80 ..       8      66 ..       2      80 .. 0.87
+   2 !    9.6   0.2   0.00011     0.058     132     188 ..     109     164 ..      88     204 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 28.4 bits;  conditional E-value: 2e-10
+              trimmed_msa_bchL_hmm 25 vygkggigksttssnlsvafsklgkrvlqigcdp...khdstftltkklvptvidvlee 80
+                                        gkgg+gk+tt++n+ +a++ lgk+v+ +  d      d  + l +++v t++dv+ee
+  GCA_016071555.1_ASM1607155v1_568  8 TSGKGGVGKTTTTANIGTALASLGKKVVVVDGDTglrNLDVLMGLENRIVFTLLDVIEE 66
+                                      57****************************99973335799999************986 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 0.00011
+              trimmed_msa_bchL_hmm 132 lledtdvvifdvlgdvvcggfaaplqhadralivaandfdsifamnrivaaikaksk 188
+                                       l ++ d vi+d     +  gf   +  adral+v   +  s+   +r++  ++ak  
+  GCA_016071555.1_ASM1607155v1_568 109 LKQEFDYVIIDSPAG-IEQGFENAIIGADRALVVVNPEVTSVRDADRVIGKLDAKGI 164
+                                       567888999998765.4679*********************************9974 PP
+
+>> GCA_016071555.1_ASM1607155v1_816  QPW56181.1 MinD/ParA family protein [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   0.3     2e-08     1e-05       6      58 ..      15      68 ..      12     237 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 2e-08
+              trimmed_msa_bchL_hmm  6 svqveldeelkietakvfav.ygkggigksttssnlsvafsklgkrvlqigcdp 58
+                                       +q + ++ ++i ++k++++  gkgg+gks    nl +++ k+g++vl +  d 
+  GCA_016071555.1_ASM1607155v1_816 15 NLQWNENHIEEIMGTKIITItSGKGGVGKSNFVVNLGITLQKMGNKVLILDADV 68
+                                      567788888999*****998459*************************988775 PP
+
+>> GCA_016071555.1_ASM1607155v1_2229  QPW56653.1 ParA family protein (plasmid) [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.1   7.6e-07   0.00039      24      84 ..       7      67 ..       1      84 [. 0.83
+   2 ?   -2.3   0.0      0.45   2.3e+02     229     243 ..     181     195 ..     156     229 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 7.6e-07
+               trimmed_msa_bchL_hmm 24 avygkggigksttssnlsvafsklgkrvlqigcdpkhdstftltkklvptvidvleevdfh 84
+                                        +  kgg+gk+t+  n++  +s  g++vl i  d + + t  l  k    + d+  + ++ 
+  GCA_016071555.1_ASM1607155v1_2229  7 MINVKGGVGKTTSCINVAGEISSQGHKVLLIDNDSQGNLTQILNTKSKYNIYDLYSNDNIQ 67
+                                       4678********************************9999999888888888877665554 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.45
+               trimmed_msa_bchL_hmm 229 irrsrlkkstlfeme 243
+                                        i r  ++k+t+f  +
+  GCA_016071555.1_ASM1607155v1_2229 181 ILRNNFQKRTIFSKQ 195
+                                        333445555555433 PP
+
+>> GCA_016071555.1_ASM1607155v1_404  QPW55847.1 ATP-binding protein [Clostridium botulinum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.6   0.0   0.00022      0.11      24      58 ..       5      35 ..       2      45 .. 0.85
+   2 ?   -1.4   0.0      0.25   1.3e+02      11      40 ..     148     177 ..     136     194 .. 0.72
+   3 ?    2.9   0.0     0.012         6     190     239 ..     206     260 ..     154     281 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.00022
+              trimmed_msa_bchL_hmm 24 avygkggigksttssnlsvafsklgkrvlqigcdp 58
+                                       + gkgg gk+t     ++a+s+l k v+++ cd 
+  GCA_016071555.1_ASM1607155v1_404  5 VLSGKGGTGKTTI----ATAISELAKDVVRVDCDV 35
+                                      5679******985....67999***********96 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.25
+              trimmed_msa_bchL_hmm  11 ldeelkietakvfavygkggigksttssnl 40 
+                                        + ++ i +  +  + g  gig s  ss  
+  GCA_016071555.1_ASM1607155v1_404 148 ENAKEYISENTLTIIDGSPGIGCSVISSIT 177
+                                       455566888888889999999999988854 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.012
+              trimmed_msa_bchL_hmm 190 ykvrlggvianrs...ketdeidrfneavglkrlahlpdldairrs..rlkkstl 239
+                                       ++v +  +i       + t+ei+ f+++ +++ + ++p  d++ +s   lk  t 
+  GCA_016071555.1_ASM1607155v1_404 206 FRVPINVCINKYDinlDMTQEIESFCKKENIDIIGEIPFDDTVVKSinELKPITY 260
+                                       555555555443311146899*****************99999998223444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       2061  (606405 residues searched)
+Passed MSV filter:                        99  (0.0480349); expected 41.2 (0.02)
+Passed bias filter:                       59  (0.0286269); expected 41.2 (0.02)
+Passed Vit filter:                        11  (0.00533721); expected 2.1 (0.001)
+Passed Fwd filter:                         4  (0.00194081); expected 0.0 (1e-05)
+Initial search space (Z):               2061  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5927.81
+//
+[ok]

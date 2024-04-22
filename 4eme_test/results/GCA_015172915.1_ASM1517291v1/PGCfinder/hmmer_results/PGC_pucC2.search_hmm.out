@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_015172915.1_ASM1517291v1/GCA_015172915.1_ASM1517291v1_protein.faa
+# output directed to file:         results/GCA_015172915.1_ASM1517291v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00017   17.7   0.0     0.0002   17.5   0.0    1.0  1  GCA_015172915.1_ASM1517291v1_3552  QOW06772.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015172915.1_ASM1517291v1_3552  QOW06772.1 hypothetical protein IC830_18590 [Vibrio parahaemolyticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0   7.6e-08    0.0002      41      90 ..       9      58 ..       6      66 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 7.6e-08
+              trimmed_msa_pucC2_hmm 41 vlPglLvalhyavqllRPrlGygsDkggrrtpwiigGlavLalggllaaa 90
+                                       + P+  v  h++v l+R + G++ Dk++++ ++i g l  +  g++la++
+  GCA_015172915.1_ASM1517291v1_3552  9 MCPTCGVETHHVVVLVRKKSGFEGDKNRNKKEFIAGFLKSVVFGAFLASM 58
+                                       6789999***************************************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       2618  (660216 residues searched)
+Passed MSV filter:                       147  (0.0561497); expected 52.4 (0.02)
+Passed bias filter:                       44  (0.0168067); expected 52.4 (0.02)
+Passed Vit filter:                         4  (0.00152788); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.000381971); expected 0.0 (1e-05)
+Initial search space (Z):               2618  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 18812.09
+//
+[ok]

@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_lhaA.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_lhaA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_lhaA_hmm  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                              -----------
+    2.4e-06   23.8   7.0    1.3e-05   21.4   0.8    2.2  2  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374  NPFBPI_07110 MFS domain-containi
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374  NPFBPI_07110 MFS domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.8   0.8   0.00027      0.69     131     207 ..      11      89 ..       2     106 .. 0.78
+   2 !   21.4   0.8   5.3e-09   1.3e-05     310     401 ..     279     370 ..     205     380 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 5.8 bits;  conditional E-value: 0.00027
+                                   trimmed_msa_lhaA_hmm 131 vaaalafllvGaGlhttqtaG.laLatdlaeeekrprvvallyvmllvGmlvsalv 185
+                                                            v+   + +l+G+Gl ++  +  + + +   + ++++ +v+ll  ++ + m ++a +
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374  11 VFGFTSVFLIGLGLTIVNPVIpFMVEQYTKNTQQQATTVTLLSAIYAFSMFLAAPM 66 
+                                                            5566778899****99987651444455556788899******************* PP
+
+                                   trimmed_msa_lhaA_hmm 186 lgllLadfs.elrliqviqgaav 207
+                                                            lg+l   f  ++ li  + g+a+
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374  67 LGALSDRFGrKIILISSLFGSAI 89 
+                                                            *****999625677887777776 PP
+
+  == domain 2  score: 21.4 bits;  conditional E-value: 5.3e-09
+                                   trimmed_msa_lhaA_hmm 310 rgadalrlaalGlliGilafslvifaaplesallfrlgavliGlggGlfavgtlta 365
+                                                            + ++  ++ ++G+   ++ +s++i++a  +s   f +g+v  Glg  +f+ +    
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374 279 KFWRENQIITMGITSEMIGYSVIILSAFYGSIPCFIIGMVFFGLGDAIFSPSYNGL 334
+                                                            55667788999***************************************999888 PP
+
+                                   trimmed_msa_lhaA_hmm 366 amalaeeeesGlalGaWGavqataaGlaialgGalr 401
+                                                              + a++e++G + Ga  ++qa a  ++ ++gG+l 
+  GCA_905186115.1_Enterococcus_hirae_canine_HQ_MAG_1374 335 ISTYASKEDQGKIQGASQSIQALARVIGPMIGGQLY 370
+                                                            88999999*************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       2514  (771648 residues searched)
+Passed MSV filter:                       137  (0.0544948); expected 50.3 (0.02)
+Passed bias filter:                       52  (0.0206842); expected 50.3 (0.02)
+Passed Vit filter:                         7  (0.00278441); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.000397772); expected 0.0 (1e-05)
+Initial search space (Z):               2514  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10339.60
+//
+[ok]

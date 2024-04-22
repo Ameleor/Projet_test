@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_020424345.1_ASM2042434v1/GCA_020424345.1_ASM2042434v1_protein.faa
+# output directed to file:         results/GCA_020424345.1_ASM2042434v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-05   21.5   0.0    1.8e-05   20.9   0.0    1.3  1  GCA_020424345.1_ASM2042434v1_143   LGFLME_00725 ParA-like ATPase in
+     0.0085   12.1   0.0      0.034   10.1   0.0    1.9  2  GCA_020424345.1_ASM2042434v1_512   LGFLME_02600 signal recognition 
+  ------ inclusion threshold ------
+      0.014   11.4   0.1      0.024   10.6   0.1    1.3  1  GCA_020424345.1_ASM2042434v1_2054  LGFLME_10515 thymidine kinase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020424345.1_ASM2042434v1_143  LGFLME_00725 ParA-like ATPase involved in chromosome/plasmid partitioning or cellul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.0   2.3e-08   1.8e-05      22      66 ..       2      47 ..       1      59 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 2.3e-08
+              trimmed_msa_bchX_hmm 22 tqiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                      t++ia+   kgg+gk+ t  nl+  l ++ +kvlli  dp+s++ts
+  GCA_020424345.1_ASM2042434v1_143  2 TKVIALAnQKGGVGKTTTALNLAAGLLRRDQKVLLIDLDPQSNATS 47
+                                      7888875269*********************************998 PP
+
+>> GCA_020424345.1_ASM2042434v1_512  LGFLME_02600 signal recognition particle-docking protein FtsY
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.0   4.2e-05     0.034      24      60 ..     180     216 ..     159     264 .. 0.81
+   2 ?   -1.3   0.0      0.13     1e+02     189     213 ..     314     338 ..     302     354 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4.2e-05
+              trimmed_msa_bchX_hmm  24 iiaiygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                       +    g  g+gk+ t+ +++ +  +qgkkvll   d 
+  GCA_020424345.1_ASM2042434v1_512 180 VFLFVGVNGVGKTTTIGKMASFYKKQGKKVLLAAADT 216
+                                       55567999************************99986 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.13
+              trimmed_msa_bchX_hmm 189 eyfrklggnvgvaglvinkddgtge 213
+                                       +  r +     v+glv+ k dgt +
+  GCA_020424345.1_ASM2042434v1_512 314 QQARLFKDSTDVTGLVLTKLDGTAK 338
+                                       555666677889**********965 PP
+
+>> GCA_020424345.1_ASM2042434v1_2054  LGFLME_10515 thymidine kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.1     3e-05     0.024      21      57 ..       8      44 ..       3      55 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3e-05
+               trimmed_msa_bchX_hmm 21 etqiiaiygkggigksftlanlsymlaqqgkkvllig 57
+                                        tq+   yg  g+gk++ + ++++    qgkkvll+ 
+  GCA_020424345.1_ASM2042434v1_2054  8 MTQLFFEYGAMGSGKTIEILKVAHNYESQGKKVLLMT 44
+                                       6999999***************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2389  (549422 residues searched)
+Passed MSV filter:                        83  (0.0347426); expected 47.8 (0.02)
+Passed bias filter:                       69  (0.0288824); expected 47.8 (0.02)
+Passed Vit filter:                        12  (0.00502302); expected 2.4 (0.001)
+Passed Fwd filter:                         3  (0.00125576); expected 0.0 (1e-05)
+Initial search space (Z):               2389  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8660.48
+//
+[ok]

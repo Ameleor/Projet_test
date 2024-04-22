@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCA_020410785.1_ASM2041078v1/GCA_020410785.1_ASM2041078v1_protein.faa
+# output directed to file:         results/GCA_020410785.1_ASM2041078v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    9.6e-31  103.2   0.0    1.3e-30  102.7   0.0    1.1  1  GCA_020410785.1_ASM2041078v1_94  UCM85789.1 MAG: polyprenyl synth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_020410785.1_ASM2041078v1_94  UCM85789.1 MAG: polyprenyl synthetase family protein [Rickettsia endosymbiont of Cul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.7   0.0   9.6e-34   1.3e-30      28     228 ..      38     237 ..      14     253 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 102.7 bits;  conditional E-value: 9.6e-34
+             trimmed_msa_crtE_hmm  28 ryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgkpsvhkafgeplavLa 105
+                                      +y +  gG+RiRP l++  +  +G   ++  +  aaa+e++h a L+hDD+  +D++++RR kp+    ++ +  +L+
+  GCA_020410785.1_ASM2041078v1_94  38 KYLLEFGGKRIRPLLTILTSKMFGYVGEDNIK-LAAAVEFIHAATLLHDDV--VDESTMRRSKPTANVIWNSKASILV 112
+                                      5666779*****************99988888.6789*************6..8************************ PP
+
+             trimmed_msa_crtE_hmm 106 GDalivlafetlareaak.sparlakllktlaravGapaGivaGqaweseaevdlsayqraktgaLfaaatvaGaiaa 182
+                                      GD l   +f+ + ++++  + + l++  +++++  G  + +v        +e + ++   akt+ Lf  ++ aGai +
+  GCA_020410785.1_ASM2041078v1_94 113 GDFLFSQSFQLMVDTKSIkAMKSLSRASAIISE--GEVSQLVKLNQRRIIDETEYNEIIMAKTAELFGVSCEAGAIIS 188
+                                      **********98877665145555555555654..6667888888888999999999999****************87 PP
+
+             trimmed_msa_crtE_hmm 183 gadaee...wralgealGeayqvaDDlrDaladaeelGkpagqDaalgr 228
+                                       +++e+   ++++g  lG+ +q+ DDl D l+d++++Gk +g D  +g+
+  GCA_020410785.1_ASM2041078v1_94 189 NQSNETceiLQKFGRYLGNIFQIIDDLFDYLGDSRDIGKNIGDDFLEGK 237
+                                      7766542227899*******************************98887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                       1364  (432778 residues searched)
+Passed MSV filter:                        18  (0.0131965); expected 27.3 (0.02)
+Passed bias filter:                       15  (0.0109971); expected 27.3 (0.02)
+Passed Vit filter:                         2  (0.00146628); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000733138); expected 0.0 (1e-05)
+Initial search space (Z):               1364  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13259.30
+//
+[ok]

@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_900635605.1_31354_C01/GCA_900635605.1_31354_C01_protein.faa
+# output directed to file:         results/GCA_900635605.1_31354_C01/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+      2e-09   35.4   0.1    0.00032   18.3   0.0    3.2  3  GCA_900635605.1_31354_C01_5574  VEA44341.1 putative ATP-dependen
+     0.0016   16.0   0.4      0.077   10.5   0.1    2.1  2  GCA_900635605.1_31354_C01_3085  VEA38527.1 transcriptional regul
+  ------ inclusion threshold ------
+      0.038   11.4   0.0      0.087   10.3   0.0    1.5  1  GCA_900635605.1_31354_C01_3798  VEA40652.1 Putative molybdenum t
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900635605.1_31354_C01_5574  VEA44341.1 putative ATP-dependent protease [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.0   0.00036      0.68       9      60 ..     193     242 ..     186     271 .. 0.85
+   2 !   18.3   0.0   1.7e-07   0.00032     120     186 ..     281     347 ..     275     353 .. 0.91
+   3 !    5.9   0.1     0.001       1.9     194     309 ..     375     490 ..     368     500 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00036
+            trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                     ++gq++ k+ l ++a   +   +l++G  GtGk+  +  l+ +lP+++  ++
+  GCA_900635605.1_31354_C01_5574 193 VIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRLSGILPPLSNEEA 242
+                                     899*********9997654..699**********************987655 PP
+
+  == domain 2  score: 18.3 bits;  conditional E-value: 1.7e-07
+            trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                     G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_900635605.1_31354_C01_5574 281 GGAIPAPGEISLAHNGILFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLIAAMNPS 347
+                                     555557999********************************************************95 PP
+
+  == domain 3  score: 5.9 bits;  conditional E-value: 0.001
+            trimmed_msa_bchI_hmm 194 lldrfGlsvevrtp..kdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklcl 270
+                                     +ldrf ls+e+  p    l++  +     +++++   a +++  ++++k+++++ ++r+  +     ++  +      +
+  GCA_900635605.1_31354_C01_5574 375 FLDRFDLSLEIPLPppGILSQHASKGESSATVKKRVIAAHERQYRRQKKLNARL-EGREIQKYCVLHHDDARWLEDTLV 452
+                                     578888887776541133444444444444455544455555555556666655.455555554444444555556667 PP
+
+            trimmed_msa_bchI_hmm 271 algtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                     +lg   +r+   ll+ ar++a +e a++++++hl++  +
+  GCA_900635605.1_31354_C01_5574 453 HLGL-SIRAWQRLLKVARTIADIELADQISRQHLQEAVS 490
+                                     7776.5899999*********************997654 PP
+
+>> GCA_900635605.1_31354_C01_3085  VEA38527.1 transcriptional regulator [Salmonella enterica subsp. enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0052       9.8      30      45 ..      31      46 ..      21      58 .. 0.81
+   2 !   10.5   0.1   4.1e-05     0.077     119     202 ..      86     173 ..      59     194 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0052
+            trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkstav 45
+                                     vl++G+rGtGk   +
+  GCA_900635605.1_31354_C01_3085 31 PVLIIGERGTGKELIA 46
+                                    59**********8655 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 4.1e-05
+            trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe......eGelr 191
+                                     +G ++ +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n +      eG +r
+  GCA_900635605.1_31354_C01_3085  86 TGAQKRHPGRFERADGGTLFLDELATAPMLVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNADlpamvkEGTFR 162
+                                     6888899******************99999999*********9..89999998888777788887753333444***** PP
+
+            trimmed_msa_bchI_hmm 192 PqlldrfGlsv 202
+                                       lldr+ + v
+  GCA_900635605.1_31354_C01_3085 163 ADLLDRLAFDV 173
+                                     ******87765 PP
+
+>> GCA_900635605.1_31354_C01_3798  VEA40652.1 Putative molybdenum transport ATP-binding protein modF [Salmonella enteric
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   4.6e-05     0.087      34      66 ..      35      67 ..      19      92 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 4.6e-05
+            trimmed_msa_bchI_hmm 34 lGdrGtGkstavralaallPkikavkgcryncd 66
+                                    +G  G+Gks+ +rala  lP ++  ++cr++  
+  GCA_900635605.1_31354_C01_3798 35 VGANGSGKSALARALAGELPLLTGERQCRFTRI 67
+                                    6999************************99754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5635  (1254468 residues searched)
+Passed MSV filter:                       224  (0.0397516); expected 112.7 (0.02)
+Passed bias filter:                      166  (0.0294587); expected 112.7 (0.02)
+Passed Vit filter:                        30  (0.00532387); expected 5.6 (0.001)
+Passed Fwd filter:                         3  (0.000532387); expected 0.1 (1e-05)
+Initial search space (Z):               5635  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10147.75
+//
+[ok]

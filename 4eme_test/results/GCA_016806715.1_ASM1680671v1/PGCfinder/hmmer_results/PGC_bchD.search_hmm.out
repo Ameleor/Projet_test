@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016806715.1_ASM1680671v1/GCA_016806715.1_ASM1680671v1_protein.faa
+# output directed to file:         results/GCA_016806715.1_ASM1680671v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-05   20.9   0.0    1.6e-05   20.5   0.0    1.1  1  GCA_016806715.1_ASM1680671v1_189  QRF74708.1 regulatory ATPase Rav
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016806715.1_ASM1680671v1_189  QRF74708.1 regulatory ATPase RavA [Thermoplasmatales archaeon]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5   0.0     8e-09   1.6e-05      94     254 ..     107     287 ..      85     297 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 8e-09
+              trimmed_msa_bchD_hmm  94 AERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedealp..eaLldRlalrldldeialr.... 164
+                                         R+++++ + l +a++e++  +   g ++ l+  + ++a  + +e++ ++p  eaL+dR  +r +l+  + +    
+  GCA_016806715.1_ASM1680671v1_189 107 INRTPAKVQSALLEAMEEHR--VSVGGEDHILPEPYLVIATQNPVEQEGTFPlaEALMDRFLFRYNLTYPSREeein 181
+                                       579999*************6..6777888999999**********99987654489***********9887776667 PP
+
+              trimmed_msa_bchD_hmm 165 .........dleelaaeaedieaararlpkvtleeealealvataaalG.......idslRapllalraaralAale 225
+                                                +++e+ ++ ++i + r ++ +v +++++   +v + +++         +s R+ +  l+a ra A ++
+  GCA_016806715.1_ASM1680671v1_189 182 ilnsitnraQIKENLMNSDQILKLRSAVDNVYISQDVKIYIVDLIRRTRdsdlvylGASPRTTAKYLKAVRANALIN 258
+                                       77766666666666669****************998766666554443311111114799***************** PP
+
+              trimmed_msa_bchD_hmm 226 grteveeedlalAarlvlapratrlpeee 254
+                                       gr+ v  ed+    r  l +r +  pe+ 
+  GCA_016806715.1_ASM1680671v1_189 259 GRNYVIPEDIVSISRELLNHRIILKPEAM 287
+                                       *********************99999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       2044  (563635 residues searched)
+Passed MSV filter:                        47  (0.0229941); expected 40.9 (0.02)
+Passed bias filter:                       41  (0.0200587); expected 40.9 (0.02)
+Passed Vit filter:                         7  (0.00342466); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000489237); expected 0.0 (1e-05)
+Initial search space (Z):               2044  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 14854.96
+//
+[ok]

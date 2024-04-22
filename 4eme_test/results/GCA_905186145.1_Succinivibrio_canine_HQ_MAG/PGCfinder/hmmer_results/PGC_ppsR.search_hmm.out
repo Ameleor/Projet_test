@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/GCA_905186145.1_Succinivibrio_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186145.1_Succinivibrio_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                         -----------
+    6.4e-05   18.7   0.1    8.7e-05   18.3   0.1    1.2  1  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1474  EOCKBE_07825 histidine kinase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1474  EOCKBE_07825 histidine kinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   0.1   5.1e-08   8.7e-05     145     200 ..       8      61 ..       4     139 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.3 bits;  conditional E-value: 5.1e-08
+                              trimmed_msa_ppsR_hmm 145 lfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqa 200
+                                                       ++e+ ++avli d    +iv aN+aA++Llg ++++l   +f++l+++e+++ l +
+  GCA_905186145.1_Succinivibrio_canine_HQ_MAG_1474   8 IVETLNTAVLITDN-ALKIVFANAAAEQLLGMSRTRLYTLKFNDLIDKEEKTLL-N 61 
+                                                       66777888888875.689999**************************9987644.3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1683  (583205 residues searched)
+Passed MSV filter:                        60  (0.0356506); expected 33.7 (0.02)
+Passed bias filter:                       42  (0.0249554); expected 33.7 (0.02)
+Passed Vit filter:                         8  (0.00475342); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000594177); expected 0.0 (1e-05)
+Initial search space (Z):               1683  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10318.61
+//
+[ok]

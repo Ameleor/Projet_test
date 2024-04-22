@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_021513695.1_ASM2151369v1/GCA_021513695.1_ASM2151369v1_protein.faa
+# output directed to file:         results/GCA_021513695.1_ASM2151369v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.8e-06   23.7   0.1    5.2e-06   22.8   0.1    1.4  1  GCA_021513695.1_ASM2151369v1_2614  UJG40801.1 MAG: ArsA family ATPa
+    0.00033   16.9   0.3    0.00066   15.9   0.1    1.6  2  GCA_021513695.1_ASM2151369v1_1401  UJG39619.1 MAG: Mrp/NBP35 family
+     0.0031   13.6   0.0      0.016   11.3   0.0    1.9  2  GCA_021513695.1_ASM2151369v1_579   UJG41419.1 MAG: ATP-binding prot
+      0.009   12.1   0.0      0.012   11.7   0.0    1.2  1  GCA_021513695.1_ASM2151369v1_1788  UJG39996.1 MAG: ParA family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021513695.1_ASM2151369v1_2614  UJG40801.1 MAG: ArsA family ATPase [Candidatus Heimdallarchaeum aukensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.8   0.1   7.9e-09   5.2e-06      19      62 ..       8      51 ..       2      72 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 22.8 bits;  conditional E-value: 7.9e-09
+               trimmed_msa_bchX_hmm 19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       +k+ + i + gkgg+gk+   + +s  la++gkk ll+  dp  
+  GCA_021513695.1_ASM2151369v1_2614  8 EKDLKFILVGGKGGVGKTSIASAISIALAEKGKKTLLVSTDPAH 51
+                                       67889999**********************************63 PP
+
+>> GCA_021513695.1_ASM2151369v1_1401  UJG39619.1 MAG: Mrp/NBP35 family ATP-binding protein [Candidatus Heimdallarchaeum 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1     1e-06   0.00066       9      70 ..       9      70 ..       2      93 .. 0.83
+   2 ?   -2.5   0.0      0.38   2.5e+02     215     230 ..     214     229 ..     179     238 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1e-06
+               trimmed_msa_bchX_hmm  9 epdavatgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfg 70
+                                       e ++++++ ++ + +i  + gkgg+gk+    n++  la++g kv ++  d       l++g
+  GCA_021513695.1_ASM2151369v1_1401  9 EDQKIEETLSKIKYKIAVLSGKGGTGKTTVTVNIAQTLADKGYKVGILDADITGPNVPLMLG 70
+                                       44456666667778888999*************************99999987777777766 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.38
+               trimmed_msa_bchX_hmm 215 qafaeavgipvlaaip 230
+                                        +  a+  +ip l a+p
+  GCA_021513695.1_ASM2151369v1_1401 214 KNVAKMLNIPFLGAVP 229
+                                        3455666666666666 PP
+
+>> GCA_021513695.1_ASM2151369v1_579  UJG41419.1 MAG: ATP-binding protein [Candidatus Heimdallarchaeum aukensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.0       0.1        67      24      42 ..       4      22 ..       2      53 .. 0.73
+   2 !   11.3   0.0   2.4e-05     0.016     202     265 ..     212     276 ..     197     280 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.1
+              trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanl 42
+                                      i  + gkgg+gk+   + l
+  GCA_021513695.1_ASM2151369v1_579  4 IAVVSGKGGTGKTTIATSL 22
+                                      55678******98654444 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 2.4e-05
+              trimmed_msa_bchX_hmm 202 glvinkdd.gtgeaqafaeavgipvlaaipadedirrksanyeiigkpesewgslfeelaenvae 265
+                                       g++ink+  g  e + ++++ +ip+l  ip d +i +  +  +   ++  ew + f+++ e+++e
+  GCA_021513695.1_ASM2151369v1_579 212 GVIINKEGiGNEELENYCKENNIPILLRIPFDLKIAKSYSVGNNFLTTFPEWKEKFQQMIEEITE 276
+                                       899**986477899*********************997666666666677888888888877765 PP
+
+>> GCA_021513695.1_ASM2151369v1_1788  UJG39996.1 MAG: ParA family protein [Candidatus Heimdallarchaeum aukensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.0   1.8e-05     0.012      23      71 ..       8      57 ..       1      81 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.8e-05
+               trimmed_msa_bchX_hmm 23 qiiaiyg.kggigksftlanlsymlaqqgkkvlligcdpksdttsllfgg 71
+                                       ++++ +   gg+gk+  + n++ +la+qgkk +++  +  s     +fg 
+  GCA_021513695.1_ASM2151369v1_1788  8 KVVSFFSfSGGVGKTTLVVNIAKILAEQGKKTIVLELELLSPKYQTIFGF 57
+                                       5566554369*********************9998877666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2654  (911876 residues searched)
+Passed MSV filter:                       101  (0.0380558); expected 53.1 (0.02)
+Passed bias filter:                       88  (0.0331575); expected 53.1 (0.02)
+Passed Vit filter:                        19  (0.00715901); expected 2.7 (0.001)
+Passed Fwd filter:                         4  (0.00150716); expected 0.0 (1e-05)
+Initial search space (Z):               2654  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9254.89
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_022023935.1_ASM2202393v1/GCA_022023935.1_ASM2202393v1_protein.faa
+# output directed to file:         results/GCA_022023935.1_ASM2202393v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0018   15.0   0.3     0.0038   13.9   0.3    1.5  1  GCA_022023935.1_ASM2202393v1_2340  UKK32827.1 MoxR family ATPase [C
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_022023935.1_ASM2202393v1_2340  UKK32827.1 MoxR family ATPase [Citrobacter freundii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.3   7.7e-07    0.0038      88     257 ..     105     318 ..     101     326 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 7.7e-07
+               trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedea..lpeaLldRlalrldldei 161
+                                        ++++    R ++ + + l +a++e++  +   g++  l+  f+++a  + ++++ +  lpea ldR  +++ ++  
+  GCA_022023935.1_ASM2202393v1_2340 105 IILADEINRASARVQSALLEAMEERH--VTVAGNSWPLPGVFMVLATQNPVDQEGTwpLPEAQLDRFLMKVLVHYP 178
+                                        5555666799999999999****995..66778889999********9999777653378999***9999977665 PP
+
+               trimmed_msa_bchD_hmm 162 alrdleelaa.............................eaedieaararlpkvtl................eeea 192
+                                        + ++ +++ +                             ++++i++  ++++ v++                + + 
+  GCA_022023935.1_ASM2202393v1_2340 179 SKENEQKVMQlvrreqqqkyqqltnvtpaapeqpdalilSQQEIAECWQAISAVHVsatvenyivnlvdlsrHPQS 254
+                                        5554444443455555555555555666666666666664444444444444444488888888888888887788 PP
+
+               trimmed_msa_bchD_hmm 193 lealvataaalGidslRapllalraaralAalegrteveeedlalAarlvlapratrlpeeeeee 257
+                                        +++  a   ++Gi s R  l   r  ra A legr++v  ed++  a  vl +r +   ++++++
+  GCA_022023935.1_ASM2202393v1_2340 255 VSDTLAGYLTFGI-SPRGTLALERCGRAQAWLEGRDAVLPEDIKKIAPAVLRHRLMLSYQASADN 318
+                                        8888888899998.79**************************************98876666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5007  (1556893 residues searched)
+Passed MSV filter:                       239  (0.0477332); expected 100.1 (0.02)
+Passed bias filter:                      106  (0.0211704); expected 100.1 (0.02)
+Passed Vit filter:                        16  (0.00319553); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.00019972); expected 0.1 (1e-05)
+Initial search space (Z):               5007  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 14577.11
+//
+[ok]

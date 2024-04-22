@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699835.1_ASM1669983v1/GCA_016699835.1_ASM1669983v1_protein.faa
+# output directed to file:         results/GCA_016699835.1_ASM1669983v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.4e-09   33.6   7.8    6.4e-09   33.0   7.8    1.3  1  GCA_016699835.1_ASM1669983v1_1730  QQS08095.1 MAG: 4-hydroxybenzoat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699835.1_ASM1669983v1_1730  QQS08095.1 MAG: 4-hydroxybenzoate octaprenyltransferase [Phycisphaerales bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   7.8   2.4e-12   6.4e-09      39     244 ..      55     276 ..      32     320 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 2.4e-12
+               trimmed_msa_bchG_hmm  39 wllvvaGvllaGPlvcatsqavndWfdrhvdaine..PerpiPsGripGrWGlyialiltllsll.va.aal...g 107
+                                        ++l +a v+l+  l  + +   n   dr++da ne   +r++ sGr++ + G  ial+ +++ +l  + + l    
+  GCA_016699835.1_ASM1669983v1_1730  55 FALQLALVVLCMVLARTWAMLFNRLADRDIDARNErtARRALASGRLSPTRGWTIALTSAAFFVLgTGgFYLldqN 130
+                                        455555566666666666778899**********944479****************99887655413223331224 PP
+
+               trimmed_msa_bchG_hmm 108 tlvfvaavlglvlaWa..ysapP.....lrlkknGwlGn....aavglsyeglaWltgaavla.galPsaevllla 171
+                                        ++ ++ av   vlaW+  ys+         +   G lG+    aa+++   +l+ l g++  a g++Ps+++ lla
+  GCA_016699835.1_ASM1669983v1_1730 131 PWPMILAVP--VLAWIafYSITKrftalCHVFLGGALGAspiaAAIAIRPVSLPMLFGSSAGAaGTAPSWTIPLLA 204
+                                        555555554..556643388754211112334568888522224666777899998887665549**********9 PP
+
+               trimmed_msa_bchG_hmm 172 llysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalllawgkalhalvvavl 244
+                                        l+  +   G  ++  ++ +e dr+  ++s+p++lG++ aa+va l+ a + + v+ l  + +  +  +v++++
+  GCA_016699835.1_ASM1669983v1_1730 205 LFVVLWVAGFDVIYALQDLEFDRRENLRSIPARLGPRGAAWVARLLHAGA-FGVLILAWHREPRFGPIVLGAV 276
+                                        999999999999999999************************99876655.4444443333333444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2723  (982227 residues searched)
+Passed MSV filter:                       149  (0.0547191); expected 54.5 (0.02)
+Passed bias filter:                       53  (0.0194638); expected 54.5 (0.02)
+Passed Vit filter:                         2  (0.000734484); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000367242); expected 0.0 (1e-05)
+Initial search space (Z):               2723  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12454.31
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCA_904863155.1_INF058/GCA_904863155.1_INF058_protein.faa
+# output directed to file:         results/GCA_904863155.1_INF058/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                    -----------
+    7.2e-05   20.2   0.0    0.00011   19.6   0.0    1.1  1  GCA_904863155.1_INF058_1631  LJLNAL_08475 nitrogenase iron-mo
+     0.0038   14.5   0.0     0.0052   14.0   0.0    1.2  1  GCA_904863155.1_INF058_1635  LJLNAL_08495 nitrogenase molybde
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_904863155.1_INF058_1631  LJLNAL_08475 nitrogenase iron-molybdenum cofactor biosynthesis protein NifE
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.0   3.9e-08   0.00011     176     361 ..     212     400 ..     194     405 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 3.9e-08
+         trimmed_msa_bchN_hmm 176 qfarlfeelgieevkvlpar.eaeelpav.gpntrfllaqpflgetaraleer.GakrlaapfplGaeGttawlkaaaeafg 254
+                                  q++ l++elgi+ +  l +  + +e++++   ++++l++   l + ar le r G+  ++  f +G   t++ l+  a+ +g
+  GCA_904863155.1_INF058_1631 212 QVQPLLDELGIRVLGSLSGDgRFAEIQTLhRAQANMLVCSRALINVARGLELRyGTPWFEGSF-YGIRATSDALRQLATLLG 292
+                                  7788999999999999976413344444415677888999999999**999873666677766.9****************9 PP
+
+         trimmed_msa_bchN_hmm 255 vde..akfeavvaakrerakkalakareklegkrifflpdsqleiplarflarelgmelvevgtpylhrellaeelallped 334
+                                   d+  ++ +a++a +++ a++ala  re+l+g+++ ++       ++   l ++lgm++v  gt    +e  ++  +l+ ++
+  GCA_904863155.1_INF058_1631 293 DDDlrRRTDALIAREEQAAEQALAPWREQLRGRKVLLYTGGVKSWSVVSAL-QDLGMTVVATGTRKSTEEDKQRIRELMGDE 373
+                                  987225688999***************************999999998887.58**********999888888888888888 PP
+
+         trimmed_msa_bchN_hmm 335 vrlseGqdvdkqldrvraarpdlvvcG 361
+                                  +++ e  +  + ld v   + dl++ G
+  GCA_904863155.1_INF058_1631 374 AVMLEEGNARTLLDVVYRYQADLMIAG 400
+                                  7777777889999*9999999999987 PP
+
+>> GCA_904863155.1_INF058_1635  LJLNAL_08495 nitrogenase molybdenum-iron protein alpha chain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   1.9e-06    0.0052     220     362 ..     282     424 ..     231     461 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 1.9e-06
+         trimmed_msa_bchN_hmm 220 araleerGakrlaapfplGaeGttawlkaaaeafg.vdeakfeavvaakrerakkalakareklegkrifflpdsqleipla 300
+                                  ar++ee+          +G    ++ l+ +a++f+   +a+ eav+a+ + + +  +ak+r +leg+++ ++    l     
+  GCA_904863155.1_INF058_1635 282 ARHMEEKHQIPWMEYNFFGPTKIAESLRKIADQFDdTIRANAEAVIAKYEGQMAAIIAKYRPRLEGRKVLLYMG-GLRPRHV 362
+                                  555555555544445557888888999*******7355788999999999999999*************98865.5777666 PP
+
+         trimmed_msa_bchN_hmm 301 rflarelgmelvevgtpylhrellaeelallpedvrlseGqdvdkqldrvraarpdlvvcGl 362
+                                      ++lgme++  g  + h++  ++ l  l+e++ l +  +  +    v+a +pdl+  G+
+  GCA_904863155.1_INF058_1635 363 IGAYEDLGMEIIAAGYEFAHNDDYDRTLPDLKEGTLLFDDASSYELEAFVKALKPDLIGSGI 424
+                                  677899*******************************9988777766789999***998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       5454  (1713555 residues searched)
+Passed MSV filter:                       184  (0.0337367); expected 109.1 (0.02)
+Passed bias filter:                      137  (0.0251192); expected 109.1 (0.02)
+Passed Vit filter:                         9  (0.00165017); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366703); expected 0.1 (1e-05)
+Initial search space (Z):               5454  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12920.91
+//
+[ok]

@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_023934045.1_ASM2393404v1/GCA_023934045.1_ASM2393404v1_protein.faa
+# output directed to file:         results/GCA_023934045.1_ASM2393404v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+  ------ inclusion threshold ------
+      0.045    7.1   4.4      0.024    8.0   0.3    2.2  2  GCA_023934045.1_ASM2393404v1_203  USQ93583.1 MAG: dihydrolipoyl de
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023934045.1_ASM2393404v1_203  USQ93583.1 MAG: dihydrolipoyl dehydrogenase [Candidatus Phytoplasma vitis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   0.3   4.9e-05     0.024       4      38 ..       6      39 ..       3      45 .. 0.87
+   2 ?   -0.6   0.4      0.02        10     222     270 ..     214     260 ..     175     270 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 4.9e-05
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekldapGG 38
+                                       ++iG G GG ++ai+ ++ G +v ++ek + +GG
+  GCA_023934045.1_ASM2393404v1_203  6 ILIIGGGPGGYTSAIKAAQLGAKVCLIEKHK-VGG 39
+                                      589*************************975.454 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.02
+              trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvv 270
+                                        ++++ +k++++   ++ +n+ev  i++e++r+   + ++ +++ead++
+  GCA_023934045.1_ASM2393404v1_203 214 DIINAYTKILKRDNIKIYTNSEV--IKIENNRVYYKTNEQENQVEADII 260
+                                       45556666666665555555555..444455555555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        498  (163529 residues searched)
+Passed MSV filter:                        19  (0.0381526); expected 10.0 (0.02)
+Passed bias filter:                       19  (0.0381526); expected 10.0 (0.02)
+Passed Vit filter:                         3  (0.0060241); expected 0.5 (0.001)
+Passed Fwd filter:                         1  (0.00200803); expected 0.0 (1e-05)
+Initial search space (Z):                498  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 7305.15
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699385.1_ASM1669938v1/GCA_016699385.1_ASM1669938v1_protein.faa
+# output directed to file:         results/GCA_016699385.1_ASM1669938v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0011   13.5   0.0     0.0068   10.8   0.0    1.9  2  GCA_016699385.1_ASM1669938v1_884  QQR77388.1 YifB family Mg chelat
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699385.1_ASM1669938v1_884  QQR77388.1 YifB family Mg chelatase-like AAA ATPase [Candidatus Moranbacteria bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0     0.014        14      81     133 ..     297     349 ..     282     352 .. 0.85
+   2 !   10.8   0.0   6.7e-06    0.0068     143     240 ..     379     502 ..     372     506 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.014
+              trimmed_msa_bchD_hmm  81 LaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglva 133
+                                       ++ a++gvl+l     +++++  +l + l++g++++ r   +l+ +arf lva
+  GCA_016699385.1_ASM1669938v1_884 297 ISLAHRGVLFLDEFGEFSKNVLENLRQPLEDGHITVSRAKGSLHFPARFILVA 349
+                                       56678888888888889999999***************************998 PP
+
+  == domain 2  score: 10.8 bits;  conditional E-value: 6.7e-06
+              trimmed_msa_bchD_hmm 143 alpeaLldRlalrldldeialrdleelaa..........................eaedieaararlpkvtl..... 188
+                                       +++  ++dR+ l++++ +i  ++le+ +                                           +     
+  GCA_016699385.1_ASM1669938v1_884 379 RISGPIMDRIDLHIEVPRIPFEKLEAPENaetslsirervekardiqrerfvgkgIF--------------Tnaemg 441
+                                       67788999********99999999888776666666666664444444444444423..............255555 PP
+
+              trimmed_msa_bchD_hmm 189 .........eeealealvataaalGidslRapllalraaralAalegrteveeedlalAar 240
+                                                 ++  ++l   a++  + s+Ra    ++ ar++A le  +++  ++la A++
+  GCA_016699385.1_ASM1669938v1_884 442 salirevcpLDQPSKDLLRQAVSSMHLSARAYYRLIKLARTIADLESAEHILPKHLAEAIQ 502
+                                       5555555559999*******************************************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1021  (320948 residues searched)
+Passed MSV filter:                        36  (0.0352595); expected 20.4 (0.02)
+Passed bias filter:                       25  (0.0244858); expected 20.4 (0.02)
+Passed Vit filter:                         5  (0.00489716); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000979432); expected 0.0 (1e-05)
+Initial search space (Z):               1021  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10839.98
+//
+[ok]

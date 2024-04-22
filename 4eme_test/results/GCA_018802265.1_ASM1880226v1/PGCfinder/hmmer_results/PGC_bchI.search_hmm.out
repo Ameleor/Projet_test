@@ -1,0 +1,144 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_018802265.1_ASM1880226v1/GCA_018802265.1_ASM1880226v1_protein.faa
+# output directed to file:         results/GCA_018802265.1_ASM1880226v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-11   42.2   0.6    4.6e-06   23.8   0.0    3.5  3  GCA_018802265.1_ASM1880226v1_3392  QWL59799.1 YifB family Mg chelat
+      1e-06   25.9   0.5      0.002   15.1   0.1    2.4  2  GCA_018802265.1_ASM1880226v1_1263  QWL58011.1 AAA family ATPase [Ae
+    0.00066   16.7   0.1     0.0093   12.9   0.0    2.1  2  GCA_018802265.1_ASM1880226v1_339   QWL57269.1 sigma-54-dependent Fi
+  ------ inclusion threshold ------
+      0.017   12.0   0.0      0.081    9.8   0.0    2.1  2  GCA_018802265.1_ASM1880226v1_2471  QWL59009.1 ATP-binding protein [
+      0.018   11.9   0.1       0.85    6.4   0.0    2.3  2  GCA_018802265.1_ASM1880226v1_2336  QWL58893.1 ABC transporter ATP-b
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018802265.1_ASM1880226v1_3392  QWL59799.1 YifB family Mg chelatase-like AAA ATPase [Aeromonas jandaei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.0     3e-05     0.023       8      62 ..     192     244 ..     188     261 .. 0.88
+   2 !   23.8   0.0   6.1e-09   4.6e-06     116     186 ..     277     347 ..     274     356 .. 0.95
+   3 ?    2.6   0.3     0.017        13     269     306 ..     451     487 ..     367     503 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3e-05
+               trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkgcr 62 
+                                         ++gq + k+al +aa  ++   +l +G  GtGks  +  l  +lP+++  ++ +
+  GCA_018802265.1_ASM1880226v1_3392 192 DVIGQSQAKRALEIAAAGSH--NLLFIGPPGTGKSMLASRLPGILPPLSEQEAQQ 244
+                                        589*************8775..79***********************99876654 PP
+
+  == domain 2  score: 23.8 bits;  conditional E-value: 6.1e-09
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        al+ G  +  pG ++ a+ G l++de+  +e +++d l +  ++G+ ++ r +  v  parf lvG+ nP 
+  GCA_018802265.1_ASM1880226v1_3392 277 ALVGGGSHPRPGEISLAHNGVLFLDELPEFERKVLDSLREPLETGHITISRAARQVDFPARFQLVGAMNPS 347
+                                        7778888889***********************************************************95 PP
+
+  == domain 3  score: 2.6 bits;  conditional E-value: 0.017
+               trimmed_msa_bchI_hmm 269 clalgtdGlrgeltllraaralaalegakevtkehlkk 306
+                                         ++lg   +r+   +lr +r++a l g+ ++ kehl +
+  GCA_018802265.1_ASM1880226v1_3392 451 IQKLGL-SIRAWHRILRVSRTIADLAGQPAIGKEHLIE 487
+                                        344443.3678888999999999999999999999865 PP
+
+>> GCA_018802265.1_ASM1880226v1_1263  QWL58011.1 AAA family ATPase [Aeromonas jandaei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.1    0.0002      0.15       6      50 ..      14      56 ..      10      64 .. 0.90
+   2 !   15.1   0.1   2.6e-06     0.002     272     316 ..     246     289 ..      97     313 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.0002
+               trimmed_msa_bchI_hmm  6 fsaivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaa 50
+                                        s i+gqde+ + ll+a +    g vl+ G  G  k+ av+ala 
+  GCA_018802265.1_ASM1880226v1_1263 14 ASQILGQDELIEGLLIALLCE--GHVLIEGAPGLAKTRAVKALAG 56
+                                       689*************99854..89******************96 PP
+
+  == domain 2  score: 15.1 bits;  conditional E-value: 2.6e-06
+               trimmed_msa_bchI_hmm 272 lgtdGlrgeltllraaralaalegakevtkehlkkvaplalrhrl 316
+                                        +g+   r+ l+l r+ara a l g++ v  e+++  a  +lrhrl
+  GCA_018802265.1_ASM1880226v1_1263 246 VGA-SPRATLALARTARARAWLAGRDFVLPEDIQLQAYPVLRHRL 289
+                                        333.35999***********************************9 PP
+
+>> GCA_018802265.1_ASM1880226v1_339  QWL57269.1 sigma-54-dependent Fis family transcriptional regulator [Aeromonas janda
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   1.2e-05    0.0093      17      57 ..     160     200 ..     144     217 .. 0.82
+   2 ?    1.3   0.0     0.041        31     119     142 ..     227     250 ..     221     262 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_bchI_hmm  17 lalllaavdpsigGvlvlGdrGtGkstavralaallPkika 57 
+                                       l  l+a v ps + vlv G+ GtGk   +ral +l  ++ a
+  GCA_018802265.1_ASM1880226v1_339 160 LKTLIARVAPSNAAVLVEGESGTGKELVARALHQLSGRVGA 200
+                                       45699***************************999777655 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.041
+              trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidev 142
+                                       +G ++   Gl+  a++G l++de+
+  GCA_018802265.1_ASM1880226v1_339 227 TGARKGRDGLFRVAHQGTLFLDEI 250
+                                       57777889***************9 PP
+
+>> GCA_018802265.1_ASM1880226v1_2471  QWL59009.1 ATP-binding protein [Aeromonas jandaei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.0       0.2   1.5e+02     275     318 ..       6      49 ..       2      59 .. 0.70
+   2 ?    9.8   0.0   0.00011     0.081      29      52 ..     136     159 ..     130     218 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.2
+               trimmed_msa_bchI_hmm 275 dGlrgeltllraaralaa.legakevtkehlkkvaplalrhrlrr 318
+                                        d lr el  + a r   a  +++++v++ +l +     l  r+rr
+  GCA_018802265.1_ASM1880226v1_2471   6 DPLRQELEEIEAKRQKIAkAKQDHRVHDPELSRHV-GGLLERIRR 49 
+                                        88999999999998755415667788888887654.345566666 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 0.00011
+               trimmed_msa_bchI_hmm  29 gGvlvlGdrGtGkstavralaall 52 
+                                        g +l++Gd GtGkst + a+a  l
+  GCA_018802265.1_ASM1880226v1_2471 136 GCMLIYGDYGTGKSTLAGAVAHEL 159
+                                        55799***********99999765 PP
+
+>> GCA_018802265.1_ASM1880226v1_2336  QWL58893.1 ABC transporter ATP-binding protein [Aeromonas jandaei]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.0     0.013        10      31      54 ..      36      59 ..      24      85 .. 0.83
+   2 ?    6.4   0.0    0.0011      0.85      34      54 ..     346     366 ..     341     397 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.013
+               trimmed_msa_bchI_hmm 31 vlvlGdrGtGkstavralaallPk 54
+                                       v v+G+ G+Gkst   a+ +ll +
+  GCA_018802265.1_ASM1880226v1_2336 36 VGVVGESGAGKSTIGNAVIDLLSP 59
+                                       3479**************999965 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0011
+               trimmed_msa_bchI_hmm  34 lGdrGtGkstavralaallPk 54 
+                                        +G+ G+Gkst +ra++ l P+
+  GCA_018802265.1_ASM1880226v1_2336 346 VGESGSGKSTIARAITGLYPP 366
+                                        79****************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       3744  (1152735 residues searched)
+Passed MSV filter:                       196  (0.0523504); expected 74.9 (0.02)
+Passed bias filter:                      130  (0.0347222); expected 74.9 (0.02)
+Passed Vit filter:                        25  (0.00667735); expected 3.7 (0.001)
+Passed Fwd filter:                         5  (0.00133547); expected 0.0 (1e-05)
+Initial search space (Z):               3744  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8570.02
+//
+[ok]

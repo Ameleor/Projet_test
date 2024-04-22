@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchM.hmm
+# target sequence database:        data/genomes_unzip/GCA_023898485.1_ASM2389848v1/GCA_023898485.1_ASM2389848v1_protein.faa
+# output directed to file:         results/GCA_023898485.1_ASM2389848v1/PGCfinder/hmmer_results/PGC_bchM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchM_hmm  [M=228]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0014   14.5   0.0     0.0017   14.2   0.0    1.1  1  GCA_023898485.1_ASM2389848v1_185  USN57064.1 MAG: hypothetical pro
+  ------ inclusion threshold ------
+      0.016   11.1   0.0      0.022   10.6   0.0    1.2  1  GCA_023898485.1_ASM2389848v1_633  USN57440.1 MAG: methyltransferas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023898485.1_ASM2389848v1_185  USN57064.1 MAG: hypothetical protein H6766_00950 [Candidatus Peribacteria bacterium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   2.3e-06    0.0017      53      88 ..      40      74 ..      33      75 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 2.3e-06
+              trimmed_msa_bchM_hmm 53 PedltgarvlDaGCGtGalavelarrGaevvavDls 88
+                                      P +l+g+++lD G G+G   +   ++G +v++v+ls
+  GCA_023898485.1_ASM2389848v1_185 40 P-HLSGKKILDIGSGSGRDMLYFYNHGYDVTGVELS 74
+                                      4.69******************************98 PP
+
+>> GCA_023898485.1_ASM2389848v1_633  USN57440.1 MAG: methyltransferase domain-containing protein [Candidatus Peribacteri
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   2.9e-05     0.022      46     113 ..      75     144 ..      61     148 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.9e-05
+              trimmed_msa_bchM_hmm  46 etllswlPedltgarvlDaGCGtGalav...elarrGaevvavDlsptlvelarerlpeklkagkiefrag 113
+                                       +t+ + l  + + + + D  CGtG++      l+    +v+++D+ p+ ++ ar  + +   a + e++ag
+  GCA_023898485.1_ASM2389848v1_633  75 STVANILQ-ESQATTLYDLYCGTGTIGQiigSLVPSVQKVIGIDIVPEAIDDARANAERLGVAFQTEYHAG 144
+                                       55555443.44667899999***987652226788999***************998877666666777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (228 nodes)
+Target sequences:                       1495  (191101 residues searched)
+Passed MSV filter:                        33  (0.0220736); expected 29.9 (0.02)
+Passed bias filter:                       26  (0.0173913); expected 29.9 (0.02)
+Passed Vit filter:                         6  (0.00401338); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00133779); expected 0.0 (1e-05)
+Initial search space (Z):               1495  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10723.91
+//
+[ok]

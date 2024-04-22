@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG/GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_protein.faa
+# output directed to file:         results/GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                                 -----------
+    5.5e-12   42.2   0.3    4.1e-11   39.4   0.1    1.9  2  GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502  EMEDPJ_07850 Hydrolase-4 domain-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502  EMEDPJ_07850 Hydrolase-4 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.4   0.1     2e-14   4.1e-11      34     149 ..      14     128 ..       8     166 .. 0.80
+   2 !    1.1   0.0    0.0096        19     222     267 ..     176     225 ..     166     240 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 39.4 bits;  conditional E-value: 2e-14
+                                      trimmed_msa_bchO_hmm  34 gPvlLLlHGtGasthswrdllplLaar.frviapDLPghgftesaaeerlsLp 85 
+                                                               g ++LLlHG  +s+  +r l + L ++ ++v+ p LPghg t ++ +e+++ +
+  GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502  14 GKAVLLLHGYTGSASEMRPLGEYLHKQgYTVLCPLLPGHGTTVEELKETTTKD 66 
+                                                               6789*****9999999*****9997644*********************9999 PP
+
+                                      trimmed_msa_bchO_hmm  86 gmaealaaLla.algvepavvvGHSAGaaialrlaldgkiapkkvvglngall 137
+                                                                +a+a aa+ + + + +   v+G S G+ +a+++a+++++++   v++ +a  
+  GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502  67 WLAAARAAVYSlQASYQIIYVAGLSMGGLLAMKMAAEEAVQK---VAILAAPI 116
+                                                               999887777652556678889*****************9999...66666666 PP
+
+                                      trimmed_msa_bchO_hmm 138 pleglagllfpp 149
+                                                                ++   + ++p 
+  GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502 117 YVRDKRAPFLPL 128
+                                                               666655555555 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.0096
+                                      trimmed_msa_bchO_hmm 222 lpklktplllivgekDravppkearevaallpka....rlveleglGHLa 267
+                                                               l +++ p l++ ++  ++v+p++a+ + ++l +a    +lv  e+ GH++
+  GCA_905186095.1_Phascolarctobacterium_canine_HQ_MAG_1502 176 LTEIRIPALVLQSKIEHTVNPSSAKFIYDHLGTAigkkKLVWYEHSGHIL 225
+                                                               78899999999*************99988875443333888899999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1985  (608423 residues searched)
+Passed MSV filter:                        77  (0.0387909); expected 39.7 (0.02)
+Passed bias filter:                       64  (0.0322418); expected 39.7 (0.02)
+Passed Vit filter:                         6  (0.00302267); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000503778); expected 0.0 (1e-05)
+Initial search space (Z):               1985  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7625.07
+//
+[ok]

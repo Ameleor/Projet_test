@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_018141785.1_ASM1814178v1/GCA_018141785.1_ASM1814178v1_protein.faa
+# output directed to file:         results/GCA_018141785.1_ASM1814178v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.022   12.1   0.4      0.085   10.1   0.4    1.8  1  GCA_018141785.1_ASM1814178v1_1380  HLOILF_07025 bPH-2 domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018141785.1_ASM1814178v1_1380  HLOILF_07025 bPH-2 domain-containing protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.4   2.1e-05     0.085      76     151 ..      23     100 ..      10     130 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 2.1e-05
+               trimmed_msa_puhB_hmm  76 alaa.valallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdg.sgdialelkgeerl 149
+                                        +l++ v +  l++ a++ +    Y iT+rR+ +  G        + +++i++++   r+ g  gdi+++l++++rl
+  GCA_018141785.1_ASM1814178v1_1380  23 LLGFtVICLPLTVGAIVRKIWLRYKITDRRISVTGGWRGRDRTDIIYAEITKIARLPRGVGlWGDIVVTLQDRSRL 98 
+                                        34430344446666777777788***************************9987766666636**********999 PP
+
+               trimmed_msa_puhB_hmm 150 sy 151
+                                          
+  GCA_018141785.1_ASM1814178v1_1380  99 EL 100
+                                        75 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       4086  (1052630 residues searched)
+Passed MSV filter:                       118  (0.0288791); expected 81.7 (0.02)
+Passed bias filter:                       84  (0.020558); expected 81.7 (0.02)
+Passed Vit filter:                         5  (0.00122369); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000244738); expected 0.0 (1e-05)
+Initial search space (Z):               4086  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14136.60
+//
+[ok]

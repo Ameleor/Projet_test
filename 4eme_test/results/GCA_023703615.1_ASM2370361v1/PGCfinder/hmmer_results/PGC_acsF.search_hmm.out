@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703615.1_ASM2370361v1/GCA_023703615.1_ASM2370361v1_protein.faa
+# output directed to file:         results/GCA_023703615.1_ASM2370361v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00073   14.8   0.4      0.004   12.4   0.0    2.2  3  GCA_023703615.1_ASM2370361v1_1059  URQ69385.1 ferritin-like domain-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703615.1_ASM2370361v1_1059  URQ69385.1 ferritin-like domain-containing protein [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0     0.027        34     125     141 ..     153     169 ..     143     177 .. 0.78
+   2 !   12.4   0.0   3.2e-06     0.004     107     141 ..     215     249 ..     185     266 .. 0.86
+   3 ?   -3.7   0.0      0.25   3.1e+02      62      99 ..     282     319 ..     274     330 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.027
+               trimmed_msa_acsF_hmm 125 rdesrhagfindalkda 141
+                                         de+rh    n+ l++ 
+  GCA_023703615.1_ASM2370361v1_1059 153 FDEARHVEVFNRYLQEK 169
+                                        59999999999999873 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 3.2e-06
+               trimmed_msa_acsF_hmm 107 ikkrvknkdikelfkllardesrhagfindalkda 141
+                                        +k  +k++ +k+l++++ rde+rh +f  + l d+
+  GCA_023703615.1_ASM2370361v1_1059 215 LKVITKDPLLKQLLHYVVRDEARHVTFGINYLEDY 249
+                                        5556788899*****************77777775 PP
+
+  == domain 3  score: -3.7 bits;  conditional E-value: 0.25
+               trimmed_msa_acsF_hmm  62 kkhfkrneefdkeleelepelrkefldflvssltaefs 99 
+                                        ++ f + +e +++  +l+ +  + f +fl s +  ++s
+  GCA_023703615.1_ASM2370361v1_1059 282 EQRFLKMSEEEAREFQLNTKTFEMFRNFLFSRVIPNLS 319
+                                        44555555555555567777777777777777766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       1251  (392371 residues searched)
+Passed MSV filter:                        42  (0.0335731); expected 25.0 (0.02)
+Passed bias filter:                       20  (0.0159872); expected 25.0 (0.02)
+Passed Vit filter:                         4  (0.00319744); expected 1.3 (0.001)
+Passed Fwd filter:                         1  (0.000799361); expected 0.0 (1e-05)
+Initial search space (Z):               1251  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12225.55
+//
+[ok]

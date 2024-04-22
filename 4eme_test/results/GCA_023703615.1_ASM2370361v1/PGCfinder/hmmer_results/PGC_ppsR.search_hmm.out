@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703615.1_ASM2370361v1/GCA_023703615.1_ASM2370361v1_protein.faa
+# output directed to file:         results/GCA_023703615.1_ASM2370361v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00034   15.9   0.0    0.00042   15.6   0.0    1.2  1  GCA_023703615.1_ASM2370361v1_1085  URQ69411.1 DNA-binding transcrip
+    0.00044   15.5   0.0     0.0007   14.9   0.0    1.3  1  GCA_023703615.1_ASM2370361v1_1137  URQ69462.1 nitrogen regulation p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703615.1_ASM2370361v1_1085  URQ69411.1 DNA-binding transcriptional regulator Fis [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   6.8e-07   0.00042     415     448 ..      53      86 ..      44      87 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 6.8e-07
+               trimmed_msa_ppsR_hmm 415 eaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +a ++  ++N  +A+ +LG+ R  L  KL++y+l
+  GCA_023703615.1_ASM2370361v1_1085  53 NAVMKFSNNNQSKASRILGINRTTLRTKLKKYNL 86 
+                                        6788999*************************98 PP
+
+>> GCA_023703615.1_ASM2370361v1_1137  URQ69462.1 nitrogen regulation protein NR(I) [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.1e-06    0.0007     408     449 ..     418     459 ..     411     460 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.1e-06
+               trimmed_msa_ppsR_hmm 408 viEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                         iEk+ I+ AL+ T+     AA +LG  R  L  K++  g+g
+  GCA_023703615.1_ASM2370361v1_1137 418 KIEKILINVALDRTNGKKNEAAKLLGWGRNTLAKKMKEMGIG 459
+                                        59**********************************999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1251  (392371 residues searched)
+Passed MSV filter:                        31  (0.0247802); expected 25.0 (0.02)
+Passed bias filter:                       21  (0.0167866); expected 25.0 (0.02)
+Passed Vit filter:                         3  (0.00239808); expected 1.3 (0.001)
+Passed Fwd filter:                         2  (0.00159872); expected 0.0 (1e-05)
+Initial search space (Z):               1251  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 11279.13
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023703515.1_ASM2370351v1/GCA_023703515.1_ASM2370351v1_protein.faa
+# output directed to file:         results/GCA_023703515.1_ASM2370351v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      3e-24   81.7  19.8      5e-24   80.9  19.8    1.3  1  GCA_023703515.1_ASM2370351v1_484  URQ63652.1 tryptophan-rich senso
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023703515.1_ASM2370351v1_484  URQ63652.1 tryptophan-rich sensory protein [SAR86 cluster bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.9  19.8   4.8e-27     5e-24       8     149 ..      10     145 .]       4     145 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 80.9 bits;  conditional E-value: 4.8e-27
+              trimmed_msa_tspO_hmm   8 aavlvavlggaltelg..ewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavl 82 
+                                       +++l+a+lgg+  +    +wyesL++ s +PP+++Fg+vW ++y+l+av   l +         +l+  ++ ++ +l
+  GCA_023703515.1_ASM2370351v1_484  10 LTFLIAFLGGLSNSFTdwSWYESLEQSSLRPPNYIFGIVWPILYTLMAVVSFLQA---------KLIYKVYIVQLIL 77 
+                                       56778888887654441169***************************99877766.........57889******** PP
+
+              trimmed_msa_tspO_hmm  83 nilWsllfFrlrrldwalvevvlLWlsvlalilvlw.rvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       n +Ws++fF  + l +al+++++L +  ++++  lw + s ++ +l lPY++W+s+A +LN+++v lN
+  GCA_023703515.1_ASM2370351v1_484  78 NGAWSWIFFAHQALTLALFDIIILIILNVIILHKLWtNNSYVSFFLYLPYVLWISFASYLNANIVFLN 145
+                                       *********************99876555555555505566677899******************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       1058  (332544 residues searched)
+Passed MSV filter:                        40  (0.0378072); expected 21.2 (0.02)
+Passed bias filter:                        7  (0.00661626); expected 21.2 (0.02)
+Passed Vit filter:                         1  (0.00094518); expected 1.1 (0.001)
+Passed Fwd filter:                         1  (0.00094518); expected 0.0 (1e-05)
+Initial search space (Z):               1058  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9052.74
+//
+[ok]

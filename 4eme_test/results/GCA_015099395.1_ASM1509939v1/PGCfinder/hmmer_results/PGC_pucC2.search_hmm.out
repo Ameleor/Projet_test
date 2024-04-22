@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCA_015099395.1_ASM1509939v1/GCA_015099395.1_ASM1509939v1_protein.faa
+# output directed to file:         results/GCA_015099395.1_ASM1509939v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00093   16.7   3.3     0.0015   16.0   3.3    1.3  1  GCA_015099395.1_ASM1509939v1_1485  BCL79020.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015099395.1_ASM1509939v1_1485  BCL79020.1 hypothetical protein ccbrp13_14850 [Ktedonobacteria bacterium brp13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   3.3   2.1e-07    0.0015     101     172 ..      32     103 ..       3     114 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 2.1e-07
+              trimmed_msa_pucC2_hmm 101 lglal.avlaflliGlGvgaaGtslLaLlakrvaperraaaativWlmmiaGiavtagvagklldPfsaerlv 172
+                                        +g ++  ++  +++GlGvga+   +++ la+    e r   +++  +m + Gi++ a ++   l Pf a r +
+  GCA_015099395.1_ASM1509939v1_1485  32 VGWLIlLIFFRCVMGLGVGASAVVVMVYLAEMAPTEMRGKITSLGQMMDVCGIMI-AYLVDYGLSPFFAWRWM 103
+                                        44444044445788**************************************988.56778889999777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       7205  (2376233 residues searched)
+Passed MSV filter:                       432  (0.0599584); expected 144.1 (0.02)
+Passed bias filter:                      102  (0.0141568); expected 144.1 (0.02)
+Passed Vit filter:                        12  (0.00166551); expected 7.2 (0.001)
+Passed Fwd filter:                         1  (0.000138793); expected 0.1 (1e-05)
+Initial search space (Z):               7205  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 15980.75
+//
+[ok]

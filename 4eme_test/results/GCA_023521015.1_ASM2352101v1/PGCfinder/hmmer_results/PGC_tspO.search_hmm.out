@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCA_023521015.1_ASM2352101v1/GCA_023521015.1_ASM2352101v1_protein.faa
+# output directed to file:         results/GCA_023521015.1_ASM2352101v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.3e-23   80.6  15.8    2.7e-23   80.3  15.8    1.0  1  GCA_023521015.1_ASM2352101v1_2139  UQZ47126.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023521015.1_ASM2352101v1_2139  UQZ47126.1 hypothetical protein C2H92_10800 [Bacillus halotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.3  15.8   7.3e-27   2.7e-23       4     149 ..       9     154 ..       5     155 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 80.3 bits;  conditional E-value: 7.3e-27
+               trimmed_msa_tspO_hmm   4 vaalaavlvavlggaltelg.ewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                        v++++++++  ++  l+ ++ +wy+sLkkP+w+P     g++W+v++ali+++a++++ + +  ++a++  ++f +
+  GCA_023521015.1_ASM2352101v1_2139   9 VVFIITYALFSAADYLFPIDqNWYHSLKKPDWTPSGSTIGIIWAVLFALISLSAAIVFAKCS-FKKAKSFWLAFLI 83 
+                                        4555555555566678888636************************************5555.5555589999*** PP
+
+               trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                        n vln ++s++ F+ ++l +a ++ +l+ ++ l++i+++  +s++a+++l+PY++W  +A+ L +++ ++N
+  GCA_023521015.1_ASM2352101v1_2139  84 NYVLNQAFSYFQFTQKNLLAASIDCLLVAITALVVIIIAKVYSRAASWFLVPYFLWSVFATGLSFTIYSMN 154
+                                        *******************************************************************9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3786  (1078455 residues searched)
+Passed MSV filter:                       253  (0.0668251); expected 75.7 (0.02)
+Passed bias filter:                       91  (0.0240359); expected 75.7 (0.02)
+Passed Vit filter:                         5  (0.00132066); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000528262); expected 0.0 (1e-05)
+Initial search space (Z):               3786  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 17888.51
+//
+[ok]

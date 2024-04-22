@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_018292245.1_ASM1829224v1/GCA_018292245.1_ASM1829224v1_protein.faa
+# output directed to file:         results/GCA_018292245.1_ASM1829224v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      2e-05   21.2   0.1      3e-05   20.6   0.1    1.3  1  GCA_018292245.1_ASM1829224v1_130  CMDHEL_00750 P-loop NTPase
+     0.0034   13.9   0.0     0.0046   13.4   0.0    1.2  1  GCA_018292245.1_ASM1829224v1_951  CMDHEL_04970 Fe-S cluster carrie
+     0.0058   13.1   0.1       0.02   11.4   0.0    1.7  2  GCA_018292245.1_ASM1829224v1_752  CMDHEL_03955 Fe-S cluster carrie
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_018292245.1_ASM1829224v1_130  CMDHEL_00750 P-loop NTPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6   0.1   2.7e-08     3e-05      22      59 ..     110     148 ..      87     168 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 2.7e-08
+              trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                        + iai  gkgg+gks    nl+  la++gkkv l+  d
+  GCA_018292245.1_ASM1829224v1_130 110 VEFIAIaSGKGGVGKSTVAVNLAVALAREGKKVGLVDAD 148
+                                       567887359**************************9988 PP
+
+>> GCA_018292245.1_ASM1829224v1_951  CMDHEL_04970 Fe-S cluster carrier ATPase, Mrp/ApbC/NBP35 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   4.1e-06    0.0046      24      74 ..      44      94 ..      28     125 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.1e-06
+              trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74
+                                      ++    k g gks  ++n++   aq g k l+i  d +  t   +f  ++ 
+  GCA_018292245.1_ASM1829224v1_951 44 LLVTSEKPGAGKSTVVSNVAITYAQAGYKSLIIDGDMRKPTQNYIFNEQNN 94
+                                      45566799**********************************999987765 PP
+
+>> GCA_018292245.1_ASM1829224v1_752  CMDHEL_03955 Fe-S cluster carrier ATPase, Mrp/ApbC/NBP35 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.0   1.8e-05      0.02      17      69 ..      36      89 ..      24      97 .. 0.83
+   2 ?   -1.1   0.0      0.11   1.2e+02     187     242 ..     166     221 ..     160     229 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.8e-05
+              trimmed_msa_bchX_hmm 17 evtketqiiaiygk.ggigksftlanlsymlaqqgkkvlligcdpksdttsllf 69
+                                      ++ +  q i i     g gks   anl+   aq g k l++  d +  t   +f
+  GCA_018292245.1_ASM1829224v1_752 36 NPDSAVQSIVITSEaPGAGKSTIAANLAVAYAQAGYKTLIVDGDMRKPTQHYIF 89
+                                      55566777777665169***************************9998887777 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.11
+              trimmed_msa_bchX_hmm 187 aveyfrklggnvg.vaglvinkddgtgeaqafaeavgipvlaaipadedirrksany 242
+                                         + f k+ gnv  v     n+ d   + + + ea g  +l  + +    + ksa+y
+  GCA_018292245.1_ASM1829224v1_752 166 DAQLFSKFTGNVVyVVNSENNNKDEVKKGKELIEATGAKLLGVVLN-RMHKDKSASY 221
+                                       4467888888874255555566666777788888888887776644.4445666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3346  (756974 residues searched)
+Passed MSV filter:                       124  (0.0370592); expected 66.9 (0.02)
+Passed bias filter:                       98  (0.0292887); expected 66.9 (0.02)
+Passed Vit filter:                        11  (0.00328751); expected 3.3 (0.001)
+Passed Fwd filter:                         3  (0.000896593); expected 0.0 (1e-05)
+Initial search space (Z):               3346  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13852.16
+//
+[ok]

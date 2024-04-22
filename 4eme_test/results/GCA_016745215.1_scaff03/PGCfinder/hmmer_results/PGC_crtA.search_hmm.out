@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCA_016745215.1_scaff03/GCA_016745215.1_scaff03_protein.faa
+# output directed to file:         results/GCA_016745215.1_scaff03/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    4.7e-56  188.0   0.1    5.9e-56  187.7   0.1    1.0  1  GCA_016745215.1_scaff03_3088  QQO54540.1 MAG: aminodeoxychoris
+  ------ inclusion threshold ------
+      0.022   12.5   0.3      0.022   12.4   0.3    1.1  1  GCA_016745215.1_scaff03_3844  QQO55185.1 MAG: hypothetical pro
+      0.033   11.9   0.4      0.042   11.5   0.4    1.2  1  GCA_016745215.1_scaff03_917   QQO52760.1 MAG: hypothetical pro
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016745215.1_scaff03_3088  QQO54540.1 MAG: aminodeoxychorismate lyase [Thiohalocapsa sp. PB-PSB1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.7   0.1   2.8e-59   5.9e-56       2     220 ..      25     242 ..      24     245 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 187.7 bits;  conditional E-value: 2.8e-59
+          trimmed_msa_crtA_hmm   2 vtlslfrfaalesrlwalarmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivrr 82 
+                                   v +s+fr+ ++ + + a++ m+++ l   r   ++ v+llG+G ++GF++ P++++y++  +++d ++  + l++++++r 
+  GCA_016745215.1_scaff03_3088  25 VIFSFFRYRSRWAPA-AFMLMGFQGLVRDRDIPAGDVRLLGCGGQDGFSIVPDFNRYCMYHALDDPTEEPQ-LQTTRFWRL 103
+                                   778899998888776.9**********************************************99987665.888****** PP
+
+          trimmed_msa_crtA_hmm  83 yraraeesltvlleptsarGaWsgeepfevee.kaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvllkiGlGE 162
+                                    ++ + e+l+  l+p + +G+W+g+epf+++  k  ++p ++LT+A+++ +ka++FWr vpa++e++ ++++++ +iG+GE
+  GCA_016745215.1_scaff03_3088 104 AAEPSIETLHFRLRPATGHGTWDGSEPFRYSGrKVGERPFVVLTHARVHRAKAQAFWRSVPAVREHLREATGCAYQIGFGE 184
+                                   ******************************9835569******************************************** PP
+
+          trimmed_msa_crtA_hmm 163 vPllrqvTfsiWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtw 220
+                                    Pll+ +Tfs+W+d +sm+ fA+ +++H ++ +a+r+e w+sE+l+arf++ e +G++
+  GCA_016745215.1_scaff03_3088 185 HPLLTLATFSVWTDLTSMRTFAYGSTAHGATNRAARSEGWLSESLFARFEIEELSGDL 242
+                                   *****************************************************99976 PP
+
+>> GCA_016745215.1_scaff03_3844  QQO55185.1 MAG: hypothetical protein N838_19355 [Thiohalocapsa sp. PB-PSB1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.3   1.1e-05     0.022      80     114 ..      54      88 ..      17     116 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.1e-05
+          trimmed_msa_crtA_hmm  80 vrryraraeesltvlleptsarGaWsgeepfevee 114
+                                    +++++ ++e++t +l+ ts++G+W++ +  +v +
+  GCA_016745215.1_scaff03_3844  54 PNSLKDLSREEITGYLQQTSSQGKWQDWQFRQVVD 88 
+                                   46778899******************998887765 PP
+
+>> GCA_016745215.1_scaff03_917  QQO52760.1 MAG: hypothetical protein N838_04605 [Thiohalocapsa sp. PB-PSB1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.4     2e-05     0.042      81     114 ..      55      88 ..      19     120 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2e-05
+         trimmed_msa_crtA_hmm  81 rryraraeesltvlleptsarGaWsgeepfevee 114
+                                  +++++ ++e++t +l+ ts++G+W++ +  +v +
+  GCA_016745215.1_scaff03_917  55 NSLKDLSREEMTGYLQQTSSQGKWQDWQFRQVVD 88 
+                                  5678899******************998887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       6287  (2024408 residues searched)
+Passed MSV filter:                       130  (0.0206776); expected 125.7 (0.02)
+Passed bias filter:                      104  (0.0165421); expected 125.7 (0.02)
+Passed Vit filter:                        12  (0.0019087); expected 6.3 (0.001)
+Passed Fwd filter:                         3  (0.000477175); expected 0.1 (1e-05)
+Initial search space (Z):               6287  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 19282.07
+//
+[ok]

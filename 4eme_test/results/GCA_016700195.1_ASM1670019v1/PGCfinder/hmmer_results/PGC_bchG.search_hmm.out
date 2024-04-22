@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_016700195.1_ASM1670019v1/GCA_016700195.1_ASM1670019v1_protein.faa
+# output directed to file:         results/GCA_016700195.1_ASM1670019v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00034   18.4   2.7    0.00072   17.3   2.7    1.8  1  GCA_016700195.1_ASM1670019v1_3033  QQS49525.1 MAG: protoheme IX far
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016700195.1_ASM1670019v1_3033  QQS49525.1 MAG: protoheme IX farnesyltransferase [Acidobacteriota bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   2.7   1.5e-07   0.00072      52     115 ..      46     116 ..       2     277 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 1.5e-07
+               trimmed_msa_bchG_hmm  52 lvcatsqavndWfdrhvdaine..PerpiPsGripGrWGlyialiltlls.....llvaaalgtlvfvaav 115
+                                        l+ +   ++n +++r++da+ +   +rp+PsG ++ r+ l   +++++++     l+v a+ + ++fva  
+  GCA_016700195.1_ASM1670019v1_3033  46 LLSSGIGTLNQYWERDLDALMQrtKKRPLPSGILSARYALIFGIAISVVAeiyllLTVNALTALWGFVALS 116
+                                        4445556789*********9762268***********9998888887765222225556666667766643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4915  (1870826 residues searched)
+Passed MSV filter:                       172  (0.0349949); expected 98.3 (0.02)
+Passed bias filter:                       74  (0.015056); expected 98.3 (0.02)
+Passed Vit filter:                         5  (0.00101729); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203459); expected 0.0 (1e-05)
+Initial search space (Z):               4915  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 18828.66
+//
+[ok]

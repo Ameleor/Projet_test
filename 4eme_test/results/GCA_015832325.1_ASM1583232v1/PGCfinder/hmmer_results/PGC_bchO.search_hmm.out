@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCA_015832325.1_ASM1583232v1/GCA_015832325.1_ASM1583232v1_protein.faa
+# output directed to file:         results/GCA_015832325.1_ASM1583232v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.1e-29   97.3   0.0    8.3e-23   77.4   0.0    2.1  2  GCA_015832325.1_ASM1583232v1_873   QPN37963.1 alpha/beta hydrolase 
+      2e-07   26.9   0.3     0.0012   14.5   0.1    2.1  2  GCA_015832325.1_ASM1583232v1_1601  QPN38185.1 2-succinyl-6-hydroxy-
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015832325.1_ASM1583232v1_873  QPN37963.1 alpha/beta hydrolase [Salmonella enterica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.4   0.0   1.1e-25   8.3e-23      16     126 ..       4     114 ..       1     134 [. 0.90
+   2 !   18.0   0.0   1.4e-07   0.00011     219     267 ..     197     245 ..     188     251 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 77.4 bits;  conditional E-value: 1.1e-25
+              trimmed_msa_bchO_hmm  16 srfveagglrWhvqelgegPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaeala 92 
+                                        +fvea+g++ h  e gegP lLL+HG G ++ sw++l+   ++ frvi+pD  ghg t+++ + ++s + mae++a
+  GCA_015832325.1_ASM1583232v1_873   4 DKFVEANGINIHYLEEGEGPPLLLIHGGGLTAKSWQGLAKEASRYFRVIMPDSRGHGLTNNP-QGTFSYDLMAEDMA 79 
+                                       689********************************************************876.679*********** PP
+
+              trimmed_msa_bchO_hmm  93 aLlaalgvepavvvGHSAGaaialrlaldg.kiap 126
+                                       a ++al++e+ +v+G S G+ i+l+l+ +   +a 
+  GCA_015832325.1_ASM1583232v1_873  80 AFIKALKLEKPLVMGYSDGGMIVLKLTSQYpDLAR 114
+                                       *************************9887644444 PP
+
+  == domain 2  score: 18.0 bits;  conditional E-value: 1.4e-07
+              trimmed_msa_bchO_hmm 219 lrdlpklktplllivgekDravppkearevaallpkarlveleglGHLa 267
+                                       ++++++++ p+ll+ g++D+  ++++ +e+ +llp+a++  ++g GH +
+  GCA_015832325.1_ASM1583232v1_873 197 EEEMKQIRIPVLLLDGDRDEFFTVEDVTELYRLLPQAEMAFIPGSGHAI 245
+                                       57899******************************************65 PP
+
+>> GCA_015832325.1_ASM1583232v1_1601  QPN38185.1 2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase [Salmone
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.1   1.6e-06    0.0012      27     121 ..       4      98 ..       2     109 .. 0.82
+   2 !   10.7   0.0   2.3e-05     0.018     216     277 ..     189     244 ..     153     246 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.6e-06
+               trimmed_msa_bchO_hmm  27 hvqelge...gPvlLLlHGtGasthswrdllplLaarfrviapDLPghgftesaaeerlsLpgmaealaaLlaalg 99 
+                                        h q++      P l +lHG  + +  w+ + +++    + + +DLPghg +++ +     +  + + l+a l + +
+  GCA_015832325.1_ASM1583232v1_1601   4 HAQNMPGqpgVPWLVFLHGFSGDCREWQPVGEQFHGC-SRLYIDLPGHGGSAAIPVGG--FADVIRLLRATLISYN 76 
+                                        5666644366799******************999876.66899*******99988765..5688888888888888 PP
+
+               trimmed_msa_bchO_hmm 100 vepavvvGHSAGaaialrlald 121
+                                        + +  +vG S G+ +a+  a +
+  GCA_015832325.1_ASM1583232v1_1601  77 ILKFWLVGYSLGGRVAMMAACQ 98 
+                                        8899999999999998877765 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 2.3e-05
+               trimmed_msa_bchO_hmm 216 ekllrdlpklktplllivgekDravppkearevaallpkarlveleglGHLahEeapeevae 277
+                                         +l+++l+ l+ p + ++ge+D+  +      + a+  +a+++ +++ GH ah e+p+ v++
+  GCA_015832325.1_ASM1583232v1_1601 189 PDLREALNALTFPFYYLCGERDSKFR------ALAQEVAATCHVIRNAGHNAHRENPAGVVD 244
+                                        579999***************98654......44444678899**************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1558  (290517 residues searched)
+Passed MSV filter:                        62  (0.0397946); expected 31.2 (0.02)
+Passed bias filter:                       40  (0.0256739); expected 31.2 (0.02)
+Passed Vit filter:                         6  (0.00385109); expected 1.6 (0.001)
+Passed Fwd filter:                         2  (0.0012837); expected 0.0 (1e-05)
+Initial search space (Z):               1558  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7618.13
+//
+[ok]

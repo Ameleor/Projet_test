@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_016699815.1_ASM1669981v1/GCA_016699815.1_ASM1669981v1_protein.faa
+# output directed to file:         results/GCA_016699815.1_ASM1669981v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-06   24.9   0.1    5.9e-06   22.6   0.1    2.0  2  GCA_016699815.1_ASM1669981v1_819   QQS63795.1 MAG: Mrp/NBP35 family
+    0.00019   17.6   0.0    0.00028   17.1   0.0    1.4  1  GCA_016699815.1_ASM1669981v1_1234  QQS64191.1 MAG: ParA family prot
+     0.0028   13.8   0.0     0.0038   13.4   0.0    1.3  1  GCA_016699815.1_ASM1669981v1_2104  QQS62557.1 MAG: ParA family prot
+     0.0032   13.6   0.2      0.045    9.8   0.0    2.1  2  GCA_016699815.1_ASM1669981v1_772   QQS63751.1 MAG: signal recogniti
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016699815.1_ASM1669981v1_819  QQS63795.1 MAG: Mrp/NBP35 family ATP-binding protein [Chitinophagaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.1   9.1e-09   5.9e-06      19      73 ..      95     148 ..      77     167 .. 0.78
+   2 ?   -0.9   0.0      0.12        79     216     238 ..     296     318 ..     288     363 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 9.1e-09
+              trimmed_msa_bchX_hmm  19 tketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggka 73 
+                                         +  i  + gkgg+gks   anl+  +a++g kv l+  d    +  ++fg + 
+  GCA_016699815.1_ASM1669981v1_819  95 V-KNIICVVSGKGGVGKSTIAANLALAFAEKGAKVGLMDADIYGPSQHIMFGLRG 148
+                                       2.23455689*******************************99999999999775 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.12
+              trimmed_msa_bchX_hmm 216 afaeavgipvlaaipadedirrk 238
+                                        ++e+ +ip+l  ip  + ir  
+  GCA_016699815.1_ASM1669981v1_819 296 NLCEDFNIPLLGQIPLVQSIREG 318
+                                       56677888899988888888864 PP
+
+>> GCA_016699815.1_ASM1669981v1_1234  QQS64191.1 MAG: ParA family protein [Chitinophagaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   4.3e-07   0.00028      25      64 ..       4      44 ..       1      82 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 4.3e-07
+               trimmed_msa_bchX_hmm 25 iaiyg.kggigksftlanlsymlaqqgkkvlligcdpksdt 64
+                                       ia+y  kgg+gk+ +  n+sy+ a  g k ll   dp+  +
+  GCA_016699815.1_ASM1669981v1_1234  4 IALYNlKGGVGKTASCVNFSYLAAADGFKTLLWDIDPQGSS 44
+                                       8888669******************************8654 PP
+
+>> GCA_016699815.1_ASM1669981v1_2104  QQS62557.1 MAG: ParA family protein [Chitinophagaceae bacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   5.8e-06    0.0038      24      66 ..       4      47 ..       1      96 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 5.8e-06
+               trimmed_msa_bchX_hmm 24 iiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksdtts 66
+                                       ii i   kgg+gk+ t  nl+  +a    k ll+  dp++++t+
+  GCA_016699815.1_ASM1669981v1_2104  4 IIGIAnQKGGVGKTTTAINLAASFAILEFKTLLVDADPQANSTT 47
+                                       67664269*******************************98664 PP
+
+>> GCA_016699815.1_ASM1669981v1_772  QQS63751.1 MAG: signal recognition particle-docking protein FtsY [Chitinophagaceae 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.0   7.1e-05     0.045      20      59 ..     116     155 ..      96     167 .. 0.87
+   2 ?    1.7   0.0     0.021        13     161     225 ..     226     293 ..     194     304 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 7.1e-05
+              trimmed_msa_bchX_hmm  20 ketqiiaiygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                       ++  ii + g  g+gk+ t+ +l++ ++  gk vll   d
+  GCA_016699815.1_ASM1669981v1_772 116 HKPHIILVVGVNGVGKTTTIGKLAHNFSLAGKSVLLGAAD 155
+                                       56789******************************97776 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.021
+              trimmed_msa_bchX_hmm 161 rdlcqkvivvgsndlqslyvannvcsaveyfrklggnvgvaglvinkddgt...geaqafaeavgipv 225
+                                       + ++qkvi  +  ++  +       +a+e  +++     v+ l i k dgt   g   a+a++  ipv
+  GCA_016699815.1_ASM1669981v1_772 226 KKVIQKVIPEAPHEVMLVLDGSTGQNALEQAKHFTAATEVTALTITKLDGTakgGVVLAIANQFKIPV 293
+                                       56777777777777777777777788999999999999************944345678999999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2574  (897239 residues searched)
+Passed MSV filter:                        97  (0.0376845); expected 51.5 (0.02)
+Passed bias filter:                       71  (0.0275835); expected 51.5 (0.02)
+Passed Vit filter:                        12  (0.004662); expected 2.6 (0.001)
+Passed Fwd filter:                         4  (0.001554); expected 0.0 (1e-05)
+Initial search space (Z):               2574  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9869.77
+//
+[ok]

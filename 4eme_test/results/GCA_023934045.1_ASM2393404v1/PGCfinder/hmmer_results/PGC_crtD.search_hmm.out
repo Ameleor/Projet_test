@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtD.hmm
+# target sequence database:        data/genomes_unzip/GCA_023934045.1_ASM2393404v1/GCA_023934045.1_ASM2393404v1_protein.faa
+# output directed to file:         results/GCA_023934045.1_ASM2393404v1/PGCfinder/hmmer_results/PGC_crtD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtD_hmm  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.1e-05   18.0   4.4    0.00016   15.1   0.3    2.7  3  GCA_023934045.1_ASM2393404v1_203  USQ93583.1 MAG: dihydrolipoyl de
+    0.00027   14.4   0.3       0.04    7.2   0.0    2.2  2  GCA_023934045.1_ASM2393404v1_501  USQ93384.1 MAG: tRNA uridine-5-c
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_023934045.1_ASM2393404v1_203  USQ93583.1 MAG: dihydrolipoyl dehydrogenase [Candidatus Phytoplasma vitis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.3   6.3e-07   0.00016       2      36 ..       5      39 ..       4      47 .. 0.90
+   2 !    3.7   0.1    0.0018      0.45       2      35 ..     174     207 ..     173     220 .. 0.91
+   3 ?   -1.1   0.0     0.054        13     232     277 ..     220     263 ..     210     273 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 6.3e-07
+              trimmed_msa_crtD_hmm  2 rvvviGaGigGLaaalklaaaGldvtvlekaaapG 36
+                                      ++++iG G gG ++a+k a+ G +v ++ek++  G
+  GCA_023934045.1_ASM2393404v1_203  5 DILIIGGGPGGYTSAIKAAQLGAKVCLIEKHKVGG 39
+                                      589**************************987544 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.0018
+              trimmed_msa_crtD_hmm   2 rvvviGaGigGLaaalklaaaGldvtvlekaaap 35 
+                                       +v++iG G+ G+  a    + + ++ ++ek++++
+  GCA_023934045.1_ASM2393404v1_203 174 KVIIIGGGVIGVEFATIFKKFDSEIIIIEKQKNI 207
+                                       8*****************************9875 PP
+
+  == domain 3  score: -1.1 bits;  conditional E-value: 0.054
+              trimmed_msa_crtD_hmm 232 aklaeakgaefrygeeveeilveegrvsgvrladgerieadavvfn 277
+                                       +k+ ++  +++ +++ev  i++e++rv   + ++++++ead ++++
+  GCA_023934045.1_ASM2393404v1_203 220 TKILKRDNIKIYTNSEV--IKIENNRVYYKTNEQENQVEADIILMA 263
+                                       55555566666666665..666789999999999*******99976 PP
+
+>> GCA_023934045.1_ASM2393404v1_501  USQ93384.1 MAG: tRNA uridine-5-carboxymethylaminomethyl(34) synthesis enzyme MnmG [
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.4   0.6    0.0011      0.28       4      28 ..       6      30 ..       4      37 .. 0.87
+   2 !    7.2   0.0   0.00016      0.04     248     307 ..     120     179 ..     107     186 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 4.4 bits;  conditional E-value: 0.0011
+              trimmed_msa_crtD_hmm  4 vviGaGigGLaaalklaaaGldvtv 28
+                                      +viG G +G+ aal la++  +v +
+  GCA_023934045.1_ASM2393404v1_501  6 IVIGGGHAGVEAALALAKNHKTVLI 30
+                                      8****************99887765 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.00016
+              trimmed_msa_crtD_hmm 248 veeilveegrvsgvrladgerieadavvfngDvaalaagllgeearravekvakakrslS 307
+                                       v+++ +e+++v+gv+l+dg+ i++++v++++ +   ++ l+g+++ ++ +++++++ s+S
+  GCA_023934045.1_ASM2393404v1_501 120 VHNLIIEDNKVHGVKLKDGTIINSKTVILTTGTYLASKILIGKNKISSGPNNTPTTYSIS 179
+                                       7788999**********************9999888899999999998888888888777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (496 nodes)
+Target sequences:                        498  (163529 residues searched)
+Passed MSV filter:                        13  (0.0261044); expected 10.0 (0.02)
+Passed bias filter:                       13  (0.0261044); expected 10.0 (0.02)
+Passed Vit filter:                         4  (0.00803213); expected 0.5 (0.001)
+Passed Fwd filter:                         2  (0.00401606); expected 0.0 (1e-05)
+Initial search space (Z):                498  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6675.39
+//
+[ok]

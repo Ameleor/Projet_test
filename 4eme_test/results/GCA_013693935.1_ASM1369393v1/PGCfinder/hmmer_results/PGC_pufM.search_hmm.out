@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_pufM.hmm
+# target sequence database:        data/genomes_unzip/GCA_013693935.1_ASM1369393v1/GCA_013693935.1_ASM1369393v1_protein.faa
+# output directed to file:         results/GCA_013693935.1_ASM1369393v1/PGCfinder/hmmer_results/PGC_pufM.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pufM_hmm  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0094   12.8   5.4      0.014   12.2   5.4    1.2  1  GCA_013693935.1_ASM1369393v1_955  QLQ27691.1 MAG: ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_013693935.1_ASM1369393v1_955  QLQ27691.1 MAG: ABC transporter permease [Pseudoxanthomonas sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   5.4   4.2e-06     0.014      38     156 ..     260     378 ..     249     387 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 4.2e-06
+              trimmed_msa_pufM_hmm  38 kllGklgnaqiGpiylGllgvvslvfglialeiiglnmlasvnwdpvqfvrqlfwlaleppspeyGlklpplkeGGw 114
+                                       ++ G+lg  q+   +l +  ++ +++ ++ +    l +la    ++ +   ++ wl l p  p + l   plk   w
+  GCA_013693935.1_ASM1369393v1_955 260 QFAGTLGR-QLNVSFLAIGKMLLILVPMLFIGTSLLTYLAASAKSMKEAQSHMTWLMLLPMIPTFALMANPLKSQPW 335
+                                       56677764.67777777777777778888888888899999999999999*************************99 PP
+
+              trimmed_msa_pufM_hmm 115 wllagffltvsvllwwvrt.yrrakalglgthvawafaaaiwl 156
+                                        +   f+    +ll ++r  y  a++ g+    a+  aa +w+
+  GCA_013693935.1_ASM1369393v1_955 336 QFAVPFLAQNQLLLKVIRNeYISAQTWGIYVAAAFGVAALLWY 378
+                                       9999999999999999885377777766655555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (307 nodes)
+Target sequences:                       3364  (1101776 residues searched)
+Passed MSV filter:                       135  (0.0401308); expected 67.3 (0.02)
+Passed bias filter:                       51  (0.0151605); expected 67.3 (0.02)
+Passed Vit filter:                         8  (0.00237812); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000297265); expected 0.0 (1e-05)
+Initial search space (Z):               3364  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 15114.35
+//
+[ok]

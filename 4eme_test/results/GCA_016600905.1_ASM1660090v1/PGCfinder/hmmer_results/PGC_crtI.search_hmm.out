@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_016600905.1_ASM1660090v1/GCA_016600905.1_ASM1660090v1_protein.faa
+# output directed to file:         results/GCA_016600905.1_ASM1660090v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0046   13.5   0.7       0.01   12.3   0.2    1.7  2  GCA_016600905.1_ASM1660090v1_1285  JBPAHO_06530 hypothetical protei
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016600905.1_ASM1660090v1_1285  JBPAHO_06530 hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0     0.029   1.2e+02     288     313 ..       9      34 ..       5      52 .. 0.85
+   2 !   12.3   0.2   2.4e-06      0.01       3      31 ..      72     100 ..      70     112 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.029
+               trimmed_msa_crtI_hmm 288 krkrwtdkklerkrysmsLfvwyfGt 313
+                                        ++ +++++kl+++++  s+f +  G+
+  GCA_016600905.1_ASM1660090v1_1285   9 EKCKRKSQKLKTAKWIISIFFLVLGV 34 
+                                        566788999*********99998886 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 2.4e-06
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvle 31 
+                                         a+viG G+ Gl aai +++ G  vt+l 
+  GCA_016600905.1_ASM1660090v1_1285  72 DALVIGGGLAGLRAAIEVAKSGQSVTLLS 100
+                                        69************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       4247  (300098 residues searched)
+Passed MSV filter:                        79  (0.0186014); expected 84.9 (0.02)
+Passed bias filter:                       71  (0.0167177); expected 84.9 (0.02)
+Passed Vit filter:                         4  (0.000941841); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.00023546); expected 0.0 (1e-05)
+Initial search space (Z):               4247  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11636.28
+//
+[ok]

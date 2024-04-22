@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_900312965.1__CHUV2995_chromosome/GCA_900312965.1__CHUV2995_chromosome_protein.faa
+# output directed to file:         results/GCA_900312965.1__CHUV2995_chromosome/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                  -----------
+    3.1e-09   33.6   0.0    5.4e-09   32.8   0.0    1.3  1  GCA_900312965.1__CHUV2995_chromosome_2151  SPJ41385.1 Sporulation initiatio
+    8.1e-05   19.1   0.0    0.00013   18.5   0.0    1.2  1  GCA_900312965.1__CHUV2995_chromosome_1437  SPJ40671.1 Sporulation initiatio
+    0.00074   16.0   0.0     0.0018   14.7   0.0    1.6  2  GCA_900312965.1__CHUV2995_chromosome_1194  SPJ40428.1 Flagellum site-determ
+    0.00089   15.7   0.1     0.0015   15.0   0.1    1.3  1  GCA_900312965.1__CHUV2995_chromosome_3139  SPJ42373.1 Sporulation initiatio
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_900312965.1__CHUV2995_chromosome_2151  SPJ41385.1 Sporulation initiation inhibitor protein Soj [Corynebacterium d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.0   6.9e-12   5.4e-09      29      82 ..       9      62 ..       2      78 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 32.8 bits;  conditional E-value: 6.9e-12
+                       trimmed_msa_bchX_hmm 29 gkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacptiietss 82
+                                                kgg+gk+   +n++y +a+qgk+vl + cdp++++t l++    +  i   s 
+  GCA_900312965.1__CHUV2995_chromosome_2151  9 NKGGVGKTTLSTNVAYYFANQGKRVLYVDCDPQCNATQLMLTEEQTEHIYLNSL 62
+                                               69******999*****************************99888877765554 PP
+
+>> GCA_900312965.1__CHUV2995_chromosome_1437  SPJ40671.1 Sporulation initiation inhibitor protein Soj [Corynebacterium d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.0   1.6e-07   0.00013      23      62 ..      37      77 ..      23      85 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.6e-07
+                       trimmed_msa_bchX_hmm 23 qiiai.ygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                               +ii++   kgg+gk+ +  nl   la+ g+kvll+  dp+ 
+  GCA_900312965.1__CHUV2995_chromosome_1437 37 KIISMcNQKGGVGKTTSTINLGACLAEAGRKVLLVDLDPQG 77
+                                               566651579******************************86 PP
+
+>> GCA_900312965.1__CHUV2995_chromosome_1194  SPJ40428.1 Flagellum site-determining protein YlxH [Corynebacterium diphth
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   2.3e-06    0.0018      14      70 ..     105     162 ..      92     176 .. 0.79
+   2 ?   -2.7   0.0      0.44   3.5e+02     221     239 ..     314     332 ..     265     363 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.3e-06
+                       trimmed_msa_bchX_hmm  14 atgevtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfg 70 
+                                                + +++ ++t++ a+  gkgg+gks    nl+  la +g kv ++  d    +   ++g
+  GCA_900312965.1__CHUV2995_chromosome_1194 105 PFAQPDSTTRVFAVaSGKGGVGKSSMTVNLATALAARGLKVGVLDADIYGHSVPGMLG 162
+                                                55677889999998469************************99988876666555555 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.44
+                       trimmed_msa_bchX_hmm 221 vgipvlaaipadedirrks 239
+                                                  +p+l ++p d  +r   
+  GCA_900312965.1__CHUV2995_chromosome_1194 314 TPVPLLGSVPLDPRLREGG 332
+                                                3467788888888888654 PP
+
+>> GCA_900312965.1__CHUV2995_chromosome_3139  SPJ42373.1 Sporulation initiation inhibitor protein Soj [Corynebacterium d
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.1   1.9e-06    0.0015      10      76 ..      24      90 ..      15     165 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.9e-06
+                       trimmed_msa_bchX_hmm 10 pdavatgevtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpt 76
+                                               p++ +  ++ ++ ++     kgg+gk+ +  nl+  la  g kvl++  dp+ ++++ l   + + t
+  GCA_900312965.1__CHUV2995_chromosome_3139 24 PNTLHLPRPGRTRRLTVANQKGGVGKTTSSVNLAAGLALGGLKVLVVDLDPQGNASTALGADHRAGT 90
+                                               55566666667777777789********************************998877765555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3145  (896212 residues searched)
+Passed MSV filter:                       101  (0.0321145); expected 62.9 (0.02)
+Passed bias filter:                       88  (0.0279809); expected 62.9 (0.02)
+Passed Vit filter:                        11  (0.00349762); expected 3.1 (0.001)
+Passed Fwd filter:                         4  (0.00127186); expected 0.0 (1e-05)
+Initial search space (Z):               3145  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8963.08
+//
+[ok]

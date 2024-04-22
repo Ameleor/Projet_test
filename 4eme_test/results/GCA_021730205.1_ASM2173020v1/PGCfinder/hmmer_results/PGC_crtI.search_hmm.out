@@ -1,0 +1,116 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCA_021730205.1_ASM2173020v1/GCA_021730205.1_ASM2173020v1_protein.faa
+# output directed to file:         results/GCA_021730205.1_ASM2173020v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      4e-07   25.1   1.0    6.4e-07   24.5   1.0    1.2  1  GCA_021730205.1_ASM2173020v1_1065  HDGNJB_05495 Pyruvate:ferredoxin
+    9.1e-07   24.0   0.7      1e-05   20.5   0.4    2.2  2  GCA_021730205.1_ASM2173020v1_1163  HDGNJB_05990 Dihydrolipoyl dehyd
+    6.5e-05   17.9   3.5      0.016   10.0   0.1    2.4  3  GCA_021730205.1_ASM2173020v1_364   HDGNJB_01880 Glycine oxidase
+    0.00028   15.8   2.4     0.0015   13.4   0.2    2.1  2  GCA_021730205.1_ASM2173020v1_1074  HDGNJB_05540 NADPH-dependent glu
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_021730205.1_ASM2173020v1_1065  HDGNJB_05495 Pyruvate:ferredoxin oxidoreductase or related 2-oxoacid:ferredoxin ox
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   1.0     2e-09   6.4e-07       2      39 ..     152     189 ..     151     194 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 2e-09
+               trimmed_msa_crtI_hmm   2 kkavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39 
+                                        kk+ +iG G GGl+aa++l  +G  vtv+ek d++GG 
+  GCA_021730205.1_ASM2173020v1_1065 152 KKVAIIGGGCGGLTAALKLRRQGHSVTVFEKYDQLGGM 189
+                                        57789*******************************95 PP
+
+>> GCA_021730205.1_ASM2173020v1_1163  HDGNJB_05990 Dihydrolipoyl dehydrogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5   0.4   3.1e-08     1e-05       3      39 ..       6      42 ..       4      46 .. 0.93
+   2 ?    1.5   0.0     0.019         6       3      35 ..     175     207 ..     173     245 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 3.1e-08
+               trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                       + vviG+G GG +aa r +  G +vt++e+ da+GG 
+  GCA_021730205.1_ASM2173020v1_1163  6 QIVVIGSGSGGYTAAFRAADLGKQVTLIERYDALGGV 42
+                                       789********************************95 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.019
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                        + +v+G G+ Gl +a   +a G +++++e  ++
+  GCA_021730205.1_ASM2173020v1_1163 175 RLLVVGGGIIGLEMATAYHALGSEISIVELSNQ 207
+                                        6789***********************997665 PP
+
+>> GCA_021730205.1_ASM2173020v1_364  HDGNJB_01880 Glycine oxidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.5   0.4   0.00014     0.044       4      34 ..       4      34 ..       1      46 [. 0.89
+   2 ?   -3.8   0.0      0.72   2.3e+02     330     362 ..      54      87 ..      51      92 .. 0.81
+   3 !   10.0   0.1   4.9e-05     0.016     222     283 ..     133     194 ..     118     207 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00014
+              trimmed_msa_crtI_hmm  4 avviGaGfGGlaaairlgakGyrvtvlekld 34
+                                       +viG G+ G+ +a  l+ +G  vt+l++++
+  GCA_021730205.1_ASM2173020v1_364  4 CLVIGGGIIGMMSARTLAMAGASVTLLDQRE 34
+                                      78**************************986 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 0.72
+              trimmed_msa_crtI_hmm 330 rykelledi.fkkkvladDfslylhrPtatDpsl 362
+                                       ry +l +++ f  + +  D+ l ++  t  Dp+ 
+  GCA_021730205.1_ASM2173020v1_364  54 RYDDLTNELsFASQAVYADLCLQIFEDTGIDPQY 87 
+                                       7888888866889999999999999999999976 PP
+
+  == domain 3  score: 10.0 bits;  conditional E-value: 4.9e-05
+              trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaeveeievedgratgvrlasGeeieadvvvsnadaaltykkl 283
+                                       +l+++l   i ++G+++  + + ++++++d+++ gv++++ + ++ dvvv+ +     + +l
+  GCA_021730205.1_ASM2173020v1_364 133 RLLQALKVDILNKGVNIIEHVQANDLLIKDNQVIGVKTKNKNYFAQDVVVCSGAWSSKWLRL 194
+                                       78999999999***************************************988776666555 PP
+
+>> GCA_021730205.1_ASM2173020v1_1074  HDGNJB_05540 NADPH-dependent glutamate synthase beta chain or related oxidoreducta
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.2   4.5e-06    0.0015       3      38 ..     148     183 ..     146     187 .. 0.93
+   2 ?    2.3   0.1      0.01       3.4     222     278 ..     197     256 ..     186     285 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.5e-06
+               trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvlekldapGG 38 
+                                        k  +iG+G  Glaaa  l++ G +vt++e+  ++GG
+  GCA_021730205.1_ASM2173020v1_1074 148 KIAIIGSGPAGLAAADELNKIGHNVTIFERDGRIGG 183
+                                        6789******************************99 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 0.01
+               trimmed_msa_crtI_hmm 222 alvkglvklieeqGgelrlnaev.eeieved..gratgvrlasGeeieadvvvsnadaal 278
+                                        ++v+  vkl++++G+e+ +n +v ++i++++  ++  ++ l++G + + d++v n +a  
+  GCA_021730205.1_ASM2173020v1_1074 197 NVVDCRVKLMQDSGVEFITNVDVgKDITTTQlqQSFDALVLTTGASRARDLLVDNRQAQG 256
+                                        6899999*************99955687765215667999*************9976543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                       1298  (325661 residues searched)
+Passed MSV filter:                        51  (0.0392912); expected 26.0 (0.02)
+Passed bias filter:                       41  (0.0315871); expected 26.0 (0.02)
+Passed Vit filter:                        11  (0.00847458); expected 1.3 (0.001)
+Passed Fwd filter:                         4  (0.00308166); expected 0.0 (1e-05)
+Initial search space (Z):               1298  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8300.25
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_014268975.2_ASM1426897v2/GCA_014268975.2_ASM1426897v2_protein.faa
+# output directed to file:         results/GCA_014268975.2_ASM1426897v2/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.6e-06   25.9   8.3    1.9e-06   25.7   8.3    1.1  1  GCA_014268975.2_ASM1426897v2_254  QXI43454.1 4-hydroxybenzoate oct
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_014268975.2_ASM1426897v2_254  QXI43454.1 4-hydroxybenzoate octaprenyltransferase [Pseudomonas wayambapalatensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   8.3   4.1e-10   1.9e-06       9     209 ..      23     217 ..      15     290 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 4.1e-10
+              trimmed_msa_bchG_hmm   9 lellkPitwfpPmWafacGvv..ssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdai..nePerpiPsG 81 
+                                        +l +Pi  +  +W  ++ v   + ga++ +++l++ +Gv     l+ a+  a+nd+ dr+vd       +rp+ sG
+  GCA_014268975.2_ASM1426897v2_254  23 SRLDRPIGIYLLLWPTLAAVWiaAKGAPTLANVLIFGLGVA----LMRAAGCAINDFADRKVDGHvkRTADRPLASG 95 
+                                       56778999999999877766511445555555555555554....67788889**********75124689****** PP
+
+              trimmed_msa_bchG_hmm  82 ripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsye.glaWltgaav 157
+                                       r+  r  +++ ++lt +s+l+ +     ++  +  g++la+ y   P+ +k+  ++ + + g +y  g++   +a  
+  GCA_014268975.2_ASM1426897v2_254  96 RVKPREAVMLFVVLTGISFLLVLCTNASTVWLSFGGVALAFCY---PF-MKRYTYYPQVVLGAAYSwGIPMAFTA-- 166
+                                       ******************************************9...44.79999999999999996355543333.. PP
+
+              trimmed_msa_bchG_hmm 158 lagalPsaevl.lla.llysigahGimtlndfkaveGdrklgvkslpvklGver 209
+                                         g+lP+a  l  +a ll++++     ++ d    + d k+gvks ++ +G + 
+  GCA_014268975.2_ASM1426897v2_254 167 AGGELPAAAWLlYIAnLLWTVAFDTYYAMVD---RDDDLKIGVKSTAILFGEAD 217
+                                       2477887665414551445554444444444...46788899999999888654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       4583  (1556895 residues searched)
+Passed MSV filter:                       239  (0.0521492); expected 91.7 (0.02)
+Passed bias filter:                       75  (0.0163648); expected 91.7 (0.02)
+Passed Vit filter:                         6  (0.00130919); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000218198); expected 0.0 (1e-05)
+Initial search space (Z):               4583  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 26890.00
+//
+[ok]
