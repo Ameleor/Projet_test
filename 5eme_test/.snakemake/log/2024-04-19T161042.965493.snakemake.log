@@ -1,0 +1,2820 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+PGCfinder          100
+all                  1
+unzip_genomes      100
+total              201
+
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013256815.1_ASM1325681v1/GCA_013256815.1_ASM1325681v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013256815.1_ASM1325681v1/GCA_013256815.1_ASM1325681v1_protein.faa
+    jobid: 58
+    reason: Missing output files: data/genomes_unzip/GCA_013256815.1_ASM1325681v1/GCA_013256815.1_ASM1325681v1_protein.faa
+    wildcards: genome=GCA_013256815.1_ASM1325681v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011302195.1_ASM1130219v1/GCA_011302195.1_ASM1130219v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011302195.1_ASM1130219v1/GCA_011302195.1_ASM1130219v1_protein.faa
+    jobid: 118
+    reason: Missing output files: data/genomes_unzip/GCA_011302195.1_ASM1130219v1/GCA_011302195.1_ASM1130219v1_protein.faa
+    wildcards: genome=GCA_011302195.1_ASM1130219v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+    jobid: 28
+    reason: Missing output files: data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+    wildcards: genome=GCA_013403505.1_ASM1340350v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa
+    jobid: 84
+    reason: Missing output files: data/genomes_unzip/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa
+    wildcards: genome=GCA_013414705.1_ASM1341470v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 28.
+1 of 201 steps (0.5%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013127575.1_ASM1312757v1/GCA_013127575.1_ASM1312757v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013127575.1_ASM1312757v1/GCA_013127575.1_ASM1312757v1_protein.faa
+    jobid: 134
+    reason: Missing output files: data/genomes_unzip/GCA_013127575.1_ASM1312757v1/GCA_013127575.1_ASM1312757v1_protein.faa
+    wildcards: genome=GCA_013127575.1_ASM1312757v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 58.
+2 of 201 steps (1%) done
+[Fri Apr 19 16:10:43 2024]
+Finished job 118.
+3 of 201 steps (1%) done
+[Fri Apr 19 16:10:43 2024]
+Finished job 84.
+4 of 201 steps (2%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013256815.1_ASM1325681v1/GCA_013256815.1_ASM1325681v1_protein.faa
+    output: results/GCA_013256815.1_ASM1325681v1/PGCfinder
+    jobid: 57
+    reason: Missing output files: results/GCA_013256815.1_ASM1325681v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013256815.1_ASM1325681v1/GCA_013256815.1_ASM1325681v1_protein.faa
+    wildcards: genome=GCA_013256815.1_ASM1325681v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 16:10:43 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+    output: results/GCA_013403505.1_ASM1340350v1/PGCfinder
+    jobid: 27
+    reason: Missing output files: results/GCA_013403505.1_ASM1340350v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013403505.1_ASM1340350v1/GCA_013403505.1_ASM1340350v1_protein.faa
+    wildcards: genome=GCA_013403505.1_ASM1340350v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa
+    jobid: 24
+    reason: Missing output files: data/genomes_unzip/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa
+    wildcards: genome=GCA_010725135.1_ASM1072513v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 134.
+5 of 201 steps (2%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011996705.1_ASM1199670v1/GCA_011996705.1_ASM1199670v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011996705.1_ASM1199670v1/GCA_011996705.1_ASM1199670v1_protein.faa
+    jobid: 74
+    reason: Missing output files: data/genomes_unzip/GCA_011996705.1_ASM1199670v1/GCA_011996705.1_ASM1199670v1_protein.faa
+    wildcards: genome=GCA_011996705.1_ASM1199670v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 24.
+6 of 201 steps (3%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa.gz
+    output: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    jobid: 164
+    reason: Missing output files: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    wildcards: genome=GCA_000219475.3_ASM21947v3
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 74.
+7 of 201 steps (3%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011302735.1_ASM1130273v1/GCA_011302735.1_ASM1130273v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011302735.1_ASM1130273v1/GCA_011302735.1_ASM1130273v1_protein.faa
+    jobid: 14
+    reason: Missing output files: data/genomes_unzip/GCA_011302735.1_ASM1130273v1/GCA_011302735.1_ASM1130273v1_protein.faa
+    wildcards: genome=GCA_011302735.1_ASM1130273v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 164.
+8 of 201 steps (4%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    jobid: 104
+    reason: Missing output files: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    wildcards: genome=GCA_000307975.2_ASM30797v2
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Fri Apr 19 16:10:43 2024]
+Finished job 14.
+9 of 201 steps (4%) done
+
+[Fri Apr 19 16:10:43 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa
+    jobid: 44
+    reason: Missing output files: data/genomes_unzip/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa
+    wildcards: genome=GCA_013344545.1_ASM1334454v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 104.
+10 of 201 steps (5%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011302735.1_ASM1130273v1/GCA_011302735.1_ASM1130273v1_protein.faa
+    output: results/GCA_011302735.1_ASM1130273v1/PGCfinder
+    jobid: 13
+    reason: Missing output files: results/GCA_011302735.1_ASM1130273v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011302735.1_ASM1130273v1/GCA_011302735.1_ASM1130273v1_protein.faa
+    wildcards: genome=GCA_011302735.1_ASM1130273v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:43 2024]
+Finished job 44.
+11 of 201 steps (5%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:43 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa
+    output: results/GCA_013344545.1_ASM1334454v1/PGCfinder
+    jobid: 43
+    reason: Missing output files: results/GCA_013344545.1_ASM1334454v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013344545.1_ASM1334454v1/GCA_013344545.1_ASM1334454v1_protein.faa
+    wildcards: genome=GCA_013344545.1_ASM1334454v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 27.
+12 of 201 steps (6%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011996705.1_ASM1199670v1/GCA_011996705.1_ASM1199670v1_protein.faa
+    output: results/GCA_011996705.1_ASM1199670v1/PGCfinder
+    jobid: 73
+    reason: Missing output files: results/GCA_011996705.1_ASM1199670v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011996705.1_ASM1199670v1/GCA_011996705.1_ASM1199670v1_protein.faa
+    wildcards: genome=GCA_011996705.1_ASM1199670v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 57.
+13 of 201 steps (6%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa
+    jobid: 194
+    reason: Missing output files: data/genomes_unzip/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa
+    wildcards: genome=GCA_012151295.1_ASM1215129v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 194.
+14 of 201 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa
+    output: results/GCA_012151295.1_ASM1215129v1/PGCfinder
+    jobid: 193
+    reason: Missing output files: results/GCA_012151295.1_ASM1215129v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012151295.1_ASM1215129v1/GCA_012151295.1_ASM1215129v1_protein.faa
+    wildcards: genome=GCA_012151295.1_ASM1215129v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 43.
+15 of 201 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa.gz
+    output: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    jobid: 46
+    reason: Missing output files: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    wildcards: genome=GCA_000359545.5_G255_GS
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 46.
+16 of 201 steps (8%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    output: results/GCA_000359545.5_G255_GS/PGCfinder
+    jobid: 45
+    reason: Missing output files: results/GCA_000359545.5_G255_GS/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    wildcards: genome=GCA_000359545.5_G255_GS
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 13.
+17 of 201 steps (8%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000965765.1_ASM96576v1/GCA_000965765.1_ASM96576v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000965765.1_ASM96576v1/GCA_000965765.1_ASM96576v1_protein.faa
+    jobid: 106
+    reason: Missing output files: data/genomes_unzip/GCA_000965765.1_ASM96576v1/GCA_000965765.1_ASM96576v1_protein.faa
+    wildcards: genome=GCA_000965765.1_ASM96576v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:45 2024]
+Finished job 106.
+18 of 201 steps (9%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:45 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000965765.1_ASM96576v1/GCA_000965765.1_ASM96576v1_protein.faa
+    output: results/GCA_000965765.1_ASM96576v1/PGCfinder
+    jobid: 105
+    reason: Missing output files: results/GCA_000965765.1_ASM96576v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000965765.1_ASM96576v1/GCA_000965765.1_ASM96576v1_protein.faa
+    wildcards: genome=GCA_000965765.1_ASM96576v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:46 2024]
+Finished job 73.
+19 of 201 steps (9%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:46 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013127575.1_ASM1312757v1/GCA_013127575.1_ASM1312757v1_protein.faa
+    output: results/GCA_013127575.1_ASM1312757v1/PGCfinder
+    jobid: 133
+    reason: Missing output files: results/GCA_013127575.1_ASM1312757v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013127575.1_ASM1312757v1/GCA_013127575.1_ASM1312757v1_protein.faa
+    wildcards: genome=GCA_013127575.1_ASM1312757v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:46 2024]
+Finished job 45.
+20 of 201 steps (10%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:46 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    jobid: 166
+    reason: Missing output files: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    wildcards: genome=GCA_000272795.2_ASM27279v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:46 2024]
+Finished job 166.
+21 of 201 steps (10%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:46 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    output: results/GCA_000272795.2_ASM27279v2/PGCfinder
+    jobid: 165
+    reason: Missing output files: results/GCA_000272795.2_ASM27279v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    wildcards: genome=GCA_000272795.2_ASM27279v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:46 2024]
+Finished job 105.
+22 of 201 steps (11%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:46 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa
+    jobid: 16
+    reason: Missing output files: data/genomes_unzip/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa
+    wildcards: genome=GCA_000816945.1_ASM81694v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:46 2024]
+Finished job 16.
+23 of 201 steps (11%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:46 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa
+    output: results/GCA_000816945.1_ASM81694v1/PGCfinder
+    jobid: 15
+    reason: Missing output files: results/GCA_000816945.1_ASM81694v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000816945.1_ASM81694v1/GCA_000816945.1_ASM81694v1_protein.faa
+    wildcards: genome=GCA_000816945.1_ASM81694v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 193.
+24 of 201 steps (12%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013315855.1_ASM1331585v1/GCA_013315855.1_ASM1331585v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013315855.1_ASM1331585v1/GCA_013315855.1_ASM1331585v1_protein.faa
+    jobid: 76
+    reason: Missing output files: data/genomes_unzip/GCA_013315855.1_ASM1331585v1/GCA_013315855.1_ASM1331585v1_protein.faa
+    wildcards: genome=GCA_013315855.1_ASM1331585v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 76.
+25 of 201 steps (12%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013315855.1_ASM1331585v1/GCA_013315855.1_ASM1331585v1_protein.faa
+    output: results/GCA_013315855.1_ASM1331585v1/PGCfinder
+    jobid: 75
+    reason: Missing output files: results/GCA_013315855.1_ASM1331585v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013315855.1_ASM1331585v1/GCA_013315855.1_ASM1331585v1_protein.faa
+    wildcards: genome=GCA_013315855.1_ASM1331585v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 133.
+26 of 201 steps (13%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012151155.1_ASM1215115v1/GCA_012151155.1_ASM1215115v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012151155.1_ASM1215115v1/GCA_012151155.1_ASM1215115v1_protein.faa
+    jobid: 66
+    reason: Missing output files: data/genomes_unzip/GCA_012151155.1_ASM1215115v1/GCA_012151155.1_ASM1215115v1_protein.faa
+    wildcards: genome=GCA_012151155.1_ASM1215115v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 66.
+27 of 201 steps (13%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011388175.1_ASM1138817v1/GCA_011388175.1_ASM1138817v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011388175.1_ASM1138817v1/GCA_011388175.1_ASM1138817v1_protein.faa
+    jobid: 126
+    reason: Missing output files: data/genomes_unzip/GCA_011388175.1_ASM1138817v1/GCA_011388175.1_ASM1138817v1_protein.faa
+    wildcards: genome=GCA_011388175.1_ASM1138817v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 126.
+28 of 201 steps (14%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+    jobid: 96
+    reason: Missing output files: data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+    wildcards: genome=GCA_013372025.1_ASM1337202v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 96.
+29 of 201 steps (14%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012970745.1_ASM1297074v1/GCA_012970745.1_ASM1297074v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012970745.1_ASM1297074v1/GCA_012970745.1_ASM1297074v1_protein.faa
+    jobid: 36
+    reason: Missing output files: data/genomes_unzip/GCA_012970745.1_ASM1297074v1/GCA_012970745.1_ASM1297074v1_protein.faa
+    wildcards: genome=GCA_012970745.1_ASM1297074v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:47 2024]
+Finished job 36.
+30 of 201 steps (15%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:47 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011388175.1_ASM1138817v1/GCA_011388175.1_ASM1138817v1_protein.faa
+    output: results/GCA_011388175.1_ASM1138817v1/PGCfinder
+    jobid: 125
+    reason: Missing output files: results/GCA_011388175.1_ASM1138817v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011388175.1_ASM1138817v1/GCA_011388175.1_ASM1138817v1_protein.faa
+    wildcards: genome=GCA_011388175.1_ASM1138817v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 165.
+31 of 201 steps (15%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa
+    jobid: 156
+    reason: Missing output files: data/genomes_unzip/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa
+    wildcards: genome=GCA_010918035.1_ASM1091803v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 156.
+32 of 201 steps (16%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa
+    output: results/GCA_010918035.1_ASM1091803v1/PGCfinder
+    jobid: 155
+    reason: Missing output files: results/GCA_010918035.1_ASM1091803v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_010918035.1_ASM1091803v1/GCA_010918035.1_ASM1091803v1_protein.faa
+    wildcards: genome=GCA_010918035.1_ASM1091803v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 15.
+33 of 201 steps (16%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+    jobid: 6
+    reason: Missing output files: data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+    wildcards: genome=GCA_000831425.1_ASM83142v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 6.
+34 of 201 steps (17%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+    output: results/GCA_000831425.1_ASM83142v1/PGCfinder
+    jobid: 5
+    reason: Missing output files: results/GCA_000831425.1_ASM83142v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000831425.1_ASM83142v1/GCA_000831425.1_ASM83142v1_protein.faa
+    wildcards: genome=GCA_000831425.1_ASM83142v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 75.
+35 of 201 steps (17%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000732525.2_ASM73252v2/GCA_000732525.2_ASM73252v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000732525.2_ASM73252v2/GCA_000732525.2_ASM73252v2_protein.faa
+    jobid: 186
+    reason: Missing output files: data/genomes_unzip/GCA_000732525.2_ASM73252v2/GCA_000732525.2_ASM73252v2_protein.faa
+    wildcards: genome=GCA_000732525.2_ASM73252v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 186.
+36 of 201 steps (18%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000732525.2_ASM73252v2/GCA_000732525.2_ASM73252v2_protein.faa
+    output: results/GCA_000732525.2_ASM73252v2/PGCfinder
+    jobid: 185
+    reason: Missing output files: results/GCA_000732525.2_ASM73252v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000732525.2_ASM73252v2/GCA_000732525.2_ASM73252v2_protein.faa
+    wildcards: genome=GCA_000732525.2_ASM73252v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:48 2024]
+Finished job 5.
+37 of 201 steps (18%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:48 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013315835.1_ASM1331583v1/GCA_013315835.1_ASM1331583v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013315835.1_ASM1331583v1/GCA_013315835.1_ASM1331583v1_protein.faa
+    jobid: 108
+    reason: Missing output files: data/genomes_unzip/GCA_013315835.1_ASM1331583v1/GCA_013315835.1_ASM1331583v1_protein.faa
+    wildcards: genome=GCA_013315835.1_ASM1331583v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 108.
+38 of 201 steps (19%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011302515.1_ASM1130251v1/GCA_011302515.1_ASM1130251v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011302515.1_ASM1130251v1/GCA_011302515.1_ASM1130251v1_protein.faa
+    jobid: 48
+    reason: Missing output files: data/genomes_unzip/GCA_011302515.1_ASM1130251v1/GCA_011302515.1_ASM1130251v1_protein.faa
+    wildcards: genome=GCA_011302515.1_ASM1130251v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 48.
+39 of 201 steps (19%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011302515.1_ASM1130251v1/GCA_011302515.1_ASM1130251v1_protein.faa
+    output: results/GCA_011302515.1_ASM1130251v1/PGCfinder
+    jobid: 47
+    reason: Missing output files: results/GCA_011302515.1_ASM1130251v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011302515.1_ASM1130251v1/GCA_011302515.1_ASM1130251v1_protein.faa
+    wildcards: genome=GCA_011302515.1_ASM1130251v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 155.
+40 of 201 steps (20%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011303155.1_ASM1130315v1/GCA_011303155.1_ASM1130315v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011303155.1_ASM1130315v1/GCA_011303155.1_ASM1130315v1_protein.faa
+    jobid: 168
+    reason: Missing output files: data/genomes_unzip/GCA_011303155.1_ASM1130315v1/GCA_011303155.1_ASM1130315v1_protein.faa
+    wildcards: genome=GCA_011303155.1_ASM1130315v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 125.
+41 of 201 steps (20%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+    jobid: 18
+    reason: Missing output files: data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+    wildcards: genome=GCA_013364295.1_ASM1336429v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 168.
+42 of 201 steps (21%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011303155.1_ASM1130315v1/GCA_011303155.1_ASM1130315v1_protein.faa
+    output: results/GCA_011303155.1_ASM1130315v1/PGCfinder
+    jobid: 167
+    reason: Missing output files: results/GCA_011303155.1_ASM1130315v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011303155.1_ASM1130315v1/GCA_011303155.1_ASM1130315v1_protein.faa
+    wildcards: genome=GCA_011303155.1_ASM1130315v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:49 2024]
+Finished job 18.
+43 of 201 steps (21%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:49 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+    output: results/GCA_013364295.1_ASM1336429v1/PGCfinder
+    jobid: 17
+    reason: Missing output files: results/GCA_013364295.1_ASM1336429v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013364295.1_ASM1336429v1/GCA_013364295.1_ASM1336429v1_protein.faa
+    wildcards: genome=GCA_013364295.1_ASM1336429v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:50 2024]
+Finished job 47.
+44 of 201 steps (22%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:50 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013415975.1_ASM1341597v1/GCA_013415975.1_ASM1341597v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013415975.1_ASM1341597v1/GCA_013415975.1_ASM1341597v1_protein.faa
+    jobid: 78
+    reason: Missing output files: data/genomes_unzip/GCA_013415975.1_ASM1341597v1/GCA_013415975.1_ASM1341597v1_protein.faa
+    wildcards: genome=GCA_013415975.1_ASM1341597v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:50 2024]
+Finished job 78.
+45 of 201 steps (22%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:50 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013415975.1_ASM1341597v1/GCA_013415975.1_ASM1341597v1_protein.faa
+    output: results/GCA_013415975.1_ASM1341597v1/PGCfinder
+    jobid: 77
+    reason: Missing output files: results/GCA_013415975.1_ASM1341597v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013415975.1_ASM1341597v1/GCA_013415975.1_ASM1341597v1_protein.faa
+    wildcards: genome=GCA_013415975.1_ASM1341597v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:50 2024]
+Finished job 185.
+46 of 201 steps (23%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:50 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013315835.1_ASM1331583v1/GCA_013315835.1_ASM1331583v1_protein.faa
+    output: results/GCA_013315835.1_ASM1331583v1/PGCfinder
+    jobid: 107
+    reason: Missing output files: results/GCA_013315835.1_ASM1331583v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013315835.1_ASM1331583v1/GCA_013315835.1_ASM1331583v1_protein.faa
+    wildcards: genome=GCA_013315835.1_ASM1331583v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:51 2024]
+Finished job 17.
+47 of 201 steps (23%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:51 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013283975.1_ASM1328397v1/GCA_013283975.1_ASM1328397v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013283975.1_ASM1328397v1/GCA_013283975.1_ASM1328397v1_protein.faa
+    jobid: 138
+    reason: Missing output files: data/genomes_unzip/GCA_013283975.1_ASM1328397v1/GCA_013283975.1_ASM1328397v1_protein.faa
+    wildcards: genome=GCA_013283975.1_ASM1328397v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:51 2024]
+Finished job 138.
+48 of 201 steps (24%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:51 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013283975.1_ASM1328397v1/GCA_013283975.1_ASM1328397v1_protein.faa
+    output: results/GCA_013283975.1_ASM1328397v1/PGCfinder
+    jobid: 137
+    reason: Missing output files: results/GCA_013283975.1_ASM1328397v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013283975.1_ASM1328397v1/GCA_013283975.1_ASM1328397v1_protein.faa
+    wildcards: genome=GCA_013283975.1_ASM1328397v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:51 2024]
+Finished job 167.
+49 of 201 steps (24%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:51 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011302375.1_ASM1130237v1/GCA_011302375.1_ASM1130237v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011302375.1_ASM1130237v1/GCA_011302375.1_ASM1130237v1_protein.faa
+    jobid: 198
+    reason: Missing output files: data/genomes_unzip/GCA_011302375.1_ASM1130237v1/GCA_011302375.1_ASM1130237v1_protein.faa
+    wildcards: genome=GCA_011302375.1_ASM1130237v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:51 2024]
+Finished job 198.
+50 of 201 steps (25%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:51 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011302375.1_ASM1130237v1/GCA_011302375.1_ASM1130237v1_protein.faa
+    output: results/GCA_011302375.1_ASM1130237v1/PGCfinder
+    jobid: 197
+    reason: Missing output files: results/GCA_011302375.1_ASM1130237v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011302375.1_ASM1130237v1/GCA_011302375.1_ASM1130237v1_protein.faa
+    wildcards: genome=GCA_011302375.1_ASM1130237v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 77.
+51 of 201 steps (25%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa
+    jobid: 50
+    reason: Missing output files: data/genomes_unzip/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa
+    wildcards: genome=GCA_000808095.1_ASM80809v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 50.
+52 of 201 steps (26%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa
+    output: results/GCA_000808095.1_ASM80809v1/PGCfinder
+    jobid: 49
+    reason: Missing output files: results/GCA_000808095.1_ASM80809v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000808095.1_ASM80809v1/GCA_000808095.1_ASM80809v1_protein.faa
+    wildcards: genome=GCA_000808095.1_ASM80809v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 137.
+53 of 201 steps (26%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa
+    jobid: 42
+    reason: Missing output files: data/genomes_unzip/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa
+    wildcards: genome=GCA_013374855.1_ASM1337485v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 42.
+54 of 201 steps (27%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000988445.1_ASM98844v1/GCA_000988445.1_ASM98844v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000988445.1_ASM98844v1/GCA_000988445.1_ASM98844v1_protein.faa
+    jobid: 180
+    reason: Missing output files: data/genomes_unzip/GCA_000988445.1_ASM98844v1/GCA_000988445.1_ASM98844v1_protein.faa
+    wildcards: genome=GCA_000988445.1_ASM98844v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 180.
+55 of 201 steps (27%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+    jobid: 150
+    reason: Missing output files: data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+    wildcards: genome=GCA_013403525.1_ASM1340352v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 150.
+56 of 201 steps (28%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+    jobid: 90
+    reason: Missing output files: data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+    wildcards: genome=GCA_000830275.1_ASM83027v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 90.
+57 of 201 steps (28%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011290585.1_ASM1129058v1/GCA_011290585.1_ASM1129058v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011290585.1_ASM1129058v1/GCA_011290585.1_ASM1129058v1_protein.faa
+    jobid: 30
+    reason: Missing output files: data/genomes_unzip/GCA_011290585.1_ASM1129058v1/GCA_011290585.1_ASM1129058v1_protein.faa
+    wildcards: genome=GCA_011290585.1_ASM1129058v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 30.
+58 of 201 steps (29%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa
+    jobid: 120
+    reason: Missing output files: data/genomes_unzip/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa
+    wildcards: genome=GCA_000699475.1_ASM69947v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 107.
+59 of 201 steps (29%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011316785.2_ASM1131678v2/GCA_011316785.2_ASM1131678v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_011316785.2_ASM1131678v2/GCA_011316785.2_ASM1131678v2_protein.faa
+    jobid: 158
+    reason: Missing output files: data/genomes_unzip/GCA_011316785.2_ASM1131678v2/GCA_011316785.2_ASM1131678v2_protein.faa
+    wildcards: genome=GCA_011316785.2_ASM1131678v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 120.
+60 of 201 steps (30%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+    jobid: 60
+    reason: Missing output files: data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+    wildcards: genome=GCA_000492175.2_ASM49217v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 158.
+61 of 201 steps (30%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011765385.1_ASM1176538v1/GCA_011765385.1_ASM1176538v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011765385.1_ASM1176538v1/GCA_011765385.1_ASM1176538v1_protein.faa
+    jobid: 12
+    reason: Missing output files: data/genomes_unzip/GCA_011765385.1_ASM1176538v1/GCA_011765385.1_ASM1176538v1_protein.faa
+    wildcards: genome=GCA_011765385.1_ASM1176538v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 60.
+62 of 201 steps (31%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa
+    jobid: 172
+    reason: Missing output files: data/genomes_unzip/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa
+    wildcards: genome=GCA_013347225.1_ASM1334722v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 12.
+63 of 201 steps (31%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011301495.1_ASM1130149v1/GCA_011301495.1_ASM1130149v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011301495.1_ASM1130149v1/GCA_011301495.1_ASM1130149v1_protein.faa
+    jobid: 38
+    reason: Missing output files: data/genomes_unzip/GCA_011301495.1_ASM1130149v1/GCA_011301495.1_ASM1130149v1_protein.faa
+    wildcards: genome=GCA_011301495.1_ASM1130149v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 172.
+64 of 201 steps (32%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000648525.1_ASM64852v1/GCA_000648525.1_ASM64852v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000648525.1_ASM64852v1/GCA_000648525.1_ASM64852v1_protein.faa
+    jobid: 142
+    reason: Missing output files: data/genomes_unzip/GCA_000648525.1_ASM64852v1/GCA_000648525.1_ASM64852v1_protein.faa
+    wildcards: genome=GCA_000648525.1_ASM64852v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 38.
+65 of 201 steps (32%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011301835.1_ASM1130183v1/GCA_011301835.1_ASM1130183v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011301835.1_ASM1130183v1/GCA_011301835.1_ASM1130183v1_protein.faa
+    jobid: 82
+    reason: Missing output files: data/genomes_unzip/GCA_011301835.1_ASM1130183v1/GCA_011301835.1_ASM1130183v1_protein.faa
+    wildcards: genome=GCA_011301835.1_ASM1130183v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 142.
+66 of 201 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa
+    jobid: 22
+    reason: Missing output files: data/genomes_unzip/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa
+    wildcards: genome=GCA_011765425.1_ASM1176542v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 82.
+67 of 201 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011742775.2_ASM1174277v2/GCA_011742775.2_ASM1174277v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_011742775.2_ASM1174277v2/GCA_011742775.2_ASM1174277v2_protein.faa
+    jobid: 112
+    reason: Missing output files: data/genomes_unzip/GCA_011742775.2_ASM1174277v2/GCA_011742775.2_ASM1174277v2_protein.faa
+    wildcards: genome=GCA_011742775.2_ASM1174277v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 22.
+68 of 201 steps (34%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011316785.2_ASM1131678v2/GCA_011316785.2_ASM1131678v2_protein.faa
+    output: results/GCA_011316785.2_ASM1131678v2/PGCfinder
+    jobid: 157
+    reason: Missing output files: results/GCA_011316785.2_ASM1131678v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011316785.2_ASM1131678v2/GCA_011316785.2_ASM1131678v2_protein.faa
+    wildcards: genome=GCA_011316785.2_ASM1131678v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:52 2024]
+Finished job 112.
+69 of 201 steps (34%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:52 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011301495.1_ASM1130149v1/GCA_011301495.1_ASM1130149v1_protein.faa
+    output: results/GCA_011301495.1_ASM1130149v1/PGCfinder
+    jobid: 37
+    reason: Missing output files: results/GCA_011301495.1_ASM1130149v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011301495.1_ASM1130149v1/GCA_011301495.1_ASM1130149v1_protein.faa
+    wildcards: genome=GCA_011301495.1_ASM1130149v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:53 2024]
+Finished job 49.
+70 of 201 steps (35%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:53 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013315935.1_ASM1331593v1/GCA_013315935.1_ASM1331593v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013315935.1_ASM1331593v1/GCA_013315935.1_ASM1331593v1_protein.faa
+    jobid: 98
+    reason: Missing output files: data/genomes_unzip/GCA_013315935.1_ASM1331593v1/GCA_013315935.1_ASM1331593v1_protein.faa
+    wildcards: genome=GCA_013315935.1_ASM1331593v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:53 2024]
+Finished job 98.
+71 of 201 steps (35%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:53 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013315935.1_ASM1331593v1/GCA_013315935.1_ASM1331593v1_protein.faa
+    output: results/GCA_013315935.1_ASM1331593v1/PGCfinder
+    jobid: 97
+    reason: Missing output files: results/GCA_013315935.1_ASM1331593v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013315935.1_ASM1331593v1/GCA_013315935.1_ASM1331593v1_protein.faa
+    wildcards: genome=GCA_013315935.1_ASM1331593v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:53 2024]
+Finished job 197.
+72 of 201 steps (36%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:53 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa
+    output: results/GCA_013414705.1_ASM1341470v1/PGCfinder
+    jobid: 83
+    reason: Missing output files: results/GCA_013414705.1_ASM1341470v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013414705.1_ASM1341470v1/GCA_013414705.1_ASM1341470v1_protein.faa
+    wildcards: genome=GCA_013414705.1_ASM1341470v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:53 2024]
+Finished job 157.
+73 of 201 steps (36%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:53 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000830315.1_ASM83031v1/GCA_000830315.1_ASM83031v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000830315.1_ASM83031v1/GCA_000830315.1_ASM83031v1_protein.faa
+    jobid: 52
+    reason: Missing output files: data/genomes_unzip/GCA_000830315.1_ASM83031v1/GCA_000830315.1_ASM83031v1_protein.faa
+    wildcards: genome=GCA_000830315.1_ASM83031v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:53 2024]
+Finished job 52.
+74 of 201 steps (37%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:53 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+    output: results/GCA_000492175.2_ASM49217v2/PGCfinder
+    jobid: 59
+    reason: Missing output files: results/GCA_000492175.2_ASM49217v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000492175.2_ASM49217v2/GCA_000492175.2_ASM49217v2_protein.faa
+    wildcards: genome=GCA_000492175.2_ASM49217v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:54 2024]
+Finished job 37.
+75 of 201 steps (37%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:54 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa
+    output: results/GCA_010725135.1_ASM1072513v1/PGCfinder
+    jobid: 23
+    reason: Missing output files: results/GCA_010725135.1_ASM1072513v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_010725135.1_ASM1072513v1/GCA_010725135.1_ASM1072513v1_protein.faa
+    wildcards: genome=GCA_010725135.1_ASM1072513v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:54 2024]
+Finished job 97.
+76 of 201 steps (38%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:54 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000486525.2_ASM48652v2/GCA_000486525.2_ASM48652v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000486525.2_ASM48652v2/GCA_000486525.2_ASM48652v2_protein.faa
+    jobid: 188
+    reason: Missing output files: data/genomes_unzip/GCA_000486525.2_ASM48652v2/GCA_000486525.2_ASM48652v2_protein.faa
+    wildcards: genome=GCA_000486525.2_ASM48652v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:55 2024]
+Finished job 188.
+77 of 201 steps (38%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:55 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000486525.2_ASM48652v2/GCA_000486525.2_ASM48652v2_protein.faa
+    output: results/GCA_000486525.2_ASM48652v2/PGCfinder
+    jobid: 187
+    reason: Missing output files: results/GCA_000486525.2_ASM48652v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000486525.2_ASM48652v2/GCA_000486525.2_ASM48652v2_protein.faa
+    wildcards: genome=GCA_000486525.2_ASM48652v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:55 2024]
+Finished job 83.
+78 of 201 steps (39%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:55 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011765465.1_ASM1176546v1/GCA_011765465.1_ASM1176546v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011765465.1_ASM1176546v1/GCA_011765465.1_ASM1176546v1_protein.faa
+    jobid: 8
+    reason: Missing output files: data/genomes_unzip/GCA_011765465.1_ASM1176546v1/GCA_011765465.1_ASM1176546v1_protein.faa
+    wildcards: genome=GCA_011765465.1_ASM1176546v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:55 2024]
+Finished job 8.
+79 of 201 steps (39%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:55 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011765465.1_ASM1176546v1/GCA_011765465.1_ASM1176546v1_protein.faa
+    output: results/GCA_011765465.1_ASM1176546v1/PGCfinder
+    jobid: 7
+    reason: Missing output files: results/GCA_011765465.1_ASM1176546v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011765465.1_ASM1176546v1/GCA_011765465.1_ASM1176546v1_protein.faa
+    wildcards: genome=GCA_011765465.1_ASM1176546v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:55 2024]
+Finished job 59.
+80 of 201 steps (40%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:55 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011290585.1_ASM1129058v1/GCA_011290585.1_ASM1129058v1_protein.faa
+    output: results/GCA_011290585.1_ASM1129058v1/PGCfinder
+    jobid: 29
+    reason: Missing output files: results/GCA_011290585.1_ASM1129058v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011290585.1_ASM1129058v1/GCA_011290585.1_ASM1129058v1_protein.faa
+    wildcards: genome=GCA_011290585.1_ASM1129058v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 29.
+81 of 201 steps (40%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000826905.1_ASM82690v1/GCA_000826905.1_ASM82690v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000826905.1_ASM82690v1/GCA_000826905.1_ASM82690v1_protein.faa
+    jobid: 68
+    reason: Missing output files: data/genomes_unzip/GCA_000826905.1_ASM82690v1/GCA_000826905.1_ASM82690v1_protein.faa
+    wildcards: genome=GCA_000826905.1_ASM82690v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 23.
+82 of 201 steps (41%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa
+    jobid: 182
+    reason: Missing output files: data/genomes_unzip/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa
+    wildcards: genome=GCA_013341355.1_ASM1334135v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 68.
+83 of 201 steps (41%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    jobid: 152
+    reason: Missing output files: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    wildcards: genome=GCA_000328745.1_ASM32874v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 182.
+84 of 201 steps (42%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa
+    jobid: 92
+    reason: Missing output files: data/genomes_unzip/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa
+    wildcards: genome=GCA_000714635.1_ASM71463v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 152.
+85 of 201 steps (42%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa
+    jobid: 32
+    reason: Missing output files: data/genomes_unzip/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa
+    wildcards: genome=GCA_013374835.1_ASM1337483v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 92.
+86 of 201 steps (43%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa
+    jobid: 122
+    reason: Missing output files: data/genomes_unzip/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa
+    wildcards: genome=GCA_011044455.1_ASM1104445v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 32.
+87 of 201 steps (43%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012151455.1_ASM1215145v1/GCA_012151455.1_ASM1215145v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012151455.1_ASM1215145v1/GCA_012151455.1_ASM1215145v1_protein.faa
+    jobid: 62
+    reason: Missing output files: data/genomes_unzip/GCA_012151455.1_ASM1215145v1/GCA_012151455.1_ASM1215145v1_protein.faa
+    wildcards: genome=GCA_012151455.1_ASM1215145v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 122.
+88 of 201 steps (44%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013378335.1_ASM1337833v1/GCA_013378335.1_ASM1337833v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013378335.1_ASM1337833v1/GCA_013378335.1_ASM1337833v1_protein.faa
+    jobid: 174
+    reason: Missing output files: data/genomes_unzip/GCA_013378335.1_ASM1337833v1/GCA_013378335.1_ASM1337833v1_protein.faa
+    wildcards: genome=GCA_013378335.1_ASM1337833v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 62.
+89 of 201 steps (44%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa
+    jobid: 144
+    reason: Missing output files: data/genomes_unzip/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa
+    wildcards: genome=GCA_012534935.1_ASM1253493v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 174.
+90 of 201 steps (45%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000648555.1_ASM64855v1/GCA_000648555.1_ASM64855v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000648555.1_ASM64855v1/GCA_000648555.1_ASM64855v1_protein.faa
+    jobid: 114
+    reason: Missing output files: data/genomes_unzip/GCA_000648555.1_ASM64855v1/GCA_000648555.1_ASM64855v1_protein.faa
+    wildcards: genome=GCA_000648555.1_ASM64855v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 144.
+91 of 201 steps (45%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa.gz
+    output: data/genomes_unzip/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa
+    jobid: 54
+    reason: Missing output files: data/genomes_unzip/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa
+    wildcards: genome=GCA_000189435.3_ASM18943v3
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 114.
+92 of 201 steps (46%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012151455.1_ASM1215145v1/GCA_012151455.1_ASM1215145v1_protein.faa
+    output: results/GCA_012151455.1_ASM1215145v1/PGCfinder
+    jobid: 61
+    reason: Missing output files: results/GCA_012151455.1_ASM1215145v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012151455.1_ASM1215145v1/GCA_012151455.1_ASM1215145v1_protein.faa
+    wildcards: genome=GCA_012151455.1_ASM1215145v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:56 2024]
+Finished job 54.
+93 of 201 steps (46%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:56 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa
+    output: results/GCA_011044455.1_ASM1104445v1/PGCfinder
+    jobid: 121
+    reason: Missing output files: results/GCA_011044455.1_ASM1104445v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011044455.1_ASM1104445v1/GCA_011044455.1_ASM1104445v1_protein.faa
+    wildcards: genome=GCA_011044455.1_ASM1104445v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:57 2024]
+Finished job 187.
+94 of 201 steps (47%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:57 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012558165.1_ASM1255816v1/GCA_012558165.1_ASM1255816v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012558165.1_ASM1255816v1/GCA_012558165.1_ASM1255816v1_protein.faa
+    jobid: 40
+    reason: Missing output files: data/genomes_unzip/GCA_012558165.1_ASM1255816v1/GCA_012558165.1_ASM1255816v1_protein.faa
+    wildcards: genome=GCA_012558165.1_ASM1255816v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:57 2024]
+Finished job 7.
+95 of 201 steps (47%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa
+    output: results/GCA_013374835.1_ASM1337483v1/PGCfinder
+    jobid: 31
+    reason: Missing output files: results/GCA_013374835.1_ASM1337483v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013374835.1_ASM1337483v1/GCA_013374835.1_ASM1337483v1_protein.faa
+    wildcards: genome=GCA_013374835.1_ASM1337483v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:57 2024]
+Finished job 40.
+96 of 201 steps (48%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:57 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012558165.1_ASM1255816v1/GCA_012558165.1_ASM1255816v1_protein.faa
+    output: results/GCA_012558165.1_ASM1255816v1/PGCfinder
+    jobid: 39
+    reason: Missing output files: results/GCA_012558165.1_ASM1255816v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012558165.1_ASM1255816v1/GCA_012558165.1_ASM1255816v1_protein.faa
+    wildcards: genome=GCA_012558165.1_ASM1255816v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 31.
+97 of 201 steps (48%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011301315.1_ASM1130131v1/GCA_011301315.1_ASM1130131v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011301315.1_ASM1130131v1/GCA_011301315.1_ASM1130131v1_protein.faa
+    jobid: 100
+    reason: Missing output files: data/genomes_unzip/GCA_011301315.1_ASM1130131v1/GCA_011301315.1_ASM1130131v1_protein.faa
+    wildcards: genome=GCA_011301315.1_ASM1130131v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 100.
+98 of 201 steps (49%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011301315.1_ASM1130131v1/GCA_011301315.1_ASM1130131v1_protein.faa
+    output: results/GCA_011301315.1_ASM1130131v1/PGCfinder
+    jobid: 99
+    reason: Missing output files: results/GCA_011301315.1_ASM1130131v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011301315.1_ASM1130131v1/GCA_011301315.1_ASM1130131v1_protein.faa
+    wildcards: genome=GCA_011301315.1_ASM1130131v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 61.
+99 of 201 steps (49%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa
+    output: results/GCA_000714635.1_ASM71463v1/PGCfinder
+    jobid: 91
+    reason: Missing output files: results/GCA_000714635.1_ASM71463v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000714635.1_ASM71463v1/GCA_000714635.1_ASM71463v1_protein.faa
+    wildcards: genome=GCA_000714635.1_ASM71463v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 121.
+100 of 201 steps (50%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa
+    jobid: 160
+    reason: Missing output files: data/genomes_unzip/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa
+    wildcards: genome=GCA_010694505.1_ASM1069450v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 160.
+101 of 201 steps (50%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa
+    output: results/GCA_010694505.1_ASM1069450v1/PGCfinder
+    jobid: 159
+    reason: Missing output files: results/GCA_010694505.1_ASM1069450v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_010694505.1_ASM1069450v1/GCA_010694505.1_ASM1069450v1_protein.faa
+    wildcards: genome=GCA_010694505.1_ASM1069450v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 39.
+102 of 201 steps (51%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000826925.1_ASM82692v1/GCA_000826925.1_ASM82692v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000826925.1_ASM82692v1/GCA_000826925.1_ASM82692v1_protein.faa
+    jobid: 196
+    reason: Missing output files: data/genomes_unzip/GCA_000826925.1_ASM82692v1/GCA_000826925.1_ASM82692v1_protein.faa
+    wildcards: genome=GCA_000826925.1_ASM82692v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 196.
+103 of 201 steps (51%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa
+    jobid: 136
+    reason: Missing output files: data/genomes_unzip/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa
+    wildcards: genome=GCA_013341335.1_ASM1334133v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:58 2024]
+Finished job 136.
+104 of 201 steps (52%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:58 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    output: results/GCA_000328745.1_ASM32874v1/PGCfinder
+    jobid: 151
+    reason: Missing output files: results/GCA_000328745.1_ASM32874v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    wildcards: genome=GCA_000328745.1_ASM32874v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:59 2024]
+Finished job 99.
+105 of 201 steps (52%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:59 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013402835.1_ASM1340283v1/GCA_013402835.1_ASM1340283v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013402835.1_ASM1340283v1/GCA_013402835.1_ASM1340283v1_protein.faa
+    jobid: 70
+    reason: Missing output files: data/genomes_unzip/GCA_013402835.1_ASM1340283v1/GCA_013402835.1_ASM1340283v1_protein.faa
+    wildcards: genome=GCA_013402835.1_ASM1340283v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:10:59 2024]
+Finished job 70.
+106 of 201 steps (53%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:10:59 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013402835.1_ASM1340283v1/GCA_013402835.1_ASM1340283v1_protein.faa
+    output: results/GCA_013402835.1_ASM1340283v1/PGCfinder
+    jobid: 69
+    reason: Missing output files: results/GCA_013402835.1_ASM1340283v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013402835.1_ASM1340283v1/GCA_013402835.1_ASM1340283v1_protein.faa
+    wildcards: genome=GCA_013402835.1_ASM1340283v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:00 2024]
+Finished job 159.
+107 of 201 steps (53%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:00 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa
+    output: results/GCA_013341355.1_ASM1334135v1/PGCfinder
+    jobid: 181
+    reason: Missing output files: results/GCA_013341355.1_ASM1334135v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013341355.1_ASM1334135v1/GCA_013341355.1_ASM1334135v1_protein.faa
+    wildcards: genome=GCA_013341355.1_ASM1334135v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:00 2024]
+Finished job 91.
+108 of 201 steps (54%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:00 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    jobid: 130
+    reason: Missing output files: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    wildcards: genome=GCA_000277105.1_ASM27710v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:00 2024]
+Finished job 130.
+109 of 201 steps (54%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:00 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    output: results/GCA_000277105.1_ASM27710v1/PGCfinder
+    jobid: 129
+    reason: Missing output files: results/GCA_000277105.1_ASM27710v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    wildcards: genome=GCA_000277105.1_ASM27710v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:01 2024]
+Finished job 69.
+110 of 201 steps (55%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:01 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011765405.1_ASM1176540v1/GCA_011765405.1_ASM1176540v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011765405.1_ASM1176540v1/GCA_011765405.1_ASM1176540v1_protein.faa
+    jobid: 2
+    reason: Missing output files: data/genomes_unzip/GCA_011765405.1_ASM1176540v1/GCA_011765405.1_ASM1176540v1_protein.faa
+    wildcards: genome=GCA_011765405.1_ASM1176540v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:01 2024]
+Finished job 2.
+111 of 201 steps (55%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:01 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011765405.1_ASM1176540v1/GCA_011765405.1_ASM1176540v1_protein.faa
+    output: results/GCA_011765405.1_ASM1176540v1/PGCfinder
+    jobid: 1
+    reason: Missing output files: results/GCA_011765405.1_ASM1176540v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011765405.1_ASM1176540v1/GCA_011765405.1_ASM1176540v1_protein.faa
+    wildcards: genome=GCA_011765405.1_ASM1176540v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 181.
+112 of 201 steps (56%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013414865.1_ASM1341486v1/GCA_013414865.1_ASM1341486v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013414865.1_ASM1341486v1/GCA_013414865.1_ASM1341486v1_protein.faa
+    jobid: 190
+    reason: Missing output files: data/genomes_unzip/GCA_013414865.1_ASM1341486v1/GCA_013414865.1_ASM1341486v1_protein.faa
+    wildcards: genome=GCA_013414865.1_ASM1341486v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 190.
+113 of 201 steps (56%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013414865.1_ASM1341486v1/GCA_013414865.1_ASM1341486v1_protein.faa
+    output: results/GCA_013414865.1_ASM1341486v1/PGCfinder
+    jobid: 189
+    reason: Missing output files: results/GCA_013414865.1_ASM1341486v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013414865.1_ASM1341486v1/GCA_013414865.1_ASM1341486v1_protein.faa
+    wildcards: genome=GCA_013414865.1_ASM1341486v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 151.
+114 of 201 steps (57%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa
+    output: results/GCA_012534935.1_ASM1253493v1/PGCfinder
+    jobid: 143
+    reason: Missing output files: results/GCA_012534935.1_ASM1253493v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012534935.1_ASM1253493v1/GCA_012534935.1_ASM1253493v1_protein.faa
+    wildcards: genome=GCA_012534935.1_ASM1253493v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 129.
+115 of 201 steps (57%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+    jobid: 10
+    reason: Missing output files: data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+    wildcards: genome=GCA_012933685.1_ASM1293368v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 10.
+116 of 201 steps (58%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa
+    jobid: 128
+    reason: Missing output files: data/genomes_unzip/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa
+    wildcards: genome=GCA_000965745.1_ASM96574v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:02 2024]
+Finished job 128.
+117 of 201 steps (58%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:02 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa
+    output: results/GCA_000189435.3_ASM18943v3/PGCfinder
+    jobid: 53
+    reason: Missing output files: results/GCA_000189435.3_ASM18943v3/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa
+    wildcards: genome=GCA_000189435.3_ASM18943v3
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:03 2024]
+Finished job 1.
+118 of 201 steps (59%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:03 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000648555.1_ASM64855v1/GCA_000648555.1_ASM64855v1_protein.faa
+    output: results/GCA_000648555.1_ASM64855v1/PGCfinder
+    jobid: 113
+    reason: Missing output files: results/GCA_000648555.1_ASM64855v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000648555.1_ASM64855v1/GCA_000648555.1_ASM64855v1_protein.faa
+    wildcards: genome=GCA_000648555.1_ASM64855v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:03 2024]
+Finished job 189.
+119 of 201 steps (59%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:03 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+    output: results/GCA_012933685.1_ASM1293368v1/PGCfinder
+    jobid: 9
+    reason: Missing output files: results/GCA_012933685.1_ASM1293368v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012933685.1_ASM1293368v1/GCA_012933685.1_ASM1293368v1_protein.faa
+    wildcards: genome=GCA_012933685.1_ASM1293368v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:03 2024]
+Finished job 143.
+120 of 201 steps (60%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:03 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013378335.1_ASM1337833v1/GCA_013378335.1_ASM1337833v1_protein.faa
+    output: results/GCA_013378335.1_ASM1337833v1/PGCfinder
+    jobid: 173
+    reason: Missing output files: results/GCA_013378335.1_ASM1337833v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013378335.1_ASM1337833v1/GCA_013378335.1_ASM1337833v1_protein.faa
+    wildcards: genome=GCA_013378335.1_ASM1337833v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 53.
+121 of 201 steps (60%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013414795.1_ASM1341479v1/GCA_013414795.1_ASM1341479v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013414795.1_ASM1341479v1/GCA_013414795.1_ASM1341479v1_protein.faa
+    jobid: 56
+    reason: Missing output files: data/genomes_unzip/GCA_013414795.1_ASM1341479v1/GCA_013414795.1_ASM1341479v1_protein.faa
+    wildcards: genome=GCA_013414795.1_ASM1341479v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 56.
+122 of 201 steps (61%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013414795.1_ASM1341479v1/GCA_013414795.1_ASM1341479v1_protein.faa
+    output: results/GCA_013414795.1_ASM1341479v1/PGCfinder
+    jobid: 55
+    reason: Missing output files: results/GCA_013414795.1_ASM1341479v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013414795.1_ASM1341479v1/GCA_013414795.1_ASM1341479v1_protein.faa
+    wildcards: genome=GCA_013414795.1_ASM1341479v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 113.
+123 of 201 steps (61%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012151155.1_ASM1215115v1/GCA_012151155.1_ASM1215115v1_protein.faa
+    output: results/GCA_012151155.1_ASM1215115v1/PGCfinder
+    jobid: 65
+    reason: Missing output files: results/GCA_012151155.1_ASM1215115v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012151155.1_ASM1215115v1/GCA_012151155.1_ASM1215115v1_protein.faa
+    wildcards: genome=GCA_012151155.1_ASM1215115v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 173.
+124 of 201 steps (62%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013315915.1_ASM1331591v1/GCA_013315915.1_ASM1331591v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013315915.1_ASM1331591v1/GCA_013315915.1_ASM1331591v1_protein.faa
+    jobid: 20
+    reason: Missing output files: data/genomes_unzip/GCA_013315915.1_ASM1331591v1/GCA_013315915.1_ASM1331591v1_protein.faa
+    wildcards: genome=GCA_013315915.1_ASM1331591v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 20.
+125 of 201 steps (62%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013162305.1_ASM1316230v1/GCA_013162305.1_ASM1316230v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013162305.1_ASM1316230v1/GCA_013162305.1_ASM1316230v1_protein.faa
+    jobid: 80
+    reason: Missing output files: data/genomes_unzip/GCA_013162305.1_ASM1316230v1/GCA_013162305.1_ASM1316230v1_protein.faa
+    wildcards: genome=GCA_013162305.1_ASM1316230v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 80.
+126 of 201 steps (63%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013337045.2_ASM1333704v2/GCA_013337045.2_ASM1333704v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_013337045.2_ASM1333704v2/GCA_013337045.2_ASM1333704v2_protein.faa
+    jobid: 140
+    reason: Missing output files: data/genomes_unzip/GCA_013337045.2_ASM1333704v2/GCA_013337045.2_ASM1333704v2_protein.faa
+    wildcards: genome=GCA_013337045.2_ASM1333704v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 140.
+127 of 201 steps (63%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011752455.1_ASM1175245v1/GCA_011752455.1_ASM1175245v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011752455.1_ASM1175245v1/GCA_011752455.1_ASM1175245v1_protein.faa
+    jobid: 170
+    reason: Missing output files: data/genomes_unzip/GCA_011752455.1_ASM1175245v1/GCA_011752455.1_ASM1175245v1_protein.faa
+    wildcards: genome=GCA_011752455.1_ASM1175245v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:04 2024]
+Finished job 170.
+128 of 201 steps (64%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:04 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011303355.1_ASM1130335v1/GCA_011303355.1_ASM1130335v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011303355.1_ASM1130335v1/GCA_011303355.1_ASM1130335v1_protein.faa
+    jobid: 200
+    reason: Missing output files: data/genomes_unzip/GCA_011303355.1_ASM1130335v1/GCA_011303355.1_ASM1130335v1_protein.faa
+    wildcards: genome=GCA_011303355.1_ASM1130335v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 200.
+129 of 201 steps (64%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa
+    jobid: 178
+    reason: Missing output files: data/genomes_unzip/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa
+    wildcards: genome=GCA_013283995.1_ASM1328399v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 178.
+130 of 201 steps (65%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    output: results/GCA_000219475.3_ASM21947v3/PGCfinder
+    jobid: 163
+    reason: Missing output files: results/GCA_000219475.3_ASM21947v3/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    wildcards: genome=GCA_000219475.3_ASM21947v3
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 9.
+131 of 201 steps (65%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012151595.1_ASM1215159v1/GCA_012151595.1_ASM1215159v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012151595.1_ASM1215159v1/GCA_012151595.1_ASM1215159v1_protein.faa
+    jobid: 132
+    reason: Missing output files: data/genomes_unzip/GCA_012151595.1_ASM1215159v1/GCA_012151595.1_ASM1215159v1_protein.faa
+    wildcards: genome=GCA_012151595.1_ASM1215159v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 132.
+132 of 201 steps (66%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012151595.1_ASM1215159v1/GCA_012151595.1_ASM1215159v1_protein.faa
+    output: results/GCA_012151595.1_ASM1215159v1/PGCfinder
+    jobid: 131
+    reason: Missing output files: results/GCA_012151595.1_ASM1215159v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012151595.1_ASM1215159v1/GCA_012151595.1_ASM1215159v1_protein.faa
+    wildcards: genome=GCA_012151595.1_ASM1215159v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 55.
+133 of 201 steps (66%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa
+    jobid: 146
+    reason: Missing output files: data/genomes_unzip/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa
+    wildcards: genome=GCA_000831405.1_ASM83140v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 146.
+134 of 201 steps (67%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    jobid: 86
+    reason: Missing output files: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    wildcards: genome=GCA_000474035.1_ASM47403v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:05 2024]
+Finished job 86.
+135 of 201 steps (67%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:05 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011765385.1_ASM1176538v1/GCA_011765385.1_ASM1176538v1_protein.faa
+    output: results/GCA_011765385.1_ASM1176538v1/PGCfinder
+    jobid: 11
+    reason: Missing output files: results/GCA_011765385.1_ASM1176538v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011765385.1_ASM1176538v1/GCA_011765385.1_ASM1176538v1_protein.faa
+    wildcards: genome=GCA_011765385.1_ASM1176538v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:06 2024]
+Finished job 163.
+136 of 201 steps (68%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:06 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013341375.1_ASM1334137v1/GCA_013341375.1_ASM1334137v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013341375.1_ASM1334137v1/GCA_013341375.1_ASM1334137v1_protein.faa
+    jobid: 26
+    reason: Missing output files: data/genomes_unzip/GCA_013341375.1_ASM1334137v1/GCA_013341375.1_ASM1334137v1_protein.faa
+    wildcards: genome=GCA_013341375.1_ASM1334137v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:06 2024]
+Finished job 26.
+137 of 201 steps (68%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:06 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa
+    output: results/GCA_013374855.1_ASM1337485v1/PGCfinder
+    jobid: 41
+    reason: Missing output files: results/GCA_013374855.1_ASM1337485v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013374855.1_ASM1337485v1/GCA_013374855.1_ASM1337485v1_protein.faa
+    wildcards: genome=GCA_013374855.1_ASM1337485v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:06 2024]
+Finished job 65.
+138 of 201 steps (69%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:06 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013368055.1_ASM1336805v1/GCA_013368055.1_ASM1336805v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013368055.1_ASM1336805v1/GCA_013368055.1_ASM1336805v1_protein.faa
+    jobid: 176
+    reason: Missing output files: data/genomes_unzip/GCA_013368055.1_ASM1336805v1/GCA_013368055.1_ASM1336805v1_protein.faa
+    wildcards: genome=GCA_013368055.1_ASM1336805v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:06 2024]
+Finished job 176.
+139 of 201 steps (69%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:06 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011388155.1_ASM1138815v1/GCA_011388155.1_ASM1138815v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011388155.1_ASM1138815v1/GCA_011388155.1_ASM1138815v1_protein.faa
+    jobid: 116
+    reason: Missing output files: data/genomes_unzip/GCA_011388155.1_ASM1138815v1/GCA_011388155.1_ASM1138815v1_protein.faa
+    wildcards: genome=GCA_011388155.1_ASM1138815v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:06 2024]
+Finished job 116.
+140 of 201 steps (70%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:06 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013341375.1_ASM1334137v1/GCA_013341375.1_ASM1334137v1_protein.faa
+    output: results/GCA_013341375.1_ASM1334137v1/PGCfinder
+    jobid: 25
+    reason: Missing output files: results/GCA_013341375.1_ASM1334137v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013341375.1_ASM1334137v1/GCA_013341375.1_ASM1334137v1_protein.faa
+    wildcards: genome=GCA_013341375.1_ASM1334137v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:07 2024]
+Finished job 131.
+141 of 201 steps (70%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:07 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    output: results/GCA_000474035.1_ASM47403v1/PGCfinder
+    jobid: 85
+    reason: Missing output files: results/GCA_000474035.1_ASM47403v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    wildcards: genome=GCA_000474035.1_ASM47403v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:07 2024]
+Finished job 11.
+142 of 201 steps (71%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:07 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa
+    jobid: 124
+    reason: Missing output files: data/genomes_unzip/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa
+    wildcards: genome=GCA_011752475.1_ASM1175247v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:07 2024]
+Finished job 124.
+143 of 201 steps (71%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:07 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa
+    output: results/GCA_011752475.1_ASM1175247v1/PGCfinder
+    jobid: 123
+    reason: Missing output files: results/GCA_011752475.1_ASM1175247v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011752475.1_ASM1175247v1/GCA_011752475.1_ASM1175247v1_protein.faa
+    wildcards: genome=GCA_011752475.1_ASM1175247v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:07 2024]
+Finished job 41.
+144 of 201 steps (72%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:07 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa
+    output: results/GCA_000831405.1_ASM83140v1/PGCfinder
+    jobid: 145
+    reason: Missing output files: results/GCA_000831405.1_ASM83140v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000831405.1_ASM83140v1/GCA_000831405.1_ASM83140v1_protein.faa
+    wildcards: genome=GCA_000831405.1_ASM83140v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 25.
+145 of 201 steps (72%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+    jobid: 4
+    reason: Missing output files: data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+    wildcards: genome=GCA_013374135.1_ASM1337413v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 4.
+146 of 201 steps (73%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013315875.1_ASM1331587v1/GCA_013315875.1_ASM1331587v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013315875.1_ASM1331587v1/GCA_013315875.1_ASM1331587v1_protein.faa
+    jobid: 64
+    reason: Missing output files: data/genomes_unzip/GCA_013315875.1_ASM1331587v1/GCA_013315875.1_ASM1331587v1_protein.faa
+    wildcards: genome=GCA_013315875.1_ASM1331587v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 64.
+147 of 201 steps (73%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013146725.1_ASM1314672v1/GCA_013146725.1_ASM1314672v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013146725.1_ASM1314672v1/GCA_013146725.1_ASM1314672v1_protein.faa
+    jobid: 184
+    reason: Missing output files: data/genomes_unzip/GCA_013146725.1_ASM1314672v1/GCA_013146725.1_ASM1314672v1_protein.faa
+    wildcards: genome=GCA_013146725.1_ASM1314672v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 184.
+148 of 201 steps (74%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013146725.1_ASM1314672v1/GCA_013146725.1_ASM1314672v1_protein.faa
+    output: results/GCA_013146725.1_ASM1314672v1/PGCfinder
+    jobid: 183
+    reason: Missing output files: results/GCA_013146725.1_ASM1314672v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013146725.1_ASM1314672v1/GCA_013146725.1_ASM1314672v1_protein.faa
+    wildcards: genome=GCA_013146725.1_ASM1314672v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 123.
+149 of 201 steps (74%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013315875.1_ASM1331587v1/GCA_013315875.1_ASM1331587v1_protein.faa
+    output: results/GCA_013315875.1_ASM1331587v1/PGCfinder
+    jobid: 63
+    reason: Missing output files: results/GCA_013315875.1_ASM1331587v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013315875.1_ASM1331587v1/GCA_013315875.1_ASM1331587v1_protein.faa
+    wildcards: genome=GCA_013315875.1_ASM1331587v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 145.
+150 of 201 steps (75%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011752455.1_ASM1175245v1/GCA_011752455.1_ASM1175245v1_protein.faa
+    output: results/GCA_011752455.1_ASM1175245v1/PGCfinder
+    jobid: 169
+    reason: Missing output files: results/GCA_011752455.1_ASM1175245v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011752455.1_ASM1175245v1/GCA_011752455.1_ASM1175245v1_protein.faa
+    wildcards: genome=GCA_011752455.1_ASM1175245v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:08 2024]
+Finished job 85.
+151 of 201 steps (75%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:08 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+    output: results/GCA_013374135.1_ASM1337413v1/PGCfinder
+    jobid: 3
+    reason: Missing output files: results/GCA_013374135.1_ASM1337413v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013374135.1_ASM1337413v1/GCA_013374135.1_ASM1337413v1_protein.faa
+    wildcards: genome=GCA_013374135.1_ASM1337413v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:09 2024]
+Finished job 169.
+152 of 201 steps (76%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:09 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa
+    jobid: 34
+    reason: Missing output files: data/genomes_unzip/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa
+    wildcards: genome=GCA_012934735.1_ASM1293473v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:09 2024]
+Finished job 34.
+153 of 201 steps (76%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:09 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa
+    output: results/GCA_012934735.1_ASM1293473v1/PGCfinder
+    jobid: 33
+    reason: Missing output files: results/GCA_012934735.1_ASM1293473v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012934735.1_ASM1293473v1/GCA_012934735.1_ASM1293473v1_protein.faa
+    wildcards: genome=GCA_012934735.1_ASM1293473v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:09 2024]
+Finished job 63.
+154 of 201 steps (77%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:09 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011388155.1_ASM1138815v1/GCA_011388155.1_ASM1138815v1_protein.faa
+    output: results/GCA_011388155.1_ASM1138815v1/PGCfinder
+    jobid: 115
+    reason: Missing output files: results/GCA_011388155.1_ASM1138815v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011388155.1_ASM1138815v1/GCA_011388155.1_ASM1138815v1_protein.faa
+    wildcards: genome=GCA_011388155.1_ASM1138815v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 183.
+155 of 201 steps (77%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa
+    jobid: 94
+    reason: Missing output files: data/genomes_unzip/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa
+    wildcards: genome=GCA_000688775.2_ASM68877v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 94.
+156 of 201 steps (78%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013334165.1_ASM1333416v1/GCA_013334165.1_ASM1333416v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013334165.1_ASM1333416v1/GCA_013334165.1_ASM1333416v1_protein.faa
+    jobid: 162
+    reason: Missing output files: data/genomes_unzip/GCA_013334165.1_ASM1333416v1/GCA_013334165.1_ASM1333416v1_protein.faa
+    wildcards: genome=GCA_013334165.1_ASM1333416v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 3.
+157 of 201 steps (78%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+    output: results/GCA_013372025.1_ASM1337202v1/PGCfinder
+    jobid: 95
+    reason: Missing output files: results/GCA_013372025.1_ASM1337202v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013372025.1_ASM1337202v1/GCA_013372025.1_ASM1337202v1_protein.faa
+    wildcards: genome=GCA_013372025.1_ASM1337202v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 162.
+158 of 201 steps (79%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_012970745.1_ASM1297074v1/GCA_012970745.1_ASM1297074v1_protein.faa
+    output: results/GCA_012970745.1_ASM1297074v1/PGCfinder
+    jobid: 35
+    reason: Missing output files: results/GCA_012970745.1_ASM1297074v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_012970745.1_ASM1297074v1/GCA_012970745.1_ASM1297074v1_protein.faa
+    wildcards: genome=GCA_012970745.1_ASM1297074v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 33.
+159 of 201 steps (79%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    output: results/GCA_000307975.2_ASM30797v2/PGCfinder
+    jobid: 103
+    reason: Missing output files: results/GCA_000307975.2_ASM30797v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    wildcards: genome=GCA_000307975.2_ASM30797v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 95.
+160 of 201 steps (80%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa
+    jobid: 88
+    reason: Missing output files: data/genomes_unzip/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa
+    wildcards: genome=GCA_011082265.1_ASM1108226v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 88.
+161 of 201 steps (80%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+    jobid: 148
+    reason: Missing output files: data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+    wildcards: genome=GCA_013348845.1_ASM1334884v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 148.
+162 of 201 steps (81%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_013155105.1_ASM1315510v1/GCA_013155105.1_ASM1315510v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_013155105.1_ASM1315510v1/GCA_013155105.1_ASM1315510v1_protein.faa
+    jobid: 72
+    reason: Missing output files: data/genomes_unzip/GCA_013155105.1_ASM1315510v1/GCA_013155105.1_ASM1315510v1_protein.faa
+    wildcards: genome=GCA_013155105.1_ASM1315510v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:10 2024]
+Finished job 72.
+163 of 201 steps (81%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:10 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa
+    output: results/GCA_011082265.1_ASM1108226v1/PGCfinder
+    jobid: 87
+    reason: Missing output files: results/GCA_011082265.1_ASM1108226v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011082265.1_ASM1108226v1/GCA_011082265.1_ASM1108226v1_protein.faa
+    wildcards: genome=GCA_011082265.1_ASM1108226v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:11 2024]
+Finished job 115.
+164 of 201 steps (82%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:11 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa
+    output: results/GCA_013347225.1_ASM1334722v1/PGCfinder
+    jobid: 171
+    reason: Missing output files: results/GCA_013347225.1_ASM1334722v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013347225.1_ASM1334722v1/GCA_013347225.1_ASM1334722v1_protein.faa
+    wildcards: genome=GCA_013347225.1_ASM1334722v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:12 2024]
+Finished job 35.
+165 of 201 steps (82%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:12 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011742775.2_ASM1174277v2/GCA_011742775.2_ASM1174277v2_protein.faa
+    output: results/GCA_011742775.2_ASM1174277v2/PGCfinder
+    jobid: 111
+    reason: Missing output files: results/GCA_011742775.2_ASM1174277v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011742775.2_ASM1174277v2/GCA_011742775.2_ASM1174277v2_protein.faa
+    wildcards: genome=GCA_011742775.2_ASM1174277v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:12 2024]
+Finished job 87.
+166 of 201 steps (83%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:12 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000830315.1_ASM83031v1/GCA_000830315.1_ASM83031v1_protein.faa
+    output: results/GCA_000830315.1_ASM83031v1/PGCfinder
+    jobid: 51
+    reason: Missing output files: results/GCA_000830315.1_ASM83031v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000830315.1_ASM83031v1/GCA_000830315.1_ASM83031v1_protein.faa
+    wildcards: genome=GCA_000830315.1_ASM83031v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:12 2024]
+Finished job 103.
+167 of 201 steps (83%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:12 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa
+    output: results/GCA_011765425.1_ASM1176542v1/PGCfinder
+    jobid: 21
+    reason: Missing output files: results/GCA_011765425.1_ASM1176542v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011765425.1_ASM1176542v1/GCA_011765425.1_ASM1176542v1_protein.faa
+    wildcards: genome=GCA_011765425.1_ASM1176542v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:13 2024]
+Finished job 51.
+168 of 201 steps (84%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000648525.1_ASM64852v1/GCA_000648525.1_ASM64852v1_protein.faa
+    output: results/GCA_000648525.1_ASM64852v1/PGCfinder
+    jobid: 141
+    reason: Missing output files: results/GCA_000648525.1_ASM64852v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000648525.1_ASM64852v1/GCA_000648525.1_ASM64852v1_protein.faa
+    wildcards: genome=GCA_000648525.1_ASM64852v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:13 2024]
+Finished job 171.
+169 of 201 steps (84%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011301835.1_ASM1130183v1/GCA_011301835.1_ASM1130183v1_protein.faa
+    output: results/GCA_011301835.1_ASM1130183v1/PGCfinder
+    jobid: 81
+    reason: Missing output files: results/GCA_011301835.1_ASM1130183v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011301835.1_ASM1130183v1/GCA_011301835.1_ASM1130183v1_protein.faa
+    wildcards: genome=GCA_011301835.1_ASM1130183v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:13 2024]
+Finished job 21.
+170 of 201 steps (85%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011302195.1_ASM1130219v1/GCA_011302195.1_ASM1130219v1_protein.faa
+    output: results/GCA_011302195.1_ASM1130219v1/PGCfinder
+    jobid: 117
+    reason: Missing output files: results/GCA_011302195.1_ASM1130219v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011302195.1_ASM1130219v1/GCA_011302195.1_ASM1130219v1_protein.faa
+    wildcards: genome=GCA_011302195.1_ASM1130219v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:14 2024]
+Finished job 141.
+171 of 201 steps (85%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:14 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa
+    output: results/GCA_000699475.1_ASM69947v1/PGCfinder
+    jobid: 119
+    reason: Missing output files: results/GCA_000699475.1_ASM69947v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000699475.1_ASM69947v1/GCA_000699475.1_ASM69947v1_protein.faa
+    wildcards: genome=GCA_000699475.1_ASM69947v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:14 2024]
+Finished job 111.
+172 of 201 steps (86%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:14 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000988445.1_ASM98844v1/GCA_000988445.1_ASM98844v1_protein.faa
+    output: results/GCA_000988445.1_ASM98844v1/PGCfinder
+    jobid: 179
+    reason: Missing output files: results/GCA_000988445.1_ASM98844v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000988445.1_ASM98844v1/GCA_000988445.1_ASM98844v1_protein.faa
+    wildcards: genome=GCA_000988445.1_ASM98844v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:15 2024]
+Finished job 119.
+173 of 201 steps (86%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:15 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+    output: results/GCA_000830275.1_ASM83027v1/PGCfinder
+    jobid: 89
+    reason: Missing output files: results/GCA_000830275.1_ASM83027v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000830275.1_ASM83027v1/GCA_000830275.1_ASM83027v1_protein.faa
+    wildcards: genome=GCA_000830275.1_ASM83027v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:15 2024]
+Finished job 117.
+174 of 201 steps (87%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:15 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+    output: results/GCA_013403525.1_ASM1340352v1/PGCfinder
+    jobid: 149
+    reason: Missing output files: results/GCA_013403525.1_ASM1340352v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013403525.1_ASM1340352v1/GCA_013403525.1_ASM1340352v1_protein.faa
+    wildcards: genome=GCA_013403525.1_ASM1340352v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:15 2024]
+Finished job 81.
+175 of 201 steps (87%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:15 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa.gz
+    output: data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+    jobid: 110
+    reason: Missing output files: data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+    wildcards: genome=GCA_000723365.1_MAM001
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:15 2024]
+Finished job 110.
+176 of 201 steps (88%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:15 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa
+    output: results/GCA_000965745.1_ASM96574v1/PGCfinder
+    jobid: 127
+    reason: Missing output files: results/GCA_000965745.1_ASM96574v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000965745.1_ASM96574v1/GCA_000965745.1_ASM96574v1_protein.faa
+    wildcards: genome=GCA_000965745.1_ASM96574v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:16 2024]
+Finished job 179.
+177 of 201 steps (88%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:16 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000826905.1_ASM82690v1/GCA_000826905.1_ASM82690v1_protein.faa
+    output: results/GCA_000826905.1_ASM82690v1/PGCfinder
+    jobid: 67
+    reason: Missing output files: results/GCA_000826905.1_ASM82690v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000826905.1_ASM82690v1/GCA_000826905.1_ASM82690v1_protein.faa
+    wildcards: genome=GCA_000826905.1_ASM82690v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:16 2024]
+Finished job 89.
+178 of 201 steps (89%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:16 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013334165.1_ASM1333416v1/GCA_013334165.1_ASM1333416v1_protein.faa
+    output: results/GCA_013334165.1_ASM1333416v1/PGCfinder
+    jobid: 161
+    reason: Missing output files: results/GCA_013334165.1_ASM1333416v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013334165.1_ASM1333416v1/GCA_013334165.1_ASM1333416v1_protein.faa
+    wildcards: genome=GCA_013334165.1_ASM1333416v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:16 2024]
+Finished job 149.
+179 of 201 steps (89%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:16 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_011303355.1_ASM1130335v1/GCA_011303355.1_ASM1130335v1_protein.faa
+    output: results/GCA_011303355.1_ASM1130335v1/PGCfinder
+    jobid: 199
+    reason: Missing output files: results/GCA_011303355.1_ASM1130335v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_011303355.1_ASM1130335v1/GCA_011303355.1_ASM1130335v1_protein.faa
+    wildcards: genome=GCA_011303355.1_ASM1130335v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:17 2024]
+Finished job 127.
+180 of 201 steps (90%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:17 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013368055.1_ASM1336805v1/GCA_013368055.1_ASM1336805v1_protein.faa
+    output: results/GCA_013368055.1_ASM1336805v1/PGCfinder
+    jobid: 175
+    reason: Missing output files: results/GCA_013368055.1_ASM1336805v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013368055.1_ASM1336805v1/GCA_013368055.1_ASM1336805v1_protein.faa
+    wildcards: genome=GCA_013368055.1_ASM1336805v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:18 2024]
+Finished job 67.
+181 of 201 steps (90%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:18 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa
+    output: results/GCA_013283995.1_ASM1328399v1/PGCfinder
+    jobid: 177
+    reason: Missing output files: results/GCA_013283995.1_ASM1328399v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013283995.1_ASM1328399v1/GCA_013283995.1_ASM1328399v1_protein.faa
+    wildcards: genome=GCA_013283995.1_ASM1328399v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:18 2024]
+Finished job 161.
+182 of 201 steps (91%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:18 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000732385.1_ASM73238v1/GCA_000732385.1_ASM73238v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000732385.1_ASM73238v1/GCA_000732385.1_ASM73238v1_protein.faa
+    jobid: 102
+    reason: Missing output files: data/genomes_unzip/GCA_000732385.1_ASM73238v1/GCA_000732385.1_ASM73238v1_protein.faa
+    wildcards: genome=GCA_000732385.1_ASM73238v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:18 2024]
+Finished job 102.
+183 of 201 steps (91%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:18 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013337045.2_ASM1333704v2/GCA_013337045.2_ASM1333704v2_protein.faa
+    output: results/GCA_013337045.2_ASM1333704v2/PGCfinder
+    jobid: 139
+    reason: Missing output files: results/GCA_013337045.2_ASM1333704v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013337045.2_ASM1333704v2/GCA_013337045.2_ASM1333704v2_protein.faa
+    wildcards: genome=GCA_013337045.2_ASM1333704v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:18 2024]
+Finished job 199.
+184 of 201 steps (92%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:18 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+    output: results/GCA_013348845.1_ASM1334884v1/PGCfinder
+    jobid: 147
+    reason: Missing output files: results/GCA_013348845.1_ASM1334884v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013348845.1_ASM1334884v1/GCA_013348845.1_ASM1334884v1_protein.faa
+    wildcards: genome=GCA_013348845.1_ASM1334884v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:19 2024]
+Finished job 175.
+185 of 201 steps (92%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:19 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    jobid: 192
+    reason: Missing output files: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    wildcards: genome=GCA_000277085.1_ASM27708v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:19 2024]
+Finished job 192.
+186 of 201 steps (93%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:19 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013162305.1_ASM1316230v1/GCA_013162305.1_ASM1316230v1_protein.faa
+    output: results/GCA_013162305.1_ASM1316230v1/PGCfinder
+    jobid: 79
+    reason: Missing output files: results/GCA_013162305.1_ASM1316230v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013162305.1_ASM1316230v1/GCA_013162305.1_ASM1316230v1_protein.faa
+    wildcards: genome=GCA_013162305.1_ASM1316230v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:20 2024]
+Finished job 147.
+187 of 201 steps (93%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:20 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013315915.1_ASM1331591v1/GCA_013315915.1_ASM1331591v1_protein.faa
+    output: results/GCA_013315915.1_ASM1331591v1/PGCfinder
+    jobid: 19
+    reason: Missing output files: results/GCA_013315915.1_ASM1331591v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013315915.1_ASM1331591v1/GCA_013315915.1_ASM1331591v1_protein.faa
+    wildcards: genome=GCA_013315915.1_ASM1331591v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:20 2024]
+Finished job 177.
+188 of 201 steps (94%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:20 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    jobid: 154
+    reason: Missing output files: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    wildcards: genome=GCA_000468575.2_ASM46857v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:20 2024]
+Finished job 154.
+189 of 201 steps (94%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:21 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+    output: results/GCA_000723365.1_MAM001/PGCfinder
+    jobid: 109
+    reason: Missing output files: results/GCA_000723365.1_MAM001/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000723365.1_MAM001/GCA_000723365.1_MAM001_protein.faa
+    wildcards: genome=GCA_000723365.1_MAM001
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:21 2024]
+Finished job 139.
+190 of 201 steps (95%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:21 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000826925.1_ASM82692v1/GCA_000826925.1_ASM82692v1_protein.faa
+    output: results/GCA_000826925.1_ASM82692v1/PGCfinder
+    jobid: 195
+    reason: Missing output files: results/GCA_000826925.1_ASM82692v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000826925.1_ASM82692v1/GCA_000826925.1_ASM82692v1_protein.faa
+    wildcards: genome=GCA_000826925.1_ASM82692v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:21 2024]
+Finished job 79.
+191 of 201 steps (95%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:21 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa
+    output: results/GCA_013341335.1_ASM1334133v1/PGCfinder
+    jobid: 135
+    reason: Missing output files: results/GCA_013341335.1_ASM1334133v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013341335.1_ASM1334133v1/GCA_013341335.1_ASM1334133v1_protein.faa
+    wildcards: genome=GCA_013341335.1_ASM1334133v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:22 2024]
+Finished job 19.
+192 of 201 steps (96%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:22 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    output: results/GCA_000277085.1_ASM27708v1/PGCfinder
+    jobid: 191
+    reason: Missing output files: results/GCA_000277085.1_ASM27708v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    wildcards: genome=GCA_000277085.1_ASM27708v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:22 2024]
+Finished job 109.
+193 of 201 steps (96%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:22 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa
+    output: results/GCA_000688775.2_ASM68877v2/PGCfinder
+    jobid: 93
+    reason: Missing output files: results/GCA_000688775.2_ASM68877v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000688775.2_ASM68877v2/GCA_000688775.2_ASM68877v2_protein.faa
+    wildcards: genome=GCA_000688775.2_ASM68877v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:23 2024]
+Finished job 135.
+194 of 201 steps (97%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:23 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    output: results/GCA_000468575.2_ASM46857v2/PGCfinder
+    jobid: 153
+    reason: Missing output files: results/GCA_000468575.2_ASM46857v2/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    wildcards: genome=GCA_000468575.2_ASM46857v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:23 2024]
+Finished job 195.
+195 of 201 steps (97%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:23 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000732385.1_ASM73238v1/GCA_000732385.1_ASM73238v1_protein.faa
+    output: results/GCA_000732385.1_ASM73238v1/PGCfinder
+    jobid: 101
+    reason: Missing output files: results/GCA_000732385.1_ASM73238v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_000732385.1_ASM73238v1/GCA_000732385.1_ASM73238v1_protein.faa
+    wildcards: genome=GCA_000732385.1_ASM73238v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:23 2024]
+Finished job 93.
+196 of 201 steps (98%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:23 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_013155105.1_ASM1315510v1/GCA_013155105.1_ASM1315510v1_protein.faa
+    output: results/GCA_013155105.1_ASM1315510v1/PGCfinder
+    jobid: 71
+    reason: Missing output files: results/GCA_013155105.1_ASM1315510v1/PGCfinder; Input files updated by another job: data/genomes_unzip/GCA_013155105.1_ASM1315510v1/GCA_013155105.1_ASM1315510v1_protein.faa
+    wildcards: genome=GCA_013155105.1_ASM1315510v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:24 2024]
+Finished job 71.
+197 of 201 steps (98%) done
+[Fri Apr 19 16:11:24 2024]
+Finished job 191.
+198 of 201 steps (99%) done
+[Fri Apr 19 16:11:25 2024]
+Finished job 101.
+199 of 201 steps (99%) done
+[Fri Apr 19 16:11:25 2024]
+Finished job 153.
+200 of 201 steps (99.5%) done
+Select jobs to execute...
+
+[Fri Apr 19 16:11:25 2024]
+localrule all:
+    input: results/GCA_011765405.1_ASM1176540v1/PGCfinder, results/GCA_013374135.1_ASM1337413v1/PGCfinder, results/GCA_000831425.1_ASM83142v1/PGCfinder, results/GCA_011765465.1_ASM1176546v1/PGCfinder, results/GCA_012933685.1_ASM1293368v1/PGCfinder, results/GCA_011765385.1_ASM1176538v1/PGCfinder, results/GCA_011302735.1_ASM1130273v1/PGCfinder, results/GCA_000816945.1_ASM81694v1/PGCfinder, results/GCA_013364295.1_ASM1336429v1/PGCfinder, results/GCA_013315915.1_ASM1331591v1/PGCfinder, results/GCA_011765425.1_ASM1176542v1/PGCfinder, results/GCA_010725135.1_ASM1072513v1/PGCfinder, results/GCA_013341375.1_ASM1334137v1/PGCfinder, results/GCA_013403505.1_ASM1340350v1/PGCfinder, results/GCA_011290585.1_ASM1129058v1/PGCfinder, results/GCA_013374835.1_ASM1337483v1/PGCfinder, results/GCA_012934735.1_ASM1293473v1/PGCfinder, results/GCA_012970745.1_ASM1297074v1/PGCfinder, results/GCA_011301495.1_ASM1130149v1/PGCfinder, results/GCA_012558165.1_ASM1255816v1/PGCfinder, results/GCA_013374855.1_ASM1337485v1/PGCfinder, results/GCA_013344545.1_ASM1334454v1/PGCfinder, results/GCA_000359545.5_G255_GS/PGCfinder, results/GCA_011302515.1_ASM1130251v1/PGCfinder, results/GCA_000808095.1_ASM80809v1/PGCfinder, results/GCA_000830315.1_ASM83031v1/PGCfinder, results/GCA_000189435.3_ASM18943v3/PGCfinder, results/GCA_013414795.1_ASM1341479v1/PGCfinder, results/GCA_013256815.1_ASM1325681v1/PGCfinder, results/GCA_000492175.2_ASM49217v2/PGCfinder, results/GCA_012151455.1_ASM1215145v1/PGCfinder, results/GCA_013315875.1_ASM1331587v1/PGCfinder, results/GCA_012151155.1_ASM1215115v1/PGCfinder, results/GCA_000826905.1_ASM82690v1/PGCfinder, results/GCA_013402835.1_ASM1340283v1/PGCfinder, results/GCA_013155105.1_ASM1315510v1/PGCfinder, results/GCA_011996705.1_ASM1199670v1/PGCfinder, results/GCA_013315855.1_ASM1331585v1/PGCfinder, results/GCA_013415975.1_ASM1341597v1/PGCfinder, results/GCA_013162305.1_ASM1316230v1/PGCfinder, results/GCA_011301835.1_ASM1130183v1/PGCfinder, results/GCA_013414705.1_ASM1341470v1/PGCfinder, results/GCA_000474035.1_ASM47403v1/PGCfinder, results/GCA_011082265.1_ASM1108226v1/PGCfinder, results/GCA_000830275.1_ASM83027v1/PGCfinder, results/GCA_000714635.1_ASM71463v1/PGCfinder, results/GCA_000688775.2_ASM68877v2/PGCfinder, results/GCA_013372025.1_ASM1337202v1/PGCfinder, results/GCA_013315935.1_ASM1331593v1/PGCfinder, results/GCA_011301315.1_ASM1130131v1/PGCfinder, results/GCA_000732385.1_ASM73238v1/PGCfinder, results/GCA_000307975.2_ASM30797v2/PGCfinder, results/GCA_000965765.1_ASM96576v1/PGCfinder, results/GCA_013315835.1_ASM1331583v1/PGCfinder, results/GCA_000723365.1_MAM001/PGCfinder, results/GCA_011742775.2_ASM1174277v2/PGCfinder, results/GCA_000648555.1_ASM64855v1/PGCfinder, results/GCA_011388155.1_ASM1138815v1/PGCfinder, results/GCA_011302195.1_ASM1130219v1/PGCfinder, results/GCA_000699475.1_ASM69947v1/PGCfinder, results/GCA_011044455.1_ASM1104445v1/PGCfinder, results/GCA_011752475.1_ASM1175247v1/PGCfinder, results/GCA_011388175.1_ASM1138817v1/PGCfinder, results/GCA_000965745.1_ASM96574v1/PGCfinder, results/GCA_000277105.1_ASM27710v1/PGCfinder, results/GCA_012151595.1_ASM1215159v1/PGCfinder, results/GCA_013127575.1_ASM1312757v1/PGCfinder, results/GCA_013341335.1_ASM1334133v1/PGCfinder, results/GCA_013283975.1_ASM1328397v1/PGCfinder, results/GCA_013337045.2_ASM1333704v2/PGCfinder, results/GCA_000648525.1_ASM64852v1/PGCfinder, results/GCA_012534935.1_ASM1253493v1/PGCfinder, results/GCA_000831405.1_ASM83140v1/PGCfinder, results/GCA_013348845.1_ASM1334884v1/PGCfinder, results/GCA_013403525.1_ASM1340352v1/PGCfinder, results/GCA_000328745.1_ASM32874v1/PGCfinder, results/GCA_000468575.2_ASM46857v2/PGCfinder, results/GCA_010918035.1_ASM1091803v1/PGCfinder, results/GCA_011316785.2_ASM1131678v2/PGCfinder, results/GCA_010694505.1_ASM1069450v1/PGCfinder, results/GCA_013334165.1_ASM1333416v1/PGCfinder, results/GCA_000219475.3_ASM21947v3/PGCfinder, results/GCA_000272795.2_ASM27279v2/PGCfinder, results/GCA_011303155.1_ASM1130315v1/PGCfinder, results/GCA_011752455.1_ASM1175245v1/PGCfinder, results/GCA_013347225.1_ASM1334722v1/PGCfinder, results/GCA_013378335.1_ASM1337833v1/PGCfinder, results/GCA_013368055.1_ASM1336805v1/PGCfinder, results/GCA_013283995.1_ASM1328399v1/PGCfinder, results/GCA_000988445.1_ASM98844v1/PGCfinder, results/GCA_013341355.1_ASM1334135v1/PGCfinder, results/GCA_013146725.1_ASM1314672v1/PGCfinder, results/GCA_000732525.2_ASM73252v2/PGCfinder, results/GCA_000486525.2_ASM48652v2/PGCfinder, results/GCA_013414865.1_ASM1341486v1/PGCfinder, results/GCA_000277085.1_ASM27708v1/PGCfinder, results/GCA_012151295.1_ASM1215129v1/PGCfinder, results/GCA_000826925.1_ASM82692v1/PGCfinder, results/GCA_011302375.1_ASM1130237v1/PGCfinder, results/GCA_011303355.1_ASM1130335v1/PGCfinder
+    jobid: 0
+    reason: Input files updated by another job: results/GCA_000699475.1_ASM69947v1/PGCfinder, results/GCA_013344545.1_ASM1334454v1/PGCfinder, results/GCA_013347225.1_ASM1334722v1/PGCfinder, results/GCA_013364295.1_ASM1336429v1/PGCfinder, results/GCA_013415975.1_ASM1341597v1/PGCfinder, results/GCA_011302375.1_ASM1130237v1/PGCfinder, results/GCA_011765425.1_ASM1176542v1/PGCfinder, results/GCA_012970745.1_ASM1297074v1/PGCfinder, results/GCA_000826925.1_ASM82692v1/PGCfinder, results/GCA_000468575.2_ASM46857v2/PGCfinder, results/GCA_000189435.3_ASM18943v3/PGCfinder, results/GCA_013162305.1_ASM1316230v1/PGCfinder, results/GCA_013341355.1_ASM1334135v1/PGCfinder, results/GCA_000732525.2_ASM73252v2/PGCfinder, results/GCA_012934735.1_ASM1293473v1/PGCfinder, results/GCA_013315935.1_ASM1331593v1/PGCfinder, results/GCA_013403525.1_ASM1340352v1/PGCfinder, results/GCA_013374135.1_ASM1337413v1/PGCfinder, results/GCA_013315875.1_ASM1331587v1/PGCfinder, results/GCA_000816945.1_ASM81694v1/PGCfinder, results/GCA_012151155.1_ASM1215115v1/PGCfinder, results/GCA_013403505.1_ASM1340350v1/PGCfinder, results/GCA_013414705.1_ASM1341470v1/PGCfinder, results/GCA_011388155.1_ASM1138815v1/PGCfinder, results/GCA_000826905.1_ASM82690v1/PGCfinder, results/GCA_013378335.1_ASM1337833v1/PGCfinder, results/GCA_013315855.1_ASM1331585v1/PGCfinder, results/GCA_013337045.2_ASM1333704v2/PGCfinder, results/GCA_013414795.1_ASM1341479v1/PGCfinder, results/GCA_013374855.1_ASM1337485v1/PGCfinder, results/GCA_011303155.1_ASM1130315v1/PGCfinder, results/GCA_013341335.1_ASM1334133v1/PGCfinder, results/GCA_012534935.1_ASM1253493v1/PGCfinder, results/GCA_013155105.1_ASM1315510v1/PGCfinder, results/GCA_000648525.1_ASM64852v1/PGCfinder, results/GCA_010918035.1_ASM1091803v1/PGCfinder, results/GCA_000988445.1_ASM98844v1/PGCfinder, results/GCA_000831405.1_ASM83140v1/PGCfinder, results/GCA_011316785.2_ASM1131678v2/PGCfinder, results/GCA_013283995.1_ASM1328399v1/PGCfinder, results/GCA_011765385.1_ASM1176538v1/PGCfinder, results/GCA_011303355.1_ASM1130335v1/PGCfinder, results/GCA_000277085.1_ASM27708v1/PGCfinder, results/GCA_011301495.1_ASM1130149v1/PGCfinder, results/GCA_013402835.1_ASM1340283v1/PGCfinder, results/GCA_011301315.1_ASM1130131v1/PGCfinder, results/GCA_013146725.1_ASM1314672v1/PGCfinder, results/GCA_013315915.1_ASM1331591v1/PGCfinder, results/GCA_011290585.1_ASM1129058v1/PGCfinder, results/GCA_012151295.1_ASM1215129v1/PGCfinder, results/GCA_011765405.1_ASM1176540v1/PGCfinder, results/GCA_011765465.1_ASM1176546v1/PGCfinder, results/GCA_012151455.1_ASM1215145v1/PGCfinder, results/GCA_013315835.1_ASM1331583v1/PGCfinder, results/GCA_000359545.5_G255_GS/PGCfinder, results/GCA_012558165.1_ASM1255816v1/PGCfinder, results/GCA_000830275.1_ASM83027v1/PGCfinder, results/GCA_013283975.1_ASM1328397v1/PGCfinder, results/GCA_011996705.1_ASM1199670v1/PGCfinder, results/GCA_012933685.1_ASM1293368v1/PGCfinder, results/GCA_011752475.1_ASM1175247v1/PGCfinder, results/GCA_000965745.1_ASM96574v1/PGCfinder, results/GCA_000328745.1_ASM32874v1/PGCfinder, results/GCA_012151595.1_ASM1215159v1/PGCfinder, results/GCA_000831425.1_ASM83142v1/PGCfinder, results/GCA_000830315.1_ASM83031v1/PGCfinder, results/GCA_000219475.3_ASM21947v3/PGCfinder, results/GCA_013368055.1_ASM1336805v1/PGCfinder, results/GCA_000732385.1_ASM73238v1/PGCfinder, results/GCA_013374835.1_ASM1337483v1/PGCfinder, results/GCA_011082265.1_ASM1108226v1/PGCfinder, results/GCA_011044455.1_ASM1104445v1/PGCfinder, results/GCA_000492175.2_ASM49217v2/PGCfinder, results/GCA_011752455.1_ASM1175245v1/PGCfinder, results/GCA_011302515.1_ASM1130251v1/PGCfinder, results/GCA_000808095.1_ASM80809v1/PGCfinder, results/GCA_000277105.1_ASM27710v1/PGCfinder, results/GCA_010694505.1_ASM1069450v1/PGCfinder, results/GCA_000272795.2_ASM27279v2/PGCfinder, results/GCA_000474035.1_ASM47403v1/PGCfinder, results/GCA_013256815.1_ASM1325681v1/PGCfinder, results/GCA_000688775.2_ASM68877v2/PGCfinder, results/GCA_013127575.1_ASM1312757v1/PGCfinder, results/GCA_013334165.1_ASM1333416v1/PGCfinder, results/GCA_011742775.2_ASM1174277v2/PGCfinder, results/GCA_013414865.1_ASM1341486v1/PGCfinder, results/GCA_011301835.1_ASM1130183v1/PGCfinder, results/GCA_011302195.1_ASM1130219v1/PGCfinder, results/GCA_013341375.1_ASM1334137v1/PGCfinder, results/GCA_013372025.1_ASM1337202v1/PGCfinder, results/GCA_011388175.1_ASM1138817v1/PGCfinder, results/GCA_000965765.1_ASM96576v1/PGCfinder, results/GCA_000714635.1_ASM71463v1/PGCfinder, results/GCA_000648555.1_ASM64855v1/PGCfinder, results/GCA_011302735.1_ASM1130273v1/PGCfinder, results/GCA_000723365.1_MAM001/PGCfinder, results/GCA_000486525.2_ASM48652v2/PGCfinder, results/GCA_000307975.2_ASM30797v2/PGCfinder, results/GCA_013348845.1_ASM1334884v1/PGCfinder, results/GCA_010725135.1_ASM1072513v1/PGCfinder
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 16:11:25 2024]
+Finished job 0.
+201 of 201 steps (100%) done
+Complete log: .snakemake/log/2024-04-19T161042.965493.snakemake.log

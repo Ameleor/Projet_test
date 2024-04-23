@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+# output directed to file:         results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    6.5e-07   26.6   0.3    0.00022   18.3   0.1    2.2  2  GCF_000016725.1_ASM1672v1_1996  WP_007421982.1 MULTISPECIES: sep
+    9.1e-07   26.1   0.0    1.4e-06   25.5   0.0    1.2  1  GCF_000016725.1_ASM1672v1_2417  WP_012040031.1 MULTISPECIES: Par
+    1.2e-05   22.4   0.1    2.3e-05   21.5   0.1    1.4  1  GCF_000016725.1_ASM1672v1_2423  WP_012040037.1 Mrp/NBP35 family 
+     0.0011   16.0   0.0     0.0029   14.6   0.0    1.6  2  GCF_000016725.1_ASM1672v1_3318  WP_152982781.1 plasmid partition
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000016725.1_ASM1672v1_1996  WP_007421982.1 MULTISPECIES: septum site-determining protein MinD [Acidiphilium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   0.1   2.4e-07   0.00022      20      57 ..       2      40 ..       1      69 [. 0.84
+   2 !    6.5   0.0   0.00096      0.87     151     187 ..     127     163 ..     108     171 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.3 bits;  conditional E-value: 2.4e-07
+            trimmed_msa_bchL_hmm 20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                    akv+ v  gkgg+gk+t+s+ l +a+++ g+ v+ +  d
+  GCF_000016725.1_ASM1672v1_1996  2 AKVLVVtSGKGGVGKTTSSASLGAALAQAGQNVVVVDFD 40
+                                    788777369************************988766 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.00096
+            trimmed_msa_bchL_hmm 151 gfaaplqhadralivaandfdsifamnrivaaikaks 187
+                                     g +  ++had a++v+  +  s+   +ri+  +++k+
+  GCF_000016725.1_ASM1672v1_1996 127 GATLAMRHADVAVVVTNPEVSSVRDSDRIIGLLDSKT 163
+                                     4455689***********************9998886 PP
+
+>> GCF_000016725.1_ASM1672v1_2417  WP_012040031.1 MULTISPECIES: ParA family protein [Acidiphilium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.0   1.5e-09   1.4e-06      21      61 ..       4      45 ..       1      53 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 1.5e-09
+            trimmed_msa_bchL_hmm 21 kvfavy.gkggigksttssnlsvafsklgkrvlqigcdpkhd 61
+                                    k++a+   kgg+gk+tt+ nl++a++  g+rvl i  dp+ +
+  GCF_000016725.1_ASM1672v1_2417  4 KIIAIAnQKGGVGKTTTAINLATALAATGERVLLIDLDPQGN 45
+                                    677775269******************************865 PP
+
+>> GCF_000016725.1_ASM1672v1_2423  WP_012040037.1 Mrp/NBP35 family ATP-binding protein [Acidiphilium cryptum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.1   2.5e-08   2.3e-05      23      53 ..     105     136 ..      89     145 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 2.5e-08
+            trimmed_msa_bchL_hmm  23 fav.ygkggigksttssnlsvafsklgkrvlq 53 
+                                     +av  gkgg+gkst + nl+va+++ gkrv  
+  GCF_000016725.1_ASM1672v1_2423 105 VAVaSGKGGVGKSTVAVNLAVALARQGKRVGL 136
+                                     44426************************955 PP
+
+>> GCF_000016725.1_ASM1672v1_3318  WP_152982781.1 plasmid partitioning protein RepA [Acidiphilium cryptum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   3.2e-06    0.0029      27      61 ..     114     148 ..     101     157 .. 0.86
+   2 ?   -3.1   0.0      0.79   7.1e+02     226     251 ..     339     364 ..     330     385 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 3.2e-06
+            trimmed_msa_bchL_hmm  27 gkggigksttssnlsvafsklgkrvlqigcdpkhd 61 
+                                      kgg  k+tts+nl+  ++  g rvl +  dp+  
+  GCF_000016725.1_ASM1672v1_3318 114 FKGGSAKTTTSANLAQYLALRGYRVLAVDLDPQAS 148
+                                     59******************************865 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.79
+            trimmed_msa_bchL_hmm 226 ldairrsrlkkstlfemedspeveav 251
+                                       ai  + + k+tl+e+  ++  ++ 
+  GCF_000016725.1_ASM1672v1_3318 339 STAISDASITKQTLYEVPREQFTRST 364
+                                     55677788889999998776654444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3616  (1174819 residues searched)
+Passed MSV filter:                       141  (0.0389934); expected 72.3 (0.02)
+Passed bias filter:                      136  (0.0376106); expected 72.3 (0.02)
+Passed Vit filter:                        24  (0.00663717); expected 3.6 (0.001)
+Passed Fwd filter:                         4  (0.00110619); expected 0.0 (1e-05)
+Initial search space (Z):               3616  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10522.41
+//
+[ok]

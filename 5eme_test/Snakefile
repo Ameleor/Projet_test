@@ -1,0 +1,48 @@
+# Collaboration avec Kinnie
+
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+
+TIMEOUT=["timeout"]
+
+FORMATS=["_gff.tsv",".faa"]
+
+# Règle pour vérifier si tous les fichiers de sortie existent
+rule all:
+    input:
+        expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
+        expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
+        "results/genomes/list_organisms.tsv"
+
+# Règle pour décompresser les génomes
+rule unzip_genomes:
+    input: "data/genomes/{genome}/{genome}_protein{format}.gz"
+    output: "data/genomes_unzip/{genome}/{genome}_protein{format}"
+    shell: "gunzip -c {input} > {output}"
+
+rule PGCfinder:
+    input:
+        "data/genomes_unzip/{genome}/{genome}_protein.faa"
+    output:
+        directory("results/genomes/{genome}/PGCfinder")
+    shell:
+        """
+        mkdir -p {output}
+        macsyfinder --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/genomes/{wildcards.genome}/PGCfinder/
+        """
+
+rule dir_finder:
+    input:
+        "results/genomes"
+    output:
+        "results/genomes/list_organisms.tsv"
+    shell:
+        """
+        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \;> {output}
+        python3 
+        """

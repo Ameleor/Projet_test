@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+# output directed to file:         results/genomes/GCA_000219475.3_ASM21947v3/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    0.00053   15.4   0.0    0.00066   15.1   0.0    1.1  1  GCA_000219475.3_ASM21947v3_448  DIDKEP_02295 tRNA adenosine(34) 
+    0.00081   14.8   0.0     0.0013   14.2   0.0    1.2  1  GCA_000219475.3_ASM21947v3_555  DIDKEP_02870 DNA translocase Fts
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000219475.3_ASM21947v3_448  DIDKEP_02295 tRNA adenosine(34) deaminase TadA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   6.9e-07   0.00066     481     535 ..      12      65 ..       9      79 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 6.9e-07
+            trimmed_msa_bchD_hmm 481 eaalelaeaarrrGrtpllvlLtDGraNialdGtagRaaAeadalaaAralraeg 535
+                                     + a+e a++a+ +G+ p+ +++ D  +N+  +G + R + ++da++ A +++ ++
+  GCA_000219475.3_ASM21947v3_448  12 HLAFEQAKKAEEQGEVPIGAVVVDKDGNVIGEGYN-RRELDEDATQHAEMIAIRQ 65 
+                                     6799*****************************87.6667899999999988765 PP
+
+>> GCA_000219475.3_ASM21947v3_555  DIDKEP_02870 DNA translocase FtsK
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   1.3e-06    0.0013      72     199 ..     165     292 ..     154     314 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.3e-06
+            trimmed_msa_bchD_hmm  72 grpvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleedealpeaLld 150
+                                     g   a+ GLL++a+gg l+l    Rl+s+   +l + +d+g++     ++++ +++++ lv +   +++++ l ++ l 
+  GCA_000219475.3_ASM21947v3_555 165 GADEAKDGLLKQANGGYLFLDEVHRLSSENQEKLFSFMDSGQFY-PMGDNSHPIKSKVRLV-MATTENPEKVLLTTFLR 241
+                                     6667899**********************************754.3444466677777666.56777899999****** PP
+
+            trimmed_msa_bchD_hmm 151 Rlalrldldeialrdleelaaeaedi..eaararlpkvtleeealealvat 199
+                                     R+ ++++l ++a r ++e     + i  ++ar+  +k+++++ ++++l ++
+  GCA_000219475.3_ASM21947v3_555 242 RVPVHVKLPDFASRPIDERLELLRYIfyQEARRINRKIEVDKYVVSTLLKI 292
+                                     **************9998877555543377788888999999888888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       1916  (583158 residues searched)
+Passed MSV filter:                        82  (0.0427975); expected 38.3 (0.02)
+Passed bias filter:                       47  (0.0245303); expected 38.3 (0.02)
+Passed Vit filter:                         9  (0.00469729); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104384); expected 0.0 (1e-05)
+Initial search space (Z):               1916  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 11135.29
+//
+[ok]

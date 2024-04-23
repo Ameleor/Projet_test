@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+# output directed to file:         results/genomes/GCA_000277105.1_ASM27710v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+     0.0027   15.0   0.1     0.0035   14.6   0.1    1.1  1  GCA_000277105.1_ASM27710v1_422  AFE11795.1 hypothetical protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000277105.1_ASM27710v1_422  AFE11795.1 hypothetical protein MRGA423_02965 [Mycobacterium tuberculosis RGTB423]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.1   9.8e-07    0.0035     165     231 ..       6      71 ..       2      81 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 9.8e-07
+            trimmed_msa_bchG_hmm 165 aevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvallla 231
+                                     +ev+l  l y++    ++       +  d+ lg+++lpv lG + a +v+ l m+v   +++a+ ++
+  GCA_000277105.1_ASM27710v1_422   6 WEVVLASLPYGLLCTTVLMGKHIDKIGYDEPLGIRTLPVLLGETCARTVT-LAMMVGFYLLIAVNVM 71 
+                                     67777888899999999999999999****************87765555.5555655555554433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3622  (964185 residues searched)
+Passed MSV filter:                       165  (0.0455549); expected 72.4 (0.02)
+Passed bias filter:                       54  (0.0149089); expected 72.4 (0.02)
+Passed Vit filter:                         3  (0.000828272); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000276091); expected 0.0 (1e-05)
+Initial search space (Z):               3622  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13320.18
+//
+[ok]

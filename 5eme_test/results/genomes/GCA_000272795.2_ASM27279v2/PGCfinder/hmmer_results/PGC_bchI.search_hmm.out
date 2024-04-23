@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+# output directed to file:         results/genomes/GCA_000272795.2_ASM27279v2/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    4.1e-10   36.6   0.1    0.00016   18.3   0.0    3.2  3  GCA_000272795.2_ASM27279v2_2005  AIT50992.1 ATP-dependent proteas
+     0.0008   16.0   0.4      0.038   10.5   0.1    2.1  2  GCA_000272795.2_ASM27279v2_535   AIT49524.1 phage shock protein [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000272795.2_ASM27279v2_2005  AIT50992.1 ATP-dependent protease [Salmonella enterica subsp. enterica serovar Newpo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.3   0.0   0.00024      0.34       9      60 ..     193     242 ..     186     271 .. 0.85
+   2 !   18.3   0.0   1.1e-07   0.00016     120     186 ..     281     347 ..     275     353 .. 0.91
+   3 !    7.1   0.1   0.00029       0.4     194     309 ..     375     490 ..     367     500 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00024
+             trimmed_msa_bchI_hmm   9 ivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                      ++gq++ k+ l ++a   +   +l++G  GtGk+  +  l+ +lP+++  ++
+  GCA_000272795.2_ASM27279v2_2005 193 VIGQEQGKRGLEITAAGGH--NLLLIGPPGTGKTMLASRLSGILPPLSNEEA 242
+                                      899*********9997654..699**********************987655 PP
+
+  == domain 2  score: 18.3 bits;  conditional E-value: 1.1e-07
+             trimmed_msa_bchI_hmm 120 GekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                      G     pG ++ a+ G l++de+  +e   +d l +  +sG+  + r    + +parf l+ + nP 
+  GCA_000272795.2_ASM27279v2_2005 281 GGAIPAPGEISLAHNGILFLDELPEFERRTLDALREPIESGQIHLSRTRAKITYPARFQLIAAMNPS 347
+                                      555557999********************************************************95 PP
+
+  == domain 3  score: 7.1 bits;  conditional E-value: 0.00029
+             trimmed_msa_bchI_hmm 194 lldrfGlsvevrtpk..dleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaaklc 269
+                                      +ldrf ls+ev  p    l++  +     +++++   a +++  ++++k+++++ ++r+  +     ++  +      
+  GCA_000272795.2_ASM27279v2_2005 375 FLDRFDLSLEVPLPPpgILSQHASKGESSATVKKRVIAAHERQYRRQKKLNARL-EGREIQKYCVLHHDDARWLEDTL 451
+                                      689999999997654114555555555555555555555555566666666665.45665555555555556666667 PP
+
+             trimmed_msa_bchI_hmm 270 lalgtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                      ++lg   +r+   ll+ ar++a +e a++++++hl++  +
+  GCA_000272795.2_ASM27279v2_2005 452 VHLGL-SIRAWQRLLKVARTIADIELADQISRQHLQEAVS 490
+                                      78887.589999***********************98654 PP
+
+>> GCA_000272795.2_ASM27279v2_535  AIT49524.1 phage shock protein [Salmonella enterica subsp. enterica serovar Newport s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0035       4.8      30      45 ..      31      46 ..      21      58 .. 0.81
+   2 !   10.5   0.1   2.7e-05     0.038     119     202 ..      86     173 ..      59     194 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0035
+            trimmed_msa_bchI_hmm 30 GvlvlGdrGtGkstav 45
+                                     vl++G+rGtGk   +
+  GCA_000272795.2_ASM27279v2_535 31 PVLIIGERGTGKELIA 46
+                                    59**********8655 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 2.7e-05
+            trimmed_msa_bchI_hmm 119 kGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe......eGelr 191
+                                     +G ++ +pG + ra+ G l++de+      + + ll v + Ge  +er g s   +    lv + n +      eG +r
+  GCA_000272795.2_ASM27279v2_535  86 TGAQKRHPGRFERADGGTLFLDELATAPMLVQEKLLRVIEYGE--LERVGGSQPLQVNVRLVCATNADlpamvkEGTFR 162
+                                     6888899******************99999999*********9..89999998888777788887753333444***** PP
+
+            trimmed_msa_bchI_hmm 192 PqlldrfGlsv 202
+                                       lldr+ + v
+  GCA_000272795.2_ASM27279v2_535 163 ADLLDRLAFDV 173
+                                     ******87765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       2783  (749128 residues searched)
+Passed MSV filter:                       138  (0.0495868); expected 55.7 (0.02)
+Passed bias filter:                       98  (0.0352138); expected 55.7 (0.02)
+Passed Vit filter:                        13  (0.00467122); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000718649); expected 0.0 (1e-05)
+Initial search space (Z):               2783  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5900.73
+//
+[ok]

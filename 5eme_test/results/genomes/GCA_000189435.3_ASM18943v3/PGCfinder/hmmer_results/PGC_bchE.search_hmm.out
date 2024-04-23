@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCA_000189435.3_ASM18943v3/GCA_000189435.3_ASM18943v3_protein.faa
+# output directed to file:         results/genomes/GCA_000189435.3_ASM18943v3/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    0.00078   15.5   0.2     0.0016   14.5   0.0    1.6  2  GCA_000189435.3_ASM18943v3_1925  ATV04751.1 Hypothetical protein 
+     0.0012   15.0   0.0     0.0016   14.5   0.0    1.1  1  GCA_000189435.3_ASM18943v3_1444  ATV04270.1 Ribosomal protein L11
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000189435.3_ASM18943v3_1925  ATV04751.1 Hypothetical protein SaO11_01925 [Staphylococcus aureus O11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.1      0.24   2.9e+02     272     290 ..      13      30 ..      10      43 .. 0.54
+   2 !   14.5   0.0   1.3e-06    0.0016     193     270 ..      78     154 ..      68     156 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.24
+                     trimmed_bchE 272 vlhDHdDeavlkllrkvra 290
+                                      v+h HdD + + ++ k   
+  GCA_000189435.3_ASM18943v3_1925  13 VVHMHDDMPKAMIM-KFDL 30 
+                                      55556555543333.3333 PP
+
+  == domain 2  score: 14.5 bits;  conditional E-value: 1.3e-06
+                     trimmed_bchE 193 dlkrhrrllDvGGGeGaFlaavaarapklklklfDlp.aVaerararleaaglsdrvevagGsflkdplPegaDlisL 269
+                                      +l++ ++++D+G G+G  + +++ + p+l++   D+  + +++ar+  +a++ ++++++ +G+ lk  + eg+ l  L
+  GCA_000189435.3_ASM18943v3_1925  78 QLEDDATIVDIGTGSGVLAITLKCEKPDLNVIATDISlEAMNMARN--NAEKHQSQIQFLTGDALKPLIKEGIKLNGL 153
+                                      789999*****************************97344555555..68888999*******999999888877666 PP
+
+                     trimmed_bchE 270 v 270
+                                      +
+  GCA_000189435.3_ASM18943v3_1925 154 I 154
+                                      5 PP
+
+>> GCA_000189435.3_ASM18943v3_1444  ATV04270.1 Ribosomal protein L11 methyltransferase [Staphylococcus aureus O11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0   1.3e-06    0.0016     188     266 ..     166     242 ..     159     284 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.3e-06
+                     trimmed_bchE 188 vldaydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVa.erararleaaglsdrvevagGsflkdplPega 264
+                                       +++y l +h +++DvG G+G  l+ + + +   ++k +D+ + a + a+++++++ +++ +e+++G++lkd+  e +
+  GCA_000189435.3_ASM18943v3_1444 166 AIETYVLPQH-SVIDVGTGSGI-LSIASHLIGVKRIKALDIDEMAvSVAKENFRRNHCETLIEAVPGNLLKDET-EKF 240
+                                      5667777766.689*******5.777888888899******99863789**********************974.445 PP
+
+                     trimmed_bchE 265 Dl 266
+                                      D+
+  GCA_000189435.3_ASM18943v3_1444 241 DI 242
+                                      55 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       2487  (736368 residues searched)
+Passed MSV filter:                       101  (0.0406112); expected 49.7 (0.02)
+Passed bias filter:                       90  (0.0361882); expected 49.7 (0.02)
+Passed Vit filter:                        12  (0.00482509); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000804182); expected 0.0 (1e-05)
+Initial search space (Z):               2487  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11357.90
+//
+[ok]

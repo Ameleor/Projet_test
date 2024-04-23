@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+# output directed to file:         results/genomes/GCA_000272795.2_ASM27279v2/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    4.4e-07   26.4   0.0    0.00098   15.4   0.0    2.3  2  GCA_000272795.2_ASM27279v2_259  AIT49248.1 antiporter [Salmonell
+    3.4e-06   23.5   0.0    8.8e-06   22.1   0.0    1.6  1  GCA_000272795.2_ASM27279v2_280  AIT49269.1 tyrosine protein kina
+    0.00085   15.6   0.3     0.0016   14.6   0.2    1.5  2  GCA_000272795.2_ASM27279v2_460  AIT49449.1 cell division inhibit
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_000272795.2_ASM27279v2_259  AIT49248.1 antiporter [Salmonella enterica subsp. enterica serovar Newport str. CVM 2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   1.1e-06   0.00098      22      59 ..     107     145 ..      90     164 .. 0.82
+   2 !    8.5   0.0   0.00013      0.12     210     266 ..     294     352 ..     290     360 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.1e-06
+            trimmed_msa_bchX_hmm  22 tqiiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                      +iia+  gkgg+gks t  nl+  la +g kv ++  d
+  GCA_000272795.2_ASM27279v2_259 107 KNIIAVsSGKGGVGKSSTAVNLALALAAEGAKVGVLDAD 145
+                                     468888469************************888777 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 0.00013
+            trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                     gtg aq +ae+    +l  +p +  +r      +  ++++pese+++++ ela +va+ 
+  GCA_000272795.2_ASM27279v2_259 294 GTGGAQKLAEKYHTQLLGQMPLHISLREDldRGTPTVVSRPESEFTAIYRELADRVAAQ 352
+                                     89********************99999862245678*******************9975 PP
+
+>> GCA_000272795.2_ASM27279v2_280  AIT49269.1 tyrosine protein kinase [Salmonella enterica subsp. enterica serovar Newpo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   0.0   9.5e-09   8.8e-06      21      74 ..     524     578 ..     506     593 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 9.5e-09
+            trimmed_msa_bchX_hmm  21 etqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkac 74 
+                                     + +++ + g    igk+f  anl+ +++q  k+vlli cd +   t  l+g +++
+  GCA_000272795.2_ASM27279v2_280 524 QNNVLMLTGVSpSIGKTFVCANLAAVISQTHKRVLLIDCDMRKGYTHELLGTNNV 578
+                                     55566666643279***************************99999999888766 PP
+
+>> GCA_000272795.2_ASM27279v2_460  AIT49449.1 cell division inhibitor MinD [Salmonella enterica subsp. enterica serovar 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   1.8e-06    0.0016      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?   -3.5   0.0       0.6   5.5e+02     223     243 ..     205     225 ..     196     254 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.8e-06
+            trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                    i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCA_000272795.2_ASM27279v2_460  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                    55668***************************9988655 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.6
+            trimmed_msa_bchX_hmm 223 ipvlaaipadedirrksanye 243
+                                     i ++  ip+d+ + r s + e
+  GCA_000272795.2_ASM27279v2_460 205 IKLVGVIPEDQSVLRASNQGE 225
+                                     566667777777766665543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       2783  (749128 residues searched)
+Passed MSV filter:                       103  (0.0370104); expected 55.7 (0.02)
+Passed bias filter:                       84  (0.0301833); expected 55.7 (0.02)
+Passed Vit filter:                        15  (0.00538987); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00107797); expected 0.0 (1e-05)
+Initial search space (Z):               2783  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11213.47
+//
+[ok]

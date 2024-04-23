@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+dir_finder        1
+total             2
+
+Select jobs to execute...
+
+[Tue Apr 23 12:02:53 2024]
+rule dir_finder:
+    input: results/genomes
+    output: results/genomes/list_organisms.tsv
+    jobid: 46
+    reason: Missing output files: results/genomes/list_organisms.tsv
+    resources: tmpdir=/tmp
+
+RuleException in rule dir_finder in file /home/salzatht/Documents/Projet_test/5eme_test/Snakefile, line 39:
+IndexError: tuple index out of range, when formatting the following:
+find {{input}} -type d -exec basename {} \;> {{output}}

@@ -1,0 +1,214 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+PGCfinder           10
+all                  1
+unzip_genomes       10
+total               21
+
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    jobid: 14
+    reason: Missing output files: data/genomes_unzip/GCA_000468575.2_ASM46857v2/GCA_000468575.2_ASM46857v2_protein.faa
+    wildcards: genome=GCA_000468575.2_ASM46857v2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa.gz
+    output: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    jobid: 2
+    reason: Missing output files: data/genomes_unzip/GCA_000359545.5_G255_GS/GCA_000359545.5_G255_GS_protein.faa
+    wildcards: genome=GCA_000359545.5_G255_GS
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    jobid: 10
+    reason: Missing output files: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    wildcards: genome=GCA_000277105.1_ASM27710v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    jobid: 12
+    reason: Missing output files: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    wildcards: genome=GCA_000328745.1_ASM32874v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:37:13 2024]
+Finished job 2.
+1 of 21 steps (5%) done
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    jobid: 8
+    reason: Missing output files: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    wildcards: genome=GCA_000307975.2_ASM30797v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:37:13 2024]
+Finished job 14.
+2 of 21 steps (10%) done
+[Fri Apr 19 14:37:13 2024]
+Finished job 10.
+3 of 21 steps (14%) done
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa.gz
+    output: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    jobid: 16
+    reason: Missing output files: data/genomes_unzip/GCA_000219475.3_ASM21947v3/GCA_000219475.3_ASM21947v3_protein.faa
+    wildcards: genome=GCA_000219475.3_ASM21947v3
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa.gz
+    output: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    jobid: 18
+    reason: Missing output files: data/genomes_unzip/GCA_000272795.2_ASM27279v2/GCA_000272795.2_ASM27279v2_protein.faa
+    wildcards: genome=GCA_000272795.2_ASM27279v2
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:37:13 2024]
+Finished job 8.
+4 of 21 steps (19%) done
+[Fri Apr 19 14:37:13 2024]
+Finished job 12.
+5 of 21 steps (24%) done
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    output: results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+    jobid: 7
+    reason: Missing output files: results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*; Input files updated by another job: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    wildcards: genome=GCA_000307975.2_ASM30797v2
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa.gz
+    output: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    jobid: 20
+    reason: Missing output files: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    wildcards: genome=GCA_000277085.1_ASM27708v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:37:13 2024]
+Finished job 16.
+6 of 21 steps (29%) done
+[Fri Apr 19 14:37:13 2024]
+Finished job 18.
+7 of 21 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    output: results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+    jobid: 11
+    reason: Missing output files: results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*; Input files updated by another job: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    wildcards: genome=GCA_000328745.1_ASM32874v1
+    resources: tmpdir=/tmp
+
+
+[Fri Apr 19 14:37:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    output: results/GCA_000277105.1_ASM27710v1/PGCfinder/macsyfinder*/*
+    jobid: 9
+    reason: Missing output files: results/GCA_000277105.1_ASM27710v1/PGCfinder/macsyfinder*/*; Input files updated by another job: data/genomes_unzip/GCA_000277105.1_ASM27710v1/GCA_000277105.1_ASM27710v1_protein.faa
+    wildcards: genome=GCA_000277105.1_ASM27710v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 19 14:37:13 2024]
+Finished job 20.
+8 of 21 steps (38%) done
+Select jobs to execute...
+
+[Fri Apr 19 14:37:13 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    output: results/GCA_000277085.1_ASM27708v1/PGCfinder/macsyfinder*/*
+    jobid: 19
+    reason: Missing output files: results/GCA_000277085.1_ASM27708v1/PGCfinder/macsyfinder*/*; Input files updated by another job: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    wildcards: genome=GCA_000277085.1_ASM27708v1
+    resources: tmpdir=/tmp
+
+Select jobs to execute...
+[Fri Apr 19 14:37:14 2024]
+Error in rule PGCfinder:
+    jobid: 19
+    input: data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa
+    output: results/GCA_000277085.1_ASM27708v1/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p results/GCA_000277085.1_ASM27708v1/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000277085.1_ASM27708v1/GCA_000277085.1_ASM27708v1_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000277085.1_ASM27708v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/GCA_000277085.1_ASM27708v1/PGCfinder/macsyfinder*/*
+[Fri Apr 19 14:37:14 2024]
+Error in rule PGCfinder:
+    jobid: 7
+    input: data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa
+    output: results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000307975.2_ASM30797v2/GCA_000307975.2_ASM30797v2_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000307975.2_ASM30797v2/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/GCA_000307975.2_ASM30797v2/PGCfinder/macsyfinder*/*
+[Fri Apr 19 14:37:14 2024]
+Error in rule PGCfinder:
+    jobid: 11
+    input: data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa
+    output: results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+    shell:
+        
+        mkdir -p results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+        macsyfinder --db-type ordered_replicon --sequence-db data/genomes_unzip/GCA_000328745.1_ASM32874v1/GCA_000328745.1_ASM32874v1_protein.faa --models PGCFinder all
+        mv macsyfinder* results/GCA_000328745.1_ASM32874v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/GCA_000328745.1_ASM32874v1/PGCfinder/macsyfinder*/*
+[Fri Apr 19 14:37:15 2024]
+Finished job 9.
+9 of 21 steps (43%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-19T143713.444062.snakemake.log
