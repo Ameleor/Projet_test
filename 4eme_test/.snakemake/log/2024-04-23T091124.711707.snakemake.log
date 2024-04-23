@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+PGCfinder            5
+all                  1
+unzip_genomes        5
+total               11
+
+Select jobs to execute...
+
+[Tue Apr 23 09:11:25 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv
+    jobid: 8
+    reason: Set of input files has changed since last execution
+    wildcards: genome=GCA_000474035.1_ASM47403v1
+    resources: tmpdir=/tmp
+
+[Tue Apr 23 09:11:25 2024]
+Error in rule unzip_genomes:
+    jobid: 8
+    input: data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv
+    shell:
+        cp data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz && gunzip data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-23T091124.711707.snakemake.log

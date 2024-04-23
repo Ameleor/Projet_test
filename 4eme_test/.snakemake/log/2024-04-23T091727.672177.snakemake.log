@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+PGCfinder           15
+all                  1
+unzip_genomes       15
+total               31
+
+Select jobs to execute...
+
+[Tue Apr 23 09:17:28 2024]
+rule unzip_genomes:
+    input: data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa, data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv
+    jobid: 8
+    reason: Missing output files: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv, data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa
+    wildcards: genome=GCA_000474035.1_ASM47403v1
+    resources: tmpdir=/tmp
+
+[Tue Apr 23 09:17:28 2024]
+Error in rule unzip_genomes:
+    jobid: 8
+    input: data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz, data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa, data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv
+    shell:
+        cp data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa.gz data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa && gunzip data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein.faa && cp data/genomes/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv.gz data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv && gunzip data/genomes_unzip/GCA_000474035.1_ASM47403v1/GCA_000474035.1_ASM47403v1_protein_gff.tsv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-23T091727.672177.snakemake.log
