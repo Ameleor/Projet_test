@@ -1,28 +1,26 @@
 #!/bin/bash
 
-# Chemin vers le fichier PGC_hit.txt
 pgc_hit_file="../results/files_txt/PGC_hit.txt"
 
-# Chemin vers le fichier CSV
 csv_file="../data/list_with_taxonomy.csv"
 
-# Cette commande recherche tous les fichiers contenant "Systems found:" et extrait uniquement les noms de fichier souhaités
+# searching if 
 find ../results/ -type f -exec grep -l "Systems found:" {} + | grep '\all_systems.txt$' | awk -F/ '{print $3}' | cut -c -15 > "$pgc_hit_file"
 
-# Vérifie si PGC_hit.txt existe
+# Verification of the file existence
 if [ ! -f "$pgc_hit_file" ]; then
     echo "Le fichier PGC_hit.txt n'existe pas."
     exit 1
 fi
 
-# Vérifie si le fichier CSV existe
+# Verification of the file existence
 if [ ! -f "$csv_file" ]; then
     echo "Le fichier list_with_taxonomy.csv n'existe pas."
     exit 1
 fi
 
-# Boucle à travers chaque ligne du fichier PGC_hit.txt
+# Loop to see every line of the file
 while IFS= read -r line; do
-    # Exécute la commande grep avec le nom de fichier actuel comme argument dans list_with_taxonomy.csv
+    # Creation of the line that will be ln the output files with the important informations 
     grep "$line" "$csv_file" | awk -F',' '{print $1,$3,$2}' | sort -k2
 done < "$pgc_hit_file"
