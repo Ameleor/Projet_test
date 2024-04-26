@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+list_creator        1
+total               2
+
+Select jobs to execute...
+
+[Fri Apr 26 15:15:37 2024]
+rule list_creator:
+    input: results/genomes
+    output: results/lists/list_organisms_merged.csv
+    jobid: 16
+    reason: Code has changed since last execution
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 15:15:37 2024]
+Finished job 16.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Apr 26 15:15:37 2024]
+localrule all:
+    input: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder, results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder, data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein_gff.tsv, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein_gff.tsv, data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein_gff.tsv, data/genomes_unzip/GCF_001719165.1_ASM171916v1/GCF_001719165.1_ASM171916v1_protein_gff.tsv, data/genomes_unzip/GCF_001576595.1_ASM157659v1/GCF_001576595.1_ASM157659v1_protein_gff.tsv, results/lists/list_organisms_merged.csv
+    jobid: 0
+    reason: Input files updated by another job: results/lists/list_organisms_merged.csv
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 15:15:37 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-04-26T151536.816155.snakemake.log

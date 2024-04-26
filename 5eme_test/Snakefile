@@ -7,6 +7,7 @@ import pandas as pd
 configfile: "config.yaml"
 
 GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
 
 TIMEOUT=["timeout"]
 
@@ -18,6 +19,8 @@ rule all:
         expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
         expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
         "results/lists/list_organisms_merged.csv"
+#       ,
+#       expand("results/fasta/{gene}.fasta", gene=GENES)
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -38,7 +41,7 @@ rule PGCfinder:
         """
 
 # Rule to create a file with all the names of the genomes that have been given previously with all the taxonomy and useful informations
-rule dir_finder:
+rule list_creator:
     input:
         "results/genomes"
     output:
@@ -47,5 +50,15 @@ rule dir_finder:
         """
         find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \;> results/lists/list_organisms.csv
         python3 scripts/merge_csv.py
-        python3 scripts/merge_list_organism.py
         """
+
+#rule fasta_creator:
+#    input:
+#        PGC="results/genomes/{genome}/PGCfinder",
+#        genes=["data/profiles/" + gene + ".hmm" for gene in GENES]
+#    output:
+#        "results/fasta/{gene}.fasta"
+#    shell:
+#        """
+#        python3 collect_gene_fasta.py {input.PGC} {input.genes}
+#        """
