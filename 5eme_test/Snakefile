@@ -17,7 +17,7 @@ rule all:
     input:
         expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
         expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
-        "results/genomes/list_organisms.tsv"
+        "results/lists/list_organisms_merged.csv"
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -25,6 +25,7 @@ rule unzip_genomes:
     output: "data/genomes_unzip/{genome}/{genome}_protein{format}"
     shell: "gunzip -c {input} > {output}"
 
+# Rule to launch PGCfinder with the correct parameters on all the genomes
 rule PGCfinder:
     input:
         "data/genomes_unzip/{genome}/{genome}_protein.faa"
@@ -36,13 +37,15 @@ rule PGCfinder:
         macsyfinder --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/genomes/{wildcards.genome}/PGCfinder/
         """
 
+# Rule to create a file with all the names of the genomes that have been given previously with all the taxonomy and useful informations
 rule dir_finder:
     input:
         "results/genomes"
     output:
-        "results/genomes/list_organisms.tsv"
+        "results/lists/list_organisms_merged.csv"
     shell:
         """
-        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \;> {output}
-        python3 
+        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \;> results/lists/list_organisms.csv
+        python3 scripts/merge_csv.py
+        python3 scripts/merge_list_organism.py
         """

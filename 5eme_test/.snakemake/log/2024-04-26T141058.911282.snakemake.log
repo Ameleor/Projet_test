@@ -1,0 +1,80 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+PGCfinder         4
+all               1
+dir_finder        1
+total             6
+
+Select jobs to execute...
+
+[Fri Apr 26 14:10:59 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa
+    output: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    jobid: 1
+    reason: Missing output files: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    wildcards: genome=GCF_000016185.1_ASM1618v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 14:11:00 2024]
+Finished job 1.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Fri Apr 26 14:11:00 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_001719165.1_ASM171916v1/GCF_001719165.1_ASM171916v1_protein.faa
+    output: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder
+    jobid: 7
+    reason: Missing output files: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder
+    wildcards: genome=GCF_001719165.1_ASM171916v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 14:11:02 2024]
+Finished job 7.
+2 of 6 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 26 14:11:02 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+    output: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    jobid: 5
+    reason: Missing output files: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    wildcards: genome=GCF_000014045.1_ASM1404v1
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 14:11:04 2024]
+Finished job 5.
+3 of 6 steps (50%) done
+Select jobs to execute...
+
+[Fri Apr 26 14:11:04 2024]
+rule dir_finder:
+    input: results/genomes
+    output: results/lists/list_organisms_merged.csv
+    jobid: 16
+    reason: Missing output files: results/lists/list_organisms_merged.csv
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 14:11:04 2024]
+Error in rule dir_finder:
+    jobid: 16
+    input: results/genomes
+    output: results/lists/list_organisms_merged.csv
+    shell:
+        
+        find results/genomes -maxdepth 1 -mindepth 1 -type d -exec basename {} \;> results/genomes/lists/list_organisms.csv
+        python3 scripts/merge_csv.py
+        python3 scripts/merge_list_organism.py
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-26T141058.911282.snakemake.log

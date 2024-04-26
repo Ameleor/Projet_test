@@ -6,9 +6,12 @@ Le but de cet essais est de décompresser les génomes comme sur l'essai précé
 ##Résultat:
 
 ###1:
-Test sur 10 génomes fonctionnels
+
+Test sur le jeu de données fait à la main fonctionnel
 
 ###2:
-Test sur 100 génomes fonctionnels
+
+Création d'un fichier .csv regroupant la liste de toute les informations nécessaires
+
 
 

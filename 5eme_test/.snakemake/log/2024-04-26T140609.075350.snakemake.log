@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+all               1
+dir_finder        1
+total             2
+
+Select jobs to execute...
+
+[Fri Apr 26 14:06:09 2024]
+rule dir_finder:
+    input: results/genomes
+    output: results/genomes/lists/list_organisms_merged.tsv
+    jobid: 16
+    reason: Missing output files: results/genomes/lists/list_organisms_merged.tsv
+    resources: tmpdir=/tmp
+
+[Fri Apr 26 14:06:10 2024]
+Error in rule dir_finder:
+    jobid: 16
+    input: results/genomes
+    output: results/genomes/lists/list_organisms_merged.tsv
+    shell:
+        
+        find results/genomes -maxdepth 1 -mindepth 1 -type d -exec basename {} \;> results/genomes/lists/list_organisms.csv
+        python3 scripts/merge_csv.py
+        python3 scripts/merge_list_organism.py
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-26T140609.075350.snakemake.log
