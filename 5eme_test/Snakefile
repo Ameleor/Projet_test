@@ -7,6 +7,7 @@ import pandas as pd
 configfile: "config.yaml"
 
 GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+GENOMES_bis = [os.path.basename(genome_bis) for genome_bis in glob("results/genomes/GC*")]
 GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
 
 TIMEOUT=["timeout"]
@@ -18,7 +19,8 @@ rule all:
     input:
         expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
         expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
-        "results/lists/list_organisms_merged.csv"
+        "results/lists/list_organisms.csv",
+        "results/lists/list_PGC_infos.csv"
 #       ,
 #       expand("results/fasta/{gene}.fasta", gene=GENES)
 
@@ -45,11 +47,25 @@ rule list_creator:
     input:
         "results/genomes"
     output:
-        "results/lists/list_organisms_merged.csv"
+        "results/lists/list_organisms.csv",
     shell:
         """
-        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \;> results/lists/list_organisms.csv
-        python3 scripts/merge_csv.py
+        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > results/lists/list_organisms.csv
+        """
+
+# Retrieve all the lines from lists_organisms and put them in a list
+with open("results/lists/list_organisms.csv") as f:
+    GENOMES_NAME = [line.strip() for line in f]
+
+# Rule that accesses each genome, gathers important information from PGCfinder outputs, and puts them in a file
+rule infos_retriever:
+    input:
+        "results/lists/list_organisms.csv"
+    output:
+        "results/lists/list_PGC_infos.csv"
+    shell:
+        """
+            grep "GC" {input} | while IFS= read -r ligne; do python3 scripts/collect_gene_fasta.py "$ligne"; done > {output}
         """
 
 #rule fasta_creator:
