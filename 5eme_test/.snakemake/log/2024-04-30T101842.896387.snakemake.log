@@ -1,0 +1,61 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+infos_retriever        1
+list_creator           1
+list_merger            1
+total                  4
+
+Select jobs to execute...
+
+[Tue Apr 30 10:18:43 2024]
+rule list_creator:
+    input: results/genomes
+    output: results/lists/list_organisms.csv
+    jobid: 16
+    reason: Updated input files: results/genomes
+    resources: tmpdir=/tmp
+
+[Tue Apr 30 10:18:43 2024]
+Finished job 16.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Tue Apr 30 10:18:43 2024]
+rule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 17
+    reason: Missing output files: results/lists/list_PGC_infos.csv; Input files updated by another job: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Tue Apr 30 10:18:44 2024]
+Finished job 17.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Tue Apr 30 10:18:44 2024]
+rule list_merger:
+    input: results/genomes, results/lists/list_organisms.csv
+    output: results/lists/list_organisms_merged.csv
+    jobid: 18
+    reason: Missing output files: results/lists/list_organisms_merged.csv; Input files updated by another job: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Tue Apr 30 10:18:44 2024]
+Error in rule list_merger:
+    jobid: 18
+    input: results/genomes, results/lists/list_organisms.csv
+    output: results/lists/list_organisms_merged.csv
+    shell:
+        python3 scripts/merge_csv.py
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-30T101842.896387.snakemake.log

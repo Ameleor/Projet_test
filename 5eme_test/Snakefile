@@ -39,18 +39,19 @@ rule PGCfinder:
     shell:
         """
         mkdir -p {output}
-        macsyfinder --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/genomes/{wildcards.genome}/PGCfinder/
+        macsyfinder --mute --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/genomes/{wildcards.genome}/PGCfinder/
         """
 
 # Rule to create a file with all the names of the genomes that have been given previously with all the taxonomy and useful informations
 rule list_creator:
     input:
-        "results/genomes"
+        expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
+        dirname="results/genomes"
     output:
         "results/lists/list_organisms.csv",
     shell:
         """
-        find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > results/lists/list_organisms.csv
+        find {input.dirname} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > results/lists/list_organisms.csv
         """
 
 # Rule that accesses each genome, gathers important information from PGCfinder outputs, and puts them in a file
@@ -61,11 +62,13 @@ rule infos_retriever:
         "results/lists/list_PGC_infos.csv"
     shell:
         """
-            grep "GC" {input} | while IFS= read -r ligne; do python3 scripts/collect_gene_fasta.py "$ligne"; done > {output}
+        grep "GC" {input} | while IFS= read -r ligne; do python3 scripts/collect_infos_PGCfinder.py "$ligne"; done > {output}
         """
 
 rule list_merger:
     input:
+        "results/lists/list_PGC_infos.csv",
+        "data/lists/merged_list.csv",
         "results/lists/list_organisms.csv"
     output:
         "results/lists/list_organisms_merged.csv"
