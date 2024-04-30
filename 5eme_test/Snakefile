@@ -20,8 +20,8 @@ rule all:
         expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
         expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
         "results/lists/list_organisms.csv",
-        "results/lists/list_PGC_infos.csv"
-#       ,
+        "results/lists/list_PGC_infos.csv",
+        "results/lists/list_organisms_merged.csv"
 #       expand("results/fasta/{gene}.fasta", gene=GENES)
 
 # Règle pour décompresser les génomes
@@ -53,10 +53,6 @@ rule list_creator:
         find {input} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > results/lists/list_organisms.csv
         """
 
-# Retrieve all the lines from lists_organisms and put them in a list
-with open("results/lists/list_organisms.csv") as f:
-    GENOMES_NAME = [line.strip() for line in f]
-
 # Rule that accesses each genome, gathers important information from PGCfinder outputs, and puts them in a file
 rule infos_retriever:
     input:
@@ -67,6 +63,14 @@ rule infos_retriever:
         """
             grep "GC" {input} | while IFS= read -r ligne; do python3 scripts/collect_gene_fasta.py "$ligne"; done > {output}
         """
+
+rule list_merger:
+    input:
+        "results/lists/list_organisms.csv"
+    output:
+        "results/lists/list_organisms_merged.csv"
+    shell:
+        "python3 scripts/merge_csv.py"
 
 #rule fasta_creator:
 #    input:
