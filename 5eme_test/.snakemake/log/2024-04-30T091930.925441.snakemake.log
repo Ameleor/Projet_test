@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+infos_retriever        1
+total                  2
+
+Select jobs to execute...
+
+[Tue Apr 30 09:19:31 2024]
+rule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 17
+    reason: Missing output files: results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+[Tue Apr 30 09:19:31 2024]
+Error in rule infos_retriever:
+    jobid: 17
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    shell:
+        
+            grep "GC" results/lists/list_organisms.csv | while IFS= read -r ligne; do python3 scripts/collect_gene_fasta.py "$ligne"; done > results/lists/list_PGC_infos.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job infos_retriever since they might be corrupted:
+results/lists/list_PGC_infos.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-30T091930.925441.snakemake.log

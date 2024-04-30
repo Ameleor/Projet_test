@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+infos_retriever        1
+total                  2
+
+Select jobs to execute...
+
+[Mon Apr 29 17:08:51 2024]
+rule infos_retriever:
+    input: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder, results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder
+    output: results/lists/list_PGC_infos.csv
+    jobid: 17
+    reason: Missing output files: results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+RuleException in rule infos_retriever in file /home/salzatht/Documents/Projet_test/5eme_test/Snakefile, line 59:
+AttributeError: 'InputFiles' object has no attribute 'genomes_name', when formatting the following:
+
+        python3 scripts/collect_gene_fasta.py {input.genomes_name} >> {output}
+        

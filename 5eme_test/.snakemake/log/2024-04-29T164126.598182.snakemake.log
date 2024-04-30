@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+list_creator        1
+total               2
+
+Select jobs to execute...
+
+[Mon Apr 29 16:41:26 2024]
+rule list_creator:
+    input: results/genomes
+    output: results/lists/list_organisms_merged.csv, results/lists/list_PGC_infos.csv
+    jobid: 16
+    reason: Missing output files: results/lists/list_PGC_infos.csv, results/lists/list_organisms_merged.csv
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule list_creator in file /home/salzatht/Documents/Projet_test/5eme_test/Snakefile, line 45:
+Job 16  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/lists/list_organisms_merged.csv
+results/lists/list_PGC_infos.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-04-29T164126.598182.snakemake.log
