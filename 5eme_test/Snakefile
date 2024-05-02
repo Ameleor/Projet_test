@@ -22,7 +22,9 @@ rule all:
         "results/lists/list_PGC_infos.csv",
         "results/lists/list_organisms_merged.csv",
         expand("results/fasta/{gene}.faa", gene=GENES),
-        expand("results/fasta/gene_aligned/{gene}_aln", gene=GENES)
+        expand("results/fasta/gene_aligned/{gene}_aln", gene=GENES),
+        expand("results/fasta/gene_trimmed/{gene}_trim.phy", gene=GENES),
+        expand("results/fasta/gene_trimmed/{gene}_trim.html", gene=GENES)
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -105,4 +107,16 @@ rule fasta_aligner:
         """
         mkdir -p results/fasta/gene_aligned
         mafft-linsi {input} > {output}
+        """
+
+rule alignment_trimmer:
+    input:
+        "results/fasta/gene_aligned/{gene}_aln"
+    output:
+        html="results/fasta/gene_trimmed/{gene}_trim.html",
+        phy="results/fasta/gene_trimmed/{gene}_trim.phy"
+
+    shell:
+        """
+        java -jar scripts/BMGE/BMGE.jar -i {input} -t AA -m BLOSUM30 -g 0.1 -oh {output.html} -opco {output.phy}
         """
