@@ -1,0 +1,255 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+fasta_aligner       33
+total               34
+
+Select jobs to execute...
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_puhA.faa
+    output: results/fasta/gene_aligned/PGC_puhA_aln
+    jobid: 228
+    reason: Missing output files: results/fasta/gene_aligned/PGC_puhA_aln
+    wildcards: gene=PGC_puhA
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_bchP.faa
+    output: results/fasta/gene_aligned/PGC_bchP_aln
+    jobid: 236
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchP_aln
+    wildcards: gene=PGC_bchP
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_bchL.faa
+    output: results/fasta/gene_aligned/PGC_bchL_aln
+    jobid: 221
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchL_aln
+    wildcards: gene=PGC_bchL
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+[Thu May  2 10:43:58 2024]
+[Thu May  2 10:43:58 2024]
+Error in rule fasta_aligner:
+    jobid: 236
+    input: results/fasta/PGC_bchP.faa
+    output: results/fasta/gene_aligned/PGC_bchP_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchP.faa > results/fasta/gene_aligned/PGC_bchP_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule fasta_aligner:
+    input: results/fasta/PGC_bchB.faa
+    output: results/fasta/gene_aligned/PGC_bchB_aln
+    jobid: 223
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchB_aln
+    wildcards: gene=PGC_bchB
+    resources: tmpdir=/tmp
+Error in rule fasta_aligner:
+    jobid: 228
+    input: results/fasta/PGC_puhA.faa
+    output: results/fasta/gene_aligned/PGC_puhA_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_puhA.faa > results/fasta/gene_aligned/PGC_puhA_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu May  2 10:43:58 2024]
+
+Error in rule fasta_aligner:
+    jobid: 221
+    input: results/fasta/PGC_bchL.faa
+    output: results/fasta/gene_aligned/PGC_bchL_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchL.faa > results/fasta/gene_aligned/PGC_bchL_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_bchY.faa
+    output: results/fasta/gene_aligned/PGC_bchY_aln
+    jobid: 244
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchY_aln
+    wildcards: gene=PGC_bchY
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_crtB.faa
+    output: results/fasta/gene_aligned/PGC_crtB_aln
+    jobid: 229
+    reason: Missing output files: results/fasta/gene_aligned/PGC_crtB_aln
+    wildcards: gene=PGC_crtB
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_acsF.faa
+    output: results/fasta/gene_aligned/PGC_acsF_aln
+    jobid: 235
+    reason: Missing output files: results/fasta/gene_aligned/PGC_acsF_aln
+    wildcards: gene=PGC_acsF
+    resources: tmpdir=/tmp
+Error in rule fasta_aligner:
+    jobid: 244
+    input: results/fasta/PGC_bchY.faa
+    output: results/fasta/gene_aligned/PGC_bchY_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchY.faa > results/fasta/gene_aligned/PGC_bchY_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu May  2 10:43:58 2024]
+Error in rule fasta_aligner:
+    jobid: 223
+    input: results/fasta/PGC_bchB.faa
+    output: results/fasta/gene_aligned/PGC_bchB_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchB.faa > results/fasta/gene_aligned/PGC_bchB_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu May  2 10:43:58 2024]
+Error in rule fasta_aligner:
+    jobid: 229
+    input: results/fasta/PGC_crtB.faa
+    output: results/fasta/gene_aligned/PGC_crtB_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_crtB.faa > results/fasta/gene_aligned/PGC_crtB_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_bchF.faa
+    output: results/fasta/gene_aligned/PGC_bchF_aln
+    jobid: 220
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchF_aln
+    wildcards: gene=PGC_bchF
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_crtF.faa
+    output: results/fasta/gene_aligned/PGC_crtF_aln
+    jobid: 237
+    reason: Missing output files: results/fasta/gene_aligned/PGC_crtF_aln
+    wildcards: gene=PGC_crtF
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 10:43:58 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_bchH.faa
+    output: results/fasta/gene_aligned/PGC_bchH_aln
+    jobid: 243
+    reason: Missing output files: results/fasta/gene_aligned/PGC_bchH_aln
+    wildcards: gene=PGC_bchH
+    resources: tmpdir=/tmp
+
+[Thu May  2 10:43:58 2024]
+Error in rule fasta_aligner:
+    jobid: 235
+    input: results/fasta/PGC_acsF.faa
+    output: results/fasta/gene_aligned/PGC_acsF_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_acsF.faa > results/fasta/gene_aligned/PGC_acsF_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu May  2 10:43:58 2024]
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchP_aln
+Error in rule fasta_aligner:
+    jobid: 220
+    input: results/fasta/PGC_bchF.faa
+    output: results/fasta/gene_aligned/PGC_bchF_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchF.faa > results/fasta/gene_aligned/PGC_bchF_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu May  2 10:43:58 2024]
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_puhA_aln
+Error in rule fasta_aligner:
+    jobid: 237
+    input: results/fasta/PGC_crtF.faa
+    output: results/fasta/gene_aligned/PGC_crtF_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_crtF.faa > results/fasta/gene_aligned/PGC_crtF_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchL_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchY_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchB_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_crtB_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_acsF_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchF_aln
+[Thu May  2 10:43:58 2024]
+Error in rule fasta_aligner:
+    jobid: 243
+    input: results/fasta/PGC_bchH.faa
+    output: results/fasta/gene_aligned/PGC_bchH_aln
+    shell:
+        
+        mkdir -p results/fasta/gene_aligned
+        maaft-linsie results/fasta/PGC_bchH.faa > results/fasta/gene_aligned/PGC_bchH_aln
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_crtF_aln
+Removing output files of failed job fasta_aligner since they might be corrupted:
+results/fasta/gene_aligned/PGC_bchH_aln
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-02T104357.243248.snakemake.log

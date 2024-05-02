@@ -21,7 +21,8 @@ rule all:
         "results/lists/list_organisms.csv",
         "results/lists/list_PGC_infos.csv",
         "results/lists/list_organisms_merged.csv",
-        expand("results/fasta/{genome}/{gene}.faa", gene=GENES, genome=GENOMES)
+        expand("results/fasta/{gene}.faa", gene=GENES),
+        expand("results/fasta/gene_aligned/{gene}_aln", gene=GENES)
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -84,3 +85,14 @@ rule fasta_creator:
         """
         python3 scripts/fasta_getter.py {wildcards.genome} {input.gene} >> {output.fasta}
         """
+
+rule fasta_gatherer:
+    input:
+        faa=expand("results/fasta/{genome}/{gene}.faa",gene=GENES, genome=GENOMES)
+    output:
+        "results/fasta/{gene}.faa"
+    shell:
+        """
+        cat results/fasta/GC*/{wildcards.gene}.faa | uniq >> {output}
+        """
+
