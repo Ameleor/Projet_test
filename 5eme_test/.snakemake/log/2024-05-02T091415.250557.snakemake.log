@@ -1,0 +1,126 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+PGCfinder              3
+all                    1
+fasta_creator        165
+infos_retriever        1
+list_creator           1
+list_merger            1
+total                172
+
+Select jobs to execute...
+
+[Thu May  2 09:14:15 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder/best_solution.tsv, data/profiles/PGC_bchH.hmm
+    output: results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchH.faa
+    jobid: 152
+    reason: Missing output files: results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchH.faa
+    wildcards: genome=GCF_001719165.1_ASM171916v1, gene=PGC_bchH
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:15 2024]
+Finished job 152.
+1 of 172 steps (1%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:16 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder/best_solution.tsv, data/profiles/PGC_bchC.hmm
+    output: results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchC.faa
+    jobid: 182
+    reason: Missing output files: results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchC.faa
+    wildcards: genome=GCF_001719165.1_ASM171916v1, gene=PGC_bchC
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:16 2024]
+Finished job 182.
+2 of 172 steps (1%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:16 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder/best_solution.tsv, data/profiles/PGC_crtF.hmm
+    output: results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtF.faa
+    jobid: 122
+    reason: Missing output files: results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtF.faa
+    wildcards: genome=GCF_001719165.1_ASM171916v1, gene=PGC_crtF
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:16 2024]
+Finished job 122.
+3 of 172 steps (2%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:16 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+    output: results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    jobid: 3
+    reason: Code has changed since last execution
+    wildcards: genome=GCF_000016725.1_ASM1672v1
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:17 2024]
+Finished job 3.
+4 of 172 steps (2%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:17 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder/best_solution.tsv, data/profiles/PGC_pufM.hmm
+    output: results/fasta/GCF_001719165.1_ASM171916v1/PGC_pufM.faa
+    jobid: 92
+    reason: Missing output files: results/fasta/GCF_001719165.1_ASM171916v1/PGC_pufM.faa
+    wildcards: genome=GCF_001719165.1_ASM171916v1, gene=PGC_pufM
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:18 2024]
+Finished job 92.
+5 of 172 steps (3%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:18 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder/best_solution.tsv, data/profiles/PGC_crtA.hmm
+    output: results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtA.faa
+    jobid: 63
+    reason: Missing output files: results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtA.faa
+    wildcards: genome=GCF_001576595.1_ASM157659v1, gene=PGC_crtA
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:18 2024]
+Finished job 63.
+6 of 172 steps (3%) done
+Select jobs to execute...
+
+[Thu May  2 09:14:18 2024]
+rule fasta_creator:
+    input: results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder/best_solution.tsv, data/profiles/PGC_crtF.hmm
+    output: results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa
+    jobid: 123
+    reason: Missing output files: results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa
+    wildcards: genome=GCF_001576595.1_ASM157659v1, gene=PGC_crtF
+    resources: tmpdir=/tmp
+
+[Thu May  2 09:14:18 2024]
+Error in rule fasta_creator:
+    jobid: 123
+    input: results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder/best_solution.tsv, data/profiles/PGC_crtF.hmm
+    output: results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa
+    shell:
+        
+        python3 scripts/fasta_getter.py GCF_001576595.1_ASM157659v1 data/profiles/PGC_crtF.hmm >> results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job fasta_creator since they might be corrupted:
+results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-02T091415.250557.snakemake.log

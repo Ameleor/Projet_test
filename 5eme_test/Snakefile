@@ -7,7 +7,6 @@ import pandas as pd
 configfile: "config.yaml"
 
 GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
-GENOMES_bis = [os.path.basename(genome_bis) for genome_bis in glob("results/genomes/GC*")]
 GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
 
 TIMEOUT=["timeout"]
@@ -21,8 +20,8 @@ rule all:
         expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
         "results/lists/list_organisms.csv",
         "results/lists/list_PGC_infos.csv",
-        "results/lists/list_organisms_merged.csv"
-#       expand("results/fasta/{gene}.fasta", gene=GENES)
+        "results/lists/list_organisms_merged.csv",
+        expand("results/fasta/{genome}/{gene}.faa", gene=GENES, genome=GENOMES)
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -39,7 +38,7 @@ rule PGCfinder:
     shell:
         """
         mkdir -p {output}
-        macsyfinder --mute --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o results/genomes/{wildcards.genome}/PGCfinder/
+        macsyfinder --mute --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o {output}
         """
 
 # Rule to create a file with all the names of the genomes that have been given previously with all the taxonomy and useful informations
@@ -51,7 +50,7 @@ rule list_creator:
         "results/lists/list_organisms.csv",
     shell:
         """
-        find {input.dirname} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > results/lists/list_organisms.csv
+        find {input.dirname} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > {output}
         """
 
 # Rule that accesses each genome, gathers important information from PGCfinder outputs, and puts them in a file
@@ -75,13 +74,13 @@ rule list_merger:
     shell:
         "python3 scripts/merge_csv.py"
 
-#rule fasta_creator:
-#    input:
-#        PGC="results/genomes/{genome}/PGCfinder",
-#        genes=["data/profiles/" + gene + ".hmm" for gene in GENES]
-#    output:
-#        "results/fasta/{gene}.fasta"
-#    shell:
-#        """
-#        python3 collect_gene_fasta.py {input.PGC} {input.genes}
-#        """
+rule fasta_creator:
+    input:
+        "results/genomes/{genome}/PGCfinder",
+        gene="data/profiles/{gene}.hmm"
+    output:
+        fasta = "results/fasta/{genome}/{gene}.faa",
+    shell:
+        """
+        python3 scripts/fasta_getter.py {wildcards.genome} {input.gene} >> {output.fasta}
+        """
