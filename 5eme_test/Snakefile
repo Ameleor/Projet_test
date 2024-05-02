@@ -96,3 +96,13 @@ rule fasta_gatherer:
         cat results/fasta/GC*/{wildcards.gene}.faa | uniq >> {output}
         """
 
+rule fasta_aligner:
+    input:
+        "results/fasta/{gene}.faa"
+    output:
+        "results/fasta/gene_aligned/{gene}_aln"
+    shell:
+        """
+        mkdir -p results/fasta/gene_aligned
+        mafft-linsi {input} > {output}
+        """
