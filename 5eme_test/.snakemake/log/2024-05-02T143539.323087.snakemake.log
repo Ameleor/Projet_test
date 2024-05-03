@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+tree_creator       33
+total              34
+
+Select jobs to execute...
+
+[Thu May  2 14:35:40 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_bchY_trim.phy
+    output: results/tree/PGC_bchY/PGC_bchY
+    jobid: 310
+    reason: Missing output files: results/tree/PGC_bchY/PGC_bchY
+    wildcards: gene=PGC_bchY
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule tree_creator in file /home/salzatht/Documents/Projet_test/5eme_test/Snakefile, line 125:
+Job 310  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/tree/PGC_bchY/PGC_bchY
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-02T143539.323087.snakemake.log

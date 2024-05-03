@@ -1,0 +1,220 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    timc-tree-36p (AVX2, FMA3, 30 GB RAM)
+Command: iqtree2 -s results/fasta/gene_trimmed/PGC_bchH_trim.phy -pre results/tree/PGC_bchH/PGC_bchH
+Seed:    430724 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu May  2 15:56:15 2024
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/fasta/gene_trimmed/PGC_bchH_trim.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+WARNING: 423 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 3471 columns, 1204 distinct patterns
+847 parsimony-informative, 523 singleton sites, 2101 constant sites
+WARNING: Some sequence names are changed as follows:
+GCF_000014045.1_ASM1404v1_130_WP_011566494.1_magnesium_chelatase_subunit_H_[Roseobacter_denitrificans] -> GCF_000014045.1_ASM1404v1_130_WP_011566494.1_magnesium_chelatase_subunit_H__Roseobacter_denitrificans_
+GCF_000016185.1_ASM1618v1_2025_WP_012567287.1_magnesium_chelatase_subunit_H_[Rhodospirillum_centenum] -> GCF_000016185.1_ASM1618v1_2025_WP_012567287.1_magnesium_chelatase_subunit_H__Rhodospirillum_centenum_
+GCF_000019725.1_ASM1972v1_1850_WP_012318827.1_magnesium_chelatase_subunit_H_[Methylobacterium_radiotolerans] -> GCF_000019725.1_ASM1972v1_1850_WP_012318827.1_magnesium_chelatase_subunit_H__Methylobacterium_radiotolerans_
+GCF_000021005.1_ASM2100v1_1553_WP_015920856.1_magnesium_chelatase_subunit_H_[Cereibacter_sphaeroides] -> GCF_000021005.1_ASM2100v1_1553_WP_015920856.1_magnesium_chelatase_subunit_H__Cereibacter_sphaeroides_
+GCF_000195775.2_ASM19577v2_1572_WP_011157103.1_magnesium_chelatase_subunit_H_[Rhodopseudomonas_palustris] -> GCF_000195775.2_ASM19577v2_1572_WP_011157103.1_magnesium_chelatase_subunit_H__Rhodopseudomonas_palustris_
+GCF_000225955.1_ASM22595v1_631_WP_011388379.1_magnesium_chelatase_subunit_H_[Rhodospirillum_rubrum] -> GCF_000225955.1_ASM22595v1_631_WP_011388379.1_magnesium_chelatase_subunit_H__Rhodospirillum_rubrum_
+GCF_001576595.1_ASM157659v1_1925_WP_011338125.1_magnesium_chelatase_subunit_H_[Cereibacter_sphaeroides] -> GCF_001576595.1_ASM157659v1_1925_WP_011338125.1_magnesium_chelatase_subunit_H__Cereibacter_sphaeroides_
+GCF_001719165.1_ASM171916v1_881_WP_051698060.1_magnesium_chelatase_subunit_H_[Erythrobacter_litoralis] -> GCF_001719165.1_ASM171916v1_881_WP_051698060.1_magnesium_chelatase_subunit_H__Erythrobacter_litoralis_
+
+                                                                                                              Gap/Ambiguity  Composition  p-value
+   1  GCF_000014045.1_ASM1404v1_130_WP_011566494.1_magnesium_chelatase_subunit_H__Roseobacter_denitrificans_         20.11%    passed     97.89%
+   2  GCF_000016185.1_ASM1618v1_2025_WP_012567287.1_magnesium_chelatase_subunit_H__Rhodospirillum_centenum_          21.00%    passed     99.99%
+   3  GCF_000019725.1_ASM1972v1_1850_WP_012318827.1_magnesium_chelatase_subunit_H__Methylobacterium_radiotolerans_   21.90%    passed     47.95%
+   4  GCF_000021005.1_ASM2100v1_1553_WP_015920856.1_magnesium_chelatase_subunit_H__Cereibacter_sphaeroides_          20.28%    passed     99.99%
+   5  GCF_000195775.2_ASM19577v2_1572_WP_011157103.1_magnesium_chelatase_subunit_H__Rhodopseudomonas_palustris_      19.71%    passed     99.26%
+   6  GCF_000225955.1_ASM22595v1_631_WP_011388379.1_magnesium_chelatase_subunit_H__Rhodospirillum_rubrum_            20.92%    passed     99.55%
+   7  GCF_001576595.1_ASM157659v1_1925_WP_011338125.1_magnesium_chelatase_subunit_H__Cereibacter_sphaeroides_        20.34%    passed    100.00%
+   8  GCF_001719165.1_ASM171916v1_881_WP_051698060.1_magnesium_chelatase_subunit_H__Erythrobacter_litoralis_         19.71%    passed     99.93%
+****  TOTAL                                                                                                          20.49%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -25382.723
+Optimal log-likelihood: -25382.349
+Proportion of invariable sites: 0.310
+Gamma shape alpha: 1.735
+Parameters optimization took 1 rounds (0.689 sec)
+Time for fast ML tree search: 1.771 seconds
+
+NOTE: ModelFinder requires 15 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 3471) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            25879.593    13  51785.187    51785.292    51865.165
+  2  LG+I          25391.778    14  50811.555    50811.677    50897.686
+  3  LG+G4         25393.717    14  50815.433    50815.555    50901.564
+  4  LG+I+G4       25378.268    15  50786.536    50786.675    50878.819
+  5  LG+R2         25375.758    15  50781.517    50781.656    50873.800
+  6  LG+R3         25375.488    17  50784.975    50785.153    50889.563
+ 17  LG+F+I+G4     18959.210    34  37986.421    37987.113    38195.595
+ 18  LG+F+R2       18975.923    34  38019.845    38020.538    38229.020
+ 30  WAG+I+G4      24840.192    15  49710.385    49710.524    49802.668
+ 31  WAG+R2        24841.966    15  49713.931    49714.070    49806.214
+ 43  WAG+F+I+G4    18985.813    34  38039.626    38040.319    38248.801
+ 44  WAG+F+R2      18996.546    34  38061.092    38061.784    38270.266
+ 56  JTT+I+G4      25355.932    15  50741.863    50742.002    50834.146
+ 57  JTT+R2        25361.131    15  50752.262    50752.401    50844.545
+ 69  JTT+F+I+G4    19560.225    34  39188.450    39189.142    39397.624
+ 70  JTT+F+R2      19599.127    34  39266.254    39266.947    39475.429
+ 82  JTTDCMut+I+G4 25293.702    15  50617.405    50617.544    50709.688
+ 83  JTTDCMut+R2   25298.813    15  50627.626    50627.765    50719.909
+ 95  JTTDCMut+F+I+G4 19534.654    34  39137.307    39138.000    39346.482
+ 96  JTTDCMut+F+R2 19573.404    34  39214.807    39215.500    39423.982
+108  DCMut+I+G4    25671.459    15  51372.918    51373.057    51465.201
+109  DCMut+R2      25747.182    15  51524.365    51524.503    51616.648
+121  DCMut+F+I+G4  20036.097    34  40140.194    40140.887    40349.369
+122  DCMut+F+R2    20107.883    34  40283.765    40284.458    40492.940
+134  VT+I+G4       25308.172    15  50646.344    50646.483    50738.627
+135  VT+R2         25305.585    15  50641.171    50641.310    50733.454
+147  VT+F+I+G4     18925.879    34  37919.758    37920.450    38128.932
+148  VT+F+R2       18930.025    34  37928.049    37928.742    38137.224
+160  PMB+I+G4      24450.349    15  48930.697    48930.836    49022.980
+161  PMB+R2        24448.531    15  48927.063    48927.202    49019.346
+173  PMB+F+I+G4    18813.152    34  37694.305    37694.998    37903.480
+174  PMB+F+R2      18813.586    34  37695.172    37695.864    37904.346
+186  Blosum62+I+G4 24657.637    15  49345.273    49345.412    49437.556
+187  Blosum62+R2   24654.778    15  49339.555    49339.694    49431.838
+199  Blosum62+F+I+G4 18723.122    34  37514.245    37514.938    37723.420
+200  Blosum62+F+R2 18723.050    34  37514.100    37514.793    37723.275
+212  Dayhoff+I+G4  25669.955    15  51369.911    51370.050    51462.194
+213  Dayhoff+R2    25745.758    15  51521.516    51521.655    51613.799
+225  Dayhoff+F+I+G4 20036.510    34  40141.020    40141.713    40350.195
+226  Dayhoff+F+R2  20108.314    34  40284.628    40285.321    40493.803
+238  mtREV+I+G4    26864.449    15  53758.899    53759.038    53851.182
+239  mtREV+R2      26912.355    15  53854.710    53854.849    53946.993
+251  mtREV+F+I+G4  19716.752    34  39501.504    39502.196    39710.678
+252  mtREV+F+R2    19788.898    34  39645.797    39646.490    39854.972
+264  mtART+I+G4    26695.137    15  53420.273    53420.412    53512.556
+265  mtART+R2      26762.150    15  53554.300    53554.439    53646.583
+277  mtART+F+I+G4  19401.267    34  38870.534    38871.227    39079.709
+278  mtART+F+R2    19442.316    34  38952.633    38953.326    39161.808
+290  mtZOA+I+G4    25598.743    15  51227.486    51227.625    51319.769
+291  mtZOA+R2      25617.597    15  51265.193    51265.332    51357.476
+303  mtZOA+F+I+G4  19183.117    34  38434.233    38434.926    38643.408
+304  mtZOA+F+R2    19242.537    34  38553.074    38553.767    38762.249
+316  mtMet+I+G4    26904.084    15  53838.169    53838.308    53930.452
+317  mtMet+R2      26922.642    15  53875.284    53875.423    53967.567
+329  mtMet+F+I+G4  19549.302    34  39166.604    39167.297    39375.779
+330  mtMet+F+R2    19623.561    34  39315.122    39315.815    39524.297
+342  mtVer+I+G4    27127.808    15  54285.616    54285.755    54377.899
+343  mtVer+R2      27165.094    15  54360.189    54360.328    54452.472
+355  mtVer+F+I+G4  20008.233    34  40084.467    40085.160    40293.642
+356  mtVer+F+R2    20083.832    34  40235.664    40236.357    40444.839
+368  mtInv+I+G4    26915.271    15  53860.542    53860.681    53952.825
+369  mtInv+R2      26920.837    15  53871.673    53871.812    53963.956
+381  mtInv+F+I+G4  19136.860    34  38341.720    38342.413    38550.895
+382  mtInv+F+R2    19185.773    34  38439.546    38440.239    38648.721
+394  mtMAM+I+G4    28129.329    15  56288.657    56288.796    56380.940
+395  mtMAM+R2      28326.640    15  56683.280    56683.419    56775.563
+407  mtMAM+F+I+G4  20645.811    34  41359.622    41360.314    41568.797
+408  mtMAM+F+R2    20892.729    34  41853.457    41854.150    42062.632
+420  HIVb+I+G4     26895.172    15  53820.345    53820.484    53912.628
+421  HIVb+R2       26949.274    15  53928.549    53928.688    54020.832
+433  HIVb+F+I+G4   20488.655    34  41045.310    41046.002    41254.484
+434  HIVb+F+R2     20638.779    34  41345.559    41346.251    41554.733
+446  HIVw+I+G4     28788.804    15  57607.609    57607.747    57699.891
+447  HIVw+R2       29003.225    15  58036.450    58036.589    58128.733
+459  HIVw+F+I+G4   21023.057    34  42114.115    42114.807    42323.289
+460  HIVw+F+R2     21300.721    34  42669.442    42670.134    42878.616
+472  FLU+I+G4      27446.860    15  54923.720    54923.859    55016.003
+473  FLU+R2        27565.034    15  55160.068    55160.207    55252.351
+485  FLU+F+I+G4    20406.747    34  40881.495    40882.188    41090.670
+486  FLU+F+R2      20539.905    34  41147.810    41148.503    41356.985
+498  rtREV+I+G4    25393.947    15  50817.893    50818.032    50910.176
+499  rtREV+R2      25391.577    15  50813.154    50813.293    50905.437
+511  rtREV+F+I+G4  18983.976    34  38035.953    38036.646    38245.128
+512  rtREV+F+R2    18997.716    34  38063.431    38064.124    38272.606
+524  cpREV+I+G4    25625.919    15  51281.837    51281.976    51374.120
+525  cpREV+R2      25632.204    15  51294.408    51294.547    51386.691
+537  cpREV+F+I+G4  19252.346    34  38572.693    38573.385    38781.867
+538  cpREV+F+R2    19295.340    34  38658.679    38659.372    38867.854
+Akaike Information Criterion:           Blosum62+F+R2
+Corrected Akaike Information Criterion: Blosum62+F+R2
+Bayesian Information Criterion:         Blosum62+F+R2
+Best-fit model: Blosum62+F+R2 chosen according to BIC
+
+All model information printed to results/tree/PGC_bchH/PGC_bchH.model.gz
+CPU time for ModelFinder: 207.225 seconds (0h:3m:27s)
+Wall-clock time for ModelFinder: 215.578 seconds (0h:3m:35s)
+WARNING: States(s) N, D, Q, E, I, L, K, F, P, V rarely appear in alignment and may cause numerical problems
+
+NOTE: 3 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -18723.050
+Optimal log-likelihood: -18723.012
+Site proportion and rates:  (0.549,0.138) (0.451,2.049)
+Parameters optimization took 1 rounds (0.105 sec)
+Computing ML distances based on estimated model parameters... 0.005 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -18723.012
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.179 second
+Computing log-likelihood of 44 initial trees ... 0.822 seconds
+Current best score: -18723.012
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -18722.986
+Iteration 10 / LogL: -18723.077 / Time: 0h:0m:2s
+Iteration 20 / LogL: -18723.175 / Time: 0h:0m:4s
+Finish initializing candidate tree set (1)
+Current best tree score: -18722.986 / CPU time: 4.339
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -18739.632 / Time: 0h:0m:6s (0h:0m:15s left)
+Iteration 40 / LogL: -18723.141 / Time: 0h:0m:8s (0h:0m:13s left)
+UPDATE BEST LOG-LIKELIHOOD: -18722.986
+Iteration 50 / LogL: -18722.998 / Time: 0h:0m:10s (0h:0m:11s left)
+Iteration 60 / LogL: -18723.087 / Time: 0h:0m:12s (0h:0m:8s left)
+Iteration 70 / LogL: -18722.994 / Time: 0h:0m:14s (0h:0m:6s left)
+Iteration 80 / LogL: -18723.090 / Time: 0h:0m:16s (0h:0m:4s left)
+Iteration 90 / LogL: -18723.135 / Time: 0h:0m:17s (0h:0m:2s left)
+Iteration 100 / LogL: -18723.005 / Time: 0h:0m:19s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:20s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -18722.986
+2. Current log-likelihood: -18722.968
+3. Current log-likelihood: -18722.954
+4. Current log-likelihood: -18722.944
+Optimal log-likelihood: -18722.935
+Site proportion and rates:  (0.554,0.143) (0.446,2.066)
+Parameters optimization took 4 rounds (0.361 sec)
+BEST SCORE FOUND : -18722.935
+Total tree length: 1.238
+
+Total number of iterations: 102
+CPU time used for tree search: 19.945 sec (0h:0m:19s)
+Wall-clock time used for tree search: 20.011 sec (0h:0m:20s)
+Total CPU time used: 20.514 sec (0h:0m:20s)
+Total wall-clock time used: 20.580 sec (0h:0m:20s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/tree/PGC_bchH/PGC_bchH.iqtree
+  Maximum-likelihood tree:       results/tree/PGC_bchH/PGC_bchH.treefile
+  Likelihood distances:          results/tree/PGC_bchH/PGC_bchH.mldist
+  Screen log file:               results/tree/PGC_bchH/PGC_bchH.log
+
+Date and Time: Thu May  2 16:00:11 2024

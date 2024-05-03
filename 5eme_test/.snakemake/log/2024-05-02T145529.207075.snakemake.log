@@ -1,0 +1,173 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+alignment_trimmer        7
+all                      1
+fasta_aligner            2
+fasta_gatherer           1
+tree_creator            16
+total                   27
+
+Select jobs to execute...
+
+[Thu May  2 14:55:30 2024]
+rule fasta_gatherer:
+    input: results/fasta/GCF_000016185.1_ASM1618v1/PGC_pufL.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_pufL.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_pufL.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_pufL.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_pufL.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtD.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtD.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtD.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtD.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtD.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchD.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchD.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchD.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchD.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchD.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchF.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchF.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchF.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchF.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchF.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchL.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchL.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchL.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchL.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchL.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtI.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtI.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtI.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtI.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtI.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchB.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchB.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchB.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchB.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchB.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtE.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtE.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtE.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtE.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtE.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtA.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtA.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtA.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtA.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtA.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchX.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchX.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchX.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchX.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchX.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchI.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchI.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchI.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchI.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchI.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_puhA.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_puhA.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_puhA.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_puhA.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_puhA.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtB.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtB.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtB.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtB.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtB.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_puhB.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_puhB.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_puhB.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_puhB.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_puhB.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_pufM.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_pufM.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_pufM.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_pufM.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_pufM.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_tspO.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_tspO.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_tspO.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_tspO.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_tspO.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtC.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtC.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtC.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtC.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtC.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_pucC2.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_pucC2.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_pucC2.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_pucC2.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_pucC2.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_acsF.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_acsF.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_acsF.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_acsF.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_acsF.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchP.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchP.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchP.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchP.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchP.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_crtF.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_crtF.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_crtF.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_crtF.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_crtF.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_lhaA.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_lhaA.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_lhaA.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_lhaA.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_lhaA.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchO.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchO.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchO.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchO.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchO.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchM.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchM.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchM.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchM.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchM.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchG.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchG.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchG.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchG.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchG.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchN.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchN.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchN.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchN.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchN.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchH.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchH.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchH.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchH.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchH.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchY.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchY.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchY.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchY.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchY.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchZ.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchZ.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchZ.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchZ.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchZ.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_puhE.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_puhE.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_puhE.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_puhE.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_puhE.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_ppsR.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_ppsR.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_ppsR.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_ppsR.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_ppsR.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchE.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchE.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchE.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchE.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchE.faa, results/fasta/GCF_000016185.1_ASM1618v1/PGC_bchC.faa, results/fasta/GCF_000016725.1_ASM1672v1/PGC_bchC.faa, results/fasta/GCF_000014045.1_ASM1404v1/PGC_bchC.faa, results/fasta/GCF_001719165.1_ASM171916v1/PGC_bchC.faa, results/fasta/GCF_001576595.1_ASM157659v1/PGC_bchC.faa
+    output: results/fasta/PGC_crtD.faa
+    jobid: 185
+    reason: Missing output files: results/fasta/PGC_crtD.faa
+    wildcards: gene=PGC_crtD
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule alignment_trimmer:
+    input: results/fasta/gene_aligned/PGC_bchE_aln
+    output: results/fasta/gene_trimmed/PGC_bchE_trim.html, results/fasta/gene_trimmed/PGC_bchE_trim.phy
+    jobid: 281
+    reason: Missing output files: results/fasta/gene_trimmed/PGC_bchE_trim.phy, results/fasta/gene_trimmed/PGC_bchE_trim.html
+    wildcards: gene=PGC_bchE
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_bchC_trim.phy
+    output: results/tree/PGC_bchC/PGC_bchC.treefile, results/tree/PGC_bchC/PGC_bchC.log, results/tree/PGC_bchC/PGC_bchC.model.gz, results/tree/PGC_bchC/PGC_bchC.bionj, results/tree/PGC_bchC/PGC_bchC.mldist, results/tree/PGC_bchC/PGC_bchC.ckp.gz, results/tree/PGC_bchC/PGC_bchC.iqtree
+    jobid: 315
+    reason: Missing output files: results/tree/PGC_bchC/PGC_bchC.ckp.gz, results/tree/PGC_bchC/PGC_bchC.model.gz, results/tree/PGC_bchC/PGC_bchC.bionj, results/tree/PGC_bchC/PGC_bchC.mldist, results/tree/PGC_bchC/PGC_bchC.log, results/tree/PGC_bchC/PGC_bchC.treefile, results/tree/PGC_bchC/PGC_bchC.iqtree
+    wildcards: gene=PGC_bchC
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_pucC2_trim.phy
+    output: results/tree/PGC_pucC2/PGC_pucC2.treefile, results/tree/PGC_pucC2/PGC_pucC2.log, results/tree/PGC_pucC2/PGC_pucC2.model.gz, results/tree/PGC_pucC2/PGC_pucC2.bionj, results/tree/PGC_pucC2/PGC_pucC2.mldist, results/tree/PGC_pucC2/PGC_pucC2.ckp.gz, results/tree/PGC_pucC2/PGC_pucC2.iqtree
+    jobid: 300
+    reason: Missing output files: results/tree/PGC_pucC2/PGC_pucC2.treefile, results/tree/PGC_pucC2/PGC_pucC2.ckp.gz, results/tree/PGC_pucC2/PGC_pucC2.iqtree, results/tree/PGC_pucC2/PGC_pucC2.bionj, results/tree/PGC_pucC2/PGC_pucC2.log, results/tree/PGC_pucC2/PGC_pucC2.model.gz, results/tree/PGC_pucC2/PGC_pucC2.mldist
+    wildcards: gene=PGC_pucC2
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_bchB_trim.phy
+    output: results/tree/PGC_bchB/PGC_bchB.treefile, results/tree/PGC_bchB/PGC_bchB.log, results/tree/PGC_bchB/PGC_bchB.model.gz, results/tree/PGC_bchB/PGC_bchB.bionj, results/tree/PGC_bchB/PGC_bchB.mldist, results/tree/PGC_bchB/PGC_bchB.ckp.gz, results/tree/PGC_bchB/PGC_bchB.iqtree
+    jobid: 289
+    reason: Missing output files: results/tree/PGC_bchB/PGC_bchB.ckp.gz, results/tree/PGC_bchB/PGC_bchB.bionj, results/tree/PGC_bchB/PGC_bchB.model.gz, results/tree/PGC_bchB/PGC_bchB.treefile, results/tree/PGC_bchB/PGC_bchB.mldist, results/tree/PGC_bchB/PGC_bchB.log, results/tree/PGC_bchB/PGC_bchB.iqtree
+    wildcards: gene=PGC_bchB
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule alignment_trimmer:
+    input: results/fasta/gene_aligned/PGC_bchG_aln
+    output: results/fasta/gene_trimmed/PGC_bchG_trim.html, results/fasta/gene_trimmed/PGC_bchG_trim.phy
+    jobid: 274
+    reason: Missing output files: results/fasta/gene_trimmed/PGC_bchG_trim.html, results/fasta/gene_trimmed/PGC_bchG_trim.phy
+    wildcards: gene=PGC_bchG
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_puhE_trim.phy
+    output: results/tree/PGC_puhE/PGC_puhE.treefile, results/tree/PGC_puhE/PGC_puhE.log, results/tree/PGC_puhE/PGC_puhE.model.gz, results/tree/PGC_puhE/PGC_puhE.bionj, results/tree/PGC_puhE/PGC_puhE.mldist, results/tree/PGC_puhE/PGC_puhE.ckp.gz, results/tree/PGC_puhE/PGC_puhE.iqtree
+    jobid: 312
+    reason: Missing output files: results/tree/PGC_puhE/PGC_puhE.mldist, results/tree/PGC_puhE/PGC_puhE.bionj, results/tree/PGC_puhE/PGC_puhE.ckp.gz, results/tree/PGC_puhE/PGC_puhE.treefile, results/tree/PGC_puhE/PGC_puhE.model.gz, results/tree/PGC_puhE/PGC_puhE.log, results/tree/PGC_puhE/PGC_puhE.iqtree
+    wildcards: gene=PGC_puhE
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_pufM_trim.phy
+    output: results/tree/PGC_pufM/PGC_pufM.treefile, results/tree/PGC_pufM/PGC_pufM.log, results/tree/PGC_pufM/PGC_pufM.model.gz, results/tree/PGC_pufM/PGC_pufM.bionj, results/tree/PGC_pufM/PGC_pufM.mldist, results/tree/PGC_pufM/PGC_pufM.ckp.gz, results/tree/PGC_pufM/PGC_pufM.iqtree
+    jobid: 297
+    reason: Missing output files: results/tree/PGC_pufM/PGC_pufM.mldist, results/tree/PGC_pufM/PGC_pufM.log, results/tree/PGC_pufM/PGC_pufM.iqtree, results/tree/PGC_pufM/PGC_pufM.ckp.gz, results/tree/PGC_pufM/PGC_pufM.model.gz, results/tree/PGC_pufM/PGC_pufM.bionj, results/tree/PGC_pufM/PGC_pufM.treefile
+    wildcards: gene=PGC_pufM
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule alignment_trimmer:
+    input: results/fasta/gene_aligned/PGC_bchL_aln
+    output: results/fasta/gene_trimmed/PGC_bchL_trim.html, results/fasta/gene_trimmed/PGC_bchL_trim.phy
+    jobid: 254
+    reason: Missing output files: results/fasta/gene_trimmed/PGC_bchL_trim.phy, results/fasta/gene_trimmed/PGC_bchL_trim.html
+    wildcards: gene=PGC_bchL
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:55:30 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_crtF_trim.phy
+    output: results/tree/PGC_crtF/PGC_crtF.treefile, results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.ckp.gz, results/tree/PGC_crtF/PGC_crtF.iqtree
+    jobid: 303
+    reason: Missing output files: results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.treefile, results/tree/PGC_crtF/PGC_crtF.iqtree, results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.ckp.gz
+    wildcards: gene=PGC_crtF
+    resources: tmpdir=/tmp
+
+[Thu May  2 14:55:30 2024]
+Error in rule tree_creator:
+    jobid: 303
+    input: results/fasta/gene_trimmed/PGC_crtF_trim.phy
+    output: results/tree/PGC_crtF/PGC_crtF.treefile, results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.ckp.gz, results/tree/PGC_crtF/PGC_crtF.iqtree
+    shell:
+        
+        mkdir -p results/tree/PGC_crtF
+        iqtree2 -s results/fasta/gene_trimmed/PGC_crtF_trim.phy -pre results/tree/PGC_crtF/PGC_crtF
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu May  2 14:55:30 2024]
+Finished job 185.
+1 of 27 steps (4%) done
+Select jobs to execute...
+
+[Thu May  2 14:55:30 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_crtD.faa
+    output: results/fasta/gene_aligned/PGC_crtD_aln
+    jobid: 218
+    reason: Missing output files: results/fasta/gene_aligned/PGC_crtD_aln; Input files updated by another job: results/fasta/PGC_crtD.faa
+    wildcards: gene=PGC_crtD
+    resources: tmpdir=/tmp
+
+Removing output files of failed job tree_creator since they might be corrupted:
+results/tree/PGC_crtF/PGC_crtF.log
+[Thu May  2 14:55:30 2024]
+Finished job 281.
+2 of 27 steps (7%) done
+[Thu May  2 14:55:30 2024]
+Finished job 274.
+3 of 27 steps (11%) done
+[Thu May  2 14:55:30 2024]
+Finished job 254.
+4 of 27 steps (15%) done
+[Thu May  2 14:55:30 2024]
+Finished job 218.
+5 of 27 steps (19%) done
+[Thu May  2 14:55:35 2024]
+Finished job 315.
+6 of 27 steps (22%) done
+[Thu May  2 14:55:36 2024]
+Finished job 289.
+7 of 27 steps (26%) done
+[Thu May  2 14:55:37 2024]
+Finished job 300.
+8 of 27 steps (30%) done
+[Thu May  2 14:55:37 2024]
+Finished job 297.
+9 of 27 steps (33%) done
+[Thu May  2 14:55:40 2024]
+Finished job 312.
+10 of 27 steps (37%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-02T145529.207075.snakemake.log

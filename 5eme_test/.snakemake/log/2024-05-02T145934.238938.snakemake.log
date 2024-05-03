@@ -1,0 +1,162 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+alignment_trimmer        4
+all                      1
+fasta_aligner            1
+tree_creator            33
+total                   39
+
+Select jobs to execute...
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_crtI_trim.phy
+    output: results/tree/PGC_crtI/PGC_crtI.treefile, results/tree/PGC_crtI/PGC_crtI.log, results/tree/PGC_crtI/PGC_crtI.model.gz, results/tree/PGC_crtI/PGC_crtI.bionj, results/tree/PGC_crtI/PGC_crtI.mldist, results/tree/PGC_crtI/PGC_crtI.ckp.gz, results/tree/PGC_crtI/PGC_crtI.iqtree
+    jobid: 288
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_crtI
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_bchZ_trim.phy
+    output: results/tree/PGC_bchZ/PGC_bchZ.treefile, results/tree/PGC_bchZ/PGC_bchZ.log, results/tree/PGC_bchZ/PGC_bchZ.model.gz, results/tree/PGC_bchZ/PGC_bchZ.bionj, results/tree/PGC_bchZ/PGC_bchZ.mldist, results/tree/PGC_bchZ/PGC_bchZ.ckp.gz, results/tree/PGC_bchZ/PGC_bchZ.iqtree
+    jobid: 311
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_bchZ
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_puhB_trim.phy
+    output: results/tree/PGC_puhB/PGC_puhB.treefile, results/tree/PGC_puhB/PGC_puhB.log, results/tree/PGC_puhB/PGC_puhB.model.gz, results/tree/PGC_puhB/PGC_puhB.bionj, results/tree/PGC_puhB/PGC_puhB.mldist, results/tree/PGC_puhB/PGC_puhB.ckp.gz, results/tree/PGC_puhB/PGC_puhB.iqtree
+    jobid: 296
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_puhB
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule alignment_trimmer:
+    input: results/fasta/gene_aligned/PGC_crtD_aln
+    output: results/fasta/gene_trimmed/PGC_crtD_trim.html, results/fasta/gene_trimmed/PGC_crtD_trim.phy
+    jobid: 251
+    reason: Missing output files: results/fasta/gene_trimmed/PGC_crtD_trim.html, results/fasta/gene_trimmed/PGC_crtD_trim.phy
+    wildcards: gene=PGC_crtD
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_tspO_trim.phy
+    output: results/tree/PGC_tspO/PGC_tspO.treefile, results/tree/PGC_tspO/PGC_tspO.log, results/tree/PGC_tspO/PGC_tspO.model.gz, results/tree/PGC_tspO/PGC_tspO.bionj, results/tree/PGC_tspO/PGC_tspO.mldist, results/tree/PGC_tspO/PGC_tspO.ckp.gz, results/tree/PGC_tspO/PGC_tspO.iqtree
+    jobid: 298
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_tspO
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_lhaA_trim.phy
+    output: results/tree/PGC_lhaA/PGC_lhaA.treefile, results/tree/PGC_lhaA/PGC_lhaA.log, results/tree/PGC_lhaA/PGC_lhaA.model.gz, results/tree/PGC_lhaA/PGC_lhaA.bionj, results/tree/PGC_lhaA/PGC_lhaA.mldist, results/tree/PGC_lhaA/PGC_lhaA.ckp.gz, results/tree/PGC_lhaA/PGC_lhaA.iqtree
+    jobid: 304
+    reason: Missing output files: results/tree/PGC_lhaA/PGC_lhaA.ckp.gz, results/tree/PGC_lhaA/PGC_lhaA.mldist, results/tree/PGC_lhaA/PGC_lhaA.treefile, results/tree/PGC_lhaA/PGC_lhaA.model.gz, results/tree/PGC_lhaA/PGC_lhaA.bionj, results/tree/PGC_lhaA/PGC_lhaA.iqtree, results/tree/PGC_lhaA/PGC_lhaA.log
+    wildcards: gene=PGC_lhaA
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_bchB_trim.phy
+    output: results/tree/PGC_bchB/PGC_bchB.treefile, results/tree/PGC_bchB/PGC_bchB.log, results/tree/PGC_bchB/PGC_bchB.model.gz, results/tree/PGC_bchB/PGC_bchB.bionj, results/tree/PGC_bchB/PGC_bchB.mldist, results/tree/PGC_bchB/PGC_bchB.ckp.gz, results/tree/PGC_bchB/PGC_bchB.iqtree
+    jobid: 289
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_bchB
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule fasta_aligner:
+    input: results/fasta/PGC_crtB.faa
+    output: results/fasta/gene_aligned/PGC_crtB_aln
+    jobid: 229
+    reason: Missing output files: results/fasta/gene_aligned/PGC_crtB_aln
+    wildcards: gene=PGC_crtB
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_puhE_trim.phy
+    output: results/tree/PGC_puhE/PGC_puhE.treefile, results/tree/PGC_puhE/PGC_puhE.log, results/tree/PGC_puhE/PGC_puhE.model.gz, results/tree/PGC_puhE/PGC_puhE.bionj, results/tree/PGC_puhE/PGC_puhE.mldist, results/tree/PGC_puhE/PGC_puhE.ckp.gz, results/tree/PGC_puhE/PGC_puhE.iqtree
+    jobid: 312
+    reason: Code has changed since last execution
+    wildcards: gene=PGC_puhE
+    resources: tmpdir=/tmp
+
+
+[Thu May  2 14:59:35 2024]
+rule tree_creator:
+    input: results/fasta/gene_trimmed/PGC_crtF_trim.phy
+    output: results/tree/PGC_crtF/PGC_crtF.treefile, results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.ckp.gz, results/tree/PGC_crtF/PGC_crtF.iqtree
+    jobid: 303
+    reason: Missing output files: results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.ckp.gz, results/tree/PGC_crtF/PGC_crtF.iqtree, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.treefile
+    wildcards: gene=PGC_crtF
+    resources: tmpdir=/tmp
+
+[Thu May  2 14:59:35 2024]
+Error in rule tree_creator:
+    jobid: 303
+    input: results/fasta/gene_trimmed/PGC_crtF_trim.phy
+    output: results/tree/PGC_crtF/PGC_crtF.treefile, results/tree/PGC_crtF/PGC_crtF.log, results/tree/PGC_crtF/PGC_crtF.model.gz, results/tree/PGC_crtF/PGC_crtF.bionj, results/tree/PGC_crtF/PGC_crtF.mldist, results/tree/PGC_crtF/PGC_crtF.ckp.gz, results/tree/PGC_crtF/PGC_crtF.iqtree
+    shell:
+        
+        if [ $(ls -1 results/fasta/gene_trimmed/*.phy | grep -c GC) -ge 3 ]; then
+            mkdir -p results/tree/PGC_crtF
+            iqtree2 -s results/fasta/gene_trimmed/PGC_crtF_trim.phy -pre results/tree/PGC_crtF/PGC_crtF
+        else
+            echo "Il n'y a pas au moins trois génomes, la commande ne sera pas exécutée."
+        fi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job tree_creator since they might be corrupted:
+results/tree/PGC_crtF/PGC_crtF.log
+[Thu May  2 14:59:35 2024]
+Finished job 229.
+1 of 39 steps (3%) done
+[Thu May  2 14:59:35 2024]
+Finished job 251.
+2 of 39 steps (5%) done
+[Thu May  2 14:59:37 2024]
+Finished job 298.
+3 of 39 steps (8%) done
+[Thu May  2 14:59:38 2024]
+Finished job 288.
+4 of 39 steps (10%) done
+[Thu May  2 14:59:41 2024]
+Finished job 311.
+5 of 39 steps (13%) done
+[Thu May  2 14:59:42 2024]
+Finished job 296.
+6 of 39 steps (15%) done
+[Thu May  2 14:59:43 2024]
+Finished job 289.
+7 of 39 steps (18%) done
+[Thu May  2 14:59:44 2024]
+Finished job 312.
+8 of 39 steps (21%) done
+[Thu May  2 14:59:45 2024]
+Finished job 304.
+9 of 39 steps (23%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-02T145934.238938.snakemake.log

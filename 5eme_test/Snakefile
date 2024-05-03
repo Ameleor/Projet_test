@@ -12,6 +12,7 @@ GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/prof
 TIMEOUT=["timeout"]
 
 FORMATS=["_gff.tsv",".faa"]
+FORMATS_TREES=[".bionj",".ckp.gz",".iqtree",".log",".mldist",".model.gz",".treefile"]
 
 # Règle pour vérifier si tous les fichiers de sortie existent
 rule all:
@@ -24,7 +25,8 @@ rule all:
         expand("results/fasta/{gene}.faa", gene=GENES),
         expand("results/fasta/gene_aligned/{gene}_aln", gene=GENES),
         expand("results/fasta/gene_trimmed/{gene}_trim.phy", gene=GENES),
-        expand("results/fasta/gene_trimmed/{gene}_trim.html", gene=GENES)
+        expand("results/fasta/gene_trimmed/{gene}_trim.html", gene=GENES),
+        expand("results/tree/{gene}/{gene}{format_tree}",format_tree=FORMATS_TREES, gene=GENES)
 
 # Règle pour décompresser les génomes
 rule unzip_genomes:
@@ -115,8 +117,25 @@ rule alignment_trimmer:
     output:
         html="results/fasta/gene_trimmed/{gene}_trim.html",
         phy="results/fasta/gene_trimmed/{gene}_trim.phy"
-
     shell:
         """
-        java -jar scripts/BMGE/BMGE.jar -i {input} -t AA -m BLOSUM30 -g 0.1 -oh {output.html} -opco {output.phy}
+        java -jar scripts/BMGE/BMGE.jar -i {input} -t AA -m BLOSUM30 -oh {output.html} -opco {output.phy}
+        """
+
+rule tree_creator:
+    input:
+        "results/fasta/gene_trimmed/{gene}_trim.phy"
+    output:
+        tree="results/tree/{gene}/{gene}.treefile",
+        log="results/tree/{gene}/{gene}.log",
+        model="results/tree/{gene}/{gene}.model.gz",
+        bionj="results/tree/{gene}/{gene}.bionj",
+        mldist="results/tree/{gene}/{gene}.mldist",
+        ckp="results/tree/{gene}/{gene}.ckp.gz",
+        iqtree="results/tree/{gene}/{gene}.iqtree"
+    shell:
+        """
+        # Problem if less than 3 sequences with iqtree2 (not working)
+        mkdir -p results/tree/{wildcards.gene}
+        iqtree2 -s {input} -pre results/tree/{wildcards.gene}/{wildcards.gene}
         """
