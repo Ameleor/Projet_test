@@ -1,0 +1,152 @@
+# Collaboration avec Kinnie
+
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
+
+TIMEOUT=["timeout"]
+
+FORMATS=["_gff.tsv",".faa"]
+FORMATS_TREES=[".bionj",".ckp.gz",".iqtree",".log",".mldist",".model.gz",".treefile"]
+
+# Règle pour vérifier si tous les fichiers de sortie existent
+rule all:
+    input:
+        expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
+        expand("data/genomes_unzip/{genome}/{genome}_protein_gff.tsv", genome=GENOMES, format=FORMATS),
+        "results/lists/list_organisms.csv",
+        "results/lists/list_PGC_infos.csv",
+        "results/lists/list_organisms_merged.csv",
+        # expand("results/fasta/{gene}.faa", gene=GENES),
+        # expand("results/fasta/gene_aligned/{gene}_aln", gene=GENES),
+        # expand("results/fasta/gene_trimmed/{gene}_trim.phy", gene=GENES),
+        # expand("results/fasta/gene_trimmed/{gene}_trim.html", gene=GENES),
+        # expand("results/tree/{gene}/{gene}{format_tree}",format_tree=FORMATS_TREES, gene=GENES)
+
+# Règle pour décompresser les génomes
+rule unzip_genomes:
+    input: "data/genomes/{genome}/{genome}_protein{format}.gz"
+    output: "data/genomes_unzip/{genome}/{genome}_protein{format}"
+    shell: "gunzip -c {input} > {output}"
+
+# Rule to launch PGCfinder with the correct parameters on all the genomes
+rule PGCfinder:
+    input:
+        "data/genomes_unzip/{genome}/{genome}_protein.faa"
+    output:
+        directory("results/genomes/{genome}/PGCfinder")
+    shell:
+        """
+        mkdir -p {output}
+        macsyfinder --mute --db-type ordered_replicon --sequence-db {input} --timeout {TIMEOUT} --models PGCFinder all -o {output}
+        """
+
+# Rule to create a file with all the names of the genomes that have been given previously with all the taxonomy and useful informations
+rule list_creator:
+    input:
+        expand("results/genomes/{genome}/PGCfinder", genome=GENOMES),
+        dirname="results/genomes"
+    output:
+        "results/lists/list_organisms.csv",
+    shell:
+        """
+        find {input.dirname} -maxdepth 1 -mindepth 1 -type d -exec basename {{}} \; > {output}
+        """
+
+# Rule that accesses each genome, gathers important information from PGCfinder outputs, and puts them in a file
+rule infos_retriever:
+    input:
+        "results/lists/list_organisms.csv"
+    output:
+        "results/lists/list_PGC_infos.csv"
+    shell:
+        """
+        grep "GC" {input} | while IFS= read -r ligne; do python3 scripts/collect_infos_PGCfinder.py "$ligne"; done > {output}
+        """
+
+rule list_merger:
+    input:
+        "results/lists/list_PGC_infos.csv",
+        "data/lists/merged_list.csv",
+        "results/lists/list_organisms.csv"
+    output:
+        "results/lists/list_organisms_merged.csv"
+    shell:
+        "python3 scripts/merge_csv.py"
+
+# rule fasta_creator:
+#     input:
+#         "results/genomes/{genome}/PGCfinder",
+#         gene="data/profiles/{gene}.hmm"
+#     output:
+#         fasta = "results/fasta/{genome}/{gene}.faa",
+#     shell:
+#         """
+#         python3 scripts/fasta_getter.py {wildcards.genome} {input.gene} >> {output.fasta}
+#         """
+
+# rule fasta_gatherer:
+#     input:
+#         faa=expand("results/fasta/{genome}/{gene}.faa",gene=GENES, genome=GENOMES)
+#     output:
+#         "results/fasta/{gene}.faa"
+#     shell:
+#         """
+#         cat results/fasta/GC*/{wildcards.gene}.faa | uniq >> {output}
+#         """
+
+# rule fasta_aligner:
+#     input:
+#         "results/fasta/{gene}.faa"
+#     output:
+#         "results/fasta/gene_aligned/{gene}_aln"
+#     shell:
+#         """
+#         mkdir -p results/fasta/gene_aligned
+#         mafft-linsi {input} > {output}
+#         """
+
+# rule alignment_trimmer:
+#     input:
+#         "results/fasta/gene_aligned/{gene}_aln"
+#     output:
+#         html="results/fasta/gene_trimmed/{gene}_trim.html",
+#         phy="results/fasta/gene_trimmed/{gene}_trim.phy"
+#     shell:
+#         """
+#         java -jar scripts/BMGE/BMGE.jar -i {input} -t AA -m BLOSUM30 -oh {output.html} -opco {output.phy}
+#         """
+
+# rule tree_creator:
+#     input:
+#         "results/fasta/gene_trimmed/{gene}_trim.phy"
+#     output:
+#         tree="results/tree/{gene}/{gene}.treefile",
+#         log="results/tree/{gene}/{gene}.log",
+#         model="results/tree/{gene}/{gene}.model.gz",
+#         bionj="results/tree/{gene}/{gene}.bionj",
+#         mldist="results/tree/{gene}/{gene}.mldist",
+#         ckp="results/tree/{gene}/{gene}.ckp.gz",
+#         iqtree="results/tree/{gene}/{gene}.iqtree"
+#     shell:
+#         """
+#         # Problem if less than 3 sequences with iqtree2 (not working)
+#         mkdir -p results/tree/{wildcards.gene}
+#         iqtree2 -s {input} -safe -nt AUTO -pre results/tree/{wildcards.gene}/{wildcards.gene}
+#         """
+
+# rule stat_gatherer:
+#     input:
+#         aln="results/fasta/gene_aligned/",
+#         trim="results/fasta/gene_trimmed/"
+#     output:
+#         "results/stats.txt"
+#     shell:
+#         """
+#         python3 scripts/stats_gatherer.py {input.aln} {input.trim}
+#         """
