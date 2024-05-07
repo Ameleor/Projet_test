@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCF_021919285.1_ASM2191928v1/GCF_021919285.1_ASM2191928v1_protein.faa
+# output directed to file:         results/genomes/GCF_021919285.1_ASM2191928v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0069   13.8  10.0     0.0094   13.3  10.0    1.4  1  GCF_021919285.1_ASM2191928v1_378  WP_053835935.1 4-hydroxybenzoate
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_021919285.1_ASM2191928v1_378  WP_053835935.1 4-hydroxybenzoate octaprenyltransferase [Xanthomonas translucens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3  10.0   2.4e-06    0.0094      34     143 ..      52     155 ..      29     299 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2.4e-06
+              trimmed_msa_bchG_hmm  34 slsekwllvvaGvllaGPlvcatsqavndWfdrhvdaine..PerpiPsGripGrWGlyialiltllsllvaaalgt 108
+                                       +      ++ aGv l+    c     +nd+ dr +d   e   +rp+ +G + Gr  l +  +l l+++++ +++ +
+  GCF_021919285.1_ASM2191928v1_378  52 PPLWTLFVFSAGVWLTRSAGCV----INDYADRWLDPQVErtRSRPLATGAVGGREALAVFALLMLVAFALVLTMNP 124
+                                       5555555666777777666665....6666666666555411468999***************************** PP
+
+              trimmed_msa_bchG_hmm 109 lvfvaavlglvlaWaysapPlrlkknGwlGnaavg 143
+                                       l+++ +v+gl la  y      lk+  +l +   g
+  GCF_021919285.1_ASM2191928v1_378 125 LTIGLSVVGLFLAASYPY----LKRYTYLPQVYLG 155
+                                       *************98842....5555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3900  (1377106 residues searched)
+Passed MSV filter:                       212  (0.054359); expected 78.0 (0.02)
+Passed bias filter:                       68  (0.0174359); expected 78.0 (0.02)
+Passed Vit filter:                         2  (0.000512821); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.00025641); expected 0.0 (1e-05)
+Initial search space (Z):               3900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 8934.58
+//
+[ok]

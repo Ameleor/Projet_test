@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_023823125.1_ASM2382312v1/GCF_023823125.1_ASM2382312v1_protein.faa
+# output directed to file:         results/genomes/GCF_023823125.1_ASM2382312v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.5e-96  319.4   0.0    3.8e-96  318.8   0.0    1.2  1  GCF_023823125.1_ASM2382312v1_2770  WP_252258412.1 photosynthetic re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_023823125.1_ASM2382312v1_2770  WP_252258412.1 photosynthetic reaction center subunit H [Erythrobacter aurantius]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  318.8   0.0   1.2e-99   3.8e-96       2     252 .]       5     268 ..       4     268 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 318.8 bits;  conditional E-value: 1.2e-99
+               trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphggtvtaPskere 77 
+                                        +++g +Dva+l++ +f++ff+gLv+yl+re+rrEGyPle+e++g+ +   +l+  ++ktfklphg+ +++P++  +
+  GCF_023823125.1_ASM2382312v1_2770   5 YIAGVFDVAELSFILFFIFFVGLVVYLNRESRREGYPLEHEQSGAVQPGVPLTDGTKKTFKLPHGRGTYTPEDLPR 80 
+                                        68899************************************************************99999998877 PP
+
+               trimmed_msa_puhA_hmm  78 e.edlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvg 152
+                                        +  ++aak++  a+GaP++ptgnp+ dg+Gpaaya+R+d+pdlt+dg++rivP+ +++e+++a +d++p+Gl+v++
+  GCF_023823125.1_ASM2382312v1_2770  81 DpVNIAAKQAFGAPGAPWVPTGNPMADGLGPAAYANRNDYPDLTFDGRPRIVPIGNSHEIEIAPKDQNPVGLPVYA 156
+                                        77************************************************************************** PP
+
+               trimmed_msa_puhA_hmm 153 aDgkvaGtvsdlWvDrsealiRYleveleaggrkvllPmtlaki.............kkkkkkvkveailaeqfae 215
+                                        aD+k aGtvsd+WvD+se++iRYlev+++ +g+kvl Pm ++ +             +++   + ++ai a+qf++
+  GCF_023823125.1_ASM2382312v1_2770 157 ADKKLAGTVSDVWVDQSEHIIRYLEVTTN-SGKKVLAPMFVCAVqgkswlggimpivDDQVPLIDIDAIRADQFDA 231
+                                        ****************************8.9*************99999999998887788899************ PP
+
+               trimmed_msa_puhA_hmm 216 vPklkspdqvTllEEdkivaYyggGtlYatperqepl 252
+                                        vP+l+ p q+T+lEEdki+aYyggG++Yatper+ep+
+  GCF_023823125.1_ASM2382312v1_2770 232 VPELAIPGQITRLEEDKIMAYYGGGYMYATPERAEPW 268
+                                        ***********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       3219  (1045198 residues searched)
+Passed MSV filter:                        47  (0.0146008); expected 64.4 (0.02)
+Passed bias filter:                       45  (0.0139795); expected 64.4 (0.02)
+Passed Vit filter:                         5  (0.00155328); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000310655); expected 0.0 (1e-05)
+Initial search space (Z):               3219  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 7402.20
+//
+[ok]

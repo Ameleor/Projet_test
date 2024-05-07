@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCF_000043285.1_ASM4328v1/GCF_000043285.1_ASM4328v1_protein.faa
+# output directed to file:         results/genomes/GCF_000043285.1_ASM4328v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+    4.6e-05   17.5   0.1     0.0028   11.6   0.1    2.2  2  GCF_000043285.1_ASM4328v1_416  WP_041569001.1 septum site-deter
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000043285.1_ASM4328v1_416  WP_041569001.1 septum site-determining protein MinD [Candidatus Blochmannia floridanus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.1   4.8e-06    0.0028      24      63 ..       4      44 ..       1      61 [. 0.82
+   2 !    3.8   0.0    0.0012      0.68     218     258 ..     202     243 ..     191     272 .] 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 4.8e-06
+           trimmed_msa_bchX_hmm 24 iiai.ygkggigksftlanlsymlaqqgkkvlligcdpksd 63
+                                   ii i  gkgg+gk+ + a ++  laq+ kk ++i  d    
+  GCF_000043285.1_ASM4328v1_416  4 IIVItSGKGGVGKTTSSASIATGLAQNAKKTVVIDFDIGLR 44
+                                   555427***************************99886555 PP
+
+  == domain 2  score: 3.8 bits;  conditional E-value: 0.0012
+           trimmed_msa_bchX_hmm 218 aeavgipvlaaipadedirrksanye.iigkpesewgslfee 258
+                                     e   ip+l  ip+d  i + s +   ii  ++s  g+ +++
+  GCF_000043285.1_ASM4328v1_416 202 VEVLRIPILGVIPEDSSILKASNQGTpIILDKKSFAGQAYSD 243
+                                    56678*************999986542665555555565554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        587  (194858 residues searched)
+Passed MSV filter:                        16  (0.0272572); expected 11.7 (0.02)
+Passed bias filter:                       15  (0.0255537); expected 11.7 (0.02)
+Passed Vit filter:                         2  (0.00340716); expected 0.6 (0.001)
+Passed Fwd filter:                         1  (0.00170358); expected 0.0 (1e-05)
+Initial search space (Z):                587  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4416.68
+//
+[ok]

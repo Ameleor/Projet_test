@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_025141175.1_ASM2514117v1/GCF_025141175.1_ASM2514117v1_protein.faa
+# output directed to file:         results/genomes/GCF_025141175.1_ASM2514117v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-51  172.6  18.2    1.2e-51  172.5  18.2    1.0  1  GCF_025141175.1_ASM2514117v1_675   WP_259917691.1 tryptophan-rich s
+  ------ inclusion threshold ------
+      0.016   13.0   0.0      0.017   12.9   0.0    1.1  1  GCF_025141175.1_ASM2514117v1_2755  WP_259914441.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_025141175.1_ASM2514117v1_675  WP_259917691.1 tryptophan-rich sensory protein [Jannaschia sp. M317]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  172.5  18.2   6.1e-55   1.2e-51       2     151 ..       5     150 ..       4     151 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 172.5 bits;  conditional E-value: 6.1e-55
+              trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                       l++++l a+ +a+++ga++++g+wy+ L+kPsw+PPdw+F+vvWt++y+ +a+a+++++   e++a a   +a++al
+  GCF_025141175.1_ASM2514117v1_675   5 LFLVFLGACGAAAATGAMFSPGAWYRGLSKPSWTPPDWVFPVVWTTLYLALAFAGARVA-PLEGSAYA---MAFWAL 77 
+                                       688999*****************************************************.77777777...****** PP
+
+              trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                       +++ln+lW+++fF+l+r++++lv++vlLWl+v+ l++ lw+++k+a l++ PYlvWv+iAaaLN+sv+r+Np+
+  GCF_025141175.1_ASM2514117v1_675  78 QIALNTLWTPVFFGLQRMKAGLVVIVLLWLAVAGLLVSLWPLDKIAFLVVAPYLVWVTIAAALNASVLRRNPS 150
+                                       ***********************************************************************96 PP
+
+>> GCF_025141175.1_ASM2514117v1_2755  WP_259914441.1 hypothetical protein [Jannaschia sp. M317]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   8.8e-06     0.017      80     114 ..      28      63 ..      17      76 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 8.8e-06
+               trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevv.lLWlsvlali 114
+                                         vl+  W +l Frl+++++al  +   LWl+v+ ++
+  GCF_025141175.1_ASM2514117v1_2755  28 RVLQERWDALTFRLEQIETALERLErRLWLAVMGVA 63 
+                                        678899***************999637*****9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3872  (1179310 residues searched)
+Passed MSV filter:                       192  (0.0495868); expected 77.4 (0.02)
+Passed bias filter:                       60  (0.0154959); expected 77.4 (0.02)
+Passed Vit filter:                         2  (0.000516529); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000516529); expected 0.0 (1e-05)
+Initial search space (Z):               3872  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 10080.76
+//
+[ok]

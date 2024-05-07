@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCF_030252425.1_ASM3025242v1/GCF_030252425.1_ASM3025242v1_protein.faa
+# output directed to file:         results/genomes/GCF_030252425.1_ASM3025242v1/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   8.6e-104  344.4  19.0   1.1e-103  344.0  19.0    1.2  1  GCF_030252425.1_ASM3025242v1_861   WP_284946470.1 putative photosyn
+  ------ inclusion threshold ------
+      0.015   12.9   0.0      0.018   12.7   0.0    1.1  1  GCF_030252425.1_ASM3025242v1_3854  WP_284945120.1 Rid family hydrol
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_030252425.1_ASM3025242v1_861  WP_284946470.1 putative photosynthetic complex assembly protein PuhE [Acidisoma sp.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  344.0  19.0    5e-107  1.1e-103       1     243 [.       6     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 344.0 bits;  conditional E-value: 5e-107
+              trimmed_msa_puhE_hmm   1 lpvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelafl 77 
+                                       lp+l+alf+WwfsTG+i++ld++pr+tfk+s+++a++l++l+l+gv++s ++a+v+gay+aft++ll Wgwqe++f+
+  GCF_030252425.1_ASM3025242v1_861   6 LPALYALFIWWFSTGVIMYLDGLPRKTFKWSILGASILMVLSLWGVYASRNNATVTGAYCAFTGGLLAWGWQEISFY 82 
+                                       599************************************************************************** PP
+
+              trimmed_msa_puhE_hmm  78 tGvvtGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlflGv 154
+                                       +G+vtG r+++cpeg+sg+++f +a++t+l+hEla+++ +++++a+twg+ Nq+g+wtf+vL++m++sakln+flGv
+  GCF_030252425.1_ASM3025242v1_861  83 MGFVTGTRKDPCPEGCSGWKHFGHAIQTSLWHELAIIASGIVIVAITWGSRNQIGMWTFMVLWWMHQSAKLNVFLGV 159
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhE_hmm 155 pnlneeflPehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhlflv 230
+                                       +nlneeflPehl++Lks+++k++mnllfp+s+t++tv++v l++aa++a+ ++++a+g+ +latl+aLa+lEh++l+
+  GCF_030252425.1_ASM3025242v1_861 160 RNLNEEFLPEHLQFLKSFLTKKPMNLLFPLSITISTVILVKLIDAAVNAHgSRFDAAGFCFLATLMALAILEHWLLM 236
+                                       **************************************************9************************** PP
+
+              trimmed_msa_puhE_hmm 231 LPlpdeaLWrWal 243
+                                       LPlp++aLW+W+l
+  GCF_030252425.1_ASM3025242v1_861 237 LPLPAAALWGWSL 249
+                                       ***********98 PP
+
+>> GCF_030252425.1_ASM3025242v1_3854  WP_284945120.1 Rid family hydrolase [Acidisoma sp. PAMC 29798]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   7.6e-06     0.018      74     125 ..      17      69 ..       7      81 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 7.6e-06
+               trimmed_msa_puhE_hmm  74 lafltGvvt.GprreacpegasglerflaaletilyhElallvtavlllaltw 125
+                                        lafl G v+  p +e++p++++g +++++a  + + h+l   +  +++l + +
+  GCF_030252425.1_ASM3025242v1_3854  17 LAFLSGQVAvTPDHEDVPNDIAGQAKLATASLAAALHDLEATAQDIVMLRVYV 69 
+                                        8*****986479***************************99999888876544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       4632  (1486990 residues searched)
+Passed MSV filter:                       246  (0.0531088); expected 92.6 (0.02)
+Passed bias filter:                       80  (0.0172712); expected 92.6 (0.02)
+Passed Vit filter:                         8  (0.00172712); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.000431779); expected 0.0 (1e-05)
+Initial search space (Z):               4632  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10081.46
+//
+[ok]

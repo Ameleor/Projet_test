@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_027271155.1_ASM2727115v1/GCF_027271155.1_ASM2727115v1_protein.faa
+# output directed to file:         results/genomes/GCF_027271155.1_ASM2727115v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.5e-46  153.2  16.3    9.1e-46  152.9  16.3    1.0  1  GCF_027271155.1_ASM2727115v1_2444  WP_269514361.1 tryptophan-rich s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_027271155.1_ASM2727115v1_2444  WP_269514361.1 tryptophan-rich sensory protein [Brevundimonas subvibrioides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.9  16.3   3.1e-49   9.1e-46       3     151 ..       9     155 ..       7     156 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 152.9 bits;  conditional E-value: 3.1e-49
+               trimmed_msa_tspO_hmm   3 lvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                        +++++   l+a+++g ++++g+wy  L+kPsw+PP+ aF++vW +++a+ a+a++l+w+ + ++    l+  l++ 
+  GCF_027271155.1_ASM2727115v1_2444   9 IIVFVGLNLAAAMSGSVFKPGSWYAGLNKPSWTPPNLAFPIVWGLLFAINAWAGWLVWE-TVGTGSP-LAFGLYVG 82 
+                                        6788888999************************************************5.5555554.6899**** PP
+
+               trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                          vln+ Ws lfF+ rr+d+al++v+lLWls++++i v+w ++  aalll+PYl Wv+iA +LNl++++lNp+
+  GCF_027271155.1_ASM2727115v1_2444  83 SLVLNAGWSFLFFGRRRMDLALIDVALLWLSLVVIIAVFWGLRPFAALLLIPYLTWVTIASVLNLRMLQLNPK 155
+                                        ***********************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       2890  (900036 residues searched)
+Passed MSV filter:                       149  (0.0515571); expected 57.8 (0.02)
+Passed bias filter:                       58  (0.0200692); expected 57.8 (0.02)
+Passed Vit filter:                         5  (0.0017301); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000346021); expected 0.0 (1e-05)
+Initial search space (Z):               2890  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7973.68
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_004216475.1_ASM421647v1/GCF_004216475.1_ASM421647v1_protein.faa
+# output directed to file:         results/genomes/GCF_004216475.1_ASM421647v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      3e-74  245.8   7.4    3.5e-74  245.6   7.4    1.0  1  GCF_004216475.1_ASM421647v1_4694  WP_254449121.1 2-vinyl bacterioc
+  ------ inclusion threshold ------
+      0.013   13.5   0.5      0.032   12.2   0.0    1.9  2  GCF_004216475.1_ASM421647v1_3285  WP_130407899.1 lipoprotein-relea
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_004216475.1_ASM421647v1_4694  WP_254449121.1 2-vinyl bacteriochlorophyllide hydratase [Thalassococcus sp. S3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  245.6   7.4   1.5e-77   3.5e-74       2     146 .]      13     157 ..      12     157 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 245.6 bits;  conditional E-value: 1.5e-77
+              trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvf 78 
+                                        lytpeer+rrd+t wt +qg+laplqf+ f +s+ lv+ryl+tGeg+ aat+s+++kt +ly+im+tGaiwekvvf
+  GCF_004216475.1_ASM421647v1_4694  13 GLYTPEERQRRDRTIWTPIQGVLAPLQFIAFAISVFLVMRYLWTGEGYVAATWSILIKTAFLYIIMVTGAIWEKVVF 89 
+                                       59*************************************************************************** PP
+
+              trimmed_msa_bchF_hmm  79 gkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                       g+ylfa+affwedvfs++v+alhtay++al+tg+l+++ q+l+alaayaayvina+qf+lklraarl+
+  GCF_004216475.1_ASM421647v1_4694  90 GQYLFAPAFFWEDVFSFVVIALHTAYIWALWTGALDSQGQMLIALAAYAAYVINAGQFVLKLRAARLQ 157
+                                       ******************************************************************97 PP
+
+>> GCF_004216475.1_ASM421647v1_3285  WP_130407899.1 lipoprotein-releasing ABC transporter permease subunit [Thalassococc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.1      0.41   9.7e+02      50      71 ..      31      52 ..      13      83 .. 0.70
+   2 ?   12.2   0.0   1.3e-05     0.032      63     111 ..     365     413 ..     333     425 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.41
+              trimmed_msa_bchF_hmm 50 aaatlsvvvktlvlytimitGa 71
+                                      +++ +s++  tl++++++ t a
+  GCF_004216475.1_ASM421647v1_3285 31 TMTWISIIGITLAVFALIATLA 52
+                                      4555666666666666665544 PP
+
+  == domain 2  score: 12.2 bits;  conditional E-value: 1.3e-05
+              trimmed_msa_bchF_hmm  63 lytimitGaiwekvvfgkylfaeaffwedvfsllvlalhtaylvalltg 111
+                                       +  +m+ G +w+  + g y +   ++  dv+s + l+l   ++v+++  
+  GCF_004216475.1_ASM421647v1_3285 365 FVNVMMGGGVWDPSIRGIYSLPAQLHLSDVLSAIALSLSLSFIVTIFPA 413
+                                       5579**************************************9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4762  (1502670 residues searched)
+Passed MSV filter:                       138  (0.0289794); expected 95.2 (0.02)
+Passed bias filter:                       67  (0.0140697); expected 95.2 (0.02)
+Passed Vit filter:                        10  (0.00209996); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000419992); expected 0.0 (1e-05)
+Initial search space (Z):               4762  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10417.15
+//
+[ok]

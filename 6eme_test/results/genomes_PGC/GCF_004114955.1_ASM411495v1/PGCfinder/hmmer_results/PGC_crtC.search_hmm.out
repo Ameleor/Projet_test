@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_004114955.1_ASM411495v1/GCF_004114955.1_ASM411495v1_protein.faa
+# output directed to file:         results/genomes/GCF_004114955.1_ASM411495v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.9e-96  320.1   0.1    3.4e-96  319.9   0.1    1.0  1  GCF_004114955.1_ASM411495v1_503   WP_206733215.1 hydratase [Bradyr
+      4e-07   28.3   0.2    6.3e-07   27.7   0.2    1.4  1  GCF_004114955.1_ASM411495v1_6578  WP_128954539.1 lipocalin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_004114955.1_ASM411495v1_503  WP_206733215.1 hydratase [Bradyrhizobium guangzhouense]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  319.9   0.1    9e-100   3.4e-96       1     234 []      54     287 ..      54     287 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 319.9 bits;  conditional E-value: 9e-100
+             trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsa 78 
+                                      mTeRgr+a+ r+++e+ iGpss++wdgd+L+ +idE+a+p+p+r+rG vr +p+alt+ ++aLda+grh W+piap++
+  GCF_004114955.1_ASM411495v1_503  54 MTERGRNAIGRTKREFVIGPSSVDWDGDALTFRIDEVAAPFPHRLRGVVRAYPSALTSDAFALDAAGRHCWHPIAPCS 131
+                                      9***************************************************************************** PP
+
+             trimmed_msa_crtC_hmm  79 rveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveap 156
+                                      rv+v++++p+++w G+gYfD+N G+ ple +F++W+WsRa+l++++++ Yd+  r+++ ++lalrfd++G+ve++e+ 
+  GCF_004114955.1_ASM411495v1_503 132 RVQVDFQNPAIRWLGDGYFDMNYGAVPLELEFRNWEWSRAALRRETIISYDTVGRNQDGSSLALRFDRKGKVEQLEPL 209
+                                      ****************************************************************************** PP
+
+             trimmed_msa_crtC_hmm 157 praklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrmpRr 234
+                                      pra+l+ t Wrv r++r da++ ++v +tled+PFYaRs l+++llge+v ++hEsLsldr+r+p+v++mLpfrmpRr
+  GCF_004114955.1_ASM411495v1_503 210 PRATLRPTGWRVPRTARGDAQQIATVARTLEDAPFYARSQLSATLLGETVDMMHESLSLDRFRMPIVQAMLPFRMPRR 287
+                                      *****************************************************************************7 PP
+
+>> GCF_004114955.1_ASM411495v1_6578  WP_128954539.1 lipocalin-like domain-containing protein [Bradyrhizobium guangzhouen
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.7   0.2   1.7e-10   6.3e-07      78     157 ..     210     290 ..     198     335 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 27.7 bits;  conditional E-value: 1.7e-10
+              trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveev 153
+                                       ar ++++d+ +++ +G++++D  + ++pl++d + WdW   +l++g  ++lY  +++dg++  ++  ++a Ge++ +
+  GCF_004114955.1_ASM411495v1_6578 210 ARGTLTIDDIQVEVSGQAWMDREWSSQPLDTDQTGWDWLSLHLASGdKLMLYRLRQKDGKDYPFGNWISAAGETQLI 286
+                                       6667888999999*******************************9989**********************9999877 PP
+
+              trimmed_msa_crtC_hmm 154 eapp 157
+                                       +   
+  GCF_004114955.1_ASM411495v1_6578 287 AGHD 290
+                                       6554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       7453  (2318852 residues searched)
+Passed MSV filter:                       168  (0.0225413); expected 149.1 (0.02)
+Passed bias filter:                      139  (0.0186502); expected 149.1 (0.02)
+Passed Vit filter:                         8  (0.00107339); expected 7.5 (0.001)
+Passed Fwd filter:                         2  (0.000268348); expected 0.1 (1e-05)
+Initial search space (Z):               7453  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 12120.26
+//
+[ok]

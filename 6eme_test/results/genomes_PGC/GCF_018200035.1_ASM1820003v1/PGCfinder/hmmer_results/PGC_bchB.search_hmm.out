@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCF_018200035.1_ASM1820003v1/GCF_018200035.1_ASM1820003v1_protein.faa
+# output directed to file:         results/genomes/GCF_018200035.1_ASM1820003v1/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.2e-22   75.0   0.0    5.4e-21   72.5   0.0    2.0  1  GCF_018200035.1_ASM1820003v1_3647  WP_212706595.1 chlorophyllide a 
+      3e-06   23.8   0.0    4.9e-06   23.1   0.0    1.2  1  GCF_018200035.1_ASM1820003v1_3676  WP_212706566.1 ferredoxin:protoc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_018200035.1_ASM1820003v1_3647  WP_212706595.1 chlorophyllide a reductase subunit Z [Sulfitobacter albidus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.5   0.0   3.1e-24   5.4e-21     141     307 ..     141     304 ..      11     479 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 72.5 bits;  conditional E-value: 3.1e-24
+               trimmed_msa_bchB_hmm 141 vralakkkakkakaegarpscnllGptalGfrhrddvaeitrlleelGievnvvaplgatpadlarlgeadfnvvl 216
+                                         +  +   ++ +++ega+p++n+lGp    f +  d+aei+rl+e +G e+n+v plga +++++ l +ad nv++
+  GCF_018200035.1_ASM1820003v1_3647 141 TKGRM--PKEAKREEGAKPRVNILGPMYGTFNMPSDLAEIRRLIEGIGAEINMVMPLGAHVSEMRGLVNADVNVTM 214
+                                        22222..223568999************************************************************ PP
+
+               trimmed_msa_bchB_hmm 217 ypeiaesaarwlerefgqplvktvpiGvgatrdfiaevaalagvdaeaaleeees...rlpw.ysrsvdstyltgk 288
+                                        y e ++  ++ l +    p+ +  p+G+++t++f++++ +l+g+d+e+ +e+e++   +  w   rsv   +++  
+  GCF_018200035.1_ASM1820003v1_3647 215 YREFGRGLCEVLGK----PYLQ-APVGIDSTTKFLRKLGELTGLDPEPFIEREKHstiKPVWdLWRSVTQDFFATA 285
+                                        *****999988765....5554.5***********************99876544111333433478877777777 PP
+
+               trimmed_msa_bchB_hmm 289 rvfifgdathavaaarvaa 307
+                                           i ++ t+a  +    +
+  GCF_018200035.1_ASM1820003v1_3647 286 SFGIVANETYARGIRNFLE 304
+                                        7777777776666655555 PP
+
+>> GCF_018200035.1_ASM1820003v1_3676  WP_212706566.1 ferredoxin:protochlorophyllide reductase (ATP-dependent) subunit N 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.1   0.0   2.9e-09   4.9e-06     180     318 ..     190     328 ..     180     334 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 23.1 bits;  conditional E-value: 2.9e-09
+               trimmed_msa_bchB_hmm 180 itrlleelGievnvvaplgatpadlarlgeadfnvvlypeiaesaarwlerefgqplvktvpiGvgatrdfiaeva 255
+                                        +  ll+++Gi    v p     +d   +ge     +  p ++++ a  ++r   + +    p+G + t++++a va
+  GCF_018200035.1_ASM1820003v1_3676 190 MLGLLDDMGIGPVRVLPARNI-DDEMGIGENTVFALTQPFLGDTHAALVRRG-ARHIAAPFPLGEEGTTAWLAAVA 263
+                                        456899999987777787655.555567777777788999999999988776.56778899*************** PP
+
+               trimmed_msa_bchB_hmm 256 alagvdaeaal..eeeesrlpwysrsvdstyltgkrvfifgdathavaaarvaaeelGfevvGlG 318
+                                        +  gvdae+ +  +++  r +  + +  +  l+gk vf f d+   +  ar  a+e G++   +G
+  GCF_018200035.1_ASM1820003v1_3676 264 EEFGVDAETFArvTDAPRRRARQAVAAAAETLSGKSVFFFPDSQLEIPLARFLARECGMTPLEVG 328
+                                        *******976522555667777788888899***************************9876666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                       3447  (1075713 residues searched)
+Passed MSV filter:                       102  (0.0295909); expected 68.9 (0.02)
+Passed bias filter:                       72  (0.0208877); expected 68.9 (0.02)
+Passed Vit filter:                        10  (0.00290107); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000580215); expected 0.0 (1e-05)
+Initial search space (Z):               3447  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 9093.78
+//
+[ok]

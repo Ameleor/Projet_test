@@ -1,0 +1,109 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCF_016864975.1_ASM1686497v1/GCF_016864975.1_ASM1686497v1_protein.faa
+# output directed to file:         results/genomes/GCF_016864975.1_ASM1686497v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.9e-07   26.5   0.0     0.0058   13.4   0.0    2.3  2  GCF_016864975.1_ASM1686497v1_1268  WP_010281301.1 MULTISPECIES: iro
+    1.2e-05   22.2   0.2    4.3e-05   20.4   0.1    2.0  2  GCF_016864975.1_ASM1686497v1_1279  WP_100017302.1 tyrosine-protein 
+    0.00021   18.1   0.1     0.0024   14.6   0.2    2.1  2  GCF_016864975.1_ASM1686497v1_1872  WP_010299911.1 MULTISPECIES: sep
+     0.0076   13.0   0.0      0.011   12.4   0.0    1.2  1  GCF_016864975.1_ASM1686497v1_2423  WP_203449175.1 AAA family ATPase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016864975.1_ASM1686497v1_1268  WP_010281301.1 MULTISPECIES: iron-sulfur cluster carrier protein ApbC [Pectobacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   5.8e-06    0.0058      18      60 ..     103     146 ..      88     164 .. 0.79
+   2 !   10.7   0.0   3.8e-05     0.038     210     266 ..     294     352 ..     287     360 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 5.8e-06
+               trimmed_msa_bchX_hmm  18 vtketqiiai.ygkggigksftlanlsymlaqqgkkvlligcdp 60 
+                                        v+   +iia+  gkgg+gks t  n++  la +g +v ++  d 
+  GCF_016864975.1_ASM1686497v1_1268 103 VKGVKNIIAVsSGKGGVGKSSTAVNMALALAAEGANVGILDADI 146
+                                        4445678998459**********************998887775 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 3.8e-05
+               trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrk..sanyeiigkpesewgslfeelaenvaea 266
+                                        gtg aq +ae+    +l  +p +  +r      +  ++++p+se++sl+ ela +va+ 
+  GCF_016864975.1_ASM1686497v1_1268 294 GTGGAQKLAEKYHCSLLGQLPLHISLREDldRGEPTVVSQPDSEFTSLYRELAGQVAAQ 352
+                                        8**********************9999872245678*******************9975 PP
+
+>> GCF_016864975.1_ASM1686497v1_1279  WP_100017302.1 tyrosine-protein kinase Wzc [Pectobacterium brasiliense]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0      0.33   3.4e+02     269     298 ..     361     390 ..     331     404 .. 0.80
+   2 !   20.4   0.1   4.3e-08   4.3e-05      17      77 ..     521     582 ..     505     606 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.33
+               trimmed_msa_bchX_hmm 269 vrpkplsqdgllglfkaeevgrdvvlepat 298
+                                        v   p +q+++l l+   +vg++v ++  +
+  GCF_016864975.1_ASM1686497v1_1279 361 VAAMPKTQQEILRLMRDVNVGQEVYMQLLN 390
+                                        4567899999*****999999999887654 PP
+
+  == domain 2  score: 20.4 bits;  conditional E-value: 4.3e-08
+               trimmed_msa_bchX_hmm  17 evtketqiiaiygkg.gigksftlanlsymlaqqgkkvlligcdpksdttsllfggkacpti 77 
+                                         ++ + +++ i g    igk+f  anl  +++q g++vl++ cd +   +  l+g +++  +
+  GCF_016864975.1_ASM1686497v1_1279 521 MMEAKNNVLMISGASpAIGKTFISANLGAVISQSGQRVLIVDCDMRKGYAHELMGTQSVDGL 582
+                                        555667788888865389****************************9999999999987665 PP
+
+>> GCF_016864975.1_ASM1686497v1_1872  WP_010299911.1 MULTISPECIES: septum site-determining protein MinD [Pectobacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   2.4e-06    0.0024      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?    1.0   0.0     0.034        34     220     261 ..     202     244 ..     194     269 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2.4e-06
+               trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                       i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCF_016864975.1_ASM1686497v1_1872  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                       55668***************************9988655 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.034
+               trimmed_msa_bchX_hmm 220 avgipvlaaipadedirrksanye.iigkpesewgslfeelae 261
+                                           ip++  ip+d+ + r s + e +i  +e++ g+ +++  e
+  GCF_016864975.1_ASM1686497v1_1872 202 ILRIPLVGVIPEDQSVLRASNQGEpVILDAEADAGKAYADTVE 244
+                                        5679***********9999987663566666677766665444 PP
+
+>> GCF_016864975.1_ASM1686497v1_2423  WP_203449175.1 AAA family ATPase [Pectobacterium brasiliense]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   1.1e-05     0.011      23      63 ..       2      43 ..       1      51 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.1e-05
+               trimmed_msa_bchX_hmm 23 qiiaiy.gkggigksftlanlsymlaqqgkkvlligcdpksd 63
+                                       +ii+i+  kgg+gk+  +  ++++l ++gk vl++  d +++
+  GCF_016864975.1_ASM1686497v1_2423  2 KIISIFnNKGGVGKTTYMYHIAHLLEKEGKTVLIVDLDSQCN 43
+                                       689998459**************************9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       4031  (1343112 residues searched)
+Passed MSV filter:                       135  (0.0334904); expected 80.6 (0.02)
+Passed bias filter:                      119  (0.0295212); expected 80.6 (0.02)
+Passed Vit filter:                        14  (0.00347308); expected 4.0 (0.001)
+Passed Fwd filter:                         4  (0.00099231); expected 0.0 (1e-05)
+Initial search space (Z):               4031  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9252.08
+//
+[ok]

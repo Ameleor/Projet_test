@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_000021745.1_ASM2174v1/GCF_000021745.1_ASM2174v1_protein.faa
+# output directed to file:         results/genomes/GCF_000021745.1_ASM2174v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.3e-73  243.4   5.6    1.6e-73  243.2   5.6    1.0  1  GCF_000021745.1_ASM2174v1_2045  WP_012591053.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000021745.1_ASM2174v1_2045  WP_012591053.1 2-vinyl bacteriochlorophyllide hydratase [Methylocella silvestris]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  243.2   5.6   4.1e-77   1.6e-73       3     145 ..      14     156 ..      12     157 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 243.2 bits;  conditional E-value: 4.1e-77
+            trimmed_msa_bchF_hmm   3 lytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvfgky 81 
+                                     +yt+eerarrdat+wtlvqg lap+qf++flvs++lvlr++atG+g +aa +svvvktl+ly+imitG+iwekvvfg+y
+  GCF_000021745.1_ASM2174v1_2045  14 IYTEEERARRDATPWTLVQGALAPIQFFIFLVSVVLVLRFIATGRGFEAAAASVVVKTLALYAIMITGSIWEKVVFGRY 92 
+                                     8****************************************************************************** PP
+
+            trimmed_msa_bchF_hmm  82 lfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarl 145
+                                     lfa++ffwed fs++vlalhtayl+all glls++ +++lalaaya+y+ina+qf+lklraar+
+  GCF_000021745.1_ASM2174v1_2045  93 LFAPSFFWEDAFSMIVLALHTAYLAALLFGLLSDRGKMFLALAAYASYFINAGQFILKLRAARK 156
+                                     ***************************************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3844  (1218268 residues searched)
+Passed MSV filter:                       101  (0.0262747); expected 76.9 (0.02)
+Passed bias filter:                       53  (0.0137877); expected 76.9 (0.02)
+Passed Vit filter:                         2  (0.000520291); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000260146); expected 0.0 (1e-05)
+Initial search space (Z):               3844  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 9761.17
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_009363795.1_ASM936379v1/GCF_009363795.1_ASM936379v1_protein.faa
+# output directed to file:         results/genomes/GCF_009363795.1_ASM936379v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.9e-53  177.0  16.0    4.4e-53  176.9  16.0    1.0  1  GCF_009363795.1_ASM936379v1_2707  WP_124110561.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009363795.1_ASM936379v1_2707  WP_124110561.1 TspO/MBR family protein [Maribius sp. THAF1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  176.9  16.0   1.4e-56   4.4e-53       2     151 ..       5     150 ..       4     151 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 176.9 bits;  conditional E-value: 1.4e-56
+              trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                       l+ ++l+a++ a+++ga++++g+wy++L+kP ++PP+w+F+v+Wtv+y++iava+++a+   +++ +a   +a+fa+
+  GCF_009363795.1_ASM936379v1_2707   5 LFFIFLLACAGAATTGAMFQPGKWYDELRKPGFTPPNWVFPVTWTVLYICIAVAGARAA-PLDTTGHA---MAIFAV 77 
+                                       6889******************************************************9.55555555...9***** PP
+
+              trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                       ++++n+lW+++fF+l++ +++lv++ +LWlsv+ ++ ++w+++++a+ll++PYlvWv+iA+aLN++v+rlN++
+  GCF_009363795.1_ASM936379v1_2707  78 QIAFNTLWTPVFFGLHNTKAGLVVIGILWLSVAGTLWQFWQLDWIAGLLFVPYLVWVTIAFALNFEVWRLNRA 150
+                                       ***********************************************************************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3278  (1009419 residues searched)
+Passed MSV filter:                       181  (0.0552166); expected 65.6 (0.02)
+Passed bias filter:                       54  (0.0164735); expected 65.6 (0.02)
+Passed Vit filter:                         3  (0.000915192); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.000305064); expected 0.0 (1e-05)
+Initial search space (Z):               3278  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7420.35
+//
+[ok]

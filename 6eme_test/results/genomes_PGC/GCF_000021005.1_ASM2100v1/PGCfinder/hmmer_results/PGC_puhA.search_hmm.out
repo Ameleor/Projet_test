@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa
+# output directed to file:         results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    9.6e-95  314.6   0.0    1.1e-94  314.5   0.0    1.0  1  GCF_000021005.1_ASM2100v1_1557  WP_002720455.1 MULTISPECIES: pho
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000021005.1_ASM2100v1_1557  WP_002720455.1 MULTISPECIES: photosynthetic reaction center subunit H [Cereibacter]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  314.5   0.0   2.5e-98   1.1e-94       3     249 ..       6     249 ..       4     252 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 314.5 bits;  conditional E-value: 2.5e-98
+            trimmed_msa_puhA_hmm   3 ltgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphg.gtvtaPskereeed 80 
+                                      +g++D+a+l++y fw+f+agL++yl++e++rEGyPle+e+ + ++++g++++p+pktf lphg gt t+P  e+e++ 
+  GCF_000021005.1_ASM2100v1_1557   6 AFGNFDLASLAIYSFWIFLAGLIYYLQTENMREGYPLENEDGTPAANQGPFPLPKPKTFILPHGrGTLTVPGPESEDRP 84 
+                                     689**************************************************************************** PP
+
+            trimmed_msa_puhA_hmm  81 laakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgkvaG 159
+                                     +a+++ta  eG+P +ptg+p++dgvGpa++++R+d p+l+ +g+++i+P+++a+ f+v+++ ++p+Gl+v g+D ++aG
+  GCF_000021005.1_ASM2100v1_1557  85 IALARTAVSEGFPHAPTGDPMKDGVGPASWVARRDLPELDGHGHNKIKPMKAAAGFHVSAG-KNPIGLPVRGCDLEIAG 162
+                                     ************************************************************9.9**************** PP
+
+            trimmed_msa_puhA_hmm 160 tvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTllEEdkivaYyg 238
+                                     +v+d+WvD +e++ R+level+  g ++llPm+++k+  ++++v+v+a+ ++ fa +P++ksp +vTllEEdki++Y++
+  GCF_000021005.1_ASM2100v1_1557 163 KVVDIWVDIPEQMARFLEVELK-DGSTRLLPMQMVKV--QSNRVHVNALSSDLFAGIPTIKSPTEVTLLEEDKICGYVA 238
+                                     *********************9.999***********..699************************************* PP
+
+            trimmed_msa_puhA_hmm 239 gGtlYatperq 249
+                                     gG++Ya p+r+
+  GCF_000021005.1_ASM2100v1_1557 239 GGLMYAAPKRK 249
+                                     *********98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       4355  (1373870 residues searched)
+Passed MSV filter:                        68  (0.0156142); expected 87.1 (0.02)
+Passed bias filter:                       63  (0.0144661); expected 87.1 (0.02)
+Passed Vit filter:                         5  (0.00114811); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000229621); expected 0.0 (1e-05)
+Initial search space (Z):               4355  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11504.00
+//
+[ok]

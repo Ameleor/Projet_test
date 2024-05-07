@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_003952725.1_ASM395272v1/GCF_003952725.1_ASM395272v1_protein.faa
+# output directed to file:         results/genomes/GCF_003952725.1_ASM395272v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.1e-52  175.0  19.2    2.3e-52  174.9  19.2    1.0  1  GCF_003952725.1_ASM395272v1_1003  WP_126008286.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003952725.1_ASM395272v1_1003  WP_126008286.1 TspO/MBR family protein [Georhizobium profundi]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  174.9  19.2   5.6e-56   2.3e-52       2     151 ..       2     147 ..       1     148 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 174.9 bits;  conditional E-value: 5.6e-56
+              trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                       +l+++++ vl+a+ +ga++++g+wye+L+kPsw+PP+ aF++vW+++y++ia+a+ l+w + +++++    ++l+  
+  GCF_003952725.1_ASM395272v1_1003   2 ALAVFVILVLAAASTGAIFKPGPWYERLDKPSWTPPNIAFPIVWSILYVMIAAAGSLVW-REAGWSLP---IILWGA 74 
+                                       56789999***************************************************.77888888...9***** PP
+
+              trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                       + +ln++Ws+lfF+ rr+d+al+ev++LWl+++ +i++ w+vs++a+ll++PYlvWvsiAaaLN sv+++Np+
+  GCF_003952725.1_ASM395272v1_1003  75 QLILNAAWSWLFFGRRRMDLALMEVSVLWLAIAGFIVTSWSVSSTASLLFVPYLVWVSIAAALNRSVLNRNPH 147
+                                       ***********************************************************************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4140  (1293927 residues searched)
+Passed MSV filter:                       199  (0.0480676); expected 82.8 (0.02)
+Passed bias filter:                       68  (0.0164251); expected 82.8 (0.02)
+Passed Vit filter:                         3  (0.000724638); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000241546); expected 0.0 (1e-05)
+Initial search space (Z):               4140  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8139.60
+//
+[ok]

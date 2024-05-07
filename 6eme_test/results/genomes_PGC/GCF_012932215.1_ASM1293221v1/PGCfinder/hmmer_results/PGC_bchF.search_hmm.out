@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_012932215.1_ASM1293221v1/GCF_012932215.1_ASM1293221v1_protein.faa
+# output directed to file:         results/genomes/GCF_012932215.1_ASM1293221v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.8e-73  241.9  10.7    4.4e-73  241.7  10.7    1.0  1  GCF_012932215.1_ASM1293221v1_3769  WP_169642582.1 2-vinyl bacterioc
+  ------ inclusion threshold ------
+      0.014   13.0   0.0      0.037   11.7   0.0    1.6  1  GCF_012932215.1_ASM1293221v1_910   WP_169639704.1 ABC transporter p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_012932215.1_ASM1293221v1_3769  WP_169642582.1 2-vinyl bacteriochlorophyllide hydratase [Roseobacter ponti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  241.7  10.7   2.3e-76   4.4e-73       2     146 .]      13     157 ..      12     157 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 241.7 bits;  conditional E-value: 2.3e-76
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                         ly+p+erarrdat+wt vqg+laplqf+vflvsl+lvlryl+t +g++aat+sv++ktl+ly+im+tGaiwek v
+  GCF_012932215.1_ASM1293221v1_3769  13 GLYSPAERARRDATVWTTVQGVLAPLQFAVFLVSLVLVLRYLWTDDGYMAATVSVLLKTLALYVIMVTGAIWEKIV 88 
+                                        59************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        fg+ylfa+affwedvfs++v+alhtay++al++g+l+++++++lalaayaayvina+qf+lklraarl+
+  GCF_012932215.1_ASM1293221v1_3769  89 FGQYLFAPAFFWEDVFSFAVIALHTAYIWALFSGALDPRALMFLALAAYAAYVINAVQFVLKLRAARLQ 157
+                                        *******************************************************************97 PP
+
+>> GCF_012932215.1_ASM1293221v1_910  WP_169639704.1 ABC transporter permease [Roseobacter ponti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0     2e-05     0.037      64     111 ..     366     413 ..     344     425 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2e-05
+              trimmed_msa_bchF_hmm  64 ytimitGaiwekvvfgkylfaeaffwedvfsllvlalhtaylvalltg 111
+                                         +m+ G +w+ ++ g y +   ++ +dv+s + l+l   ++v+++  
+  GCF_012932215.1_ASM1293221v1_910 366 VNMMMGGGVWDPAIRGIYALPAELHLDDVLSATALSLGLSFVVTIFPA 413
+                                       568999*********************************999998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3769  (1189437 residues searched)
+Passed MSV filter:                       118  (0.031308); expected 75.4 (0.02)
+Passed bias filter:                       53  (0.0140621); expected 75.4 (0.02)
+Passed Vit filter:                         2  (0.000530645); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530645); expected 0.0 (1e-05)
+Initial search space (Z):               3769  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8999.88
+//
+[ok]

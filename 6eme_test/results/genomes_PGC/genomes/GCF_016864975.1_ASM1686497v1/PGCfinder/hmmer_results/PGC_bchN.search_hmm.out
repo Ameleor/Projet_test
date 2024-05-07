@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCF_016864975.1_ASM1686497v1/GCF_016864975.1_ASM1686497v1_protein.faa
+# output directed to file:         results/genomes/GCF_016864975.1_ASM1686497v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+  ------ inclusion threshold ------
+      0.032   11.0   0.0       0.33    7.7   0.0    1.9  2  GCF_016864975.1_ASM1686497v1_16  WP_203449761.1 dihydrodipicolina
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016864975.1_ASM1686497v1_16  WP_203449761.1 dihydrodipicolinate synthase family protein [Pectobacterium brasilien
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   0.0    0.0056        22     214     262 ..      24      68 ..      20      97 .. 0.71
+   2 ?    7.7   0.0   8.1e-05      0.33     226     256 ..     100     131 ..      60     169 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.0056
+             trimmed_msa_bchN_hmm 214 pflgetaraleerGakrlaapfplGaeGttawlkaaaeafgvdeakfea 262
+                                      p l++ +++l + G    + + plG  G  a+l+aa + ++v ++ +e+
+  GCF_016864975.1_ASM1686497v1_16  24 PVLAQLTEHLIQCGV---HGVVPLGSTGEFAYLSAA-QRLDVVKTVIET 68 
+                                      666666666666664...5679***********875.666776666655 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 8.1e-05
+             trimmed_msa_bchN_hmm 226 rGa.krlaapfplGaeGttawlkaaaeafgvd 256
+                                       G    l+a fpl  eG +++++a+aea + +
+  GCF_016864975.1_ASM1686497v1_16 100 DGIlAVLEAYFPLKDEGVEQYFRAIAEAAQGK 131
+                                      343246899*****************987654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4031  (1343112 residues searched)
+Passed MSV filter:                       131  (0.0324981); expected 80.6 (0.02)
+Passed bias filter:                       91  (0.022575); expected 80.6 (0.02)
+Passed Vit filter:                         4  (0.00099231); expected 4.0 (0.001)
+Passed Fwd filter:                         1  (0.000248077); expected 0.0 (1e-05)
+Initial search space (Z):               4031  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 12162.63
+//
+[ok]

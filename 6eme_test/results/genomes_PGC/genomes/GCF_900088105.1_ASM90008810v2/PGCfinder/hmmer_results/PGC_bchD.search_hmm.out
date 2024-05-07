@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCF_900088105.1_ASM90008810v2/GCF_900088105.1_ASM90008810v2_protein.faa
+# output directed to file:         results/genomes/GCF_900088105.1_ASM90008810v2/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                           -----------
+     0.0012   15.6   5.0      0.024   11.3   0.0    2.2  2  GCF_900088105.1_ASM90008810v2_3158  WP_001374299.1 MULTISPECIES: VWA
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_900088105.1_ASM90008810v2_3158  WP_001374299.1 MULTISPECIES: VWA domain-containing protein [Enterobacteriaceae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.5   5.6    0.0046        22     278     330 ..      23      75 ..      18      99 .. 0.72
+   2 !   11.3   0.0     5e-06     0.024     380     512 ..     202     337 ..     187     345 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.0046
+                trimmed_msa_bchD_hmm 278 eeeeeeeeeeeeealedvvleaakaalpadllaklaakaarrakaassgkaGa 330
+                                         +e++e+++++ +++ +++vl+a++aa+ +    ++a+ka+  aka++ +++ a
+  GCF_900088105.1_ASM90008810v2_3158  23 SENKESQQQQPSTPTDQQVLAAQQAAIKEAEQRSVADKATADAKAKALAQQEA 75 
+                                         44566777888888999999999999988888888877775555555444444 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 5e-06
+                trimmed_msa_bchD_hmm 380 erievrkdDlrikrye..ersetttifvVDASGSa.AleRLaEaKGAvElLLaeaYvrRdeValvafRGkgAell 451
+                                         e++++ k D+  k ++  e  ++ ++f++D SGS    eRL      + lL  e   + d++a+v++ G++  + 
+  GCF_900088105.1_ASM90008810v2_3158 202 EQLTLLKIDILAKDHKseELPASNLVFLIDTSGSMiSDERLPLIQSSLKLLVKEL-REQDNIAIVTYAGDS-RIA 274
+                                         5555666666555554004457899*********83468*********9988875.689**********86.677 PP
+
+                trimmed_msa_bchD_hmm 452 LpptrSLvra..kraLagLpGGGgTPLAagleaalelaeaarrrGrtpllvlLtDGraNiald 512
+                                         Lp      +a    a+ +L   G+T   agle a++ a +   +G    ++l tDG  N+  d
+  GCF_900088105.1_ASM90008810v2_3158 275 LPSISGSHKAeiNAAIDSLDAEGSTNGGAGLELAYQQAAKGFIKGGINRILLATDGDFNVGID 337
+                                         777766666622467889******************************************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4779  (1470530 residues searched)
+Passed MSV filter:                       228  (0.0477087); expected 95.6 (0.02)
+Passed bias filter:                      110  (0.0230174); expected 95.6 (0.02)
+Passed Vit filter:                         6  (0.00125549); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000209249); expected 0.0 (1e-05)
+Initial search space (Z):               4779  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 11540.52
+//
+[ok]

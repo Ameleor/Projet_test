@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCF_001895265.1_ASM189526v1/GCF_001895265.1_ASM189526v1_protein.faa
+# output directed to file:         results/genomes/GCF_001895265.1_ASM189526v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.4e-08   30.2   6.8    4.2e-08   30.0   6.8    1.2  1  GCF_001895265.1_ASM189526v1_422   WP_072713516.1 4-hydroxybenzoate
+  ------ inclusion threshold ------
+      0.015   11.7   0.0      0.022   11.1   0.0    1.2  1  GCF_001895265.1_ASM189526v1_1843  WP_072713323.1 triose-phosphate 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001895265.1_ASM189526v1_422  WP_072713516.1 4-hydroxybenzoate octaprenyltransferase [Francisella uliginis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   6.8   4.1e-11   4.2e-08       8     211 ..      13     210 ..       6     282 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 4.1e-11
+             trimmed_msa_bchG_hmm   8 vlellkPitwfpPmWafacGvv..ssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePerpiPsGri 83 
+                                      +++l +Pi  +  +W  ++  v  s g++  + w+++ +Gv++   + c +  +++  fd+hv   n  +rp+ sG++
+  GCF_001895265.1_ASM189526v1_422  13 LMRLHRPIPILLILWPTLTALVlaSHGVPNIKYWVIFTLGVVIMRTVGCIVNDIADIDFDKHVARTN--TRPLTSGKL 88 
+                                      67899999999999988777654467899999*********************99999*****9888..7******** PP
+
+             trimmed_msa_bchG_hmm  84 pGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlaga 161
+                                      + +  +y++liltl++++  ++l t+++  + ++l la +y       k+   + + + gl+++   +++ +a ++++
+  GCF_001895265.1_ASM189526v1_422  89 SVKNAIYLCLILTLVAFICVLFLNTFTILLSFVALFLAVLYPF----CKRFLAIPQLVLGLAFNFGIFMAFSA-IQNK 161
+                                      ***************************************9954....35555677788888887555555444.4555 PP
+
+             trimmed_msa_bchG_hmm 162 lPsaevl.llall.ysigahGimtlndfkaveGdrklgvkslpvklGveraa 211
+                                      +P +  +  l ++ ++i+   + +l d    e d ++g+ks +v +G +   
+  GCF_001895265.1_ASM189526v1_422 162 IPLEALIfYLSTIcWTIAYDTVYALAD---REFDLEIGIKSSAVLFGDKVFK 210
+                                      665444313443314454445555555...4678888888888888876544 PP
+
+>> GCF_001895265.1_ASM189526v1_1843  WP_072713323.1 triose-phosphate isomerase [Francisella uliginis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   2.2e-05     0.022       7      42 ..     153     188 ..     148     195 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.2e-05
+              trimmed_msa_bchG_hmm   7 avlellkPitwfpPmWafacGvvssgaslsekwllv 42 
+                                       ++ +l k +  + P+Wa  +Gvv+s ++++e  +++
+  GCF_001895265.1_ASM189526v1_1843 153 SIEQLAKVVVAYEPVWAIGTGVVASLEQVQETHQFI 188
+                                       577899********************9999988776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       2021  (677586 residues searched)
+Passed MSV filter:                       102  (0.0504701); expected 40.4 (0.02)
+Passed bias filter:                       26  (0.0128649); expected 40.4 (0.02)
+Passed Vit filter:                         2  (0.000989609); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000989609); expected 0.0 (1e-05)
+Initial search space (Z):               2021  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6450.66
+//
+[ok]

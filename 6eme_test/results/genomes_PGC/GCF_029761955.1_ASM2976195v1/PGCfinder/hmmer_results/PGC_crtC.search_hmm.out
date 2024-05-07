@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_029761955.1_ASM2976195v1/GCF_029761955.1_ASM2976195v1_protein.faa
+# output directed to file:         results/genomes/GCF_029761955.1_ASM2976195v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-98  327.6   0.0    1.3e-98  327.4   0.0    1.1  1  GCF_029761955.1_ASM2976195v1_5810  WP_279357768.1 carotenoid 1,2-hy
+  ------ inclusion threshold ------
+      0.078   10.7   0.0       0.11   10.1   0.0    1.2  1  GCF_029761955.1_ASM2976195v1_336   WP_279358034.1 hydantoinase B/ox
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_029761955.1_ASM2976195v1_5810  WP_279357768.1 carotenoid 1,2-hydratase [Methylobacterium indicum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  327.4   0.0  4.6e-102   1.3e-98       1     233 [.      50     281 ..      50     282 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 327.4 bits;  conditional E-value: 4.6e-102
+               trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiap 76 
+                                        mTeR+r+++sr+a++laiGpssl+wdg++L+i++dE+++plprr++G++rv+p  +t   ++Ld egrhrW+p+ap
+  GCF_029761955.1_ASM2976195v1_5810  50 MTERSRRHVSRTATSLAIGPSSLDWDGTTLTIRVDEVTTPLPRRLSGTIRVRPGGFTPAPFTLDGEGRHRWWPLAP 125
+                                        9*************************************************************************** PP
+
+               trimmed_msa_crtC_hmm  77 sarveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGevee 152
+                                        s+rvev +d+p+l+w+G++YfD+NeGd ple++F++W+WsRa+l++gaa+lYdverrdgs+++l+lrfd+dG+ + 
+  GCF_029761955.1_ASM2976195v1_5810 126 SSRVEVAFDKPSLRWSGHAYFDTNEGDVPLEDSFRSWTWSRATLTHGAAILYDVERRDGSRQDLSLRFDPDGTPRP 201
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 153 veappraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLp 228
+                                        +++p  a+lprtlWr+ r+tr+d+g+a  v++++ed+PFY+Rsll++++ ge v+ vhEsL++drl++plv++mLp
+  GCF_029761955.1_ASM2976195v1_5810 202 IAPPVPAALPRTLWRLPRATRSDDGRA-AVLRRFEDAPFYSRSLLSARICGEAVHPVHESLDCDRLTHPLVRFMLP 276
+                                        *************************87.9*********************************************** PP
+
+               trimmed_msa_crtC_hmm 229 frmpR 233
+                                        frmpR
+  GCF_029761955.1_ASM2976195v1_5810 277 FRMPR 281
+                                        ****9 PP
+
+>> GCF_029761955.1_ASM2976195v1_336  WP_279358034.1 hydantoinase B/oxoprolinase family protein [Methylobacterium indicum
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0     4e-05      0.11       7      67 ..     187     252 ..     181     256 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4e-05
+              trimmed_msa_crtC_hmm   7 aalsrdadelaiGpssl.....ewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaeg 67 
+                                         ++ +a+ l++G+s+l     ++  d+L   i+Ei +   +r+r ++r +p+ + ++e  +d++g
+  GCF_029761955.1_ASM2976195v1_336 187 GDIKAQAAALMVGESRLtdlltKYGSDTLDAAIKEIRARSAERMRAEIRQIPDGTYTSEAFVDSDG 252
+                                       56889999********94444459999**************************9999999888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       5788  (1831631 residues searched)
+Passed MSV filter:                       120  (0.0207326); expected 115.8 (0.02)
+Passed bias filter:                      103  (0.0177954); expected 115.8 (0.02)
+Passed Vit filter:                         6  (0.00103663); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345543); expected 0.1 (1e-05)
+Initial search space (Z):               5788  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10855.45
+//
+[ok]

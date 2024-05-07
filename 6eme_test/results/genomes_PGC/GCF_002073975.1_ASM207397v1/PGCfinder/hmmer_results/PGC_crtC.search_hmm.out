@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_002073975.1_ASM207397v1/GCF_002073975.1_ASM207397v1_protein.faa
+# output directed to file:         results/genomes/GCF_002073975.1_ASM207397v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.6e-96  319.9   0.1      2e-96  319.7   0.1    1.1  1  GCF_002073975.1_ASM207397v1_3522  WP_080618100.1 carotenoid 1,2-hy
+     0.0038   14.4   0.1     0.0058   13.8   0.1    1.3  1  GCF_002073975.1_ASM207397v1_572   WP_080615185.1 lipocalin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_002073975.1_ASM207397v1_3522  WP_080618100.1 carotenoid 1,2-hydratase [Rhodovulum sp. MB263]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  319.7   0.1     1e-99     2e-96       1     234 []      50     284 ..      50     284 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 319.7 bits;  conditional E-value: 1e-99
+              trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiaps 77 
+                                       mT+Rgr al++++d++++Gps+l+w g +Lv didE+++p ++r++Grv+vtp+a+t vel+L+a+g+h+Wrp+aps
+  GCF_002073975.1_ASM207397v1_3522  50 MTDRGRGALRQSRDTFEVGPSKLTWAGGKLVFDIDEMSWPHMSRLKGRVTVTPSAVTGVELPLKADGSHVWRPFAPS 126
+                                       9**************************************************************************** PP
+
+              trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveev 153
+                                       +++ev+l++p+++wkG+gYfD+N+G+++le+dFs+W+W+R+++k + a+++Yd++ rdgsela++++fdadG++e v
+  GCF_002073975.1_ASM207397v1_3522 127 SEIEVDLNQPGWQWKGHGYFDANFGTAALEDDFSYWTWGRFPTKANgAWCFYDASVRDGSELAVGVHFDADGRAEVV 203
+                                       ******************************************98777****************************** PP
+
+              trimmed_msa_crtC_hmm 154 eappraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfr 230
+                                       eappr+++ r++W v+retrad+g +pr+v+ + d+PFY+Rs+++t+++geev+ vhE+L+ldr++spl+k mL+++
+  GCF_002073975.1_ASM207397v1_3522 204 EAPPRTRFSRSKWLVRRETRADPGYRPRQVHDMLDAPFYCRSAVRTRIFGEEVVGVHEALDLDRFASPLIKPMLAVK 280
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtC_hmm 231 mpRr 234
+                                       +pR+
+  GCF_002073975.1_ASM207397v1_3522 281 VPRK 284
+                                       ***6 PP
+
+>> GCF_002073975.1_ASM207397v1_572  WP_080615185.1 lipocalin-like domain-containing protein [Rhodovulum sp. MB263]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.1   3.1e-06    0.0058      84     159 ..     208     283 ..     183     304 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.1e-06
+             trimmed_msa_crtC_hmm  84 ldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveappra 159
+                                      + +  ++ +G++++D  + ++pl +d + WdW   +l+ ga ++    r   +++ +++ +++dG+ + +++ + +
+  GCF_002073975.1_ASM207397v1_572 208 FPDRTVRVTGRAWLDREWSSQPLAADQTGWDWLSLHLDGGAKLMAFRLRGARDDFLTGTWIAPDGTPTPLTPGAVE 283
+                                      555677899****************************999877766666666677777777777777766665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3790  (1182947 residues searched)
+Passed MSV filter:                        77  (0.0203166); expected 75.8 (0.02)
+Passed bias filter:                       62  (0.0163588); expected 75.8 (0.02)
+Passed Vit filter:                         7  (0.00184697); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000527704); expected 0.0 (1e-05)
+Initial search space (Z):               3790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8967.60
+//
+[ok]

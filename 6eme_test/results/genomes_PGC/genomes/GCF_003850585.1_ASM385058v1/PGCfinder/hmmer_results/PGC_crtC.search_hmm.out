@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_003850585.1_ASM385058v1/GCF_003850585.1_ASM385058v1_protein.faa
+# output directed to file:         results/genomes/GCF_003850585.1_ASM385058v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    7.4e-05   20.7   0.1    0.00012   19.9   0.1    1.3  1  GCF_003850585.1_ASM385058v1_2132  WP_063429487.1 lipocalin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003850585.1_ASM385058v1_2132  WP_063429487.1 lipocalin-like domain-containing protein [Pseudomonas chlororaphis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.1     2e-08   0.00012      81     157 ..     211     288 ..     196     304 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 2e-08
+              trimmed_msa_crtC_hmm  81 eveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveeveap 156
+                                       ++++d    + +G +++D  + ++pl ++ s WdW   +l++g  ++l+ v+++++    +++ +d+dG+++++++ 
+  GCF_003850585.1_ASM385058v1_2132 211 SLQIDGQTYQVSGPAWLDREWSSQPLGAGQSGWDWFSLHLDSGaRLMLFRVRENHKPPYITGTWIDPDGHTQTLHKE 287
+                                       56778888999********************************67889**********************9998765 PP
+
+              trimmed_msa_crtC_hmm 157 p 157
+                                        
+  GCF_003850585.1_ASM385058v1_2132 288 D 288
+                                       4 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       6188  (2052194 residues searched)
+Passed MSV filter:                       141  (0.022786); expected 123.8 (0.02)
+Passed bias filter:                      120  (0.0193924); expected 123.8 (0.02)
+Passed Vit filter:                         6  (0.000969619); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000161603); expected 0.1 (1e-05)
+Initial search space (Z):               6188  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 12333.37
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCF_022846615.1_ASM2284661v1/GCF_022846615.1_ASM2284661v1_protein.faa
+# output directed to file:         results/genomes/GCF_022846615.1_ASM2284661v1/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   2.1e-100  333.5  20.1   2.6e-100  333.2  20.1    1.1  1  GCF_022846615.1_ASM2284661v1_2172  WP_244459491.1 putative photosyn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_022846615.1_ASM2284661v1_2172  WP_244459491.1 putative photosynthetic complex assembly protein PuhE [Roseomonas f
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  333.2  20.1    5e-104  2.6e-100       1     243 [.       6     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 333.2 bits;  conditional E-value: 5e-104
+               trimmed_msa_puhE_hmm   1 lpvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelaf 76 
+                                        +p+lv++f+WwfsTGlillld++ r+tf++s++ at++l++al+gv++  qd+sv+gayl+f+++l+vWgw+el+f
+  GCF_022846615.1_ASM2284661v1_2172   6 IPALVTVFAWWFSTGLILLLDGLRRETFRRSMAFATAFLLAALFGVWAIGQDTSVTGAYLGFLCGLAVWGWIELSF 81 
+                                        699************************************************************************* PP
+
+               trimmed_msa_puhE_hmm  77 ltGvvtGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlfl 152
+                                        ltG++tGprr++cp+g+sg +r++aa+ +il+hE+a++v+a++l+al+wga+Nqv++wtf++L++mr+s+kln+fl
+  GCF_022846615.1_ASM2284661v1_2172  82 LTGLITGPRRTPCPPGLSGPRRVAAAIGAILWHEFAIIVAAAMLVALSWGAANQVAVWTFMILWIMRQSTKLNIFL 157
+                                        **************************************************************************** PP
+
+               trimmed_msa_puhE_hmm 153 GvpnlneeflPehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhl 227
+                                        G++n+ e flP+hl+y+ syfr+r+mnllfpvsv+a+t+++++l+++a++a  +++e++g+sll tl+aLavlEh+
+  GCF_022846615.1_ASM2284661v1_2172 158 GARNTGEVFLPDHLRYIGSYFRHRSMNLLFPVSVMASTLFCAWLFHHAVKAGaTPFEVTGASLLGTLAALAVLEHW 233
+                                        ****************************************************9*********************** PP
+
+               trimmed_msa_puhE_hmm 228 flvLPlpdeaLWrWal 243
+                                        fl++Plp e+LWrWa+
+  GCF_022846615.1_ASM2284661v1_2172 234 FLMMPLPIERLWRWAM 249
+                                        **************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       5175  (1651764 residues searched)
+Passed MSV filter:                       300  (0.057971); expected 103.5 (0.02)
+Passed bias filter:                      104  (0.0200966); expected 103.5 (0.02)
+Passed Vit filter:                         5  (0.000966184); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000193237); expected 0.1 (1e-05)
+Initial search space (Z):               5175  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11008.44
+//
+[ok]

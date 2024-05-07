@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCF_003015185.1_ASM301518v1/GCF_003015185.1_ASM301518v1_protein.faa
+# output directed to file:         results/genomes/GCF_003015185.1_ASM301518v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.3e-05   21.9   0.2    2.2e-05   21.2   0.2    1.3  1  GCF_003015185.1_ASM301518v1_2296  WP_106891801.1 MoxR family ATPas
+    0.00029   17.5   0.6    0.00046   16.9   0.6    1.2  1  GCF_003015185.1_ASM301518v1_666   WP_240624073.1 VWA domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003015185.1_ASM301518v1_2296  WP_106891801.1 MoxR family ATPase [Ahniella affigens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.2   9.8e-09   2.2e-05      89     253 ..     112     303 ..      97     319 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 9.8e-09
+              trimmed_msa_bchD_hmm  89 lvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegleede..alpeaLldRlalrldldeial 163
+                                       l++    R ++++ + l +++ eg+  +  +g+a +le  f+++a  + +e++   alpea ldR  l++ +d  ++
+  GCF_003015185.1_ASM301518v1_2296 112 LLADEINRAPAKTQSALLEVMQEGQ--VTIEGTAFKLEPPFMVLATQNPIEQEGtyALPEAQLDRFLLKVLIDYPSA 186
+                                       55555679999*************6..5667899999************9877523689********9998887666 PP
+
+              trimmed_msa_bchD_hmm 164 rdleelaa....................eaedieaararlpkvtl....eeealealvataaalGid...slRapll 213
+                                       ++  ++ +                    +++ +++ +    ++++     + al+ + at ++ Gi+   + R ++ 
+  GCF_003015185.1_ASM301518v1_2296 187 EEELNVLKqvtggkigdklsveqvqtviQPQILSTLQVIAANLRVdekvYDYALRIVRATRSSPGIAvgaGPRGAIA 263
+                                       633333334666777766666655556533333333333333333333355566666677777788533378***** PP
+
+              trimmed_msa_bchD_hmm 214 alraaralAalegrteveeedlalAarlvlapratrlpee 253
+                                        +r+ar +A l+gr+ v  +d++  a  vl +r t  p  
+  GCF_003015185.1_ASM301518v1_2296 264 LIRVARSAALLAGRDFVAPDDVKRYAIPVLRHRVTPAPDL 303
+                                       ***********************************99975 PP
+
+>> GCF_003015185.1_ASM301518v1_666  WP_240624073.1 VWA domain-containing protein [Ahniella affigens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.6     2e-07   0.00046     402     511 ..     164     274 ..     157     289 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 2e-07
+             trimmed_msa_bchD_hmm 402 tifvVDASGSa.AleRLaEaKGAvElLLaeaYvrRdeValvafRGkgAellLpptrSLvrak..raLagLpGGGgTPL 476
+                                      ++f++D SGS    ++++  K    l+  +     d+V++v + G+ A l+Lppt    +     aL  L  GG+T  
+  GCF_003015185.1_ASM301518v1_666 164 LVFLIDSSGSMdSPDKIGLLKQSFALMVPKLR-AQDRVSIVVYAGS-AGLVLPPTAGDQHETilAALDRLSAGGSTNG 239
+                                      56777777775244677777777776666654.469******9996.89******8754432125788899******* PP
+
+             trimmed_msa_bchD_hmm 477 AagleaalelaeaarrrGrtpllvlLtDGraNial 511
+                                      A+g++ a++ a++a  +     ++l tDG  N+ l
+  GCF_003015185.1_ASM301518v1_666 240 AQGIQLAYDQARRAFIKDGVNRVILATDGDFNVGL 274
+                                      ***************9999*************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       4555  (1733238 residues searched)
+Passed MSV filter:                       342  (0.0750823); expected 91.1 (0.02)
+Passed bias filter:                       80  (0.0175631); expected 91.1 (0.02)
+Passed Vit filter:                        14  (0.00307355); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.000439078); expected 0.0 (1e-05)
+Initial search space (Z):               4555  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.00s 00:00:00.10 Elapsed: 00:00:00.08
+# Mc/sec: 11603.80
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCF_024917295.1_ASM2491729v1/GCF_024917295.1_ASM2491729v1_protein.faa
+# output directed to file:         results/genomes/GCF_024917295.1_ASM2491729v1/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.1e-05   21.3   0.0    0.00011   19.5   0.0    1.8  1  GCF_024917295.1_ASM2491729v1_1818  WP_014230026.1 MULTISPECIES: nit
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_024917295.1_ASM2491729v1_1818  WP_014230026.1 MULTISPECIES: nitrogenase iron-molybdenum cofactor biosynthesis pro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.0   1.9e-08   0.00011     164     391 ..     201     441 ..     184     447 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 1.9e-08
+               trimmed_msa_bchZ_hmm 164 yGtfnmpsdlaeirrlveGiGaevnlvfplgshladvrkladadvnvclyr....efGrllcealerpylqap.iG 234
+                                         G fn++ ++  i+ l++ +G  v  ++    ++a+++++  a++n+ +      +  r+l +    p+++    G
+  GCF_024917295.1_ASM2491729v1_1818 201 IGEFNIAGEFWHIQPLLDELGIRVLGSLSGDGRFAEIQTMHRAQANMLVCSraliNVARALEQRYGTPWFEGSfYG 276
+                                        599****************************************99987654122256778888888899987626* PP
+
+               trimmed_msa_bchZ_hmm 235 lesttkflrklGellgld.....pepfierekhttlkplwdlwrsvtqdffatasfaivanetyarGvrkfledel 305
+                                        +++t+  lr+l  ll+ d     +e++i+re +t+ +   + wr   +   a     + +    +  v   l ++l
+  GCF_024917295.1_ASM2491729v1_1818 277 IRATSDALRQLAALLDDDdlsqrTEALIAREEQTA-ELALQPWRERLRGRKAL----LYTGGVKSWSVVSAL-QDL 346
+                                        **************987744444699*****9876.44556788655433222....222222333333333.578 PP
+
+               trimmed_msa_bchZ_hmm 306 GlpcafavsrkaGaktdneevrelvkekkplvlfGsynerl.....ylaea...garaayi..pasfpgaiirrht 371
+                                        G+    + +rk  +  d++++rel+ e+  ++  G     l     y a+    g r++y   +a +p   i ++ 
+  GCF_024917295.1_ASM2491729v1_1818 347 GMTVVATGTRK-STEEDKQRIRELMGEEAVMLEEGNARTLLdvvyrYQADLmiaGGRNMYTayKARLPFLDINQER 421
+                                        88766555554.4567788888888877766666644332211111333336667777775225778888888888 PP
+
+               trimmed_msa_bchZ_hmm 372 GtpfmGyaGatylvqevcna 391
+                                           f Gy G + l +++c++
+  GCF_024917295.1_ASM2491729v1_1818 422 EHAFAGYKGIVTLARQLCQT 441
+                                        88888888888888888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       5685  (1800637 residues searched)
+Passed MSV filter:                       130  (0.0228672); expected 113.7 (0.02)
+Passed bias filter:                      109  (0.0191733); expected 113.7 (0.02)
+Passed Vit filter:                         3  (0.000527704); expected 5.7 (0.001)
+Passed Fwd filter:                         1  (0.000175901); expected 0.1 (1e-05)
+Initial search space (Z):               5685  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.07
+# Mc/sec: 12082.51
+//
+[ok]

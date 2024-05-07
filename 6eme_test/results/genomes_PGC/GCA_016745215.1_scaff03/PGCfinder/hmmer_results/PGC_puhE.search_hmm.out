@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCA_016745215.1_scaff03/GCA_016745215.1_scaff03_protein.faa
+# output directed to file:         results/genomes/GCA_016745215.1_scaff03/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+      1e-96  321.7  20.1    1.2e-96  321.5  20.1    1.0  1  GCA_016745215.1_scaff03_2523  QQO54077.1 MAG: DUF3623 domain-c
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_016745215.1_scaff03_2523  QQO54077.1 MAG: DUF3623 domain-containing protein [Thiohalocapsa sp. PB-PSB1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  321.5  20.1  1.9e-100   1.2e-96       1     243 [.       6     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 321.5 bits;  conditional E-value: 1.9e-100
+          trimmed_msa_puhE_hmm   1 lpvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelafltGvv 81 
+                                   +pv +alf+WwfsTG+il+ld+rprrt+ +sl++a+++++l+ll++    ++ svagayl+fta++++W+w+e+++++G++
+  GCA_016745215.1_scaff03_2523   6 IPVGYALFLWWFSTGVILYLDKRPRRTYPWSLLGASVVALLSLLTLFLVRDSDSVAGAYLSFTAGVMIWAWMEISYFMGFI 86 
+                                   58889**************************************************************************** PP
+
+          trimmed_msa_puhE_hmm  82 tGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlflGvpnlneefl 162
+                                   tGpr++acp+++ ++ rf+ a++t+lyhEla++++++ ++ +t+g+ Nq+g+wtf++L++mr+saklnlflGvpnlne++l
+  GCA_016745215.1_scaff03_2523  87 TGPRKAACPQECGTWLRFWLAIQTSLYHELAIVLAGATMVWITLGSDNQLGTWTFIILWWMRWSAKLNLFLGVPNLNEDWL 167
+                                   ********************************************************************************* PP
+
+          trimmed_msa_puhE_hmm 163 PehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhlflvLPlpdeaLWrWa 242
+                                   P+h+++L++y++kr+mnllfpvsv+++tv+++llve+al+ + + ++ v+l+l atllaLa+lEh++lvLPl d+ LW+Wa
+  GCA_016745215.1_scaff03_2523 168 PDHIRFLTTYLSKRPMNLLFPVSVSVSTVVMCLLVESALDLSpDGFAGVALMLAATLLALAILEHWLLVLPLADAVLWNWA 248
+                                   ******************************************9*************************************9 PP
+
+          trimmed_msa_puhE_hmm 243 l 243
+                                   +
+  GCA_016745215.1_scaff03_2523 249 F 249
+                                   6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       6287  (2024408 residues searched)
+Passed MSV filter:                       251  (0.0399237); expected 125.7 (0.02)
+Passed bias filter:                      112  (0.0178145); expected 125.7 (0.02)
+Passed Vit filter:                         9  (0.00143153); expected 6.3 (0.001)
+Passed Fwd filter:                         1  (0.000159058); expected 0.1 (1e-05)
+Initial search space (Z):               6287  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 10622.79
+//
+[ok]

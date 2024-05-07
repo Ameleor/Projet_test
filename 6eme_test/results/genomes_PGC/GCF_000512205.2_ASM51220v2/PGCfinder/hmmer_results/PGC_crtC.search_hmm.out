@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_000512205.2_ASM51220v2/GCF_000512205.2_ASM51220v2_protein.faa
+# output directed to file:         results/genomes/GCF_000512205.2_ASM51220v2/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+   2.3e-104  346.3   0.1   2.6e-104  346.2   0.1    1.0  1  GCF_000512205.2_ASM51220v2_3619  WP_084718305.1 hydratase [Sphing
+    0.00039   18.3   0.8    0.00058   17.7   0.8    1.2  1  GCF_000512205.2_ASM51220v2_3628  WP_245648630.1 carotenoid 1,2-hy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000512205.2_ASM51220v2_3619  WP_084718305.1 hydratase [Sphingomonas sanxanigenens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  346.2   0.1  8.4e-108  2.6e-104       1     233 [.       1     233 [.       1     234 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 346.2 bits;  conditional E-value: 8.4e-108
+             trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsa 78 
+                                      mTeR++a+++r+ad++++Gps ++wdgd+Lvidi+Ei++plp +vrG+vrv pe++ ++++aLd++g hrW+p+ap+a
+  GCF_000512205.2_ASM51220v2_3619   1 MTERPSARVHRSADHFSVGPSGVRWDGDTLVIDIAEISAPLPYKVRGTVRVSPEMIGTTAFALDPAGLHRWHPVAPRA 78 
+                                      9***************************************************************************** PP
+
+             trimmed_msa_crtC_hmm  79 rveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveap 156
+                                      +vev++++p+l+w+G+gYfDsN+Gdep+e++F++W+WsRa+lk++ avlY+ +rrdg+ ++lalrfd++G++++v +p
+  GCF_000512205.2_ASM51220v2_3619  79 HVEVDMSHPGLRWSGAGYFDSNFGDEPIEDGFNDWHWSRAHLKNDVAVLYEGRRRDGTPFDLALRFDRQGRWHDVVQP 156
+                                      ****************************************************************************** PP
+
+             trimmed_msa_crtC_hmm 157 praklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrmpR 233
+                                      + a+lprt W v+r+trad+g+apr++kt+ d+PFYaRs ++t+l+ge+v+avhEsLsl r+rsp+v++mLp+rmpR
+  GCF_000512205.2_ASM51220v2_3619 157 APARLPRTGWLVNRQTRADSGAAPRILKTWIDAPFYARSSIATRLFGEDVQAVHESLSLGRFRSPIVQSMLPYRMPR 233
+                                      ***************************************************************************** PP
+
+>> GCF_000512205.2_ASM51220v2_3628  WP_245648630.1 carotenoid 1,2-hydratase [Sphingomonas sanxanigenens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.8   1.9e-07   0.00058      87     158 ..     203     276 ..     181     298 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 1.9e-07
+             trimmed_msa_crtC_hmm  87 pelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrf.dadGeveeveappr 158
+                                       ++  +Ge+++D  + ++ l +d + WdW+  + +dg a++ + ++r+dgs+l ++ ++  +dG+v+ +e+   
+  GCF_000512205.2_ASM51220v2_3628 203 KRTPVTGEAWLDREWSSNYLARDAQGWDWTGLNFDDGrALMAFRIRRKDGSTLWAGGSMrYPDGRVTMFEPRDV 276
+                                      445679*******************************999************9888776357999988887654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       6096  (1963493 residues searched)
+Passed MSV filter:                       125  (0.0205052); expected 121.9 (0.02)
+Passed bias filter:                       92  (0.0150919); expected 121.9 (0.02)
+Passed Vit filter:                         4  (0.000656168); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000328084); expected 0.1 (1e-05)
+Initial search space (Z):               6096  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 12215.87
+//
+[ok]

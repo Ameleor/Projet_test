@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchO.hmm
+# target sequence database:        data/genomes_unzip/GCF_009732755.1_ASM973275v1/GCF_009732755.1_ASM973275v1_protein.faa
+# output directed to file:         results/genomes/GCF_009732755.1_ASM973275v1/PGCfinder/hmmer_results/PGC_bchO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchO_hmm  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.8e-06   22.2   1.3      0.017   10.6   0.0    3.0  3  GCF_009732755.1_ASM973275v1_701   WP_015589325.1 MULTISPECIES: die
+    1.1e-05   21.1   0.0     0.0014   14.2   0.0    2.1  2  GCF_009732755.1_ASM973275v1_1287  WP_012673268.1 MULTISPECIES: alp
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009732755.1_ASM973275v1_701  WP_015589325.1 MULTISPECIES: dienelactone hydrolase family protein [Wolbachia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.5   0.0    0.0073         5      36      58 ..      18      40 ..      10      44 .. 0.85
+   2 !    7.4   0.0   0.00024      0.16      98     141 ..      98     143 ..      83     150 .. 0.79
+   3 !   10.6   0.0   2.5e-05     0.017     227     272 ..     152     201 ..     141     208 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.0073
+             trimmed_msa_bchO_hmm 36 vlLLlHGtGasthswrdllplLa 58
+                                      +++lHG G+s   + +l+ +++
+  GCF_009732755.1_ASM973275v1_701 18 LIIFLHGWGSSGDNFIHLAKVMS 40
+                                     5889***********99998776 PP
+
+  == domain 2  score: 7.4 bits;  conditional E-value: 0.00024
+             trimmed_msa_bchO_hmm  98 lgve..pavvvGHSAGaaialrlaldgkiapkkvvglngallpleg 141
+                                      l+++     +vG S Ga +a++ al ++++++ vv+  g +l+ + 
+  GCF_009732755.1_ASM973275v1_701  98 LNLKdtQLSLVGFSQGAMLAIHTALTRSQSCASVVAYSGRFLSPSK 143
+                                      44442245689*************************9998876655 PP
+
+  == domain 3  score: 10.6 bits;  conditional E-value: 2.5e-05
+             trimmed_msa_bchO_hmm 227 tplllivgekDravppkearevaallpkarl....veleglGHLahEeap 272
+                                       ++++i+g+ D++vp ++ + + + l++  +    ++++ lGH+++Ee  
+  GCF_009732755.1_ASM973275v1_701 152 PNICVIHGDADDVVPFSSLDLAVKALKENGVnvegHPIHALGHIINEEGI 201
+                                      36789************998888777554331122789*********965 PP
+
+>> GCF_009732755.1_ASM973275v1_1287  WP_012673268.1 MULTISPECIES: alpha/beta hydrolase [Wolbachia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0     2e-06    0.0014      61     136 ..      53     127 ..      46     141 .. 0.88
+   2 !    4.9   0.1    0.0014      0.95     218     258 ..     177     217 ..     174     236 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 2e-06
+              trimmed_msa_bchO_hmm  61 frviapDLPghgftesaaeerlsLpgmaealaaLlaalgvepavvvGHSAGaaialrlaldgkiapkkvvglngal 136
+                                         ++  D  ghg ++ +   + +++   ++ a+++++l  ++++++G S G+ ++l  al+   + ++++g+ +a 
+  GCF_009732755.1_ASM973275v1_1287  53 VALVLFDYFGHGHSSGN-FIDYTISDWQKNCAKVMSELTSDKQIIIGSSMGGWLMLLTALQFPEKIAALIGISSAP 127
+                                       567899999***98765.67899**************************************9999999***99985 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.0014
+              trimmed_msa_bchO_hmm 218 llrdlpklktplllivgekDravppkearevaallpkarlv 258
+                                       l+++  +++ p+ l+++ +D+ vp +++ ++a+++++++++
+  GCF_009732755.1_ASM973275v1_1287 177 LNKKTIDINCPVRLLHSINDKDVPYQTSLNLAEKIKSTDVE 217
+                                       5667778999***********************99877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (279 nodes)
+Target sequences:                       1370  (386562 residues searched)
+Passed MSV filter:                        24  (0.0175182); expected 27.4 (0.02)
+Passed bias filter:                       24  (0.0175182); expected 27.4 (0.02)
+Passed Vit filter:                         3  (0.00218978); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00145985); expected 0.0 (1e-05)
+Initial search space (Z):               1370  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4816.06
+//
+[ok]

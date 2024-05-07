@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_000015165.1_ASM1516v1/GCF_000015165.1_ASM1516v1_protein.faa
+# output directed to file:         results/genomes/GCF_000015165.1_ASM1516v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+      1e-71  239.5   0.8    1.3e-71  239.1   0.8    1.0  1  GCF_000015165.1_ASM1516v1_6026  WP_012046261.1 photosynthetic co
+    1.7e-07   29.6   1.3      2e-07   29.4   1.3    1.1  1  GCF_000015165.1_ASM1516v1_7151  WP_012047339.1 MULTISPECIES: PH 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000015165.1_ASM1516v1_6026  WP_012046261.1 photosynthetic complex putative assembly protein PuhB [Bradyrhizobium 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  239.1   0.8   3.5e-75   1.3e-71      15     193 ..      12     190 ..       7     210 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 239.1 bits;  conditional E-value: 3.5e-75
+            trimmed_msa_puhB_hmm  15 lPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsa 93 
+                                     lP+gE++lWqG+P++kal+ ++fh+rlv +Yfa+l+ +rv+a++ d+++l++++asa+ l++ +a+a+ ll++la+l +
+  GCF_000015165.1_ASM1516v1_6026  12 LPQGERLLWQGQPTVKALLLRVFHLRLVLAYFAALFGARVVAGVLDHQPLAASVASASSLVTPVALATLLLTGLAILYS 90 
+                                     8****************************************************************************** PP
+
+            trimmed_msa_puhB_hmm  94 rttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPhvRpwrlarpePmLrc 172
+                                     rtt YtiT+rRv+l++G++L++tln+Pfkq+ +ad+kl++dgsgd++l +++++rlsylllWPh+Rpwrl+++ePmLr+
+  GCF_000015165.1_ASM1516v1_6026  91 RTTRYTITSRRVLLQFGAVLPMTLNVPFKQVVRADVKLHSDGSGDLPLGVTAQQRLSYLLLWPHARPWRLNEVEPMLRG 169
+                                     ******************************************************************************* PP
+
+            trimmed_msa_puhB_hmm 173 ipdaekvAelLaealaaaaaa 193
+                                     +pda++vAe+La+al aa++ 
+  GCF_000015165.1_ASM1516v1_6026 170 VPDARNVAEILAKALVAASDG 190
+                                     ***************998765 PP
+
+>> GCF_000015165.1_ASM1516v1_7151  WP_012047339.1 MULTISPECIES: PH domain-containing protein [Bradyrhizobium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.4   1.3   5.3e-11     2e-07      44     134 ..      25     118 ..      10     140 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 29.4 bits;  conditional E-value: 5.3e-11
+            trimmed_msa_puhB_hmm  44 lYfavlllwrvlaa..ladgeslsealasaalllalaavalall.allawlsarttvYtiTnrRvvlriGiaLsvtlnl 119
+                                     +Y+ ++ +w v+ a  + + ++++++l+ + l+ a++++++al  ++ aw+ + tt   +TnrRvv + G +   t+ +
+  GCF_000015165.1_ASM1516v1_7151  25 FYLPAIGAWIVAFAlvILSRTTVNDNLTMLCLASAAVIAVVALYwTVRAWFHRLTTETDVTNRRVVHKTGFIRRRTFEM 103
+                                     45555555555443113445566666666665555555555554155699999999999******************** PP
+
+            trimmed_msa_puhB_hmm 120 Pfkqiesadlklrkd 134
+                                      + ++es+d++++  
+  GCF_000015165.1_ASM1516v1_7151 104 ALDKVESVDVNQTIM 118
+                                     **********98755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       7549  (2421538 residues searched)
+Passed MSV filter:                       532  (0.0704729); expected 151.0 (0.02)
+Passed bias filter:                      294  (0.0389456); expected 151.0 (0.02)
+Passed Vit filter:                        23  (0.00304676); expected 7.5 (0.001)
+Passed Fwd filter:                         4  (0.000529872); expected 0.1 (1e-05)
+Initial search space (Z):               7549  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.06
+# Mc/sec: 7507.30
+//
+[ok]

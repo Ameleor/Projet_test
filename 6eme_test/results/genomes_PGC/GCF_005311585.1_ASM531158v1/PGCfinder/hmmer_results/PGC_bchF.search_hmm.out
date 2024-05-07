@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_005311585.1_ASM531158v1/GCF_005311585.1_ASM531158v1_protein.faa
+# output directed to file:         results/genomes/GCF_005311585.1_ASM531158v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    8.6e-76  250.7   6.6    9.8e-76  250.5   6.6    1.0  1  GCF_005311585.1_ASM531158v1_954   WP_002720448.1 MULTISPECIES: 2-v
+     0.0086   13.9   0.0      0.024   12.5   0.0    1.7  1  GCF_005311585.1_ASM531158v1_2493  WP_137458243.1 lipoprotein-relea
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_005311585.1_ASM531158v1_954  WP_002720448.1 MULTISPECIES: 2-vinyl bacteriochlorophyllide hydratase [Cereibacter]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  250.5   6.6   4.6e-79   9.8e-76       2     146 .]      12     155 ..      11     155 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 250.5 bits;  conditional E-value: 4.6e-79
+             trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvfg 79 
+                                       lyt+e+rarrdat+wtlvqgilaplqflvf +sl lvl ylatGeg+aaat+s+++kt++lytim+tGaiwekvvfg
+  GCF_005311585.1_ASM531158v1_954  12 RLYTEEQRARRDATRWTLVQGILAPLQFLVFAISLGLVLWYLATGEGYAAATVSILIKTFLLYTIMVTGAIWEKVVFG 89 
+                                      69**************************************************************************** PP
+
+             trimmed_msa_bchF_hmm  80 kylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                      +ylfa+affwedvfs+ v+alhtayl+al+tg+  +  q+ +alaaya+yvina+qfl+klr+arl+
+  GCF_005311585.1_ASM531158v1_954  90 QYLFAPAFFWEDVFSFGVIALHTAYLWALFTGQP-HGLQMGIALAAYATYVINAGQFLWKLRMARLD 155
+                                      *******************************965.5789**************************96 PP
+
+>> GCF_005311585.1_ASM531158v1_2493  WP_137458243.1 lipoprotein-releasing ABC transporter permease subunit [Cereibacter 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   1.1e-05     0.024      65     111 ..     367     413 ..     344     425 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchF_hmm  65 timitGaiwekvvfgkylfaeaffwedvfsllvlalhtaylvalltg 111
+                                         +  G +w+  + g y +   + w dvfs + l+l   ++v+l+  
+  GCF_005311585.1_ASM531158v1_2493 367 NYLSGGGVWDPSIRGIYALPAKLQWADVFSAVALSLGLSFFVTLIPA 413
+                                       5566799*****************************99999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4269  (1332326 residues searched)
+Passed MSV filter:                       139  (0.0325603); expected 85.4 (0.02)
+Passed bias filter:                       65  (0.015226); expected 85.4 (0.02)
+Passed Vit filter:                         7  (0.00163973); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000468494); expected 0.0 (1e-05)
+Initial search space (Z):               4269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8632.30
+//
+[ok]

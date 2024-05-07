@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_013374095.1_ASM1337409v1/GCF_013374095.1_ASM1337409v1_protein.faa
+# output directed to file:         results/genomes/GCF_013374095.1_ASM1337409v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      7e-05   19.8   0.4    0.00011   19.2   0.4    1.4  1  GCF_013374095.1_ASM1337409v1_760  WP_176495910.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_013374095.1_ASM1337409v1_760  WP_176495910.1 hypothetical protein [Sphingomonas sp. HMP6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.2   0.4   3.1e-08   0.00011     169     197 ..      49      76 ..       9      79 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 19.2 bits;  conditional E-value: 3.1e-08
+              trimmed_msa_crtA_hmm 169 vTfsiWedaasmaafArkegpHaeaikav 197
+                                        T+++W+d a+m a+ r +g+H +a++a 
+  GCF_013374095.1_ASM1337409v1_760  49 HTLTVWQDRAAMLAYLR-SGAHLQAMRAF 76 
+                                       599**************.********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3483  (1096725 residues searched)
+Passed MSV filter:                        79  (0.0226816); expected 69.7 (0.02)
+Passed bias filter:                       61  (0.0175136); expected 69.7 (0.02)
+Passed Vit filter:                         7  (0.00200976); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000287109); expected 0.0 (1e-05)
+Initial search space (Z):               3483  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 8509.69
+//
+[ok]

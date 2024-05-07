@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_018200035.1_ASM1820003v1/GCF_018200035.1_ASM1820003v1_protein.faa
+# output directed to file:         results/genomes/GCF_018200035.1_ASM1820003v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    4.2e-73  241.6  11.5    4.8e-73  241.5  11.5    1.0  1  GCF_018200035.1_ASM1820003v1_3675  WP_212706565.1 2-vinyl bacterioc
+     0.0034   14.9   4.1     0.0042   14.6   0.6    2.0  2  GCF_018200035.1_ASM1820003v1_2831  WP_212704278.1 DUF2306 domain-co
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_018200035.1_ASM1820003v1_3675  WP_212706565.1 2-vinyl bacteriochlorophyllide hydratase [Sulfitobacter albidus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  241.5  11.5   2.8e-76   4.8e-73       3     146 .]      10     153 ..       8     153 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 241.5 bits;  conditional E-value: 2.8e-76
+               trimmed_msa_bchF_hmm   3 lytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvf 78 
+                                        lytp++rarrdat+wtlvqgilap+qf+vf vsl+lvlryl+tGeg+a+at+svv+kt +ly im+tGaiwekvvf
+  GCF_018200035.1_ASM1820003v1_3675  10 LYTPAQRARRDATRWTLVQGILAPVQFAVFAVSLVLVLRYLMTGEGYAIATASVVLKTALLYLIMVTGAIWEKVVF 85 
+                                        9*************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  79 gkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        g++lfa+affwedvfs+ v+alht+y++ ll+g+++++++++ al ayaayv+naaqf++klr+arl+
+  GCF_018200035.1_ASM1820003v1_3675  86 GQWLFAPAFFWEDVFSFGVIALHTLYIYGLLAGTMTPQALMVTALLAYAAYVVNAAQFVWKLRMARLQ 153
+                                        ******************************************************************97 PP
+
+>> GCF_018200035.1_ASM1820003v1_2831  WP_212704278.1 DUF2306 domain-containing protein [Sulfitobacter albidus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.2     0.027        46      98     129 ..      24      56 ..      16      69 .. 0.60
+   2 !   14.6   0.6   2.4e-06    0.0042      26      71 ..      72     116 ..      65     120 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.027
+               trimmed_msa_bchF_hmm  98 lalhtaylval.ltgllsaeeqlllalaayaay 129
+                                        lal ++ lv    t+l   + ++++al a++a+
+  GCF_018200035.1_ASM1820003v1_2831  24 LALGAVQLVLAkGTHLHRIAGRVWVALMAFVAF 56 
+                                        556555554330344555667888888777665 PP
+
+  == domain 2  score: 14.6 bits;  conditional E-value: 2.4e-06
+               trimmed_msa_bchF_hmm  26 plqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGa 71 
+                                        p+ +l + ++l+ +++ + t +  ++a+  +++++l ly+++itGa
+  GCF_018200035.1_ASM1820003v1_2831  72 PIHLLSI-LTLVSLVQAVRTARAGNIAQHRIIMRSLYLYALVITGA 116
+                                        5554443.445555677888888899*******************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3447  (1075713 residues searched)
+Passed MSV filter:                       101  (0.0293008); expected 68.9 (0.02)
+Passed bias filter:                       47  (0.013635); expected 68.9 (0.02)
+Passed Vit filter:                         4  (0.00116043); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000580215); expected 0.0 (1e-05)
+Initial search space (Z):               3447  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6620.04
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_028885395.1_ASM2888539v1/GCF_028885395.1_ASM2888539v1_protein.faa
+# output directed to file:         results/genomes/GCF_028885395.1_ASM2888539v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.3e-99  327.8   0.3      6e-99  327.6   0.3    1.0  1  GCF_028885395.1_ASM2888539v1_1573  WP_235575734.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_028885395.1_ASM2888539v1_1573  WP_235575734.1 spheroidene monooxygenase [Roseovarius tolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  327.6   0.3  1.6e-102     6e-99      21     225 .]       1     205 [.       1     205 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 327.6 bits;  conditional E-value: 1.6e-102
+               trimmed_msa_crtA_hmm  21 rmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivrryraraeesltvlle 96 
+                                        +m++arl+l rvp++ f+kl+GsGtgeGFtp Pnt vya+la+++d++ta++++ +++++rry+++a+e +tv+l+
+  GCF_028885395.1_ASM2888539v1_1573   1 MMGAARLMLPRVPEIDFWKLCGSGTGEGFTPVPNTGVYAILATWPDHATAERQTVQADVFRRYARHAAEVWTVFLT 76 
+                                        79************************************************************************** PP
+
+               trimmed_msa_crtA_hmm  97 ptsarGaWsgeepfeveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvllkiGlGEvPllrqvTfs 172
+                                        p+sarGaW+ge+pf++++++ +gplaaLTrAt++p++alrFWrrvp+is++ig+dpnv++kiG+GEvPll+qvTfs
+  GCF_028885395.1_ASM2888539v1_1573  77 PVSARGAWAGENPFRPSDDPGTGPLAALTRATVRPARALRFWRRVPDISAMIGQDPNVAFKIGIGEVPLLHQVTFS 152
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtA_hmm 173 iWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegksp 225
+                                        iW+da+sma fAr++gpHa+ai+avre++wf+Eelyarfrv++++G+w+g++p
+  GCF_028885395.1_ASM2888539v1_1573 153 IWPDAESMALFARADGPHARAIRAVREGNWFREELYARFRVTATRGSWHGTQP 205
+                                        **************************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3790  (1151758 residues searched)
+Passed MSV filter:                        96  (0.0253298); expected 75.8 (0.02)
+Passed bias filter:                       87  (0.0229551); expected 75.8 (0.02)
+Passed Vit filter:                         4  (0.00105541); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000263852); expected 0.0 (1e-05)
+Initial search space (Z):               3790  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8460.32
+//
+[ok]

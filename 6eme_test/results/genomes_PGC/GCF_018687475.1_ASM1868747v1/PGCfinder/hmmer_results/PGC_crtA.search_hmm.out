@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_018687475.1_ASM1868747v1/GCF_018687475.1_ASM1868747v1_protein.faa
+# output directed to file:         results/genomes/GCF_018687475.1_ASM1868747v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.8e-80  265.1   0.2    4.2e-80  265.0   0.2    1.0  1  GCF_018687475.1_ASM1868747v1_1372  WP_215369541.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_018687475.1_ASM1868747v1_1372  WP_215369541.1 spheroidene monooxygenase [Polynucleobacter sp. MWH-UH24A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  265.0   0.2   2.2e-83   4.2e-80       7     223 ..       3     218 ..       1     220 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 265.0 bits;  conditional E-value: 2.2e-83
+               trimmed_msa_crtA_hmm   7 frfaalesrlwalarmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivrr 82 
+                                        ++ ++ +++l +++r++++r++  r +gl + k++GsG+++GF+++P+ ++++l+++f++ e+a+a++ es+++++
+  GCF_018687475.1_ASM1868747v1_1372   3 LVSIQPQAKLAGITRLMFNRFSTYRPKGLVLQKHMGSGKNAGFSVSPSGTHQGLFSLFDSLEHANAFICESPLLKW 78 
+                                        678899********************************************************************** PP
+
+               trimmed_msa_crtA_hmm  83 yraraeesltvlleptsarGaWsgeepfeveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvllki 158
+                                        y+++a e +tv+l+++s++G+Wsg+++ e  + ++sgp+a+LTrA+ikpska++FW+++p+++ ++ +++++l+++
+  GCF_018687475.1_ASM1868747v1_1372  79 YQRHALELFTVKLRAYSVKGRWSGHQLSESIAPPSSGPIASLTRASIKPSKAVSFWTKAPPAEVDLLHTDGCLISA 154
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtA_hmm 159 GlGEvPllrqvTfsiWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegk 223
+                                        G+GE+P+lrq+Tf+iWe++a+m+a+Ar +g+H +aik+++++++fsE++++rf+ ++++Gtw+g+
+  GCF_018687475.1_ASM1868747v1_1372 155 GVGEAPILRQATFTIWESQAAMDAYAR-SGAHLAAIKSAMQGQYFSESMFVRFQPFDATGTWKGR 218
+                                        ***************************.***********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       1944  (597939 residues searched)
+Passed MSV filter:                        50  (0.0257202); expected 38.9 (0.02)
+Passed bias filter:                       43  (0.0221193); expected 38.9 (0.02)
+Passed Vit filter:                         2  (0.00102881); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000514403); expected 0.0 (1e-05)
+Initial search space (Z):               1944  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7845.77
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_019973775.1_ASM1997377v1/GCF_019973775.1_ASM1997377v1_protein.faa
+# output directed to file:         results/genomes/GCF_019973775.1_ASM1997377v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    8.7e-70  232.8   0.0    9.8e-70  232.6   0.0    1.0  1  GCF_019973775.1_ASM1997377v1_2773  WP_223998645.1 hydratase [Aureim
+     0.0073   13.7   0.2      0.011   13.2   0.2    1.2  1  GCF_019973775.1_ASM1997377v1_3960  WP_224000890.1 carotenoid 1,2-hy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_019973775.1_ASM1997377v1_2773  WP_223998645.1 hydratase [Aureimonas sp. SA4125]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.6   0.0   4.2e-73   9.8e-70      39     233 ..       1     195 [.       1     196 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 232.6 bits;  conditional E-value: 4.2e-73
+               trimmed_msa_crtC_hmm  39 vplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsarveveldepelswkGegYfDsNeGdepleedFseWd 114
+                                        +p+prr+rGr++v+p  ++++++ Ld++ rh Wrpiap++r ev +d+p+l w+G++Y+D+N+G+eple++F++W 
+  GCF_019973775.1_ASM1997377v1_2773   1 MPIPRRLRGRITVEPGPIFSESFGLDEARRHLWRPIAPCGRAEVAFDRPALGWQGSAYIDMNAGAEPLEAGFHRWG 76 
+                                        599************************************************************************* PP
+
+               trimmed_msa_crtC_hmm 115 WsRaelkdgaavlYdverrdgselalalrfdadGeveeveappraklprtlWrveretradagkaprvvktledtP 190
+                                        W+R + +  + + Ydv +r+g++++lal++ adG+++ +e++p ++lp+t Wrv re+ a+ g++prv++tledtP
+  GCF_019973775.1_ASM1997377v1_2773  77 WAREDGAGTTRIRYDVVARSGERRRLALEYGADGSARPIEPAPLHRLPSTGWRVGREAGAEGGTPPRVLRTLEDTP 152
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 191 FYaRslletellgeeveavhEsLsldrlrsplvklmLpfrmpR 233
+                                        FY+Rs+l    +g e +a+hE+++ldr+++++v+++LpfrmpR
+  GCF_019973775.1_ASM1997377v1_2773 153 FYSRSMLGCAGDGGERRAIHETVDLDRFATRWVQTLLPFRMPR 195
+                                        ******************************************9 PP
+
+>> GCF_019973775.1_ASM1997377v1_3960  WP_224000890.1 carotenoid 1,2-hydratase [Aureimonas sp. SA4125]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.2   4.7e-06     0.011      90     174 ..     233     319 ..     228     337 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 4.7e-06
+               trimmed_msa_crtC_hmm  90 swkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrf.dadGeveeveappraklpr 163
+                                        + +Ge+++D  + ++ l+e+   WdW+  +l+dg a++ + ++ +++++l ++ +f  +dG++ ++++   +  p 
+  GCF_019973775.1_ASM1997377v1_3960 233 AVTGEAWLDREWSSNILSEGAVGWDWTGLNLDDGsALMAFRIRGENDATLWAGGSFrRPDGSIFRFDPDDVTLAPV 308
+                                        668*******************************888899999999999999888845699999999888888888 PP
+
+               trimmed_msa_crtC_hmm 164 tlWrveretra 174
+                                         +W+  r+ +a
+  GCF_019973775.1_ASM1997377v1_3960 309 RRWTSPRTDAA 319
+                                        88987776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4665  (1455137 residues searched)
+Passed MSV filter:                        84  (0.0180064); expected 93.3 (0.02)
+Passed bias filter:                       74  (0.0158628); expected 93.3 (0.02)
+Passed Vit filter:                         6  (0.00128617); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000428725); expected 0.0 (1e-05)
+Initial search space (Z):               4665  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11622.93
+//
+[ok]

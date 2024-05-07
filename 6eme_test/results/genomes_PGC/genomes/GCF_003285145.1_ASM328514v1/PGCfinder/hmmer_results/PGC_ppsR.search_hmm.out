@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCF_003285145.1_ASM328514v1/GCF_003285145.1_ASM328514v1_protein.faa
+# output directed to file:         results/genomes/GCF_003285145.1_ASM328514v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    0.00057   17.2   0.2      0.001   16.3   0.2    1.4  1  GCF_003285145.1_ASM328514v1_215   WP_065890220.1 sigma-54-dependen
+     0.0012   16.1   0.7      0.002   15.4   0.7    1.6  1  GCF_003285145.1_ASM328514v1_4734  WP_000462905.1 MULTISPECIES: DNA
+     0.0019   15.4   0.1     0.0032   14.7   0.1    1.3  1  GCF_003285145.1_ASM328514v1_27    WP_004146229.1 MULTISPECIES: nit
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003285145.1_ASM328514v1_215  WP_065890220.1 sigma-54-dependent response regulator transcription factor ZraR [Kleb
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.2     6e-07     0.001     409     445 ..     407     443 .]     405     443 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 6e-07
+             trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                      +Ek  I aALe T+ N   AA  LG+ R  L +KL r
+  GCF_003285145.1_ASM328514v1_215 407 VEKEVILAALEKTGGNKTEAARQLGITRKTLLAKLSR 443
+                                      79999******************************87 PP
+
+>> GCF_003285145.1_ASM328514v1_4734  WP_000462905.1 MULTISPECIES: DNA-binding transcriptional regulator Fis [Bacteria]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.7   1.2e-06     0.002     417     448 ..      66      97 ..      11      98 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.2e-06
+              trimmed_msa_ppsR_hmm 417 ALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +++T+ N   AA m+G+ R  L  KL++yg+
+  GCF_003285145.1_ASM328514v1_4734  66 VMQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                       579****************************8 PP
+
+>> GCF_003285145.1_ASM328514v1_27  WP_004146229.1 MULTISPECIES: nitrogen regulation protein NR(II) [Klebsiella]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   1.9e-06    0.0032     151     261 ..      18     125 ..      11     139 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.9e-06
+            trimmed_msa_ppsR_hmm 151 eavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsa 229
+                                     +++l+vd +  ++  aNpaA++Ll +++++l g++++el++  s + +  + ++++a +   + ev+l  +gr+  +s 
+  GCF_003285145.1_ASM328514v1_27  18 NSILLVD-DDLAVHFANPAAQQLLAQSSRKLFGTPLPELLSYFSLN-IGLMQESLQAGQGFTDNEVTLVIDGRSHILSL 94 
+                                     5677777.4578999*************************988875.55555666777777888888888888888888 PP
+
+            trimmed_msa_ppsR_hmm 230 slfrqegesllLvrlspaeaaaaaaeeaeakl 261
+                                     ++ r   e ++L++++p +++++  +e+ +++
+  GCF_003285145.1_ASM328514v1_27  95 TAQRLP-EGFILLEMAPMDNQRRLSQEQLQHA 125
+                                     887765.4577889999998888333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       5076  (1551265 residues searched)
+Passed MSV filter:                       209  (0.0411742); expected 101.5 (0.02)
+Passed bias filter:                      128  (0.0252167); expected 101.5 (0.02)
+Passed Vit filter:                        24  (0.00472813); expected 5.1 (0.001)
+Passed Fwd filter:                         3  (0.000591017); expected 0.1 (1e-05)
+Initial search space (Z):               5076  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 10288.29
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_008728195.1_ASM872819v1/GCF_008728195.1_ASM872819v1_protein.faa
+# output directed to file:         results/genomes/GCF_008728195.1_ASM872819v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.5e-83  276.6   4.1    3.8e-83  276.5   4.1    1.0  1  GCF_008728195.1_ASM872819v1_1773  WP_057813973.1 photosynthetic co
+    2.4e-07   28.8   0.2    3.4e-07   28.3   0.2    1.1  1  GCF_008728195.1_ASM872819v1_472   WP_057816214.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_008728195.1_ASM872819v1_1773  WP_057813973.1 photosynthetic complex putative assembly protein PuhB [Roseovarius i
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  276.5   4.1   1.3e-86   3.8e-83       1     200 [.       4     202 ..       4     210 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 276.5 bits;  conditional E-value: 1.3e-86
+              trimmed_msa_puhB_hmm   1 sefefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllal 77 
+                                       ++f+fepv glPe+ P+gE+ilWqGrPdw+al++e++++++v++Yf++l+lwr+++   d++++++a+a+a ++l++
+  GCF_008728195.1_ASM872819v1_1773   4 DDFAFEPVAGLPETPPEGERILWQGRPDWWALTKESLNLKWVVAYFVALALWRFVTL-IDQAAAGTAFAAAFPFLVM 79 
+                                       59*****************************************************99.7889*************** PP
+
+              trimmed_msa_puhB_hmm  78 aavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylll 154
+                                       +a++ all+++++++ar+t+YtiTnrRv +riG+aL+vtlnlPf+qi+sa+l+lrk g+g+ial+lkg++rlsyl++
+  GCF_008728195.1_ASM872819v1_1773  80 GAITAALLMIIGFMQARSTIYTITNRRVAMRIGAALTVTLNLPFTQIASASLDLRKGGTGTIALDLKGKTRLSYLVC 156
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhB_hmm 155 WPhvRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaea 200
+                                       WPhvRpw ++r++P+Lrcipda+++A+lL+ea++a+ +++++a++a
+  GCF_008728195.1_ASM872819v1_1773 157 WPHVRPWVMRRTQPALRCIPDADNIARLLSEAAEARISTPQVARTA 202
+                                       **************************************99998876 PP
+
+>> GCF_008728195.1_ASM872819v1_472  WP_057816214.1 hypothetical protein [Roseovarius indicus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.2   1.2e-10   3.4e-07      17     106 ..      13     100 ..       7     104 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 1.2e-10
+             trimmed_msa_puhB_hmm  17 agEkilWqGrPdwkalareafhvrlva.lYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsa 93 
+                                      ++EkilWqG Pd ++ +r    v  +  l fa  +++ +++a    +  +  +++++ + +  a+a++  ++ aw  +
+  GCF_008728195.1_ASM872819v1_472  13 KDEKILWQGMPDGRVTIRAKNIVTVLFgLGFAGFAVFWMVTA--ARAGGQFWMFGLIHFGVGLALAFGGAFGSAW-RR 87 
+                                      89**********988766543333332122333322222222..2333344455555566666666677777776.57 PP
+
+             trimmed_msa_puhB_hmm  94 rttvYtiTnrRvv 106
+                                      r t Yt+T++R  
+  GCF_008728195.1_ASM872819v1_472  88 RHTWYTLTSKRAF 100
+                                      99*********75 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       5925  (1842602 residues searched)
+Passed MSV filter:                       372  (0.0627848); expected 118.5 (0.02)
+Passed bias filter:                      208  (0.0351055); expected 118.5 (0.02)
+Passed Vit filter:                        20  (0.00337553); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000506329); expected 0.1 (1e-05)
+Initial search space (Z):               5925  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 8667.83
+//
+[ok]

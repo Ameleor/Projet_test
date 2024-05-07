@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCF_016864975.1_ASM1686497v1/GCF_016864975.1_ASM1686497v1_protein.faa
+# output directed to file:         results/genomes/GCF_016864975.1_ASM1686497v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      1e-12   45.8   0.3    2.6e-05   21.4   0.0    3.1  3  GCF_016864975.1_ASM1686497v1_3801  WP_014916972.1 MULTISPECIES: Yif
+     0.0016   15.5   0.0     0.0023   15.0   0.0    1.2  1  GCF_016864975.1_ASM1686497v1_3334  WP_172677610.1 MULTISPECIES: ABC
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016864975.1_ASM1686497v1_3801  WP_014916972.1 MULTISPECIES: YifB family Mg chelatase-like AAA ATPase [Pectobacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   3.2e-06    0.0064       7      60 ..     193     244 ..     188     267 .. 0.85
+   2 !   21.4   0.0   1.3e-08   2.6e-05     116     186 ..     279     349 ..     276     359 .. 0.93
+   3 !    7.1   0.0   0.00028      0.56     194     309 ..     377     492 ..     371     502 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.2e-06
+               trimmed_msa_bchI_hmm   7 saivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavkg 60 
+                                          i+gq++ k+al +aa   +   +l+lG  GtGk+  +  l +l+P+++  ++
+  GCF_016864975.1_ASM1686497v1_3801 193 KDIIGQEQAKRALEIAAAGGH--NLLLLGPPGTGKTMLASRLGNLMPPLSDEEA 244
+                                        569*************98664..69***********************986554 PP
+
+  == domain 2  score: 21.4 bits;  conditional E-value: 1.3e-08
+               trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                        al+ G    +pG ++ a+ G l++de+  +e  ++d l +  +sGe ++ r    v +par  lv + nP 
+  GCF_016864975.1_ASM1686497v1_3801 279 ALVGGGSLPKPGEISLAHNGVLFLDELPEFERRVLDSLREPLESGEIIISRTRAKVCYPARVQLVAAMNPS 349
+                                        6677777779***********************************************************96 PP
+
+  == domain 3  score: 7.1 bits;  conditional E-value: 0.00028
+               trimmed_msa_bchI_hmm 194 lldrfGlsvevr.tpkdleervevvrrrdaferdpeafvakwkkedakvrkkilaarkrlekvevpdavlekaakl 268
+                                        +ldrf ls+ev   p  + ++ +      a  r++   +++++ + a+  + +l++r+  ++   + a  +   ++
+  GCF_016864975.1_ASM1686497v1_3801 377 FLDRFDLSIEVPlLPPGVLSQQHYQGESSATIRERVLIARQIQLKRANKINALLTSREIEKHCGLEMADATYLEEV 452
+                                        7999999999962567777777788888888899999999999999999999999999999887777777777888 PP
+
+               trimmed_msa_bchI_hmm 269 clalgtdGlrgeltllraaralaalegakevtkehlkkvap 309
+                                          +lg   +r+   +l+ ar++a l g+++++++hl++  +
+  GCF_016864975.1_ASM1686497v1_3801 453 MNKLGL-SVRAWHRILKVARTIADLGGRDNIERKHLAEALS 492
+                                        888887.589**************************87654 PP
+
+>> GCF_016864975.1_ASM1686497v1_3334  WP_172677610.1 MULTISPECIES: ABC transporter ATP-binding protein [Pectobacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0   1.2e-06    0.0023      33      65 ..      32      64 ..      26      82 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.2e-06
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikavkgcrync 65
+                                       ++G  GtGkst +++la llP+++   +    c
+  GCF_016864975.1_ASM1686497v1_3334 32 IIGANGTGKSTLLKTLAGLLPPLSGSFSLGRGC 64
+                                       79********************98765555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       4031  (1343112 residues searched)
+Passed MSV filter:                       255  (0.0632597); expected 80.6 (0.02)
+Passed bias filter:                      189  (0.0468866); expected 80.6 (0.02)
+Passed Vit filter:                        35  (0.00868271); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000496155); expected 0.0 (1e-05)
+Initial search space (Z):               4031  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 7442.97
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_029581395.1_ASM2958139v1/GCF_029581395.1_ASM2958139v1_protein.faa
+# output directed to file:         results/genomes/GCF_029581395.1_ASM2958139v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.4e-96  317.8   1.9    7.3e-96  317.6   1.9    1.0  1  GCF_029581395.1_ASM2958139v1_3383  WP_277807061.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_029581395.1_ASM2958139v1_3383  WP_277807061.1 spheroidene monooxygenase [Roseinatronobacter sp. S2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  317.6   1.9   1.8e-99   7.3e-96       2     225 .]       4     224 ..       3     224 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 317.6 bits;  conditional E-value: 1.8e-99
+               trimmed_msa_crtA_hmm   2 vtlslfrfaalesrlwalarmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaes 77 
+                                        +tl lfrf+++++rlw+l +mv+ar+al+r+pgl+f+k++GsGtg+GFtp+Pn+ v+a+l v+  ++ a++ +a s
+  GCF_029581395.1_ASM2958139v1_3383   4 ITLCLFRFDRTAARLWVLGQMVAARVALARQPGLEFWKICGSGTGQGFTPRPNWGVWAILGVWGTHAGAQQGVA-S 78 
+                                        799*********************************************************************99.8 PP
+
+               trimmed_msa_crtA_hmm  78 kivrryraraeesltvlleptsarGaWsgeepfeveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpn 153
+                                         +++r+ +ra+es+t++lep+sarG+Wsg++pf++e   a+gp+aaLTrA+++p++alrFW +vp+is+++g+dpn
+  GCF_029581395.1_ASM2958139v1_3383  79 GAFARWGQRADESYTLFLEPYSARGRWSGRAPFRPEG-VADGPVAALTRASLRPARALRFWGQVPDISAKVGSDPN 153
+                                        89********************************986.89************************************ PP
+
+               trimmed_msa_crtA_hmm 154 vllkiGlGEvPllrqvTfsiWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegksp 225
+                                        v++kiG+GE+PllrqvTfs+W+da smaafAr +gpH++ai+avree+wfsEelyarfr+ + +Gtw+g++p
+  GCF_029581395.1_ASM2958139v1_3383 154 VMFKIGIGEMPLLRQVTFSVWPDAGSMAAFAR-RGPHQQAIRAVREERWFSEELYARFRISARKGTWQGRDP 224
+                                        ********************************.************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       4141  (1304125 residues searched)
+Passed MSV filter:                       118  (0.0284955); expected 82.8 (0.02)
+Passed bias filter:                       84  (0.020285); expected 82.8 (0.02)
+Passed Vit filter:                         5  (0.00120744); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000241488); expected 0.0 (1e-05)
+Initial search space (Z):               4141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8814.56
+//
+[ok]

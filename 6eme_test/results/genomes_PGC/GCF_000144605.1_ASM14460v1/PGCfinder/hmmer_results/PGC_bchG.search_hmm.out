@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCF_000144605.1_ASM14460v1/GCF_000144605.1_ASM14460v1_protein.faa
+# output directed to file:         results/genomes/GCF_000144605.1_ASM14460v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+   2.2e-146  484.4  16.5   2.5e-146  484.2  16.5    1.0  1  GCF_000144605.1_ASM14460v1_3053  WP_013270466.1 chlorophyll synth
+    2.1e-08   31.6   8.6    2.1e-08   31.6   8.6    2.1  2  GCF_000144605.1_ASM14460v1_908   WP_013268329.1 UbiA family preny
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000144605.1_ASM14460v1_3053  WP_013270466.1 chlorophyll synthase ChlG [Brevundimonas subvibrioides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  484.2  16.5  1.5e-149  2.5e-146       2     287 ..      12     298 ..      11     299 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 484.2 bits;  conditional E-value: 1.5e-149
+             trimmed_msa_bchG_hmm   2 lpepkavlellkPitwfpPmWafacGvvssgaslsekwllvvaGvllaGPlvcatsqavndWfdrhvdainePerpiP 79 
+                                       p+p+avlel+kP+twfpPmWaf+cGvvssg++++++wl+++aG+ l+GPlvcatsqavndWfdrhvdaineP+rpiP
+  GCF_000144605.1_ASM14460v1_3053  12 APSPAAVLELFKPVTWFPPMWAFMCGVVSSGMPFQGRWLFLIAGIALTGPLVCATSQAVNDWFDRHVDAINEPNRPIP 89 
+                                      699*************************************************************************** PP
+
+             trimmed_msa_bchG_hmm  80 sGripGrWGlyialiltllsllvaaalgtlvfvaavlglvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaav 157
+                                      sGripGrWGlyia+i+t ls++vaa+ g++v++a++lgl+laWaysapPlrlk++G+ G+ av+lsyegl+W+tgaav
+  GCF_000144605.1_ASM14460v1_3053  90 SGRIPGRWGLYIAIIWTGLSVVVAALTGPWVLGATLLGLALAWAYSAPPLRLKRDGVAGPFAVALSYEGLTWFTGAAV 167
+                                      ****************************************************************************** PP
+
+             trimmed_msa_bchG_hmm 158 lagalPsaevlllallysigahGimtlndfkaveGdrklgvkslpvklGveraarvaclvmavpqvvvvalll.awgk 234
+                                      +agalP+a+vl+la+lys+ga+Gim+lndfkaveGdr lg+kslp++lGv++aar+ac+vma+pqv+vv+ll+ aw++
+  GCF_000144605.1_ASM14460v1_3053 168 MAGALPHAPVLILAALYSFGAYGIMVLNDFKAVEGDRLLGLKSLPAELGVDSAARIACAVMAAPQVIVVTLLFvAWDR 245
+                                      *********************************************************************998648*** PP
+
+             trimmed_msa_bchG_hmm 235 alhalvvavllvvqlvlmarllkdPkekalwynavgvtlyvlGmlvsafalra 287
+                                      ++h l+v+vl++vq++lmarll dPk+ ++wyna+g+tlyv Gml+safa+r+
+  GCF_000144605.1_ASM14460v1_3053 246 PWHGLAVGVLVAVQFALMARLLGDPKKFTPWYNATGTTLYVFGMLASAFAVRG 298
+                                      ***************************************************97 PP
+
+>> GCF_000144605.1_ASM14460v1_908  WP_013268329.1 UbiA family prenyltransferase [Brevundimonas subvibrioides]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   8.6   1.3e-11   2.1e-08      40     153 ..      63     174 ..      42     189 .. 0.78
+   2 ?    1.5   0.1     0.019        31     170     214 ..     217     264 ..     204     308 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 31.6 bits;  conditional E-value: 1.3e-11
+            trimmed_msa_bchG_hmm  40 llvvaGvllaGPlvcatsqavndWfdrhvda..inePerpiPsGripGr..WGlyialiltllsllvaaalgtlvfvaa 114
+                                     l +++G  l   l+ a+  a nd +dr++da      +rpiPsGri+ +  W + ia+ l  l +l+++ l+ l ++  
+  GCF_000144605.1_ASM14460v1_908  63 LWLIVGFGLGACLMRAAGCAFNDIVDRDIDArvARTAARPIPSGRISVKqaWAFLIACSLISLVILLTLDLAALLLGIG 141
+                                     56899999**********************94335689*******9865348888888877777777777887777777 PP
+
+            trimmed_msa_bchG_hmm 115 vlglvlaWaysapPlrlkknGwlGnaavglsyeglaWlt 153
+                                      l+lv+a+      + +k+  w+ +a  gl+++  a + 
+  GCF_000144605.1_ASM14460v1_908 142 SLALVAAYP-----F-MKRITWWPQAWLGLTFNWGALMG 174
+                                     777777764.....4.78999999999999987555443 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.019
+            trimmed_msa_bchG_hmm 170 lallysigah...GimtlndfkaveGdrklgvkslpvklGveraarva 214
+                                      +lly  g +   G  t+  ++ +e d  +gvks + +lG++    va
+  GCF_000144605.1_ASM14460v1_908 217 AVLLYLGGVFwtlGYDTIYALQDIEDDAMVGVKSTARRLGKDVRRGVA 264
+                                     4455544443222666788888899*********99999987655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3323  (1041815 residues searched)
+Passed MSV filter:                       197  (0.0592838); expected 66.5 (0.02)
+Passed bias filter:                       57  (0.0171532); expected 66.5 (0.02)
+Passed Vit filter:                         6  (0.0018056); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000601866); expected 0.0 (1e-05)
+Initial search space (Z):               3323  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8490.81
+//
+[ok]

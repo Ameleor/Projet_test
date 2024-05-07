@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_001663175.1_ASM166317v1/GCF_001663175.1_ASM166317v1_protein.faa
+# output directed to file:         results/genomes/GCF_001663175.1_ASM166317v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.1e-95  315.9   0.2    2.4e-95  315.7   0.2    1.0  1  GCF_001663175.1_ASM166317v1_253   WP_068348963.1 hydroxyneurospore
+  ------ inclusion threshold ------
+      0.013   12.2   0.0      0.019   11.6   0.0    1.4  1  GCF_001663175.1_ASM166317v1_1013  WP_068350336.1 DUF559 domain-con
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001663175.1_ASM166317v1_253  WP_068348963.1 hydroxyneurosporene dehydrogenase [Erythrobacter neustonensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  315.7   0.2   1.7e-98   2.4e-95       1     234 []      12     248 ..      12     248 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 315.7 bits;  conditional E-value: 1.7e-98
+             trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididE....iavplprrvrGrvrvtpealtevelaLdaegrhrWrpi 74 
+                                      mTeRg+ a+srda++laiGpss++w++ +L+idi E    + vp++r+v+Grvrv+pe+l++ ++aLd++++h W+++
+  GCF_001663175.1_ASM166317v1_253  12 MTERGQGAVSRDAATLAIGPSSVRWEDGALTIDIVEgdtrLFVPWQRKVTGRVRVYPEMLNTAAFALDPAENHIWHCL 89 
+                                      9***********************************9999999*********************************** PP
+
+             trimmed_msa_crtC_hmm  75 apsarveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGevee 152
+                                      ap+ar+eve+++p+ +w+G++Y+D+N+G+eple++F++W+WsRa+lk+ga+v+Y+ er dgs +a alrfd++G  e 
+  GCF_001663175.1_ASM166317v1_253  90 APCARIEVEMTAPASRWRGKAYLDHNRGAEPLETGFNTWHWSRAHLKEGALVCYEGERGDGSLFASALRFDRHGVPEP 167
+                                      ****************************************************************************** PP
+
+             trimmed_msa_crtC_hmm 153 veappraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfr 230
+                                      v+ pp a+lp++ Wr++r+tr+d g a +v +t+edtPFYaRs l+++ +geev+av+EsL+++r++splv++mLp+r
+  GCF_001663175.1_ASM166317v1_253 168 VDLPPIAALPSSGWRINRRTRSDIGVA-EVRRTWEDTPFYARSELASRFMGEEVVAVQESLDMRRFSSPLVQFMLPYR 244
+                                      *************************98.************************************************** PP
+
+             trimmed_msa_crtC_hmm 231 mpRr 234
+                                      mpRr
+  GCF_001663175.1_ASM166317v1_253 245 MPRR 248
+                                      ***7 PP
+
+>> GCF_001663175.1_ASM166317v1_1013  WP_068350336.1 DUF559 domain-containing protein [Erythrobacter neustonensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.4e-05     0.019     102     177 ..      52     127 ..      47     160 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.4e-05
+              trimmed_msa_crtC_hmm 102 GdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveappraklprtlWrveretradag 177
+                                        +++l e+Fs+ d +R++ +++a+v   +   + +++ lal++d++G+ + +++ ++++l++   +v r +++d  
+  GCF_001663175.1_ASM166317v1_1013  52 AHKALAEKFSKADLGRYTFTRHAVVGSAIVDFNCHAMGLALSIDEEGQNDVLAKRRDKSLESVGIKVMRIAASDIL 127
+                                       5789***************************************************************999999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       2858  (934495 residues searched)
+Passed MSV filter:                        60  (0.0209937); expected 57.2 (0.02)
+Passed bias filter:                       53  (0.0185444); expected 57.2 (0.02)
+Passed Vit filter:                         4  (0.00139958); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.00069979); expected 0.0 (1e-05)
+Initial search space (Z):               2858  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9724.28
+//
+[ok]

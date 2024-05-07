@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_002813775.1_ASM281377v1/GCF_002813775.1_ASM281377v1_protein.faa
+# output directed to file:         results/genomes/GCF_002813775.1_ASM281377v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    9.2e-80  264.1   7.3      1e-79  264.0   7.3    1.0  1  GCF_002813775.1_ASM281377v1_6325  WP_100923063.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_002813775.1_ASM281377v1_6325  WP_100923063.1 2-vinyl bacteriochlorophyllide hydratase [Candidatus Thiodictyon syn
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  264.0   7.3   1.6e-83     1e-79       2     146 .]       2     146 ..       1     146 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 264.0 bits;  conditional E-value: 1.6e-83
+              trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvf 78 
+                                       +lytpeer+rrda++wtlvqgilaplqf+vfl+sl lvlrylatGega+aat+s+vvktlvly imitG+iwekvvf
+  GCF_002813775.1_ASM281377v1_6325   2 PLYTPEERKRRDASPWTLVQGILAPLQFIVFLISLGLVLRYLATGEGAQAATISIVVKTLVLYLIMITGSIWEKVVF 78 
+                                       79*************************************************************************** PP
+
+              trimmed_msa_bchF_hmm  79 gkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                       g+ylfa+affwedvfs+lvlalhtaylval+ +lls +++++lalaaya+yvina+qfllklraarl+
+  GCF_002813775.1_ASM281377v1_6325  79 GRYLFAPAFFWEDVFSMLVLALHTAYLVALAFDLLSVRDLMWLALAAYATYVINATQFLLKLRAARLQ 146
+                                       ******************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       6481  (2126076 residues searched)
+Passed MSV filter:                       151  (0.0232989); expected 129.6 (0.02)
+Passed bias filter:                       89  (0.0137324); expected 129.6 (0.02)
+Passed Vit filter:                         3  (0.000462892); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154297); expected 0.1 (1e-05)
+Initial search space (Z):               6481  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 13102.61
+//
+[ok]

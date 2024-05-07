@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_000590925.1_ASM59092v1/GCF_000590925.1_ASM59092v1_protein.faa
+# output directed to file:         results/genomes/GCF_000590925.1_ASM59092v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.9e-49  164.4  16.4    3.3e-49  164.3  16.4    1.0  1  GCF_000590925.1_ASM59092v1_1058  WP_025311382.1 TspO/MBR family p
+     0.0061   14.0   0.0     0.0068   13.9   0.0    1.1  1  GCF_000590925.1_ASM59092v1_2276  WP_025312495.1 MULTISPECIES: hyp
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000590925.1_ASM59092v1_1058  WP_025311382.1 TspO/MBR family protein [Roseibacterium elongatum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.3  16.4     2e-52   3.3e-49       2     151 ..       5     150 ..       4     151 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 164.3 bits;  conditional E-value: 2e-52
+             trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfaln 79 
+                                      +++++laa+++a+++g ++ +g+wy++L+kP+w+PP+w+F+++Wt +y+  a+aa++++   e++a+a   + ++a++
+  GCF_000590925.1_ASM59092v1_1058   5 VFILFLAACCAAAATGSMFPPGRWYRDLSKPDWTPPNWLFPIAWTFLYLASAYAATRVA-VLEGNAHA---MGFWAMQ 78 
+                                      6899******************************************************9.78888888...9****** PP
+
+             trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                      ++ln+lW+++fF+lrrl+++ v++++LW +v+ +++ ++ ++ +a+lll PY vWvs+AaaLNls+v +Np+
+  GCF_000590925.1_ASM59092v1_1058  79 IALNTLWTPVFFGLRRLKAGAVVIAMLWAAVVGTMVSFFMLDPIAGLLLAPYAVWVSYAAALNLSIVFRNPN 150
+                                      **********************************************************************97 PP
+
+>> GCF_000590925.1_ASM59092v1_2276  WP_025312495.1 MULTISPECIES: hypothetical protein [Alphaproteobacteria]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   4.2e-06    0.0068      79     118 ..      28      68 ..      18      79 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 4.2e-06
+             trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevv.lLWlsvlalilvlw 118
+                                      + vl+  W +l Frl+ +++al  +   LWl+v+ ++ v+ 
+  GCF_000590925.1_ASM59092v1_2276  28 ERVLEERWQALSFRLQGIETALERLEkRLWLAVFGVVSVIL 68 
+                                      5678899***************998537*****99876654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3242  (980908 residues searched)
+Passed MSV filter:                       169  (0.0521283); expected 64.8 (0.02)
+Passed bias filter:                       54  (0.0166564); expected 64.8 (0.02)
+Passed Vit filter:                         3  (0.000925355); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000616903); expected 0.0 (1e-05)
+Initial search space (Z):               3242  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7434.19
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_001955735.1_ASM195573v1/GCF_001955735.1_ASM195573v1_protein.faa
+# output directed to file:         results/genomes/GCF_001955735.1_ASM195573v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.3e-77  255.5   0.4    7.3e-77  255.3   0.4    1.0  1  GCF_001955735.1_ASM195573v1_1214  WP_075586653.1 photosynthetic co
+    1.6e-06   25.5   0.3    2.5e-06   24.8   0.3    1.4  1  GCF_001955735.1_ASM195573v1_432   WP_075585971.1 PH domain-contain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001955735.1_ASM195573v1_1214  WP_075586653.1 photosynthetic complex putative assembly protein PuhB [Rhodoferax an
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  255.3   0.4   3.9e-80   7.3e-77       1     210 [.       5     213 ..       5     219 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 255.3 bits;  conditional E-value: 3.9e-80
+              trimmed_msa_puhB_hmm   1 sefefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllal 77 
+                                       +e+efe+++glPe lP +EkilWqG+P+w+ la +afh+r++ +Yf+ l++++ +  ++dg + se++++++   ++
+  GCF_001955735.1_ASM195573v1_1214   5 HEHEFEAAPGLPELLPSDEKILWQGAPSWSILAIQAFHLRKIGIYFLCLIALEWIFLVNDGVTSSEIFTALVKSSLI 81 
+                                       79*************************************************************************** PP
+
+              trimmed_msa_puhB_hmm  78 aavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylll 154
+                                       aa+al++l ++ w+s++tt+YtiT++Rv++riGi+L++t+nlP ++i+sa++k++k gsgd+al+l +++r+++l+l
+  GCF_001955735.1_ASM195573v1_1214  82 AALALSMLGAVVWFSTKTTMYTITDKRVIMRIGIVLTLTFNLPHQRIASASIKNYKGGSGDLALSLYPTDRIAWLHL 158
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhB_hmm 155 WPhvRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaeaaaaepaeaaa 210
+                                       WPh+Rpw++ +peP+Lrci++++kv+++L +a+++ ++ +++++ea a ep+e++a
+  GCF_001955735.1_ASM195573v1_1214 159 WPHARPWKVGQPEPALRCIAQVDKVSSILLSAWQQVNQFDKRQREA-AYEPRETQA 213
+                                       **************************************99999998.333333333 PP
+
+>> GCF_001955735.1_ASM195573v1_432  WP_075585971.1 PH domain-containing protein [Rhodoferax antarcticus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.3   1.3e-09   2.5e-06      74     131 ..      34      92 ..       8      97 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 1.3e-09
+             trimmed_msa_puhB_hmm  74 llalaavalal.lallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlkl 131
+                                      ++ la+++l+l l+++a++  +tt   +Tn+Rv+ ++G +   t+ l  +++es+++++
+  GCF_001955735.1_ASM195573v1_432  34 FIGLAFFGLGLiLWIIAFVRYKTTEMAFTNKRVIAKFGFISRQTIELNITKVESIQVNQ 92 
+                                      4556666666527789**************************************99976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       3755  (1169763 residues searched)
+Passed MSV filter:                       277  (0.0737683); expected 75.1 (0.02)
+Passed bias filter:                      128  (0.0340879); expected 75.1 (0.02)
+Passed Vit filter:                        11  (0.00292943); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000532623); expected 0.0 (1e-05)
+Initial search space (Z):               3755  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7571.57
+//
+[ok]

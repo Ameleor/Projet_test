@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_025141935.1_ASM2514193v1/GCF_025141935.1_ASM2514193v1_protein.faa
+# output directed to file:         results/genomes/GCF_025141935.1_ASM2514193v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   3.4e-100  332.3   0.0   3.8e-100  332.1   0.0    1.0  1  GCF_025141935.1_ASM2514193v1_3507  WP_259993910.1 photosynthetic re
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_025141935.1_ASM2514193v1_3507  WP_259993910.1 photosynthetic reaction center subunit H [Sulfitobacter sp. S190]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  332.1   0.0    1e-103  3.8e-100       2     251 ..       5     255 ..       4     256 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 332.1 bits;  conditional E-value: 1e-103
+               trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphg.gtvtaPsker 76 
+                                        +++g++D+a+ ++++fwlffagLv+yl++e++rEGyPle+++ +++ ++g+++vp++ktf+lphg g+v++Ps +r
+  GCF_025141935.1_ASM2514193v1_3507   5 EFFGNFDLASAAIWLFWLFFAGLVFYLQTENMREGYPLETDDGDTAPNQGPFPVPKDKTFHLPHGrGDVVVPSGQR 80 
+                                        689************************************************************************9 PP
+
+               trimmed_msa_puhA_hmm  77 ee.edlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvv 151
+                                         + +++a+++t   +G+P++ptg+p+ dgvGpa++a R+d p+l+++g+ +i+Pl++ ++f+va++ +dprG +v+
+  GCF_025141935.1_ASM2514193v1_3507  81 GDrDNIALERTGVSAGSPYVPTGDPMADGVGPASWAPRNDWPELDAHGHDKIQPLSKLDDFAVAAG-TDPRGKPVI 155
+                                        99899************************************************************9.********* PP
+
+               trimmed_msa_puhA_hmm 152 gaDgkvaGtvsdlWvDrsealiRYlevele..aggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqv 225
+                                        + Dg+v+G+v+d+WvD +e+++RYl v+++  ++g+++l+P ++a+i  k++++ v++++a++f+ +P++ks++++
+  GCF_025141935.1_ASM2514193v1_3507 156 AGDGEVIGRVTDMWVDIPEQYVRYLTVDVNpeGSGKTRLIPANFARI--KSDRIAVRSLYAANFDGIPTTKSDSSI 229
+                                        *****************************998999************..79************************* PP
+
+               trimmed_msa_puhA_hmm 226 TllEEdkivaYyggGtlYatperqep 251
+                                        TllEE+ki+aY+ggGtlYa+p+r ep
+  GCF_025141935.1_ASM2514193v1_3507 230 TLLEEEKIMAYFGGGTLYADPKRVEP 255
+                                        *************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       3833  (1206486 residues searched)
+Passed MSV filter:                        87  (0.0226976); expected 76.7 (0.02)
+Passed bias filter:                       83  (0.0216541); expected 76.7 (0.02)
+Passed Vit filter:                         7  (0.00182625); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000260892); expected 0.0 (1e-05)
+Initial search space (Z):               3833  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11127.39
+//
+[ok]

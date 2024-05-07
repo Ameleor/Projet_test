@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_009363495.1_ASM936349v1/GCF_009363495.1_ASM936349v1_protein.faa
+# output directed to file:         results/genomes/GCF_009363495.1_ASM936349v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      2e-74  246.1   8.1    2.3e-74  245.9   8.1    1.0  1  GCF_009363495.1_ASM936349v1_3666  WP_152452195.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009363495.1_ASM936349v1_3666  WP_152452195.1 2-vinyl bacteriochlorophyllide hydratase [Roseivivax sp. THAF40]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  245.9   8.1   5.8e-78   2.3e-74       2     146 .]      23     167 ..      22     167 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 245.9 bits;  conditional E-value: 5.8e-78
+              trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvvf 78 
+                                       +lytpeerarrdat+wtlvqgilap qflvflvslalv+ryl+tGeg+a+at+s+++kt vly im+tGaiwekvvf
+  GCF_009363495.1_ASM936349v1_3666  23 PLYTPEERARRDATRWTLVQGILAPAQFLVFLVSLALVIRYLVTGEGYAVATWSIIAKTGVLYLIMVTGAIWEKVVF 99 
+                                       89*************************************************************************** PP
+
+              trimmed_msa_bchF_hmm  79 gkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                       g+ylfa++ffwedv+s++v+alht+yl+alltg+l +++++++al+aya yv+na+qf+lklr arl+
+  GCF_009363495.1_ASM936349v1_3666 100 GQYLFARSFFWEDVVSFAVIALHTYYLWALLTGSLGPTALMVVALTAYAIYVVNAGQFVLKLRRARLD 167
+                                       ******************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       4036  (1268225 residues searched)
+Passed MSV filter:                       107  (0.0265114); expected 80.7 (0.02)
+Passed bias filter:                       53  (0.0131318); expected 80.7 (0.02)
+Passed Vit filter:                         3  (0.00074331); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.00049554); expected 0.0 (1e-05)
+Initial search space (Z):               4036  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7823.54
+//
+[ok]

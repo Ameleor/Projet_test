@@ -1,0 +1,91 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCF_018139125.1_ASM1813912v1/GCF_018139125.1_ASM1813912v1_protein.faa
+# output directed to file:         results/genomes/GCF_018139125.1_ASM1813912v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.2e-08   30.6   0.1    2.2e-08   30.6   0.1    1.5  2  GCF_018139125.1_ASM1813912v1_1087  WP_151816043.1 MoxR family ATPas
+    0.00014   18.1   0.9    0.00024   17.3   0.4    1.5  2  GCF_018139125.1_ASM1813912v1_2073  WP_151819974.1 YifB family Mg ch
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_018139125.1_ASM1813912v1_1087  WP_151816043.1 MoxR family ATPase [Acinetobacter soli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.2      0.16   2.5e+02     466     482 ..      64      80 ..      57      85 .. 0.86
+   2 !   30.6   0.1   1.4e-11   2.2e-08      89     253 ..     125     308 ..     120     314 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.16
+               trimmed_msa_bchD_hmm 466 agLpGGGgTPLAaglea 482
+                                         +LpG G T LA++l +
+  GCF_018139125.1_ASM1813912v1_1087  64 EDLPGLGKTTLASALAK 80 
+                                        589**********9975 PP
+
+  == domain 2  score: 30.6 bits;  conditional E-value: 1.4e-11
+               trimmed_msa_bchD_hmm  89 lvlpmAERlesalaarlaaaldegavalerdglalrlearfglvaLDegl..eedealpeaLldRlalrldldeia 162
+                                        l++    R+++++ + l +a++eg  ++  d+++ +l+  f ++a  + +      alpe+ ldR  +rl l   +
+  GCF_018139125.1_ASM1813912v1_1087 125 LLADEINRCSPKTQSALLQAMEEG--VVTLDSVTYKLPEPFWVIATQNPIfqSGTYALPESQLDRFLMRLSLGYPS 198
+                                        5666668*****************..578899****************9853445689************998765 PP
+
+               trimmed_msa_bchD_hmm 163 lrdleelaa...............eaedieaararlpkvtleeealealvataaalGid....slRapllalraar 219
+                                         +  ++l                 +  di  +++++++v l++ +l+ +  +a+   ++    s+Ra+l    aa+
+  GCF_018139125.1_ASM1813912v1_1087 199 RAAEKSLLLdasrqtlleqitpvlTHGDIVLMQQCVQQVYLSDVVLNYILDLASYSRLQshglSTRALLAIKMAAQ 274
+                                        553333333667778888888999999**************************988876223368*********** PP
+
+               trimmed_msa_bchD_hmm 220 alAalegrteveeedlalAarlvlapratrlpee 253
+                                        alA +egr+ v  +d+++    v a+r  ++ ++
+  GCF_018139125.1_ASM1813912v1_1087 275 ALAFVEGREYVITDDIQTVFPAVAAHRMKMTEQD 308
+                                        ***************************9987765 PP
+
+>> GCF_018139125.1_ASM1813912v1_2073  WP_151819974.1 YifB family Mg chelatase-like AAA ATPase [Acinetobacter soli]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0      0.22   3.4e+02     100     133 ..     307     340 ..     294     341 .. 0.85
+   2 !   17.3   0.4   1.5e-07   0.00024     143     239 ..     370     488 ..     362     491 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 0.22
+               trimmed_msa_bchD_hmm 100 alaarlaaaldegavalerdglalrlearfglva 133
+                                        ++   l + l+++a+++ r + + + +a+f+l+a
+  GCF_018139125.1_ASM1813912v1_2073 307 KVLEVLRQPLEAKAITISRAARQISFPANFQLIA 340
+                                        5566788899999999999999999999999997 PP
+
+  == domain 2  score: 17.3 bits;  conditional E-value: 1.5e-07
+               trimmed_msa_bchD_hmm 143 alpeaLldRlalrldldeialrdleelaaeaedieaararlpkvtl.......................eeealea 195
+                                        +++  LldR+ l++d+  +++++l+++a+ +ed ++ rar++k                           + a e+
+  GCF_018139125.1_ASM1813912v1_2073 370 RISGPLLDRIDLHIDVPPLQAHELQNTAP-VEDSASVRARVQKAYHyqiqrqqclnqalspkqleafaqLSPATEK 444
+                                        577889****************9998877.4444445555554444455666667777777777777767788999 PP
+
+               trimmed_msa_bchD_hmm 196 lvataaalGidslRapllalraaralAalegrteveeedlalAa 239
+                                        ++++a++    s+Ra + +lr+ar++A le+   +e+++l+ A+
+  GCF_018139125.1_ASM1813912v1_2073 445 IMSLAQQKLNLSARAYHRVLRVARTIADLEQSPLIERHHLNEAL 488
+                                        ****************************************9997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       3140  (1024151 residues searched)
+Passed MSV filter:                       158  (0.0503185); expected 62.8 (0.02)
+Passed bias filter:                       75  (0.0238854); expected 62.8 (0.02)
+Passed Vit filter:                         9  (0.00286624); expected 3.1 (0.001)
+Passed Fwd filter:                         3  (0.000955414); expected 0.0 (1e-05)
+Initial search space (Z):               3140  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 8693.32
+//
+[ok]

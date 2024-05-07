@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_013378075.1_ASM1337807v1/GCF_013378075.1_ASM1337807v1_protein.faa
+# output directed to file:         results/genomes/GCF_013378075.1_ASM1337807v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.2e-75  249.9   6.0    1.4e-75  249.7   6.0    1.0  1  GCF_013378075.1_ASM1337807v1_1349  WP_176869089.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_013378075.1_ASM1337807v1_1349  WP_176869089.1 2-vinyl bacteriochlorophyllide hydratase [Parasphingopyxis algicola
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  249.7   6.0     4e-79   1.4e-75       2     145 ..      23     166 ..      22     167 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 249.7 bits;  conditional E-value: 4e-79
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                        alyt++er+rrd++ wt+vqg+lap+qf++f vsl lvlryl+tGega aa++s+v+kt++ly+im+tG+iwek+v
+  GCF_013378075.1_ASM1337807v1_1349  23 ALYTEDERRRRDESAWTVVQGVLAPIQFAIFFVSLGLVLRYLTTGEGAFAADISIVAKTIALYAIMVTGSIWEKEV 98 
+                                        79************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarl 145
+                                        fg++lfa++ffwedvfs+lvlalhtaylv+l+ g+ s e+++++alaayaayv+na+qfllklraarl
+  GCF_013378075.1_ASM1337807v1_1349  99 FGRWLFARPFFWEDVFSMLVLALHTAYLVMLFGGIGSIEARMFVALAAYAAYVVNATQFLLKLRAARL 166
+                                        *******************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3511  (1106450 residues searched)
+Passed MSV filter:                        88  (0.0250641); expected 70.2 (0.02)
+Passed bias filter:                       52  (0.0148106); expected 70.2 (0.02)
+Passed Vit filter:                         4  (0.00113928); expected 3.5 (0.001)
+Passed Fwd filter:                         1  (0.000284819); expected 0.0 (1e-05)
+Initial search space (Z):               3511  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 10891.60
+//
+[ok]

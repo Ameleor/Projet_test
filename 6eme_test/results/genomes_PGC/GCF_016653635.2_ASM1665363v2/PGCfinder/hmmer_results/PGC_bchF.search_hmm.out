@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_016653635.2_ASM1665363v2/GCF_016653635.2_ASM1665363v2_protein.faa
+# output directed to file:         results/genomes/GCF_016653635.2_ASM1665363v2/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.8e-77  254.4   4.6    1.1e-76  254.2   4.6    1.0  1  GCF_016653635.2_ASM1665363v2_3355  WP_201071597.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016653635.2_ASM1665363v2_3355  WP_201071597.1 2-vinyl bacteriochlorophyllide hydratase [Skermanella sp. TT6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  254.2   4.6   1.6e-80   1.1e-76       1     146 []      20     165 ..      20     165 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 254.2 bits;  conditional E-value: 1.6e-80
+               trimmed_msa_bchF_hmm   1 kalytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekv 76 
+                                        ++lyt+eer +rda++wtlvqgilap+qf+vflvslalvlryl tGeg+ aa++s+v+ktl+ly+imitG+iwe++
+  GCF_016653635.2_ASM1665363v2_3355  20 QPLYTAEERLKRDASPWTLVQGILAPVQFAVFLVSLALVLRYLSTGEGEGAASVSIVLKTLTLYAIMITGSIWERE 95 
+                                        58************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  77 vfgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        vfg+ylfa+af+wedvfs+lvlalhtayl+al+tg+l+ ++q++lalaaya+yvina+qfllklraarl+
+  GCF_016653635.2_ASM1665363v2_3355  96 VFGRYLFAPAFYWEDVFSILVLALHTAYLAALATGALDVRSQMYLALAAYATYVINATQFLLKLRAARLD 165
+                                        ********************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       6861  (2181960 residues searched)
+Passed MSV filter:                       199  (0.0290045); expected 137.2 (0.02)
+Passed bias filter:                       92  (0.0134091); expected 137.2 (0.02)
+Passed Vit filter:                         5  (0.000728757); expected 6.9 (0.001)
+Passed Fwd filter:                         1  (0.000145751); expected 0.1 (1e-05)
+Initial search space (Z):               6861  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11446.37
+//
+[ok]

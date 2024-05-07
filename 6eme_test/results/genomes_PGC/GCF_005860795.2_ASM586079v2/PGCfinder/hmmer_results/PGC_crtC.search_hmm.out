@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_005860795.2_ASM586079v2/GCF_005860795.2_ASM586079v2_protein.faa
+# output directed to file:         results/genomes/GCF_005860795.2_ASM586079v2/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    4.3e-69  230.3   0.0    5.1e-69  230.0   0.0    1.0  1  GCF_005860795.2_ASM586079v2_452  WP_246318834.1 carotenoid 1,2-hy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_005860795.2_ASM586079v2_452  WP_246318834.1 carotenoid 1,2-hydratase [Peteryoungia desertarenae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  230.0   0.0   1.3e-72   5.1e-69      41     234 .]       9     203 ..       3     203 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 230.0 bits;  conditional E-value: 1.3e-72
+             trimmed_msa_crtC_hmm  41 lprrvrGrvrvtpealtevelaLdaegrhrWrpiapsarvevelde.pelswkGegYfDsNeGdepleedFseWdWsR 117
+                                      lp+rvrG++ ++pea+t++  +Ld eg+h W p ap+++ +ve+d  pe sw+G+gY+D N+G++p+e+dF+ WdW+R
+  GCF_005860795.2_ASM586079v2_452   9 LPKRVRGKIVLRPEAFTTEPHSLDYEGHHSWLPRAPICQASVECDVfPEGSWTGRGYHDINFGNRPIEQDFDGWDWAR 86 
+                                      789******************************************99******************************* PP
+
+             trimmed_msa_crtC_hmm 118 aelkdgaavlYdverrdgselalalrfdadGeveeveappraklprtlWrveretradagkaprvvktledtPFYaRs 195
+                                       + ++g+ +lYd++ rdg++++++lr++a+Gev+ v+ p+r+ +++++W+v+  +++d++ +p vv++ledtPFY+R+
+  GCF_005860795.2_ASM586079v2_452  87 GDADSGTQILYDARLRDGRRRRIGLRISAEGEVAPVDIPERQPMKAGFWGVRGGIACDEDYQPIVVRALEDTPFYSRA 164
+                                      ****************************************************************************** PP
+
+             trimmed_msa_crtC_hmm 196 lletellgeeveavhEsLsldrlrsplvklmLpfrmpRr 234
+                                      l++t+++g+++++++E+L+++rl++p+v+lmLpf+mpRr
+  GCF_005860795.2_ASM586079v2_452 165 LVQTTVTGTRLTMMQETLDCNRLANPVVRLMLPFKMPRR 203
+                                      **************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4039  (1260282 residues searched)
+Passed MSV filter:                        86  (0.0212924); expected 80.8 (0.02)
+Passed bias filter:                       69  (0.0170834); expected 80.8 (0.02)
+Passed Vit filter:                         6  (0.00148552); expected 4.0 (0.001)
+Passed Fwd filter:                         1  (0.000247586); expected 0.0 (1e-05)
+Initial search space (Z):               4039  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9448.09
+//
+[ok]

@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchB.hmm
+# target sequence database:        data/genomes_unzip/GCF_030144325.1_ASM3014432v1/GCF_030144325.1_ASM3014432v1_protein.faa
+# output directed to file:         results/genomes/GCF_030144325.1_ASM3014432v1/PGCfinder/hmmer_results/PGC_bchB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchB_hmm  [M=520]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0047   14.1   0.0     0.0059   13.7   0.0    1.1  1  GCF_030144325.1_ASM3014432v1_3331  WP_284167440.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_030144325.1_ASM3014432v1_3331  WP_284167440.1 hypothetical protein [Bosea vestrisii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0     1e-06    0.0059     282     328 ..      28      74 ..      19      96 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 1e-06
+               trimmed_msa_bchB_hmm 282 styltgkrvfifgdathavaaarvaaeelGfevvGlGtysrefarev 328
+                                         + ltgkrv+ fg + h     r a+ e+  +v G+ +  +e+   v
+  GCF_030144325.1_ASM3014432v1_3331  28 EQGLTGKRVYHFGTGGHHYVGIRCAEPEFDNTVLGITASPKEYDAFV 74 
+                                        5679********************************99988886655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (520 nodes)
+Target sequences:                       5846  (1772663 residues searched)
+Passed MSV filter:                       190  (0.0325009); expected 116.9 (0.02)
+Passed bias filter:                      147  (0.0251454); expected 116.9 (0.02)
+Passed Vit filter:                         9  (0.00153951); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171057); expected 0.1 (1e-05)
+Initial search space (Z):               5846  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 14099.60
+//
+[ok]

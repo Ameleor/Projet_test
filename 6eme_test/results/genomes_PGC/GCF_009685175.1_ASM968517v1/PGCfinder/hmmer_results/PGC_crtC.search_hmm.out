@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_009685175.1_ASM968517v1/GCF_009685175.1_ASM968517v1_protein.faa
+# output directed to file:         results/genomes/GCF_009685175.1_ASM968517v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.9e-95  315.4   0.1    4.5e-95  315.1   0.1    1.0  1  GCF_009685175.1_ASM968517v1_1484  WP_154451728.1 hydratase [Methyl
+    1.8e-06   25.1   0.1      3e-06   24.4   0.1    1.5  1  GCF_009685175.1_ASM968517v1_2207  WP_246695588.1 lipocalin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009685175.1_ASM968517v1_1484  WP_154451728.1 hydratase [Methylocystis rosea]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  315.1   0.1   2.5e-98   4.5e-95       1     234 []      43     275 ..      43     275 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 315.1 bits;  conditional E-value: 2.5e-98
+              trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiaps 77 
+                                       mTeRgr++l+r++d l iGpsslew++ +L+i+++Eia+plp+ +rG++ v+p a++++e++L+++g+h Wrpiap 
+  GCF_009685175.1_ASM968517v1_1484  43 MTERGRQSLKRTRDVLLIGPSSLEWRDGALTIRVNEIAAPLPKPIRGEIVVKPLAINAKEFTLETKGNHIWRPIAPV 119
+                                       9**************************************************************************** PP
+
+              trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeve 154
+                                       arv+++ld+p+l+wkG++YfD+N+Gdeple++F  W+WsRa++ ++aa+lYd+err+++ l+lalrf+a+Ge+e+v+
+  GCF_009685175.1_ASM968517v1_1484 120 ARVSLDLDAPDLRWKGHAYFDTNAGDEPLEKAFAFWTWSRASVGNDAAILYDAERRREAPLSLALRFSASGEMETVD 196
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtC_hmm 155 appraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrm 231
+                                       +pp a lp t+Wrv+r+trad+g a + ++++ed+PFY+Rsl++++  ge+++ v EsLsldr+++plv+lmLpfrm
+  GCF_009685175.1_ASM968517v1_1484 197 PPPLAPLPLTKWRVQRRTRADDGVA-QALRSFEDAPFYSRSLVSAKFRGETIRWVNESLSLDRFANPLVRLMLPFRM 272
+                                       ***********************98.99************************************************* PP
+
+              trimmed_msa_crtC_hmm 232 pRr 234
+                                       pRr
+  GCF_009685175.1_ASM968517v1_1484 273 PRR 275
+                                       **7 PP
+
+>> GCF_009685175.1_ASM968517v1_2207  WP_246695588.1 lipocalin-like domain-containing protein [Methylocystis rosea]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.1   1.7e-09     3e-06      78     154 ..     186     263 ..     135     310 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 1.7e-09
+              trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveev 153
+                                       a+ +++++  +++ +G++++D  + ++pl++d + WdW   +l+ g  ++lY ++  + + + ++  +dadG+++ +
+  GCF_009685175.1_ASM968517v1_2207 186 AEGSLSMSGRKIQVSGRAWMDREWSSQPLSADQKGWDWFSLHLEGGaRLMLYRMRSVEAAPFLFGNWIDADGATSIL 262
+                                       566778889999**********************************67899*********************98765 PP
+
+              trimmed_msa_crtC_hmm 154 e 154
+                                       +
+  GCF_009685175.1_ASM968517v1_2207 263 A 263
+                                       4 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3559  (1081355 residues searched)
+Passed MSV filter:                        68  (0.0191065); expected 71.2 (0.02)
+Passed bias filter:                       58  (0.0162967); expected 71.2 (0.02)
+Passed Vit filter:                         6  (0.00168587); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000561956); expected 0.0 (1e-05)
+Initial search space (Z):               3559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9920.64
+//
+[ok]

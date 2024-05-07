@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchZ.hmm
+# target sequence database:        data/genomes_unzip/GCF_000304415.1_RM41/GCF_000304415.1_RM41_protein.faa
+# output directed to file:         results/genomes/GCF_000304415.1_RM41/PGCfinder/hmmer_results/PGC_bchZ.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchZ_hmm  [M=473]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+     0.0036   14.7   0.0       0.16    9.3   0.0    2.3  2  GCF_000304415.1_RM41_4224  WP_014989960.1 nitrogenase molybde
+     0.0039   14.6   0.0     0.0066   13.9   0.0    1.3  1  GCF_000304415.1_RM41_4225  WP_014989961.1 nitrogenase iron-mo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000304415.1_RM41_4224  WP_014989960.1 nitrogenase molybdenum-iron protein subunit beta [Sinorhizobium meliloti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.0   4.9e-05      0.16     194     303 ..     273     382 ..     263     409 .. 0.75
+   2 !    2.9   0.0    0.0043        14     355     396 ..     454     495 ..     420     502 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 4.9e-05
+       trimmed_msa_bchZ_hmm 194 gshladvrkladadvnvclyrefGrll...cealerp..ylqapiGlesttkflrklGellgldpepfierekhttlkplwdlw 272
+                                g++++dvr   +a+++v l +   r     c+a  +    ++ p+G+++t +fl k+ e+ g +    i+ e+   + ++ d  
+  GCF_000304415.1_RM41_4224 273 GTKIEDVRAALNAEATVSLQQYNTRRTleyCKAAGQStvSFHYPLGVKATDEFLVKVSEISGREIPEAIRLERGRLVDAMAD-- 354
+                                899***************9887777541225555554125789*******************99888899888887777766.. PP
+
+       trimmed_msa_bchZ_hmm 273 rsvtqdffatasfaivanetyarGvrkfled 303
+                                   +q ++   ++ai  +  +   v +f+ +
+  GCF_000304415.1_RM41_4224 355 ---SQSWLHGKKYAIYGDPDFVYAVARFIME 382
+                                ...4556666666666666666666666655 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.0043
+       trimmed_msa_bchZ_hmm 355 aayipasfpgaiirrhtGtpfmGyaGatylvqevcnalfdal 396
+                                +  i   fp      h   p+mGy G   ++  + + +fd l
+  GCF_000304415.1_RM41_4224 454 TPLIRLMFPIFDRHHHHRFPLMGYQGGLRVLTTILDKIFDRL 495
+                                4567777777666778889********************987 PP
+
+>> GCF_000304415.1_RM41_4225  WP_014989961.1 nitrogenase iron-molybdenum cofactor biosynthesis protein NifE [Sinorhizobi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0     2e-06    0.0066     163     249 ..     199     290 ..     187     317 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 2e-06
+       trimmed_msa_bchZ_hmm 163 vyGtfnmpsdlaeirrlveGiGaevnlvfplgshladvrkladadvn..vcl..yrefGrllcealerpylqap.iGlesttkf 241
+                                + G fn+  ++ ++r l++ +G+ v  ++p  s+  d+++   a +   vc     +  r++ e  + p+++    G++ t++ 
+  GCF_000304415.1_RM41_4225 199 ILGEFNLSGEFWQVRPLLDKLGVRVRACIPGDSRYLDIATAHRARAAmmVCStaLINLARKMLERWDIPFFEGSfYGITDTSEA 282
+                                4689**********************************988777665115542245899************97626******** PP
+
+       trimmed_msa_bchZ_hmm 242 lrklGell 249
+                                lr++  ll
+  GCF_000304415.1_RM41_4225 283 LRQIAGLL 290
+                                **997665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (473 nodes)
+Target sequences:                       6547  (2006030 residues searched)
+Passed MSV filter:                       174  (0.0265771); expected 130.9 (0.02)
+Passed bias filter:                      149  (0.0227585); expected 130.9 (0.02)
+Passed Vit filter:                        13  (0.00198564); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000305483); expected 0.1 (1e-05)
+Initial search space (Z):               6547  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.07
+# Mc/sec: 12141.86
+//
+[ok]

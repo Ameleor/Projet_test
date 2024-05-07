@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCF_002079305.1_ASM207930v1/GCF_002079305.1_ASM207930v1_protein.faa
+# output directed to file:         results/genomes/GCF_002079305.1_ASM207930v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     8e-135  447.5   3.0   9.9e-135  447.2   3.0    1.0  1  GCF_002079305.1_ASM207930v1_1818  WP_081532759.1 phytoene/squalene
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_002079305.1_ASM207930v1_1818  WP_081532759.1 phytoene/squalene synthase family protein [Rhodovulum sp. P5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  447.2   3.0  2.4e-138  9.9e-135       1     327 [.       5     334 ..       5     335 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 447.2 bits;  conditional E-value: 2.4e-138
+              trimmed_msa_crtB_hmm   1 adlaacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekkaaalarlrerldriyagrpadapad 77 
+                                       adl++c+++ir+gS sF+aAs+l+p rvr++alaLYafCR++DD+vD  ++k+aa+ +l erl+ iy+g+p++apad
+  GCF_002079305.1_ASM207930v1_1818   5 ADLKHCEDSIRTGSYSFHAASRLMPGRVRDPALALYAFCRMTDDAVDLVQDKSAAVLALGERLELIYRGTPRNAPAD 81 
+                                       5899************************************************************************* PP
+
+              trimmed_msa_crtB_hmm  78 ralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgvrdaevlaRAcdLGvAmQ 154
+                                       ra+aavveef++pr+lpealleG+awDa ++rye+l+ ++aY+arVA+aVG+mm+++m+vrd+++laRAcdLGvAmQ
+  GCF_002079305.1_ASM207930v1_1818  82 RAFAAVVEEFEMPRTLPEALLEGMAWDAVHKRYEDLSGVYAYSARVAAAVGAMMTVLMRVRDPHALARACDLGVAMQ 158
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtB_hmm 155 LtNiaRDvgeDaragRlYLPleWleeagldpeafladpefspalarvvkrLlaeadrlyaraeaGiarLplrcrpai 231
+                                       L+Ni+RDvgeDar+gR+YLPl+W+eeag+d+e+fla+p+ +++++r++krL+a a+rly rae Gia+Lp+ crp+i
+  GCF_002079305.1_ASM207930v1_1818 159 LSNISRDVGEDAREGRFYLPLDWMEEAGVDVEEFLANPQPTRQIRRITKRLVADANRLYFRAEPGIAELPWCCRPGI 235
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtB_hmm 232 laArliYaeigrevarrgldsvsrRavvskarKlallakalleavaaaa.....elkakaleevafLveavaaeeas 303
+                                       +aAr+iYa i+revar+++d+++rRa+++k +K+ +l+ +++e+v  a       l+ak+l+e+a+Lvea+a++ +s
+  GCF_002079305.1_ASM207930v1_1818 236 FAARHIYAGISREVARADYDNITRRAYTNKGQKIGWLILSAFESVLVAVmprsaVLYAKPLPECAYLVEAAAERLPS 312
+                                       **********************************9999888888776666788899********************* PP
+
+              trimmed_msa_crtB_hmm 304 aeaarsveervlwvidllerleer 327
+                                       ++ +   e r+ +vi++l++l+++
+  GCF_002079305.1_ASM207930v1_1818 313 DNPWG--EGRAGTVIAALAQLKAQ 334
+                                       *9996..79999999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       4127  (1311468 residues searched)
+Passed MSV filter:                       199  (0.048219); expected 82.5 (0.02)
+Passed bias filter:                       91  (0.0220499); expected 82.5 (0.02)
+Passed Vit filter:                        13  (0.00314999); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000242307); expected 0.0 (1e-05)
+Initial search space (Z):               4127  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11193.57
+//
+[ok]

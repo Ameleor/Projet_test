@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_005860795.2_ASM586079v2/GCF_005860795.2_ASM586079v2_protein.faa
+# output directed to file:         results/genomes/GCF_005860795.2_ASM586079v2/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.1e-53  177.7  23.9    3.4e-53  177.5  23.9    1.0  1  GCF_005860795.2_ASM586079v2_487   WP_138288591.1 TspO/MBR family p
+    1.1e-38  130.5  16.4    1.2e-38  130.3  16.4    1.0  1  GCF_005860795.2_ASM586079v2_1191  WP_138285729.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_005860795.2_ASM586079v2_487  WP_138288591.1 TspO/MBR family protein [Peteryoungia desertarenae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  177.5  23.9   1.7e-56   3.4e-53       2     151 ..       2     147 ..       1     148 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 177.5 bits;  conditional E-value: 1.7e-56
+             trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfaln 79 
+                                      ++v+++++vl+a+ +gal+++g+wy  LkkPsw+PP+waF+vvWt++y++i++a++l+w +  ++++    l+++ ++
+  GCF_005860795.2_ASM586079v2_487   2 AAVIFTVIVLAAASSGALFKPGDWYAGLKKPSWTPPNWAFPVVWTLLYLMIGYAGWLVW-QEGGWSMP---LLFWGIQ 75 
+                                      67999******************************************************.77788887...9****** PP
+
+             trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                      +v+n++Ws+lfF+lrr+d+a+++v++LWlsv+ +i+++w+   +a+ll++PYl+Wv++Aa+LN+sv+rlNp+
+  GCF_005860795.2_ASM586079v2_487  76 IVVNAAWSWLFFGLRRMDLAFADVSVLWLSVVGFIVTAWSSVPMASLLFIPYLLWVTTAAMLNHSVWRLNPE 147
+                                      **********************************************************************97 PP
+
+>> GCF_005860795.2_ASM586079v2_1191  WP_138285729.1 TspO/MBR family protein [Peteryoungia desertarenae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  130.3  16.4     6e-42   1.2e-38       5     149 ..      10     150 .]       5     150 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 130.3 bits;  conditional E-value: 6e-42
+              trimmed_msa_tspO_hmm   5 aalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                        ++ +v++++l+g++  +gewy++L+kP ++PP w+Fg+vWt++y+li++a++++w+ ++  +aa   + ++  + +
+  GCF_005860795.2_ASM586079v2_1191  10 FIAFVVMAGLLSGLTNMPGEWYSTLEKPFFNPPSWVFGPVWTILYVLIGIAGARIWQLSPR-SAA---MQVWFAQFA 82 
+                                       4455677888999999****************************************55544.444...799****** PP
+
+              trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       ln+lWs+ fF+++ + ++l+++  L  svl++i  + r++ l+++l++PY +Wv++A++LN++++ +N
+  GCF_005860795.2_ASM586079v2_1191  83 LNMLWSPTFFGMQSPALGLFVIFPLLASVLVFIAKARRIDPLSSWLFVPYAAWVGFATLLNATLFLMN 150
+                                       *************************************************************9987666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4039  (1260282 residues searched)
+Passed MSV filter:                       220  (0.0544689); expected 80.8 (0.02)
+Passed bias filter:                       85  (0.0210448); expected 80.8 (0.02)
+Passed Vit filter:                         6  (0.00148552); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000495172); expected 0.0 (1e-05)
+Initial search space (Z):               4039  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 7601.65
+//
+[ok]

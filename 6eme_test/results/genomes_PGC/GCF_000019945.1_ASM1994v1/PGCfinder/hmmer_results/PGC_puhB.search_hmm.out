@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_000019945.1_ASM1994v1/GCF_000019945.1_ASM1994v1_protein.faa
+# output directed to file:         results/genomes/GCF_000019945.1_ASM1994v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.3e-72  241.9   2.2    1.6e-72  241.7   2.2    1.0  1  GCF_000019945.1_ASM1994v1_5361  WP_012457042.1 photosynthetic co
+  ------ inclusion threshold ------
+      0.011   13.4   3.1      0.028   12.1   3.1    1.6  1  GCF_000019945.1_ASM1994v1_3580  WP_041372069.1 hybrid sensor his
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000019945.1_ASM1994v1_5361  WP_012457042.1 photosynthetic complex putative assembly protein PuhB [Methylorubrum p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  241.7   2.2   5.8e-76   1.6e-72       6     199 ..       9     202 ..       4     213 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 241.7 bits;  conditional E-value: 5.8e-76
+            trimmed_msa_puhB_hmm   6 e.pvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavala 83 
+                                     e +++g+P++lPagE+ilW+G+P+ + ++ +afh+rlv+l+fa+ +++ +l a+a+g    +ala a ++l++++ al+
+  GCF_000019945.1_ASM1994v1_5361   9 EgTLRGMPGPLPAGERILWRGAPTLSGVLLRAFHARLVMLWFAATATVLALGAAASGG-PMQALAVAGPTLLIGLGALG 86 
+                                     54789****************************************9999988867765.5678889999********** PP
+
+            trimmed_msa_puhB_hmm  84 llallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPhvRpwr 162
+                                     ll++lawl++rttvYt+T+rR+vl++GiaL++tlnlP++qi sadl+l++dgsgdi+l+l + er++yl+lWPh+Rpwr
+  GCF_000019945.1_ASM1994v1_5361  87 LLTFLAWLVHRTTVYTLTDRRMVLHVGIALPITLNLPLAQIVSADLRLFADGSGDIPLRLPPGERVAYLHLWPHARPWR 165
+                                     ******************************************************************************* PP
+
+            trimmed_msa_puhB_hmm 163 larpePmLrcipdaekvAelLaealaaaaaaeaeaae 199
+                                     ++rpePmLr+ip+a++vA+lLa ala++ + + ++++
+  GCF_000019945.1_ASM1994v1_5361 166 VSRPEPMLRSIPEARSVAALLAPALASQVKGTIDSPA 202
+                                     **************************99987766655 PP
+
+>> GCF_000019945.1_ASM1994v1_3580  WP_041372069.1 hybrid sensor histidine kinase/response regulator [Methylorubrum popul
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   3.1     1e-05     0.028      23      94 ..     500     571 ..     483     575 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1e-05
+            trimmed_msa_puhB_hmm  23 WqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsar 94 
+                                     W G+P  + la     +  + l f+++ + +++a+ ++ge+l++al+s+ ++l++ + ++a l++la  s+r
+  GCF_000019945.1_ASM1994v1_3580 500 WIGAPLGRYLALMLTLITVIGLIFVIVHAGAAAAHPEHGETLRAALTSLFFILIVILGVVAWLFVLAQESRR 571
+                                     ******************************************************************998877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       5387  (1661888 residues searched)
+Passed MSV filter:                       317  (0.0588454); expected 107.7 (0.02)
+Passed bias filter:                      198  (0.0367552); expected 107.7 (0.02)
+Passed Vit filter:                         8  (0.00148506); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000371264); expected 0.1 (1e-05)
+Initial search space (Z):               5387  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8426.63
+//
+[ok]

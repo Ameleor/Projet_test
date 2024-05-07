@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCA_015693905.1_ASM1569390v1/GCA_015693905.1_ASM1569390v1_protein.faa
+# output directed to file:         results/genomes/GCA_015693905.1_ASM1569390v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    9.6e-92  303.8   0.1    1.1e-91  303.5   0.1    1.0  1  GCA_015693905.1_ASM1569390v1_1840  QPI86775.1 carotenoid 1,2-hydrat
+    7.8e-06   22.6   0.6    1.2e-05   22.0   0.6    1.2  1  GCA_015693905.1_ASM1569390v1_1771  QPI84725.1 iron ABC transporter 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_015693905.1_ASM1569390v1_1840  QPI86775.1 carotenoid 1,2-hydratase [Rhodobacterales bacterium HKCCA1288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  303.5   0.1   8.9e-95   1.1e-91       1     234 []      40     273 ..      40     273 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 303.5 bits;  conditional E-value: 8.9e-95
+               trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiap 76 
+                                        mT+Rgr+al+ ++++++iGps+l+wdg++L+i+idE+++p   r+rG+v++tp+a+t+vel+L ++g+h Wrp+ap
+  GCA_015693905.1_ASM1569390v1_1840  40 MTDRGRDALELSETHMKIGPSHLSWDGSALTIHIDERTTPHGGRLRGKVTLTPRAVTNVELSLCDDGAHIWRPFAP 115
+                                        9*************************************************************************** PP
+
+               trimmed_msa_crtC_hmm  77 sarveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGevee 152
+                                         a+++v+l++ ++sw+G+gYfD+N+G+++leedF++W+W+R++++dga ++Yd++r dgs+la+a+ fd++G+++ 
+  GCA_015693905.1_ASM1569390v1_1840 116 VADIDVRLKNAGWSWSGHGYFDANFGTRALEEDFDYWTWGRFPTRDGACCFYDATRCDGSNLAAAIAFDETGKASP 191
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 153 veappraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLp 228
+                                        v+ap++a++++++W+v+retrad++ ap+ v+ + d+PFY R++++t+++ge+v+ vhEsL+l+r+r+ ++  mL+
+  GCA_015693905.1_ASM1569390v1_1840 192 VDAPRTARFKSAFWGVRRETRADPDFAPHEVQPMLDAPFYNRAMVRTKINGETVTGVHESLDLNRFRKAWMMPMLA 267
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 229 frmpRr 234
+                                        fr+pRr
+  GCA_015693905.1_ASM1569390v1_1840 268 FRVPRR 273
+                                        *****7 PP
+
+>> GCA_015693905.1_ASM1569390v1_1771  QPI84725.1 iron ABC transporter permease [Rhodobacterales bacterium HKCCA1288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.0   0.6   9.5e-09   1.2e-05      82     151 ..     212     282 ..     187     292 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 22.0 bits;  conditional E-value: 9.5e-09
+               trimmed_msa_crtC_hmm  82 veldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeve 151
+                                        ++l + + + +G++++D  + ++pl +d   WdW   + ++g  ++ +  + rd+++++ a+ ++a+G+ +
+  GCA_015693905.1_ASM1569390v1_1771 212 ITLPDGARQVSGQAWLDREWSSQPLAADQAGWDWVSLHFETGeKLMGFSLRSRDETRFTSATWISANGQPT 282
+                                        4455566799******************************9988999*********************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       2558  (811558 residues searched)
+Passed MSV filter:                        65  (0.0254105); expected 51.2 (0.02)
+Passed bias filter:                       52  (0.0203284); expected 51.2 (0.02)
+Passed Vit filter:                         7  (0.00273651); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.000781861); expected 0.0 (1e-05)
+Initial search space (Z):               2558  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7163.69
+//
+[ok]

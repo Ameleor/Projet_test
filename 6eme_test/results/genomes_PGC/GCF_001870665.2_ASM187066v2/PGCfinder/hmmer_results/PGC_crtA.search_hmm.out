@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_001870665.2_ASM187066v2/GCF_001870665.2_ASM187066v2_protein.faa
+# output directed to file:         results/genomes/GCF_001870665.2_ASM187066v2/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.6e-97  322.2   0.5      3e-97  322.0   0.5    1.0  1  GCF_001870665.2_ASM187066v2_593  WP_071479751.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001870665.2_ASM187066v2_593  WP_071479751.1 spheroidene monooxygenase [Rhodobaca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  322.0   0.5  8.3e-101     3e-97       1     224 [.       3     223 ..       3     224 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 322.0 bits;  conditional E-value: 8.3e-101
+             trimmed_msa_crtA_hmm   1 vvtlslfrfaalesrlwalarmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaesk 78 
+                                      +vtl lfrf+++ +rlw+l +m++ar+al +v+gl+f+kl+GsGtgeGFtpkPn+ ++a+la ++++e+a+a l+  +
+  GCF_001870665.2_ASM187066v2_593   3 TVTLNLFRFDRALTRLWVLGQMGAARFALPHVKGLNFWKLCGSGTGEGFTPKPNWGTWAILAGWDSREQADAGLQ-RP 79 
+                                      59**********************************************************************999.89 PP
+
+             trimmed_msa_crtA_hmm  79 ivrryraraeesltvlleptsarGaWsgeepfeveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvll 156
+                                       ++++r+ra+es+t++lep+ arG+W+g++pf +e    +g++aa+TrAt+kp++alrFW rvp+is+++g+dpnv++
+  GCF_001870665.2_ASM187066v2_593  80 PFSQWRQRADESMTLFLEPYAARGKWAGRQPFVPEG-GPDGAIAAMTRATVKPAHALRFWGRVPDISAKVGTDPNVIF 156
+                                      9*******************************9987.789************************************** PP
+
+             trimmed_msa_crtA_hmm 157 kiGlGEvPllrqvTfsiWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegks 224
+                                      kiG+GEvPll+qvTfsiW+da++maafAr +g+Haeai+avr+e+wf+Eelyarfr+++ eGtweg++
+  GCF_001870665.2_ASM187066v2_593 157 KIGIGEVPLLHQVTFSIWPDADTMAAFAR-RGEHAEAIRAVRDENWFNEELYARFRITGCEGTWEGRD 223
+                                      *****************************.************************************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3621  (1153667 residues searched)
+Passed MSV filter:                        98  (0.0270643); expected 72.4 (0.02)
+Passed bias filter:                       79  (0.0218172); expected 72.4 (0.02)
+Passed Vit filter:                         5  (0.00138083); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000276167); expected 0.0 (1e-05)
+Initial search space (Z):               3621  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9157.09
+//
+[ok]

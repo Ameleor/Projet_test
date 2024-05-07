@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_011040475.1_ASM1104047v1/GCF_011040475.1_ASM1104047v1_protein.faa
+# output directed to file:         results/genomes/GCF_011040475.1_ASM1104047v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.2e-53  177.4  16.6    3.7e-53  177.2  16.6    1.0  1  GCF_011040475.1_ASM1104047v1_2347  WP_164686440.1 tryptophan-rich s
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_011040475.1_ASM1104047v1_2347  WP_164686440.1 tryptophan-rich sensory protein [Rhodobacteraceae bacterium SC52]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  177.2  16.6     1e-56   3.7e-53       2     151 ..       5     150 ..       4     151 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 177.2 bits;  conditional E-value: 1e-56
+               trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfa 77 
+                                        l++++laa+++a+ +gal+ +gewy +L kP+w+PPdw+F+v+Wt++y++ia+a+++++ + ++a +a   +a++a
+  GCF_011040475.1_ASM1104047v1_2347   5 LFLVFLAACIAAGSTGALFPPGEWYAKLAKPRWTPPDWVFPVAWTTLYLCIAAAGARVA-MLPGAGLA---MAFWA 76 
+                                        6899*******************************************************.99999999...***** PP
+
+               trimmed_msa_tspO_hmm  78 lnavlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                        l+++ln lW+++fF+lrr+++a+++v lLW+ v+ +++ l+  +++a+ll+ PYl+Wv+iA aLN+sv+rlNp+
+  GCF_011040475.1_ASM1104047v1_2347  77 LQVALNGLWTPVFFGLRRIRLAMIVVGLLWVVVACTMVLLFLQDTVAGLLFAPYLLWVTIASALNFSVMRLNPE 150
+                                        ************************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3563  (1131490 residues searched)
+Passed MSV filter:                       183  (0.0513612); expected 71.3 (0.02)
+Passed bias filter:                       68  (0.019085); expected 71.3 (0.02)
+Passed Vit filter:                         7  (0.00196464); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000280662); expected 0.0 (1e-05)
+Initial search space (Z):               3563  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8506.39
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_003288315.1_ASM328831v1/GCF_003288315.1_ASM328831v1_protein.faa
+# output directed to file:         results/genomes/GCF_003288315.1_ASM328831v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    6.5e-83  275.2   6.8    7.2e-83  275.0   6.8    1.0  1  GCF_003288315.1_ASM328831v1_3681  WP_008280374.1 MULTISPECIES: pho
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003288315.1_ASM328831v1_3681  WP_008280374.1 MULTISPECIES: photosynthetic complex putative assembly protein PuhB 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  275.0   6.8   1.8e-86   7.2e-83       1     201 [.       4     203 ..       4     210 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 275.0 bits;  conditional E-value: 1.8e-86
+              trimmed_msa_puhB_hmm   1 sefefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllal 77 
+                                       ++f++epv+glPe+ P+gE+ilWqG+Pdw++l +ea+++ +va+Yf+vl++wr+++  +d+++l +a+a+a++l+++
+  GCF_003288315.1_ASM328831v1_3681   4 DDFAVEPVRGLPETPPEGERILWQGAPDWWRLSVEALSLPWVAGYFVVLAVWRFITM-MDQMPLVTAIAAALPLVIM 79 
+                                       589****************************************************99.8889*************** PP
+
+              trimmed_msa_puhB_hmm  78 aavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylll 154
+                                       ++v++ +l+l+++++ar+tvYtiTnrRv +riG+aL+vtlnlP++q+++adlkl+k g+g+i+l+l+g++rlsyl++
+  GCF_003288315.1_ASM328831v1_3681  80 GIVVCLMLMLVGYIQARATVYTITNRRVAMRIGAALTVTLNLPYTQVGRADLKLTKGGTGTIVLDLMGDTRLSYLVC 156
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhB_hmm 155 WPhvRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaeaa 201
+                                       WPhvRpw ++r++P+Lrcip+a+kvA+lLaea++++ a+++ a++a 
+  GCF_003288315.1_ASM328831v1_3681 157 WPHVRPWVMRRTQPALRCIPEAAKVAHLLAEAAETRVATPKIARSAP 203
+                                       *************************************9999888773 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       3975  (1268948 residues searched)
+Passed MSV filter:                       252  (0.0633962); expected 79.5 (0.02)
+Passed bias filter:                      142  (0.0357233); expected 79.5 (0.02)
+Passed Vit filter:                        18  (0.0045283); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000503145); expected 0.0 (1e-05)
+Initial search space (Z):               3975  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9031.42
+//
+[ok]

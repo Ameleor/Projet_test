@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCA_019739335.1_ASM1973933v1/GCA_019739335.1_ASM1973933v1_protein.faa
+# output directed to file:         results/genomes/GCA_019739335.1_ASM1973933v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    3.3e-75  249.6   0.7    3.9e-75  249.4   0.7    1.0  1  GCA_019739335.1_ASM1973933v1_2     QZH75068.1 MAG: PH domain-contai
+    7.3e-05   19.7   0.1    8.7e-05   19.5   0.1    1.2  1  GCA_019739335.1_ASM1973933v1_2828  QZH74816.1 MAG: PH domain-contai
+
+
+Domain annotation for each sequence (and alignments):
+>> GCA_019739335.1_ASM1973933v1_2  QZH75068.1 MAG: PH domain-containing protein [Erythrobacter sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  249.4   0.7   2.6e-78   3.9e-75       2     204 ..      10     202 ..       9     211 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 249.4 bits;  conditional E-value: 2.6e-78
+            trimmed_msa_puhB_hmm   2 efefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaav 80 
+                                     e+e+epv+glP++lPagE+i+WqG+Pdw++++r+a+h r++++Yfavl +w ++++         +++++ + +a++a+
+  GCA_019739335.1_ASM1973933v1_2  10 EYEHEPVRGLPGDLPAGEHIVWQGSPDWRTFLRSALHSRWIVGYFAVLGIWGLASG---------SMFAIGASVAACAL 79 
+                                     9******************************************************9.........8999999******* PP
+
+            trimmed_msa_puhB_hmm  81 alallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPhvR 159
+                                     +l+lla++a+++++ttvYt+TnrR+vlriG+aL++++nlP+k i+sa+l++ + g+gdial   g++ l+y++lWPh+R
+  GCA_019739335.1_ASM1973933v1_2  80 TLGLLAAFAVAVEKTTVYTLTNRRIVLRIGVALNKCINLPLKLIGSAELRRLALGHGDIALLPIGKHGLGYAVLWPHAR 158
+                                     ******************************************************************************* PP
+
+            trimmed_msa_puhB_hmm 160 pwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaeaaaae 204
+                                     pw+l++++PmLr++p+a+kvA+lLaea+a+   ++++++e+ +++
+  GCA_019739335.1_ASM1973933v1_2 159 PWKLSQVQPMLRAVPEAAKVASLLAEACASLVPVDQVQPER-QER 202
+                                     ********************************999999988.333 PP
+
+>> GCA_019739335.1_ASM1973933v1_2828  QZH74816.1 MAG: PH domain-containing protein [Erythrobacter sp.]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.1   5.7e-08   8.7e-05      78     145 ..      50     121 ..      25     139 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 5.7e-08
+               trimmed_msa_puhB_hmm  78 aavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlk....lrkdgsgdialelkg 145
+                                         ++  +l++++ wl+  +  + iT +Rv++r Gi+++    + + +i++++l+    ++  g g+++++ ++
+  GCA_019739335.1_ASM1973933v1_2828  50 LTALAVLIVGWKWLQVMSESFQITAQRVIVRRGIIMKSVDEIELYRIKDVRLDfsllNQMAGIGNLTISSSD 121
+                                        34445577899*************************************998752222456677777776555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       3036  (971032 residues searched)
+Passed MSV filter:                       204  (0.0671937); expected 60.7 (0.02)
+Passed bias filter:                      103  (0.0339262); expected 60.7 (0.02)
+Passed Vit filter:                        15  (0.00494071); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000658762); expected 0.0 (1e-05)
+Initial search space (Z):               3036  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8299.17
+//
+[ok]
