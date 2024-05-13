@@ -7,9 +7,9 @@ import pandas as pd
 configfile: "config.yaml"
 
 genome_list = pd.read_csv("data/lists/pre-list_check.csv")
-GENOMES = genome_list["full_path"].apply(lambda x: x.split("/")[1]).tolist()
+#GENOMES = genome_list["full_path"].apply(lambda x: x.split("/")[1]).tolist()
 
-#GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
 GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
 
 TIMEOUT=["timeout"]

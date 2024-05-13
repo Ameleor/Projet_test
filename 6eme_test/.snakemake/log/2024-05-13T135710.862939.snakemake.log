@@ -1,0 +1,53 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+infos_retriever        1
+list_creator           1
+list_merger            1
+total                  4
+
+Select jobs to execute...
+
+[Mon May 13 13:57:11 2024]
+rule list_creator:
+    input: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder, results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, results/genomes
+    output: results/lists/list_organisms.csv
+    jobid: 19
+    reason: Missing output files: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 13:57:11 2024]
+Finished job 19.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Mon May 13 13:57:11 2024]
+rule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 20
+    reason: Missing output files: results/lists/list_PGC_infos.csv; Input files updated by another job: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 13:57:11 2024]
+Error in rule infos_retriever:
+    jobid: 20
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    shell:
+        
+        touch results/lists/list_PGC_infos.csv
+        grep "GC" results/lists/list_organisms.csv | while IFS= read -r ligne; do python3 scripts/collect_infos_PGCfinder.py "$ligne"; done > results/lists/list_PGC_infos.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job infos_retriever since they might be corrupted:
+results/lists/list_PGC_infos.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-13T135710.862939.snakemake.log

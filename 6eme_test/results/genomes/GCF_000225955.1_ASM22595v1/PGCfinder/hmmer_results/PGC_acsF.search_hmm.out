@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCF_000225955.1_ASM22595v1/GCF_000225955.1_ASM22595v1_protein.faa
+# output directed to file:         results/genomes/GCF_000225955.1_ASM22595v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+  ------ inclusion threshold ------
+      0.021   11.6   0.1       0.11    9.3   0.0    1.8  2  GCF_000225955.1_ASM22595v1_2770  WP_011390533.1 ferritin family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000225955.1_ASM22595v1_2770  WP_011390533.1 ferritin family protein [Rhodospirillum rubrum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.0     0.017        66      85     125 ..       3      46 ..       1      56 [. 0.76
+   2 ?    9.3   0.0   2.8e-05      0.11      94     139 ..     102     147 ..      95     150 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.017
+             trimmed_msa_acsF_hmm  85 efldflvssltaefsGcvlyaeikkr...vknkdikelfkllar 125
+                                       + dfl  +++ e   ++ ++e++      +n +++e+f+ +a 
+  GCF_000225955.1_ASM22595v1_2770   3 SVEDFLAHAVALEEDSALRFDELADAldvHNNAEVTEIFRKMAH 46 
+                                      56789999999999899999998875222468899999999986 PP
+
+  == domain 2  score: 9.3 bits;  conditional E-value: 2.8e-05
+             trimmed_msa_acsF_hmm  94 ltaefsGcvlyaeikkrvknkdikelfkllardesrhagfindalk 139
+                                      l +e  G  +y+ ++ +++n+ i++l   +a +es h ++++++l 
+  GCF_000225955.1_ASM22595v1_2770 102 LDSEIRGRDFYQGVADKTENPRIRDLALEFAGEESEHVALLDEMLT 147
+                                      67999999*********************************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       3819  (1273282 residues searched)
+Passed MSV filter:                        67  (0.0175439); expected 76.4 (0.02)
+Passed bias filter:                       61  (0.0159728); expected 76.4 (0.02)
+Passed Vit filter:                         5  (0.00130924); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000261849); expected 0.0 (1e-05)
+Initial search space (Z):               3819  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 19154.19
+//
+[ok]

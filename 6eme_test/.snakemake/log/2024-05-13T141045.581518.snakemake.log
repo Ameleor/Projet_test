@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+infos_retriever        1
+list_merger            1
+total                  3
+
+Select jobs to execute...
+
+[Mon May 13 14:10:45 2024]
+rule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 32
+    reason: Missing output files: results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 14:10:48 2024]
+Finished job 32.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Mon May 13 14:10:48 2024]
+rule list_merger:
+    input: results/lists/list_PGC_infos.csv, data/lists/merged_list.csv, results/lists/list_organisms.csv
+    output: results/lists/list_organisms_merged.csv
+    jobid: 33
+    reason: Missing output files: results/lists/list_organisms_merged.csv; Input files updated by another job: results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 14:10:48 2024]
+Finished job 33.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Mon May 13 14:10:48 2024]
+localrule all:
+    input: results/genomes/GCF_000225955.1_ASM22595v1/PGCfinder, results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_000195775.2_ASM19577v2/PGCfinder, results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder, results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder, results/genomes/GCF_001576595.1_ASM157659v1/PGCfinder, data/genomes_unzip/GCF_000225955.1_ASM22595v1/GCF_000225955.1_ASM22595v1_protein_gff.tsv, data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein_gff.tsv, data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein_gff.tsv, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein_gff.tsv, data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein_gff.tsv, data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein_gff.tsv, data/genomes_unzip/GCF_000195775.2_ASM19577v2/GCF_000195775.2_ASM19577v2_protein_gff.tsv, data/genomes_unzip/GCF_001719165.1_ASM171916v1/GCF_001719165.1_ASM171916v1_protein_gff.tsv, data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein_gff.tsv, data/genomes_unzip/GCF_001576595.1_ASM157659v1/GCF_001576595.1_ASM157659v1_protein_gff.tsv, results/lists/list_organisms.csv, results/lists/list_PGC_infos.csv, results/lists/list_organisms_merged.csv
+    jobid: 0
+    reason: Input files updated by another job: results/lists/list_organisms_merged.csv, results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 14:10:48 2024]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2024-05-13T141045.581518.snakemake.log

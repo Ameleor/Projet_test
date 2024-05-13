@@ -23,6 +23,7 @@ try:
     replicon_type = genes_place.merge(genome_gff[['prot_id_unique', 'replicon_type']], how='left', on='prot_id_unique')
     replicons_unique = replicon_type['replicon_type'].unique()
 
+    # Gather the different types of replicon which has atleast one gene hit on it
     replicons_diff = ""
     for replicon in replicons_unique:
         if replicons_diff:
@@ -30,10 +31,11 @@ try:
         else:
             replicons_diff = replicon
 
-    # We're getting back the name of the genome to merge with the list
+    # Get back the name of the genome to merge with the list
     genome_split = genome.split('_')
     genome_name = "_".join(genome_split[:2])
 
+    # Create a variable that will be used to create a ".csv"
     to_merge_data = (genome_name + ',' + str(nbr_PGC) + ',' + str(nbr_genes_hit) + ',' + replicons_diff)
 
     print(to_merge_data)
