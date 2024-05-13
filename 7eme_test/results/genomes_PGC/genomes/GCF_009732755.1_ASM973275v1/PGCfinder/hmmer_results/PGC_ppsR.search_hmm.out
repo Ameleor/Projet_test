@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCF_009732755.1_ASM973275v1/GCF_009732755.1_ASM973275v1_protein.faa
+# output directed to file:         results/genomes/GCF_009732755.1_ASM973275v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0017   13.7   0.1     0.0024   13.2   0.1    1.2  1  GCF_009732755.1_ASM973275v1_742   WP_065095129.1 MULTISPECIES: hyp
+     0.0029   13.0   0.0      0.016   10.5   0.0    2.2  2  GCF_009732755.1_ASM973275v1_1020  WP_155969191.1 MULTISPECIES: ATP
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009732755.1_ASM973275v1_742  WP_065095129.1 MULTISPECIES: hypothetical protein [Wolbachia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   3.6e-06    0.0024     162     213 ..      27      78 ..       8     111 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 3.6e-06
+             trimmed_msa_ppsR_hmm 162 riveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaee 213
+                                       i+ +N+aA +Ll+ e+ +l++k++ + ++a+++++++++l+  ++ ++  +
+  GCF_009732755.1_ASM973275v1_742  27 LILGLNQAARNLLKYEEGNLLNKPLINILSARAADDMKNYLEYTENGHDLLD 78 
+                                      4889*************************************98887766544 PP
+
+>> GCF_009732755.1_ASM973275v1_1020  WP_155969191.1 MULTISPECIES: ATP-binding protein [Wolbachia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0     0.098        67     183     252 ..     113     184 ..      74     212 .. 0.69
+   2 !   10.5   0.0   2.3e-05     0.016     255     312 ..     214     269 ..     194     280 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.098
+              trimmed_msa_ppsR_hmm 183 gksfaelfeaesre..elqallaavrasgeaeeievrlarkgrevsvsaslfrqegesllLvrlspaeaaaa 252
+                                       +++f e f+++  +  +l ++l+    s++ +++  ++ +++++v+v +sl ++++ s++L+ ++p  ++ +
+  GCF_009732755.1_ASM973275v1_1020 113 DARFYERFKDHIDDdiTLDKILEIGDVSEADKKVLYHALKNNSSVQVCISLNKKNRVSNFLLLFEPIPDNPQ 184
+                                       455566665543331144566666677778888888888888999999999999999999888888777766 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 2.3e-05
+              trimmed_msa_ppsR_hmm 255 eeaeakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgra 312
+                                        ++e+ + e++ek + +  + +a+g ils+N+ fl++ +l++ e  +g s++++++++
+  GCF_009732755.1_ASM973275v1_1020 214 INKEQIYEELIEKHSIGTYIANAKGVILSVNKRFLDIFELKKLE--KGSSISDFISQS 269
+                                       56678889999*****************************9998..599999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       1370  (386562 residues searched)
+Passed MSV filter:                        44  (0.0321168); expected 27.4 (0.02)
+Passed bias filter:                       25  (0.0182482); expected 27.4 (0.02)
+Passed Vit filter:                         2  (0.00145985); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00145985); expected 0.0 (1e-05)
+Initial search space (Z):               1370  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6087.49
+//
+[ok]

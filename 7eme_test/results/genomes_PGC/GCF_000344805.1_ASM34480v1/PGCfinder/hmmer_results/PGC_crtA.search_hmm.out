@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_000344805.1_ASM34480v1/GCF_000344805.1_ASM34480v1_protein.faa
+# output directed to file:         results/genomes/GCF_000344805.1_ASM34480v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+     0.0002   19.3   0.4    0.00034   18.6   0.2    1.5  2  GCF_000344805.1_ASM34480v1_4993  WP_015668118.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000344805.1_ASM34480v1_4993  WP_015668118.1 hypothetical protein [Bradyrhizobium oligotrophicum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.2   4.7e-08   0.00034     169     194 ..      52      76 ..      15      84 .. 0.74
+   2 ?   -2.3   0.0      0.11     8e+02      39      54 ..      80      95 ..      77     109 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 4.7e-08
+             trimmed_msa_crtA_hmm 169 vTfsiWedaasmaafArkegpHaeai 194
+                                       T+++W+d+asm+a+ + +g+H +a+
+  GCF_000344805.1_ASM34480v1_4993  52 HTLTVWTDEASMRAYVK-SGAHRRAM 76 
+                                      599**************.******97 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.11
+             trimmed_msa_crtA_hmm 39 kllGsGtgeGFtpkPn 54
+                                     + lG+G+  GF    +
+  GCF_000344805.1_ASM34480v1_4993 80 RDLGAGKTLGFVSDAE 95
+                                     5689999999965433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       7137  (2354270 residues searched)
+Passed MSV filter:                       151  (0.0211573); expected 142.7 (0.02)
+Passed bias filter:                      124  (0.0173742); expected 142.7 (0.02)
+Passed Vit filter:                        10  (0.00140115); expected 7.1 (0.001)
+Passed Fwd filter:                         1  (0.000140115); expected 0.1 (1e-05)
+Initial search space (Z):               7137  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 12212.66
+//
+[ok]

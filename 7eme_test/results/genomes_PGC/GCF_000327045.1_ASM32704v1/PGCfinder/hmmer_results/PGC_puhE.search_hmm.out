@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCF_000327045.1_ASM32704v1/GCF_000327045.1_ASM32704v1_protein.faa
+# output directed to file:         results/genomes/GCF_000327045.1_ASM32704v1/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.9e-97  323.3  23.4    2.2e-97  323.1  23.4    1.0  1  GCF_000327045.1_ASM32704v1_2945  WP_015281837.1 putative photosyn
+    1.1e-11   42.4   1.7    1.2e-11   42.3   1.7    1.0  1  GCF_000327045.1_ASM32704v1_2734  WP_281168002.1 DUF3623 family pr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000327045.1_ASM32704v1_2945  WP_015281837.1 putative photosynthetic complex assembly protein PuhE [Thioflavicoccu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  323.1  23.4  1.2e-100   2.2e-97       1     243 [.       6     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 323.1 bits;  conditional E-value: 1.2e-100
+             trimmed_msa_puhE_hmm   1 lpvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelaflt 78 
+                                      lp+l+al+vWw+sTG++l+l+r+prrt+++sl++a++ll++al  +l  +q+++v +aylaft a+l+Wgw e+++++
+  GCF_000327045.1_ASM32704v1_2945   6 LPILYALLVWWLSTGVVLYLNRLPRRTYRWSLLGASVLLVFALSELLGHSQSSEVRNAYLAFTYAVLIWGWLEMSYFM 83 
+                                      599*************************************************************************** PP
+
+             trimmed_msa_puhE_hmm  79 GvvtGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlflGvpn 156
+                                      G++tGp++++cp g s+++rf+ a++++lyhEl+++++a l++ l+wg+pNqvg+wtf+vL++mr+saklnlf+Gvpn
+  GCF_000327045.1_ASM32704v1_2945  84 GLITGPHKHPCPVGSSNWQRFVLAVQVSLYHELVVVALAGLIVWLAWGQPNQVGTWTFLVLWWMRWSAKLNLFFGVPN 161
+                                      ****************************************************************************** PP
+
+             trimmed_msa_puhE_hmm 157 lneeflPehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhlflvLPl 233
+                                      lne++lPehl+ L s+++k+++nllfp+svt+atv+++ll+e+al+   ++++av+l+l+atllaL++lEh+flvLPl
+  GCF_000327045.1_ASM32704v1_2945 162 LNEDWLPEHLRLLVSFIKKKPINLLFPLSVTVATVVVALLMERALSPGvSTFTAVSLTLIATLLALGILEHWFLVLPL 239
+                                      ****************************************************************************** PP
+
+             trimmed_msa_puhE_hmm 234 pdeaLWrWal 243
+                                      pd+aLW+Wal
+  GCF_000327045.1_ASM32704v1_2945 240 PDSALWKWAL 249
+                                      ********98 PP
+
+>> GCF_000327045.1_ASM32704v1_2734  WP_281168002.1 DUF3623 family protein [Thioflavicoccus mobilis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   1.7   6.5e-15   1.2e-11     206     242 ..       3      39 ..       1      41 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 6.5e-15
+             trimmed_msa_puhE_hmm 206 eaeavglsllatllaLavlEhlflvLPlpdeaLWrWa 242
+                                      +++a++l+l+atllaL++l h+flvLPlpd+aLW+ a
+  GCF_000327045.1_ASM32704v1_2734   3 TFKAASLTLIATLLALGILKHWFLVLPLPDSALWKSA 39 
+                                      67899*****************************966 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       3604  (1146618 residues searched)
+Passed MSV filter:                       186  (0.0516093); expected 72.1 (0.02)
+Passed bias filter:                       68  (0.0188679); expected 72.1 (0.02)
+Passed Vit filter:                         4  (0.00110988); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000554939); expected 0.0 (1e-05)
+Initial search space (Z):               3604  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10155.26
+//
+[ok]

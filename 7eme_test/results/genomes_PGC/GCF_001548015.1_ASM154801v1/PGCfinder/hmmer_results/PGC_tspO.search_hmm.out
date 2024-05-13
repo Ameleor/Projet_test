@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_001548015.1_ASM154801v1/GCF_001548015.1_ASM154801v1_protein.faa
+# output directed to file:         results/genomes/GCF_001548015.1_ASM154801v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.6e-59  197.7  13.7    4.1e-59  197.5  13.7    1.0  1  GCF_001548015.1_ASM154801v1_301  WP_060849157.1 TspO/MBR family p
+    2.3e-35  120.4  20.0    2.7e-35  120.2  20.0    1.0  1  GCF_001548015.1_ASM154801v1_203  WP_060845363.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001548015.1_ASM154801v1_301  WP_060849157.1 TspO/MBR family protein [Methylobacterium aquaticum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  197.5  13.7   1.2e-62   4.1e-59       2     152 .]      12     162 .]      11     162 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 197.5 bits;  conditional E-value: 1.2e-62
+             trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfaln 79 
+                                      ++vaalaa++va++g+ lt lg+wy+sL+ PswkPPdwaFg+vWt+i++l+a+a+vlaw+aa+d +++++l+a+f +n
+  GCF_001548015.1_ASM154801v1_301  12 IVVAALAAIVVAAAGAWLTALGPWYRSLRVPSWKPPDWAFGPVWTTIFTLTAIAGVLAWNAAPDGRERTWLIAAFGVN 89 
+                                      7899************************************************************************** PP
+
+             trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNppf 152
+                                      ++lni+Ws +fFrlrr+dwalvev++LWlsvl li+v+ r+s l a+lllPYl+Wv+iAa+LN s+vrlN+pf
+  GCF_001548015.1_ASM154801v1_301  90 GLLNIAWSGVFFRLRRPDWALVEVAALWLSVLGLIVVVGRHSGLGAVLLLPYLAWVGIAALLNRSIVRLNGPF 162
+                                      **********************************************************************986 PP
+
+>> GCF_001548015.1_ASM154801v1_203  WP_060845363.1 TspO/MBR family protein [Methylobacterium aquaticum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.2  20.0   7.8e-39   2.7e-35       5     149 ..      26     176 .]      22     176 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 120.2 bits;  conditional E-value: 7.8e-39
+             trimmed_msa_tspO_hmm   5 aalaavlvavlggaltelg..ewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaeda..aaael..llalf 76 
+                                      a++ + +vav+g+++t+++  +wy sL kP ++PP+w+F+v+Wt++yaliav++++   +a+ +    +++  +l++f
+  GCF_001548015.1_ASM154801v1_203  26 AIVPVAAVAVVGSLATSPNipTWYASLAKPGFTPPNWLFPVAWTILYALIAVSGWRLLGTAPATgsLRRTRtlALWAF 103
+                                      4455667888888888765438**********************************9988765411334440055566 PP
+
+             trimmed_msa_tspO_hmm  77 alnavlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                       ++ +ln +W+++fF  + +  +lv+v++L + +l++i  + ++++laal+l+PY +Wvs+A+aLN++++++N
+  GCF_001548015.1_ASM154801v1_203 104 FVQLALNGAWTPVFFARHDPAGGLVVVIALLIMILWTIRLVLPLDRLAALILVPYAAWVSYATALNAAIWWMN 176
+                                      79********************************************************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       6809  (2111398 residues searched)
+Passed MSV filter:                       259  (0.0380379); expected 136.2 (0.02)
+Passed bias filter:                      117  (0.0171831); expected 136.2 (0.02)
+Passed Vit filter:                         8  (0.00117492); expected 6.8 (0.001)
+Passed Fwd filter:                         2  (0.000293729); expected 0.1 (1e-05)
+Initial search space (Z):               6809  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11458.97
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_022533465.1_ASM2253346v1/GCF_022533465.1_ASM2253346v1_protein.faa
+# output directed to file:         results/genomes/GCF_022533465.1_ASM2253346v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.2e-95  316.6   0.0    2.6e-95  316.4   0.0    1.0  1  GCF_022533465.1_ASM2253346v1_4737  WP_241102282.1 carotenoid 1,2-hy
+  ------ inclusion threshold ------
+      0.047   11.2   0.0      0.076   10.5   0.0    1.2  1  GCF_022533465.1_ASM2253346v1_1078  WP_241101359.1 4'-phosphopanteth
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_022533465.1_ASM2253346v1_4737  WP_241102282.1 carotenoid 1,2-hydratase [Methylobacterium organophilum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  316.4   0.0   1.1e-98   2.6e-95       1     233 [.      51     283 ..      51     284 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 316.4 bits;  conditional E-value: 1.1e-98
+               trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiap 76 
+                                        mTeRg++alsrda+++aiG s++ewdg++L+i++dE+a+plp  +rG++r+ p+ +te  ++Lda g hrW+p+ap
+  GCF_022533465.1_ASM2253346v1_4737  51 MTERGARALSRDAASIAIGASAMEWDGTALTIRLDERAAPLPYPIRGTIRLSPHGITEGPFTLDAPGLHRWWPMAP 126
+                                        9*************************************************************************** PP
+
+               trimmed_msa_crtC_hmm  77 sarveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGevee 152
+                                        s+ vev l+ep+l+w+G+gYfD+N Gd  le++Fs+W+W+Ra+l++gaa+lYdv+r+dgs ++l+lrf++dG+ +e
+  GCF_022533465.1_ASM2253346v1_4737 127 SSAVEVALEEPALRWRGTGYFDTNDGDGRLEDTFSDWTWCRADLSEGAAILYDVRRKDGSGQNLSLRFARDGRRRE 202
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 153 veappraklprtl.WrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmL 227
+                                        +++p  a+lp t+ Wr+ r+tr+d+g+a rv++t+edtPFYaRsll+t+l+ge v+ vhEsLsl+r+r+plv+lmL
+  GCF_022533465.1_ASM2253346v1_4737 203 LRPPLPAALPPTRlWRMGRSTRSDDGAA-RVLRTFEDTPFYARSLLATRLDGEAVRPVHESLSLTRFRNPLVQLML 277
+                                        ************99************87.*********************************************** PP
+
+               trimmed_msa_crtC_hmm 228 pfrmpR 233
+                                        pfrmpR
+  GCF_022533465.1_ASM2253346v1_4737 278 PFRMPR 283
+                                        ****** PP
+
+>> GCF_022533465.1_ASM2253346v1_1078  WP_241101359.1 4'-phosphopantetheinyl transferase superfamily protein [Methylobact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   3.1e-05     0.076      40      85 ..      82     127 ..      71     131 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.1e-05
+               trimmed_msa_crtC_hmm  40 plprrvrGrvrvtpealtevelaLdaegrhrWrpiapsarveveld 85 
+                                         +pr v+G+  + p    + +++L++ g+h   +++ps r+ v+++
+  GCF_022533465.1_ASM2253346v1_1078  82 AFPRDVNGKPDLAPPWQGRLQFNLTHSGSHALIAVSPSHRIGVDVE 127
+                                        58999**************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       4886  (1516573 residues searched)
+Passed MSV filter:                       108  (0.022104); expected 97.7 (0.02)
+Passed bias filter:                       90  (0.01842); expected 97.7 (0.02)
+Passed Vit filter:                         6  (0.001228); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000409333); expected 0.0 (1e-05)
+Initial search space (Z):               4886  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10390.57
+//
+[ok]

@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_022846615.1_ASM2284661v1/GCF_022846615.1_ASM2284661v1_protein.faa
+# output directed to file:         results/genomes/GCF_022846615.1_ASM2284661v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    2.3e-95  316.7   0.1    2.7e-95  316.4   0.1    1.1  1  GCF_022846615.1_ASM2284661v1_2198  WP_244459514.1 carotenoid 1,2-hy
+     0.0021   15.7   0.0      0.045   11.3   0.0    2.1  2  GCF_022846615.1_ASM2284661v1_4682  WP_244408982.1 diacylglycerol ki
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_022846615.1_ASM2284661v1_2198  WP_244459514.1 carotenoid 1,2-hydratase [Roseomonas fluvialis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  316.4   0.1     1e-98   2.7e-95       1     233 [.      77     308 ..      77     309 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 316.4 bits;  conditional E-value: 1e-98
+               trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiap 76 
+                                        mT+R+++al+rdad+laiGps+l+wdg++L+idi+E+++p+p+r+ G+vrv p+a++++++ Ld +grhrW+pia 
+  GCF_022846615.1_ASM2284661v1_2198  77 MTDRRASALTRDADTLAIGPSALRWDGTALTIDIEEVTAPIPSRLAGQVRVLPDAVSDRAFVLDGAGRHRWQPIAA 152
+                                        9*************************************************************************** PP
+
+               trimmed_msa_crtC_hmm  77 sarveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGevee 152
+                                        +arvev+l +p+l+w+G +YfD+N+G++ple+dF eWdW+Ra++ d +avlY+++rrdg++++lalr+ +dG+ve+
+  GCF_022846615.1_ASM2284661v1_2198 153 RARVEVTLAHPSLTWSGPAYFDTNSGTAPLEDDFAEWDWCRAPMPDATAVLYNATRRDGTSQSLALRVGRDGSVED 228
+                                        **************************************************************************** PP
+
+               trimmed_msa_crtC_hmm 153 veappraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLp 228
+                                        +e+pp a++ +tlWr+ r tra+ g+a + ++tl d+PFY+Rs ++t+llg++ +avhE L+l+r+rsp++ +mLp
+  GCF_022846615.1_ASM2284661v1_2198 229 FEPPPPASMTQTLWRLPRPTRAEGGQA-TATRTLVDAPFYSRSEIRTRLLGQNATAVHEYLNLKRFRSPILYSMLP 303
+                                        ************************987.99********************************************** PP
+
+               trimmed_msa_crtC_hmm 229 frmpR 233
+                                        fr+pR
+  GCF_022846615.1_ASM2284661v1_2198 304 FRVPR 308
+                                        ****9 PP
+
+>> GCF_022846615.1_ASM2284661v1_4682  WP_244408982.1 diacylglycerol kinase family protein [Roseomonas fluvialis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.0      0.01        27      38      85 ..      16      63 ..       3      67 .. 0.85
+   2 !   11.3   0.0   1.7e-05     0.045     110     170 ..     230     291 ..     223     295 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.01
+               trimmed_msa_crtC_hmm 38 avplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsarveveld 85
+                                       a+++ +   G++  +p+a  + +  Ld++g +   p  p  +v+ ++d
+  GCF_022846615.1_ASM2284661v1_4682 16 AALVLNASAGTIAAMPDAAGSLAAMLDDAGYRLVAPAQPDLSVDHQID 63
+                                       556677789*************************99999988877766 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 1.7e-05
+               trimmed_msa_crtC_hmm 110 FseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveeveappraklprtlWrver 170
+                                         + W W R +l+   a+v+ +  r   + +a+ lr++ dGe++ +++p r +l++ + rv r
+  GCF_022846615.1_ASM2284661v1_4682 230 HQAWCWVRGRLAAApAVVTCERPRLAVQGRAAHLRVTLDGELHLMATPLRIRLRAERLRVLR 291
+                                        689********9998999***********************************998888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       5175  (1651764 residues searched)
+Passed MSV filter:                       111  (0.0214493); expected 103.5 (0.02)
+Passed bias filter:                       98  (0.0189372); expected 103.5 (0.02)
+Passed Vit filter:                         7  (0.00135266); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000386473); expected 0.1 (1e-05)
+Initial search space (Z):               5175  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10654.64
+//
+[ok]

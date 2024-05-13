@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCF_900635875.1_35661_G01/GCF_900635875.1_35661_G01_protein.faa
+# output directed to file:         results/genomes/GCF_900635875.1_35661_G01/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    4.3e-06   23.4   0.1     0.0014   15.2   0.0    2.3  2  GCF_900635875.1_35661_G01_1130  WP_039854339.1 iron-sulfur clust
+    0.00011   18.8   0.1      0.002   14.6   0.2    2.2  2  GCF_900635875.1_35661_G01_1681  WP_006813098.1 septum site-deter
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_900635875.1_35661_G01_1130  WP_039854339.1 iron-sulfur cluster carrier protein ApbC [Providencia rustigianii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.0   8.3e-07    0.0014      24      59 ..     110     146 ..      93     159 .. 0.86
+   2 !    6.2   0.0   0.00044      0.74     210     265 ..     295     352 ..     221     360 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 8.3e-07
+            trimmed_msa_bchX_hmm  24 iiai.ygkggigksftlanlsymlaqqgkkvlligcd 59 
+                                     i+a+  gkgg+gks t  nl+  laq+g kv ++  d
+  GCF_900635875.1_35661_G01_1130 110 ILAVsSGKGGVGKSSTSVNLALALAQEGAKVGILDAD 146
+                                     6666359************************888776 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.00044
+            trimmed_msa_bchX_hmm 210 gtgeaqafaeavgipvlaaipadedirrksa..nyeiigkpesewgslfeelaenvae 265
+                                     gtg a+ +ae+ +  +l  +p +  +r      +  ++  pe+e+++++ e+a+n+++
+  GCF_900635875.1_35661_G01_1130 295 GTGGAEKLAEKYNTKLLGQVPLHISLREDLDrgQPTVMRDPEGEFADIYREIASNISA 352
+                                     9**********************99998755115669999***************975 PP
+
+>> GCF_900635875.1_35661_G01_1681  WP_006813098.1 septum site-determining protein MinD [Providencia rustigianii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.2   1.2e-06     0.002      24      62 ..       5      43 ..       1      57 [. 0.82
+   2 ?    1.7   0.0      0.01        17     220     270 ..     203     255 ..     193     270 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.2e-06
+            trimmed_msa_bchX_hmm 24 iiaiygkggigksftlanlsymlaqqgkkvlligcdpks 62
+                                    i+   gkgg+gk+ + a ++  laq+gkk ++i  d   
+  GCF_900635875.1_35661_G01_1681  5 IVVTSGKGGVGKTTSSAAIATGLAQKGKKTVVIDFDIGL 43
+                                    55668***************************9988655 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.01
+            trimmed_msa_bchX_hmm 220 avgipvlaaipadedirrksanye.iigkpesewgslfeelaenv.aeappvr 270
+                                        ip++  ip+d+ + r s + e +i  +es+ g+ +++   ++ +e  p+r
+  GCF_900635875.1_35661_G01_1681 203 ILCIPLIGVIPEDQSVLRSSNQGEpVILDTESDAGQAYSDCVDRIlGEDRPIR 255
+                                     5679***********99999876636667777777777765544315555655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       3356  (1023371 residues searched)
+Passed MSV filter:                       102  (0.0303933); expected 67.1 (0.02)
+Passed bias filter:                       87  (0.0259237); expected 67.1 (0.02)
+Passed Vit filter:                         6  (0.00178784); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000595948); expected 0.0 (1e-05)
+Initial search space (Z):               3356  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9676.82
+//
+[ok]

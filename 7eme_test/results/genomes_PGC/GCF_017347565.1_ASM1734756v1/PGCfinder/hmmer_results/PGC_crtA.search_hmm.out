@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_017347565.1_ASM1734756v1/GCF_017347565.1_ASM1734756v1_protein.faa
+# output directed to file:         results/genomes/GCF_017347565.1_ASM1734756v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.034   11.9   0.0      0.036   11.8   0.0    1.1  1  GCF_017347565.1_ASM1734756v1_3930  WP_207178470.1 transcription fac
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_017347565.1_ASM1734756v1_3930  WP_207178470.1 transcription factor [Methylobacterium indicum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   5.7e-06     0.036     111     156 ..      27      72 ..      11      75 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 5.7e-06
+               trimmed_msa_crtA_hmm 111 eveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvll 156
+                                        e  +k+++g +a+   A+ + + +++FW+r ++i++ i + p + l
+  GCF_017347565.1_ASM1734756v1_3930  27 EAVDKTEEGGMASADEAQRREQSLAEFWARIKPIQDYIASFPRTGL 72 
+                                        45568899*****************************998776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       6415  (1988205 residues searched)
+Passed MSV filter:                       150  (0.0233827); expected 128.3 (0.02)
+Passed bias filter:                      125  (0.0194856); expected 128.3 (0.02)
+Passed Vit filter:                         6  (0.000935308); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155885); expected 0.1 (1e-05)
+Initial search space (Z):               6415  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11080.43
+//
+[ok]

@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_013306805.1_ASM1330680v1/GCF_013306805.1_ASM1330680v1_protein.faa
+# output directed to file:         results/genomes/GCF_013306805.1_ASM1330680v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.012   13.8   1.7      0.015   13.5   1.4    1.5  1  GCF_013306805.1_ASM1330680v1_3604  WP_011000108.1 MULTISPECIES: inn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_013306805.1_ASM1330680v1_3604  WP_011000108.1 MULTISPECIES: inner membrane protein YiaA [Ralstonia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   1.4   2.8e-06     0.015      31      84 ..       2      58 ..       1     102 [. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 2.8e-06
+               trimmed_msa_tspO_hmm 31 kPswkPPdwaF.gvvWtviyaliavaavlawraaedaaaael..llalfalnavlni 84
+                                       kP+ +PP +aF  v Wt +++  a+  + +w+a ++ +++ +  +++++ l a++++
+  GCF_013306805.1_ASM1330680v1_3604  2 KPQVQPPSFAFvAVSWTALLLGFAAYLIGVWNANMQLNERGYyfTVLVYGLFAAVSV 58
+                                       8**********4577*****9999999999988777766654114555666555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       5276  (1751751 residues searched)
+Passed MSV filter:                       281  (0.05326); expected 105.5 (0.02)
+Passed bias filter:                       96  (0.0181956); expected 105.5 (0.02)
+Passed Vit filter:                         8  (0.0015163); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189538); expected 0.1 (1e-05)
+Initial search space (Z):               5276  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10026.19
+//
+[ok]

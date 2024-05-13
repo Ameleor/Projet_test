@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_002407205.1_ASM240720v1/GCF_002407205.1_ASM240720v1_protein.faa
+# output directed to file:         results/genomes/GCF_002407205.1_ASM240720v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.3e-74  246.4   0.9    4.7e-74  246.2   0.9    1.0  1  GCF_002407205.1_ASM240720v1_2183  WP_096786199.1 photosynthetic co
+  ------ inclusion threshold ------
+      0.035   11.4   0.0      0.041   11.1   0.0    1.1  1  GCF_002407205.1_ASM240720v1_1108  WP_096785225.1 MULTISPECIES: DUF
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_002407205.1_ASM240720v1_2183  WP_096786199.1 photosynthetic complex putative assembly protein PuhB [Rhodobacter s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  246.2   0.9   2.3e-77   4.7e-74       1     202 [.       4     202 ..       4     212 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 246.2 bits;  conditional E-value: 2.3e-77
+              trimmed_msa_puhB_hmm   1 sefefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllal 77 
+                                       ++f+fep++glP++ P+gE++lWqGrP + alarea++v+++a+Yfa+++lwr  +++++g  l  ala  ++ + l
+  GCF_002407205.1_ASM240720v1_2183   4 DDFAFEPIPGLPAHPPKGETLLWQGRPATFALAREAYKVNWIAGYFALVVLWRGGTGWSEG-GLPMALAYGIPYAGL 79 
+                                       59*******************************************************9995.888999999****** PP
+
+              trimmed_msa_puhB_hmm  78 aavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylll 154
+                                       +++++ ll+l a++++r+tvYtiT+ Rvv+riG+aLsvtlnlPfkqiesa+l++r++g+g+ia+++++ +r+s l++
+  GCF_002407205.1_ASM240720v1_2183  80 GLATYLLLLLGAFWQSRATVYTITTARVVMRIGAALSVTLNLPFKQIESASLDQRRSGTGTIAMQIAKPNRISKLVC 156
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhB_hmm 155 WPhvRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaeaaa 202
+                                       WPh+Rpw+++  eP+Lrcipda++vA++L++a++a+ + +++++++ +
+  GCF_002407205.1_ASM240720v1_2183 157 WPHIRPWKWR-GEPALRCIPDAARVARILSDAAEARLSIPTVSRAE-D 202
+                                       ********95.7**************************99998887.3 PP
+
+>> GCF_002407205.1_ASM240720v1_1108  WP_096785225.1 MULTISPECIES: DUF1178 family protein [Rhodobacteraceae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0     2e-05     0.041     125     190 ..      19      86 ..      16     108 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2e-05
+              trimmed_msa_puhB_hmm 125 esadlklrkdgsgdialelkgeerlsylllWPhvRpwrlarpePmLrcipda..ekvAelLaealaaa 190
+                                       +sad      g+g ++  + g++ +s +l+ P vRp r a peP   + p +  e++ + L ++++++
+  GCF_002407205.1_ASM240720v1_1108  19 QSADAYDSLTGAGRVSCPVCGSTDVSKVLMAPAVRPARKAAPEPRPLSTPTSgiEQAFQALRRQIEEN 86 
+                                       5777788889**********************************866666432245555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       4042  (1293648 residues searched)
+Passed MSV filter:                       254  (0.0628402); expected 80.8 (0.02)
+Passed bias filter:                      139  (0.0343889); expected 80.8 (0.02)
+Passed Vit filter:                         8  (0.00197922); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000494805); expected 0.0 (1e-05)
+Initial search space (Z):               4042  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8594.76
+//
+[ok]

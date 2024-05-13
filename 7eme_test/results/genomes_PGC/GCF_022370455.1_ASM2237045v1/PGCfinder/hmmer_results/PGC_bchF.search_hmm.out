@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_022370455.1_ASM2237045v1/GCF_022370455.1_ASM2237045v1_protein.faa
+# output directed to file:         results/genomes/GCF_022370455.1_ASM2237045v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    7.9e-78  256.9   6.9      9e-78  256.7   6.9    1.0  1  GCF_022370455.1_ASM2237045v1_1574  WP_029648433.1 2-vinyl bacterioc
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_022370455.1_ASM2237045v1_1574  WP_029648433.1 2-vinyl bacteriochlorophyllide hydratase [Methylocystis sp. SB2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  256.7   6.9   2.7e-81     9e-78       2     146 .]      11     155 ..      10     155 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 256.7 bits;  conditional E-value: 2.7e-81
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                        +lyt+eer+rrda++wtlvqg+lap qf++flvsl+lvlrylatGeg+aaat+svvvktl+ly+imitG+iwek+v
+  GCF_022370455.1_ASM2237045v1_1574  11 PLYTAEERRRRDASVWTLVQGVLAPAQFFIFLVSLILVLRYLATGEGEAAATASVVVKTLALYAIMITGSIWEKEV 86 
+                                        8*************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        fg+ylfa+affwedvfs+lvlalhtayl+al+ g+l+a+ +++lalaayaayv+na+qfllklraarl+
+  GCF_022370455.1_ASM2237045v1_1574  87 FGRYLFAPAFFWEDVFSMLVLALHTAYLAALACGWLDARGLMFLALAAYAAYVVNATQFLLKLRAARLQ 155
+                                        *******************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3317  (978850 residues searched)
+Passed MSV filter:                        89  (0.0268315); expected 66.3 (0.02)
+Passed bias filter:                       52  (0.0156768); expected 66.3 (0.02)
+Passed Vit filter:                         5  (0.00150739); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.000301477); expected 0.0 (1e-05)
+Initial search space (Z):               3317  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6861.58
+//
+[ok]

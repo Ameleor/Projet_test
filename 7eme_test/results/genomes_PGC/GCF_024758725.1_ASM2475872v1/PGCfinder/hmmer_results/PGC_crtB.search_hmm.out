@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCF_024758725.1_ASM2475872v1/GCF_024758725.1_ASM2475872v1_protein.faa
+# output directed to file:         results/genomes/GCF_024758725.1_ASM2475872v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   6.6e-109  362.0   6.5   8.1e-109  361.7   6.5    1.0  1  GCF_024758725.1_ASM2475872v1_2508  WP_258888641.1 phytoene/squalene
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_024758725.1_ASM2475872v1_2508  WP_258888641.1 phytoene/squalene synthase family protein [Sphingomonas sp. SUN039]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  361.7   6.5  2.4e-112  8.1e-109       2     280 ..       6     294 ..       5     302 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 361.7 bits;  conditional E-value: 2.4e-112
+               trimmed_msa_crtB_hmm   2 dlaacreliregSksFaaAskllprrvreaalaLYafCRlaDDlvDeqekk.........aaalarlrerldriya 68 
+                                         +aa+ e+i++gSksFa+Askl++r++re+a++LY++CR++DDl+D q+++          a+l ++r  +d++++
+  GCF_024758725.1_ASM2475872v1_2508   6 IVAAAAESIARGSKSFAVASKLFDRTTRERAWLLYSWCRRCDDLADGQDHGgerqvvvdpMARLGTIRFLTDAALD 81 
+                                        57899******************************************************99*************** PP
+
+               trimmed_msa_crtB_hmm  69 grpadapadralaavveefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgv..rdaev 142
+                                        g++++++a++al+ v++e++ipr++++++++Gfa+Dae++++++++dll+Y+++VAg+VG+mma+vmgv  +d+e+
+  GCF_024758725.1_ASM2475872v1_2508  82 GQETGDAAFDALGIVARECKIPRRFIDDHIAGFALDAEDWSPRSEDDLLRYCYHVAGVVGCMMAVVMGVdpADDET 157
+                                        *********************************************************************999**** PP
+
+               trimmed_msa_crtB_hmm 143 laRAcdLGvAmQLtNiaRDvgeDaragRlYLPleWleeagldpeafladpefspalarvvkrLlaeadrlyaraea 218
+                                        l+RAcdLG+A+QL+NiaRD++eD++ gR+YLPl+Wl ea++ p + +++p+++++la+++ +L +++ +++a+a++
+  GCF_024758725.1_ASM2475872v1_2508 158 LDRACDLGLAFQLANIARDISEDDAVGRCYLPLDWLVEADIPPGE-HMRPHYRSRLADMAWWLANMVGEYEASARV 232
+                                        *********************************************.9***************************** PP
+
+               trimmed_msa_crtB_hmm 219 GiarLplrcrpailaArliYaeigrevarrgldsvsrRavvskarKlallakalleavaaaa 280
+                                        G+arLp+r+r+a+laA+ iY++i+r+v + ++ ++++R++++  +K+ ++a+a+ +a++++ 
+  GCF_024758725.1_ASM2475872v1_2508 233 GAARLPFRARWAVLAAAGIYGDIARKVDALDQAAWDHRVITTGGEKAGWVARAFGQALVNRP 294
+                                        ********************************************************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       3402  (1090903 residues searched)
+Passed MSV filter:                       177  (0.0520282); expected 68.0 (0.02)
+Passed bias filter:                       81  (0.0238095); expected 68.0 (0.02)
+Passed Vit filter:                        10  (0.00293945); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000293945); expected 0.0 (1e-05)
+Initial search space (Z):               3402  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9952.05
+//
+[ok]

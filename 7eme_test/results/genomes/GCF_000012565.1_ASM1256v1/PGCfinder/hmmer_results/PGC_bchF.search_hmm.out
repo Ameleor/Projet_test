@@ -1,0 +1,57 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+# output directed to file:         results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+  ------ inclusion threshold ------
+      0.015   11.0   5.3      0.023   10.4   2.1    2.1  2  GCF_000012565.1_ASM1256v1_421  WP_011304537.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000012565.1_ASM1256v1_421  WP_011304537.1 hypothetical protein [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   1.7     0.016        15      27      72 ..       7      53 ..       2      80 .. 0.61
+   2 ?   10.4   2.1   2.5e-05     0.023      86     138 ..     107     159 ..      27     165 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.016
+           trimmed_msa_bchF_hmm 27 lqflvflvslalvlrylatGega.aaatlsvvvktlvlytimitGai 72
+                                   l fl flv   +v  + +  +g       ++v+   vl tim   + 
+  GCF_000012565.1_ASM1256v1_421  7 LMFLFFLVVPLIVAICDIYNQGSlIKPYKTLVILMAVLLTIMYCLSY 53
+                                   56777776544443333333333033445566777788888876554 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 2.5e-05
+           trimmed_msa_bchF_hmm  86 affwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfll 138
+                                     f +  vfsl v++l   y++    +  ++++ + ++  a   yv n  q ll
+  GCF_000012565.1_ASM1256v1_421 107 KFSFFCVFSLYVISLALNYIFQNSDKNHENANDVGISSYASYGYVCNPLQSLL 159
+                                    444557****************9999999999998887777789999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                        940  (315229 residues searched)
+Passed MSV filter:                        40  (0.0425532); expected 18.8 (0.02)
+Passed bias filter:                       20  (0.0212766); expected 18.8 (0.02)
+Passed Vit filter:                         2  (0.00212766); expected 0.9 (0.001)
+Passed Fwd filter:                         1  (0.00106383); expected 0.0 (1e-05)
+Initial search space (Z):                940  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6796.80
+//
+[ok]

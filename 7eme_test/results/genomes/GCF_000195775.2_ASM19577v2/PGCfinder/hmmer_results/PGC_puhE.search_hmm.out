@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCF_000195775.2_ASM19577v2/GCF_000195775.2_ASM19577v2_protein.faa
+# output directed to file:         results/genomes/GCF_000195775.2_ASM19577v2/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    3.9e-90  299.8  13.8    4.7e-90  299.5  13.8    1.1  1  GCF_000195775.2_ASM19577v2_1581  WP_011157112.1 putative photosyn
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000195775.2_ASM19577v2_1581  WP_011157112.1 putative photosynthetic complex assembly protein PuhE [Rhodopseudomon
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  299.5  13.8   9.4e-94   4.7e-90       2     243 ..       7     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 299.5 bits;  conditional E-value: 9.4e-94
+             trimmed_msa_puhE_hmm   2 pvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelafltG 79 
+                                      p ++a+fvWwfsTG++lll++   r+     v a  +l +al+g+ v+a+d sv +ay+af + + +Wg qe+afl G
+  GCF_000195775.2_ASM19577v2_1581   7 PPIFAAFVWWFSTGAVLLLVGSVGRSELLRAVCAGGMLTIALCGLSVTAHDVSVGAAYMAFSCIIFLWGAQEIAFLSG 84 
+                                      6789************************************************************************** PP
+
+             trimmed_msa_puhE_hmm  80 vvtGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlflGvpnl 157
+                                      ++tGpr e+cp+ga+g++rf  al++i+yhE+ ll+++ ++l++t+ga+Nqvglwt++ L+v+r+sak+nlflGvp +
+  GCF_000195775.2_ASM19577v2_1581  85 WLTGPRAEPCPPGAKGFARFSYALQAIIYHEICLLACGGVVLVVTLGAENQVGLWTYVALWVLRQSAKINLFLGVPVT 162
+                                      ****************************************************************************** PP
+
+             trimmed_msa_puhE_hmm 158 neeflPehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhlflvLPlp 234
+                                      n+e++P+++++Lk+yf +++++++fp+svt+at+++v+++++++e++ +++e+vgl+l++tl+aL+v+Eh+f++LPlp
+  GCF_000195775.2_ASM19577v2_1581 163 NDELMPDAVQFLKTYFARKPVSAFFPISVTMATAVLVVMIQRIVEVAdTPFEVVGLTLVSTLFALGVVEHWFMLLPLP 240
+                                      *********************************************999****************************** PP
+
+             trimmed_msa_puhE_hmm 235 deaLWrWal 243
+                                      + +LW+W++
+  GCF_000195775.2_ASM19577v2_1581 241 AITLWSWGI 249
+                                      *******97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       4934  (1581005 residues searched)
+Passed MSV filter:                       268  (0.054317); expected 98.7 (0.02)
+Passed bias filter:                       82  (0.0166194); expected 98.7 (0.02)
+Passed Vit filter:                         5  (0.00101338); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000202675); expected 0.0 (1e-05)
+Initial search space (Z):               4934  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 21055.93
+//
+[ok]

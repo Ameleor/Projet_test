@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_011040475.1_ASM1104047v1/GCF_011040475.1_ASM1104047v1_protein.faa
+# output directed to file:         results/genomes/GCF_011040475.1_ASM1104047v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.3e-75  247.6   5.3    7.2e-75  247.4   5.3    1.0  1  GCF_011040475.1_ASM1104047v1_1972  WP_133343565.1 2-vinyl bacterioc
+  ------ inclusion threshold ------
+      0.015   12.9   0.0      0.016   12.8   0.0    1.1  1  GCF_011040475.1_ASM1104047v1_996   WP_164685653.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_011040475.1_ASM1104047v1_1972  WP_133343565.1 2-vinyl bacteriochlorophyllide hydratase [Fluviibacterium aquatile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  247.4   5.3   4.1e-78   7.2e-75       2     146 .]      13     157 ..      12     157 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 247.4 bits;  conditional E-value: 4.1e-78
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                        +ly +++rarrd++ wtl+qgilaplqflvflvslalvlry+atG g+++at sv++ktl+ly imitGaiwek+v
+  GCF_011040475.1_ASM1104047v1_1972  13 PLYNSAQRARRDESAWTLIQGILAPLQFLVFLVSLALVLRYMATGAGYQIATSSVLLKTLFLYLIMITGAIWEKAV 88 
+                                        89************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        fg+ylfa+affwedvfs+ v+alhtay++al++g+ls++ +++lalaayaayvina+qfllklraarl+
+  GCF_011040475.1_ASM1104047v1_1972  89 FGQYLFAPAFFWEDVFSFGVIALHTAYVIALFSGALSPQPLMWLALAAYAAYVINAGQFLLKLRAARLD 157
+                                        *******************************************************************96 PP
+
+>> GCF_011040475.1_ASM1104047v1_996  WP_164685653.1 hypothetical protein [Fluviibacterium aquatile]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.0     9e-06     0.016       2      31 ..      18      47 ..      17      57 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 9e-06
+              trimmed_msa_bchF_hmm  2 alytpeerarrdatkwtlvqgilaplqflv 31
+                                      a+yt++ r+rr ++  ++ +g++ pl  l 
+  GCF_011040475.1_ASM1104047v1_996 18 AFYTSQGRTRRSEAAHSMARGVIGPLVILF 47
+                                      68***********************86554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       3563  (1131490 residues searched)
+Passed MSV filter:                       103  (0.0289082); expected 71.3 (0.02)
+Passed bias filter:                       48  (0.0134718); expected 71.3 (0.02)
+Passed Vit filter:                         7  (0.00196464); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000841987); expected 0.0 (1e-05)
+Initial search space (Z):               3563  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8271.93
+//
+[ok]

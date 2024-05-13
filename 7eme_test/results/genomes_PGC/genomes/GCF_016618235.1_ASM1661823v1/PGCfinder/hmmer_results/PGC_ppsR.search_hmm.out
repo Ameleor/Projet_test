@@ -1,0 +1,107 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCF_016618235.1_ASM1661823v1/GCF_016618235.1_ASM1661823v1_protein.faa
+# output directed to file:         results/genomes/GCF_016618235.1_ASM1661823v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    0.00094   16.0   0.9      0.002   14.9   0.3    1.7  2  GCF_016618235.1_ASM1661823v1_3248  WP_004240545.1 MULTISPECIES: DNA
+     0.0014   15.4   2.9       0.17    8.6   0.5    2.2  2  GCF_016618235.1_ASM1661823v1_691   WP_143970332.1 sigma 54-interact
+     0.0068   13.2   0.2      0.012   12.3   0.2    1.4  1  GCF_016618235.1_ASM1661823v1_3790  WP_004237935.1 MULTISPECIES: ace
+     0.0075   13.0   0.0      0.011   12.4   0.0    1.2  1  GCF_016618235.1_ASM1661823v1_3791  WP_234449674.1 two-component sys
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016618235.1_ASM1661823v1_3248  WP_004240545.1 MULTISPECIES: DNA-binding transcriptional regulator Fis [Morganella
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0      0.13   1.2e+02     284     307 ..       6      29 ..       4      52 .. 0.67
+   2 !   14.9   0.3   2.2e-06     0.002     418     448 ..      67      97 ..      56      98 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.13
+               trimmed_msa_ppsR_hmm 284 aNeaflelaqlaseeqvrgrsLer 307
+                                        +N+  l +a ++s++qv++++L +
+  GCF_016618235.1_ASM1661823v1_3248   6 VNSDVLTVATVNSQDQVTQKPLRD 29 
+                                        566666666666666666666654 PP
+
+  == domain 2  score: 14.9 bits;  conditional E-value: 2.2e-06
+               trimmed_msa_ppsR_hmm 418 LelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        +++T+ N   AA m+G+ R  L  KL++yg+
+  GCF_016618235.1_ASM1661823v1_3248  67 MQYTRGNQTRAALMMGINRGTLRKKLKKYGM 97 
+                                        799***************************8 PP
+
+>> GCF_016618235.1_ASM1661823v1_691  WP_143970332.1 sigma 54-interacting transcriptional regulator [Morganella morganii]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.9   0.1   0.00057      0.54     230     298 ..     134     199 ..     113     207 .. 0.77
+   2 !    8.6   0.5   0.00018      0.17     409     449 ..     575     614 ..     569     615 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00057
+              trimmed_msa_ppsR_hmm 230 slfrqegesllLvrlspaeaaaaaaeeaeakllevleklpdalvvtdaegrilsaNeaflelaqlasee 298
+                                       s + q+ +++++ +l  +++ ++    a++ ll+++e + +++++ d+  +   aN   l++ ++++e+
+  GCF_016618235.1_ASM1661823v1_691 134 SDYVQHISNIFVAKLLDEQEGRN---AAQKVLLSLIEFMDQGVLILDEANHLKFANPHALKILNVPHEK 199
+                                       55667777777777777666655...788899999**************************99999874 PP
+
+  == domain 2  score: 8.6 bits;  conditional E-value: 0.00018
+              trimmed_msa_ppsR_hmm 409 iEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrryglg 449
+                                       +Ek  I  AL+  ++ R +AAe LG+    LY K+++y+l+
+  GCF_016618235.1_ASM1661823v1_691 575 MEKQMIREALQRYDNKR-QAAEELGIGIATLYRKIKKYELS 614
+                                       58888999998765555.78999***************995 PP
+
+>> GCF_016618235.1_ASM1661823v1_3790  WP_004237935.1 MULTISPECIES: acetoacetate metabolism transcriptional regulator Ato
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.2   1.3e-05     0.012     410     448 ..     422     460 ..     414     461 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.3e-05
+               trimmed_msa_ppsR_hmm 410 EklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                        Ek  I  AL   ++N    A  LG+SR  L  KL+ y++
+  GCF_016618235.1_ASM1661823v1_3790 422 EKELIISALAEFQNNKTHTASALGISRRALMYKLQEYDI 460
+                                        66668899*****************************98 PP
+
+>> GCF_016618235.1_ASM1661823v1_3791  WP_234449674.1 two-component system sensor histidine kinase AtoS [Morganella morga
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   1.2e-05     0.011     134     260 ..     238     366 ..     231     381 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.2e-05
+               trimmed_msa_ppsR_hmm 134 rlreaetrYRllfeasseavlivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasg 209
+                                        +lre+ t   l++e++++ v+ vd + + ++ +NpaA+++ g  +++l gk   + fe +s ++   +l +++   
+  GCF_016618235.1_ASM1661823v1_3791 238 TLREMKTLNELIIESAADGVIAVDIN-GCVTMINPAAEEITGYLERDLYGKYYGDVFEGRSFSS--PVLDTLKRGI 310
+                                        68889999999999999999999986.7899999999999999999999999999999988654..3445555554 PP
+
+               trimmed_msa_ppsR_hmm 210 eaee..ievrlarkgrevsvsaslfrqegesll..Lvrlspaeaaaa.aaeeaeak 260
+                                        e  +  i+  +++++ +++vs s  r++g +l+  Lv ++  +a+++ +   ++a+
+  GCF_016618235.1_ASM1661823v1_3791 311 EHVSleIAYPARDRTIQINVSTSRIRNAGGELIgaLVIFKDLTAQKEvQRRMQQAE 366
+                                        44440045555556666777788888888887544676666666666433333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3768  (1153946 residues searched)
+Passed MSV filter:                       142  (0.0376858); expected 75.4 (0.02)
+Passed bias filter:                       90  (0.0238854); expected 75.4 (0.02)
+Passed Vit filter:                        11  (0.00291932); expected 3.8 (0.001)
+Passed Fwd filter:                         4  (0.00106157); expected 0.0 (1e-05)
+Initial search space (Z):               3768  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10149.00
+//
+[ok]

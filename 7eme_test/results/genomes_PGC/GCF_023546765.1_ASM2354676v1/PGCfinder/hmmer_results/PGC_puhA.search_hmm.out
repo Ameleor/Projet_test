@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_023546765.1_ASM2354676v1/GCF_023546765.1_ASM2354676v1_protein.faa
+# output directed to file:         results/genomes/GCF_023546765.1_ASM2354676v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   2.7e-101  336.6   0.0   3.1e-101  336.4   0.0    1.0  1  GCF_023546765.1_ASM2354676v1_898   WP_238197416.1 photosynthetic re
+  ------ inclusion threshold ------
+       0.03   12.1   0.0      0.044   11.5   0.0    1.2  1  GCF_023546765.1_ASM2354676v1_5835  WP_238194772.1 PRC-barrel domain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_023546765.1_ASM2354676v1_898  WP_238197416.1 photosynthetic reaction center subunit H [Methylobacterium tardum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  336.4   0.0    1e-104  3.1e-101       2     251 ..       5     257 ..       4     258 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 336.4 bits;  conditional E-value: 1e-104
+              trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphggtvtaPskeree 78 
+                                       altg++Dvaq+vlyaf+lffagLv++lrredrrEGyPle+e+ g++ka++++ +p++k+f+lp g+t++aP++ +++
+  GCF_023546765.1_ASM2354676v1_898   5 ALTGYVDVAQVVLYAFFLFFAGLVFWLRREDRREGYPLENEAVGRRKADDPILIPRSKAFHLPGGETTYAPQAVHDR 81 
+                                       799*********************************************************************99998 PP
+
+              trimmed_msa_puhA_hmm  79 edla....akktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvv 151
+                                       +d++    a+k+++++GaP+e+t+ +l++gvGp++++ R+d++d t+d+e rivPlrva++f ++e+ p+p+G++v+
+  GCF_023546765.1_ASM2354676v1_898  82 NDIEtgipARKVEPWPGAPYERTDSSLQAGVGPGSWVLRHDVHDRTWDDEIRIVPLRVAKNFIIHEDGPNPIGMSVF 158
+                                       555434449******************************************************************** PP
+
+              trimmed_msa_puhA_hmm 152 gaDgkvaGtvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTll 228
+                                       g+D++ aG++sd+WvDr e+liRY+evel  +g+++l+P+t+++    +k+v++ea+la+qfa++P++++pd+vT+l
+  GCF_023546765.1_ASM2354676v1_898 159 GTDNALAGVISDVWVDRGESLIRYYEVELP-TGGRRLMPTTFCRAGGLTKTVTTEALLASQFADIPATRDPDSVTFL 234
+                                       *****************************9.89999***************************************** PP
+
+              trimmed_msa_puhA_hmm 229 EEdkivaYyggGtlYatperqep 251
+                                       EE++iv+Y+g+GtlYatper+ep
+  GCF_023546765.1_ASM2354676v1_898 235 EEERIVSYFGAGTLYATPERAEP 257
+                                       **********************9 PP
+
+>> GCF_023546765.1_ASM2354676v1_5835  WP_238194772.1 PRC-barrel domain-containing protein [Methylobacterium tardum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.4e-05     0.044     143     171 ..      49      77 ..      44     115 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.4e-05
+               trimmed_msa_puhA_hmm 143 pdprGlkvvgaDgkvaGtvsdlWvDrsea 171
+                                        ++++G++v+g+D+  +G+++d+ vD   +
+  GCF_023546765.1_ASM2354676v1_5835  49 SQMIGVPVIGMDHVGVGKIEDVLVDGGGQ 77 
+                                        5799*********************7654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       6099  (1743550 residues searched)
+Passed MSV filter:                       125  (0.0204952); expected 122.0 (0.02)
+Passed bias filter:                      106  (0.0173799); expected 122.0 (0.02)
+Passed Vit filter:                        12  (0.00196754); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000327923); expected 0.1 (1e-05)
+Initial search space (Z):               6099  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 12615.30
+//
+[ok]

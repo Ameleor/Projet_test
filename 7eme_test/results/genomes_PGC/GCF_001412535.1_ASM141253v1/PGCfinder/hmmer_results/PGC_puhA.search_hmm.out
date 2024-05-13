@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_001412535.1_ASM141253v1/GCF_001412535.1_ASM141253v1_protein.faa
+# output directed to file:         results/genomes/GCF_001412535.1_ASM141253v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+   2.4e-108  358.8   0.1   2.7e-108  358.6   0.1    1.0  1  GCF_001412535.1_ASM141253v1_642   WP_062403266.1 photosynthetic re
+  ------ inclusion threshold ------
+      0.026   11.4   0.0      0.043   10.7   0.0    1.2  1  GCF_001412535.1_ASM141253v1_2166  WP_062405982.1 bifunctional hydr
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001412535.1_ASM141253v1_642  WP_062403266.1 photosynthetic reaction center subunit H [Limnohabitans sp. 63ED37-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  358.6   0.1  1.7e-111  2.7e-108       2     252 .]       5     253 ..       4     253 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 358.6 bits;  conditional E-value: 1.7e-111
+             trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphggtvtaPskereee 79 
+                                      a+t+++Dvaq+vly+fw+ffagL++yl re++rEGyP+++ +++  k eg+++vpepktfk+++g+t  +P+ +r++ 
+  GCF_001412535.1_ASM141253v1_642   5 AITQYIDVAQIVLYMFWAFFAGLIYYLLRENHREGYPMDSGRENGPKIEGWPPVPEPKTFKTQDGHTYLSPDLARPDG 82 
+                                      79**************************************************************************** PP
+
+             trimmed_msa_puhA_hmm  80 dlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgkv 157
+                                      +++a++t+ ++GaPlep+g+pll+gvGp+a+a+Rad pd++ +g+++ivPlrva+++sva++d dprGl+v gaD+  
+  GCF_001412535.1_ASM141253v1_642  83 EYSAQPTHGWNGAPLEPVGDPLLAGVGPGAWAMRADIPDADPHGHPKIVPLRVATDHSVAKQDVDPRGLPVWGADKVL 160
+                                      ****************************************************************************** PP
+
+             trimmed_msa_puhA_hmm 158 aGtvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTllEEdkiva 235
+                                      aGtv+dlWvDr+e+++R+ ev+l++++++vllPmt+a+i  kk+  +v+ail++qf +vP++ks++q+TllEE+ki+a
+  GCF_001412535.1_ASM141253v1_642 161 AGTVVDLWVDRMEMMFRFAEVQLANSDKRVLLPMTFARI--KKDGTHVQAILGHQFVNVPQTKSNEQITLLEEEKITA 236
+                                      ***************************************..69999******************************** PP
+
+             trimmed_msa_puhA_hmm 236 YyggGtlYatperqepl 252
+                                      Yyg+GtlYatperqep+
+  GCF_001412535.1_ASM141253v1_642 237 YYGAGTLYATPERQEPI 253
+                                      ***************95 PP
+
+>> GCF_001412535.1_ASM141253v1_2166  WP_062405982.1 bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   2.7e-05     0.043     189     237 ..      91     141 ..      72     144 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.7e-05
+              trimmed_msa_puhA_hmm 189 lPmtlaki..kkkkkkvkveailaeqfaevPklkspdqvTllEEdkivaYy 237
+                                       +P++++k+    + +++ v a l+++++ vP ++   ++  +EEdki aY 
+  GCF_001412535.1_ASM141253v1_2166  91 VPVQVIKVgfVGTPENLAVIAELSDDYDGVPVVAYMPNLSWWEEDKIDAYL 141
+                                       677777774445788999999*****************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       3184  (1030073 residues searched)
+Passed MSV filter:                        70  (0.0219849); expected 63.7 (0.02)
+Passed bias filter:                       60  (0.0188442); expected 63.7 (0.02)
+Passed Vit filter:                         2  (0.000628141); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000628141); expected 0.0 (1e-05)
+Initial search space (Z):               3184  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10902.98
+//
+[ok]

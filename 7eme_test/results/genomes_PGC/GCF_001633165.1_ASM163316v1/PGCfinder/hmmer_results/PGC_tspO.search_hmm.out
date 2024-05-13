@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_001633165.1_ASM163316v1/GCF_001633165.1_ASM163316v1_protein.faa
+# output directed to file:         results/genomes/GCF_001633165.1_ASM163316v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    4.8e-52  173.8  16.2    5.5e-52  173.6  16.2    1.0  1  GCF_001633165.1_ASM163316v1_1152  WP_042464609.1 TspO/MBR family p
+  ------ inclusion threshold ------
+      0.014   13.1   0.0      0.014   13.1   0.0    1.1  1  GCF_001633165.1_ASM163316v1_1859  WP_042460581.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001633165.1_ASM163316v1_1152  WP_042464609.1 TspO/MBR family protein [Rhodovulum sulfidophilum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.6  16.2   2.7e-55   5.5e-52       2     151 ..       5     152 ..       4     153 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 173.6 bits;  conditional E-value: 2.7e-55
+              trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                       l+ ++la++++a+++ga+++++ wy++++kP+w+PP+w+F+v+W v+y+++a+aa++++  ++++ +  ++la++ l
+  GCF_001633165.1_ASM163316v1_1152   5 LFGIFLATTYAAGATGAFFSPDGWYDRIDKPKWTPPNWLFPVAWFVLYICMAYAATRVA--ISGSPLLVYALAIWGL 79 
+                                       67799*****************************************************9..99999999******** PP
+
+              trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                       ++++n+lWs++fF+l+rl +alv+++ +W+svla+++ +++++++a+ll+lPY+vW+s+A+aLN+s++r+N++
+  GCF_001633165.1_ASM163316v1_1152  80 QVAFNTLWSPVFFGLHRLGAALVVLCGMWISVLAMAVSFYQADMIAGLLILPYVVWTSYAWALNFSIWRRNRG 152
+                                       ***********************************************************************85 PP
+
+>> GCF_001633165.1_ASM163316v1_1859  WP_042460581.1 hypothetical protein [Rhodovulum sulfidophilum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   7.2e-06     0.014      77     119 ..      24      67 ..      13      80 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 7.2e-06
+              trimmed_msa_tspO_hmm  77 alnavlnilWsllfFrlrrldwalvevv.lLWlsvlalilvlwr 119
+                                       a + v++  Ws+l +rl+r++  l ++   +Wl+v  ++ v+  
+  GCF_001633165.1_ASM163316v1_1859  24 ASERVMEERWSALEYRLKRIEEMLDQIEkRVWLTVYGIVAVILA 67 
+                                       556788999*************999985269***9987766543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3983  (1246779 residues searched)
+Passed MSV filter:                       191  (0.0479538); expected 79.7 (0.02)
+Passed bias filter:                       76  (0.0190811); expected 79.7 (0.02)
+Passed Vit filter:                        11  (0.00276174); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.000502134); expected 0.0 (1e-05)
+Initial search space (Z):               3983  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 10183.44
+//
+[ok]

@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_pucC2.hmm
+# target sequence database:        data/genomes_unzip/GCF_015135215.1_ASM1513521v1/GCF_015135215.1_ASM1513521v1_protein.faa
+# output directed to file:         results/genomes/GCF_015135215.1_ASM1513521v1/PGCfinder/hmmer_results/PGC_pucC2.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_pucC2_hmm  [M=437]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+     0.0073   13.2   0.2      0.011   12.7   0.2    1.2  1  GCF_015135215.1_ASM1513521v1_3196  WP_200921611.1 serine-type D-Ala
+  ------ inclusion threshold ------
+      0.043   10.7   0.1      0.059   10.2   0.1    1.1  1  GCF_015135215.1_ASM1513521v1_2776  WP_200920487.1 chitin disacchari
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_015135215.1_ASM1513521v1_3196  WP_200921611.1 serine-type D-Ala-D-Ala carboxypeptidase [Citrobacter portucalensis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.2   4.4e-06     0.011     119     173 ..      12      72 ..       8      99 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 4.4e-06
+              trimmed_msa_pucC2_hmm 119 aaGtslLaLlakrvaperraaaa....tivWlmm..iaGiavtagvagklldPfsaerlva 173
+                                        aaG +lL+Lla +v+++ +++a     +  W++m    G +++ g a + ldP s +++++
+  GCF_015135215.1_ASM1513521v1_3196  12 AAGSALLILLAPTVQAAEQPTAPpsvdARAWILMdyASGKVLAEGNADEKLDPASLTKIMT 72 
+                                        89*************999998852222567****6567*****************999885 PP
+
+>> GCF_015135215.1_ASM1513521v1_2776  WP_200920487.1 chitin disaccharide deacetylase [Citrobacter portucalensis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.1   2.4e-05     0.059      11      60 ..      21      71 ..      14      88 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.4e-05
+              trimmed_msa_pucC2_hmm 11 GLvqaalGaivvlttstlnRvmvv.elalpavlPglLvalhyavqllRPrl 60
+                                       G+v a+   +v  tt+++n   +   + l+  +P+l v++h+++ l RP  
+  GCF_015135215.1_ASM1513521v1_2776 21 GIVEACRNGVVTSTTALVNGAAIDhAVQLSRDIPALAVGMHFVLTLGRPLT 71
+                                       99*****************988751578999******************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (437 nodes)
+Target sequences:                       4987  (1554437 residues searched)
+Passed MSV filter:                       360  (0.0721877); expected 99.7 (0.02)
+Passed bias filter:                       83  (0.0166433); expected 99.7 (0.02)
+Passed Vit filter:                         8  (0.00160417); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401043); expected 0.0 (1e-05)
+Initial search space (Z):               4987  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 13251.72
+//
+[ok]

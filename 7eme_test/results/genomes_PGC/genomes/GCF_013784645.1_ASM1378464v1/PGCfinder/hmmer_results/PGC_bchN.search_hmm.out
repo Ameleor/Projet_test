@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchN.hmm
+# target sequence database:        data/genomes_unzip/GCF_013784645.1_ASM1378464v1/GCF_013784645.1_ASM1378464v1_protein.faa
+# output directed to file:         results/genomes/GCF_013784645.1_ASM1378464v1/PGCfinder/hmmer_results/PGC_bchN.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchN_hmm  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.051   10.5   0.1      0.068   10.1   0.1    1.1  1  GCF_013784645.1_ASM1378464v1_4445  WP_003847896.1 MULTISPECIES: Ygj
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_013784645.1_ASM1378464v1_4445  WP_003847896.1 MULTISPECIES: YgjV family protein [Citrobacter]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.1   1.5e-05     0.068      43      62 ..      51      70 ..      29      73 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 1.5e-05
+               trimmed_msa_bchN_hmm 43 qsaaGvmifaeprfataile 62
+                                        +aaG+mi a  r+atai+ 
+  GCF_013784645.1_ASM1378464v1_4445 51 HAAAGLMIIAACRYATAIIT 70
+                                       4799**************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       4637  (1454873 residues searched)
+Passed MSV filter:                       143  (0.0308389); expected 92.7 (0.02)
+Passed bias filter:                      113  (0.0243692); expected 92.7 (0.02)
+Passed Vit filter:                         8  (0.00172525); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000215657); expected 0.0 (1e-05)
+Initial search space (Z):               4637  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 13678.15
+//
+[ok]

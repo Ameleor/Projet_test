@@ -1,0 +1,132 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+PGCfinder              6
+all                    1
+infos_retriever        1
+list_creator           1
+list_merger            1
+total                 10
+
+Select jobs to execute...
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa
+    output: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    jobid: 5
+    reason: Missing output files: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    wildcards: genome=GCF_000016185.1_ASM1618v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+    output: results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    jobid: 7
+    reason: Missing output files: results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    wildcards: genome=GCF_000016725.1_ASM1672v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+    output: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    jobid: 9
+    reason: Missing output files: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    wildcards: genome=GCF_000019725.1_ASM1972v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa
+    output: results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+    jobid: 11
+    reason: Missing output files: results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+    wildcards: genome=GCF_000021005.1_ASM2100v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+    output: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+    jobid: 1
+    reason: Missing output files: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+    wildcards: genome=GCF_000012565.1_ASM1256v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 13:37:33 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+    output: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    jobid: 3
+    reason: Missing output files: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    wildcards: genome=GCF_000014045.1_ASM1404v1
+    resources: tmpdir=/tmp
+
+[Mon May 13 13:37:36 2024]
+Finished job 1.
+1 of 10 steps (10%) done
+[Mon May 13 13:37:36 2024]
+Finished job 7.
+2 of 10 steps (20%) done
+[Mon May 13 13:37:37 2024]
+Finished job 5.
+3 of 10 steps (30%) done
+[Mon May 13 13:37:37 2024]
+Finished job 11.
+4 of 10 steps (40%) done
+[Mon May 13 13:37:37 2024]
+Finished job 3.
+5 of 10 steps (50%) done
+[Mon May 13 13:37:37 2024]
+Finished job 9.
+6 of 10 steps (60%) done
+Select jobs to execute...
+
+[Mon May 13 13:37:37 2024]
+rule list_creator:
+    input: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder, results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, results/genomes
+    output: results/lists/list_organisms.csv
+    jobid: 19
+    reason: Updated input files: results/genomes; Input files updated by another job: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder, results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder, results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    resources: tmpdir=/tmp
+
+[Mon May 13 13:37:37 2024]
+Finished job 19.
+7 of 10 steps (70%) done
+Select jobs to execute...
+
+[Mon May 13 13:37:37 2024]
+rule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 20
+    reason: Input files updated by another job: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Mon May 13 13:37:37 2024]
+Error in rule infos_retriever:
+    jobid: 20
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    shell:
+        
+        grep "GC" results/lists/list_organisms.csv | while IFS= read -r ligne; do python3 scripts/collect_infos_PGCfinder.py "$ligne"; done > results/lists/list_PGC_infos.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job infos_retriever since they might be corrupted:
+results/lists/list_PGC_infos.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-13T133732.795483.snakemake.log

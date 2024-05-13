@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_003031265.1_ASM303126v1/GCF_003031265.1_ASM303126v1_protein.faa
+# output directed to file:         results/genomes/GCF_003031265.1_ASM303126v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      6e-98  325.3   0.0    7.1e-98  325.0   0.0    1.0  1  GCF_003031265.1_ASM303126v1_1528  WP_107343558.1 MULTISPECIES: pho
+  ------ inclusion threshold ------
+      0.057   10.8   1.8      0.066   10.6   1.8    1.1  1  GCF_003031265.1_ASM303126v1_3081  WP_107344910.1 MULTISPECIES: DUF
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003031265.1_ASM303126v1_1528  WP_107343558.1 MULTISPECIES: photosynthetic reaction center subunit H [Rhodopseudom
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  325.0   0.0    3e-101   7.1e-98       5     251 ..       5     253 ..       2     254 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 325.0 bits;  conditional E-value: 3e-101
+              trimmed_msa_puhA_hmm   5 gelDvaqlvlyafwlffagLvlylrredrrEGyPledeetge..ekaegllevpepktfklphggtvtaPskereee 79 
+                                       ++lD+aq++ly+fw+ffagL++ylrred+rEGyPl  ++ +    ++ g+++ p+pkt+ l+ g t+t+Ps+++++ 
+  GCF_003031265.1_ASM303126v1_1528   5 AYLDLAQVTLYVFWIFFAGLLFYLRREDKREGYPLVADAGTGtrLAKIGVPAPPDPKTYLLRGGATKTVPSTSNDRP 81 
+                                       689*********************************99876645788999*************************** PP
+
+              trimmed_msa_puhA_hmm  80 dlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgk 156
+                                       ++a++++a+++GaP++ptgnp+ dgvGp++ya+Rad+p+l +d+ + i+Plr+a+ + ++ +dp+p+G++vvg+Dg 
+  GCF_003031265.1_ASM303126v1_1528  82 NVALAPSAPWPGAPFVPTGNPFADGVGPGSYAQRADVPELGLDNLPIIAPLRAAKGMFLDPRDPNPVGMSVVGCDGV 158
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhA_hmm 157 vaGtvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTllEEdki 233
+                                       v Gtv+++WvDr+e + RYleve++++ ++vllP+ +a i++   kv+v+ai ++qfa vP++++ dqv +lEEdki
+  GCF_003031265.1_ASM303126v1_1528 159 VGGTVTEVWVDRAEVIARYLEVEVAKSRKRVLLPVPFALINDPFGKVSVDAIRGDQFAGVPTTSKSDQVSKLEEDKI 235
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhA_hmm 234 vaYyggGtlYatperqep 251
+                                       +aYyg+GtlYatp r+e+
+  GCF_003031265.1_ASM303126v1_1528 236 CAYYGAGTLYATPMRSES 253
+                                       ***************997 PP
+
+>> GCF_003031265.1_ASM303126v1_3081  WP_107344910.1 MULTISPECIES: DUF1328 domain-containing protein [Rhodopseudomonas]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   1.8   2.8e-05     0.066       5      26 ..      28      49 ..      24      52 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.8e-05
+              trimmed_msa_puhA_hmm  5 gelDvaqlvlyafwlffagLvl 26
+                                      ++ D+a++ +y+f+++f++L++
+  GCF_003031265.1_ASM303126v1_3081 28 ASADIARILFYIFVVIFVVLLI 49
+                                      678**************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       4791  (1530727 residues searched)
+Passed MSV filter:                        92  (0.0192027); expected 95.8 (0.02)
+Passed bias filter:                       84  (0.0175329); expected 95.8 (0.02)
+Passed Vit filter:                         7  (0.00146107); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417449); expected 0.0 (1e-05)
+Initial search space (Z):               4791  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10510.58
+//
+[ok]

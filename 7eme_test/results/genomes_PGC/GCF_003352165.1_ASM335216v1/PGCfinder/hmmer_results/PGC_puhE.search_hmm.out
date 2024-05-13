@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhE.hmm
+# target sequence database:        data/genomes_unzip/GCF_003352165.1_ASM335216v1/GCF_003352165.1_ASM335216v1_protein.faa
+# output directed to file:         results/genomes/GCF_003352165.1_ASM335216v1/PGCfinder/hmmer_results/PGC_puhE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhE_hmm  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+   1.5e-104  346.5  20.7   2.1e-104  346.1  20.7    1.2  1  GCF_003352165.1_ASM335216v1_3102  WP_114913074.1 putative photosyn
+     0.0075   13.5   0.4     0.0081   13.4   0.4    1.2  1  GCF_003352165.1_ASM335216v1_1925  WP_114912156.1 accessory factor 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_003352165.1_ASM335216v1_3102  WP_114913074.1 putative photosynthetic complex assembly protein PuhE [Acidibrevibac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  346.1  20.7  1.2e-107  2.1e-104       2     243 ..       7     249 ..       6     250 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 346.1 bits;  conditional E-value: 1.2e-107
+              trimmed_msa_puhE_hmm   2 pvlvalfvWwfsTGlillldrrprrtfkaslvlatlllalallgvlvsaqdasvagaylaftaallvWgwqelaflt 78 
+                                       p+l+alfvWwfsTG+i++ld++pr+tf++s+++at++la++l+g+++s++  +  g y+aft++ll Wgwqe++f++
+  GCF_003352165.1_ASM335216v1_3102   7 PALYALFVWWFSTGVIIYLDGLPRATFRWSMIGATIVLAASLYGLWASSKIVTLGGLYCAFTTGLLAWGWQEISFYM 83 
+                                       89*************************************************************************** PP
+
+              trimmed_msa_puhE_hmm  79 GvvtGprreacpegasglerflaaletilyhElallvtavlllaltwgapNqvglwtfavLfvmrlsaklnlflGvp 155
+                                       G+vtGprre+cpe+++g+++f++a+et+lyhEla++v av+++altwgapN+vg+wtf++L++m++sakln+flGv+
+  GCF_003352165.1_ASM335216v1_3102  84 GFVTGPRREPCPENCHGWRHFIHAIETSLYHELAIIVFAVAVIALTWGAPNHVGAWTFMILWWMHQSAKLNVFLGVR 160
+                                       ***************************************************************************** PP
+
+              trimmed_msa_puhE_hmm 156 nlneeflPehlayLksyfrkrrmnllfpvsvtaatvlavllveaaleae.aeaeavglsllatllaLavlEhlflvL 231
+                                       nlneeflPehl +Lks+++k++mnllfp+svt++tv+a+ll+e+a++   ++++avg ++l t++aLa+lEh+flvL
+  GCF_003352165.1_ASM335216v1_3102 161 NLNEEFLPEHLGFLKSFLTKKPMNLLFPFSVTISTVIAALLFEEAVRPGqSKFTAVGDVFLGTMMALAILEHWFLVL 237
+                                       ************************************************999************************** PP
+
+              trimmed_msa_puhE_hmm 232 PlpdeaLWrWal 243
+                                       Plp++aLW+W+l
+  GCF_003352165.1_ASM335216v1_3102 238 PLPAAALWHWGL 249
+                                       **********97 PP
+
+>> GCF_003352165.1_ASM335216v1_1925  WP_114912156.1 accessory factor UbiK family protein [Acidibrevibacterium fodinaquat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.4   4.4e-06    0.0081     194     231 ..      53      90 ..      27      96 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 4.4e-06
+              trimmed_msa_puhE_hmm 194 vllveaaleaeaeaeavglsllatllaLavlEhlflvL 231
+                                       +++ e+a++a+a +e ++++l a+l+ La lEh + +L
+  GCF_003352165.1_ASM335216v1_1925  53 AAIGEMAANARAGQEEMAATLAAALARLAALEHRVAAL 90 
+                                       567888999999*********************98776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (244 nodes)
+Target sequences:                       3709  (1210854 residues searched)
+Passed MSV filter:                       195  (0.0525748); expected 74.2 (0.02)
+Passed bias filter:                       76  (0.0204907); expected 74.2 (0.02)
+Passed Vit filter:                         4  (0.00107846); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539229); expected 0.0 (1e-05)
+Initial search space (Z):               3709  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9256.80
+//
+[ok]

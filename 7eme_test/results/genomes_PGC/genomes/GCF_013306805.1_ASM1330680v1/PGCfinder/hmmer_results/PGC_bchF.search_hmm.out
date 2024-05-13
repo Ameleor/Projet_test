@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_013306805.1_ASM1330680v1/GCF_013306805.1_ASM1330680v1_protein.faa
+# output directed to file:         results/genomes/GCF_013306805.1_ASM1330680v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+  ------ inclusion threshold ------
+      0.048   11.8   1.6      0.066   11.3   0.4    1.6  1  GCF_013306805.1_ASM1330680v1_2066  WP_016723054.1 MULTISPECIES: cyt
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_013306805.1_ASM1330680v1_2066  WP_016723054.1 MULTISPECIES: cytochrome o ubiquinol oxidase subunit IV [Ralstonia]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.4   1.3e-05     0.066      36      74 ..      65     103 ..      50     113 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.3e-05
+               trimmed_msa_bchF_hmm  36 lalvlry..latGegaaaatlsvvvktlvlytimitGaiwe 74 
+                                        ++l + +  l tG g+   ++++ v t +l +i+++G++w 
+  GCF_013306805.1_ASM1330680v1_2066  65 MQL-VYFlhLGTGPGQ-RGNTAIFVCTGLLIAIVVAGSLWV 103
+                                        333.334015555554.567899*****************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       5276  (1751751 residues searched)
+Passed MSV filter:                       135  (0.0255876); expected 105.5 (0.02)
+Passed bias filter:                       81  (0.0153525); expected 105.5 (0.02)
+Passed Vit filter:                         6  (0.00113723); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189538); expected 0.1 (1e-05)
+Initial search space (Z):               5276  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9603.51
+//
+[ok]

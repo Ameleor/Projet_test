@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_030297555.1_ASM3029755v1/GCF_030297555.1_ASM3029755v1_protein.faa
+# output directed to file:         results/genomes/GCF_030297555.1_ASM3029755v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.5e-78  256.4   6.3    7.5e-78  256.2   6.3    1.0  1  GCF_030297555.1_ASM3029755v1_1368  WP_286306533.1 2-vinyl bacterioc
+     0.0022   14.6   0.2     0.0022   14.6   0.2    1.9  2  GCF_030297555.1_ASM3029755v1_1121  WP_286306307.1 protease HtpX [Po
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_030297555.1_ASM3029755v1_1368  WP_286306533.1 2-vinyl bacteriochlorophyllide hydratase [Polynucleobacter sp. HIN5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  256.2   6.3   8.1e-81   7.5e-78       2     146 .]       7     151 ..       6     151 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 256.2 bits;  conditional E-value: 8.1e-81
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                        +lytpeer+rrd++kwtlvqgilap+qf++flvsl+lv+r+l+tG+g+ aa++s+v+ktl+lytimitG+iwek+v
+  GCF_030297555.1_ASM3029755v1_1368   7 PLYTPEERVRRDRSKWTLVQGILAPVQFVIFLVSLYLVIRFLTTGQGEFAANVSIVIKTLILYTIMITGSIWEKEV 82 
+                                        8*************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        fgkylfa+af+wedvfs+lvlalhtayl+al+ g l+++++++lal+ay ayvinaaqfl+klr+arl+
+  GCF_030297555.1_ASM3029755v1_1368  83 FGKYLFAPAFYWEDVFSMLVLALHTAYLIALTFGFLEPRALMALALSAYLAYVINAAQFLWKLRQARLQ 151
+                                        *******************************************************************97 PP
+
+>> GCF_030297555.1_ASM3029755v1_1121  WP_286306307.1 protease HtpX [Polynucleobacter sp. HIN5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   1.0      0.29   2.7e+02      29      45 ..       7      23 ..       4      57 .. 0.70
+   2 !   14.6   0.2   2.4e-06    0.0022      39     113 ..     148     223 ..     117     246 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.29
+               trimmed_msa_bchF_hmm 29 flvflvslalvlrylat 45
+                                       fl+  ++++lv+ ++++
+  GCF_030297555.1_ASM3029755v1_1121  7 FLITNIAIMLVITIIIN 23
+                                       78888888888887764 PP
+
+  == domain 2  score: 14.6 bits;  conditional E-value: 2.4e-06
+               trimmed_msa_bchF_hmm  39 vlrylatGegaaaatlsvvvktlvlytimitGaiwekvvfgky.lfaeaffwedvfsllvlalhtaylvalltgll 113
+                                         ++ +a+G+ +++a +  v+ t+v++   + G i +++vf +     +a++   v++ lvl + +  +v++++ + 
+  GCF_030297555.1_ASM3029755v1_1121 148 EVSHVANGDMVTLALIQGVINTFVFFLSRVIGHIIDRAVFKTErGHGPAYWITTVIAQLVLGILASAIVMWFSRQR 223
+                                        5678899*********************************86515778888899********99999998887655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       1843  (586102 residues searched)
+Passed MSV filter:                        54  (0.0293001); expected 36.9 (0.02)
+Passed bias filter:                       23  (0.0124797); expected 36.9 (0.02)
+Passed Vit filter:                         3  (0.00162778); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00108519); expected 0.0 (1e-05)
+Initial search space (Z):               1843  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7656.48
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_009707465.1_ASM970746v1/GCF_009707465.1_ASM970746v1_protein.faa
+# output directed to file:         results/genomes/GCF_009707465.1_ASM970746v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+      1e-61  205.0  12.4    1.2e-61  204.8  12.4    1.0  1  GCF_009707465.1_ASM970746v1_1701  WP_230207013.1 TspO/MBR family p
+    5.8e-33  111.6  12.6    6.7e-33  111.4  12.6    1.1  1  GCF_009707465.1_ASM970746v1_3330  WP_154693196.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_009707465.1_ASM970746v1_1701  WP_230207013.1 TspO/MBR family protein [Novosphingobium sp. Gsoil 351]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  204.8  12.4   6.7e-65   1.2e-61       2     152 .]      13     163 ..      12     163 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 204.8 bits;  conditional E-value: 6.7e-65
+              trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfal 78 
+                                       +++aa+aa+lv+v+gg++t+lg+wy++L+kP+w+PP  aFg++Wtv+++l+a aav+awr+++++++a++l+++fal
+  GCF_009707465.1_ASM970746v1_1701  13 VTIAAFAAILVGVVGGTITDLGPWYQALRKPDWNPPGPAFGIIWTVVFTLTASAAVTAWRQTASSREADTLVWMFAL 89 
+                                       78999************************************************************************ PP
+
+              trimmed_msa_tspO_hmm  79 navlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNppf 152
+                                       n++ln+lWsl+fFrl+r+dwa+ e+++LW+s++alilv+ r+s++a+lll PYlvWv+iA+aLN+++v lN+pf
+  GCF_009707465.1_ASM970746v1_1701  90 NGFLNLLWSLIFFRLQRPDWAFGELIALWCSIAALILVCGRLSRTAGLLLAPYLVWVTIAGALNWQIVALNGPF 163
+                                       ***********************************************************************986 PP
+
+>> GCF_009707465.1_ASM970746v1_3330  WP_154693196.1 TspO/MBR family protein [Novosphingobium sp. Gsoil 351]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.4  12.6   3.8e-36   6.7e-33      12     151 ..      28     169 ..      17     170 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 111.4 bits;  conditional E-value: 3.8e-36
+              trimmed_msa_tspO_hmm  12 vavlggaltelg...ewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnil 85 
+                                       +++l+g l + g   +w+++L kPs  PP   Fg+vW+++y+++++a ++ + +a++a  +  +la+fa++ +ln+ 
+  GCF_009707465.1_ASM970746v1_3330  28 LGFLAGRLSQSGpgnPWFDALVKPSLFPPPATFGIVWSILYVMMGLALTMLV-TARGAFGRGAALAAFAVQFALNLC 103
+                                       4555555555542227*******************************99998.899999999*************** PP
+
+              trimmed_msa_tspO_hmm  86 WsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNpp 151
+                                       Ws+lfF+ +++  al+ +++L ++vl+++  +wrv++ aallllPYl+Wv +A++LN++ +  Np+
+  GCF_009707465.1_ASM970746v1_3330 104 WSPLFFGAHQITGALYLMAALDIAVLVTVALAWRVRRPAALLLLPYLAWVLFATVLNWQFLVANPD 169
+                                       ************************************************************999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       3499  (1071761 residues searched)
+Passed MSV filter:                       158  (0.0451558); expected 70.0 (0.02)
+Passed bias filter:                       68  (0.0194341); expected 70.0 (0.02)
+Passed Vit filter:                         5  (0.00142898); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000571592); expected 0.0 (1e-05)
+Initial search space (Z):               3499  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7296.19
+//
+[ok]

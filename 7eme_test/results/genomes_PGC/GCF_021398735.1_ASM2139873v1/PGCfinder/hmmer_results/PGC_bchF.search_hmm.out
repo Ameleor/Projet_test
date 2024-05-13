@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchF.hmm
+# target sequence database:        data/genomes_unzip/GCF_021398735.1_ASM2139873v1/GCF_021398735.1_ASM2139873v1_protein.faa
+# output directed to file:         results/genomes/GCF_021398735.1_ASM2139873v1/PGCfinder/hmmer_results/PGC_bchF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchF_hmm  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.1e-73  244.4   7.0    1.2e-73  244.2   7.0    1.0  1  GCF_021398735.1_ASM2139873v1_2806  WP_020095248.1 MULTISPECIES: 2-v
+  ------ inclusion threshold ------
+      0.034   12.5   0.4      0.034   12.5   0.4    3.2  3  GCF_021398735.1_ASM2139873v1_246   WP_234081566.1 sodium:proton ant
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_021398735.1_ASM2139873v1_2806  WP_020095248.1 MULTISPECIES: 2-vinyl bacteriochlorophyllide hydratase [Methylobact
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  244.2   7.0   3.9e-77   1.2e-73       2     146 .]      10     154 ..       9     154 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 244.2 bits;  conditional E-value: 3.9e-77
+               trimmed_msa_bchF_hmm   2 alytpeerarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwekvv 77 
+                                        +lytp+er+rrd++ wt+vqg+laplqf++flvsl+lvlr lat +g  aa++svvvktl+ly+im+tG+iwekvv
+  GCF_021398735.1_ASM2139873v1_2806  10 PLYTPAERRRRDSSLWTVVQGVLAPLQFAIFLVSLVLVLRALATDDGLRAAEISVVVKTLALYAIMVTGSIWEKVV 85 
+                                        8*************************************************************************** PP
+
+               trimmed_msa_bchF_hmm  78 fgkylfaeaffwedvfsllvlalhtaylvalltgllsaeeqlllalaayaayvinaaqfllklraarle 146
+                                        fg++lfa+affwedv+s+lvlalhtayl+al+tg+l  +++lllalaaya+yvinaaqfllklraar+e
+  GCF_021398735.1_ASM2139873v1_2806  86 FGRWLFAPAFFWEDVVSMLVLALHTAYLAALATGALRGQALLLLALAAYATYVINAAQFLLKLRAARME 154
+                                        *******************************************************************85 PP
+
+>> GCF_021398735.1_ASM2139873v1_246  WP_234081566.1 sodium:proton antiporter [Methylobacterium oryzae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.3     0.051   1.6e+02      23      74 ..      78     123 ..      55     143 .. 0.72
+   2 ?   12.5   0.4   1.1e-05     0.034       8      58 ..     284     333 ..     276     342 .. 0.78
+   3 ?   -1.5   0.1      0.23   7.2e+02      60      71 ..     393     404 ..     372     408 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.051
+              trimmed_msa_bchF_hmm  23 ilaplqflvflvslalvlrylatGegaaaatlsvvvktlvlytimitGaiwe 74 
+                                       +   l fl+f  ++ l lr l      a+a +++ +  +v+ t ++ Ga w 
+  GCF_021398735.1_ASM2139873v1_246  78 M---LAFLLFAGAMNLDLRALRE---RAMAVATLALLGTVISTALVGGAFWA 123
+                                       3...4588888889998888864...33333444444567778888999885 PP
+
+  == domain 2  score: 12.5 bits;  conditional E-value: 1.1e-05
+              trimmed_msa_bchF_hmm   8 erarrdatkwtlvqgilaplqflvflvslalvlrylatGegaaaatlsvvv 58 
+                                         +r  ++ wtl+  +l  + fl++ +  +lvlr+ ++G   aa  + +v+
+  GCF_021398735.1_ASM2139873v1_246 284 TTQRYVSALWTLIDEVLNSVLFLLIGLE-VLVLRFQVAGLALAACAAPIVL 333
+                                       334455678*************988776.599*******999998888876 PP
+
+  == domain 3  score: -1.5 bits;  conditional E-value: 0.23
+              trimmed_msa_bchF_hmm  60 tlvlytimitGa 71 
+                                       ++vl+ti++ G+
+  GCF_021398735.1_ASM2139873v1_246 393 AVVLFTIVVQGS 404
+                                       468999999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       6239  (1895061 residues searched)
+Passed MSV filter:                       134  (0.0214778); expected 124.8 (0.02)
+Passed bias filter:                       82  (0.0131431); expected 124.8 (0.02)
+Passed Vit filter:                         8  (0.00128226); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000320564); expected 0.1 (1e-05)
+Initial search space (Z):               6239  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8035.67
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtB.hmm
+# target sequence database:        data/genomes_unzip/GCF_002354895.1_ASM235489v1/GCF_002354895.1_ASM235489v1_protein.faa
+# output directed to file:         results/genomes/GCF_002354895.1_ASM235489v1/PGCfinder/hmmer_results/PGC_crtB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtB_hmm  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    2.2e-27   94.5   4.2      3e-27   94.0   4.2    1.1  1  GCF_002354895.1_ASM235489v1_1725  WP_096447359.1 squalene synthase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_002354895.1_ASM235489v1_1725  WP_096447359.1 squalene synthase HpnC [Thauera sp. K11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.0   4.2   6.6e-31     3e-27      16     185 ..       8     185 ..       4     192 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 94.0 bits;  conditional E-value: 6.6e-31
+              trimmed_msa_crtB_hmm  16 sFaaAskllprrvreaalaLYafCRlaDDlvDeqekk.aaalarlre...rldriyagrpada....padralaavv 84 
+                                        F +As llp+++r ++ a+Y f R aDD++De +++  a+larl++    ld++ +g++  +    p+++ laa v
+  GCF_002354895.1_ASM235489v1_1725   8 NFPVASILLPSSLRGPVEAIYHFARSADDVADEGDAPaVARLARLHDyrlALDAMERGEAVRDaslaPMFERLAAAV 84 
+                                       699******************************999865677777653226899999987664222379******** PP
+
+              trimmed_msa_crtB_hmm  85 eefaipralpealleGfawDaegrryetledllaYaarVAgaVGvmmalvmgvrdaevlaRAcdLGvAmQLtNiaRD 161
+                                       +e+++p +l+++ll+ f  D+ + ry++  +l +Y+ r A  VG ++ ++ +++ a+ l     +   +QL N   D
+  GCF_002354895.1_ASM235489v1_1725  85 REHRLPVQLLRDLLDAFSQDVGKTRYADFGELRDYCRRSADPVGRLLLHLYKAATADNLLLSDRICTSLQLINFWQD 161
+                                       *****************************************************99999998899999********** PP
+
+              trimmed_msa_crtB_hmm 162 vgeDaragRlYLPleWleeagldp 185
+                                       v+ D r++R+YLP++ ++  g++ 
+  GCF_002354895.1_ASM235489v1_1725 162 VAIDWRKNRVYLPQDDMARFGVQD 185
+                                       ***************999998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       4584  (1560929 residues searched)
+Passed MSV filter:                       237  (0.0517016); expected 91.7 (0.02)
+Passed bias filter:                      119  (0.0259599); expected 91.7 (0.02)
+Passed Vit filter:                        11  (0.00239965); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.00021815); expected 0.0 (1e-05)
+Initial search space (Z):               4584  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11771.53
+//
+[ok]

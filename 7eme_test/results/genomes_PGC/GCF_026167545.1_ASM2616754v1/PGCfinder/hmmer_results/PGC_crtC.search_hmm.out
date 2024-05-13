@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_026167545.1_ASM2616754v1/GCF_026167545.1_ASM2616754v1_protein.faa
+# output directed to file:         results/genomes/GCF_026167545.1_ASM2616754v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+   2.5e-100  332.2   0.0   2.9e-100  332.0   0.0    1.0  1  GCF_026167545.1_ASM2616754v1_25  WP_265550060.1 hydratase [Sphing
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_026167545.1_ASM2616754v1_25  WP_265550060.1 hydratase [Sphingomonas sp. S1-29]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  332.0   0.0  9.2e-104  2.9e-100       1     233 [.      65     297 ..      65     298 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 332.0 bits;  conditional E-value: 9.2e-104
+             trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsa 78 
+                                      mTeRg+++++rd+d++a+Gps ++wdgd L+i+i+Ei++p+p  vrGrv+++pe ++++++aLd+++rhrW+piap+a
+  GCF_026167545.1_ASM2616754v1_25  65 MTERGAKHVARDRDHFAVGPSGIAWDGDCLTIEINEISAPIPYPVRGRVKLYPELIANTAFALDPAARHRWHPIAPRA 142
+                                      9***************************************************************************** PP
+
+             trimmed_msa_crtC_hmm  79 rveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveap 156
+                                      r+eve+d+p++sw+G+gYfDsN+Gdeple++F++W+WsRa+l ++ avlY+  rrdg+ ++lal +d++G++++veap
+  GCF_026167545.1_ASM2616754v1_25 143 RIEVEMDRPGISWTGNGYFDSNFGDEPLETGFRDWHWSRAHLGRDVAVLYEGIRRDGRPFDLALLCDRQGRWRDVEAP 220
+                                      ****************************************************************************** PP
+
+             trimmed_msa_crtC_hmm 157 praklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrmpR 233
+                                      p ++lpr+ W v+r+tr d g+a++v kt+ d+PFYaRs l+t+l+ge+  avhEsLsldr++s++v++mLp+rmpR
+  GCF_026167545.1_ASM2616754v1_25 221 PVQRLPRSGWLVDRRTRVDVGHAAKVRKTWIDAPFYARSGLQTRLFGEDAFAVHESLSLDRFASTVVQTMLPYRMPR 297
+                                      ***************************************************************************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3151  (1003235 residues searched)
+Passed MSV filter:                        72  (0.0228499); expected 63.0 (0.02)
+Passed bias filter:                       61  (0.0193589); expected 63.0 (0.02)
+Passed Vit filter:                         5  (0.0015868); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.00031736); expected 0.0 (1e-05)
+Initial search space (Z):               3151  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 11238.28
+//
+[ok]

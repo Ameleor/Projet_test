@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCF_004635585.1_ASM463558v1/GCF_004635585.1_ASM463558v1_protein.faa
+# output directed to file:         results/genomes/GCF_004635585.1_ASM463558v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+     0.0002   18.2   0.0     0.0002   18.2   0.0    1.1  1  GCF_004635585.1_ASM463558v1_653   WP_003814221.1 MULTISPECIES: DNA
+    0.00025   17.9   0.3    0.00041   17.2   0.3    1.2  1  GCF_004635585.1_ASM463558v1_1522  WP_003811167.1 MULTISPECIES: nit
+     0.0071   13.1   0.1      0.011   12.5   0.1    1.2  1  GCF_004635585.1_ASM463558v1_2978  WP_003809217.1 MULTISPECIES: res
+  ------ inclusion threshold ------
+      0.013   12.2   0.2        1.7    5.3   0.0    2.9  3  GCF_004635585.1_ASM463558v1_1845  WP_010930768.1 sigma-54-dependen
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_004635585.1_ASM463558v1_653  WP_003814221.1 MULTISPECIES: DNA-binding protein [Bordetella]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.0   2.1e-07    0.0002     408     448 ..      37      77 ..       8      79 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 2.1e-07
+             trimmed_msa_ppsR_hmm 408 viEklCIeaALelTsdNRasAAemLGLSRQSLYvKLrrygl 448
+                                       +E+   e ALe  + N   A+emLG+ R  L  KL  +++
+  GCF_004635585.1_ASM463558v1_653  37 CVERPVLEVALERSGGNQSRASEMLGITRNTLRKKLLAHNI 77 
+                                      589999*****************************998887 PP
+
+>> GCF_004635585.1_ASM463558v1_1522  WP_003811167.1 MULTISPECIES: nitrogen regulation protein NR(II) [Bordetella]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.3   4.4e-07   0.00041     155     267 ..      15     125 ..       6     130 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 4.4e-07
+              trimmed_msa_ppsR_hmm 155 ivdaesrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeie.vrlarkgrevsvsas 230
+                                       ++  e+++i  aN+aA++L+g+++k+l g s a+lf++   e+lq+++ +++a + a+  + ++l+r  ++v+v+++
+  GCF_004635585.1_ASM463558v1_1522  15 FLLNERGHIEYANAAAEDLFGRSRKQLRGLSAATLFDNP--EDLQSAIDSAAAGKFADVRQlASLRRVVESVEVTVT 89 
+                                       44467899****************************974..567777777776665554441455666666777777 PP
+
+              trimmed_msa_ppsR_hmm 231 lfrqegesllLvrlspaeaaaaaaeeaeakllevlek 267
+                                       +   +g++   v ++++e +++  ++++++l++ +e+
+  GCF_004635585.1_ASM463558v1_1522  90 TVSLSGQAWP-VLIETREIEQRVLADRNQRLVDEIES 125
+                                       6666666553.34566666666777777777777765 PP
+
+>> GCF_004635585.1_ASM463558v1_2978  WP_003809217.1 MULTISPECIES: response regulator [Bordetella]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.1   1.2e-05     0.011     414     445 ..     142     173 ..     137     174 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.2e-05
+              trimmed_msa_ppsR_hmm 414 IeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                       I+ AL+ T+ N  +AA +LG+ R SL  KL +
+  GCF_004635585.1_ASM463558v1_2978 142 IQQALSETGGNVSAAARLLGMHRRSLQRKLAK 173
+                                       899*************************9976 PP
+
+>> GCF_004635585.1_ASM463558v1_1845  WP_010930768.1 sigma-54-dependent Fis family transcriptional regulator [Bordetella 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   0.0     0.014        12       4      41 ..      67     104 ..      64     116 .. 0.80
+   2 ?    5.3   0.0    0.0018       1.7     146     187 ..     214     253 ..     208     263 .. 0.78
+   3 ?    0.4   0.1     0.055        51     414     445 ..     587     618 ..     586     619 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.014
+              trimmed_msa_ppsR_hmm   4 eaaaklvaaaaDialvldaegviedvavgsedlakeel 41 
+                                       e++a +va a+ ++l+ da+gvi +++ ++  l+++++
+  GCF_004635585.1_ASM463558v1_1845  67 ETLAGMVASASSLVLLADASGVILQASGNTGFLQRADH 104
+                                       678899*******************9999888876654 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.0018
+              trimmed_msa_ppsR_hmm 146 feasseavlivdaesrriveaNpaAarLlgeeakelvgksfa 187
+                                       +++++  +l++  e +riv aN aA +Llg++  +l+++++ 
+  GCF_004635585.1_ASM463558v1_1845 214 LDSVERGLLLI--EDERIVGANDAAVALLGATWPALLDQPLD 253
+                                       55555566665..46799999999999999999999999876 PP
+
+  == domain 3  score: 0.4 bits;  conditional E-value: 0.055
+              trimmed_msa_ppsR_hmm 414 IeaALelTsdNRasAAemLGLSRQSLYvKLrr 445
+                                       I+ AL   + N a AA  LG+ R  LY  L r
+  GCF_004635585.1_ASM463558v1_1845 587 IDQALARHGGNIAGAAHELGIHRSTLYRHLAR 618
+                                       7789999999*****************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                       3684  (1171119 residues searched)
+Passed MSV filter:                       120  (0.0325733); expected 73.7 (0.02)
+Passed bias filter:                       72  (0.019544); expected 73.7 (0.02)
+Passed Vit filter:                        14  (0.00380022); expected 3.7 (0.001)
+Passed Fwd filter:                         4  (0.00108578); expected 0.0 (1e-05)
+Initial search space (Z):               3684  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10969.56
+//
+[ok]

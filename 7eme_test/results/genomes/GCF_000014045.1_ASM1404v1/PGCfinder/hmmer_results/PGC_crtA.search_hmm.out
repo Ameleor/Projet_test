@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+# output directed to file:         results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+   2.5e-104  345.2   0.3   2.9e-104  345.1   0.3    1.0  1  GCF_000014045.1_ASM1404v1_114  WP_011566478.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000014045.1_ASM1404v1_114  WP_011566478.1 spheroidene monooxygenase [Roseobacter denitrificans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  345.1   0.3  7.2e-108  2.9e-104       2     225 .]       7     230 ..       6     230 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 345.1 bits;  conditional E-value: 7.2e-108
+           trimmed_msa_crtA_hmm   2 vtlslfrfaalesrlwalarmvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivr 81 
+                                    v++s+frf+++ +r+wal +m+ arl+l +vpg++f+kl+GsG+geGFtp Pnt+v+a+la+++de+tar+++++++i++
+  GCF_000014045.1_ASM1404v1_114   7 VSISFFRFSRIPARIWALYMMGRARLSLPSVPGIGFWKLCGSGSGEGFTPLPNTAVFAILATWPDEQTARQQIDTAPIFA 86 
+                                    89****************************************************************************** PP
+
+           trimmed_msa_crtA_hmm  82 ryraraeesltvlleptsarGaWsgeepfeveekaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvllkiGlG 161
+                                    +y+++a+es+t++le+ s+rG Wsg++pf+++ ++ +gplaaLTrAt+kps al+FWrrvp+is++ig+d+nv++kiG+G
+  GCF_000014045.1_ASM1404v1_114  87 KYHRKASESWTIFLETASVRGVWSGDTPFHPTGQKITGPLAALTRATVKPSLALKFWRRVPDISQMIGSDENVAFKIGIG 166
+                                    ******************************************************************************** PP
+
+           trimmed_msa_crtA_hmm 162 EvPllrqvTfsiWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegksp 225
+                                    EvPll+qvTfs+W+da++maafAr +gpHa+ai+avr+edwf+Eelyarf++l+++G+weg+sp
+  GCF_000014045.1_ASM1404v1_114 167 EVPLLHQVTFSLWPDANAMAAFARMNGPHAAAIRAVRDEDWFAEELYARFAILGDTGSWEGASP 230
+                                    *************************************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3997  (1288384 residues searched)
+Passed MSV filter:                        83  (0.0207656); expected 79.9 (0.02)
+Passed bias filter:                       67  (0.0167626); expected 79.9 (0.02)
+Passed Vit filter:                         6  (0.00150113); expected 4.0 (0.001)
+Passed Fwd filter:                         1  (0.000250188); expected 0.0 (1e-05)
+Initial search space (Z):               3997  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12940.70
+//
+[ok]

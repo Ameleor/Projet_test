@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchI.hmm
+# target sequence database:        data/genomes_unzip/GCF_016027595.1_ASM1602759v1/GCF_016027595.1_ASM1602759v1_protein.faa
+# output directed to file:         results/genomes/GCF_016027595.1_ASM1602759v1/PGCfinder/hmmer_results/PGC_bchI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchI_hmm  [M=338]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.6e-11   42.1   1.0    1.1e-05   23.0   0.0    3.6  3  GCF_016027595.1_ASM1602759v1_198   WP_197929194.1 YifB family Mg ch
+  ------ inclusion threshold ------
+      0.018   12.3   0.0      0.028   11.7   0.0    1.2  1  GCF_016027595.1_ASM1602759v1_2153  WP_197930783.1 ABC transporter A
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_016027595.1_ASM1602759v1_198  WP_197929194.1 YifB family Mg chelatase-like AAA ATPase [Serratia plymuthica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   7.2e-06     0.018       8      59 ..     193     242 ..     187     262 .. 0.87
+   2 !   23.0   0.0   4.2e-09   1.1e-05     116     186 ..     278     348 ..     275     358 .. 0.93
+   3 !    2.6   0.3    0.0065        16     271     306 ..     451     488 ..     369     500 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 7.2e-06
+              trimmed_msa_bchI_hmm   8 aivgqdemklalllaavdpsigGvlvlGdrGtGkstavralaallPkikavk 59 
+                                        i+gq++ k+al +aa   +   +l++G  GtGk+  +  l  llP+++  +
+  GCF_016027595.1_ASM1602759v1_198 193 DILGQEQAKRALEIAAAGGH--NLLLVGPPGTGKTMLASRLNGLLPPLTDRE 242
+                                       699************98654..6999*********************98765 PP
+
+  == domain 2  score: 23.0 bits;  conditional E-value: 4.2e-09
+              trimmed_msa_bchI_hmm 116 altkGekafepGllaranrGflyidevnlledhlvdllldvaasGenvvereglsvrhparfvlvGsGnPe 186
+                                       al+ G     pG ++ a+ G l++de+  +e  ++d l +  +sGe v+ r +  v  par  l+ + nP 
+  GCF_016027595.1_ASM1602759v1_198 278 ALVGGGSLPRPGEISMAHNGVLFLDELPEFERRVLDALREPLESGEIVISRASAKVCFPARVQLIAAMNPS 348
+                                       56666667789**********************************************************95 PP
+
+  == domain 3  score: 2.6 bits;  conditional E-value: 0.0065
+              trimmed_msa_bchI_hmm 271 algtdGl..rgeltllraaralaalegakevtkehlkk 306
+                                       +l+  Gl  r+   +l+ ar+la l g+++++k+hl +
+  GCF_016027595.1_ASM1602759v1_198 451 TLNKLGLsvRAWQRILKVARTLADLAGDRDIDKRHLSE 488
+                                       44444432266777899999999999999999999876 PP
+
+>> GCF_016027595.1_ASM1602759v1_2153  WP_197930783.1 ABC transporter ATP-binding protein [Serratia plymuthica]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   1.1e-05     0.028      33      65 ..      40      72 ..      25     101 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.1e-05
+               trimmed_msa_bchI_hmm 33 vlGdrGtGkstavralaallPkikavkgcrync 65
+                                       ++G+ G+Gks ++ral  llP+  +v++ r++ 
+  GCF_016027595.1_ASM1602759v1_2153 40 LVGESGSGKSLTARALMGLLPPPLQVRAQRLTL 72
+                                       68******************9877766666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (338 nodes)
+Target sequences:                       5004  (1593376 residues searched)
+Passed MSV filter:                       286  (0.0571543); expected 100.1 (0.02)
+Passed bias filter:                      220  (0.0439648); expected 100.1 (0.02)
+Passed Vit filter:                        40  (0.00799361); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00039968); expected 0.1 (1e-05)
+Initial search space (Z):               5004  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 7981.66
+//
+[ok]

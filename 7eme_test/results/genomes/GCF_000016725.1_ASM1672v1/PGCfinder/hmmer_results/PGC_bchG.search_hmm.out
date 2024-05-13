@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchG.hmm
+# target sequence database:        data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+# output directed to file:         results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder/hmmer_results/PGC_bchG.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchG_hmm  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    2.1e-07   28.5  16.1      6e-07   27.0  16.1    1.6  1  GCF_000016725.1_ASM1672v1_2173  WP_012039852.1 heme o synthase [
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000016725.1_ASM1672v1_2173  WP_012039852.1 heme o synthase [Acidiphilium cryptum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0  16.1   1.6e-10     6e-07      40     218 ..      60     236 ..      27     281 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 1.6e-10
+            trimmed_msa_bchG_hmm  40 llvvaGvllaGPlvcatsqavndWfdrhvdaine..PerpiPsGripGrWGlyialiltllsllvaaalgtlvfvaavl 116
+                                     +++    +l+  +  +++ a+n W+dr++da+      rpiP+Gri+    l   ++l++ls+l+ ++ +t  ++a +l
+  GCF_000016725.1_ASM1672v1_2173  60 PILGFTAILCIAMAAGAAGAINMWYDRDIDAVMRrtAGRPIPTGRISPDGALAYGVALSALSVLLMWL-ATNLLAAGLL 137
+                                     455556788889999****************9752267********9998888888888888766543.3334444455 PP
+
+            trimmed_msa_bchG_hmm 117 glvlaWaysapPlrlkknGwlGnaavglsyeglaWltgaavlagalPsaevlllallysigahGimtlndfkaveGdrk 195
+                                     +  + +   +  + lk+     n ++g +  +++ + g a  +g++   +vll a+++  +     +l  f + +  +k
+  GCF_000016725.1_ASM1672v1_2173 138 AASIGFYVFIYTMWLKRRT-PQNIVIGGAAGAFPPVIGWAAATGHVGLLPVLLFAIIFFWTPPHFWALSLFASAD-YQK 214
+                                     4444444444455666654.345666666677888999999999999999********9999999****9*9876.467 PP
+
+            trimmed_msa_bchG_hmm 196 lgvkslpvklGveraarvaclvm 218
+                                      gv  lpv+ G+ +a+r+a++  
+  GCF_000016725.1_ASM1672v1_2173 215 AGVPMLPVVAGQ-KATRLAVMRY 236
+                                     8********996.5777776533 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (288 nodes)
+Target sequences:                       3616  (1174819 residues searched)
+Passed MSV filter:                       190  (0.0525442); expected 72.3 (0.02)
+Passed bias filter:                       55  (0.0152102); expected 72.3 (0.02)
+Passed Vit filter:                         3  (0.000829646); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000276549); expected 0.0 (1e-05)
+Initial search space (Z):               3616  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13289.93
+//
+[ok]

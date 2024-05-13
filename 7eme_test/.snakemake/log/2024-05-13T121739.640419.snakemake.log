@@ -1,0 +1,189 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+PGCfinder              6
+all                    1
+infos_retriever        1
+list_creator           1
+list_merger            1
+unzip_genomes          2
+total                 12
+
+Select jobs to execute...
+
+[Mon May 13 12:17:40 2024]
+rule unzip_genomes:
+    input: data/genomes/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein_gff.tsv
+    jobid: 18
+    reason: Missing output files: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein_gff.tsv
+    wildcards: genome=GCF_000021005.1_ASM2100v1, format=_gff.tsv
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:40 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa
+    output: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    jobid: 5
+    reason: Updated input files: data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa
+    wildcards: genome=GCF_000016185.1_ASM1618v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:40 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+    output: results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    jobid: 7
+    reason: Updated input files: data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+    wildcards: genome=GCF_000016725.1_ASM1672v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:40 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+    output: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    jobid: 9
+    reason: Updated input files: data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+    wildcards: genome=GCF_000019725.1_ASM1972v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:40 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa
+    output: results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+    jobid: 11
+    reason: Updated input files: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa
+    wildcards: genome=GCF_000021005.1_ASM2100v1
+    resources: tmpdir=/tmp
+
+[Mon May 13 12:17:41 2024]
+Error in rule PGCfinder:
+    jobid: 5
+    input: data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa
+    output: results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000016185.1_ASM1618v1/GCF_000016185.1_ASM1618v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon May 13 12:17:41 2024]
+Error in rule PGCfinder:
+    jobid: 7
+    input: data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+    output: results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Mon May 13 12:17:41 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+    output: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+    jobid: 1
+    reason: Updated input files: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+    wildcards: genome=GCF_000012565.1_ASM1256v1
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:41 2024]
+rule unzip_genomes:
+    input: data/genomes/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein_gff.tsv.gz
+    output: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein_gff.tsv
+    jobid: 13
+    reason: Missing output files: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein_gff.tsv
+    wildcards: genome=GCF_000012565.1_ASM1256v1, format=_gff.tsv
+    resources: tmpdir=/tmp
+
+
+[Mon May 13 12:17:41 2024]
+rule PGCfinder:
+    input: data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+    output: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    jobid: 3
+    reason: Updated input files: data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+    wildcards: genome=GCF_000014045.1_ASM1404v1
+    resources: tmpdir=/tmp
+
+[Mon May 13 12:17:41 2024]
+Error in rule PGCfinder:
+    jobid: 9
+    input: data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+    output: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon May 13 12:17:41 2024]
+Error in rule PGCfinder:
+    jobid: 11
+    input: data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa
+    output: results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon May 13 12:17:41 2024]
+Finished job 18.
+1 of 12 steps (8%) done
+[Mon May 13 12:17:41 2024]
+Finished job 13.
+2 of 12 steps (17%) done
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000016185.1_ASM1618v1/PGCfinder
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+[Mon May 13 12:17:42 2024]
+Error in rule PGCfinder:
+    jobid: 1
+    input: data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+    output: results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder
+[Mon May 13 12:17:42 2024]
+Error in rule PGCfinder:
+    jobid: 3
+    input: data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa
+    output: results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000014045.1_ASM1404v1/GCF_000014045.1_ASM1404v1_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000014045.1_ASM1404v1/PGCfinder
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-13T121739.640419.snakemake.log

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_025141175.1_ASM2514117v1/GCF_025141175.1_ASM2514117v1_protein.faa
+# output directed to file:         results/genomes/GCF_025141175.1_ASM2514117v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.3e-93  308.5   0.1      6e-93  308.3   0.1    1.0  1  GCF_025141175.1_ASM2514117v1_634   WP_259917627.1 carotenoid 1,2-hy
+     0.0018   15.5   0.1     0.0027   14.9   0.1    1.2  1  GCF_025141175.1_ASM2514117v1_1360  WP_259919509.1 iron ABC transpor
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_025141175.1_ASM2514117v1_634  WP_259917627.1 carotenoid 1,2-hydratase [Jannaschia sp. M317]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  308.3   0.1   3.1e-96     6e-93       1     234 []       1     234 [.       1     234 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 308.3 bits;  conditional E-value: 3.1e-96
+              trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiaps 77 
+                                       mT+Rgr+al+ +++++++Gpssl+wdgd+LvididEi++p  +r++G ++vtp+a+t+ e++L+++g+h+Wrp+ap+
+  GCF_025141175.1_ASM2514117v1_634   1 MTDRGRDALRLTETSMKVGPSSLRWDGDRLVIDIDEISTPHAQRLKGSITVTPTAITDIEVPLTEDGAHVWRPLAPT 77 
+                                       9**************************************************************************** PP
+
+              trimmed_msa_crtC_hmm  78 arveveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeve 154
+                                       a +ev+l++p++ w+G+gY+D+N+G+++le+dF++W+W+R++++ g++ +Yd+ rrdgs+l++alrf+a+G+++e+e
+  GCF_025141175.1_ASM2514117v1_634  78 AAIEVDLNRPGWCWQGHGYLDANFGTRALEADFDTWSWGRFPVSGGSVAFYDAVRRDGSTLNVALRFEANGSCTEIE 154
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtC_hmm 155 appraklprtlWrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrm 231
+                                       app ++++r++W v+r+tr+dag++pr+vk++ d+PFY R ++et ++g++++ v E+L+l+r+r p++  mL++r+
+  GCF_025141175.1_ASM2514117v1_634 155 APPLQSFRRSNWLVARQTRCDAGHRPRQVKAMLDAPFYNRCAVETVIQGQKTTGVYEALDLRRFRGPWLMPMLAVRV 231
+                                       ***************************************************************************** PP
+
+              trimmed_msa_crtC_hmm 232 pRr 234
+                                       pRr
+  GCF_025141175.1_ASM2514117v1_634 232 PRR 234
+                                       **7 PP
+
+>> GCF_025141175.1_ASM2514117v1_1360  WP_259919509.1 iron ABC transporter permease [Jannaschia sp. M317]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.1   1.4e-06    0.0027      86     127 ..     192     233 ..     168     274 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.4e-06
+               trimmed_msa_crtC_hmm  86 epelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavl 127
+                                        +  ++ +Ge+++D  + ++ple d + WdW   +l+dg  ++
+  GCF_025141175.1_ASM2514117v1_1360 192 SGPVEVTGEAWLDREWSSQPLEGDQEGWDWFSLHLDDGNRLM 233
+                                        4557889****************************9996554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       3872  (1179310 residues searched)
+Passed MSV filter:                        81  (0.0209194); expected 77.4 (0.02)
+Passed bias filter:                       68  (0.017562); expected 77.4 (0.02)
+Passed Vit filter:                         6  (0.00154959); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000516529); expected 0.0 (1e-05)
+Initial search space (Z):               3872  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 7961.76
+//
+[ok]

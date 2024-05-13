@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchD.hmm
+# target sequence database:        data/genomes_unzip/GCF_000021845.1_ASM2184v1/GCF_000021845.1_ASM2184v1_protein.faa
+# output directed to file:         results/genomes/GCF_000021845.1_ASM2184v1/PGCfinder/hmmer_results/PGC_bchD.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchD_hmm  [M=580]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    8.3e-28   95.5   6.1    1.4e-26   91.5   4.7    2.0  2  GCF_000021845.1_ASM2184v1_2704  WP_015951054.1 magnesium chelata
+  ------ inclusion threshold ------
+      0.012   12.5   0.1      0.025   11.4   0.0    1.4  2  GCF_000021845.1_ASM2184v1_4500  WP_015952335.1 MoxR family ATPas
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000021845.1_ASM2184v1_2704  WP_015951054.1 magnesium chelatase ATPase subunit I [Methylorubrum extorquens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0022       6.1       4      52 ..      16      63 ..      13      69 .. 0.84
+   2 !   91.5   4.7   5.1e-30   1.4e-26      44     255 ..      88     320 ..      81     332 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0022
+            trimmed_msa_bchD_hmm  4 llaaallavdpaglgGvvlraragpvrdawlaalrellpeglplrrlpp 52
+                                     +a+ + avdp+ +gGv++ +  g  + + ++al++llp+  ++  +p 
+  GCF_000021845.1_ASM2184v1_2704 16 KRALLIAAVDPS-VGGVLVFGDRGTGKSTAVRALAALLPKIRAVAGCPY 63
+                                    567888999*97.*************************98877766665 PP
+
+  == domain 2  score: 91.5 bits;  conditional E-value: 5.1e-30
+            trimmed_msa_bchD_hmm  44 glplrrlppnisderLlGglDlaatlaagrpvaerGLLaeadggvlvlpmAERlesalaarlaaaldegavalerdgla 122
+                                      +p+  lp++ +++r +G lDl+++l++g++  e GLLa+a++g+l +  A  le++l+  l  +  +g  ++er+gl+
+  GCF_000021845.1_ASM2184v1_2704  88 PVPVVDLPLGATEDRVVGALDLERALTKGEKAFEPGLLARANRGFLYIDEANLLEDHLVDLLLDVAASGVNTVEREGLS 166
+                                     578999***************************************************************99******** PP
+
+            trimmed_msa_bchD_hmm 123 lrlearfglvaLDegleedealpeaLldRlalrldldeialr.....dleelaa.......................ea 173
+                                     lr++arf lv    g  e+ +l ++LldR +l++++++ +             +                        +
+  GCF_000021845.1_ASM2184v1_2704 167 LRHPARFVLV--GSGNPEEGELRPQLLDRFGLACEVTTPTDIatrieV-----VrrrdayerdgeafcaaqgkaekaLQ 238
+                                     ******9877..688988999999**********99874444222440.....14555566666666666666666588 PP
+
+            trimmed_msa_bchD_hmm 174 edieaararlpkvtleeealealvataaalGidslRapllalraaralAalegrteveeedlalAarlvlapratrlpe 252
+                                     ++i aar+rl +v++++++le+ + ++ alG d+lR +l  +r+aralAaleg + v+ ++l++ a   l +r  r p 
+  GCF_000021845.1_ASM2184v1_2704 239 KTILAARERLGSVSVPDAVLENAARLCLALGTDGLRGELTLMRTARALAALEGADIVSVAHLRQVAPSALRHRLRRNPL 317
+                                     99***********************************************************************999998 PP
+
+            trimmed_msa_bchD_hmm 253 eee 255
+                                     +e+
+  GCF_000021845.1_ASM2184v1_2704 318 DES 320
+                                     776 PP
+
+>> GCF_000021845.1_ASM2184v1_4500  WP_015952335.1 MoxR family ATPase [Methylorubrum extorquens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0       0.1   2.9e+02      88     114 ..     116     142 ..      34     246 .. 0.53
+   2 ?   11.4   0.0     9e-06     0.025     204     255 ..     272     323 ..     260     334 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.1
+            trimmed_msa_bchD_hmm  88 vlvlpmAERlesalaarlaaaldegav 114
+                                     v+++    R ++++ a l + + e++v
+  GCF_000021845.1_ASM2184v1_4500 116 VFFFNEINRARPQVHALLLRIMAERSV 142
+                                     444444455555555555555555533 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 9e-06
+            trimmed_msa_bchD_hmm 204 GidslRapllalraaralAalegrteveeedlalAarlvlapratrlpeeee 255
+                                     G +s R  ++ +raar+ A legr+    ed+++    v+a+r    p  e 
+  GCF_000021845.1_ASM2184v1_4500 272 GGASPRGVAFLVRAARVRAWLEGRDWLVPEDIRAVFPEVMAHRVFLEPVYEM 323
+                                     889****************************************988776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (580 nodes)
+Target sequences:                       5584  (1716637 residues searched)
+Passed MSV filter:                       517  (0.092586); expected 111.7 (0.02)
+Passed bias filter:                       91  (0.0162966); expected 111.7 (0.02)
+Passed Vit filter:                         7  (0.00125358); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000358166); expected 0.1 (1e-05)
+Initial search space (Z):               5584  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 13923.25
+//
+[ok]

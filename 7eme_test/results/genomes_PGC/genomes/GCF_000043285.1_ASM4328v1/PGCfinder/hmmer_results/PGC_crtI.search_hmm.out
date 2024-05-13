@@ -1,0 +1,56 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtI.hmm
+# target sequence database:        data/genomes_unzip/GCF_000043285.1_ASM4328v1/GCF_000043285.1_ASM4328v1_protein.faa
+# output directed to file:         results/genomes/GCF_000043285.1_ASM4328v1/PGCfinder/hmmer_results/PGC_crtI.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtI_hmm  [M=489]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+    0.00034   14.4   0.1     0.0024   11.5   0.0    2.0  2  GCF_000043285.1_ASM4328v1_144  WP_011126440.1 dihydrolipoyl deh
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000043285.1_ASM4328v1_144  WP_011126440.1 dihydrolipoyl dehydrogenase [Candidatus Blochmannia floridanus]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   4.1e-06    0.0024       3      39 ..       8      44 ..       6      48 .. 0.93
+   2 ?    0.4   0.0      0.01       5.9       3      35 ..     179     211 ..     177     213 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 4.1e-06
+           trimmed_msa_crtI_hmm  3 kavviGaGfGGlaaairlgakGyrvtvlekldapGGr 39
+                                   +++v+G+G GG +aa r +  G+++ ++e+  ++GG 
+  GCF_000043285.1_ASM4328v1_144  8 QVLVLGSGPGGYSAAFRCADLGINTILVERYPNLGGV 44
+                                   789*******************************995 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 0.01
+           trimmed_msa_crtI_hmm   3 kavviGaGfGGlaaairlgakGyrvtvleklda 35 
+                                    k ++iG+G  Gl ++   ++ G +v ++e+ d+
+  GCF_000043285.1_ASM4328v1_144 179 KLLIIGSGAIGLEMSTVYHSLGSKVDLMEASDQ 211
+                                    5689*************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (489 nodes)
+Target sequences:                        587  (194858 residues searched)
+Passed MSV filter:                        26  (0.044293); expected 11.7 (0.02)
+Passed bias filter:                       23  (0.0391823); expected 11.7 (0.02)
+Passed Vit filter:                         7  (0.011925); expected 0.6 (0.001)
+Passed Fwd filter:                         1  (0.00170358); expected 0.0 (1e-05)
+Initial search space (Z):                587  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4600.71
+//
+[ok]

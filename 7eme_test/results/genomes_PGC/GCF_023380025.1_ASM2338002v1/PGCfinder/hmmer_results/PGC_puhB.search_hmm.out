@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_023380025.1_ASM2338002v1/GCF_023380025.1_ASM2338002v1_protein.faa
+# output directed to file:         results/genomes/GCF_023380025.1_ASM2338002v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    5.6e-76  252.0   2.4      7e-76  251.7   2.4    1.0  1  GCF_023380025.1_ASM2338002v1_2693  WP_249503745.1 photosynthetic co
+    5.9e-05   19.9   0.1    5.9e-05   19.9   0.1    2.1  3  GCF_023380025.1_ASM2338002v1_1601  WP_249454245.1 PH domain-contain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_023380025.1_ASM2338002v1_2693  WP_249503745.1 photosynthetic complex putative assembly protein PuhB [Sphingomonas
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  251.7   2.4   5.1e-79     7e-76       6     211 ..       7     203 ..       3     206 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 251.7 bits;  conditional E-value: 5.1e-79
+               trimmed_msa_puhB_hmm   6 epvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaava 81 
+                                        ++++glP++lP+gE i+WqGrPd+ +l++eafh+r+va+Yf+vl ++ +l++         ++++a+l++ ++a++
+  GCF_023380025.1_ASM2338002v1_2693   7 DQLNGLPAPLPPGEAIVWQGRPDAGRLLQEAFHARAVAFYFVVLSAAGLLMG---------SVTGALLTVGAGAIC 73 
+                                        6889************************************************.........8999*********** PP
+
+               trimmed_msa_puhB_hmm  82 lallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPh 157
+                                        l++la+la +sart+vYt+T+rR+vlr+G+aL++++nlP+kq+e+adl+l +dgsgdial+l+g+ r++++llWPh
+  GCF_023380025.1_ASM2338002v1_2693  74 LGVLAMLARASARTSVYTLTDRRLVLRVGMALPMHFNLPLKQVEAADLRLAADGSGDIALRLAGNGRIAWALLWPH 149
+                                        **************************************************************************** PP
+
+               trimmed_msa_puhB_hmm 158 vRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaeaaaaepaeaaaa 211
+                                        vRpwr+++pePmLr++pdae+vA+lL++++aa  ++ea+a++ ++a+p ++ a+
+  GCF_023380025.1_ASM2338002v1_2693 150 VRPWRTRNPEPMLRAVPDAETVARLLHQCCAALVEVEADAPAPVQARPVRRPAR 203
+                                        ******************************************999999888765 PP
+
+>> GCF_023380025.1_ASM2338002v1_1601  WP_249454245.1 PH domain-containing protein [Sphingomonas sp. S8-45]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.32   4.5e+02      94     128 ..      71     105 ..      30     111 .. 0.49
+   2 ?   -2.5   0.2       0.3   4.1e+02      65      95 ..     235     265 ..     224     267 .. 0.71
+   3 !   19.9   0.1   4.2e-08   5.9e-05      76     132 ..     413     469 ..     368     487 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.32
+               trimmed_msa_puhB_hmm  94 rttvYtiTnrRvvlriGiaLsvtlnlPfkqiesad 128
+                                        r   + + +  + +  Gi      ++Pf ++++++
+  GCF_023380025.1_ASM2338002v1_1601  71 RRFSFRVGSDAIRIDSGILSRNQRTIPFDRVADVS 105
+                                        33334444444444455555555566666666665 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.3
+               trimmed_msa_puhB_hmm  65 sealasaalllalaavalallallawlsart 95 
+                                        +  l++  + la+a v + +la++a+ + rt
+  GCF_023380025.1_ASM2338002v1_1601 235 GGWLLAHRIGLAVAGVLVLVLAGMATGVVRT 265
+                                        5555666667778888888888888888887 PP
+
+  == domain 3  score: 19.9 bits;  conditional E-value: 4.2e-08
+               trimmed_msa_puhB_hmm  76 alaavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklr 132
+                                        a+a++++ ll ll w+  r t Y + + R+++r G     tl +P+++++s+ lk+ 
+  GCF_023380025.1_ASM2338002v1_1601 413 AIAVAVFLLLGLLRWFEWRHTAYALEDGRLLVRTGWWSRRTLLIPLRNVQSVTLKES 469
+                                        455566677888899999************************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       2783  (876630 residues searched)
+Passed MSV filter:                       175  (0.0628818); expected 55.7 (0.02)
+Passed bias filter:                       91  (0.0326985); expected 55.7 (0.02)
+Passed Vit filter:                         7  (0.00251527); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000718649); expected 0.0 (1e-05)
+Initial search space (Z):               2783  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7267.68
+//
+[ok]

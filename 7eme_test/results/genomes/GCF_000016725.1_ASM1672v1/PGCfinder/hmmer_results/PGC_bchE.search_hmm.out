@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchE.hmm
+# target sequence database:        data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa
+# output directed to file:         results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder/hmmer_results/PGC_bchE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_bchE  [M=365]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.7e-06   24.8   0.0    2.6e-06   24.2   0.0    1.2  1  GCF_000016725.1_ASM1672v1_1029  WP_011941929.1 peptide chain rel
+    3.6e-05   20.5   4.0    0.00012   18.8   4.0    1.8  1  GCF_000016725.1_ASM1672v1_2873  WP_012040361.1 methyltransferase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000016725.1_ASM1672v1_1029  WP_011941929.1 peptide chain release factor N(5)-glutamine methyltransferase [Acidiph
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.0   1.4e-09   2.6e-06     194     267 ..     107     180 ..      91     181 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 1.4e-09
+                    trimmed_bchE 194 lkrhrrllDvGGGeGaFlaavaarapkl.klklfDlpaVaerararleaaglsdrvevagGsflkdplPegaDli 267
+                                      ++ r++lD+G G+Ga l a+ a++p+   + +  +pa  + ara+ +++gl++r+++ +G++  d+l + +Dli
+  GCF_000016725.1_ASM1672v1_1029 107 RRKIRTILDLGTGTGALLLAALAEYPDAfGIGIDRVPAACALARANAARTGLAARAAFCCGDWA-DALAARFDLI 180
+                                     56789*********************8725666669**************************96.7888888876 PP
+
+>> GCF_000016725.1_ASM1672v1_2873  WP_012040361.1 methyltransferase domain-containing protein [Acidiphilium cryptum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   4.0   6.4e-08   0.00012     191     303 ..      34     142 ..       2     188 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 6.4e-08
+                    trimmed_bchE 191 aydlkrhrrllDvGGGeGaFlaavaarapklklklfDlpaVaerararleaaglsdrvevagGsflk.dplPegaDlis 268
+                                      + l+   ++lD+G+G+Ga + + aa  +++  +  D  +    a a+ eaa     +e++ G   +  +lP+  D + 
+  GCF_000016725.1_ASM1672v1_2873  34 RVGLAAGMTVLDIGAGTGALALEYAALGARVLAMDPDSAS---LAYAAAEAARRGLALETIVGRAEAlAALPAAPDRVM 109
+                                     566777889**********988877776666555545444...444444444444445556565543278********* PP
+
+                    trimmed_bchE 269 LvRvlhDHdDeavlkllrkvraaLppggrLliaEp 303
+                                     L   lh  +++++   lr++r+a++pgg L+iaE 
+  GCF_000016725.1_ASM1672v1_2873 110 LTDALHHMQEKDA--ALRAIRTAMKPGGALFIAEY 142
+                                     *****97766665..59****************94 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (365 nodes)
+Target sequences:                       3616  (1174819 residues searched)
+Passed MSV filter:                       217  (0.0600111); expected 72.3 (0.02)
+Passed bias filter:                      121  (0.0334624); expected 72.3 (0.02)
+Passed Vit filter:                        17  (0.00470133); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000553097); expected 0.0 (1e-05)
+Initial search space (Z):               3616  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 16013.60
+//
+[ok]

@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_bchL.hmm
+# target sequence database:        data/genomes_unzip/GCF_000193495.2_ASM19349v2/GCF_000193495.2_ASM19349v2_protein.faa
+# output directed to file:         results/genomes/GCF_000193495.2_ASM19349v2/PGCfinder/hmmer_results/PGC_bchL.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchL_hmm  [M=285]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    1.1e-07   29.0   0.5    7.5e-05   19.7   0.2    2.2  2  GCF_000193495.2_ASM19349v2_121   WP_010668303.1 septum site-deter
+      2e-06   24.8   0.1    3.3e-06   24.2   0.1    1.3  1  GCF_000193495.2_ASM19349v2_2045  WP_026200085.1 AAA family ATPase
+     0.0031   14.4   0.0     0.0046   13.8   0.0    1.2  1  GCF_000193495.2_ASM19349v2_1563  WP_010667603.1 Mrp/NBP35 family 
+  ------ inclusion threshold ------
+      0.017   12.0   0.0      0.024   11.5   0.0    1.2  1  GCF_000193495.2_ASM19349v2_1813  WP_018308125.1 MULTISPECIES: AAA
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000193495.2_ASM19349v2_121  WP_010668303.1 septum site-determining protein MinD [Acetobacter aceti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.2   9.1e-08   7.5e-05      20      57 ..       2      40 ..       1      66 [. 0.85
+   2 !    7.7   0.0   0.00041      0.34     139     186 ..     116     162 ..     103     172 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 9.1e-08
+            trimmed_msa_bchL_hmm 20 akvfav.ygkggigksttssnlsvafsklgkrvlqigcd 57
+                                    a+v+ v  gkgg+gk+tt++ l +a++k gk v+ +  d
+  GCF_000193495.2_ASM19349v2_121  2 AQVLVVtSGKGGVGKTTTTAALGAALAKTGKSVVVVDFD 40
+                                    566655269************************988766 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00041
+            trimmed_msa_bchL_hmm 139 vifdvlgdvvcggfaaplqhadralivaandfdsifamnrivaaikak 186
+                                     v+ d    +  g     + had+a+iv+  +  s+   +ri+  +++ 
+  GCF_000193495.2_ASM19349v2_121 116 VVCDSPAGIERG-AQLAMAHADQAVIVTNPEVSSVRDSDRIIGMLDST 162
+                                     555544444433.344689**********************9887655 PP
+
+>> GCF_000193495.2_ASM19349v2_2045  WP_026200085.1 AAA family ATPase [Acetobacter aceti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.1     4e-09   3.3e-06      27      62 ..       8      43 ..       2      50 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 4e-09
+             trimmed_msa_bchL_hmm 27 gkggigksttssnlsvafsklgkrvlqigcdpkhds 62
+                                      kgg+gk+tt+ nl++a+++ g+rv+ i  dp+ ++
+  GCF_000193495.2_ASM19349v2_2045  8 QKGGVGKTTTAINLAAALAQSGQRVVLIDLDPQGNA 43
+                                     69******************************8764 PP
+
+>> GCF_000193495.2_ASM19349v2_1563  WP_010667603.1 Mrp/NBP35 family ATP-binding protein [Acetobacter aceti]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   5.6e-06    0.0046      22      51 ..     122     152 ..     111     163 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 5.6e-06
+             trimmed_msa_bchL_hmm  22 vfav.ygkggigksttssnlsvafsklgkrv 51 
+                                      v+av  gkgg+gkstt+ nl++ ++  g  v
+  GCF_000193495.2_ASM19349v2_1563 122 VIAVsSGKGGVGKSTTAVNLAAGLALEGLSV 152
+                                      5666359**************9998777555 PP
+
+>> GCF_000193495.2_ASM19349v2_1813  WP_018308125.1 MULTISPECIES: AAA family ATPase [Acetobacteraceae]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   2.9e-05     0.024      26      59 ..       7      40 ..       2      62 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.9e-05
+             trimmed_msa_bchL_hmm 26 ygkggigksttssnlsvafsklgkrvlqigcdpk 59
+                                       kgg+gk+t +  l+  +++ g+rv  i  dp+
+  GCF_000193495.2_ASM19349v2_1813  7 NQKGGVGKTTLALHLAGQWAREGRRVTVIDADPQ 40
+                                     569******************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (285 nodes)
+Target sequences:                       3278  (1059558 residues searched)
+Passed MSV filter:                        91  (0.0277608); expected 65.6 (0.02)
+Passed bias filter:                       88  (0.0268456); expected 65.6 (0.02)
+Passed Vit filter:                        17  (0.00518609); expected 3.3 (0.001)
+Passed Fwd filter:                         4  (0.00122026); expected 0.0 (1e-05)
+Initial search space (Z):               3278  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10340.50
+//
+[ok]

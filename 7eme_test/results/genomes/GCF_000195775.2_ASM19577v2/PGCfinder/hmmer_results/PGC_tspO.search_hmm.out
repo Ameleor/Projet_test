@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_000195775.2_ASM19577v2/GCF_000195775.2_ASM19577v2_protein.faa
+# output directed to file:         results/genomes/GCF_000195775.2_ASM19577v2/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+    2.1e-58  194.7  22.3    2.3e-58  194.6  22.3    1.0  1  GCF_000195775.2_ASM19577v2_1562  WP_011157094.1 TspO/MBR family p
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000195775.2_ASM19577v2_1562  WP_011157094.1 TspO/MBR family protein [Rhodopseudomonas palustris]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.6  22.3   4.7e-62   2.3e-58       2     152 .]       4     154 .]       3     154 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 194.6 bits;  conditional E-value: 4.7e-62
+             trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfaln 79 
+                                      ++vaa++a++v++lgg lt++g+wy+sL kP+w+PPdwaFg++Wtvi+al+a++av+awr a+++a++++++ lfa n
+  GCF_000195775.2_ASM19577v2_1562   4 IFVAAAVAIFVGLLGGSLTDTGTWYQSLVKPWWQPPDWAFGPAWTVIFALAAMSAVYAWRGARTRAQRDWVIGLFAAN 81 
+                                      799*************************************************************************** PP
+
+             trimmed_msa_tspO_hmm  80 avlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNppf 152
+                                      +++n+lWs+lfF++rr+dwal+ev lLWlsvla ++v+wr +++a+ +llPYlvWv++Aa+LN++vv lN+pf
+  GCF_000195775.2_ASM19577v2_1562  82 GFFNVLWSMLFFTVRRPDWALLEVPLLWLSVLAGVVVFWRSARTASYYLLPYLVWVTFAAYLNWTVVALNTPF 154
+                                      **********************************************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4934  (1581005 residues searched)
+Passed MSV filter:                       236  (0.0478314); expected 98.7 (0.02)
+Passed bias filter:                       92  (0.0186461); expected 98.7 (0.02)
+Passed Vit filter:                         9  (0.00182408); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000405351); expected 0.0 (1e-05)
+Initial search space (Z):               4934  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 14926.99
+//
+[ok]

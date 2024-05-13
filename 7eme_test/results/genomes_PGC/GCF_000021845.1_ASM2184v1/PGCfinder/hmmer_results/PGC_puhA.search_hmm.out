@@ -1,0 +1,103 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_000021845.1_ASM2184v1/GCF_000021845.1_ASM2184v1_protein.faa
+# output directed to file:         results/genomes/GCF_000021845.1_ASM2184v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+   6.6e-105  348.3   0.0   7.4e-105  348.1   0.0    1.0  1  GCF_000021845.1_ASM2184v1_5259  WP_015952887.1 photosynthetic re
+  ------ inclusion threshold ------
+      0.016   12.8   0.5      0.043   11.5   0.1    1.7  2  GCF_000021845.1_ASM2184v1_3058  WP_015951299.1 PRC-barrel domain
+      0.043   11.5   0.0      0.049   11.3   0.0    1.0  1  GCF_000021845.1_ASM2184v1_1226  WP_015950041.1 PRC-barrel domain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000021845.1_ASM2184v1_5259  WP_015952887.1 photosynthetic reaction center subunit H [Methylorubrum extorquens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  348.1   0.0    4e-108  7.4e-105       2     252 .]       5     256 ..       4     256 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 348.1 bits;  conditional E-value: 4e-108
+            trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphggtvtaPskeree.e 79 
+                                     ++tg++Dvaq++lyafw+ffagLv+ylrredrrEGyPle+e+ g+ k+ +++ +p+pk+f+l++g+t++aP+++ +  +
+  GCF_000021845.1_ASM2184v1_5259   5 EITGYIDVAQVTLYAFWIFFAGLVFYLRREDRREGYPLENEAAGRLKSPDPILIPTPKAFHLSSGHTMYAPQTNIAYdT 83 
+                                     799**********************************************************************998779 PP
+
+            trimmed_msa_puhA_hmm  80 dlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgkva 158
+                                     ++++++ + ++GaP+ +t+++l +gvGp++++ R+de+d t+d+e rivPlrva+ f v+e+ p+p+G++v+gaD++va
+  GCF_000021845.1_ASM2184v1_5259  84 HVPSARREVFPGAPYFRTDTSLRAGVGPGSWVPRHDEHDRTWDNEYRIVPLRVADAFVVHEDGPNPIGMPVFGADRQVA 162
+                                     9****************************************************************************** PP
+
+            trimmed_msa_puhA_hmm 159 GtvsdlWvDrsealiRYleveleaggrkvllPmtlakikkkkkkvkveailaeqfaevPklkspdqvTllEEdkivaYy 237
+                                     Gtv+dlW+Dr e+++RY+evel+aggr+vl+P+t+++  + +++vk+ea+laeqfa++P +k+pd+vTl+EE++i+aY+
+  GCF_000021845.1_ASM2184v1_5259 163 GTVVDLWLDRGESFVRYYEVELSAGGRRVLMPVTFCTTGRFSRTVKTEALLAEQFADIPGTKDPDSVTLREEERIMAYF 241
+                                     ******************************************************************************* PP
+
+            trimmed_msa_puhA_hmm 238 ggGtlYatperqepl 252
+                                     g+GtlYa+p+rqep+
+  GCF_000021845.1_ASM2184v1_5259 242 GAGTLYASPARQEPI 256
+                                     *************95 PP
+
+>> GCF_000021845.1_ASM2184v1_3058  WP_015951299.1 PRC-barrel domain-containing protein [Methylorubrum extorquens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.1   2.3e-05     0.043     143     169 ..      53      79 ..      43     104 .. 0.90
+   2 ?   -1.1   0.0      0.16   2.9e+02      64      96 ..     117     150 ..     110     156 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.3e-05
+            trimmed_msa_puhA_hmm 143 pdprGlkvvgaDgkvaGtvsdlWvDrs 169
+                                     +  +G++vvgaD+  +G+++d+ vD +
+  GCF_000021845.1_ASM2184v1_3058  53 SKVIGVAVVGADHVRVGKIEDVLVDGT 79 
+                                     6789********************965 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.16
+            trimmed_msa_puhA_hmm  64 phg.gtvtaPskereeedlaakktakaeGaPlep 96 
+                                     + g ++v++P+++ +e+++ ++++++++G+ ++p
+  GCF_000021845.1_ASM2184v1_3058 117 TGGtSSVVTPDNAPSEKAADKASAETMPGSNVSP 150
+                                     5555778999999999999999999999998877 PP
+
+>> GCF_000021845.1_ASM2184v1_1226  WP_015950041.1 PRC-barrel domain-containing protein [Methylorubrum extorquens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   2.7e-05     0.049     145     239 ..      20     119 ..      11     121 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 2.7e-05
+            trimmed_msa_puhA_hmm 145 prGlkvvgaDgkvaGtvsdlWvDrsealiRYlevele....aggrkvllPmtlakikkkkkkvkveailaeqfaevPkl 219
+                                       G++v++a gk++G ++ l +++ +  + Y   + +    +++++  +P ++ + +   +    + i+ eq++++P+ 
+  GCF_000021845.1_ASM2184v1_1226  20 VEGTAVYDANGKQIGIIKRLVIEKVNGNVAYAVTSFRkfigGSSDSHTIPWNYLHYDLGLQG-YRTNITEEQLHNAPEF 97 
+                                     6799***************************9999887877788999*********755555.5578**********98 PP
+
+            trimmed_msa_puhA_hmm 220 kspdq..vTllEEdkivaYygg 239
+                                     +++d   +   E + ++ Yy+g
+  GCF_000021845.1_ASM2184v1_1226  98 SRRDDhlISGQEWELLAEYYAG 119
+                                     7665333888999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       5584  (1716637 residues searched)
+Passed MSV filter:                        93  (0.0166547); expected 111.7 (0.02)
+Passed bias filter:                       88  (0.0157593); expected 111.7 (0.02)
+Passed Vit filter:                         5  (0.000895415); expected 5.6 (0.001)
+Passed Fwd filter:                         3  (0.000537249); expected 0.1 (1e-05)
+Initial search space (Z):               5584  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 11981.61
+//
+[ok]

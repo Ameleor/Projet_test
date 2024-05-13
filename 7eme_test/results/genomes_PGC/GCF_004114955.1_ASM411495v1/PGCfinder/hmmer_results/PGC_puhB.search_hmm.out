@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_004114955.1_ASM411495v1/GCF_004114955.1_ASM411495v1_protein.faa
+# output directed to file:         results/genomes/GCF_004114955.1_ASM411495v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    3.1e-71  237.9   1.5    3.9e-71  237.6   1.5    1.0  1  GCF_004114955.1_ASM411495v1_534   WP_128949168.1 photosynthetic co
+    5.5e-07   27.9   0.3    6.5e-07   27.7   0.3    1.1  1  GCF_004114955.1_ASM411495v1_733   WP_128949341.1 PH domain-contain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_004114955.1_ASM411495v1_534  WP_128949168.1 photosynthetic complex putative assembly protein PuhB [Bradyrhizobium
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  237.6   1.5   1.1e-74   3.9e-71      14     202 ..      12     200 ..       7     213 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 237.6 bits;  conditional E-value: 1.1e-74
+             trimmed_msa_puhB_hmm  14 klPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawl 91 
+                                      +lP gE+++WqGrPd++ala ++fhvrlva+Yfa+l+ +r++++++d ++l +a+++aa l++  a+++ ll++la+l
+  GCF_004114955.1_ASM411495v1_534  12 DLPRGESLVWQGRPDARALALRVFHVRLVAIYFALLFGVRIAMGISDRQPLFDAAVAAARLAIPFAAVMILLVGLAIL 89 
+                                      69**************************************************************************** PP
+
+             trimmed_msa_puhB_hmm  92 sarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPhvRpwrlarpePm 169
+                                       +rtt Y +TnrRv+l++G++L++tln+Pf+qi++a++k++ dgsgd+++++ +e+rl++lllWPhvRpwrl+++ePm
+  GCF_004114955.1_ASM411495v1_534  90 YSRTTRYSVTNRRVLLQFGAVLPMTLNIPFRQIANAAVKEYPDGSGDLPIAVVSERRLAFLLLWPHVRPWRLSKVEPM 167
+                                      ****************************************************************************** PP
+
+             trimmed_msa_puhB_hmm 170 LrcipdaekvAelLaealaaaaaaeaeaaeaaa 202
+                                      Lrc+pda+ vA+lL++al++++ a++   +a+ 
+  GCF_004114955.1_ASM411495v1_534 168 LRCVPDARGVANLLSKALTSSSPAPEPVMAAMP 200
+                                      ********************9999988777743 PP
+
+>> GCF_004114955.1_ASM411495v1_733  WP_128949341.1 PH domain-containing protein [Bradyrhizobium guangzhouense]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.7   0.3   1.7e-10   6.5e-07      43     133 ..      24     117 ..      11     139 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 27.7 bits;  conditional E-value: 1.7e-10
+             trimmed_msa_puhB_hmm  43 alYfavlllwrvlaaladgeslsealasaalll.alaavalall..allawlsarttvYtiTnrRvvlriGiaLsvtl 117
+                                      + Yf ++l+w v+  l   +  s+++  ++l+l   ++vala l  +l +w+ + tt   +Tn Rvv ++G +   t+
+  GCF_004114955.1_ASM411495v1_733  24 IYYFPAILAWIVAIVLFAVSRRSDIYSIMILCLfGSGLVALAALywTLRGWFHRLTTETDVTNLRVVHKVGFIKRRTF 101
+                                      479999999999999777766666665544443144566666661145699999999999****************** PP
+
+             trimmed_msa_puhB_hmm 118 nlPfkqiesadlklrk 133
+                                       + + ++es+d++++ 
+  GCF_004114955.1_ASM411495v1_733 102 EMALDKVESVDVNQTI 117
+                                      ***********99864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       7453  (2318852 residues searched)
+Passed MSV filter:                       483  (0.0648061); expected 149.1 (0.02)
+Passed bias filter:                      265  (0.0355562); expected 149.1 (0.02)
+Passed Vit filter:                        20  (0.00268348); expected 7.5 (0.001)
+Passed Fwd filter:                         3  (0.000402522); expected 0.1 (1e-05)
+Initial search space (Z):               7453  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11014.43
+//
+[ok]

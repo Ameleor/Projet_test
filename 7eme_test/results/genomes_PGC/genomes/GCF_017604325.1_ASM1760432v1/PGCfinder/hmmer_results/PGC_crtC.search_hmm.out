@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/.macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_017604325.1_ASM1760432v1/GCF_017604325.1_ASM1760432v1_protein.faa
+# output directed to file:         results/genomes/GCF_017604325.1_ASM1760432v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+      1e-06   26.6   0.2    1.6e-06   26.0   0.2    1.2  1  GCF_017604325.1_ASM1760432v1_3679  WP_055136800.1 lipocalin-like do
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_017604325.1_ASM1760432v1_3679  WP_055136800.1 lipocalin-like domain-containing protein [Pseudomonas corrugata]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.0   0.2   2.9e-10   1.6e-06      82     157 ..     210     286 ..     194     302 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 26.0 bits;  conditional E-value: 2.9e-10
+               trimmed_msa_crtC_hmm  82 veldepelswkGegYfDsNeGdepleedFseWdWsRaelkdg.aavlYdverrdgselalalrfdadGeveeveap 156
+                                        +e+d  + + +G +++D  + ++pl+++ + WdW   +l++g  ++lY ++++dg+   +++ +da+G+++ ++a+
+  GCF_017604325.1_ASM1760432v1_3679 210 LEIDGQRYTVSGPAWLDREWSSQPLTANQTGWDWFSLHLDSGeQVMLYRMRHKDGAPYLTGTWIDARGQAQPLHAA 285
+                                        56777888899****************************9998999***********************9988766 PP
+
+               trimmed_msa_crtC_hmm 157 p 157
+                                         
+  GCF_017604325.1_ASM1760432v1_3679 286 D 286
+                                        5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       5480  (1844941 residues searched)
+Passed MSV filter:                       135  (0.024635); expected 109.6 (0.02)
+Passed bias filter:                      103  (0.0187956); expected 109.6 (0.02)
+Passed Vit filter:                        10  (0.00182482); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000182482); expected 0.1 (1e-05)
+Initial search space (Z):               5480  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 11257.35
+//
+[ok]
