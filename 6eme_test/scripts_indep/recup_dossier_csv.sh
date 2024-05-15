@@ -4,7 +4,7 @@
 awk -F ',' '{
     # Vérifie si la colonne 20 contient des caractères
     if ($20 != "") {
-        # Divise la colonne 3 par "/" et extrait la partie après le "/"
+        # Divise la colonne 15 par "/" et extrait la partie après le "/"
         n = split($15, parts, "/")
         if (n > 1) {
             print parts[2]  # Affiche la partie après le "/"
