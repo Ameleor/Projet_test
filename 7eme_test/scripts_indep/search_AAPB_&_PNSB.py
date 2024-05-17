@@ -14,7 +14,7 @@ output_file = "../results/files/data_supp.txt"
 def extract_column(sheet):
     column_data = []
     for row in sheet.iter_rows():
-        if row[4].value and str(row[4].value).startswith("GCA"):
+        if row[4].value and str(row[4].value).startswith("GC"):
             column_data.append(row[4].value)
     return column_data
 
