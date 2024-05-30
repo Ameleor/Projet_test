@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_bchX.hmm
+# target sequence database:        data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+# output directed to file:         results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder/hmmer_results/PGC_bchX.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_bchX_hmm  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+    5.2e-06   21.3   0.1    2.6e-05   19.0   0.0    1.9  2  GCF_000012565.1_ASM1256v1_894  WP_011304996.1 signal recognitio
+    0.00016   16.4   0.0    0.00022   15.9   0.0    1.2  1  GCF_000012565.1_ASM1256v1_933  WP_011305032.1 AAA family ATPase
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000012565.1_ASM1256v1_894  WP_011304996.1 signal recognition particle-docking protein FtsY [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.0   5.5e-08   2.6e-05      18      61 ..     101     144 ..      84     168 .. 0.85
+   2 ?   -0.4   0.0     0.044        21     190     214 ..     242     266 ..     231     296 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 5.5e-08
+           trimmed_msa_bchX_hmm  18 vtketqiiaiygkggigksftlanlsymlaqqgkkvlligcdpk 61 
+                                    ++++  +i i g  g gk+ t+ +l++ + ++gkkvl+  cd  
+  GCF_000012565.1_ASM1256v1_894 101 INNKPHVIMICGTNGNGKTTTIGKLAHKFKNEGKKVLVAACDTF 144
+                                    5677899***********************************74 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.044
+           trimmed_msa_bchX_hmm 190 yfrklggnvgvaglvinkddgtgea 214
+                                        +   v ++gl++ k dgt + 
+  GCF_000012565.1_ASM1256v1_894 242 QVEAFSQFVNISGLIMTKLDGTAKG 266
+                                    444445568999********99765 PP
+
+>> GCF_000012565.1_ASM1256v1_933  WP_011305032.1 AAA family ATPase [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.0   4.8e-07   0.00022      25      65 ..       5      46 ..       1      63 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 4.8e-07
+           trimmed_msa_bchX_hmm 25 iai.ygkggigksftlanlsymlaqqgkkvlligcdpksdtt 65
+                                    ai   kgg+gk+ t  nls  ++   kk lli  dp+ +++
+  GCF_000012565.1_ASM1256v1_933  5 FAIvNQKGGVGKTTTSINLSTAFSIVNKKTLLIDLDPQGNSS 46
+                                   5551579******************************98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                        940  (315229 residues searched)
+Passed MSV filter:                        25  (0.0265957); expected 18.8 (0.02)
+Passed bias filter:                       19  (0.0202128); expected 18.8 (0.02)
+Passed Vit filter:                         4  (0.00425532); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00212766); expected 0.0 (1e-05)
+Initial search space (Z):                940  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17733.39
+//
+[ok]

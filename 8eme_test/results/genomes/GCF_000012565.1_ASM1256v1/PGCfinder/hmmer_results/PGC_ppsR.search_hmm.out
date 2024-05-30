@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_ppsR.hmm
+# target sequence database:        data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+# output directed to file:         results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder/hmmer_results/PGC_ppsR.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_ppsR_hmm  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+    0.00013   16.9   0.0     0.0083   10.9   0.0    2.9  3  GCF_000012565.1_ASM1256v1_324  WP_011304441.1 response regulato
+     0.0013   13.6   0.1     0.0017   13.2   0.1    1.2  1  GCF_000012565.1_ASM1256v1_664  WP_011304772.1 diguanylate cycla
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000012565.1_ASM1256v1_324  WP_011304441.1 response regulator [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   1.8e-05    0.0083     258     312 ..     217     269 ..     204     283 .. 0.86
+   2 ?    0.9   0.0     0.019         9     257     294 ..     321     358 ..     277     365 .. 0.77
+   3 ?    1.5   0.0     0.013       5.9     162     269 ..     344     444 ..     328     471 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.8e-05
+           trimmed_msa_ppsR_hmm 258 eakllevleklpdalvvtdaegrilsaNeaflelaqlaseeqvrgrsLerwLgra 312
+                                    e+ + ++++k   +  + +++g ilsaN++fl++ +l+s e+  g++L+++L ++
+  GCF_000012565.1_ASM1256v1_324 217 EQVYERLIQKHCVGAYLLNHRGVILSANDSFLKMLELNSIEN--GTTLTNFLVKG 269
+                                    566677888888899999********************9985..99999999875 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.019
+           trimmed_msa_ppsR_hmm 257 aeakllevleklpdalvvtdaegrilsaNeaflelaql 294
+                                     + +l  +++++p a++ ++++g+il+ N++  +l++ 
+  GCF_000012565.1_ASM1256v1_324 321 LNYHLHPCFTEAPIAILQCSTDGKILKSNNTLKRLVKH 358
+                                    45678889999******************998888765 PP
+
+  == domain 3  score: 1.5 bits;  conditional E-value: 0.013
+           trimmed_msa_ppsR_hmm 162 riveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeeievrlarkgrevsvsaslfrqegesllL 241
+                                    +i+  N++ +rL++++++ + +  +      + ++++++++++   ++   ++e++l  ++  v+++ + f ++++ +++
+  GCF_000012565.1_ASM1256v1_324 344 KILKSNNTLKRLVKHSKDYIFEYIL-----PSYNKKIKKYFQNNIVKN--MSLEAQL-YNNLYVKIHFNKFIHQNNMFII 415
+                                    5555555555555554443333222.....222333333333322222..2233333.2345678888888888888888 PP
+
+           trimmed_msa_ppsR_hmm 242 vrlspaeaaaa.aaeeaeakllevleklp 269
+                                    + ++ +e++++ + + ++++ ++++ +l+
+  GCF_000012565.1_ASM1256v1_324 416 CYITDSEDRKNlEIQLEQSQKMQAIGQLA 444
+                                    88888888888766666677777776665 PP
+
+>> GCF_000012565.1_ASM1256v1_664  WP_011304772.1 diguanylate cyclase [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   3.6e-06    0.0017     159     214 ..      24      79 ..       5     143 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 3.6e-06
+           trimmed_msa_ppsR_hmm 159 esrriveaNpaAarLlgeeakelvgksfaelfeaesreelqallaavrasgeaeei 214
+                                    ++  i ++N++A++Ll+ +a+el++k++++ ++++ +e+++++l+  +  ++  +i
+  GCF_000012565.1_ASM1256v1_664  24 QNLMISNLNESAETLLEYKAAELTNKPLSTILHKNVTENINNYLEYSSDGTDLFDI 79 
+                                    567899**************************************987776654443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                        940  (315229 residues searched)
+Passed MSV filter:                        30  (0.0319149); expected 18.8 (0.02)
+Passed bias filter:                       16  (0.0170213); expected 18.8 (0.02)
+Passed Vit filter:                         4  (0.00425532); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00212766); expected 0.0 (1e-05)
+Initial search space (Z):                940  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 6969.39
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_000225955.1_ASM22595v1/GCF_000225955.1_ASM22595v1_protein.faa
+# output directed to file:         results/genomes/GCF_000225955.1_ASM22595v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                        -----------
+      3e-96  319.4   0.0    3.4e-96  319.2   0.0    1.0  1  GCF_000225955.1_ASM22595v1_627   WP_011388375.1 photosynthetic re
+  ------ inclusion threshold ------
+      0.059   10.5   1.3        0.1    9.7   1.3    1.3  1  GCF_000225955.1_ASM22595v1_3382  WP_011391074.1 hypothetical prot
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000225955.1_ASM22595v1_627  WP_011388375.1 photosynthetic reaction center subunit H [Rhodospirillum rubrum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  319.2   0.0   1.8e-99   3.4e-96       2     245 ..       5     255 ..       4     257 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 319.2 bits;  conditional E-value: 1.8e-99
+            trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetge....ekaegllevpepktfklphggtvtaPsker 76 
+                                      +tg++Dvaq+vlyafw+ffagL++ylrredrrEGyPled  +g+    +   +++++++pk+fkl++g t  aP+ +r
+  GCF_000225955.1_ASM22595v1_627   5 DITGYMDVAQVVLYAFWIFFAGLIIYLRREDRREGYPLEDAISGKinslQGLGSVFSIARPKIFKLKTGATYAAPNFKR 83 
+                                     689**************************************9999643334457899********************** PP
+
+            trimmed_msa_puhA_hmm  77 eeedlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDg 155
+                                     +  +++a++ta+++GaP+eptgnp++d+vGpaaya R++ pdlt+ g++ ivPlrva +fsva+ed+dprGl+vv+  g
+  GCF_000225955.1_ASM22595v1_627  84 DAVAIKATRTAPTAGAPFEPTGNPMTDAVGPAAYALRDELPDLTLGGQPAIVPLRVAPTFSVAAEDTDPRGLPVVDRKG 162
+                                     ******************************************************************************* PP
+
+            trimmed_msa_puhA_hmm 156 kvaGtvsdlWvDrsealiRYlevele.aggrkvllPmtlaki..kkkkkkvkveailaeqfaevPklkspdqvTllEEd 231
+                                     +vaG+v+dlW+Dr+   iRYlevel+ + grkvllP++ ++i  k+k+k+v+v++ila++fa+vP++++ d++T++EEd
+  GCF_000225955.1_ASM22595v1_627 163 AVAGKVTDLWIDRASIAIRYLEVELAaTPGRKVLLPFAATRInaKTKSKTVTVQSILARHFANVPTIAKTDSITRREED 241
+                                     *************************98899**********9955567899***************************** PP
+
+            trimmed_msa_puhA_hmm 232 kivaYyggGtlYat 245
+                                     k++aYy++G+lY++
+  GCF_000225955.1_ASM22595v1_627 242 KVMAYYSSGYLYSD 255
+                                     ************97 PP
+
+>> GCF_000225955.1_ASM22595v1_3382  WP_011391074.1 hypothetical protein [Rhodospirillum rubrum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   1.3   5.4e-05       0.1      88     112 ..     239     264 ..     189     271 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 5.4e-05
+             trimmed_msa_puhA_hmm  88 kaeG.aPleptgnplldgvGpaayae 112
+                                       +eG +P +p g+p++ g+Gp++ ++
+  GCF_000225955.1_ASM22595v1_3382 239 GIEGmTPGAPAGDPMTGGIGPGSTVS 264
+                                      555535999*************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       3819  (1273282 residues searched)
+Passed MSV filter:                        75  (0.0196386); expected 76.4 (0.02)
+Passed bias filter:                       72  (0.0188531); expected 76.4 (0.02)
+Passed Vit filter:                         9  (0.00235664); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000523697); expected 0.0 (1e-05)
+Initial search space (Z):               3819  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 16982.79
+//
+[ok]
