@@ -6,6 +6,4 @@ Le but de cet essais est de réussir à comprendre le fonctionnement des wildcar
 
 ##Résultat:
 
-###1:
-
-Pour l'instant la technique ne fonctionne pas comme je le voudrais
+En utilisant une liste comprenant les genomes via la fonction "glob" nous réussissons à récupérer tout les noms de fichiers que nous désirons pour la suite
