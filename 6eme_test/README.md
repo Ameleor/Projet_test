@@ -2,16 +2,7 @@
 
 ##Objectif:
 
-Le but de cet essais est de décompresser les génomes comme sur l'essai précédent et d'ensuite les faire passer dans PGCfinder et de trier ces documents pour les avoir de manière propre
-##Résultat:
-
-###1:
-
-Test sur le jeu de données fait à la main fonctionnel
-
-###2:
-
-Création d'un fichier .csv regroupant la liste de toute les informations nécessaires
+Ici nous avons un petit retour en arrière par rapport aux derniers snakfile parceque notre objectif est différent. Ici le but est de récupérer toutes les informations importantes en utilisant PGCfinder ainsi que nos méthodes de récupération de données pour créer au final un gros fichier .csv comportant tout ce qui nous servira plus tard. C'est principalement une amélioration de mon script "merge_csv.py".
 
 
 
