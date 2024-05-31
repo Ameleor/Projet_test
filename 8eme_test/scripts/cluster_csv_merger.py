@@ -15,6 +15,7 @@ genome_dict = {}
 for i in df_silix.iloc[:, 1]:
     genome = i.rsplit('_', 1)
     key, value = genome
+    # Condition to have a list and not just one itteration for each key
     if key in genome_dict:
         genome_dict[key].append(value)
     else:
@@ -52,7 +53,7 @@ for genome, values in genome_dict.items():
         all_infos = pd.concat([all_infos, merge_infos])
 
 
-
+# Merge using the column "prot_id_unique" that I have previously named for the silix output
 df_silix_full = df_silix.merge(all_infos, how="left", on="prot_id_unique")
 
 df_silix_full.to_csv("results/fasta_PGC/blast/output_silix_fullname_v1.csv", index=False)

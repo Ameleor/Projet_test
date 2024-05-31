@@ -15,7 +15,7 @@ record_dict = SeqIO.to_dict(SeqIO.parse('data/genomes_unzip/' + genome + '/' + g
 # Where we're going to stock our results
 results = []
 
-# Itérer sur chaque valeur de la colonne
+# Iterate on each value from the column
 for values in df_best_solution['hit_id']:
     # Marges to take to gather the corresponding fastas. Equivalent to the one used by PGCfinder
     values = int(values.split("_")[-1])
@@ -26,6 +26,7 @@ for values in df_best_solution['hit_id']:
 series_results = pd.Series(results)
 results_clean = series_results.drop_duplicates().reset_index(drop=True)
 
+# Way to print every fasta and gatherer them later in a bigger file
 for num in results_clean:
     fasta_name = genome + "_" + str(num)
     if fasta_name in record_dict:

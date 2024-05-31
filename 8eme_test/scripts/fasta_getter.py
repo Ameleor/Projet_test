@@ -3,6 +3,7 @@ import pandas as pd
 import sys
 from Bio import SeqIO
 
+# Try to filter all the non-PGC genomes (thanks to PGCfinder)
 try:
     # Use two argument to be launch: {genome} {gene}
     genome = sys.argv[1]
@@ -25,10 +26,6 @@ try:
         record_hit = record_dict[hit_gene].format("fasta")
 
         print(record_hit)
-
-        # Write the result to a file
-        #with open('results/fasta/' + gene + '.faa', 'a') as f:
-        #    f.write(record_hit)
 
 except pd.errors.EmptyDataError:
     pass

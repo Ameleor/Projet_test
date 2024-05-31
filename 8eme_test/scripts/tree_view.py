@@ -1,5 +1,7 @@
 from ete3 import Tree, TreeStyle, TextFace
 
+# This script has the objectif to display our trees in a specific way
+
 def layout(node) :
     if node.is_leaf() :
         parts = node.name.split('_')
