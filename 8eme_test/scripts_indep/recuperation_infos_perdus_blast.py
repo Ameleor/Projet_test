@@ -1,6 +1,10 @@
 import pandas as pd
 from Bio import SeqIO
 
+# This script is useless because the way to do things is wrong
+# To have information that is missing I used to think that i had to change BEFORE the blast but i just have to modify the output with Silix
+# By modifying the silix output it's easier and it's working perfectly
+
 # Read in the data
 df_blast_all = pd.read_csv("results/fasta_PGC/blast/blastall.out", sep="\t", header=None)
 record_dict = SeqIO.to_dict(SeqIO.parse('results/fasta_PGC/all_fasta_gathered.faa', "fasta"))
