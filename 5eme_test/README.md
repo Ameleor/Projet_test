@@ -1,17 +1,16 @@
-#3eme test en relation avec l'utilisation de snakemake
+# 3eme test en relation avec l'utilisation de snakemake
 
-##Objectif:
+## Objectif:
 
-Le but de cet essais est de décompresser les génomes comme sur l'essai précédent et d'ensuite les faire passer dans PGCfinder et de trier ces documents pour les avoir de manière propre
-##Résultat:
+Le but ici est de continuer notre pipeline en y rajoutant les méthodes de création d'arbre en utilisant successivement: la pipeline du 4eme essais + mafft-linsi + BMGE + iqtree2
 
-###1:
+### Mafft-linsi:
+C'est un programme d'alignement multiple de sequence (MSA) qui nous permet de ranger convenablement tout nos fastas entre eux.
 
-Test sur le jeu de données fait à la main fonctionnel
+### BGME:
+C'est un programme de "trim", c'est à dire qu'il permet de nettoyer les différentes séquences qu'il utilise afin d'avoir un alignement de séquence plus représentatif et plus court.
 
-###2:
-
-Création d'un fichier .csv regroupant la liste de toute les informations nécessaires
-
+### IQtree2:
+C'est le logiciel nous permettant d'utiliser les sorties précédentes afin d'afficher un arbre phylogénétique.
 
 
