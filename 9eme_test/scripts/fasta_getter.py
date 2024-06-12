@@ -28,8 +28,8 @@ try:
         # Sépare le nom de fasta en une liste de sous-chaînes en fonction des espaces
         fasta_name_parts = record_hit.split(" ")
 
-        # Modifie le record de fasta pour qu'il n'utilise que la première partie du nom original
-        record_hit = fasta_name_parts[0] + "\n" + record_dict[hit_gene].seq
+        # Modify to only keep the right amount of name to concatenate after
+        record_hit = "_".join(fasta_name_parts[0].split("_")[:-1]) + "\n" + record_dict[hit_gene].seq
         print(record_hit)
 
 except pd.errors.EmptyDataError:
