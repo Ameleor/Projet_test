@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_901457705.2_RHAL1_v2/GCF_901457705.2_RHAL1_v2_protein.faa
+# output directed to file:         results/genomes/GCF_901457705.2_RHAL1_v2/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+      1e-52  176.0  17.6    1.2e-52  175.7  17.6    1.0  1  GCF_901457705.2_RHAL1_v2_1382  WP_138101948.1 MULTISPECIES: try
+    0.00077   17.3  11.0    0.00097   17.0  11.0    1.2  1  GCF_901457705.2_RHAL1_v2_1574  WP_149996807.1 MULTISPECIES: try
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_901457705.2_RHAL1_v2_1382  WP_138101948.1 MULTISPECIES: tryptophan-rich sensory protein [unclassified Beijerincki
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  175.7  17.6     6e-56   1.2e-52       2     152 .]       5     154 ..       4     154 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 175.7 bits;  conditional E-value: 6e-56
+           trimmed_msa_tspO_hmm   2 llvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                    +++aa++++lv ++gg lt++g+wy +L+kPsw+PPdw+Fg++Wtvi+al+a+a+vlaw + +daa ++++  lf++n++
+  GCF_901457705.2_RHAL1_v2_1382   5 IVTAAVITLLVLGIGGGLTTVGPWYWNLRKPSWNPPDWIFGPAWTVILALAATAGVLAW-SHADAAGHARIAGLFVVNII 83 
+                                    5678899999*************************************************.5556666669********** PP
+
+           trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNppf 152
+                                    l++lW++lfF+lrr+dwalvev +LWlsvl l++ l+++s +a +ll+PYl+Wv++Aa+LNl++vr+N+pf
+  GCF_901457705.2_RHAL1_v2_1382  84 LHMLWTPLFFNLRRPDWALVEVPFLWLSVLSLMIGLAPYSAAAPWLLVPYLLWVGFAAFLNLTIVRMNRPF 154
+                                    ********************************************************************986 PP
+
+>> GCF_901457705.2_RHAL1_v2_1574  WP_149996807.1 MULTISPECIES: tryptophan-rich sensory protein [unclassified Beijerincki
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0  11.0   4.7e-07   0.00097      38     140 ..      39     140 ..       5     146 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 4.7e-07
+           trimmed_msa_tspO_hmm  38 dwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnavlnilWsllf.FrlrrldwalvevvlLWlsvlalilv 116
+                                     w+ g vWtv+++ +a++ +++ +  +  aa++   a +++  ++ ++  +l+  +lr + ++l+  v+     ++++l+
+  GCF_901457705.2_RHAL1_v2_1574  39 GWVVGAVWTVLFMALAATKWRVQSYLPAPAARRA--ATWVVILLVFCAVYPLYtGGLRWPLVGLLGNVATAAMAAFVALA 116
+                                    599********************99999998854..455555444444445551589********9999999999999** PP
+
+           trimmed_msa_tspO_hmm 117 lwrvsklaallllPYlvWvsiAaa 140
+                                     +rv+ laal  l  ++Wvs+A +
+  GCF_901457705.2_RHAL1_v2_1574 117 SFRVEPLAALGPLAVVAWVSFASV 140
+                                    *********************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       4078  (1231137 residues searched)
+Passed MSV filter:                       188  (0.046101); expected 81.6 (0.02)
+Passed bias filter:                       74  (0.0181462); expected 81.6 (0.02)
+Passed Vit filter:                         5  (0.00122609); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000490436); expected 0.0 (1e-05)
+Initial search space (Z):               4078  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 15336.49
+//
+[ok]

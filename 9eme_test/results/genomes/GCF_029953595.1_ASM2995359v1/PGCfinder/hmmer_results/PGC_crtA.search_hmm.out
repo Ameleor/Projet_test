@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtA.hmm
+# target sequence database:        data/genomes_unzip/GCF_029953595.1_ASM2995359v1/GCF_029953595.1_ASM2995359v1_protein.faa
+# output directed to file:         results/genomes/GCF_029953595.1_ASM2995359v1/PGCfinder/hmmer_results/PGC_crtA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtA_hmm  [M=225]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.6e-94  313.1   0.3    1.8e-94  313.0   0.3    1.0  1  GCF_029953595.1_ASM2995359v1_1299  WP_281468772.1 spheroidene monoo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_029953595.1_ASM2995359v1_1299  WP_281468772.1 spheroidene monooxygenase [Fuscovulum sp. YMD61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  313.0   0.3   4.7e-98   1.8e-94      22     224 ..       1     205 [.       1     206 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 313.0 bits;  conditional E-value: 4.7e-98
+               trimmed_msa_crtA_hmm  22 mvlarlalkrvpglkfvkllGsGtgeGFtpkPntsvyallavfedeetaraalaeskivrryraraeesltvllep 97 
+                                        m++arlal+r++++ f+kl+GsGtgeGFtp+Pn+ v+a+la+++de+taraa+++s++++r+rara es+t++l+p
+  GCF_029953595.1_ASM2995359v1_1299   1 MGAARLALRRERRALFWKLCGSGTGEGFTPRPNWGVWAILATWPDESTARAATTDSPVWQRWRARAGESWTIFLDP 76 
+                                        899************************************************************************* PP
+
+               trimmed_msa_crtA_hmm  98 tsarGaWsgeepfevee..kaasgplaaLTrAtikpskalrFWrrvpaisesigkdpnvllkiGlGEvPllrqvTf 171
+                                        +sarG+W+g +pf ++   ++++gplaaLTrAt++ps+al+FW rvp+is++ig+dpnv++kiG+GEvPll+qvTf
+  GCF_029953595.1_ASM2995359v1_1299  77 LSARGRWAGVNPFLPDLpgQNSQGPLAALTRATVRPSRALKFWDRVPSISAVIGTDPNVAFKIGIGEVPLLHQVTF 152
+                                        *************998755899****************************************************** PP
+
+               trimmed_msa_crtA_hmm 172 siWedaasmaafArkegpHaeaikavreedwfsEelyarfrvleeeGtwegks 224
+                                        siW+d+asmaafAr +gpH +aikavr+++wf+Eelyarfr+l++ G+w+g +
+  GCF_029953595.1_ASM2995359v1_1299 153 SIWPDTASMAAFARGDGPHGRAIKAVRDGNWFNEELYARFRLLGSMGSWNGVD 205
+                                        **************************************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (225 nodes)
+Target sequences:                       3922  (1261726 residues searched)
+Passed MSV filter:                        86  (0.0219276); expected 78.4 (0.02)
+Passed bias filter:                       69  (0.0175931); expected 78.4 (0.02)
+Passed Vit filter:                         5  (0.00127486); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000509944); expected 0.0 (1e-05)
+Initial search space (Z):               3922  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 14593.41
+//
+[ok]

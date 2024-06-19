@@ -1,0 +1,92 @@
+# Collaboration avec Kinnie
+
+import os
+from glob import glob
+import pandas as pd
+
+configfile: "config.yaml"
+
+#genome_list = pd.read_csv("data/lists/pre-list_check.csv")
+#GENOMES = genome_list["full_path"].apply(lambda x: x.split("/")[1]).tolist()
+
+#GENOMES = [os.path.basename(genome) for genome in glob("data/genomes/GC*")]
+GENOMES = [os.path.basename(genome) for genome in glob("results/genomes_PGC/GC*")]
+GENES = [os.path.splitext(os.path.basename(gene))[0] for gene in glob("data/profiles/*.hmm")]
+
+GENOMES = GENOMES[:100]
+
+TIMEOUT=["timeout"]
+
+FORMATS=["_gff.tsv",".faa"]
+FORMATS_TREES=[".bionj",".ckp.gz",".iqtree",".log",".mldist",".model.gz",".treefile"]
+
+# Règle pour vérifier si tous les fichiers de sortie existent
+rule all:
+    input:
+        expand("results/fasta_PGC/{genome}/{gene}.faa", gene=GENES,genome=GENOMES),
+        expand("results/fasta_PGC/{gene}.faa", gene=GENES),
+        expand("results/fasta_PGC/gene_aligned/{gene}_aln", gene=GENES),
+        expand("results/fasta_PGC/gene_trimmed/{gene}_trim.phy", gene=GENES),
+        expand("results/fasta_PGC/gene_trimmed/{gene}_trim.html", gene=GENES),
+        expand("results/tree/{gene}/{gene}{format_tree}",format_tree=FORMATS_TREES, gene=GENES)
+
+rule fasta_creator:
+    input:
+        "results/genomes_PGC/{genome}/PGCfinder",
+        gene="data/profiles/{gene}.hmm"
+    output:
+        fasta = "results/fasta_PGC/{genome}/{gene}.faa"
+    shell:
+        """
+        python3 scripts/fasta_getter.py {wildcards.genome} {input.gene} >> {output.fasta}
+        """
+
+rule fasta_gatherer:
+    input:
+        faa=expand("results/fasta_PGC/{genome}/{gene}.faa",gene=GENES, genome=GENOMES)
+    output:
+        "results/fasta_PGC/{gene}.faa"
+    shell:
+        """
+        cat results/fasta_PGC/GC*/{wildcards.gene}.faa | uniq >> {output}
+        """
+
+rule fasta_aligner:
+    input:
+        "results/fasta_PGC/{gene}.faa"
+    output:
+        "results/fasta_PGC/gene_aligned/{gene}_aln"
+    shell:
+        """
+        mkdir -p results/fasta_PGC/gene_aligned
+        mafft-linsi {input} > {output}
+        """
+
+rule alignment_trimmer:
+    input:
+        "results/fasta_PGC/gene_aligned/{gene}_aln"
+    output:
+        html="results/fasta_PGC/gene_trimmed/{gene}_trim.html",
+        phy="results/fasta_PGC/gene_trimmed/{gene}_trim.phy"
+    shell:
+        """
+        java -jar scripts/BMGE/BMGE.jar -i {input} -t AA -m BLOSUM30 -oh {output.html} -opco {output.phy}
+        """
+
+rule tree_creator:
+    input:
+        "results/fasta_PGC/gene_trimmed/{gene}_trim.phy"
+    output:
+        tree="results/tree/{gene}/{gene}.treefile",
+        log="results/tree/{gene}/{gene}.log",
+        model="results/tree/{gene}/{gene}.model.gz",
+        bionj="results/tree/{gene}/{gene}.bionj",
+        mldist="results/tree/{gene}/{gene}.mldist",
+        ckp="results/tree/{gene}/{gene}.ckp.gz",
+        iqtree="results/tree/{gene}/{gene}.iqtree"
+    shell:
+        """
+        # Problem if less than 3 sequences with iqtree2 (not working)
+        mkdir -p results/tree/{wildcards.gene}
+        iqtree2 -s {input} -pre results/tree/{wildcards.gene}/{wildcards.gene}
+        """

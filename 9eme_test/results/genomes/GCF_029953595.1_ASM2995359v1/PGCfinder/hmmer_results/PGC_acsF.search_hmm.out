@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_acsF.hmm
+# target sequence database:        data/genomes_unzip/GCF_029953595.1_ASM2995359v1/GCF_029953595.1_ASM2995359v1_protein.faa
+# output directed to file:         results/genomes/GCF_029953595.1_ASM2995359v1/PGCfinder/hmmer_results/PGC_acsF.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_acsF_hmm  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+   1.3e-181  601.1   0.8   1.4e-181  601.0   0.8    1.0  1  GCF_029953595.1_ASM2995359v1_1322  WP_281469818.1 magnesium-protopo
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_029953595.1_ASM2995359v1_1322  WP_281469818.1 magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase [F
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  601.0   0.8  3.6e-185  1.4e-181      13     355 .]       5     349 ..       1     349 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 601.0 bits;  conditional E-value: 3.6e-185
+               trimmed_msa_acsF_hmm  13 eeatklakedtllsPrfyttdfaaldridvssvraewdaliaelesdknkkhfkrneefdk.eleelepelrkefl 87 
+                                         ++t++a+e+tll+Prfyttdf+++dridv++vraewd+l+ +++sd+nk+hfk+n+++d+ +++ ++p+lr+ef+
+  GCF_029953595.1_ASM2995359v1_1322   5 FDTTAMATETTLLNPRFYTTDFDEMDRIDVTPVRAEWDKLLGQMKSDPNKGHFKKNADWDTvDWQGMDPALRAEFI 80 
+                                        5899********************************************************99************** PP
+
+               trimmed_msa_acsF_hmm  88 dflvssltaefsGcvlyaeikkrvknkdikelfkllardesrhagfindalkdagigvdlgfltktkkytyfkPkf 163
+                                        dflvss+taefsGcvly+e+k+r +n+di+elf++++rde+rhagfindal++ag++v+lgfltk+kkytyf+Pkf
+  GCF_029953595.1_ASM2995359v1_1322  81 DFLVSSCTAEFSGCVLYKEMKRRGSNPDICELFSYMSRDEARHAGFINDALREAGVAVNLGFLTKAKKYTYFRPKF 156
+                                        **************************************************************************** PP
+
+               trimmed_msa_acsF_hmm 164 ifyatylsekiGyaryitiyrqlekhPekrfhPifkwfeewcndefrhGeafalllradpkllsg.vnklwirffl 238
+                                        i+yatylsekiGyaryitiyr+le+hPe+rfhPifkwf+ewcndef+hGeafall+r+dp l+++ +nklwirffl
+  GCF_029953595.1_ASM2995359v1_1322 157 IYYATYLSEKIGYARYITIYRHLEAHPEQRFHPIFKWFKEWCNDEFSHGEAFALLMRTDPALTQSfANKLWIRFFL 232
+                                        ***************************************************************9967********* PP
+
+               trimmed_msa_acsF_hmm 239 lavyatmyvrdharpafhkalgvdpteydlkvfritseiskqvfPvtldlddprfraglerlrkisekiaaakakg 314
+                                        +avy+tm+vrdhar  fh+algvd+++yd++v+r+ts i++qvfPv+ld+d+pr+  gl+r+ ++ ++++aak+kg
+  GCF_029953595.1_ASM2995359v1_1322 233 TAVYSTMWVRDHARVDFHNALGVDIDWYDQEVYRKTSIIARQVFPVELDIDHPRWIPGLRRMDQAMRDMDAAKRKG 308
+                                        **************************************************************************** PP
+
+               trimmed_msa_acsF_hmm 315 gvlgklkraalaakaalafarlyllpakknelpaevrlePa 355
+                                        g++g + + +++a+aalafa lyl+p+k+ + pa+vrleP+
+  GCF_029953595.1_ASM2995359v1_1322 309 GIAGWIGHKTASARAALAFAGLYLIPVKHMTPPANVRLEPS 349
+                                        ***************************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       3922  (1261726 residues searched)
+Passed MSV filter:                        62  (0.0158083); expected 78.4 (0.02)
+Passed bias filter:                       58  (0.0147884); expected 78.4 (0.02)
+Passed Vit filter:                         2  (0.000509944); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000254972); expected 0.0 (1e-05)
+Initial search space (Z):               3922  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 16372.37
+//
+[ok]
