@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtC.hmm
+# target sequence database:        data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+# output directed to file:         results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder/hmmer_results/PGC_crtC.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtC_hmm  [M=234]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    1.2e-99  331.0   0.0    1.3e-99  330.8   0.0    1.0  1  GCF_000019725.1_ASM1972v1_2829  WP_012319776.1 carotenoid 1,2-hy
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000019725.1_ASM1972v1_2829  WP_012319776.1 carotenoid 1,2-hydratase [Methylobacterium radiotolerans]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  330.8   0.0  2.1e-103   1.3e-99       1     233 [.      50     282 ..      50     283 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 330.8 bits;  conditional E-value: 2.1e-103
+            trimmed_msa_crtC_hmm   1 mTeRgraalsrdadelaiGpsslewdgdeLvididEiavplprrvrGrvrvtpealtevelaLdaegrhrWrpiapsar 79 
+                                     mTeR++a+lsr+ad++a+Gps+++wdg++L+++idE+++plprr+rG+vr++p+ +t   ++Ld++grhrW+p++ps+r
+  GCF_000019725.1_ASM1972v1_2829  50 MTERRAASLSRSADHIAVGPSAMHWDGTALTVRIDERGAPLPRRIRGTVRLEPRGFTGGPFHLDRAGRHRWWPMSPSSR 128
+                                     9****************************************************************************** PP
+
+            trimmed_msa_crtC_hmm  80 veveldepelswkGegYfDsNeGdepleedFseWdWsRaelkdgaavlYdverrdgselalalrfdadGeveeveappr 158
+                                     vev++d+p+l+w+G+gYfD+N Gdeple +F +W+W+Ra+l dgaa+lYdv++rdg  ++l+lrf+adG+ +e+++pp 
+  GCF_000019725.1_ASM1972v1_2829 129 VEVDFDQPDLRWSGSGYFDTNDGDEPLEVAFARWTWCRADLPDGAAILYDVHHRDGGGQNLSLRFSADGSRREIRPPPG 207
+                                     ******************************************************************************* PP
+
+            trimmed_msa_crtC_hmm 159 aklprtl.WrveretradagkaprvvktledtPFYaRslletellgeeveavhEsLsldrlrsplvklmLpfrmpR 233
+                                     a+lp+t+ Wr+ retr+d g++ rv++t+edtPFYaRsll+++l ge+v+a+hEsLsldr+r+p+v+lmLpfr+pR
+  GCF_000019725.1_ASM1972v1_2829 208 ATLPATRfWRMPRETRSDGGRS-RVLATYEDTPFYARSLLASTLCGEPVRAMHESLSLDRFRNPMVRLMLPFRIPR 282
+                                     ******99************88.****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (234 nodes)
+Target sequences:                       6451  (1957510 residues searched)
+Passed MSV filter:                       142  (0.0220121); expected 129.0 (0.02)
+Passed bias filter:                      125  (0.0193768); expected 129.0 (0.02)
+Passed Vit filter:                        11  (0.00170516); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000155015); expected 0.1 (1e-05)
+Initial search space (Z):               6451  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 25477.30
+//
+[ok]

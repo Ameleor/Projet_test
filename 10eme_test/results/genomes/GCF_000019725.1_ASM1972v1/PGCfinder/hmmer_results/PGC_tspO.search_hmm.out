@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_tspO.hmm
+# target sequence database:        data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa
+# output directed to file:         results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder/hmmer_results/PGC_tspO.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_tspO_hmm  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                       -----------
+    3.9e-58  194.2  17.3    4.4e-58  194.1  17.3    1.0  1  GCF_000019725.1_ASM1972v1_1859  WP_012318836.1 MULTISPECIES: try
+    1.9e-34  117.3  23.2    2.2e-34  117.1  23.2    1.0  1  GCF_000019725.1_ASM1972v1_5102  WP_012322004.1 MULTISPECIES: try
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000019725.1_ASM1972v1_1859  WP_012318836.1 MULTISPECIES: tryptophan-rich sensory protein [Methylobacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.1  17.3   1.4e-61   4.4e-58       3     152 .]      12     161 ..      10     161 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 194.1 bits;  conditional E-value: 1.4e-61
+            trimmed_msa_tspO_hmm   3 lvaalaavlvavlggaltelgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaaelllalfalnav 81 
+                                     +vaa+aavlvav+gg++t++++wy++L+ P+wkPPdwaFg+vW+vi+al+a++avlaw+ a+d  a+ +l+a+fa+n+v
+  GCF_000019725.1_ASM1972v1_1859  12 AVAAAAAVLVAVAGGLATTTDTWYRRLRVPAWKPPDWAFGPVWAVIFALTATSAVLAWSGAADPVARGVLIAAFAVNGV 90 
+                                     68999************************************************************************** PP
+
+            trimmed_msa_tspO_hmm  82 lnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlNppf 152
+                                     lni+Ws+lfFr+rr+dwal+ev++LWls+++l+lv+ r+s +a+l+ lPYl+Wvs+Aa+LNl++vrlN+pf
+  GCF_000019725.1_ASM1972v1_1859  91 LNIAWSVLFFRFRRPDWALAEVAALWLSIAVLVLVTGRISVAAGLMNLPYLAWVSVAACLNLRIVRLNAPF 161
+                                     ********************************************************************986 PP
+
+>> GCF_000019725.1_ASM1972v1_5102  WP_012322004.1 MULTISPECIES: tryptophan-rich sensory protein [Methylobacterium]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.1  23.2   6.9e-38   2.2e-34       8     149 ..      25     172 .]      18     172 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 117.1 bits;  conditional E-value: 6.9e-38
+            trimmed_msa_tspO_hmm   8 aavlvavlggalt..elgewyesLkkPswkPPdwaFgvvWtviyaliavaavlawraaedaaaae....lllalfalna 80 
+                                      + ++a++g+++t  e+  wy sL+kP+++PP+w+F+v+Wt++y++iav+ ++   a++ +  ++    l+la+f +++
+  GCF_000019725.1_ASM1972v1_5102  25 PVAATAAVGSMATqaEIPGWYASLNKPAFNPPNWVFPVAWTILYTMIAVSLWRLLGAMPRTGPSRegwwLALAAFLVQI 103
+                                     3344555555555115679**********************************998887654433112157889***** PP
+
+            trimmed_msa_tspO_hmm  81 vlnilWsllfFrlrrldwalvevvlLWlsvlalilvlwrvsklaallllPYlvWvsiAaaLNlsvvrlN 149
+                                     +ln++W+++fF+ + + ++l++v++L + vl++i  +wr+++laa+ll+PY +Wv++A++LN++++r+N
+  GCF_000019725.1_ASM1972v1_5102 104 ALNAAWTPVFFTAHAIGAGLIVVAMLLVMVLWTIRLTWRFDRLAAWLLVPYAAWVAFATLLNAAILRMN 172
+                                     *******************************************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       6451  (1957510 residues searched)
+Passed MSV filter:                       278  (0.0430941); expected 129.0 (0.02)
+Passed bias filter:                      107  (0.0165866); expected 129.0 (0.02)
+Passed Vit filter:                        13  (0.00201519); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000310029); expected 0.1 (1e-05)
+Initial search space (Z):               6451  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 22582.85
+//
+[ok]

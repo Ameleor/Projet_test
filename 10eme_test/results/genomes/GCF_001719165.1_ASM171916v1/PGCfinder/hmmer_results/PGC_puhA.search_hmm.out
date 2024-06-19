@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhA.hmm
+# target sequence database:        data/genomes_unzip/GCF_001719165.1_ASM171916v1/GCF_001719165.1_ASM171916v1_protein.faa
+# output directed to file:         results/genomes/GCF_001719165.1_ASM171916v1/PGCfinder/hmmer_results/PGC_puhA.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhA_hmm  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                         -----------
+    1.2e-98  327.0   0.1    1.3e-98  326.8   0.1    1.0  1  GCF_001719165.1_ASM171916v1_877   WP_034904417.1 photosynthetic re
+     0.0048   13.7   0.0     0.0055   13.5   0.0    1.2  1  GCF_001719165.1_ASM171916v1_1260  WP_150132434.1 PRC-barrel domain
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_001719165.1_ASM171916v1_877  WP_034904417.1 photosynthetic reaction center subunit H [Erythrobacter litoralis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  326.8   0.1  8.7e-102   1.3e-98       2     252 .]       5     260 ..       4     260 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 326.8 bits;  conditional E-value: 8.7e-102
+             trimmed_msa_puhA_hmm   2 altgelDvaqlvlyafwlffagLvlylrredrrEGyPledeetgeekaegllevpepktfklphggtvtaPskeree. 78 
+                                      +++g+lDva+l++ +f++ff++Lv+yl+re+rrEGyP+ede+tg+  ++ +l+  e+k+f+lphg+ v++P++  ++ 
+  GCF_001719165.1_ASM171916v1_877   5 YIVGTLDVAELAFLLFFVFFIALVVYLNRESRREGYPVEDEQTGRV-DTWPLTQGEKKVFNLPHGRGVYVPEDVPRDd 81 
+                                      6899***************************************987.5678889******************998777 PP
+
+             trimmed_msa_puhA_hmm  79 edlaakktakaeGaPleptgnplldgvGpaayaeRadepdltvdgearivPlrvaeefsvaeedpdprGlkvvgaDgk 156
+                                       +++a ++ +a+GaP++ptgnp++dg+Gpaaya+Rad+pdlt+dg++rivP+ +++e+sv+ +dp ++G++v++aD+k
+  GCF_001719165.1_ASM171916v1_877  82 VNIPAVQAFNAAGAPWVPTGNPMKDGLGPAAYAKRADYPDLTFDGRPRIVPIGNSHELSVSPNDPALIGWPVIAADKK 159
+                                      9***************************************************************************** PP
+
+             trimmed_msa_puhA_hmm 157 vaGtvsdlWvDrsealiRYleveleaggrkvllPmtlaki......kkkkkkvkveailaeqfaevPklkspdqvTll 228
+                                      vaG+vsd+WvD+se++iRYle+e++ +g+kvl Pm ++++      ++  ++v++ ai++eqfa+vP+l++p qvT++
+  GCF_001719165.1_ASM171916v1_877 160 VAGKVSDIWVDQSEHIIRYLEIETN-AGDKVLAPMFVCTVqkkgffDDLPEQVQIPAITSEQFADVPRLDTPGQVTRY 236
+                                      ************************9.99************55555545679*************************** PP
+
+             trimmed_msa_puhA_hmm 229 EEdkivaYyggGtlYatperqepl 252
+                                      EEdki+aYyggG++Yatper+ep+
+  GCF_001719165.1_ASM171916v1_877 237 EEDKIMAYYGGGFMYATPERAEPW 260
+                                      **********************97 PP
+
+>> GCF_001719165.1_ASM171916v1_1260  WP_150132434.1 PRC-barrel domain-containing protein [Erythrobacter litoralis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   3.6e-06    0.0055     129     172 ..       8      51 ..       2      75 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.6e-06
+              trimmed_msa_puhA_hmm 129 PlrvaeefsvaeedpdprGlkvvgaDgkvaGtvsdlWvDrseal 172
+                                        l   ++++++++ +d+rG ++++ Dg+  Gt++ + vD   ++
+  GCF_001719165.1_ASM171916v1_1260   8 DLAELDDYKLENSHQDLRGHALYSSDGTRLGTIRRMLVDPEREH 51 
+                                       56778899*******************************76554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (252 nodes)
+Target sequences:                       3063  (971650 residues searched)
+Passed MSV filter:                        48  (0.0156709); expected 61.3 (0.02)
+Passed bias filter:                       41  (0.0133856); expected 61.3 (0.02)
+Passed Vit filter:                         5  (0.00163239); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000652955); expected 0.0 (1e-05)
+Initial search space (Z):               3063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 16104.52
+//
+[ok]

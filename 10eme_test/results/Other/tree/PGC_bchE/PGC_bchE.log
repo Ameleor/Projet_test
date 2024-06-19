@@ -1,0 +1,412 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    timc-tree-36p (AVX2, FMA3, 30 GB RAM)
+Command: iqtree2 -s results/fasta_PGC/gene_trimmed/PGC_bchE_trim.phy -pre results/tree/PGC_bchE/PGC_bchE
+Seed:    42622 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jun  6 18:42:20 2024
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/fasta_PGC/gene_trimmed/PGC_bchE_trim.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+WARNING: 36 sites contain only gaps or ambiguous characters.
+Alignment has 50 sequences with 1071 columns, 922 distinct patterns
+731 parsimony-informative, 117 singleton sites, 223 constant sites
+WARNING: Some sequence names are changed as follows:
+GCA_011765465.1_ASM1176546v1_235_QIQ85448.1_MAG__methyltransferase_domain-containing_protein_[Erythrobacter_sp.] -> GCA_011765465.1_ASM1176546v1_235_QIQ85448.1_MAG__methyltransferase_domain-containing_protein__Erythrobacter_sp._
+GCF_000013365.1_ASM1336v1_4065_WP_011442880.1_methyltransferase_[Rhodopseudomonas_palustris] -> GCF_000013365.1_ASM1336v1_4065_WP_011442880.1_methyltransferase__Rhodopseudomonas_palustris_
+GCF_000016185.1_ASM1618v1_2004_WP_012567266.1_methyltransferase_[Rhodospirillum_centenum] -> GCF_000016185.1_ASM1618v1_2004_WP_012567266.1_methyltransferase__Rhodospirillum_centenum_
+GCF_000018145.1_ASM1814v1_3575_WP_245533092.1_acetylserotonin_O-methyltransferase_[Dinoroseobacter_shibae] -> GCF_000018145.1_ASM1814v1_3575_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_
+GCF_000021745.1_ASM2174v1_2051_WP_012591060.1_methyltransferase_[Methylocella_silvestris] -> GCF_000021745.1_ASM2174v1_2051_WP_012591060.1_methyltransferase__Methylocella_silvestris_
+GCF_000021845.1_ASM2184v1_2932_WP_041929011.1_methyltransferase_[Methylorubrum_extorquens] -> GCF_000021845.1_ASM2184v1_2932_WP_041929011.1_methyltransferase__Methylorubrum_extorquens_
+GCF_000021865.1_ASM2186v1_685_WP_013066429.1_methyltransferase_[Rhodobacter_capsulatus] -> GCF_000021865.1_ASM2186v1_685_WP_013066429.1_methyltransferase__Rhodobacter_capsulatus_
+GCF_000144605.1_ASM14460v1_3041_WP_013270453.1_methyltransferase_[Brevundimonas_subvibrioides] -> GCF_000144605.1_ASM14460v1_3041_WP_013270453.1_methyltransferase__Brevundimonas_subvibrioides_
+GCF_000225955.1_ASM22595v1_3030_WP_011390730.1_methyltransferase_[Rhodospirillum_rubrum] -> GCF_000225955.1_ASM22595v1_3030_WP_011390730.1_methyltransferase__Rhodospirillum_rubrum_
+GCF_000327045.1_ASM32704v1_2936_WP_015281828.1_methyltransferase_[Thioflavicoccus_mobilis] -> GCF_000327045.1_ASM32704v1_2936_WP_015281828.1_methyltransferase__Thioflavicoccus_mobilis_
+GCF_000757795.1_ASM75779v1_2930_WP_043757983.1_MULTISPECIES__methyltransferase_[Methylobacterium] -> GCF_000757795.1_ASM75779v1_2930_WP_043757983.1_MULTISPECIES__methyltransferase__Methylobacterium_
+GCF_000973625.1_ASM97362v1_1355_WP_052728794.1_methyltransferase_[Polynucleobacter_duraquae] -> GCF_000973625.1_ASM97362v1_1355_WP_052728794.1_methyltransferase__Polynucleobacter_duraquae_
+GCF_001412575.1_ASM141257v1_953_WP_055361853.1_methyltransferase_[Limnohabitans_sp._103DPR2] -> GCF_001412575.1_ASM141257v1_953_WP_055361853.1_methyltransferase__Limnohabitans_sp._103DPR2_
+GCF_001483865.1_ASM148386v1_1029_WP_083525998.1_methyltransferase_[Roseateles_depolymerans] -> GCF_001483865.1_ASM148386v1_1029_WP_083525998.1_methyltransferase__Roseateles_depolymerans_
+GCF_001632845.1_ASM163284v1_3063_WP_082829998.1_methyltransferase_[Ectothiorhodospira_sp._BSL-9] -> GCF_001632845.1_ASM163284v1_3063_WP_082829998.1_methyltransferase__Ectothiorhodospira_sp._BSL-9_
+GCF_001633145.1_ASM163314v1_878_WP_042458373.1_methyltransferase_[Rhodovulum_sulfidophilum] -> GCF_001633145.1_ASM163314v1_878_WP_042458373.1_methyltransferase__Rhodovulum_sulfidophilum_
+GCF_001713375.1_ASM171337v1_1387_WP_069046190.1_methyltransferase_[Hydrogenophaga_sp._RAC07] -> GCF_001713375.1_ASM171337v1_1387_WP_069046190.1_methyltransferase__Hydrogenophaga_sp._RAC07_
+GCF_002117815.2_ASM211781v2_4190_WP_085857326.1_methyltransferase_[Methylorubrum_zatmanii] -> GCF_002117815.2_ASM211781v2_4190_WP_085857326.1_methyltransferase__Methylorubrum_zatmanii_
+GCF_002266435.2_ASM226643v2_4750_WP_244612017.1_acetylserotonin_O-methyltransferase_[Bradyrhizobium_amphicarpaeae] -> GCF_002266435.2_ASM226643v2_4750_WP_244612017.1_acetylserotonin_O-methyltransferase__Bradyrhizobium_amphicarpaeae_
+GCF_002355515.1_ASM235551v1_2969_WP_096485721.1_methyltransferase_[Methylorubrum_populi] -> GCF_002355515.1_ASM235551v1_2969_WP_096485721.1_methyltransferase__Methylorubrum_populi_
+GCF_003031265.1_ASM303126v1_1500_WP_107343537.1_methyltransferase_[Rhodopseudomonas_palustris] -> GCF_003031265.1_ASM303126v1_1500_WP_107343537.1_methyltransferase__Rhodopseudomonas_palustris_
+GCF_003065365.1_ASM306536v1_383_WP_108468524.1_methyltransferase_[Polynucleobacter_difficilis] -> GCF_003065365.1_ASM306536v1_383_WP_108468524.1_methyltransferase__Polynucleobacter_difficilis_
+GCF_003264115.1_ASM326411v1_2736_WP_111993191.1_methyltransferase_[Erythrobacter_sp._KY5] -> GCF_003264115.1_ASM326411v1_2736_WP_111993191.1_methyltransferase__Erythrobacter_sp._KY5_
+GCF_003352165.1_ASM335216v1_3123_WP_114913938.1_methyltransferase_[Acidibrevibacterium_fodinaquatile] -> GCF_003352165.1_ASM335216v1_3123_WP_114913938.1_methyltransferase__Acidibrevibacterium_fodinaquatile_
+GCF_003855495.1_ASM385549v1_3365_WP_124739846.1_methyltransferase_[Methylocystis_rosea] -> GCF_003855495.1_ASM385549v1_3365_WP_124739846.1_methyltransferase__Methylocystis_rosea_
+GCF_004136295.1_ASM413629v1_721_WP_129448272.1_methyltransferase_[Methylibium_sp._Pch-M] -> GCF_004136295.1_ASM413629v1_721_WP_129448272.1_methyltransferase__Methylibium_sp._Pch-M_
+GCF_005311585.1_ASM531158v1_973_WP_137457438.1_methyltransferase_[Cereibacter_sphaeroides] -> GCF_005311585.1_ASM531158v1_973_WP_137457438.1_methyltransferase__Cereibacter_sphaeroides_
+GCF_005860795.2_ASM586079v2_455_WP_210271778.1_methyltransferase_[Peteryoungia_desertarenae] -> GCF_005860795.2_ASM586079v2_455_WP_210271778.1_methyltransferase__Peteryoungia_desertarenae_
+GCF_007290395.1_ASM729039v1_1479_WP_143846075.1_methyltransferase_[Bradyrhizobium_cosmicum] -> GCF_007290395.1_ASM729039v1_1479_WP_143846075.1_methyltransferase__Bradyrhizobium_cosmicum_
+GCF_008932115.1_ASM893211v1_4868_WP_151650653.1_methyltransferase_[Bradyrhizobium_betae] -> GCF_008932115.1_ASM893211v1_4868_WP_151650653.1_methyltransferase__Bradyrhizobium_betae_
+GCF_009363575.1_ASM936357v1_3655_WP_152463572.1_methyltransferase_[Roseivivax_sp._THAF30] -> GCF_009363575.1_ASM936357v1_3655_WP_152463572.1_methyltransferase__Roseivivax_sp._THAF30_
+GCF_009363615.1_ASM936361v1_1985_WP_152458439.1_methyltransferase_[Ruegeria_sp._THAF33] -> GCF_009363615.1_ASM936361v1_1985_WP_152458439.1_methyltransferase__Ruegeria_sp._THAF33_
+GCF_009363795.1_ASM936379v1_2700_WP_124110567.1_methyltransferase_[Maribius_sp._THAF1] -> GCF_009363795.1_ASM936379v1_2700_WP_124110567.1_methyltransferase__Maribius_sp._THAF1_
+GCF_009650195.1_ASM965019v1_3148_WP_153762896.1_methyltransferase_[Agrobacterium_sp._MA01] -> GCF_009650195.1_ASM965019v1_3148_WP_153762896.1_methyltransferase__Agrobacterium_sp._MA01_
+GCF_011040475.1_ASM1104047v1_2343_WP_164686437.1_methyltransferase_domain-containing_protein_[Rhodobacteraceae_bacterium_SC52] -> GCF_011040475.1_ASM1104047v1_2343_WP_164686437.1_methyltransferase_domain-containing_protein__Rhodobacteraceae_bacterium_SC52_
+GCF_014117445.1_ASM1411744v1_1136_WP_182297791.1_methyltransferase_[Sandaracinobacter_sp._M6] -> GCF_014117445.1_ASM1411744v1_1136_WP_182297791.1_methyltransferase__Sandaracinobacter_sp._M6_
+GCF_016584445.1_ASM1658444v1_1540_WP_011157081.1_methyltransferase_[Rhodopseudomonas_palustris] -> GCF_016584445.1_ASM1658444v1_1540_WP_011157081.1_methyltransferase__Rhodopseudomonas_palustris_
+GCF_018687475.1_ASM1868747v1_1387_WP_215369565.1_methyltransferase_[Polynucleobacter_sp._MWH-UH24A] -> GCF_018687475.1_ASM1868747v1_1387_WP_215369565.1_methyltransferase__Polynucleobacter_sp._MWH-UH24A_
+GCF_021117295.1_ASM2111729v1_2687_WP_231347042.1_acetylserotonin_O-methyltransferase_[Methylorubrum_sp._B1-46] -> GCF_021117295.1_ASM2111729v1_2687_WP_231347042.1_acetylserotonin_O-methyltransferase__Methylorubrum_sp._B1-46_
+GCF_022227035.1_ASM2222703v1_1918_WP_011909049.1_MULTISPECIES__methyltransferase_[Cereibacter] -> GCF_022227035.1_ASM2222703v1_1918_WP_011909049.1_MULTISPECIES__methyltransferase__Cereibacter_
+GCF_022410435.1_ASM2241043v1_3428_WP_240092863.1_acetylserotonin_O-methyltransferase_[Roseivivax_marinus] -> GCF_022410435.1_ASM2241043v1_3428_WP_240092863.1_acetylserotonin_O-methyltransferase__Roseivivax_marinus_
+GCF_022558965.1_ASM2255896v1_2447_WP_241418481.1_methyltransferase_[Acidiphilium_multivorum] -> GCF_022558965.1_ASM2255896v1_2447_WP_241418481.1_methyltransferase__Acidiphilium_multivorum_
+GCF_023380025.1_ASM2338002v1_2709_WP_249503760.1_methyltransferase_[Sphingomonas_sp._S8-45] -> GCF_023380025.1_ASM2338002v1_2709_WP_249503760.1_methyltransferase__Sphingomonas_sp._S8-45_
+GCF_023558355.1_ASM2355835v1_3574_WP_245533092.1_acetylserotonin_O-methyltransferase_[Dinoroseobacter_shibae] -> GCF_023558355.1_ASM2355835v1_3574_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_
+GCF_024758725.1_ASM2475872v1_1643_WP_258887826.1_methyltransferase_[Sphingomonas_sp._SUN039] -> GCF_024758725.1_ASM2475872v1_1643_WP_258887826.1_methyltransferase__Sphingomonas_sp._SUN039_
+GCF_025398155.2_ASM2539815v2_239_WP_261758412.1_acetylserotonin_O-methyltransferase_[Roseateles_sp._BIM_B-1768] -> GCF_025398155.2_ASM2539815v2_239_WP_261758412.1_acetylserotonin_O-methyltransferase__Roseateles_sp._BIM_B-1768_
+GCF_026167545.1_ASM2616754v1_27_WP_265550062.1_methyltransferase_[Sphingomonas_sp._S1-29] -> GCF_026167545.1_ASM2616754v1_27_WP_265550062.1_methyltransferase__Sphingomonas_sp._S1-29_
+GCF_028621955.1_ASM2862195v1_334_WP_273985018.1_methyltransferase_[Erythrobacter_sp._BLCC-B19] -> GCF_028621955.1_ASM2862195v1_334_WP_273985018.1_methyltransferase__Erythrobacter_sp._BLCC-B19_
+GCF_029761955.1_ASM2976195v1_5813_WP_279357771.1_methyltransferase_[Methylobacterium_indicum] -> GCF_029761955.1_ASM2976195v1_5813_WP_279357771.1_methyltransferase__Methylobacterium_indicum_
+GCF_030252425.1_ASM3025242v1_830_WP_284946440.1_methyltransferase_[Acidisoma_sp._PAMC_29798] -> GCF_030252425.1_ASM3025242v1_830_WP_284946440.1_methyltransferase__Acidisoma_sp._PAMC_29798_
+
+                                                                                                                                Gap/Ambiguity  Composition  p-value
+   1  GCA_011765465.1_ASM1176546v1_235_QIQ85448.1_MAG__methyltransferase_domain-containing_protein__Erythrobacter_sp._                 22.04%    passed     99.69%
+   2  GCF_000013365.1_ASM1336v1_4065_WP_011442880.1_methyltransferase__Rhodopseudomonas_palustris_                                     22.60%    passed    100.00%
+   3  GCF_000016185.1_ASM1618v1_2004_WP_012567266.1_methyltransferase__Rhodospirillum_centenum_                                        24.65%    passed     98.78%
+   4  GCF_000018145.1_ASM1814v1_3575_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_                       28.85%    passed     99.61%
+   5  GCF_000021745.1_ASM2174v1_2051_WP_012591060.1_methyltransferase__Methylocella_silvestris_                                        23.34%    passed     98.89%
+   6  GCF_000021845.1_ASM2184v1_2932_WP_041929011.1_methyltransferase__Methylorubrum_extorquens_                                       24.28%    passed     97.13%
+   7  GCF_000021865.1_ASM2186v1_685_WP_013066429.1_methyltransferase__Rhodobacter_capsulatus_                                          23.25%    passed     86.79%
+   8  GCF_000144605.1_ASM14460v1_3041_WP_013270453.1_methyltransferase__Brevundimonas_subvibrioides_                                   25.30%    passed     86.49%
+   9  GCF_000225955.1_ASM22595v1_3030_WP_011390730.1_methyltransferase__Rhodospirillum_rubrum_                                         23.06%    passed     99.16%
+  10  GCF_000327045.1_ASM32704v1_2936_WP_015281828.1_methyltransferase__Thioflavicoccus_mobilis_                                       22.32%    passed    100.00%
+  11  GCF_000757795.1_ASM75779v1_2930_WP_043757983.1_MULTISPECIES__methyltransferase__Methylobacterium_                                25.12%    passed     94.54%
+  12  GCF_000973625.1_ASM97362v1_1355_WP_052728794.1_methyltransferase__Polynucleobacter_duraquae_                                     27.54%    failed      0.00%
+  13  GCF_001412575.1_ASM141257v1_953_WP_055361853.1_methyltransferase__Limnohabitans_sp._103DPR2_                                     19.79%    passed     12.55%
+  14  GCF_001483865.1_ASM148386v1_1029_WP_083525998.1_methyltransferase__Roseateles_depolymerans_                                      24.56%    passed     46.46%
+  15  GCF_001632845.1_ASM163284v1_3063_WP_082829998.1_methyltransferase__Ectothiorhodospira_sp._BSL-9_                                 21.29%    passed     73.74%
+  16  GCF_001633145.1_ASM163314v1_878_WP_042458373.1_methyltransferase__Rhodovulum_sulfidophilum_                                      22.41%    passed     91.63%
+  17  GCF_001713375.1_ASM171337v1_1387_WP_069046190.1_methyltransferase__Hydrogenophaga_sp._RAC07_                                     22.41%    passed     99.96%
+  18  GCF_002117815.2_ASM211781v2_4190_WP_085857326.1_methyltransferase__Methylorubrum_zatmanii_                                       24.46%    passed     55.05%
+  19  GCF_002266435.2_ASM226643v2_4750_WP_244612017.1_acetylserotonin_O-methyltransferase__Bradyrhizobium_amphicarpaeae_               22.41%    passed     89.12%
+  20  GCF_002355515.1_ASM235551v1_2969_WP_096485721.1_methyltransferase__Methylorubrum_populi_                                         24.56%    passed     87.16%
+  21  GCF_003031265.1_ASM303126v1_1500_WP_107343537.1_methyltransferase__Rhodopseudomonas_palustris_                                   22.41%    passed     99.98%
+  22  GCF_003065365.1_ASM306536v1_383_WP_108468524.1_methyltransferase__Polynucleobacter_difficilis_                                   20.54%    failed      0.04%
+  23  GCF_003264115.1_ASM326411v1_2736_WP_111993191.1_methyltransferase__Erythrobacter_sp._KY5_                                        21.76%    passed     24.69%
+  24  GCF_003352165.1_ASM335216v1_3123_WP_114913938.1_methyltransferase__Acidibrevibacterium_fodinaquatile_                            24.65%    passed     99.13%
+  25  GCF_003855495.1_ASM385549v1_3365_WP_124739846.1_methyltransferase__Methylocystis_rosea_                                          24.18%    passed    100.00%
+  26  GCF_004136295.1_ASM413629v1_721_WP_129448272.1_methyltransferase__Methylibium_sp._Pch-M_                                         24.00%    passed     68.98%
+  27  GCF_005311585.1_ASM531158v1_973_WP_137457438.1_methyltransferase__Cereibacter_sphaeroides_                                       23.81%    passed     99.02%
+  28  GCF_005860795.2_ASM586079v2_455_WP_210271778.1_methyltransferase__Peteryoungia_desertarenae_                                     27.82%    passed      5.39%
+  29  GCF_007290395.1_ASM729039v1_1479_WP_143846075.1_methyltransferase__Bradyrhizobium_cosmicum_                                      22.22%    passed     96.18%
+  30  GCF_008932115.1_ASM893211v1_4868_WP_151650653.1_methyltransferase__Bradyrhizobium_betae_                                         22.04%    passed     54.44%
+  31  GCF_009363575.1_ASM936357v1_3655_WP_152463572.1_methyltransferase__Roseivivax_sp._THAF30_                                        24.37%    passed     95.74%
+  32  GCF_009363615.1_ASM936361v1_1985_WP_152458439.1_methyltransferase__Ruegeria_sp._THAF33_                                          21.66%    passed      6.58%
+  33  GCF_009363795.1_ASM936379v1_2700_WP_124110567.1_methyltransferase__Maribius_sp._THAF1_                                           25.40%    passed     99.56%
+  34  GCF_009650195.1_ASM965019v1_3148_WP_153762896.1_methyltransferase__Agrobacterium_sp._MA01_                                       21.85%    passed     92.63%
+  35  GCF_011040475.1_ASM1104047v1_2343_WP_164686437.1_methyltransferase_domain-containing_protein__Rhodobacteraceae_bacterium_SC52_   23.62%    passed     99.99%
+  36  GCF_014117445.1_ASM1411744v1_1136_WP_182297791.1_methyltransferase__Sandaracinobacter_sp._M6_                                    26.33%    failed      2.57%
+  37  GCF_016584445.1_ASM1658444v1_1540_WP_011157081.1_methyltransferase__Rhodopseudomonas_palustris_                                  22.78%    passed    100.00%
+  38  GCF_018687475.1_ASM1868747v1_1387_WP_215369565.1_methyltransferase__Polynucleobacter_sp._MWH-UH24A_                              19.70%    failed      4.12%
+  39  GCF_021117295.1_ASM2111729v1_2687_WP_231347042.1_acetylserotonin_O-methyltransferase__Methylorubrum_sp._B1-46_                   24.28%    passed     85.54%
+  40  GCF_022227035.1_ASM2222703v1_1918_WP_011909049.1_MULTISPECIES__methyltransferase__Cereibacter_                                   23.90%    passed     99.91%
+  41  GCF_022410435.1_ASM2241043v1_3428_WP_240092863.1_acetylserotonin_O-methyltransferase__Roseivivax_marinus_                        27.64%    passed     89.02%
+  42  GCF_022558965.1_ASM2255896v1_2447_WP_241418481.1_methyltransferase__Acidiphilium_multivorum_                                     25.58%    failed      2.78%
+  43  GCF_023380025.1_ASM2338002v1_2709_WP_249503760.1_methyltransferase__Sphingomonas_sp._S8-45_                                      27.36%    passed     87.77%
+  44  GCF_023558355.1_ASM2355835v1_3574_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_                    28.85%    passed     99.61%
+  45  GCF_024758725.1_ASM2475872v1_1643_WP_258887826.1_methyltransferase__Sphingomonas_sp._SUN039_                                     26.14%    passed     99.48%
+  46  GCF_025398155.2_ASM2539815v2_239_WP_261758412.1_acetylserotonin_O-methyltransferase__Roseateles_sp._BIM_B-1768_                  24.46%    passed     36.81%
+  47  GCF_026167545.1_ASM2616754v1_27_WP_265550062.1_methyltransferase__Sphingomonas_sp._S1-29_                                        24.56%    passed     96.49%
+  48  GCF_028621955.1_ASM2862195v1_334_WP_273985018.1_methyltransferase__Erythrobacter_sp._BLCC-B19_                                   22.69%    passed    100.00%
+  49  GCF_029761955.1_ASM2976195v1_5813_WP_279357771.1_methyltransferase__Methylobacterium_indicum_                                    24.93%    passed     34.48%
+  50  GCF_030252425.1_ASM3025242v1_830_WP_284946440.1_methyltransferase__Acidisoma_sp._PAMC_29798_                                     24.46%    passed     99.82%
+****  TOTAL                                                                                                                            23.96%  5 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: GCF_023558355.1_ASM2355835v1_3574_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_ is identical to GCF_000018145.1_ASM1814v1_3575_WP_245533092.1_acetylserotonin_O-methyltransferase__Dinoroseobacter_shibae_ but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.051 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -44300.505
+Optimal log-likelihood: -44300.077
+Proportion of invariable sites: 0.127
+Gamma shape alpha: 1.572
+Parameters optimization took 1 rounds (2.209 sec)
+Time for fast ML tree search: 16.190 seconds
+
+NOTE: ModelFinder requires 72 MB RAM!
+ModelFinder will test up to 546 protein models (sample size: 1071) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            46383.127    97  92960.253    92979.793    93442.959
+  2  LG+I          45240.751    98  90677.503    90697.466    91165.185
+  3  LG+G4         44375.006    98  88946.012    88965.975    89433.694
+  4  LG+I+G4       44300.054    99  88798.108    88818.499    89290.766
+  5  LG+R2         44605.018    99  89408.035    89428.427    89900.694
+  6  LG+R3         44343.465    101 88888.930    88910.193    89391.541
+  7  LG+R4         44278.859    103 88763.719    88785.874    89276.283
+  8  LG+R5         44270.090    105 88750.181    88773.248    89272.697
+  9  LG+R6         44269.390    107 88752.781    88776.781    89285.250
+ 20  LG+F+R4       34458.596    122 69161.193    69192.851    69768.307
+ 21  LG+F+R5       34451.141    124 69150.283    69183.052    69767.350
+ 33  WAG+R4        43902.624    103 88011.248    88033.403    88523.812
+ 34  WAG+R5        43898.631    105 88007.263    88030.330    88529.779
+ 46  WAG+F+R4      34500.109    122 69244.218    69275.876    69851.332
+ 47  WAG+F+R5      34492.292    124 69232.583    69265.353    69849.651
+ 59  JTT+R4        44726.576    103 89659.151    89681.306    90171.715
+ 60  JTT+R5        44714.788    105 89639.575    89662.643    90162.092
+ 72  JTT+F+R4      35978.334    122 72200.667    72232.326    72807.782
+ 73  JTT+F+R5      35965.088    124 72178.176    72210.945    72795.243
+ 85  JTTDCMut+R4   44645.633    103 89497.266    89519.421    90009.830
+ 86  JTTDCMut+R5   44633.479    105 89476.959    89500.026    89999.475
+ 98  JTTDCMut+F+R4 35929.221    122 72102.442    72134.100    72709.557
+ 99  JTTDCMut+F+R5 35916.479    124 72080.958    72113.728    72698.025
+111  DCMut+R4      46718.769    103 93643.539    93665.694    94156.103
+112  DCMut+R5      46687.864    105 93585.729    93608.796    94108.245
+124  DCMut+F+R4    37446.303    122 75136.606    75168.264    75743.720
+125  DCMut+F+R5    37392.737    124 75033.473    75066.243    75650.540
+137  VT+R4         44081.171    103 88368.343    88390.498    88880.907
+138  VT+R5         44078.108    105 88366.215    88389.282    88888.732
+150  VT+F+R4       34306.034    122 68856.068    68887.726    69463.183
+151  VT+F+R5       34297.348    124 68842.696    68875.466    69459.763
+163  PMB+R4        42995.185    103 86196.370    86218.526    86708.934
+164  PMB+R5        42991.659    105 86193.318    86216.385    86715.834
+176  PMB+F+R4      34107.516    122 68459.031    68490.689    69066.146
+177  PMB+F+R5      34098.982    124 68445.965    68478.735    69063.032
+189  Blosum62+R4   43047.792    103 86301.583    86323.739    86814.147
+190  Blosum62+R5   43044.350    105 86298.699    86321.767    86821.216
+202  Blosum62+F+R4 33853.749    122 67951.498    67983.156    68558.612
+203  Blosum62+F+R5 33845.032    124 67938.064    67970.834    68555.131
+215  Dayhoff+R4    46715.562    103 93637.123    93659.279    94149.687
+216  Dayhoff+R5    46684.562    105 93579.125    93602.192    94101.641
+228  Dayhoff+F+R4  37447.209    122 75138.418    75170.076    75745.532
+229  Dayhoff+F+R5  37394.105    124 75036.211    75068.980    75653.278
+241  mtREV+R4      46989.666    103 94185.332    94207.487    94697.896
+242  mtREV+R5      46926.512    105 94063.024    94086.091    94585.540
+254  mtREV+F+R4    36741.077    122 73726.155    73757.813    74333.269
+255  mtREV+F+R5    36717.496    124 73682.992    73715.761    74300.059
+267  mtART+R4      46064.372    103 92334.745    92356.900    92847.309
+268  mtART+R5      45990.734    105 92191.467    92214.535    92713.984
+280  mtART+F+R4    35083.198    122 70410.396    70442.054    71017.511
+281  mtART+F+R5    34984.138    124 70216.276    70249.045    70833.343
+293  mtZOA+R4      44076.559    103 88359.118    88381.273    88871.682
+294  mtZOA+R5      44058.421    105 88326.841    88349.909    88849.358
+306  mtZOA+F+R4    34670.616    122 69585.232    69616.891    70192.347
+307  mtZOA+F+R5    34643.378    124 69534.756    69567.525    70151.823
+319  mtMet+R4      46076.711    103 92359.423    92381.578    92871.987
+320  mtMet+R5      46061.196    105 92332.392    92355.459    92854.908
+332  mtMet+F+R4    36009.471    122 72262.941    72294.599    72870.056
+333  mtMet+F+R5    35993.897    124 72235.795    72268.564    72852.862
+345  mtVer+R4      47010.695    103 94227.390    94249.546    94739.954
+346  mtVer+R5      46987.629    105 94185.259    94208.326    94707.775
+358  mtVer+F+R4    37730.028    122 75704.056    75735.714    76311.170
+359  mtVer+F+R5    37704.745    124 75657.490    75690.260    76274.557
+371  mtInv+R4      45589.165    103 91384.330    91406.485    91896.894
+372  mtInv+R5      45578.554    105 91367.108    91390.175    91889.625
+384  mtInv+F+R4    34732.218    122 69708.435    69740.094    70315.550
+385  mtInv+F+R5    34720.837    124 69689.675    69722.444    70306.742
+397  mtMAM+R4      50843.318    103 101892.635   101914.790   102405.199
+398  mtMAM+R5      50734.168    105 101678.336   101701.404   102200.853
+410  mtMAM+F+R4    40245.384    122 80734.768    80766.426    81341.882
+411  mtMAM+F+R5    40129.080    124 80506.161    80538.930    81123.228
+423  HIVb+R4       48644.680    103 97495.359    97517.514    98007.923
+424  HIVb+R5       48613.361    105 97436.721    97459.789    97959.238
+436  HIVb+F+R4     38777.042    122 77798.083    77829.741    78405.198
+437  HIVb+F+R5     38748.471    124 77744.942    77777.712    78362.010
+449  HIVw+R4       53913.636    103 108033.273   108055.428   108545.837
+450  HIVw+R5       53851.081    105 107912.162   107935.229   108434.678
+462  HIVw+F+R4     41368.519    122 82981.038    83012.697    83588.153
+463  HIVw+F+R5     41300.770    124 82849.539    82882.309    83466.606
+475  FLU+R4        50449.377    103 101104.753   101126.909   101617.317
+476  FLU+R5        50378.787    105 100967.575   100990.642   101490.091
+488  FLU+F+R4      38760.901    122 77765.801    77797.460    78372.916
+489  FLU+F+R5      38700.168    124 77648.337    77681.106    78265.404
+501  rtREV+R4      44060.552    103 88327.104    88349.259    88839.668
+502  rtREV+R5      44053.325    105 88316.650    88339.717    88839.166
+514  rtREV+F+R4    34523.784    122 69291.569    69323.227    69898.683
+515  rtREV+F+R5    34515.138    124 69278.275    69311.045    69895.342
+527  cpREV+R4      45182.201    103 90570.401    90592.556    91082.965
+528  cpREV+R5      45171.167    105 90552.333    90575.400    91074.850
+540  cpREV+F+R4    35310.472    122 70864.945    70896.603    71472.059
+541  cpREV+F+R5    35289.751    124 70827.502    70860.271    71444.569
+Akaike Information Criterion:           Blosum62+F+R5
+Corrected Akaike Information Criterion: Blosum62+F+R5
+Bayesian Information Criterion:         Blosum62+F+R5
+Best-fit model: Blosum62+F+R5 chosen according to BIC
+
+All model information printed to results/tree/PGC_bchE/PGC_bchE.model.gz
+CPU time for ModelFinder: 4136.750 seconds (1h:8m:56s)
+Wall-clock time for ModelFinder: 4146.057 seconds (1h:9m:6s)
+WARNING: States(s) N, D, Q, E, I, L, K, F, P, V rarely appear in alignment and may cause numerical problems
+
+NOTE: 36 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -33845.032
+Optimal log-likelihood: -33844.969
+Site proportion and rates:  (0.202,0.041) (0.085,0.261) (0.273,0.713) (0.353,1.527) (0.087,2.716)
+Parameters optimization took 1 rounds (4.570 sec)
+Computing ML distances based on estimated model parameters... 0.602 sec
+Computing BIONJ tree...
+0.002 seconds
+Log-likelihood of BIONJ tree: -33888.755
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.766 second
+Computing log-likelihood of 98 initial trees ... 42.936 seconds
+Current best score: -33844.969
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -33830.956
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -33826.055
+Iteration 10 / LogL: -33832.219 / Time: 0h:2m:8s
+Iteration 20 / LogL: -33832.057 / Time: 0h:3m:5s
+Finish initializing candidate tree set (19)
+Current best tree score: -33826.055 / CPU time: 178.355
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29: -33825.146
+Iteration 30 / LogL: -33829.828 / Time: 0h:4m:27s (0h:15m:13s left)
+Iteration 40 / LogL: -33831.435 / Time: 0h:5m:11s (0h:11m:51s left)
+Iteration 50 / LogL: -33825.593 / Time: 0h:5m:59s (0h:9m:39s left)
+Iteration 60 / LogL: -33825.415 / Time: 0h:6m:42s (0h:7m:51s left)
+Iteration 70 / LogL: -33829.092 / Time: 0h:7m:26s (0h:6m:21s left)
+Iteration 80 / LogL: -33827.024 / Time: 0h:8m:9s (0h:5m:3s left)
+Iteration 90 / LogL: -33832.261 / Time: 0h:8m:58s (0h:3m:55s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 95: -33824.751
+Iteration 100 / LogL: -33831.269 / Time: 0h:9m:51s (0h:9m:27s left)
+Iteration 110 / LogL: -33830.276 / Time: 0h:10m:36s (0h:8m:16s left)
+UPDATE BEST LOG-LIKELIHOOD: -33824.747
+Iteration 120 / LogL: -33825.269 / Time: 0h:11m:19s (0h:7m:8s left)
+Iteration 130 / LogL: -33824.795 / Time: 0h:12m:7s (0h:6m:6s left)
+Iteration 140 / LogL: -33825.071 / Time: 0h:12m:54s (0h:5m:6s left)
+Iteration 150 / LogL: -33838.040 / Time: 0h:13m:41s (0h:4m:8s left)
+Iteration 160 / LogL: -33830.396 / Time: 0h:14m:30s (0h:3m:11s left)
+Iteration 170 / LogL: -33824.765 / Time: 0h:15m:16s (0h:2m:15s left)
+Iteration 180 / LogL: -33834.137 / Time: 0h:16m:1s (0h:1m:20s left)
+Iteration 190 / LogL: -33830.465 / Time: 0h:16m:47s (0h:0m:26s left)
+TREE SEARCH COMPLETED AFTER 196 ITERATIONS / Time: 0h:17m:16s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -33824.747
+2. Current log-likelihood: -33824.700
+3. Current log-likelihood: -33824.653
+4. Current log-likelihood: -33824.611
+5. Current log-likelihood: -33824.571
+6. Current log-likelihood: -33824.532
+7. Current log-likelihood: -33824.492
+8. Current log-likelihood: -33824.451
+9. Current log-likelihood: -33824.411
+10. Current log-likelihood: -33824.372
+11. Current log-likelihood: -33824.334
+12. Current log-likelihood: -33824.296
+13. Current log-likelihood: -33824.259
+14. Current log-likelihood: -33824.223
+15. Current log-likelihood: -33824.188
+16. Current log-likelihood: -33824.153
+17. Current log-likelihood: -33824.119
+18. Current log-likelihood: -33824.087
+19. Current log-likelihood: -33824.067
+20. Current log-likelihood: -33824.037
+21. Current log-likelihood: -33824.017
+22. Current log-likelihood: -33823.987
+23. Current log-likelihood: -33823.968
+24. Current log-likelihood: -33823.938
+25. Current log-likelihood: -33823.919
+26. Current log-likelihood: -33823.890
+27. Current log-likelihood: -33823.871
+28. Current log-likelihood: -33823.842
+29. Current log-likelihood: -33823.823
+30. Current log-likelihood: -33823.796
+31. Current log-likelihood: -33823.777
+32. Current log-likelihood: -33823.759
+33. Current log-likelihood: -33823.740
+34. Current log-likelihood: -33823.713
+35. Current log-likelihood: -33823.698
+36. Current log-likelihood: -33823.681
+37. Current log-likelihood: -33823.664
+38. Current log-likelihood: -33823.646
+39. Current log-likelihood: -33823.629
+40. Current log-likelihood: -33823.611
+41. Current log-likelihood: -33823.584
+42. Current log-likelihood: -33823.570
+43. Current log-likelihood: -33823.554
+44. Current log-likelihood: -33823.538
+45. Current log-likelihood: -33823.521
+46. Current log-likelihood: -33823.505
+47. Current log-likelihood: -33823.489
+48. Current log-likelihood: -33823.471
+49. Current log-likelihood: -33823.447
+50. Current log-likelihood: -33823.432
+51. Current log-likelihood: -33823.417
+52. Current log-likelihood: -33823.401
+53. Current log-likelihood: -33823.387
+54. Current log-likelihood: -33823.372
+55. Current log-likelihood: -33823.356
+56. Current log-likelihood: -33823.342
+57. Current log-likelihood: -33823.327
+58. Current log-likelihood: -33823.315
+59. Current log-likelihood: -33823.303
+60. Current log-likelihood: -33823.291
+61. Current log-likelihood: -33823.278
+62. Current log-likelihood: -33823.264
+63. Current log-likelihood: -33823.250
+64. Current log-likelihood: -33823.236
+65. Current log-likelihood: -33823.224
+66. Current log-likelihood: -33823.213
+67. Current log-likelihood: -33823.199
+68. Current log-likelihood: -33823.187
+69. Current log-likelihood: -33823.175
+70. Current log-likelihood: -33823.162
+71. Current log-likelihood: -33823.149
+72. Current log-likelihood: -33823.136
+73. Current log-likelihood: -33823.125
+74. Current log-likelihood: -33823.115
+75. Current log-likelihood: -33823.104
+76. Current log-likelihood: -33823.092
+77. Current log-likelihood: -33823.080
+78. Current log-likelihood: -33823.069
+79. Current log-likelihood: -33823.057
+80. Current log-likelihood: -33823.046
+81. Current log-likelihood: -33823.034
+82. Current log-likelihood: -33823.023
+83. Current log-likelihood: -33823.011
+84. Current log-likelihood: -33823.000
+85. Current log-likelihood: -33822.989
+86. Current log-likelihood: -33822.978
+87. Current log-likelihood: -33822.967
+88. Current log-likelihood: -33822.956
+89. Current log-likelihood: -33822.945
+90. Current log-likelihood: -33822.935
+91. Current log-likelihood: -33822.924
+92. Current log-likelihood: -33822.914
+93. Current log-likelihood: -33822.903
+Optimal log-likelihood: -33822.888
+Site proportion and rates:  (0.184,0.032) (0.094,0.222) (0.263,0.681) (0.340,1.440) (0.119,2.563)
+Parameters optimization took 93 rounds (235.523 sec)
+BEST SCORE FOUND : -33822.888
+Total tree length: 12.119
+
+Total number of iterations: 196
+CPU time used for tree search: 1025.903 sec (0h:17m:5s)
+Wall-clock time used for tree search: 1029.241 sec (0h:17m:9s)
+Total CPU time used: 1268.157 sec (0h:21m:8s)
+Total wall-clock time used: 1272.252 sec (0h:21m:12s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/tree/PGC_bchE/PGC_bchE.iqtree
+  Maximum-likelihood tree:       results/tree/PGC_bchE/PGC_bchE.treefile
+  Likelihood distances:          results/tree/PGC_bchE/PGC_bchE.mldist
+  Screen log file:               results/tree/PGC_bchE/PGC_bchE.log
+
+Date and Time: Thu Jun  6 20:12:38 2024

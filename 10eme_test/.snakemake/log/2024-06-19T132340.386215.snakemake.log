@@ -1,0 +1,124 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+all                                1
+fasta_gatherer_for_cluster         1
+fasta_retriever_for_cluster        3
+infos_retriever                    1
+list_creator                       1
+list_merger                        1
+total                              8
+
+Select jobs to execute...
+Execute 4 jobs...
+
+[Wed Jun 19 13:23:40 2024]
+localrule list_creator:
+    input: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, results/genomes
+    output: results/lists/list_organisms.csv
+    jobid: 10
+    reason: Set of input files has changed since last execution
+    resources: tmpdir=/tmp
+
+
+[Wed Jun 19 13:23:40 2024]
+localrule fasta_retriever_for_cluster:
+    input: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa, data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder
+    output: results/fasta/GCF_000021005.1_ASM2100v1/genes_hit_and_beyond.faa
+    jobid: 15
+    reason: Set of input files has changed since last execution
+    wildcards: genome=GCF_000021005.1_ASM2100v1
+    resources: tmpdir=/tmp
+
+
+[Wed Jun 19 13:23:40 2024]
+localrule fasta_retriever_for_cluster:
+    input: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa, data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa, results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder
+    output: results/fasta/GCF_000019725.1_ASM1972v1/genes_hit_and_beyond.faa
+    jobid: 13
+    reason: Set of input files has changed since last execution
+    wildcards: genome=GCF_000019725.1_ASM1972v1
+    resources: tmpdir=/tmp
+
+
+[Wed Jun 19 13:23:40 2024]
+localrule fasta_retriever_for_cluster:
+    input: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein.faa, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein.faa, data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein.faa, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder
+    output: results/fasta/GCF_000016725.1_ASM1672v1/genes_hit_and_beyond.faa
+    jobid: 14
+    reason: Set of input files has changed since last execution
+    wildcards: genome=GCF_000016725.1_ASM1672v1
+    resources: tmpdir=/tmp
+
+[Wed Jun 19 13:23:40 2024]
+Finished job 10.
+1 of 8 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Jun 19 13:23:40 2024]
+localrule infos_retriever:
+    input: results/lists/list_organisms.csv
+    output: results/lists/list_PGC_infos.csv
+    jobid: 11
+    reason: Input files updated by another job: results/lists/list_organisms.csv
+    resources: tmpdir=/tmp
+
+[Wed Jun 19 13:23:40 2024]
+Finished job 15.
+2 of 8 steps (25%) done
+[Wed Jun 19 13:23:40 2024]
+Finished job 14.
+3 of 8 steps (38%) done
+[Wed Jun 19 13:23:40 2024]
+Finished job 13.
+4 of 8 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Jun 19 13:23:40 2024]
+localrule fasta_gatherer_for_cluster:
+    input: results/fasta/GCF_000019725.1_ASM1972v1/genes_hit_and_beyond.faa, results/fasta/GCF_000016725.1_ASM1672v1/genes_hit_and_beyond.faa, results/fasta/GCF_000021005.1_ASM2100v1/genes_hit_and_beyond.faa
+    output: results/fasta/all_fasta_gathered.faa
+    jobid: 16
+    reason: Input files updated by another job: results/fasta/GCF_000021005.1_ASM2100v1/genes_hit_and_beyond.faa, results/fasta/GCF_000016725.1_ASM1672v1/genes_hit_and_beyond.faa, results/fasta/GCF_000019725.1_ASM1972v1/genes_hit_and_beyond.faa
+    resources: tmpdir=/tmp
+
+[Wed Jun 19 13:23:40 2024]
+Finished job 16.
+5 of 8 steps (62%) done
+[Wed Jun 19 13:23:43 2024]
+Finished job 11.
+6 of 8 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Jun 19 13:23:43 2024]
+localrule list_merger:
+    input: results/lists/list_PGC_infos.csv, data/lists/merged_list_with_taxonomy.csv, results/lists/list_organisms.csv
+    output: results/lists/list_organisms_merged.csv
+    jobid: 12
+    reason: Input files updated by another job: results/lists/list_organisms.csv, results/lists/list_PGC_infos.csv
+    resources: tmpdir=/tmp
+
+[Wed Jun 19 13:23:43 2024]
+Finished job 12.
+7 of 8 steps (88%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Jun 19 13:23:43 2024]
+localrule all:
+    input: results/genomes/GCF_000019725.1_ASM1972v1/PGCfinder, results/genomes/GCF_000016725.1_ASM1672v1/PGCfinder, results/genomes/GCF_000021005.1_ASM2100v1/PGCfinder, data/genomes_unzip/GCF_000019725.1_ASM1972v1/GCF_000019725.1_ASM1972v1_protein_gff.tsv, data/genomes_unzip/GCF_000016725.1_ASM1672v1/GCF_000016725.1_ASM1672v1_protein_gff.tsv, data/genomes_unzip/GCF_000021005.1_ASM2100v1/GCF_000021005.1_ASM2100v1_protein_gff.tsv, results/lists/list_organisms.csv, results/lists/list_PGC_infos.csv, results/lists/list_organisms_merged.csv, results/fasta/GCF_000019725.1_ASM1972v1/genes_hit_and_beyond.faa, results/fasta/GCF_000016725.1_ASM1672v1/genes_hit_and_beyond.faa, results/fasta/GCF_000021005.1_ASM2100v1/genes_hit_and_beyond.faa, results/fasta/all_fasta_gathered.faa
+    jobid: 0
+    reason: Input files updated by another job: results/lists/list_organisms_merged.csv, results/lists/list_PGC_infos.csv, results/fasta/GCF_000016725.1_ASM1672v1/genes_hit_and_beyond.faa, results/lists/list_organisms.csv, results/fasta/GCF_000021005.1_ASM2100v1/genes_hit_and_beyond.faa, results/fasta/all_fasta_gathered.faa, results/fasta/GCF_000019725.1_ASM1972v1/genes_hit_and_beyond.faa
+    resources: tmpdir=/tmp
+
+[Wed Jun 19 13:23:43 2024]
+Finished job 0.
+8 of 8 steps (100%) done
+Complete log: .snakemake/log/2024-06-19T132340.386215.snakemake.log

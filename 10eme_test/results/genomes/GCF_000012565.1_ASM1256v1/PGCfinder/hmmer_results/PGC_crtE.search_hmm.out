@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_crtE.hmm
+# target sequence database:        data/genomes_unzip/GCF_000012565.1_ASM1256v1/GCF_000012565.1_ASM1256v1_protein.faa
+# output directed to file:         results/genomes/GCF_000012565.1_ASM1256v1/PGCfinder/hmmer_results/PGC_crtE.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_crtE_hmm  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                      -----------
+    1.8e-50  167.4   0.0    2.2e-50  167.0   0.0    1.1  1  GCF_000012565.1_ASM1256v1_570  WP_011304680.1 polyprenyl synthe
+    1.6e-32  108.5   0.0      2e-32  108.1   0.0    1.1  1  GCF_000012565.1_ASM1256v1_52   WP_011304182.1 polyprenyl synthe
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_000012565.1_ASM1256v1_570  WP_011304680.1 polyprenyl synthetase family protein [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.0   0.0   4.7e-53   2.2e-50       9     214 ..      26     235 ..      19     267 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 167.0 bits;  conditional E-value: 4.7e-53
+           trimmed_msa_crtE_hmm   9 aalasaeaeeapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRR 88 
+                                    ++l+s   e+  + l +++ry++f+ G+ iRP l+ ava+ +  + +++    +aa+e++h +sL+hDDlP +D++++RR
+  GCF_000012565.1_ASM1256v1_570  26 QKLESMLPENNQDILLTSIRYSIFSPGKHIRPFLVNAVAQMFDVNVDRTLP-VSAAVEIIHVYSLIHDDLPGMDNEEIRR 104
+                                    5566666677788999**************************988887776.8889************************ PP
+
+           trimmed_msa_crtE_hmm  89 gkpsvhkafgeplavLaGDalivlafetlareaaksparlakllktlaravGapaGivaGqawesea...ev.dlsayqr 164
+                                    g++s hk+f+e++a+L+GDal++lafe+l+   ++sp    +++ktla+a+G  +G++ Gq +++e+   ++ ++++ + 
+  GCF_000012565.1_ASM1256v1_570 105 GQASSHKKFNEAVAILTGDALLTLAFEILSTI-NESPLIRCRIIKTLAHAIGY-QGMIQGQILDTETiakDInEIQNIHV 182
+                                    ****************************9875.5699999************9.9**********99655333699999* PP
+
+           trimmed_msa_crtE_hmm 165 aktgaLfaaatvaGai...aagadaeewralgealGeayqvaDDlrDaladae 214
+                                     kt+  f a +  G+i   a+  + ++++++g  lG+a+q+ DD+ D  +d++
+  GCF_000012565.1_ASM1256v1_570 183 LKTAQFFSAICELGGIlgnASNIQLNALANYGLNLGHAFQIKDDIADEDQDKS 235
+                                    **************99887999999999******************9877764 PP
+
+>> GCF_000012565.1_ASM1256v1_52  WP_011304182.1 polyprenyl synthetase family protein [Ehrlichia canis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.1   0.0   4.3e-35     2e-32      10     232 ..      25     245 ..      15     292 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 108.1 bits;  conditional E-value: 4.3e-35
+          trimmed_msa_crtE_hmm  10 alasaeaeeapprlaaalryavfpgGaRiRPrlclavaaacGdddpaladaaaaaiellhCasLvhDDlPcfDdadlRRgk 90 
+                                    l s++++++ + +++ +++ + +gG+RiRP + + +      ++++     aaaie++h a L+hDD+  +D++dlRRgk
+  GCF_000012565.1_ASM1256v1_52  25 ILISQHSDKHIALITEIIHHLIKSGGKRIRPIIFFIICKMLNCTNENKIL-IAAAIEFIHNATLLHDDV--IDESDLRRGK 102
+                                   45667778888999******************998887665554444443.5789*************6..9********* PP
+
+          trimmed_msa_crtE_hmm  91 psvhkafgeplavLaGDalivlafetlareaaksparlakllktl.aravGapaGivaGqaweseaevdlsayqraktgaL 170
+                                   ++    +g++  +L+GD l+ ++f+ l + ++ +   l+ l +t  +  vG  + + +    +  +e  ++    akt++L
+  GCF_000012565.1_ASM1256v1_52 103 KTSNFIWGNKASILVGDFLLAISFQWLIECKNLNI--LSILSQTSnTIVVGEIQQMLSSHNINISKEKYIE-IISAKTASL 180
+                                   ***************************98766433..2222222202246766666666666666555443.4579***** PP
+
+          trimmed_msa_crtE_hmm 171 faaatvaGaiaag...adaeewralgealGeayqvaDDlrDaladaeelGkpagqDaalgrpsav 232
+                                   f a++ + a  a    +++++++++g+ +G a+q+ DD+ D +a++++ Gk  g+D ++g+ +  
+  GCF_000012565.1_ASM1256v1_52 181 FGATCESAAHLAQvnlQESKALKSFGNNFGIAFQIMDDILDYTASNAQFGKKLGNDLSTGKTTLP 245
+                                   ****999998666333678889999*********************************9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (280 nodes)
+Target sequences:                        940  (315229 residues searched)
+Passed MSV filter:                        20  (0.0212766); expected 18.8 (0.02)
+Passed bias filter:                       19  (0.0202128); expected 18.8 (0.02)
+Passed Vit filter:                         4  (0.00425532); expected 0.9 (0.001)
+Passed Fwd filter:                         2  (0.00212766); expected 0.0 (1e-05)
+Initial search space (Z):                940  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14755.00
+//
+[ok]

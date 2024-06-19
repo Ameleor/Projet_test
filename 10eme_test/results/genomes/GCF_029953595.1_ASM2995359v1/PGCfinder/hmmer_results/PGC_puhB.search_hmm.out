@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_029953595.1_ASM2995359v1/GCF_029953595.1_ASM2995359v1_protein.faa
+# output directed to file:         results/genomes/GCF_029953595.1_ASM2995359v1/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    6.5e-75  249.0   4.6    7.8e-75  248.8   4.6    1.0  1  GCF_029953595.1_ASM2995359v1_1319  WP_281468810.1 photosynthetic co
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_029953595.1_ASM2995359v1_1319  WP_281468810.1 photosynthetic complex putative assembly protein PuhB [Fuscovulum s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  248.8   4.6     2e-78   7.8e-75       1     200 [.       5     203 ..       5     212 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 248.8 bits;  conditional E-value: 2e-78
+               trimmed_msa_puhB_hmm   1 sefefepvkglPeklPagEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaallla 76 
+                                        ++f+f+ ++g+P++lP+gE++lWqGrPd++alareaf++r++a+Y+a+++lw++ a++ dg  l+ al+  ++ ++
+  GCF_029953595.1_ASM2995359v1_1319   5 DDFAFDVAPGIPAPLPKGEEVLWQGRPDTSALAREAFKIRWIAAYMALIVLWKAGAGFVDG-GLALALLRGLPYAV 79 
+                                        589******************************************************9996.78888999999*** PP
+
+               trimmed_msa_puhB_hmm  77 laavalallallawlsarttvYtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsyl 152
+                                        la++a+a+++llaw++ar+tvYt+T+ Rv+++iG+aLsvt+n+Pf+q+++a+l+l+++g+g+iale++g++rl++l
+  GCF_029953595.1_ASM2995359v1_1319  80 LALAAVAVVWLLAWAQARATVYTVTSARVLMKIGAALSVTYNIPFAQVATARLDLKSKGTGTIALETMGDTRLAFL 155
+                                        **************************************************************************** PP
+
+               trimmed_msa_puhB_hmm 153 llWPhvRpwrlarpePmLrcipdaekvAelLaealaaaaaaeaeaaea 200
+                                        +lWPh Rp rl+r+eP+Lrcipdae+vA+lLaea++a+ a++  ++++
+  GCF_029953595.1_ASM2995359v1_1319 156 ALWPHLRPGRLKRTEPALRCIPDAERVARLLAEAAEARLAMPVITRAD 203
+                                        *************************************99988776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       3922  (1261726 residues searched)
+Passed MSV filter:                       281  (0.0716471); expected 78.4 (0.02)
+Passed bias filter:                      145  (0.0369709); expected 78.4 (0.02)
+Passed Vit filter:                        11  (0.00280469); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000254972); expected 0.0 (1e-05)
+Initial search space (Z):               3922  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 13097.45
+//
+[ok]

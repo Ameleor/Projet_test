@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/salzatht/Documents/pipelinePGCfinder/share/macsyfinder/models/PGCFinder/profiles/PGC_puhB.hmm
+# target sequence database:        data/genomes_unzip/GCF_901457705.2_RHAL1_v2/GCF_901457705.2_RHAL1_v2_protein.faa
+# output directed to file:         results/genomes/GCF_901457705.2_RHAL1_v2/PGCfinder/hmmer_results/PGC_puhB.search_hmm.out
+# sequence reporting threshold:    E-value <= 0.1
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trimmed_msa_puhB_hmm  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                     -----------
+    8.4e-65  216.0   4.1    1.1e-64  215.7   4.1    1.1  1  GCF_901457705.2_RHAL1_v2_831  WP_138105383.1 MULTISPECIES: PH 
+
+
+Domain annotation for each sequence (and alignments):
+>> GCF_901457705.2_RHAL1_v2_831  WP_138105383.1 MULTISPECIES: PH domain-containing protein [unclassified Beijerinckiacea
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  215.7   4.1   2.6e-68   1.1e-64      17     194 ..      22     198 ..      14     215 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 215.7 bits;  conditional E-value: 2.6e-68
+          trimmed_msa_puhB_hmm  17 agEkilWqGrPdwkalareafhvrlvalYfavlllwrvlaaladgeslsealasaalllalaavalallallawlsarttv 97 
+                                   ++E++lWqGrP++  l+r+ fh+r v++Yf+vl++w++++a adg  +s+al +aa++++ aava  ++++++wl a tt 
+  GCF_901457705.2_RHAL1_v2_831  22 PDETVLWQGRPQTLGLTRSLFHIRVVMGYFVVLAAWNLASAHADGLWASAALGAAAWVAVPAAVAGLVFLAMSWLIAATTH 102
+                                   79******************************************************************************* PP
+
+          trimmed_msa_puhB_hmm  98 YtiTnrRvvlriGiaLsvtlnlPfkqiesadlklrkdgsgdialelkgeerlsylllWPhvRpwrlarpePmLrcipdaek 178
+                                   YtiT+rRv+++iG+aL+++l+lP+k+i  a +kl++dgsgdi+l+l g+++l+ylllWPh+Rpwrl++pePmLr+ipd++ 
+  GCF_901457705.2_RHAL1_v2_831 103 YTITDRRVIMQIGVALPIALTLPLKRILGAGVKLNADGSGDIPLSL-GRQKLAYLLLWPHARPWRLRQPEPMLRAIPDVRG 182
+                                   ********************************************98.5789****************************** PP
+
+          trimmed_msa_puhB_hmm 179 vAelLaealaaaaaae 194
+                                   vA++L++al +a+ a 
+  GCF_901457705.2_RHAL1_v2_831 183 VANILSRALLTASPAG 198
+                                   ********98876654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       4078  (1231137 residues searched)
+Passed MSV filter:                       251  (0.0615498); expected 81.6 (0.02)
+Passed bias filter:                      135  (0.0331045); expected 81.6 (0.02)
+Passed Vit filter:                         7  (0.00171653); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000245218); expected 0.0 (1e-05)
+Initial search space (Z):               4078  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10189.94
+//
+[ok]
