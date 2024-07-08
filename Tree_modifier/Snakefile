@@ -1,0 +1,11 @@
+#A mettre ici toutes les informations relatives a Snakemake
+
+configfile: "config.yaml"
+
+rule exemple:
+	input:
+		"input/test"
+	output:
+		"output/test"
+	shell:
+		"mv {input} {output}"

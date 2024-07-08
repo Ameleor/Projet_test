@@ -1,0 +1,494 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+SEPARATOR COMMA
+#SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,order
+
+#dataset color (can be changed later)
+COLOR,#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES,0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_SCALE 1
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_HORIZONTAL 0
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0.5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0.5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#if set to 1, border will be drawn completely around each colored strip box
+#COMPLETE_BORDER 0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#display or hide the individual label inside each colored strip (when defined in the data below)
+#SHOW_STRIP_LABELS 1
+
+#position of the strip label within the box; 'top', 'center' or 'bottom'
+#STRIP_LABEL_POSITION center
+
+#strip label size factor (relative to the tree leaf labels)
+#STRIP_LABEL_SIZE_FACTOR 1
+
+
+#rotation of the strip labels; used only in rectangular tree display mode
+#STRIP_LABEL_ROTATION 0
+
+#strip label shift in pixels (positive or negative)
+#STRIP_LABEL_SHIFT 0
+
+#STRIP_LABEL_COLOR #000000
+
+#draw a black outline around the text (width in pixels)
+#STRIP_LABEL_OUTLINE 0.5
+
+#calculate the label color automatically (black or white), based on the darkness of the color strip
+#STRIP_LABEL_AUTO_COLOR 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#dataset label size factor
+#SIZE_FACTOR 1
+
+#dataset label rotation
+#LABEL_ROTATION 0
+
+#dataset label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+GCA_021228015.1_ASM2122801v1,#ccbbaa,Rhizobiales
+GCA_001548015.1_ASM154801v1,#ccbbaa,Rhizobiales
+GCA_000012565.1_ASM1256v1,#C0C0C0,Rickettsiales
+GCA_007972595.1_ASM797259v1,#C0C0C0,Rickettsiales
+GCA_023559145.1_ASM2355914v1,#C0C0C0,Rickettsiales
+GCA_000016185.1_ASM1618v1,#112233,Azospirillales
+GCA_000009985.1_ASM998v1,#00FF00,Rhodospirillales
+GCA_000225955.1_ASM22595v1,#00FF00,Rhodospirillales
+GCA_000021005.1_ASM2100v1,#D2691E,Rhodobacterales
+GCA_002073975.1_ASM207397v1,#D2691E,Rhodobacterales
+GCA_022227035.1_ASM2222703v1,#D2691E,Rhodobacterales
+GCA_000016725.1_ASM1672v1,#aabbcc,Acetobacterales
+GCA_937425535.1_Rhodovastum_atsumiense_G2-11,#aabbcc,Acetobacterales
+GCA_000202835.1_ASM20283v1,#aabbcc,Acetobacterales
+GCA_000014045.1_ASM1404v1,#D2691E,Rhodobacterales
+GCA_000018145.1_ASM1814v1,#D2691E,Rhodobacterales
+GCA_003288315.1_ASM328831v1,#D2691E,Rhodobacterales
+GCA_000015165.1_ASM1516v1,#ccbbaa,Rhizobiales
+GCA_021088345.1_ASM2108834v1,#ccbbaa,Rhizobiales
+GCA_023101065.1_ASM2310106v1,#ccbbaa,Rhizobiales
+GCA_030297595.1_ASM3029759v1,#00FFFF,Burkholderiales
+GCA_024662615.1_ASM2466261v1,#00FFFF,Burkholderiales
+GCA_030297575.1_ASM3029757v1,#00FFFF,Burkholderiales
+GCA_001713375.1_ASM171337v1,#00FFFF,Burkholderiales
+GCA_011388215.1_ASM1138821v1,#00FFFF,Burkholderiales
+GCA_023634805.2_ASM2363480v2,#00FFFF,Burkholderiales
+GCA_013170845.1_ASM1317084v1,#ccbbaa,Rhizobiales
+GCA_009761735.1_ASM976173v1,#ccbbaa,Rhizobiales
+GCA_014495845.1_ASM1449584v1,#ccbbaa,Rhizobiales
+GCA_029201645.1_ASM2920164v1,#ccbbaa,Rhizobiales
+GCA_001713475.1_ASM171347v1,#ccbbaa,Rhizobiales
+GCA_003667725.1_ASM366772v1,#ccbbaa,Rhizobiales
+GCA_001579845.1_ASM157984v1,#ccbbaa,Rhizobiales
+GCA_027886585.1_ASM2788658v1,#ccbbaa,Rhizobiales
+GCA_000166055.1_ASM16605v1,#ccbbaa,Rhizobiales
+GCA_016925575.1_ASM1692557v1,#5F9EA0,Pseudomonadales
+GCA_027498055.1_ASM2749805v1,#5F9EA0,Pseudomonadales
+GCA_013341315.1_ASM1334131v1,#5F9EA0,Pseudomonadales
+GCA_004923315.1_ASM492331v1,#112233,Azospirillales
+GCA_008843145.1_ASM884314v1,#112233,Azospirillales
+GCA_002868735.1_ASM286873v1,#112233,Azospirillales
+GCA_002215215.1_ASM221521v1,#aabb22,Granulosicoccales
+GCA_003967195.1_ASM396719v1,#FFFFFF,Unknown
+GCA_000948985.2_ASM94898v2,#0000FF,Enterobacterales
+GCA_003971255.1_ASM397125v1,#0000FF,Enterobacterales
+GCA_004295665.1_ASM429566v1,#0000FF,Enterobacterales
+GCA_001191005.1_ASM119100v1,#00FFFF,Burkholderiales
+GCA_000221045.1_ASM22104v1,#00FFFF,Burkholderiales
+GCA_002128345.1_ASM212834v1,#00FFFF,Burkholderiales
+GCA_000165835.1_ASM16583v1,#00FFFF,Burkholderiales
+GCA_001987095.1_ASM198709v1,#00FFFF,Burkholderiales
+GCA_009626755.1_ASM962675v1,#00FFFF,Burkholderiales
+GCA_000091005.1_ASM9100v1,#0000FF,Enterobacterales
+GCA_022353585.1_ASM2235358v1,#0000FF,Enterobacterales
+GCA_907163245.1_AUSMDU00007171,#0000FF,Enterobacterales
+GCA_001741865.1_ASM174186v1,#ccbbaa,Rhizobiales
+GCA_030144325.1_ASM3014432v1,#ccbbaa,Rhizobiales
+GCA_001713455.1_ASM171345v1,#ccbbaa,Rhizobiales
+GCA_000019225.1_ASM1922v1,#5F9EA0,Pseudomonadales
+GCA_000023025.1_ASM2302v1,#5F9EA0,Pseudomonadales
+GCA_014217335.1_ASM1421733v1,#5F9EA0,Pseudomonadales
+GCA_003031545.1_ASM303154v1,#0000FF,Enterobacterales
+GCA_000834985.1_ASM83498v1,#0000FF,Enterobacterales
+GCA_003956105.2_ASM395610v2,#0000FF,Enterobacterales
+GCA_000512205.2_ASM51220v2,#000080,Sphingomonadales
+GCA_000935025.1_ASM93502v1,#000080,Sphingomonadales
+GCA_011044255.1_ASM1104425v1,#000080,Sphingomonadales
+GCA_001442805.1_ASM144280v1,#FFA500,Xanthomonadales
+GCA_025426215.1_ASM2542621v1,#FFA500,Xanthomonadales
+GCA_028752475.1_ASM2875247v1,#FFA500,Xanthomonadales
+GCA_016865525.2_ASM1686552v2,#0000FF,Enterobacterales
+GCA_000010085.1_ASM1008v1,#0000FF,Enterobacterales
+GCA_900161835.1_HBAv1,#0000FF,Enterobacterales
+GCA_023920205.1_ASM2392020v1,#0000FF,Enterobacterales
+GCA_029773045.1_ASM2977304v1,#0000FF,Enterobacterales
+GCA_014169675.1_ASM1416967v1,#0000FF,Enterobacterales
+GCA_017569925.1_ASM1756992v1,#0000FF,Enterobacterales
+GCA_018361185.1_ASM1836118v1,#0000FF,Enterobacterales
+GCA_002921235.2_ASM292123v2,#0000FF,Enterobacterales
+GCA_016890085.1_ASM1689008v1,#00FFFF,Burkholderiales
+GCA_000283535.1_ASM28353v1,#00FFFF,Burkholderiales
+GCA_005155025.1_ASM515502v1,#00FFFF,Burkholderiales
+GCA_016598595.1_ASM1659859v1,#ccbbaa,Rhizobiales
+GCA_026898155.1_ASM2689815v1,#ccbbaa,Rhizobiales
+GCA_021391535.1_ASM2139153v1,#ccbbaa,Rhizobiales
+GCA_012971745.1_ASM1297174v1,#ccbbaa,Rhizobiales
+GCA_000017645.1_ASM1764v1,#ccbbaa,Rhizobiales
+GCA_022637495.1_ASM2263749v1,#FFA500,Xanthomonadales
+GCA_000439575.1_ASM43957v1,#0000FF,Enterobacterales
+GCA_009796745.1_ASM979674v1,#0000FF,Enterobacterales
+GCA_019900845.1_ASM1990084v1,#0000FF,Enterobacterales
+GCA_014495725.1_ASM1449572v1,#ccbbaa,Rhizobiales
+GCA_018798825.1_ASM1879882v1,#ccbbaa,Rhizobiales
+GCA_020341615.1_ASM2034161v1,#ccbbaa,Rhizobiales
+GCA_000597785.2_ASM59778v2,#0000FF,Enterobacterales
+GCA_025665395.1_ASM2566539v1,#0000FF,Enterobacterales
+GCA_001586165.1_ASM158616v1,#0000FF,Enterobacterales
+GCA_000019225.1_ASM1922v1,#5F9EA0,Pseudomonadales
+GCA_029906505.1_ASM2990650v1,#5F9EA0,Pseudomonadales
+GCA_014211975.1_ASM1421197v1,#5F9EA0,Pseudomonadales
+GCA_014263185.1_ASM1426318v1,#0000FF,Enterobacterales
+GCA_004358345.1_ASM435834v1,#0000FF,Enterobacterales
+GCA_021513195.1_ASM2151319v1,#0000FF,Enterobacterales
+GCA_023547145.1_ASM2354714v1,#0000FF,Enterobacterales
+GCA_011046025.1_ASM1104602v1,#0000FF,Enterobacterales
+GCA_001721185.1_ASM172118v1,#0000FF,Enterobacterales
+GCA_014705805.1_ASM1470580v1,#5F9EA0,Pseudomonadales
+GCA_003971305.1_ASM397130v1,#5F9EA0,Pseudomonadales
+GCA_002082665.1_ASM208266v1,#5F9EA0,Pseudomonadales
+GCA_016469335.1_ASM1646933v1,#0000FF,Enterobacterales
+GCA_000026085.1_ASM2608v1,#0000FF,Enterobacterales
+GCA_018972125.1_ASM1897212v1,#0000FF,Enterobacterales
+GCA_023716485.1_ASM2371648v1,#5F9EA0,Pseudomonadales
+GCA_020991125.1_ASM2099112v1,#5F9EA0,Pseudomonadales
+GCA_001999945.1_ASM199994v1,#5F9EA0,Pseudomonadales
+GCA_003015185.1_ASM301518v1,#FFA500,Xanthomonadales
+GCA_023078495.1_ASM2307849v1,#FFA500,Xanthomonadales
+GCA_021560635.1_ASM2156063v1,#FFA500,Xanthomonadales
+GCA_000021745.1_ASM2174v1,#ccbbaa,Rhizobiales
+GCA_000019845.1_ASM1984v1,#ccbbaa,Rhizobiales
+GCA_019343105.1_ASM1934310v1,#ccbbaa,Rhizobiales
+GCA_000017265.1_ASM1726v1,#8B0000,Caulobacterales
+GCA_002002865.1_ASM200286v1,#8B0000,Caulobacterales
+GCA_027271155.1_ASM2727115v1,#8B0000,Caulobacterales
+GCA_002116735.1_ASM211673v1,#5F9EA0,Pseudomonadales
+GCA_030297115.1_ASM3029711v1,#5F9EA0,Pseudomonadales
+GCA_008122265.1_ASM812226v1,#5F9EA0,Pseudomonadales
+GCA_014127105.1_ASM1412710v1,#ccbbaa,Rhizobiales
+GCA_008000755.1_ASM800075v1,#ccbbaa,Rhizobiales
+GCA_013004005.1_ASM1300400v1,#ccbbaa,Rhizobiales
+GCA_002803865.1_ASM280386v1,#0000FF,Enterobacterales
+GCA_026625085.1_ASM2662508v1,#0000FF,Enterobacterales
+GCA_002953195.1_ASM295319v1,#0000FF,Enterobacterales
+GCA_900637635.1_52313_A01,#6495ED,Legionellales
+GCA_002848365.2_ASM284836v2,#6495ED,Legionellales
+GCA_004766445.2_ASM476644v2,#6495ED,Legionellales
+GCA_000025705.1_ASM2570v1,#00FFFF,Burkholderiales
+GCA_000145255.1_ASM14525v1,#00FFFF,Burkholderiales
+GCA_018324385.1_ASM1832438v1,#00FFFF,Burkholderiales
+GCA_009708355.1_ASM970835v1,#99aacc,Piscirickettsiales
+GCA_000260985.4_ASM26098v3,#3344bb,Nitrosococcales
+GCA_003991075.1_ASM399107v1,#99aacc,Thiomicrospirales
+GCA_023516355.1_ASM2351635v1,#0000FF,Enterobacterales
+GCA_000022985.1_ASM2298v1,#0000FF,Enterobacterales
+GCA_023587305.1_ASM2358730v1,#0000FF,Enterobacterales
+GCA_003355395.1_ASM335539v1,#00FFFF,Burkholderiales
+GCA_022870865.1_ASM2287086v1,#00FFFF,Burkholderiales
+GCA_002951955.2_ASM295195v2,#00FFFF,Burkholderiales
+GCA_025790825.1_ASM2579082v1,#bbccdd,Coxiellales
+GCA_902459475.1_pb_189-1_HGAP3_CTR,#FFFFFF,Unknown
+GCA_019285595.1_ASM1928559v1,#ccddee,Diplorickettsiales
+GCA_000009245.1_ASM924v1,#ffaa00,Francisellales
+GCA_008369765.1_ASM836976v1,#ffaa00,Francisellales
+GCA_012222965.1_ASM1222296v1,#ffaa00,Francisellales
+GCA_021560505.1_ASM2156050v1,#ccbbaa,Rhizobiales
+GCA_900638615.1_58174_F01,#ccbbaa,Rhizobiales
+GCA_021560425.1_ASM2156042v1,#ccbbaa,Rhizobiales
+GCA_022936085.1_ASM2293608v1,#C0C0C0,Rickettsiales
+GCA_002078335.1_ASM207833v1,#C0C0C0,Rickettsiales
+GCA_001602215.1_ASM160221v1,#C0C0C0,Rickettsiales
+GCA_016495405.1_ASM1649540v1,#5F9EA0,Pseudomonadales
+GCA_003610015.1_ASM361001v1,#5F9EA0,Pseudomonadales
+GCA_025725665.1_ASM2572566v1,#5F9EA0,Pseudomonadales
+GCA_013170845.1_ASM1317084v1,#ccbbaa,Rhizobiales
+GCA_004331955.1_ASM433195v1,#ccbbaa,Rhizobiales
+GCA_014495845.1_ASM1449584v1,#ccbbaa,Rhizobiales
+GCA_023573145.1_ASM2357314v1,#00FFFF,Burkholderiales
+GCA_000284255.1_ASM28425v1,#00FFFF,Burkholderiales
+GCA_001483865.1_ASM148386v1,#00FFFF,Burkholderiales
+GCA_000012985.1_ASM1298v1,#5F9EA0,Pseudomonadales
+GCA_009388985.1_ASM938898v1,#5F9EA0,Pseudomonadales
+GCA_010669285.1_ASM1066928v1,#5F9EA0,Pseudomonadales
+GCA_009363315.1_ASM936331v1,#ccbbaa,Rhizobiales
+GCA_020882625.1_ASM2088262v1,#ccbbaa,Rhizobiales
+GCA_003574985.1_ASM357498v1,#ccbbaa,Rhizobiales
+GCA_002813775.1_ASM281377v1,#800080,Chromatiales
+GCA_000227745.2_ASM22774v3,#800080,Chromatiales
+GCA_011290485.1_ASM1129048v1,#800080,Chromatiales
+GCA_000016185.1_ASM1618v1,#112233,Azospirillales
+GCA_019134555.1_ASM1913455v1,#00FF00,Rhodospirillales
+GCA_000284415.1_ASM28441v2,#00FF00,Rhodospirillales
+GCA_022655595.1_ASM2265559v1,#00FFFF,Cardiobacteriales
+GCA_030062115.1_ASM3006211v1,#00FFFF,Cardiobacteriales
+GCA_024347195.1_ASM2434719v1,#5F9EA0,Pseudomonadales
+GCA_024397855.1_ASM2439785v1,#5F9EA0,Pseudomonadales
+GCA_025345565.1_ASM2534556v1,#5F9EA0,Pseudomonadales
+GCA_002863865.1_ASM286386v1,#5F9EA0,Pseudomonadales
+GCA_000299335.2_ASM29933v2,#5F9EA0,Pseudomonadales
+GCA_000009365.1_ASM936v1,#5F9EA0,Pseudomonadales
+GCA_003966715.1_ASM396671v1,#ccbbaa,Rhizobiales
+GCA_001459775.1_Blastochloris_viridis_genome,#ccbbaa,Rhizobiales
+GCA_001402875.1_ASM140287v1,#ccbbaa,Rhizobiales
+GCA_017309975.1_ASM1730997v1,#8B0000,Caulobacterales
+GCA_001679665.1_ASM167966v1,#8B0000,Caulobacterales
+GCA_000023785.1_ASM2378v1,#8B0000,Caulobacterales
+GCA_021650935.1_ASM2165093v1,#808080,Thiotrichales
+GCA_017901135.1_ASM1790113v1,#808080,Thiotrichales
+GCA_001305575.3_ASM130557v3,#334455,Beggiatoales
+GCA_000214095.2_ASM21409v3,#BDB76B,Acidithiobacillales
+GCA_013462805.1_ASM1346280v1,#BDB76B,Acidithiobacillales
+GCA_001650235.3_ASM165023v3,#BDB76B,Acidithiobacillales
+GCA_900637305.1_50618_F02,#00FFFF,Cardiobacteriales
+GCA_000015345.1_ASM1534v1,#00FFFF,Cardiobacteriales
+GCA_009746125.1_ASM974612v1,#00FFFF,Burkholderiales
+GCA_009746125.1_ASM974612v1,#00FFFF,Burkholderiales
+GCA_006542605.1_ASM654260v1,#000080,Sphingomonadales
+GCA_001719165.1_ASM171916v1,#000080,Sphingomonadales
+GCA_001720465.1_ASM172046v1,#000080,Sphingomonadales
+GCA_000828475.1_ASM82847v1,#ccbbaa,Rhizobiales
+GCA_027886585.1_ASM2788658v1,#ccbbaa,Rhizobiales
+GCA_000166055.1_ASM16605v1,#ccbbaa,Rhizobiales
+GCA_024662015.1_ASM2466201v1,#22aabb,Thalassobaculales
+GCA_008632455.1_ASM863245v1,#483D8B,Methylococcales
+GCA_001644685.1_ASM164468v1,#483D8B,Methylococcales
+GCA_029643245.1_ASM2964324v1,#483D8B,Methylococcales
+GCA_009685195.1_ASM968519v1,#ccbbaa,Rhizobiales
+GCA_003855495.1_ASM385549v1,#ccbbaa,Rhizobiales
+GCA_022370455.1_ASM2237045v1,#ccbbaa,Rhizobiales
+GCA_000021025.1_ASM2102v1,#00FFFF,Burkholderiales
+GCA_002002905.1_ASM200290v1,#00FFFF,Burkholderiales
+GCA_002215055.1_ASM221505v1,#00FFFF,Burkholderiales
+GCA_009938015.1_ASM993801v1,#00FFFF,Burkholderiales
+GCA_905186105.1_Sutterella_canine_HQ_MAG,#00FFFF,Burkholderiales
+GCA_004564135.1_ASM456413v1,#FFFFFF,Unknown
+GCA_012276695.1_ASM1227669v1,#88ddbb,Pelagibacterales
+GCA_007833635.1_ASM783363v1,#88ddbb,Pelagibacterales
+GCA_000195085.1_ASM19508v1,#88ddbb,Pelagibacterales
+GCA_003428335.1_ASM342833v1,#DC143C,Nevskiales
+GCA_016918765.2_ASM1691876v2,#DC143C,Nevskiales
+GCA_010092425.1_ASM1009242v1,#DC143C,Nevskiales
+GCA_020510685.1_ASM2051068v1,#00FFFF,Burkholderiales
+GCA_020510605.1_ASM2051060v1,#00FFFF,Burkholderiales
+GCA_020510525.1_ASM2051052v1,#00FFFF,Burkholderiales
+GCA_001010805.1_ASM101080v1,#5F9EA0,Pseudomonadales
+GCA_002117105.1_ASM211710v1,#5F9EA0,Pseudomonadales
+GCA_001586255.1_ASM158625v1,#5F9EA0,Pseudomonadales
+GCA_002158845.1_ASM215884v1,#000080,Sphingomonadales
+GCA_003052045.1_ASM305204v1,#000080,Sphingomonadales
+GCA_000498655.1_ASM49865v1,#000080,Sphingomonadales
+GCA_001632845.1_ASM163284v1,#eeddcc,Ectothiorhodospirales
+GCA_000015585.1_ASM1558v1,#11aa22,Nitrococcales
+GCA_000485905.1_ASM48590v1,#11aa22,Nitrococcales
+GCA_003054515.1_ASM305451v1,#00FFFF,Burkholderiales
+GCA_003072485.1_ASM307248v1,#C0C0C0,Rickettsiales
+GCA_029981845.1_ASM2998184v1,#C0C0C0,Rickettsiales
+GCA_000219355.1_ASM21935v1,#C0C0C0,Rickettsiales
+GCA_000264455.2_ASM26445v2,#ccaa99,Tistrellales
+GCA_011009015.1_ASM1100901v1,#5F9EA0,Pseudomonadales
+GCA_000940805.1_ASM94080v1,#5F9EA0,Pseudomonadales
+GCA_003367315.1_ASM336731v1,#5F9EA0,Pseudomonadales
+GCA_002795845.1_ASM279584v1,#5F9EA0,Pseudomonadales
+GCA_002162375.1_ASM216237v1,#5F9EA0,Pseudomonadales
+GCA_006738645.1_ASM673864v1,#FFFFFF,Unknown
+GCA_006739055.1_ASM673905v1,#FFFFFF,Unknown
+GCA_006738865.1_ASM673886v1,#FFFFFF,Unknown
+GCA_004135585.1_ASM413558v1,#000080,Sphingomonadales
+GCA_019285715.1_ASM1928571v1,#000080,Sphingomonadales
+GCA_003967095.1_ASM396709v1,#000080,Sphingomonadales
+GCA_025562755.1_ASM2556275v1,#5F9EA0,Pseudomonadales
+GCA_023822025.1_ASM2382202v1,#5F9EA0,Pseudomonadales
+GCA_027366395.1_ASM2736639v1,#5F9EA0,Pseudomonadales
+GCA_022865125.1_ASM2286512v1,#ccbbaa,Rhizobiales
+GCA_002844375.1_ASM284437v1,#FFFFFF,Unknown
+GCA_003403095.1_ASM340309v1,#FFFFFF,Unknown
+GCA_029318635.1_ASM2931863v1,#FFFFFF,Unknown
+GCA_900231165.1_HDIA1,#ccbbaa,Rhizobiales
+GCA_001271345.1_ASM127134v1,#ccbbaa,Rhizobiales
+GCA_001887265.1_ASM188726v1,#ccbbaa,Rhizobiales
+GCA_016629525.1_ASM1662952v1,#ccbbaa,Rhizobiales
+GCA_007431345.1_ASM743134v1,#00FFFF,Burkholderiales
+GCA_014353015.1_ASM1435301v1,#00FFFF,Burkholderiales
+GCA_025642115.1_ASM2564211v1,#00FFFF,Burkholderiales
+GCA_000953735.1_MVIS1,#0000FF,Enterobacterales
+GCA_022870965.1_ASM2287096v1,#00FFFF,Burkholderiales
+GCA_022749515.1_ASM2274951v1,#00FFFF,Burkholderiales
+GCA_013003965.1_ASM1300396v1,#00FFFF,Burkholderiales
+GCA_013003985.1_ASM1300398v1,#00FFFF,Burkholderiales
+GCA_023716685.1_ASM2371668v1,#0000FF,Enterobacterales
+GCA_000148645.1_ASM14864v1,#0000FF,Enterobacterales
+GCA_012295575.1_ASM1229557v1,#0000FF,Enterobacterales
+GCA_004323635.1_ASM432363v1,#ccbbaa,Rhizobiales
+GCA_009388985.1_ASM938898v1,#5F9EA0,Pseudomonadales
+GCA_001983995.1_ASM198399v1,#5F9EA0,Pseudomonadales
+GCA_009910365.1_ASM991036v1,#5F9EA0,Pseudomonadales
+GCA_015482775.1_ASM1548277v1,#ccbbaa,Rhizobiales
+GCA_000017565.1_ASM1756v1,#77cc99,Parvibaculales
+GCA_012848855.1_ASM1284885v1,#77cc99,Parvibaculales
+GCA_003432385.1_ASM343238v1,#ccbbaa,Rhizobiales
+GCA_004295645.1_ASM429564v1,#0000FF,Enterobacterales
+GCA_900638655.1_58635_F02,#0000FF,Enterobacterales
+GCA_900478135.1_28193_H01,#0000FF,Enterobacterales
+GCA_025136295.1_ASM2513629v1,#FFFFFF,Unknown
+GCA_000014865.1_ASM1486v1,#1E90FF,Magnetococcales
+GCA_902813185.1_Denitratisoma_oestradiolicum_DSM16959,#00FFFF,Burkholderiales
+GCA_001713355.1_ASM171335v1,#00FFFF,Burkholderiales
+GCA_000828635.1_ASM82863v1,#00FFFF,Burkholderiales
+GCA_006385135.1_ASM638513v1,#000080,Sphingomonadales
+GCA_028869115.1_ASM2886911v1,#000080,Sphingomonadales
+GCA_005849285.1_ASM584928v1,#000080,Sphingomonadales
+GCA_023746535.1_ASM2374653v1,#9400D3,Sneathiellales
+GCA_026409565.1_ASM2640956v1,#9400D3,Sneathiellales
+GCA_015240255.1_ASM1524025v1,#000080,Sphingomonadales
+GCA_024398035.1_ASM2439803v1,#000080,Sphingomonadales
+GCA_024398015.1_ASM2439801v1,#000080,Sphingomonadales
+GCA_001677435.1_ASM167743v1,#66bbcc,Woeseiales
+GCA_000015285.1_ASM1528v1,#0000FF,Enterobacterales
+GCA_000153405.2_ASM15340v2,#0000FF,Enterobacterales
+GCA_003177035.1_ASM317703v1,#DC143C,Nevskiales
+GCA_002355415.1_ASM235541v1,#006400,Acidiferrobacterales
+GCA_001705075.2_ASM170507v2,#006400,Acidiferrobacterales
+GCA_002355735.1_ASM235573v1,#006400,Acidiferrobacterales
+GCA_911810475.1_August2016_Plant3_pacbio_assembly,#0000FF,Enterobacterales
+GCA_914590485.1_CEDIAZO_illumina_assembly,#0000FF,Enterobacterales
+GCA_003330885.1_ASM333088v1,#77cc99,Parvibaculales
+GCA_004564135.1_ASM456413v1,#FFFFFF,Unknown
+GCA_014725735.1_ASM1472573v1,#FFA500,Xanthomonadales
+GCA_001187785.1_ASM118778v1,#FFA500,Xanthomonadales
+GCA_023733635.1_ASM2373363v1,#800080,Chromatiales
+GCA_000828615.1_ASM82861v1,#800080,Chromatiales
+GCA_025502565.1_ASM2550256v1,#00FFFF,Burkholderiales
+GCA_001455205.1_ASM145520v1,#00FFFF,Burkholderiales
+GCA_000619905.2_ASM61990v2,#00FFFF,Burkholderiales
+GCA_028748065.1_ASM2874806v1,#8B0000,Caulobacterales
+GCA_000152825.2_ASM15282v2,#8B0000,Caulobacterales
+GCA_016699715.1_ASM1669971v1,#aaccdd,Competibacterales
+GCA_017161425.1_ASM1716142v1,#8B0000,Caulobacterales
+GCA_000014745.1_ASM1474v1,#8B0000,Caulobacterales
+GCA_004000605.1_ASM400060v1,#8B0000,Caulobacterales
+GCA_001579945.1_ASM157994v1,#ccddaa,Steroidobacterales
+GCA_013693775.1_ASM1369377v1,#00FFFF,Burkholderiales
+GCA_000012745.1_ASM1274v1,#00FFFF,Burkholderiales
+GCA_003967275.1_ASM396727v1,#00FFFF,Burkholderiales
+GCA_001697225.1_ASM169722v1,#00BFFF,Immundisolibacterales
+GCA_004001245.1_ASM400124v1,#FFFFFF,Unknown
+GCA_019203965.1_ASM1920396v1,#aabbcc,Acetobacterales
+GCA_011065405.1_ASM1106540v1,#0000FF,Enterobacterales
+GCA_016747875.1_ASM1674787v1,#0000FF,Enterobacterales
+GCA_905186145.1_Succinivibrio_canine_HQ_MAG,#0000FF,Enterobacterales
+GCA_000023745.1_ASM2374v1,#00FFFF,Burkholderiales
+GCA_000183115.1_ASM18311v1,#00FFFF,Burkholderiales
+GCA_000023705.1_ASM2370v1,#00FFFF,Burkholderiales
+GCA_024398575.1_ASM2439857v1,#0000FF,Enterobacterales
+GCA_024584785.1_ASM2458478v1,#0000FF,Enterobacterales
+GCA_002211765.1_ASM221176v1,#0000FF,Enterobacterales
+GCA_019469185.1_ASM1946918v1,#0000FF,Enterobacterales
+GCA_011745665.1_ASM1174566v1,#0000FF,Enterobacterales
+GCA_000807275.1_ASM80727v1,#0000FF,Enterobacterales
+GCA_001663815.1_ASM166381v1,#22aabb,Halothiobacillales
+GCA_000024765.1_ASM2476v1,#22aabb,Halothiobacillales
+GCA_000024085.1_ASM2408v1,#0000FF,Enterobacterales
+GCA_001708405.1_ASM170840v1,#0000FF,Enterobacterales
+GCA_000981765.1_ASM98176v1,#0000FF,Enterobacterales
+GCA_016724805.1_ASM1672480v1,#00FFFF,Burkholderiales
+GCA_003609995.1_ASM360999v1,#00FFFF,Burkholderiales
+GCA_928721995.1_min17_bin56,#00FFFF,Burkholderiales
+GCA_019038085.1_ASM1903808v1,#00FFFF,Burkholderiales
+GCA_019038105.1_ASM1903810v1,#00FFFF,Burkholderiales
+GCA_013181415.1_ASM1318141v1,#00FFFF,Burkholderiales
+GCA_030035755.1_ASM3003575v1,#ffaa00,Francisellales
+GCA_002795805.1_ASM279580v1,#00CED1,Mariprofundales
+GCA_002795825.1_ASM279582v1,#00CED1,Mariprofundales
+GCA_009938325.1_ASM993832v1,#00FFFF,Burkholderiales
+GCA_009938305.1_ASM993830v1,#00FFFF,Burkholderiales
+GCA_016110345.1_ASM1611034v1,#00FFFF,Burkholderiales
+GCA_009734265.1_ASM973426v1,#22aabb,Halothiobacillales
+GCA_009650135.1_ASM965013v1,#5F9EA0,Pseudomonadales
+GCA_000742835.1_ASM74283v1,#55aa33,Paracaedibacterales
+GCA_014896945.1_ASM1489694v1,#FFFFFF,Unknown
+GCA_000743035.1_ASM74303v1,#556677,Caedimonadales
+GCA_002117145.1_ASM211714v1,#556677,Caedimonadales
+GCA_000730245.1_ASM73024v1,#C0C0C0,Rickettsiales
+GCA_021654655.1_ASM2165465v1,#A52A2A,Holosporales
+GCA_021065005.1_ASM2106500v1,#FFFFFF,Unknown
+GCA_943846655.1_22042020_METABAT_325,#5F9EA0,Pseudomonadales
+GCA_024172705.1_ASM2417270v1,#889900,Comchoanobacterales

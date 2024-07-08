@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset PGC_crtD_trim.phy = ../crtD_crtI/PGC_crtD_trim.phy: ;
+  charset PGC_crtI_trim.phy = ../crtD_crtI/PGC_crtI_trim.phy: ;
+  charpartition mymodels =
+    Blosum62+F+R8: PGC_crtD_trim.phy,
+    Blosum62+F+R6: PGC_crtI_trim.phy;
+end;

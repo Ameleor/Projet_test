@@ -1,0 +1,272 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file.
+
+#SEPARATOR TAB
+SEPARATOR COMMA
+#SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL,gene
+
+#dataset color (can be changed later)
+COLOR,#C0C0C0
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES,0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#To order legend entries horizontally instead of vertically, set LEGEND_HORIZONTAL to 1
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+#LEGEND_TITLE Dataset_legend
+#LEGEND_SCALE 1
+#LEGEND_POSITION_X 100
+#LEGEND_POSITION_Y 100
+#LEGEND_HORIZONTAL 0
+#LEGEND_SHAPES 1 1 2 2
+#LEGEND_COLORS #ff0000 #00ff00 rgba(0,255,0,0.5) #0000ff
+#LEGEND_LABELS value1 value2 value3 value4
+#LEGEND_SHAPE_SCALES 1 1 0.5 1
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#if set to 1, border will be drawn completely around each colored strip box
+#COMPLETE_BORDER 0
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#display or hide the individual label inside each colored strip (when defined in the data below)
+#SHOW_STRIP_LABELS 1
+
+#position of the strip label within the box; 'top', 'center' or 'bottom'
+#STRIP_LABEL_POSITION center
+
+#strip label size factor (relative to the tree leaf labels)
+#STRIP_LABEL_SIZE_FACTOR 1
+
+
+#rotation of the strip labels; used only in rectangular tree display mode
+#STRIP_LABEL_ROTATION 0
+
+#strip label shift in pixels (positive or negative)
+#STRIP_LABEL_SHIFT 0
+
+#STRIP_LABEL_COLOR #000000
+
+#draw a black outline around the text (width in pixels)
+#STRIP_LABEL_OUTLINE 0.5
+
+#calculate the label color automatically (black or white), based on the darkness of the color strip
+#STRIP_LABEL_AUTO_COLOR 0
+
+#display or hide the dataset label above the colored strip
+#SHOW_LABELS 1
+
+#dataset label size factor
+#SIZE_FACTOR 1
+
+#dataset label rotation
+#LABEL_ROTATION 0
+
+#dataset label shift in pixels (positive or negative)
+#LABEL_SHIFT 0
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+
+GCF_000344805.1_ASM34480v1_5829_WP_042340283.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Bradyrhizobium_oligotrophicum_,#FF0000,bchE
+GCF_002706325.1_ASM270632v1_1920_WP_061350852.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_003429265.1_ASM342926v1_870_WP_108221399.1_MULTISPECIES__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_,#FF0000,bchE
+GCF_002813775.1_ASM281377v1_6314_WP_100923053.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Candidatus_Thiodictyon_syntrophicum_,#FF0000,bchE
+GCF_021228795.1_ASM2122879v1_1782_WP_232409820.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Thiocapsa_bogorovii_,#FF0000,bchE
+GCF_012647365.1_ASM1264736v1_796_WP_061350852.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_001685625.1_ASM168562v1_1918_WP_061350852.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_005311585.1_ASM531158v1_957_WP_112330330.1_MULTISPECIES__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_,#FF0000,bchE
+GCA_016745215.1_scaff03_2524_QQO54078.1_MAG__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Thiohalocapsa_sp._PB-PSB1_,#FF0000,bchE
+GCF_000026145.1_ASM2614v1_1554_WP_011924758.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Bradyrhizobium_sp._ORS_278_,#FF0000,bchE
+GCF_009363615.1_ASM936361v1_1948_WP_152458402.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Ruegeria_sp._THAF33_,#FF0000,bchE
+GCF_000015585.1_ASM1558v1_1649_WP_011814411.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Halorhodospira_halophila_,#FF0000,bchE
+GCF_000021005.1_ASM2100v1_1547_WP_015920853.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_022846615.1_ASM2284661v1_2179_WP_244459497.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Roseomonas_fluvialis_,#FF0000,bchE
+GCF_003324715.1_ASM332471v1_1920_WP_061350852.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_029277405.1_ASM2927740v1_671_WP_055209583.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobacter_capsulatus_,#FF0000,bchE
+GCF_019203965.1_ASM1920396v1_613_WP_235692001.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Elioraea_tepida_,#FF0000,bchE
+GCF_022227035.1_ASM2222703v1_975_WP_108221399.1_MULTISPECIES__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_,#FF0000,bchE
+GCF_000015165.1_ASM1516v1_5767_WP_012046020.1_MULTISPECIES__isoprenylcysteine_carboxylmethyltransferase_family_protein__Bradyrhizobium_,#FF0000,bchE
+GCF_018399035.1_ASM1839903v1_2646_WP_213457989.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Thiocapsa_sp._,#FF0000,bchE
+GCF_029581395.1_ASM2958139v1_3374_WP_277807052.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Roseinatronobacter_sp._S2_,#FF0000,bchE
+GCF_022370455.1_ASM2237045v1_1588_WP_029648448.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Methylocystis_sp._SB2_,#FF0000,bchE
+GCF_001576595.1_ASM157659v1_1919_WP_061350852.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_sphaeroides_,#FF0000,bchE
+GCF_000021865.1_ASM2186v1_669_WP_013066413.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobacter_capsulatus_,#FF0000,bchE
+GCF_021391315.1_ASM2139131v1_872_WP_108221399.1_MULTISPECIES__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Cereibacter_,#FF0000,bchE
+GCF_008728195.1_ASM872819v1_1788_WP_057813946.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Roseovarius_indicus_,#FF0000,bchE
+GCF_019623905.1_ASM1962390v1_3241_WP_220661514.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobacter_sp._N10_,#FF0000,bchE
+GCF_009363715.1_ASM936371v1_1074_WP_152474127.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Roseovarius_sp._THAF9_,#FF0000,bchE
+GCF_014622665.1_ASM1462266v1_704_WP_055209583.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobacter_capsulatus_,#FF0000,bchE
+GCF_002407205.1_ASM240720v1_2172_WP_096786189.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobacter_sp._CZR27_,#FF0000,bchE
+GCF_003071405.1_ASM307140v1_689_WP_108642794.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Fuscovulum_blasticum_,#FF0000,bchE
+GCF_001870665.2_ASM187066v2_583_WP_071479760.1_MULTISPECIES__magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Rhodobaca_,#FF0000,bchE
+GCF_003855495.1_ASM385549v1_3378_WP_124739857.1_magnesium-protoporphyrin_IX_monomethyl_ester_anaerobic_oxidative_cyclase__Methylocystis_rosea_,#FF0000,bchE
+
+GCA_019285715.1_ASM1928571v1_crtF,#0000FF,crtF
+GCA_019739335.1_ASM1973933v1_crtF,#0000FF,crtF
+GCF_000013085.1_ASM1308v1_crtF,#0000FF,crtF
+GCF_000013565.1_ASM1356v1_crtF,#0000FF,crtF
+GCF_000014045.1_ASM1404v1_crtF,#0000FF,crtF
+GCF_000015165.1_ASM1516v1_crtF,#0000FF,crtF
+GCF_000015585.1_ASM1558v1_crtF,#0000FF,crtF
+GCF_000016185.1_ASM1618v1_crtF,#0000FF,crtF
+GCF_000019365.1_ASM1936v1_crtF,#0000FF,crtF
+GCF_000019725.1_ASM1972v1_crtF,#0000FF,crtF
+GCF_000019945.1_ASM1994v1_crtF,#0000FF,crtF
+GCF_000021005.1_ASM2100v1_crtF,#0000FF,crtF
+GCF_000022685.1_ASM2268v1_crtF,#0000FF,crtF
+GCF_000025485.1_ASM2548v1_crtF,#0000FF,crtF
+GCF_000026145.1_ASM2614v1_crtF,#0000FF,crtF
+GCF_000083545.1_ASM8354v1_crtF,#0000FF,crtF
+GCF_000154785.2_ASM15478v2_crtF,#0000FF,crtF
+GCF_000195775.2_ASM19577v2_crtF,#0000FF,crtF
+GCF_000202835.1_ASM20283v1_crtF,#0000FF,crtF
+GCF_000224005.2_ASM22400v3_crtF,#0000FF,crtF
+GCF_000364445.2_ASM36444v2_crtF,#0000FF,crtF
+GCF_000590925.1_ASM59092v1_crtF,#0000FF,crtF
+GCF_000738435.1_ASM73843v1_crtF,#0000FF,crtF
+GCF_000935025.1_ASM93502v1_crtF,#0000FF,crtF
+GCF_001304795.1_ASM130479v1_crtF,#0000FF,crtF
+GCF_001548015.1_ASM154801v1_crtF,#0000FF,crtF
+GCF_001548075.1_ASM154807v1_crtF,#0000FF,crtF
+GCF_001633165.1_ASM163316v1_crtF,#0000FF,crtF
+GCF_001663175.1_ASM166317v1_crtF,#0000FF,crtF
+GCF_001685625.1_ASM168562v1_crtF,#0000FF,crtF
+GCF_001719165.1_ASM171916v1_crtF,#0000FF,crtF
+GCF_001720465.1_ASM172046v1_crtF,#0000FF,crtF
+GCF_001854385.1_ASM185438v1_crtF,#0000FF,crtF
+GCF_001955735.1_ASM195573v1_crtF,#0000FF,crtF
+GCF_001969365.1_ASM196936v1_crtF,#0000FF,crtF
+GCF_001971665.1_ASM197166v1_crtF,#0000FF,crtF
+GCF_002002865.1_ASM200286v1_crtF,#0000FF,crtF
+GCF_002079305.1_ASM207930v1_crtF,#0000FF,crtF
+GCF_002080415.1_ASM208041v1_crtF,#0000FF,crtF
+GCF_002706325.1_ASM270632v1_crtF,#0000FF,crtF
+GCF_002868735.1_ASM286873v1_crtF,#0000FF,crtF
+GCF_002952215.1_ASM295221v1_crtF,#0000FF,crtF
+GCF_002983865.1_ASM298386v1_crtF,#0000FF,crtF
+GCF_003031245.1_ASM303124v1_crtF,#0000FF,crtF
+GCF_003071405.1_ASM307140v1_crtF,#0000FF,crtF
+GCF_003173715.1_ASM317371v1_crtF,#0000FF,crtF
+GCF_003173735.1_ASM317373v1_crtF,#0000FF,crtF
+GCF_003173775.1_ASM317377v1_crtF,#0000FF,crtF
+GCF_003324715.1_ASM332471v1_crtF,#0000FF,crtF
+GCF_003429265.1_ASM342926v1_crtF,#0000FF,crtF
+GCF_003431825.1_ASM343182v1_crtF,#0000FF,crtF
+GCF_003940805.1_ASM394080v1_crtF,#0000FF,crtF
+GCF_004216475.1_ASM421647v1_crtF,#0000FF,crtF
+GCF_004331955.1_ASM433195v1_crtF,#0000FF,crtF
+GCF_004354345.1_ASM435434v1_crtF,#0000FF,crtF
+GCF_006740745.1_ASM674074v1_crtF,#0000FF,crtF
+GCF_007954425.1_ASM795442v1_crtF,#0000FF,crtF
+GCF_008000915.1_ASM800091v1_crtF,#0000FF,crtF
+GCF_008728195.1_ASM872819v1_crtF,#0000FF,crtF
+GCF_009363255.1_ASM936325v1_crtF,#0000FF,crtF
+GCF_009363655.1_ASM936365v1_crtF,#0000FF,crtF
+GCF_009363715.1_ASM936371v1_crtF,#0000FF,crtF
+GCF_009363735.1_ASM936373v1_crtF,#0000FF,crtF
+GCF_009664085.1_ASM966408v1_crtF,#0000FF,crtF
+GCF_009685175.1_ASM968517v1_crtF,#0000FF,crtF
+GCF_009707465.1_ASM970746v1_crtF,#0000FF,crtF
+GCF_010104355.1_ASM1010435v1_crtF,#0000FF,crtF
+GCF_011044255.1_ASM1104425v1_crtF,#0000FF,crtF
+GCF_011047315.1_ASM1104731v1_crtF,#0000FF,crtF
+GCF_011290485.1_ASM1129048v1_crtF,#0000FF,crtF
+GCF_012647365.1_ASM1264736v1_crtF,#0000FF,crtF
+GCF_013374095.1_ASM1337409v1_crtF,#0000FF,crtF
+GCF_014681765.1_ASM1468176v1_crtF,#0000FF,crtF
+GCF_016806835.2_ASM1680683v2_crtF,#0000FF,crtF
+GCF_016839165.1_ASM1683916v1_crtF,#0000FF,crtF
+GCF_017498565.1_ASM1749856v1_crtF,#0000FF,crtF
+GCF_018200035.1_ASM1820003v1_crtF,#0000FF,crtF
+GCF_018205975.1_ASM1820597v1_crtF,#0000FF,crtF
+GCF_018399035.1_ASM1839903v1_crtF,#0000FF,crtF
+GCF_018409545.1_ASM1840954v1_crtF,#0000FF,crtF
+GCF_018687415.1_ASM1868741v1_crtF,#0000FF,crtF
+GCF_018687675.1_ASM1868767v1_crtF,#0000FF,crtF
+GCF_018688255.1_ASM1868825v1_crtF,#0000FF,crtF
+GCF_019134555.1_ASM1913455v1_crtF,#0000FF,crtF
+GCF_019203965.1_ASM1920396v1_crtF,#0000FF,crtF
+GCF_019431245.1_ASM1943124v1_crtF,#0000FF,crtF
+GCF_019904235.1_ASM1990423v1_crtF,#0000FF,crtF
+GCF_019973775.1_ASM1997377v1_crtF,#0000FF,crtF
+GCF_021088345.1_ASM2108834v1_crtF,#0000FF,crtF
+GCF_021398735.1_ASM2139873v1_crtF,#0000FF,crtF
+GCF_022370455.1_ASM2237045v1_crtF,#0000FF,crtF
+GCF_022533465.1_ASM2253346v1_crtF,#0000FF,crtF
+GCF_022846615.1_ASM2284661v1_crtF,#0000FF,crtF
+GCF_023546765.1_ASM2354676v1_crtF,#0000FF,crtF
+GCF_023558335.1_ASM2355833v1_crtF,#0000FF,crtF
+GCF_024496245.1_ASM2449624v1_crtF,#0000FF,crtF
+GCF_024758705.1_ASM2475870v1_crtF,#0000FF,crtF
+GCF_025141935.1_ASM2514193v1_crtF,#0000FF,crtF
+GCF_025811215.1_ASM2581121v1_crtF,#0000FF,crtF
+GCF_025813715.1_ASM2581371v1_crtF,#0000FF,crtF
+GCF_025917005.1_ASM2591700v1_crtF,#0000FF,crtF
+GCF_026122595.1_ASM2612259v1_crtF,#0000FF,crtF
+GCF_026167525.1_ASM2616752v1_crtF,#0000FF,crtF
+GCF_026625025.1_ASM2662502v1_crtF,#0000FF,crtF
+GCF_026898155.1_ASM2689815v1_crtF,#0000FF,crtF
+GCF_027271155.1_ASM2727115v1_crtF,#0000FF,crtF
+GCF_027886585.1_ASM2788658v1_crtF,#0000FF,crtF
+GCF_027943985.1_ASM2794398v1_crtF,#0000FF,crtF
+GCF_029277405.1_ASM2927740v1_crtF,#0000FF,crtF
+GCF_029581395.1_ASM2958139v1_crtF,#0000FF,crtF
+GCF_029691625.1_ASM2969162v1_crtF,#0000FF,crtF
+GCF_029714205.1_ASM2971420v1_crtF,#0000FF,crtF
+GCF_030297555.1_ASM3029755v1_crtF,#0000FF,crtF
+GCF_030297575.1_ASM3029757v1_crtF,#0000FF,crtF
+GCF_030297595.1_ASM3029759v1_crtF,#0000FF,crtF
+GCF_030297635.1_ASM3029763v1_crtF,#0000FF,crtF
+GCF_030297655.1_ASM3029765v1_crtF,#0000FF,crtF
+GCF_900176205.1_BRAD285_PRJEB202261_v1_crtF,#0000FF,crtF
