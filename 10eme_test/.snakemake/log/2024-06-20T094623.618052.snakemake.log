@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+PGCfinder                         12
+all                                1
+fasta_gatherer_for_cluster         1
+fasta_retriever_for_cluster       12
+infos_retriever                    1
+list_creator                       1
+list_merger                        1
+total                             29
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Jun 20 09:46:23 2024]
+localrule PGCfinder:
+    input: data/genomes_unzip/GCF_000224005.2_ASM22400v3/GCF_000224005.2_ASM22400v3_protein.faa
+    output: results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder
+    jobid: 7
+    reason: Missing output files: results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder; Updated input files: data/genomes_unzip/GCF_000224005.2_ASM22400v3/GCF_000224005.2_ASM22400v3_protein.faa
+    wildcards: genome=GCF_000224005.2_ASM22400v3
+    resources: tmpdir=/tmp
+
+[Thu Jun 20 09:46:24 2024]
+Error in rule PGCfinder:
+    jobid: 7
+    input: data/genomes_unzip/GCF_000224005.2_ASM22400v3/GCF_000224005.2_ASM22400v3_protein.faa
+    output: results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder
+    shell:
+        
+        mkdir -p results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder
+        macsyfinder --mute --db-type ordered_replicon --sequence-db data/genomes_unzip/GCF_000224005.2_ASM22400v3/GCF_000224005.2_ASM22400v3_protein.faa --timeout timeout --models PGCFinder all -o results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job PGCfinder since they might be corrupted:
+results/genomes/GCF_000224005.2_ASM22400v3/PGCfinder
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-06-20T094623.618052.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

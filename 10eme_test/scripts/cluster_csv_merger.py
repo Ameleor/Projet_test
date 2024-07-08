@@ -56,4 +56,4 @@ for genome, values in genome_dict.items():
 # Merge using the column "prot_id_unique" that I have previously named for the silix output
 df_silix_full = df_silix.merge(all_infos, how="left", on="prot_id_unique")
 
-df_silix_full.to_csv("results/fasta_PGC/blast/output_silix_fullname_v1.csv", index=False)
+df_silix_full.to_csv("results/fasta/blast/output_silix_fullname_v1.csv", index=False)

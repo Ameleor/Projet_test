@@ -6,11 +6,11 @@ from Bio import SeqIO
 genome = sys.argv[1]
 
 try:
-    df_best_solution = pd.read_csv('results/genomes/' + genome + '/PGCfinder/best_solution.tsv', sep='\t', comment='#')
+    df_best_solution = pd.read_csv('results/genomes_PGC/' + genome + '/PGCfinder/best_solution.tsv', sep='\t', comment='#')
 except pd.errors.EmptyDataError:
     sys.exit()
 
-record_dict = SeqIO.to_dict(SeqIO.parse('data/genomes_unzip/' + genome + '/' + genome + '_protein.faa', "fasta"))
+record_dict = SeqIO.to_dict(SeqIO.parse('data/genomes_unzip_PGC/' + genome + '/' + genome + '_protein.faa', "fasta"))
 
 # Where we're going to stock our results
 results = []

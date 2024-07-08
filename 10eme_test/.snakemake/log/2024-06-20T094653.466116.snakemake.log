@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+tree_creator       33
+total              34
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Jun 20 09:46:53 2024]
+localrule tree_creator:
+    input: results/fasta_PGC/gene_trimmed/PGC_pufM_trim.phy
+    output: results/tree/PGC_pufM/PGC_pufM.treefile, results/tree/PGC_pufM/PGC_pufM.log, results/tree/PGC_pufM/PGC_pufM.model.gz, results/tree/PGC_pufM/PGC_pufM.bionj, results/tree/PGC_pufM/PGC_pufM.mldist, results/tree/PGC_pufM/PGC_pufM.ckp.gz, results/tree/PGC_pufM/PGC_pufM.iqtree
+    jobid: 15
+    reason: Missing output files: results/tree/PGC_pufM/PGC_pufM.bionj, results/tree/PGC_pufM/PGC_pufM.iqtree, results/tree/PGC_pufM/PGC_pufM.treefile, results/tree/PGC_pufM/PGC_pufM.log, results/tree/PGC_pufM/PGC_pufM.mldist, results/tree/PGC_pufM/PGC_pufM.model.gz, results/tree/PGC_pufM/PGC_pufM.ckp.gz
+    wildcards: gene=PGC_pufM
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Thu Jun 20 09:47:30 2024]
+Error in rule tree_creator:
+    jobid: 15
+    input: results/fasta_PGC/gene_trimmed/PGC_pufM_trim.phy
+    output: results/tree/PGC_pufM/PGC_pufM.treefile, results/tree/PGC_pufM/PGC_pufM.log, results/tree/PGC_pufM/PGC_pufM.model.gz, results/tree/PGC_pufM/PGC_pufM.bionj, results/tree/PGC_pufM/PGC_pufM.mldist, results/tree/PGC_pufM/PGC_pufM.ckp.gz, results/tree/PGC_pufM/PGC_pufM.iqtree
+    shell:
+        
+        # Problem if less than 3 sequences with iqtree2 (not working)
+        mkdir -p results/tree/PGC_pufM
+        iqtree2 -ntmax 50 -m Blosum62+F+R5 -s results/fasta_PGC/gene_trimmed/PGC_pufM_trim.phy -pre results/tree/PGC_pufM/PGC_pufM
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-06-20T094653.466116.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
